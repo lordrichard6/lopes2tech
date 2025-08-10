@@ -1,0 +1,190 @@
+.impressum-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 2rem 1rem;
+  font-family: var(--font-family);
+}
+
+.impressum-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.impressum-header {
+  background: var(--primary-color);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.impressum-main {
+  padding: 3rem 2rem;
+}
+
+.legal-section {
+  margin-bottom: 3rem;
+
+  &:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+  }
+
+  p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  strong {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+}
+
+.company-info {
+  background: var(--background-light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-color);
+
+  p {
+    margin-bottom: 0.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contact-info {
+  .email-link,
+  .phone-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+  }
+}
+
+.last-updated {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--background-light);
+  
+  p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+  }
+}
+
+.impressum-footer {
+  background: var(--background-light);
+  padding: 2rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.home-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+
+.footer-copyright {
+  p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .impressum-container {
+    padding: 1rem;
+  }
+
+  .impressum-header {
+    padding: 2rem 1.5rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .impressum-main {
+    padding: 2rem 1.5rem;
+  }
+
+  .legal-section {
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .impressum-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .impressum-header {
+    padding: 1.5rem 1rem;
+
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
+
+  .impressum-main {
+    padding: 1.5rem 1rem;
+  }
+
+  .company-info {
+    padding: 1rem;
+  }
+}

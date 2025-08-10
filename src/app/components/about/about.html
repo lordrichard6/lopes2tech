@@ -1,0 +1,21 @@
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-content">
+      <h2 class="section-title">Swiss Quality, Global Innovation</h2>
+      <div class="about-text">
+        <p>At lopes2tech, we blend Swiss precision with a decade of dedicated automation experience.</p>
+        <p>We're passionate about helping businesses unlock their full potential by automating repetitive tasks, optimizing processes, and creating tailored digital tools.</p>
+        <p>Whether you need a robust web app or a suite of custom automation tools for macOS, iPad, and iOS, we have the expertise to deliver solutions that work seamlessly for you.</p>
+      </div>
+      
+      <div class="features-grid">
+        @for (feature of features; track feature.title) {
+          <div class="feature">
+            <div class="feature-icon"><i [class]="feature.icon"></i></div>
+            <h4>{{ feature.title }}</h4>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
