@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit, OnDestroy, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -11,14 +11,20 @@ export class Header implements OnInit, OnDestroy {
   isMenuOpen = false;
   isScrolled = false;
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.pageYOffset > 100;
+    if (isPlatformBrowser(this.platformId)) {
+      this.isScrolled = window.pageYOffset > 100;
+    }
   }
 
   ngOnInit() {
-    // Initial scroll check
-    this.isScrolled = window.pageYOffset > 100;
+    // Initial scroll check - only in browser
+    if (isPlatformBrowser(this.platformId)) {
+      this.isScrolled = window.pageYOffset > 100;
+    }
   }
 
   ngOnDestroy() {
