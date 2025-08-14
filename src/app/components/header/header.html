@@ -1,7 +1,7 @@
-<header class="header">
+<header class="header" [class.scrolled]="isScrolled">
   <nav class="nav">
     <div class="nav-container">
-      <div class="logo">
+      <div class="logo" [class.neon-active]="isScrolled">
         <img src="/logo_raw.svg" alt="lopes2tech" class="logo-image">
         <div class="logo-text">
           <span class="logo-part logo-lopes">lopes</span>
