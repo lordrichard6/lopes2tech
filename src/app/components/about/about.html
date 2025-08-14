@@ -1,20 +1,44 @@
 <section id="about" class="about">
+  <div class="about-background">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+    <div class="grid-pattern"></div>
+  </div>
+  
   <div class="container">
     <div class="about-content">
-      <h2 class="section-title">Swiss Quality, Global Innovation</h2>
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="fas fa-mountain"></i>
+          <span>About Us</span>
+        </div>
+        <h2 class="section-title">Swiss Quality, Global Innovation</h2>
+      </div>
+      
       <div class="about-text">
-        <p>At lopes2tech, we blend Swiss precision with a decade of dedicated automation experience.</p>
+        <p class="text-highlight">At lopes2tech, we blend Swiss precision with a decade of dedicated automation experience.</p>
         <p>We're passionate about helping businesses unlock their full potential by automating repetitive tasks, optimizing processes, and creating tailored digital tools.</p>
         <p>Whether you need a robust web app or a suite of custom automation tools for macOS, iPad, and iOS, we have the expertise to deliver solutions that work seamlessly for you.</p>
       </div>
       
-      <div class="features-grid">
-        @for (feature of features; track feature.title) {
-          <div class="feature">
-            <div class="feature-icon"><i [class]="feature.icon"></i></div>
-            <h4>{{ feature.title }}</h4>
-          </div>
-        }
+      <div class="features-container">
+        <h3 class="features-title">Why Choose Us</h3>
+        <div class="features-grid">
+          @for (feature of features; track feature.title) {
+            <div class="feature" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="$index * 100">
+              <div class="feature-icon">
+                <div class="icon-wrapper">
+                  <i [class]="feature.icon"></i>
+                </div>
+              </div>
+              <h4>{{ feature.title }}</h4>
+            </div>
+          }
+        </div>
       </div>
     </div>
   </div>
