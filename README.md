@@ -17,7 +17,7 @@ lopes2tech is a Swiss Sole Proprietorship company based in Rüschlikon, founded 
 lopes2tech - Sole Proprietorship  
 Riemenstr. 1a  
 Rüschlikon, Switzerland  
-Phone: 078 798 95 33
+Phone: +41 78 798 95 33
 
 ## Development
 

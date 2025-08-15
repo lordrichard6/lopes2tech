@@ -30,8 +30,8 @@ export class BusinessInfoService {
       address: 'Riemenstr. 1a',
       city: 'Rüschlikon',
       country: 'Switzerland',
-      phone: '078 798 95 33',
-      email: 'info@lopes2tech.com' // Optional email
+      phone: '+41 78 798 95 33',
+      email: 'info@lopes2tech.ch' // Optional email
     };
   }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BusinessInfoService, BusinessInfo } from '../../services/business-info';
+import { EmailService, ContactFormData } from '../../services/email.service';
 
 @Component({
   selector: 'app-contact',
@@ -11,10 +12,12 @@ import { BusinessInfoService, BusinessInfo } from '../../services/business-info'
 export class Contact implements OnInit {
   contactForm: FormGroup;
   businessInfo: BusinessInfo;
+  isSubmitting = false;
 
   constructor(
     private fb: FormBuilder,
-    private businessInfoService: BusinessInfoService
+    private businessInfoService: BusinessInfoService,
+    private emailService: EmailService
   ) {
     this.contactForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(2)]],
@@ -34,16 +37,41 @@ export class Contact implements OnInit {
     return `tel:+41${this.businessInfo.phone.replace(/\s+/g, '')}`;
   }
 
-  onSubmit() {
+  async onSubmit() {
     if (this.contactForm.valid) {
-      console.log('Form Submitted:', this.contactForm.value);
-      // Here you would typically send the data to a service/API
-      alert('Thank you for your message! We will get back to you soon.');
-      this.contactForm.reset();
+      this.isSubmitting = true;
+      
+      const formData: ContactFormData = this.contactForm.value;
+      
+      try {
+        // Option 1: Send via EmailJS (requires setup)
+        const emailSent = await this.emailService.sendContactEmail(formData);
+        
+        if (emailSent) {
+          alert('Thank you for your message! We will get back to you soon.');
+          this.contactForm.reset();
+        } else {
+          // Fallback to mailto link
+          this.openMailtoLink(formData);
+        }
+      } catch (error) {
+        console.error('Error sending email:', error);
+        // Fallback to mailto link
+        this.openMailtoLink(formData);
+      } finally {
+        this.isSubmitting = false;
+      }
     } else {
       console.log('Form is invalid');
       this.markFormGroupTouched();
     }
+  }
+
+  private openMailtoLink(formData: ContactFormData) {
+    const mailtoLink = this.emailService.getMailtoLink(formData);
+    window.open(mailtoLink, '_blank');
+    alert('Your default email client will open with the message pre-filled.');
+    this.contactForm.reset();
   }
 
   private markFormGroupTouched() {
