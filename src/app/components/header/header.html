@@ -14,9 +14,8 @@
               [class.active]="isMenuOpen"
               (click)="toggleMenu()"
               aria-label="Toggle mobile menu">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
+        <i class="fas fa-bars" [class.hidden]="isMenuOpen"></i>
+        <i class="fas fa-times" [class.hidden]="!isMenuOpen"></i>
       </button>
       
       <ul class="nav-menu" [class.active]="isMenuOpen">
