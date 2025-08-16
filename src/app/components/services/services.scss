@@ -1,7 +1,7 @@
 // Services Section
 .services {
   padding: 6rem 0;
-  background: white;
+  background: var(--services-bg);
 }
 
 .container {
@@ -36,7 +36,7 @@
 }
 
 .service-card {
-  background: white;
+  background: var(--bg-white);
   padding: 2.5rem;
   border-radius: 12px;
   text-align: left;

@@ -30,7 +30,7 @@
 .floating-circle {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(34, 211, 238, 0.1));
+  background: linear-gradient(135deg, rgba(var(--ocean-cyan), 0.15), rgba(var(--ocean-cyan), 0.1));
   animation: float 6s ease-in-out infinite;
   
   &.circle-1 {
@@ -98,13 +98,17 @@
   svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: calc(100% + 2rem);
     height: 120px;
   }
   
   .shape-fill {
-    fill: white;
+    fill: var(--bg-white);
     animation: wave 3s ease-in-out infinite;
+  }
+  
+  .shape-fill-3 {
+    fill: var(--services-bg);
   }
 }
 
@@ -246,11 +250,11 @@
   &.btn-primary {
     background: var(--gradient);
     color: white;
-    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.3);
+    box-shadow: 0 8px 25px rgba(var(--ocean-cyan), 0.3);
     
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 15px 35px rgba(6, 182, 212, 0.4);
+      box-shadow: 0 15px 35px rgba(var(--ocean-cyan), 0.4);
     }
   }
   
@@ -261,7 +265,7 @@
     backdrop-filter: blur(10px);
     
     &:hover {
-      background: white;
+      background: var(--bg-white);
       transform: translateY(-3px);
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     }
@@ -337,7 +341,7 @@
       border-color: var(--accent-color);
       color: var(--accent-color);
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3);
+      box-shadow: 0 10px 25px rgba(var(--ocean-cyan), 0.3);
     }
     
     i {

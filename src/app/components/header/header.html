@@ -10,13 +10,22 @@
         </div>
       </div>
       
-      <button class="mobile-menu-toggle" 
-              [class.active]="isMenuOpen"
-              (click)="toggleMenu()"
-              aria-label="Toggle mobile menu">
-        <i class="fas fa-bars" [class.hidden]="isMenuOpen"></i>
-        <i class="fas fa-times" [class.hidden]="!isMenuOpen"></i>
-      </button>
+      <div class="header-controls">
+        <button class="theme-toggle" 
+                (click)="toggleTheme()"
+                [attr.aria-label]="isDarkTheme ? 'Switch to light theme' : 'Switch to dark theme'">
+          <i class="fas fa-sun" [class.hidden]="isDarkTheme"></i>
+          <i class="fas fa-moon" [class.hidden]="!isDarkTheme"></i>
+        </button>
+        
+        <button class="mobile-menu-toggle" 
+                [class.active]="isMenuOpen"
+                (click)="toggleMenu()"
+                aria-label="Toggle mobile menu">
+          <i class="fas fa-bars" [class.hidden]="isMenuOpen"></i>
+          <i class="fas fa-times" [class.hidden]="!isMenuOpen"></i>
+        </button>
+      </div>
       
       <ul class="nav-menu" [class.active]="isMenuOpen">
         <li><a href="#home" (click)="closeMenu()">Home</a></li>
