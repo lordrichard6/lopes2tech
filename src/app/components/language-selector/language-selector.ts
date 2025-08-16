@@ -17,7 +17,7 @@ interface Language {
       <button class="current-language" 
               (click)="toggleDropdown()"
               [class.active]="isOpen">
-        <span class="flag">{{ currentLanguage.flag }}</span>
+        <!-- <span class="flag">{{ currentLanguage.flag }}</span> -->
         <span class="code">{{ currentLanguage.code.toUpperCase() }}</span>
         <i class="fas fa-chevron-down" [class.rotated]="isOpen"></i>
       </button>
