@@ -14,30 +14,55 @@
       <div class="section-header">
         <div class="section-badge">
           <i class="fas fa-mountain"></i>
-          <span>About Us</span>
+          <span>{{ 'about.badge' | translate }}</span>
         </div>
-        <h2 class="section-title">Swiss Quality, Global Innovation</h2>
+        <h2 class="section-title">{{ 'about.title' | translate }}</h2>
       </div>
       
       <div class="about-text">
-        <p class="text-highlight">At lopes2tech, we blend Swiss precision with a decade of dedicated automation experience.</p>
-        <p>We're passionate about helping businesses unlock their full potential by automating repetitive tasks, optimizing processes, and creating tailored digital tools.</p>
-        <p>Whether you need a robust web app or a suite of custom automation tools for macOS, iPad, and iOS, we have the expertise to deliver solutions that work seamlessly for you.</p>
+        <p class="text-highlight">{{ 'about.subtitle' | translate }}</p>
+        <p>{{ 'about.description1' | translate }}</p>
+        <p>{{ 'about.description2' | translate }}</p>
       </div>
       
       <div class="features-container">
-        <h3 class="features-title">Why Choose Us</h3>
+        <h3 class="features-title">{{ 'about.features.title' | translate }}</h3>
         <div class="features-grid">
-          @for (feature of features; track feature.title) {
-            <div class="feature" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="$index * 100">
-              <div class="feature-icon">
-                <div class="icon-wrapper">
-                  <i [class]="feature.icon"></i>
-                </div>
+          <div class="feature" data-aos="fade-up" data-aos-delay="0">
+            <div class="feature-icon">
+              <div class="icon-wrapper">
+                <i class="fas fa-mountain"></i>
               </div>
-              <h4>{{ feature.title }}</h4>
             </div>
-          }
+            <h4>{{ 'about.features.swiss' | translate }}</h4>
+          </div>
+          
+          <div class="feature" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <div class="icon-wrapper">
+                <i class="fas fa-rocket"></i>
+              </div>
+            </div>
+            <h4>{{ 'about.features.technology' | translate }}</h4>
+          </div>
+          
+          <div class="feature" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <div class="icon-wrapper">
+                <i class="fas fa-handshake"></i>
+              </div>
+            </div>
+            <h4>{{ 'about.features.service' | translate }}</h4>
+          </div>
+          
+          <div class="feature" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">
+              <div class="icon-wrapper">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <h4>{{ 'about.features.delivery' | translate }}</h4>
+          </div>
         </div>
       </div>
     </div>

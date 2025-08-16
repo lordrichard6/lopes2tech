@@ -1,14 +1,14 @@
 <div class="impressum-container">
   <div class="impressum-content">
     <header class="impressum-header">
-      <h1>Impressum / Legal Notice</h1>
+      <h1>{{ 'impressum.title' | translate }}</h1>
     </header>
 
     <main class="impressum-main">
       <section class="legal-section">
-        <h2>Company Information</h2>
+        <h2>{{ 'impressum.sections.company.title' | translate }}</h2>
         <div class="company-info">
-          <p><strong>{{ businessInfo.companyName }} (Sole Proprietorship)</strong></p>
+          <p><strong>{{ businessInfo.companyName }} ({{ 'impressum.sections.company.sole_proprietorship' | translate }})</strong></p>
           <p><strong>{{ businessInfo.ownerName }}</strong></p>
           <p>{{ businessInfo.address }}</p>
           <p>{{ businessInfo.city }}</p>
@@ -17,7 +17,7 @@
       </section>
 
       <section class="legal-section">
-        <h2>Contact</h2>
+        <h2>{{ 'impressum.sections.contact.title' | translate }}</h2>
         <div class="contact-info">
           <p>Email: <a href="mailto:{{ businessInfo.email }}" class="email-link">{{ businessInfo.email }}</a></p>
           <p>Phone: <a href="tel:{{ businessInfo.phone }}" class="phone-link">{{ businessInfo.phone }}</a></p>
@@ -25,53 +25,53 @@
       </section>
 
       <section class="legal-section">
-        <h2>Disclaimer</h2>
+        <h2>{{ 'impressum.sections.disclaimer.title' | translate }}</h2>
         <div class="disclaimer-content">
-          <p>The information provided on this website is for general informational purposes only. While we strive to keep the content accurate and up-to-date, we make no warranties about its completeness, reliability, or suitability for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
-          <p>All offers and services are non-binding. We reserve the right to change, supplement, or delete content without notice.</p>
+          <p>{{ 'impressum.sections.disclaimer.content1' | translate }}</p>
+          <p>{{ 'impressum.sections.disclaimer.content2' | translate }}</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>References and Links</h2>
+        <h2>{{ 'impressum.sections.links.title' | translate }}</h2>
         <div class="links-content">
-          <p>Our website may contain links to third-party websites. We are not responsible for the content or privacy practices of these external sites. Use of such links is at your own risk.</p>
+          <p>{{ 'impressum.sections.links.content' | translate }}</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Copyrights</h2>
+        <h2>{{ 'impressum.sections.copyright.title' | translate }}</h2>
         <div class="copyright-content">
-          <p>The copyright and all other rights to content, images, and files on this website belong exclusively to {{ businessInfo.companyName }} or to the respective rights holders. Any reproduction requires prior written consent.</p>
+          <p>{{ ('impressum.sections.copyright.content' | translate).replace('{company}', businessInfo.companyName) }}</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Data Protection</h2>
+        <h2>{{ 'impressum.sections.data_protection.title' | translate }}</h2>
         <div class="data-protection-content">
-          <p>In accordance with Article 13 of the Swiss Federal Constitution and the Data Protection Act (DSG), your personal data is treated confidentially. We do not sell or disclose your information to third parties without your consent unless required by law.</p>
-          <p>We implement appropriate technical and organizational measures, in cooperation with our hosting providers, to safeguard your data from unauthorized access, loss, or misuse.</p>
+          <p>{{ 'impressum.sections.data_protection.content1' | translate }}</p>
+          <p>{{ 'impressum.sections.data_protection.content2' | translate }}</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Governing Law & Jurisdiction</h2>
+        <h2>{{ 'impressum.sections.jurisdiction.title' | translate }}</h2>
         <div class="jurisdiction-content">
-          <p>This website is governed by Swiss law. Any disputes arising from the use of this website shall be subject to the exclusive jurisdiction of the courts in Zürich, Switzerland.</p>
+          <p>{{ 'impressum.sections.jurisdiction.content' | translate }}</p>
         </div>
       </section>
 
       <section class="legal-section last-updated">
-        <p><strong>Last updated: {{ getLastUpdated() }}</strong></p>
+        <p><strong>{{ 'impressum.sections.last_updated' | translate }} {{ getLastUpdated() }}</strong></p>
       </section>
     </main>
 
     <footer class="impressum-footer">
       <div class="footer-links">
-        <a href="/" class="home-link">← Back to Home</a>
+        <a href="/" class="home-link">{{ 'impressum.sections.back_home' | translate }}</a>
       </div>
       <div class="footer-copyright">
-        <p>©{{ getCurrentYear() }} {{ businessInfo.companyName }}. All rights reserved.</p>
+        <p>©{{ getCurrentYear() }} {{ businessInfo.companyName }}. {{ 'impressum.sections.all_rights' | translate }}</p>
       </div>
     </footer>
   </div>

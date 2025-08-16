@@ -1,8 +1,8 @@
 <section id="contact" class="contact">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Send us a message</h2>
-      <p class="section-subtitle">We'll get back to you within 24 hours</p>
+      <h2 class="section-title">{{ 'contact.title' | translate }}</h2>
+      <p class="section-subtitle">{{ 'contact.subtitle' | translate }}</p>
     </div>
     
     <div class="contact-content">
@@ -10,12 +10,12 @@
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Full Name</label>
+              <label for="name">{{ 'contact.form.name.label' | translate }}</label>
               <input 
                 type="text" 
                 id="name" 
                 formControlName="name"
-                placeholder="Enter your full name"
+                placeholder="{{ 'contact.form.name.placeholder' | translate }}"
                 [class.error]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
               @if (contactForm.get('name')?.invalid && contactForm.get('name')?.touched) {
                 <div class="error-message">{{ getErrorMessage('name') }}</div>
@@ -23,12 +23,12 @@
             </div>
             
             <div class="form-group">
-              <label for="email">Email Address</label>
+              <label for="email">{{ 'contact.form.email.label' | translate }}</label>
               <input 
                 type="email" 
                 id="email" 
                 formControlName="email"
-                placeholder="Enter your email address"
+                placeholder="{{ 'contact.form.email.placeholder' | translate }}"
                 [class.error]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
               @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
                 <div class="error-message">{{ getErrorMessage('email') }}</div>
@@ -37,21 +37,21 @@
           </div>
           
           <div class="form-group">
-            <label for="company">Company (Optional)</label>
+            <label for="company">{{ 'contact.form.company.label' | translate }}</label>
             <input 
               type="text" 
               id="company" 
               formControlName="company"
-              placeholder="Enter your company name">
+              placeholder="{{ 'contact.form.company.placeholder' | translate }}">
           </div>
           
           <div class="form-group">
-            <label for="message">Message</label>
+            <label for="message">{{ 'contact.form.message.label' | translate }}</label>
             <textarea 
               id="message" 
               formControlName="message" 
               rows="5"
-              placeholder="Tell us about your project or how we can help you..."
+              placeholder="{{ 'contact.form.message.placeholder' | translate }}"
               [class.error]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"></textarea>
             @if (contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
               <div class="error-message">{{ getErrorMessage('message') }}</div>
@@ -63,28 +63,28 @@
             class="btn btn-primary"
             [disabled]="contactForm.invalid || isSubmitting">
             @if (isSubmitting) {
-              <i class="fas fa-spinner fa-spin"></i> Sending...
+              <i class="fas fa-spinner fa-spin"></i> {{ 'contact.form.sending' | translate }}
             } @else {
-              Send Message
+              {{ 'contact.form.send' | translate }}
             }
           </button>
         </form>
         
         <div class="contact-info">
           <div class="info-section">
-            <h4>Phone</h4>
+            <h4>{{ 'contact.info.phone' | translate }}</h4>
             <a [href]="getPhoneLink()">{{ businessInfo.phone }}</a>
           </div>
           
           @if (businessInfo.email) {
             <div class="info-section">
-              <h4>Email</h4>
+              <h4>{{ 'contact.info.email' | translate }}</h4>
               <a href="mailto:{{ businessInfo.email }}">{{ businessInfo.email }}</a>
             </div>
           }
           
           <div class="info-section">
-            <h4>Location</h4>
+            <h4>{{ 'contact.info.location' | translate }}</h4>
             <span>{{ businessInfo.city }}, {{ businessInfo.country }}</span>
           </div>
         </div>

@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BusinessInfoService, BusinessInfo } from '../../services/business-info';
 import { EmailService, ContactFormData } from '../../services/email.service';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-contact',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })

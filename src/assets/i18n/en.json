@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "✨ Automation Simplified",
+    "title": {
+      "line1": "Simplify",
+      "line2": "your life"
+    },
+    "subtitle": "Let technology work for you. We automate your daily tasks so you can focus on what truly matters.",
+    "cta": {
+      "primary": "Get Started",
+      "secondary": "See How It Works"
+    },
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "support": "Support Available"
+    }
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Swiss Quality, Global Innovation",
+    "subtitle": "At lopes2tech, we blend Swiss precision with a decade of dedicated automation experience.",
+    "description1": "We're passionate about helping businesses unlock their full potential by automating repetitive tasks, optimizing processes, and creating tailored digital tools.",
+    "description2": "Whether you need a robust web app or a suite of custom automation tools for macOS, iPad, and iOS, we have the expertise to deliver solutions that work seamlessly for you.",
+    "features": {
+      "title": "Why Choose Us",
+      "swiss": "Swiss precision and reliability",
+      "technology": "Cutting-edge technology expertise", 
+      "service": "Personalized service approach",
+      "delivery": "End-to-end solution delivery"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive IT solutions tailored to your needs",
+    "items": {
+      "automation": {
+        "title": "Process Automation",
+        "description": "Unlock efficiency by automating your daily operations. With over 10 years of experience, we design intelligent systems that reduce manual tasks, minimize errors, and free up valuable resources."
+      },
+      "web": {
+        "title": "Web Development", 
+        "description": "We build modern, responsive websites and web applications that not only showcase your brand but also integrate automation features to improve user experience and operational efficiency."
+      },
+      "app": {
+        "title": "App Development",
+        "description": "We create seamless experiences with native and cross‑platform apps for macOS, iPad, and iOS. Our applications are designed to support your business needs while incorporating automation elements to streamline tasks."
+      },
+      "tools": {
+        "title": "Custom Tools",
+        "description": "We develop automation tools that integrate into your workflow and simplify complex processes. From automating data entry to orchestrating full-scale digital operations, our solutions are built to boost productivity and reliability."
+      }
+    }
+  },
+  "contact": {
+    "title": "Send us a message",
+    "subtitle": "We'll get back to you within 24 hours",
+    "form": {
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Enter your full name"
+      },
+      "email": {
+        "label": "Email Address", 
+        "placeholder": "Enter your email address"
+      },
+      "company": {
+        "label": "Company (Optional)",
+        "placeholder": "Enter your company name"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us about your project or how we can help you..."
+      },
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location"
+    }
+  },
+  "footer": {
+    "company": "lopes2tech",
+    "description": "Simplifying life through intelligent automation solutions.",
+    "links": {
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "© 2025 lopes2tech. All rights reserved."
+  },
+  "impressum": {
+    "title": "Impressum / Legal Notice",
+    "sections": {
+      "company": {
+        "title": "Company Information",
+        "sole_proprietorship": "Sole Proprietorship"
+      },
+      "contact": {
+        "title": "Contact"
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "content1": "The information provided on this website is for general informational purposes only. While we strive to keep the content accurate and up-to-date, we make no warranties about its completeness, reliability, or suitability for any purpose. Any reliance you place on such information is therefore strictly at your own risk.",
+        "content2": "All offers and services are non-binding. We reserve the right to change, supplement, or delete content without notice."
+      },
+      "links": {
+        "title": "References and Links",
+        "content": "Our website may contain links to third-party websites. We are not responsible for the content or privacy practices of these external sites. Use of such links is at your own risk."
+      },
+      "copyright": {
+        "title": "Copyrights",
+        "content": "The copyright and all other rights to content, images, and files on this website belong exclusively to {company} or to the respective rights holders. Any reproduction requires prior written consent."
+      },
+      "data_protection": {
+        "title": "Data Protection",
+        "content1": "In accordance with Article 13 of the Swiss Federal Constitution and the Data Protection Act (DSG), your personal data is treated confidentially. We do not sell or disclose your information to third parties without your consent unless required by law.",
+        "content2": "We implement appropriate technical and organizational measures, in cooperation with our hosting providers, to safeguard your data from unauthorized access, loss, or misuse."
+      },
+      "jurisdiction": {
+        "title": "Governing Law & Jurisdiction",
+        "content": "This website is governed by Swiss law. Any disputes arising from the use of this website shall be subject to the exclusive jurisdiction of the courts in Zürich, Switzerland."
+      },
+      "last_updated": "Last updated:",
+      "back_home": "← Back to Home",
+      "all_rights": "All rights reserved."
+    }
+  }
+}

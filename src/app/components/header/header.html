@@ -11,6 +11,8 @@
       </div>
       
       <div class="header-controls">
+        <app-language-selector></app-language-selector>
+        
         <button class="theme-toggle" 
                 (click)="toggleTheme()"
                 [attr.aria-label]="isDarkTheme ? 'Switch to light theme' : 'Switch to dark theme'">
@@ -21,17 +23,17 @@
         <button class="mobile-menu-toggle" 
                 [class.active]="isMenuOpen"
                 (click)="toggleMenu()"
-                aria-label="Toggle mobile menu">
+                aria-label="Toggle mobile menu" i18n-aria-label="@@toggle-menu">
           <i class="fas fa-bars" [class.hidden]="isMenuOpen"></i>
           <i class="fas fa-times" [class.hidden]="!isMenuOpen"></i>
         </button>
       </div>
       
       <ul class="nav-menu" [class.active]="isMenuOpen">
-        <li><a href="#home" (click)="closeMenu()">Home</a></li>
-        <li><a href="#services" (click)="closeMenu()">Services</a></li>
-        <li><a href="#about" (click)="closeMenu()">About</a></li>
-        <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+        <li><a href="#home" (click)="closeMenu()">{{ 'nav.home' | translate }}</a></li>
+        <li><a href="#services" (click)="closeMenu()">{{ 'nav.services' | translate }}</a></li>
+        <li><a href="#about" (click)="closeMenu()">{{ 'nav.about' | translate }}</a></li>
+        <li><a href="#contact" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a></li>
       </ul>
     </div>
   </nav>

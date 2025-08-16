@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "about": "Sobre",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "✨ Automação Simplificada",
+    "title": {
+      "line1": "Simplifique",
+      "line2": "sua vida"
+    },
+    "subtitle": "Deixe a tecnologia trabalhar para si. Automatizamos as suas tarefas diárias para que possa focar-se no que realmente importa.",
+    "cta": {
+      "primary": "Começar",
+      "secondary": "Ver Como Funciona"
+    },
+    "stats": {
+      "experience": "Anos de Experiência",
+      "projects": "Projetos Concluídos",
+      "support": "Suporte Disponível"
+    }
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Soluções completas de TI adaptadas às suas necessidades",
+    "items": {
+      "automation": {
+        "title": "Automação de Processos",
+        "description": "Desbloqueie eficiência automatizando as suas operações diárias. Com mais de 10 anos de experiência, projetamos sistemas inteligentes que reduzem tarefas manuais, minimizam erros e libertam recursos valiosos."
+      },
+      "web": {
+        "title": "Desenvolvimento Web",
+        "description": "Construímos websites e aplicações web modernas e responsivas que não apenas mostram a sua marca, mas também integram funcionalidades de automação para melhorar a experiência do utilizador e a eficiência operacional."
+      },
+      "app": {
+        "title": "Desenvolvimento de Apps",
+        "description": "Criamos experiências fluidas com aplicações nativas e multiplataforma para macOS, iPad e iOS. As nossas aplicações são projetadas para apoiar as suas necessidades empresariais enquanto incorporam elementos de automação para simplificar tarefas."
+      },
+      "tools": {
+        "title": "Ferramentas Personalizadas",
+        "description": "Desenvolvemos ferramentas de automação que se integram no seu fluxo de trabalho e simplificam processos complexos. Desde automatizar entrada de dados até orquestrar operações digitais em grande escala, as nossas soluções são construídas para aumentar a produtividade e confiabilidade."
+      }
+    }
+  },
+  "about": {
+    "badge": "Sobre Nós",
+    "title": "Qualidade Suíça, Inovação Global",
+    "subtitle": "Na lopes2tech, combinamos a precisão suíça com uma década de experiência dedicada em automação.",
+    "description1": "Temos paixão por ajudar empresas a descobrir todo o seu potencial automatizando tarefas repetitivas, otimizando processos e criando ferramentas digitais personalizadas.",
+    "description2": "Seja uma aplicação web robusta ou um conjunto de ferramentas de automação personalizadas para macOS, iPad e iOS, temos a experiência para entregar soluções que funcionam perfeitamente para si.",
+    "features": {
+      "title": "Por que Escolher-nos",
+      "swiss": "Precisão e confiabilidade suíça",
+      "technology": "Experiência em tecnologia de ponta",
+      "service": "Abordagem de serviço personalizada",
+      "delivery": "Entrega de soluções completas"
+    }
+  },
+  "contact": {
+    "title": "Envie-nos uma mensagem",
+    "subtitle": "Responderemos dentro de 24 horas",
+    "form": {
+      "name": {
+        "label": "Nome Completo",
+        "placeholder": "Insira o seu nome completo"
+      },
+      "email": {
+        "label": "Endereço de Email",
+        "placeholder": "Insira o seu endereço de email"
+      },
+      "company": {
+        "label": "Empresa (Opcional)",
+        "placeholder": "Insira o nome da sua empresa"
+      },
+      "message": {
+        "label": "Mensagem",
+        "placeholder": "Conte-nos sobre o seu projeto ou como podemos ajudá-lo..."
+      },
+      "send": "Enviar Mensagem",
+      "sending": "Enviando..."
+    },
+    "info": {
+      "phone": "Telefone",
+      "email": "Email",
+      "location": "Localização"
+    }
+  },
+  "footer": {
+    "company": "lopes2tech",
+    "description": "Simplificando a vida através de soluções de automação inteligente.",
+    "links": {
+      "services": "Serviços",
+      "about": "Sobre",
+      "contact": "Contacto",
+      "privacy": "Política de Privacidade"
+    },
+    "copyright": "© 2025 lopes2tech. Todos os direitos reservados."
+  },
+  "impressum": {
+    "title": "Impressum / Aviso Legal",
+    "sections": {
+      "company": {
+        "title": "Informação da Empresa",
+        "sole_proprietorship": "Empresa Individual"
+      },
+      "contact": {
+        "title": "Contacto"
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "content1": "A informação fornecida neste website é apenas para fins informativos gerais. Embora nos esforcemos para manter o conteúdo preciso e atualizado, não fazemos garantias sobre a sua completude, confiabilidade ou adequação para qualquer propósito. Qualquer confiança que coloque nestas informações é, portanto, estritamente por sua conta e risco.",
+        "content2": "Todas as ofertas e serviços não são vinculativos. Reservamo-nos o direito de alterar, complementar ou eliminar conteúdo sem aviso prévio."
+      },
+      "links": {
+        "title": "Referências e Links",
+        "content": "O nosso website pode conter links para websites de terceiros. Não somos responsáveis pelo conteúdo ou práticas de privacidade desses sites externos. O uso de tais links é por sua conta e risco."
+      },
+      "copyright": {
+        "title": "Direitos de Autor",
+        "content": "Os direitos de autor e todos os outros direitos sobre o conteúdo, imagens e ficheiros neste website pertencem exclusivamente à {company} ou aos respetivos detentores de direitos. Qualquer reprodução requer consentimento prévio por escrito."
+      },
+      "data_protection": {
+        "title": "Proteção de Dados",
+        "content1": "Em conformidade com o Artigo 13 da Constituição Federal Suíça e a Lei de Proteção de Dados (DSG), os seus dados pessoais são tratados confidencialmente. Não vendemos nem divulgamos as suas informações a terceiros sem o seu consentimento, a menos que seja exigido por lei.",
+        "content2": "Implementamos medidas técnicas e organizacionais apropriadas, em cooperação com os nossos fornecedores de hosting, para proteger os seus dados contra acesso não autorizado, perda ou uso indevido."
+      },
+      "jurisdiction": {
+        "title": "Lei Aplicável & Jurisdição",
+        "content": "Este website é regido pela lei suíça. Quaisquer disputas decorrentes do uso deste website estarão sujeitas à jurisdição exclusiva dos tribunais em Zurique, Suíça."
+      },
+      "last_updated": "Última atualização:",
+      "back_home": "← Voltar ao Início",
+      "all_rights": "Todos os direitos reservados."
+    }
+  }
+}

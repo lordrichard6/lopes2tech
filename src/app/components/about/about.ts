@@ -1,18 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { BusinessInfoService } from '../../services/business-info';
+import { Component } from '@angular/core';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './about.html',
   styleUrl: './about.scss'
 })
-export class About implements OnInit {
-  features: Array<{icon: string, title: string}> = [];
-
-  constructor(private businessInfoService: BusinessInfoService) {}
-
-  ngOnInit() {
-    this.features = this.businessInfoService.getCompanyFeatures();
-  }
+export class About {
 }

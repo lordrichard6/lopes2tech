@@ -1,18 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { BusinessInfoService, Service } from '../../services/business-info';
+import { Component } from '@angular/core';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-services',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './services.html',
   styleUrl: './services.scss'
 })
-export class Services implements OnInit {
-  services: Service[] = [];
-
-  constructor(private businessInfoService: BusinessInfoService) {}
-
-  ngOnInit() {
-    this.services = this.businessInfoService.getServices();
-  }
+export class Services {
 }

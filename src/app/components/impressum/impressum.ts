@@ -1,13 +1,15 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { BusinessInfoService } from '../../services/business-info';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-impressum',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule, TranslatePipe],
   templateUrl: './impressum.html',
-  styleUrl: './impressum.scss'
+  styleUrls: ['./impressum.scss']
 })
 export class ImpressumComponent {
   private businessInfoService = inject(BusinessInfoService);

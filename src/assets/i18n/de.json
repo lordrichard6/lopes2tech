@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "✨ Automatisierung Vereinfacht",
+    "title": {
+      "line1": "Vereinfachen Sie",
+      "line2": "Ihr Leben"
+    },
+    "subtitle": "Lassen Sie die Technologie für Sie arbeiten. Wir automatisieren Ihre täglichen Aufgaben, damit Sie sich auf das konzentrieren können, was wirklich wichtig ist.",
+    "cta": {
+      "primary": "Loslegen",
+      "secondary": "Funktionsweise ansehen"
+    },
+    "stats": {
+      "experience": "Jahre Erfahrung",
+      "projects": "Abgeschlossene Projekte",
+      "support": "Support verfügbar"
+    }
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Umfassende IT-Lösungen, massgeschneidert für Ihre Bedürfnisse",
+    "items": {
+      "automation": {
+        "title": "Prozessautomatisierung",
+        "description": "Steigern Sie die Effizienz durch Automatisierung Ihrer täglichen Abläufe. Mit über 10 Jahren Erfahrung entwickeln wir intelligente Systeme, die manuelle Aufgaben reduzieren, Fehler minimieren und wertvolle Ressourcen freisetzen."
+      },
+      "web": {
+        "title": "Webentwicklung", 
+        "description": "Wir erstellen moderne, responsive Websites und Webanwendungen, die nicht nur Ihre Marke präsentieren, sondern auch Automatisierungsfunktionen integrieren, um die Benutzererfahrung und operative Effizienz zu verbessern."
+      },
+      "app": {
+        "title": "App-Entwicklung",
+        "description": "Wir schaffen nahtlose Erlebnisse mit nativen und plattformübergreifenden Apps für macOS, iPad und iOS. Unsere Anwendungen sind darauf ausgelegt, Ihre Geschäftsanforderungen zu unterstützen und gleichzeitig Automatisierungselemente zur Optimierung von Aufgaben zu integrieren."
+      },
+      "tools": {
+        "title": "Massgeschneiderte Tools",
+        "description": "Wir entwickeln Automatisierungstools, die sich in Ihren Arbeitsablauf integrieren und komplexe Prozesse vereinfachen. Von der Automatisierung der Dateneingabe bis zur Orchestrierung umfassender digitaler Operationen sind unsere Lösungen darauf ausgelegt, Produktivität und Zuverlässigkeit zu steigern."
+      }
+    }
+  },
+  "about": {
+    "badge": "Über uns",
+    "title": "Schweizer Qualität, Globale Innovation",
+    "subtitle": "Bei lopes2tech verbinden wir Schweizer Präzision mit einem Jahrzehnt engagierter Automatisierungserfahrung.",
+    "description1": "Wir sind leidenschaftlich dabei, Unternehmen dabei zu helfen, ihr volles Potenzial zu entfalten, indem wir repetitive Aufgaben automatisieren, Prozesse optimieren und massgeschneiderte digitale Tools erstellen.",
+    "description2": "Ob Sie eine robuste Web-App oder eine Suite von benutzerdefinierten Automatisierungstools für macOS, iPad und iOS benötigen, wir haben die Expertise, um Lösungen zu liefern, die nahtlos für Sie funktionieren.",
+    "features": {
+      "title": "Warum uns wählen",
+      "swiss": "Schweizer Präzision und Zuverlässigkeit",
+      "technology": "Expertise in modernster Technologie", 
+      "service": "Personalisierter Service-Ansatz",
+      "delivery": "End-to-End Lösungslieferung"
+    }
+  },
+  "contact": {
+    "title": "Senden Sie uns eine Nachricht",
+    "subtitle": "Wir melden uns innerhalb von 24 Stunden zurück",
+    "form": {
+      "name": {
+        "label": "Vollständiger Name",
+        "placeholder": "Geben Sie Ihren vollständigen Namen ein"
+      },
+      "email": {
+        "label": "E-Mail-Adresse", 
+        "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+      },
+      "company": {
+        "label": "Unternehmen (Optional)",
+        "placeholder": "Geben Sie Ihren Firmennamen ein"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Erzählen Sie uns von Ihrem Projekt oder wie wir Ihnen helfen können..."
+      },
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet..."
+    },
+    "info": {
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "location": "Standort"
+    }
+  },
+  "footer": {
+    "company": "lopes2tech",
+    "description": "Das Leben durch intelligente Automatisierungslösungen vereinfachen.",
+    "links": {
+      "services": "Dienstleistungen",
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "privacy": "Datenschutzrichtlinie"
+    },
+    "copyright": "© 2025 lopes2tech. Alle Rechte vorbehalten."
+  },
+  "impressum": {
+    "title": "Impressum / Rechtliche Hinweise",
+    "sections": {
+      "company": {
+        "title": "Firmeninformationen",
+        "sole_proprietorship": "Einzelunternehmen"
+      },
+      "contact": {
+        "title": "Kontakt"
+      },
+      "disclaimer": {
+        "title": "Haftungsausschluss",
+        "content1": "Die auf dieser Website bereitgestellten Informationen dienen nur allgemeinen Informationszwecken. Obwohl wir uns bemühen, die Inhalte korrekt und aktuell zu halten, übernehmen wir keine Gewähr für deren Vollständigkeit, Zuverlässigkeit oder Eignung für einen bestimmten Zweck. Jede Nutzung dieser Informationen erfolgt daher ausschliesslich auf eigenes Risiko.",
+        "content2": "Alle Angebote und Dienstleistungen sind unverbindlich. Wir behalten uns das Recht vor, Inhalte ohne Ankündigung zu ändern, zu ergänzen oder zu löschen."
+      },
+      "links": {
+        "title": "Verweise und Links",
+        "content": "Unsere Website kann Links zu Websites Dritter enthalten. Wir sind nicht verantwortlich für den Inhalt oder die Datenschutzpraktiken dieser externen Websites. Die Nutzung solcher Links erfolgt auf eigenes Risiko."
+      },
+      "copyright": {
+        "title": "Urheberrechte",
+        "content": "Das Urheberrecht und alle anderen Rechte an Inhalten, Bildern und Dateien auf dieser Website gehören ausschliesslich {company} oder den jeweiligen Rechtsinhabern. Jede Vervielfältigung bedarf der vorherigen schriftlichen Zustimmung."
+      },
+      "data_protection": {
+        "title": "Datenschutz",
+        "content1": "In Übereinstimmung mit Artikel 13 der Schweizerischen Bundesverfassung und dem Datenschutzgesetz (DSG) werden Ihre persönlichen Daten vertraulich behandelt. Wir verkaufen oder geben Ihre Informationen nicht ohne Ihre Zustimmung an Dritte weiter, es sei denn, dies ist gesetzlich vorgeschrieben.",
+        "content2": "Wir implementieren in Zusammenarbeit mit unseren Hosting-Anbietern angemessene technische und organisatorische Massnahmen, um Ihre Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen."
+      },
+      "jurisdiction": {
+        "title": "Anwendbares Recht & Gerichtsstand",
+        "content": "Diese Website unterliegt schweizerischem Recht. Alle Streitigkeiten, die sich aus der Nutzung dieser Website ergeben, unterliegen der ausschliesslichen Gerichtsbarkeit der Gerichte in Zürich, Schweiz."
+      },
+      "last_updated": "Letzte Aktualisierung:",
+      "back_home": "← Zurück zur Startseite",
+      "all_rights": "Alle Rechte vorbehalten."
+    }
+  }
+}

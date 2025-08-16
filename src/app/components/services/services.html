@@ -1,16 +1,32 @@
 <section id="services" class="services">
   <div class="container">
-    <h2 class="section-title">Our Services</h2>
-    <p class="section-subtitle">Comprehensive IT solutions tailored to your needs</p>
+    <h2 class="section-title">{{ 'services.title' | translate }}</h2>
+    <p class="section-subtitle">{{ 'services.subtitle' | translate }}</p>
     
     <div class="services-grid">
-      @for (service of services; track service.title) {
-        <div class="service-card">
-          <div class="service-icon"><i [class]="service.icon"></i></div>
-          <h3>{{ service.title }}</h3>
-          <p>{{ service.description }}</p>
-        </div>
-      }
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+        <h3>{{ 'services.items.automation.title' | translate }}</h3>
+        <p>{{ 'services.items.automation.description' | translate }}</p>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-code"></i></div>
+        <h3>{{ 'services.items.web.title' | translate }}</h3>
+        <p>{{ 'services.items.web.description' | translate }}</p>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>{{ 'services.items.app.title' | translate }}</h3>
+        <p>{{ 'services.items.app.description' | translate }}</p>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-tools"></i></div>
+        <h3>{{ 'services.items.tools.title' | translate }}</h3>
+        <p>{{ 'services.items.tools.description' | translate }}</p>
+      </div>
     </div>
   </div>
 </section>
