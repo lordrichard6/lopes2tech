@@ -21,7 +21,7 @@ export class GoogleAnalyticsService {
       return;
     }
 
-    gtag('config', 'G-7GEMLENNLS', {
+    gtag('config', 'G-P45F7T7PLH', {
       page_path: url,
       page_title: title
     });
