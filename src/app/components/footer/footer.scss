@@ -2,7 +2,7 @@
 .footer {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: white;
-  padding: 3rem 0;
+  padding: 2rem 0;
   text-align: center;
   position: relative;
   
@@ -43,9 +43,119 @@
   }
 }
 
-.footer-logo h3 {
-  color: white;
-  font-weight: 700;
+.footer-logo {
+  position: relative;
+  display: inline-block;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, 
+      rgba(var(--accent-rgb), 0.6) 0%,
+      rgba(var(--accent-rgb), 0.3) 40%,
+      rgba(var(--secondary-rgb), 0.2) 70%,
+      transparent 100%);
+    border-radius: 50%;
+    filter: blur(8px);
+    animation: neonPulse 2.5s ease-in-out infinite alternate;
+    z-index: 0;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(var(--accent-rgb), 0.15);
+    border-radius: 50%;
+    filter: blur(4px);
+    animation: neonPulse 3s ease-in-out infinite alternate-reverse;
+    z-index: 0;
+  }
+  
+  h3 {
+    color: white;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .footer-logo-image {
+    height: 60px;
+    width: auto;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+    animation: logoFloat 3s ease-in-out infinite, logoBreathe 4s ease-in-out infinite;
+    transform-origin: center center;
+    position: relative;
+    z-index: 2;
+    
+    &:hover {
+      transform: scale(1.15) rotate(5deg);
+      filter: drop-shadow(0 4px 16px rgba(var(--accent-rgb), 0.6)) 
+              drop-shadow(0 0 25px rgba(255, 255, 255, 0.4))
+              drop-shadow(0 0 35px rgba(var(--accent-rgb), 0.3));
+      animation-play-state: paused;
+    }
+    
+    &:active {
+      transform: scale(0.95) rotate(-2deg);
+      transition: all 0.1s ease;
+    }
+  }
+  
+  &:hover::before {
+    animation-duration: 1s;
+    background: radial-gradient(circle, 
+      rgba(var(--accent-rgb), 0.8) 0%,
+      rgba(var(--accent-rgb), 0.5) 40%,
+      rgba(var(--secondary-rgb), 0.3) 70%,
+      transparent 100%);
+  }
+  
+  &:hover::after {
+    animation-duration: 1.2s;
+    background: rgba(var(--accent-rgb), 0.25);
+  }
+}
+
+// Logo animations
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes logoBreathe {
+  0%, 100% {
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 3px 12px rgba(var(--accent-rgb), 0.15));
+  }
+}
+
+@keyframes neonPulse {
+  0% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 .footer-text p {
