@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://lopes2tech.ch/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lopes2tech.ch/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lopes2tech.ch/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lopes2tech.ch/" />
+  </url>
+  
+  <!-- Impressum -->
+  <url>
+    <loc>https://lopes2tech.ch/impressum</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lopes2tech.ch/impressum" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lopes2tech.ch/impressum" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lopes2tech.ch/impressum" />
+  </url>
+  
+</urlset>
