@@ -1,3 +1,4 @@
+<!-- Original contact form - commented out for new multi-step form
 <section id="contact" class="contact">
   <div class="container">
     <div class="section-header">
@@ -89,6 +90,506 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- New Multi-Step Form -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Let's Get Started</h2>
+      <p class="section-subtitle">Tell us about your project in just a few steps</p>
+    </div>
+    
+    <div class="multi-step-form">
+      <!-- Progress Indicator -->
+      <div class="progress-indicator">
+        <div class="progress-bar">
+          <div class="progress-fill" [style.width.%]="(currentStep / totalSteps) * 100"></div>
+        </div>
+        <div class="step-counter">Step {{ currentStep }} of {{ totalSteps }}</div>
+      </div>
+
+      <!-- Step 1: Welcome -->
+      @if (currentStep === 1) {
+        <div class="form-step step-welcome">
+          <div class="step-content">
+            <div class="step-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Welcome! Let's understand your needs</h3>
+            <p>We'll ask you a few quick questions to better understand your project and provide you with the most relevant solutions.</p>
+            
+            <div class="step-actions">
+              <button class="btn btn-primary" (click)="nextStep()">
+                Get Started <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      }
+
+      <!-- Step 2: Service Selection -->
+      @if (currentStep === 2) {
+        <div class="form-step step-service">
+          <div class="step-content">
+            <div class="step-icon">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <h3>What do you need?</h3>
+            <p>Select the service that best matches your requirements:</p>
+            
+            <div class="service-options">
+              <div class="service-option" 
+                   [class.selected]="selectedService === 'automation'"
+                   (click)="selectService('automation')">
+                <div class="option-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="option-content">
+                  <h4>Process Automation</h4>
+                  <p>Automate your daily operations and workflows</p>
+                </div>
+              </div>
+
+              <div class="service-option" 
+                   [class.selected]="selectedService === 'webapp'"
+                   (click)="selectService('webapp')">
+                <div class="option-icon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="option-content">
+                  <h4>Web Applications & SaaS</h4>
+                  <p>Custom web apps and SaaS platforms</p>
+                </div>
+              </div>
+
+              <div class="service-option" 
+                   [class.selected]="selectedService === 'web'"
+                   (click)="selectService('web')">
+                <div class="option-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="option-content">
+                  <h4>Web Development</h4>
+                  <p>Modern, responsive websites</p>
+                </div>
+              </div>
+
+              <div class="service-option" 
+                   [class.selected]="selectedService === 'tools'"
+                   (click)="selectService('tools')">
+                <div class="option-icon">
+                  <i class="fas fa-tools"></i>
+                </div>
+                <div class="option-content">
+                  <h4>Custom Tools</h4>
+                  <p>Specialized automation tools and integrations</p>
+                </div>
+              </div>
+
+              <div class="service-option" 
+                   [class.selected]="selectedService === 'unsure'"
+                   (click)="selectService('unsure')">
+                <div class="option-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="option-content">
+                  <h4>I don't quite know</h4>
+                  <p>Let's discuss your needs and find the best solution</p>
+                </div>
+              </div>
+
+              <div class="service-option" 
+                   [class.selected]="selectedService === 'other'"
+                   (click)="selectService('other')">
+                <div class="option-icon">
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="option-content">
+                  <h4>Other</h4>
+                  <p>Something else - tell us more about it</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="step-actions">
+              <button class="btn btn-secondary" (click)="previousStep()">
+                <i class="fas fa-arrow-left"></i> Back
+              </button>
+              <button class="btn btn-primary" 
+                      [disabled]="!selectedService"
+                      (click)="nextStep()">
+                Continue <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      }
+
+      <!-- Step 3: Specific Service Details -->
+      @if (currentStep === 3) {
+        <div class="form-step step-details">
+          <div class="step-content">
+            <div class="step-icon">
+              <i class="fas fa-list-check"></i>
+            </div>
+            <h3>Tell us more about your needs</h3>
+            <p>What specific services are you looking for?</p>
+            
+            <!-- Process Automation Services -->
+            @if (selectedService === 'automation') {
+              <div class="detailed-services">
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('rpa')"
+                     (click)="toggleDetailService('rpa')">
+                  <div class="option-icon">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>RPA (Robotic Process Automation)</h4>
+                    <p>Automate repetitive tasks and data entry</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('workflow')"
+                     (click)="toggleDetailService('workflow')">
+                  <div class="option-icon">
+                    <i class="fas fa-sitemap"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Workflow Management</h4>
+                    <p>Streamline business processes and approvals</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('integration')"
+                     (click)="toggleDetailService('integration')">
+                  <div class="option-icon">
+                    <i class="fas fa-link"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>System Integration</h4>
+                    <p>Connect different software and databases</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('reporting')"
+                     (click)="toggleDetailService('reporting')">
+                  <div class="option-icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Automated Reporting</h4>
+                    <p>Generate reports and dashboards automatically</p>
+                  </div>
+                </div>
+              </div>
+            }
+
+            <!-- Web Applications & SaaS Services -->
+            @if (selectedService === 'webapp') {
+              <div class="detailed-services">
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('saas')"
+                     (click)="toggleDetailService('saas')">
+                  <div class="option-icon">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>SaaS Platform Development</h4>
+                    <p>Multi-tenant cloud applications</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('angular')"
+                     (click)="toggleDetailService('angular')">
+                  <div class="option-icon">
+                    <i class="fab fa-angular"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Angular Applications</h4>
+                    <p>Modern frontend with Angular framework</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('django')"
+                     (click)="toggleDetailService('django')">
+                  <div class="option-icon">
+                    <i class="fab fa-python"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Django Backend</h4>
+                    <p>Robust Python backend development</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('api')"
+                     (click)="toggleDetailService('api')">
+                  <div class="option-icon">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>API Development</h4>
+                    <p>RESTful APIs and microservices</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('database')"
+                     (click)="toggleDetailService('database')">
+                  <div class="option-icon">
+                    <i class="fas fa-database"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Database Design</h4>
+                    <p>Scalable database architecture</p>
+                  </div>
+                </div>
+              </div>
+            }
+
+            <!-- Web Development Services -->
+            @if (selectedService === 'web') {
+              <div class="detailed-services">
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('responsive')"
+                     (click)="toggleDetailService('responsive')">
+                  <div class="option-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Responsive Design</h4>
+                    <p>Mobile-first, adaptive layouts</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('ecommerce')"
+                     (click)="toggleDetailService('ecommerce')">
+                  <div class="option-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>E-commerce Solutions</h4>
+                    <p>Online stores and payment systems</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('cms')"
+                     (click)="toggleDetailService('cms')">
+                  <div class="option-icon">
+                    <i class="fas fa-edit"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Content Management</h4>
+                    <p>Easy-to-use content management systems</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('portfolio')"
+                     (click)="toggleDetailService('portfolio')">
+                  <div class="option-icon">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Portfolio & Business Sites</h4>
+                    <p>Professional websites and portfolios</p>
+                  </div>
+                </div>
+              </div>
+            }
+
+            <!-- Custom Tools Services -->
+            @if (selectedService === 'tools') {
+              <div class="detailed-services">
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('scraping')"
+                     (click)="toggleDetailService('scraping')">
+                  <div class="option-icon">
+                    <i class="fas fa-spider"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Web Scraping Tools</h4>
+                    <p>Automated data extraction and monitoring</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('cli')"
+                     (click)="toggleDetailService('cli')">
+                  <div class="option-icon">
+                    <i class="fas fa-terminal"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Command Line Tools</h4>
+                    <p>Custom CLI applications and scripts</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('desktop')"
+                     (click)="toggleDetailService('desktop')">
+                  <div class="option-icon">
+                    <i class="fas fa-desktop"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>Desktop Applications</h4>
+                    <p>Cross-platform desktop software</p>
+                  </div>
+                </div>
+
+                <div class="service-detail-option" 
+                     [class.selected]="selectedDetailServices.includes('maintenance')"
+                     (click)="toggleDetailService('maintenance')">
+                  <div class="option-icon">
+                    <i class="fas fa-wrench"></i>
+                  </div>
+                  <div class="option-content">
+                    <h4>System Maintenance</h4>
+                    <p>Ongoing support and optimization</p>
+                  </div>
+                </div>
+              </div>
+            }
+
+            <!-- Generic option for "unsure" and "other" -->
+            @if (selectedService === 'unsure' || selectedService === 'other') {
+              <div class="text-input-section">
+                <div class="form-group">
+                  <label for="projectDescription">Tell us about your project:</label>
+                  <textarea 
+                    id="projectDescription" 
+                    [(ngModel)]="projectDescription"
+                    rows="4"
+                    placeholder="Describe what you're looking to build or improve..."
+                    class="form-textarea"></textarea>
+                </div>
+              </div>
+            }
+            
+            <div class="step-actions">
+              <button class="btn btn-secondary" (click)="previousStep()">
+                <i class="fas fa-arrow-left"></i> Back
+              </button>
+              <button class="btn btn-primary" 
+                      [disabled]="!canProceedFromStep3()"
+                      (click)="nextStep()">
+                Continue <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      }
+
+      <!-- Step 4: Contact Information -->
+      @if (currentStep === 4) {
+        <div class="form-step step-contact">
+          <div class="step-content">
+            <div class="step-icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <h3>Let's get in touch</h3>
+            <p>Finally, we need your contact information to get back to you:</p>
+            
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name *</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    formControlName="name"
+                    placeholder="Your full name"
+                    [class.error]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                  @if (contactForm.get('name')?.invalid && contactForm.get('name')?.touched) {
+                    <div class="error-message">{{ getErrorMessage('name') }}</div>
+                  }
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    formControlName="email"
+                    placeholder="your.email@company.com"
+                    [class.error]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+                  @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
+                    <div class="error-message">{{ getErrorMessage('email') }}</div>
+                  }
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input 
+                  type="text" 
+                  id="company" 
+                  formControlName="company"
+                  placeholder="Your company name (optional)">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Additional Information</label>
+                <textarea 
+                  id="message" 
+                  formControlName="message" 
+                  rows="4"
+                  placeholder="Any additional details about your project, timeline, or budget..."
+                  [class.error]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"></textarea>
+                @if (contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
+                  <div class="error-message">{{ getErrorMessage('message') }}</div>
+                }
+              </div>
+
+              <!-- Project Summary -->
+              <div class="project-summary">
+                <h4>Project Summary</h4>
+                <div class="summary-item">
+                  <strong>Service:</strong> {{ getServiceDisplayName(selectedService) }}
+                </div>
+                @if (selectedDetailServices.length > 0) {
+                  <div class="summary-item">
+                    <strong>Specific needs:</strong> {{ getDetailServicesDisplay() }}
+                  </div>
+                }
+                @if (projectDescription) {
+                  <div class="summary-item">
+                    <strong>Description:</strong> {{ projectDescription }}
+                  </div>
+                }
+              </div>
+              
+              <div class="step-actions">
+                <button type="button" class="btn btn-secondary" (click)="previousStep()">
+                  <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <button 
+                  type="submit" 
+                  class="btn btn-primary"
+                  [disabled]="contactForm.invalid || isSubmitting">
+                  @if (isSubmitting) {
+                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                  } @else {
+                    <i class="fas fa-paper-plane"></i> Send Message
+                  }
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      }
     </div>
   </div>
 </section>
