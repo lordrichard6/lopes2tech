@@ -3,8 +3,9 @@ import { Header } from '../header/header';
 import { Hero } from '../hero/hero';
 import { Services } from '../services/services';
 import { About } from '../about/about';
-import { Contact } from '../contact/contact';
+// import { Contact } from '../contact/contact';
 import { Footer } from '../footer/footer';
+import { MultistepComponent } from '../multistep/multistep';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,8 @@ import { Footer } from '../footer/footer';
     Hero,
     Services,
     About,
-    Contact,
+    MultistepComponent,
+    // Contact,
     Footer
   ],
   template: `
@@ -22,7 +24,8 @@ import { Footer } from '../footer/footer';
     <app-hero></app-hero>
     <app-services></app-services>
     <app-about></app-about>
-    <app-contact></app-contact>
+    <app-multistep></app-multistep>
+    <!-- <app-contact></app-contact> -->
     <app-footer></app-footer>
   `,
   styles: []
