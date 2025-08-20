@@ -8,7 +8,6 @@
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(14, 116, 144, 0.15);
   transition: all 0.4s ease;
-  overflow: hidden;
 }
 
 .nav {
@@ -16,6 +15,7 @@
 }
 
 .nav-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,10 +147,10 @@
 .logo-background {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-90%, -55%);
+  left: -4%;
+  transform: translate(-50%, -55%);
   z-index: 0;
-  opacity: 0.3;
+  opacity: 0.2;
   width: 400px;
   height: 400px;
   pointer-events: none;
