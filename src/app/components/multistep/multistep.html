@@ -6,15 +6,16 @@
     </div>
     
     <div class="multi-step-form">
-      <!-- Progress Indicator -->
-      <div class="progress-indicator">
-        <div class="progress-bar">
-          <div class="progress-fill" [style.width.%]="(currentStep / totalSteps) * 100"></div>
+      @if (!isSubmitted) {
+        <!-- Progress Indicator -->
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" [style.width.%]="(currentStep / totalSteps) * 100"></div>
+          </div>
+          <div class="step-counter">Step {{ currentStep }} of {{ totalSteps }}</div>
         </div>
-        <div class="step-counter">Step {{ currentStep }} of {{ totalSteps }}</div>
-      </div>
 
-      <!-- Step 1: Welcome -->
+        <!-- Step 1: Welcome -->
       @if (currentStep === 1) {
         <div class="form-step step-welcome">
           <div class="step-content">
@@ -138,8 +139,13 @@
             <div class="step-icon">
               <i class="fas fa-list-check"></i>
             </div>
-            <h3>Tell us more about your needs</h3>
-            <p>What specific services are you looking for?</p>
+            @if (selectedService === 'unsure') {
+              <h3>What you want to improve?</h3>
+              <p>Help us understand your current challenges and goals.</p>
+            } @else {
+              <h3>What else can I do for you?</h3>
+              <p>What specific services are you looking for?</p>
+            }
             
             <!-- Process Automation Services -->
             @if (selectedService === 'automation') {
@@ -244,18 +250,6 @@
                     <p>RESTful APIs and microservices</p>
                   </div>
                 </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('database')"
-                     (click)="toggleDetailService('database')">
-                  <div class="option-icon">
-                    <i class="fas fa-database"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>Database Design</h4>
-                    <p>Scalable database architecture</p>
-                  </div>
-                </div>
               </div>
             }
 
@@ -266,11 +260,11 @@
                      [class.selected]="selectedDetailServices.includes('responsive')"
                      (click)="toggleDetailService('responsive')">
                   <div class="option-icon">
-                    <i class="fas fa-mobile-alt"></i>
+                    <i class="fas fa-file-alt"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Responsive Design</h4>
-                    <p>Mobile-first, adaptive layouts</p>
+                    <h4>Simple 1 page websites</h4>
+                    <p>Clean, focused single-page websites</p>
                   </div>
                 </div>
 
@@ -366,15 +360,29 @@
             }
 
             <!-- Generic option for "unsure" and "other" -->
-            @if (selectedService === 'unsure' || selectedService === 'other') {
+            <!-- Not Sure Yet -->
+            @if (selectedService === 'unsure') {
               <div class="text-input-section">
                 <div class="form-group">
-                  <label for="projectDescription">Tell us about your project:</label>
                   <textarea 
                     id="projectDescription" 
                     [(ngModel)]="projectDescription"
                     rows="4"
-                    placeholder="Describe what you're looking to build or improve..."
+                    placeholder="Describe your current challenges or areas where you'd like to see improvement..."
+                    class="form-textarea"></textarea>
+                </div>
+              </div>
+            }
+
+            <!-- Other Services -->
+            @if (selectedService === 'other') {
+              <div class="text-input-section">
+                <div class="form-group">
+                  <textarea 
+                    id="projectDescription" 
+                    [(ngModel)]="projectDescription"
+                    rows="4"
+                    placeholder="Describe what you're looking to build or achieve..."
                     class="form-textarea"></textarea>
                 </div>
               </div>
@@ -394,33 +402,163 @@
         </div>
       }
 
-      <!-- Step 4: Contact Information -->
+      <!-- Step 4: Budget Assessment -->
       @if (currentStep === 4) {
+        <div class="form-step step-budget">
+          <div class="step-content">
+            <div class="step-icon">
+              <i class="fas fa-euro-sign"></i>
+            </div>
+            <h3>What is your budget?</h3>
+            <p>Help us understand your budget range for this project:</p>
+            
+            <form [formGroup]="contactForm" class="budget-form">
+              <!-- Budget Assessment -->
+              <div class="form-group budget-section">
+                <!-- Currency Selection -->
+                <div class="currency-selector">
+                  <label>Currency:</label>
+                  <div class="currency-options">
+                    <button type="button" 
+                            class="currency-option" 
+                            [class.selected]="selectedCurrency === 'EUR'"
+                            (click)="selectCurrency('EUR')">
+                      <span class="currency-symbol">€</span>
+                      <!-- <span class="currency-name">Euro</span> -->
+                    </button>
+                    <button type="button" 
+                            class="currency-option" 
+                            [class.selected]="selectedCurrency === 'CHF'"
+                            (click)="selectCurrency('CHF')">
+                      <span class="currency-symbol">CHF</span>
+                      <!-- <span class="currency-name">Swiss Franc</span> -->
+                    </button>
+                    <button type="button" 
+                            class="currency-option" 
+                            [class.selected]="selectedCurrency === 'USD'"
+                            (click)="selectCurrency('USD')">
+                      <span class="currency-symbol">$</span>
+                      <!-- <span class="currency-name">US Dollar</span> -->
+                    </button>
+                  </div>
+                </div>
+
+                <div class="budget-slider-container">
+                  <input 
+                    type="range" 
+                    id="budget" 
+                    formControlName="budget"
+                    min="0" 
+                    max="50000" 
+                    step="500"
+                    class="budget-slider">
+                  <div class="budget-display">
+                    <span class="budget-value">{{ getCurrencySymbol() }}{{ formatBudget(contactForm.get('budget')?.value || 0) }}</span>
+                    <div class="budget-labels">
+                      <span class="min-label">{{ getCurrencySymbol() }}0</span>
+                      <span class="max-label">{{ getCurrencySymbol() }}50,000+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="step-actions">
+                <button type="button" class="btn btn-secondary" (click)="previousStep()">
+                  <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <button type="button" class="btn btn-primary" (click)="nextStep()">
+                  Continue <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      }
+
+      <!-- Step 5: Additional Message -->
+      @if (currentStep === 5) {
+        <div class="form-step step-message">
+          <div class="step-content">
+            <div class="step-icon">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+            <h3>Is there anything else you want to share with us?</h3>
+            <p>Feel free to share any additional thoughts, questions, or specific requirements:</p>
+            
+            <form [formGroup]="contactForm" class="message-form">
+              <div class="form-group">
+                <textarea 
+                  id="additionalMessage"
+                  formControlName="additionalMessage"
+                  rows="6"
+                  placeholder="Tell us about your timeline, specific requirements, preferred communication methods, or any questions you might have..."
+                  class="form-textarea"></textarea>
+              </div>
+              
+              <div class="step-actions">
+                <button type="button" class="btn btn-secondary" (click)="previousStep()">
+                  <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <button type="button" class="btn btn-primary" (click)="nextStep()">
+                  Continue <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      }
+
+      <!-- Step 6: Contact Information -->
+      @if (currentStep === 6) {
         <div class="form-step step-contact">
           <div class="step-content">
             <div class="step-icon">
               <i class="fas fa-user"></i>
             </div>
             <h3>Let's get in touch</h3>
-            <p>Finally, we need your contact information to get back to you:</p>
+            <p>Please provide your contact information so we can reach out to you:</p>
             
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
               <div class="form-row">
                 <div class="form-group">
-                  <label for="name">Name *</label>
+                  <label for="firstName">First Name *</label>
                   <input 
                     type="text" 
-                    id="name" 
-                    formControlName="name"
-                    placeholder="Your full name"
-                    [class.error]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
-                  @if (contactForm.get('name')?.invalid && contactForm.get('name')?.touched) {
-                    <div class="error-message">{{ getErrorMessage('name') }}</div>
+                    id="firstName" 
+                    formControlName="firstName"
+                    placeholder="John"
+                    [class.error]="contactForm.get('firstName')?.invalid && contactForm.get('firstName')?.touched">
+                  @if (contactForm.get('firstName')?.invalid && contactForm.get('firstName')?.touched) {
+                    <div class="error-message">{{ getErrorMessage('firstName') }}</div>
                   }
                 </div>
                 
                 <div class="form-group">
-                  <label for="email">Email *</label>
+                  <label for="lastName">Last Name *</label>
+                  <input 
+                    type="text" 
+                    id="lastName" 
+                    formControlName="lastName"
+                    placeholder="Doe"
+                    [class.error]="contactForm.get('lastName')?.invalid && contactForm.get('lastName')?.touched">
+                  @if (contactForm.get('lastName')?.invalid && contactForm.get('lastName')?.touched) {
+                    <div class="error-message">{{ getErrorMessage('lastName') }}</div>
+                  }
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input 
+                  type="text" 
+                  id="company" 
+                  formControlName="company"
+                  placeholder="Your company name (optional)">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
                   <input 
                     type="email" 
                     id="email" 
@@ -431,28 +569,28 @@
                     <div class="error-message">{{ getErrorMessage('email') }}</div>
                   }
                 </div>
+
+                <div class="form-group">
+                  <label for="location">Location *</label>
+                  <input 
+                    type="text" 
+                    id="location" 
+                    formControlName="location"
+                    placeholder="City, Country"
+                    [class.error]="contactForm.get('location')?.invalid && contactForm.get('location')?.touched">
+                  @if (contactForm.get('location')?.invalid && contactForm.get('location')?.touched) {
+                    <div class="error-message">{{ getErrorMessage('location') }}</div>
+                  }
+                </div>
               </div>
-              
+
               <div class="form-group">
-                <label for="company">Company</label>
+                <label for="phone">Phone Number</label>
                 <input 
-                  type="text" 
-                  id="company" 
-                  formControlName="company"
-                  placeholder="Your company name (optional)">
-              </div>
-              
-              <div class="form-group">
-                <label for="message">Additional Information</label>
-                <textarea 
-                  id="message" 
-                  formControlName="message" 
-                  rows="4"
-                  placeholder="Any additional details about your project, timeline, or budget..."
-                  [class.error]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"></textarea>
-                @if (contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
-                  <div class="error-message">{{ getErrorMessage('message') }}</div>
-                }
+                  type="tel" 
+                  id="phone" 
+                  formControlName="phone"
+                  placeholder="+1 (555) 123-4567 (optional)">
               </div>
 
               <!-- Project Summary -->
@@ -469,6 +607,14 @@
                 @if (projectDescription) {
                   <div class="summary-item">
                     <strong>Description:</strong> {{ projectDescription }}
+                  </div>
+                }
+                <div class="summary-item">
+                  <strong>Budget:</strong> {{ getCurrencySymbol() }}{{ formatBudget(contactForm.get('budget')?.value || 0) }}
+                </div>
+                @if (contactForm.get('additionalMessage')?.value) {
+                  <div class="summary-item">
+                    <strong>Additional notes:</strong> {{ contactForm.get('additionalMessage')?.value }}
                   </div>
                 }
               </div>
@@ -489,6 +635,44 @@
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      }
+      
+      } <!-- End of !isSubmitted condition -->
+      
+      <!-- Thank You Screen -->
+      @if (isSubmitted) {
+        <div class="form-step thank-you-screen py-0">
+          <div class="step-content">
+            <!-- Hero Section with Large Shark Logo -->
+            <div class="hero-section py-0">
+              <div class="logo-success-container">
+                <div class="logo-container">
+                  <img src="/blue_simple.png" alt="Lopes2Tech Shark" class="thank-you-logo">
+                  <div class="logo-glow"></div>
+                </div>
+                
+                <div class="success-badge">
+                  <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="success-text">
+                    <span class="success-label">Success!</span>
+                    <span class="success-subtitle">Message Received</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Main Thank You Content -->
+            <div class="thank-you-content">
+              <h2>Thank you for your inquiry!</h2>
+              <p class="thank-you-message mb-0">
+                <i class="fas fa-rocket"></i> We have received your project details and our expert team is already reviewing your requirements. 
+                You'll receive a personalized proposal within <strong>24 hours</strong> that's tailored specifically to your needs.
+              </p>
+            </div>
           </div>
         </div>
       }
