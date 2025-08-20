@@ -113,6 +113,15 @@
     }
   }
   
+  // Theme-specific logo visibility
+  .light-theme-logo {
+    display: block;
+  }
+  
+  .dark-theme-logo {
+    display: none;
+  }
+  
   &:hover::before {
     animation-duration: 1s;
     background: radial-gradient(circle, 
@@ -125,6 +134,28 @@
   &:hover::after {
     animation-duration: 1.2s;
     background: rgba(var(--accent-rgb), 0.25);
+  }
+}
+
+// Dark theme logo visibility (when body has dark-theme class)
+:host-context(.dark-theme) .footer-logo {
+  .light-theme-logo {
+    display: none;
+  }
+  
+  .dark-theme-logo {
+    display: block;
+  }
+}
+
+// Ensure light theme visibility (when body has light-theme class)
+:host-context(.light-theme) .footer-logo {
+  .light-theme-logo {
+    display: block;
+  }
+  
+  .dark-theme-logo {
+    display: none;
   }
 }
 

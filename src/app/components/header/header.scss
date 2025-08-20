@@ -149,7 +149,37 @@
   object-fit: contain;
   position: absolute;
   top: -0.5rem;
+  
+  // Theme-specific logo visibility
+  &.light-theme-logo {
+    display: block;
+  }
+  
+  &.dark-theme-logo {
+    display: none;
+  }
+}
 
+// Dark theme logo visibility (when body has dark-theme class)
+:host-context(.dark-theme) .logo {
+  .light-theme-logo {
+    display: none;
+  }
+  
+  .dark-theme-logo {
+    display: block;
+  }
+}
+
+// Ensure light theme visibility (when body has light-theme class)
+:host-context(.light-theme) .logo {
+  .light-theme-logo {
+    display: block;
+  }
+  
+  .dark-theme-logo {
+    display: none;
+  }
 }
 
 .logo-text {
