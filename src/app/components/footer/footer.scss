@@ -5,6 +5,7 @@
   padding: 2rem 0;
   text-align: center;
   position: relative;
+  overflow: hidden;
   
   &::before {
     content: '';
@@ -86,6 +87,23 @@
     font-weight: 700;
     position: relative;
     z-index: 2;
+  }
+  
+  .footer-logo-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 1;
+    
+    .footer-logo-bg-image {
+      height: 200px;
+      width: auto;
+      filter: blur(1px);
+      animation: backgroundFloat 8s ease-in-out infinite alternate;
+    }
   }
   
   .footer-logo-image {
@@ -186,6 +204,21 @@
   100% {
     opacity: 0.8;
     transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes backgroundFloat {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.08;
+  }
+  50% {
+    transform: scale(1.05) rotate(2deg);
+    opacity: 0.05;
+  }
+  100% {
+    transform: scale(1.02) rotate(-1deg);
+    opacity: 0.08;
   }
 }
 

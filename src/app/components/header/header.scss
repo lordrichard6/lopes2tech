@@ -8,6 +8,7 @@
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(14, 116, 144, 0.15);
   transition: all 0.4s ease;
+  overflow: hidden;
 }
 
 .nav {
@@ -140,7 +141,48 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  position: relative;
+  position: relative; 
+}
+
+.logo-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -55%);
+  z-index: 0;
+  opacity: 0.3;
+  width: 400px;
+  height: 400px;
+  pointer-events: none;
+}
+
+.logo-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1;
+  filter: blur(1px);
+  // animation: backgroundFloat 20s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes backgroundFloat {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.04;
+  }
+  25% {
+    transform: rotate(2deg) scale(1.05);
+    opacity: 0.06;
+  }
+  50% {
+    transform: rotate(0deg) scale(1.02);
+    opacity: 0.05;
+  }
+  75% {
+    transform: rotate(-2deg) scale(1.03);
+    opacity: 0.07;
+  }
 }
 
 .logo-image {
@@ -149,6 +191,17 @@
   object-fit: contain;
   position: absolute;
   top: -0.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 2px 8px rgba(var(--ocean-cyan), 0.3))
+          drop-shadow(0 0 15px rgba(var(--ocean-cyan), 0.2));
+  animation: logoGlow 3s ease-in-out infinite alternate;
+  
+  &:hover {
+    filter: drop-shadow(0 4px 16px rgba(var(--ocean-cyan), 0.6))
+            drop-shadow(0 0 25px rgba(var(--ocean-cyan), 0.4))
+            drop-shadow(0 0 35px rgba(var(--accent-color), 0.3));
+    transform: scale(1.05);
+  }
   
   // Theme-specific logo visibility
   &.light-theme-logo {
@@ -274,6 +327,18 @@
   }
 }
 
+@keyframes logoGlow {
+  0% {
+    filter: drop-shadow(0 2px 8px rgba(var(--ocean-cyan), 0.3))
+            drop-shadow(0 0 15px rgba(var(--ocean-cyan), 0.2));
+  }
+  100% {
+    filter: drop-shadow(0 3px 12px rgba(var(--ocean-cyan), 0.5))
+            drop-shadow(0 0 20px rgba(var(--ocean-cyan), 0.3))
+            drop-shadow(0 0 30px rgba(var(--accent-color), 0.2));
+  }
+}
+
 @keyframes pulse-bg {
   0%, 100% {
     opacity: 1;
@@ -305,6 +370,15 @@
 
 // Scroll-activated neon effects
 .logo.neon-active {
+  .logo-image {
+    filter: drop-shadow(0 4px 16px rgba(var(--ocean-cyan), 0.7))
+            drop-shadow(0 0 25px rgba(var(--ocean-cyan), 0.5))
+            drop-shadow(0 0 40px rgba(var(--accent-color), 0.4))
+            drop-shadow(0 0 60px rgba(var(--ocean-cyan), 0.2));
+    animation: logoGlow 2s ease-in-out infinite alternate;
+    transform: scale(1.02);
+  }
+  
   .logo-lopes::after {
     transform: scaleX(1);
   }
