@@ -46,6 +46,16 @@
                 "glob": "sitemap.xml",
                 "input": "src",
                 "output": "/"
+              },
+              {
+                "glob": "site.webmanifest",
+                "input": "src",
+                "output": "/"
+              },
+              {
+                "glob": "browserconfig.xml",
+                "input": "src",
+                "output": "/"
               }
             ],
             "styles": [
