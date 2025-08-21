@@ -20,13 +20,23 @@ export class TranslatePipe implements PipeTransform, OnDestroy {
     });
   }
   
-  transform(key: string): string {
+  transform(key: string, params?: any): string {
     if (!key) {
       return '';
     }
 
     // Use the instant method for synchronous translation
-    return this.translationService.instant(key);
+    let translation = this.translationService.instant(key);
+    
+    // Replace parameters if provided
+    if (params && typeof params === 'object') {
+      Object.keys(params).forEach(param => {
+        const placeholder = `{{${param}}}`;
+        translation = translation.replace(new RegExp(placeholder, 'g'), params[param]);
+      });
+    }
+    
+    return translation;
   }
   
   ngOnDestroy(): void {

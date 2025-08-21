@@ -203,6 +203,98 @@ export class TranslationService {
           back_home: '← Back to Home',
           all_rights: 'All rights reserved.'
         }
+      },
+      multistep: {
+        title: 'Let\'s Get Started',
+        subtitle: 'Tell us about your project in just a few steps',
+        progress: {
+          step: 'Step {{current}} of {{total}}'
+        },
+        steps: {
+          welcome: {
+            title: 'Welcome! Let\'s understand your needs',
+            description: 'We\'ll ask you a few quick questions to better understand your project and provide you with the most relevant solutions.',
+            button: 'Get Started'
+          },
+          service: {
+            title: 'What do you need?',
+            description: 'Select the service that best matches your requirements:',
+            options: {
+              automation: {
+                title: 'Process Automation',
+                description: 'Automate your daily operations and workflows'
+              },
+              webapp: {
+                title: 'Web Applications & SaaS',
+                description: 'Custom web apps and SaaS platforms'
+              },
+              web: {
+                title: 'Web Development',
+                description: 'Modern, responsive websites'
+              },
+              tools: {
+                title: 'Custom Tools',
+                description: 'Specialized automation tools and integrations'
+              },
+              unsure: {
+                title: 'I don\'t quite know',
+                description: 'Let\'s discuss your needs and find the best solution'
+              },
+              other: {
+                title: 'Other',
+                description: 'Something else - tell us more about it'
+              }
+            }
+          },
+          budget: {
+            title: 'What is your budget?',
+            description: 'Help us understand your budget range for this project:',
+            currency: 'Currency'
+          },
+          message: {
+            title: 'Is there anything else you want to share with us?',
+            description: 'Feel free to share any additional thoughts, questions, or specific requirements:',
+            placeholder: 'Tell us about your timeline, specific requirements, preferred communication methods, or any questions you might have...'
+          },
+          contact: {
+            title: 'Let\'s get in touch',
+            description: 'Please provide your contact information so we can reach out to you:',
+            firstName: 'First Name',
+            firstNamePlaceholder: 'John',
+            lastName: 'Last Name',
+            lastNamePlaceholder: 'Doe',
+            company: 'Company',
+            companyPlaceholder: 'Your company name (optional)',
+            email: 'Email Address',
+            emailPlaceholder: 'your.email@company.com',
+            location: 'Location',
+            locationPlaceholder: 'City, Country',
+            phone: 'Phone Number',
+            phonePlaceholder: '+1 (555) 123-4567 (optional)',
+            summary: {
+              title: 'Project Summary',
+              service: 'Service',
+              specificNeeds: 'Specific needs',
+              description: 'Description',
+              budget: 'Budget',
+              additionalNotes: 'Additional notes'
+            }
+          }
+        },
+        buttons: {
+          back: 'Back',
+          continue: 'Continue',
+          send: 'Send Message',
+          sending: 'Sending...'
+        }
+      },
+      thankYou: {
+        success: {
+          label: 'Success!',
+          subtitle: 'Message Received'
+        },
+        title: 'Thank you for your inquiry!',
+        message: 'We have received your project details and our expert team is already reviewing your requirements. You\'ll receive a personalized proposal within **24 hours** that\'s tailored specifically to your needs.'
       }
     };
   }

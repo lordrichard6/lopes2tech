@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { MultiStepFormData } from '../../../services/email.service';
+import { TranslatePipe } from '../../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-thank-you',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './thank-you.html',
   styleUrl: './thank-you.scss'
 })

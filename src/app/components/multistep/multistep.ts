@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { BusinessInfoService, BusinessInfo } from '../../services/business-info';
 import { EmailService, ContactFormData, MultiStepFormData } from '../../services/email.service';
 import { TranslatePipe } from '../../pipes/translate.pipe';
+import { TranslationService } from '../../services/translation.service';
 import { ThankYouComponent } from './thank-you/thank-you';
 
 @Component({
   selector: 'app-multistep',
-  imports: [ReactiveFormsModule, FormsModule, ThankYouComponent],
+  imports: [ReactiveFormsModule, FormsModule, ThankYouComponent, TranslatePipe],
   templateUrl: './multistep.html',
   styleUrl: './multistep.scss'
 })
@@ -29,7 +30,8 @@ export class MultistepComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private businessInfoService: BusinessInfoService,
-    private emailService: EmailService
+    private emailService: EmailService,
+    private translationService: TranslationService
   ) {
     this.contactForm = this.fb.group({
       budget: [5000], // Default budget value
@@ -84,44 +86,24 @@ export class MultistepComponent implements OnInit {
   }
 
   getServiceDisplayName(service: string | null): string {
-    const serviceNames: { [key: string]: string } = {
-      'automation': 'Process Automation',
-      'webapp': 'Web Applications & SaaS',
-      'web': 'Web Development',
-      'tools': 'Custom Tools',
-      'unsure': 'Not sure yet',
-      'other': 'Other'
-    };
-    return service ? serviceNames[service] || service : 'No service selected';
+    if (!service) return this.translationService.instant('multistep.validation.required');
+    
+    const serviceKey = `multistep.steps.service.options.${service}.title`;
+    return this.translationService.instant(serviceKey);
   }
 
   getDetailServicesDisplay(): string {
-    const serviceLabels: { [key: string]: string } = {
-      // Automation
-      'rpa': 'RPA (Robotic Process Automation)',
-      'workflow': 'Workflow Management',
-      'integration': 'System Integration',
-      'reporting': 'Automated Reporting',
-      // Web Apps & SaaS
-      'saas': 'SaaS Platform Development',
-      'angular': 'Angular Applications',
-      'django': 'Django Backend',
-      'api': 'API Development',
-      'database': 'Database Design',
-      // Web Development
-      'responsive': 'Responsive Design',
-      'ecommerce': 'E-commerce Solutions',
-      'cms': 'Content Management',
-      'portfolio': 'Portfolio & Business Sites',
-      // Custom Tools
-      'scraping': 'Web Scraping Tools',
-      'cli': 'Command Line Tools',
-      'desktop': 'Desktop Applications',
-      'maintenance': 'System Maintenance'
-    };
-    
     return this.selectedDetailServices
-      .map(service => serviceLabels[service] || service)
+      .map(service => {
+        // Determine the service category based on the selected main service
+        let category = 'automation'; // default
+        if (this.selectedService === 'webapp') category = 'webapp';
+        else if (this.selectedService === 'web') category = 'web';
+        else if (this.selectedService === 'tools') category = 'tools';
+        
+        const translationKey = `multistep.steps.details.${category}.${service}.title`;
+        return this.translationService.instant(translationKey);
+      })
       .join(', ');
   }
 
@@ -270,14 +252,14 @@ export class MultistepComponent implements OnInit {
   getErrorMessage(fieldName: string): string {
     const control = this.contactForm.get(fieldName);
     if (control?.hasError('required')) {
-      return `${this.getFieldDisplayName(fieldName)} is required`;
+      return this.translationService.instant('multistep.validation.required');
     }
     if (control?.hasError('email')) {
-      return 'Please enter a valid email address';
+      return this.translationService.instant('multistep.validation.email');
     }
     if (control?.hasError('minlength')) {
       const requiredLength = control.errors?.['minlength'].requiredLength;
-      return `${this.getFieldDisplayName(fieldName)} must be at least ${requiredLength} characters`;
+      return this.translationService.instant('multistep.validation.minlength', { min: requiredLength });
     }
     return '';
   }

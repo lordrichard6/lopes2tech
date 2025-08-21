@@ -87,6 +87,185 @@
       "location": "Localização"
     }
   },
+  "multistep": {
+    "title": "Vamos Começar",
+    "subtitle": "Conte-nos sobre o seu projeto em apenas alguns passos",
+    "progress": {
+      "step": "Passo {{current}} de {{total}}"
+    },
+    "steps": {
+      "welcome": {
+        "title": "Bem-vindo! Vamos entender as suas necessidades",
+        "description": "Faremos algumas perguntas rápidas para compreender melhor o seu projeto e fornecer as soluções mais relevantes.",
+        "button": "Começar"
+      },
+      "service": {
+        "title": "Do que precisa?",
+        "description": "Selecione o serviço que melhor corresponde aos seus requisitos:",
+        "options": {
+          "automation": {
+            "title": "Automação de Processos",
+            "description": "Automatize as suas operações e fluxos de trabalho diários"
+          },
+          "webapp": {
+            "title": "Aplicações Web & SaaS",
+            "description": "Aplicações web personalizadas e plataformas SaaS"
+          },
+          "web": {
+            "title": "Desenvolvimento Web",
+            "description": "Websites modernos e responsivos"
+          },
+          "tools": {
+            "title": "Ferramentas Personalizadas",
+            "description": "Ferramentas especializadas de automação e integrações"
+          },
+          "unsure": {
+            "title": "Não tenho bem a certeza",
+            "description": "Vamos discutir as suas necessidades e encontrar a melhor solução"
+          },
+          "other": {
+            "title": "Outro",
+            "description": "Algo diferente - conte-nos mais sobre isso"
+          }
+        }
+      },
+      "details": {
+        "title": "Que mais posso fazer por si?",
+        "title_unsure": "O que pretende melhorar?",
+        "description": "Que serviços específicos está à procura?",
+        "description_unsure": "Ajude-nos a compreender os seus desafios e objetivos atuais.",
+        "automation": {
+          "rpa": {
+            "title": "RPA (Automação Robótica de Processos)",
+            "description": "Automatize tarefas repetitivas e entrada de dados"
+          },
+          "workflow": {
+            "title": "Gestão de Fluxo de Trabalho",
+            "description": "Otimize processos de negócio e aprovações"
+          },
+          "integration": {
+            "title": "Integração de Sistemas",
+            "description": "Conecte diferentes softwares e bases de dados"
+          },
+          "reporting": {
+            "title": "Relatórios Automatizados",
+            "description": "Gere relatórios e dashboards automaticamente"
+          }
+        },
+        "webapp": {
+          "saas": {
+            "title": "Desenvolvimento de Plataforma SaaS",
+            "description": "Aplicações cloud multi-inquilino"
+          },
+          "angular": {
+            "title": "Aplicações Angular",
+            "description": "Frontend moderno com framework Angular"
+          },
+          "django": {
+            "title": "Backend Django",
+            "description": "Desenvolvimento backend robusto em Python"
+          },
+          "api": {
+            "title": "Desenvolvimento de APIs",
+            "description": "APIs RESTful e microserviços"
+          }
+        },
+        "web": {
+          "responsive": {
+            "title": "Websites simples de 1 página",
+            "description": "Websites limpos e focados numa só página"
+          },
+          "ecommerce": {
+            "title": "Soluções E-commerce",
+            "description": "Lojas online e sistemas de pagamento"
+          },
+          "cms": {
+            "title": "Gestão de Conteúdo",
+            "description": "Sistemas de gestão de conteúdo fáceis de usar"
+          },
+          "portfolio": {
+            "title": "Sites de Portfólio e Negócios",
+            "description": "Websites profissionais e portfólios"
+          }
+        },
+        "tools": {
+          "scraping": {
+            "title": "Ferramentas de Web Scraping",
+            "description": "Extração automatizada de dados e monitorização"
+          },
+          "cli": {
+            "title": "Ferramentas de Linha de Comando",
+            "description": "Aplicações CLI personalizadas e scripts"
+          },
+          "desktop": {
+            "title": "Aplicações Desktop",
+            "description": "Software desktop multiplataforma"
+          },
+          "maintenance": {
+            "title": "Manutenção de Sistemas",
+            "description": "Suporte contínuo e otimização"
+          }
+        },
+        "placeholders": {
+          "unsure": "Descreva os seus desafios atuais ou áreas onde gostaria de ver melhorias...",
+          "other": "Descreva o que pretende construir ou alcançar..."
+        }
+      },
+      "budget": {
+        "title": "Qual é o seu orçamento?",
+        "description": "Ajude-nos a compreender a sua faixa orçamental para este projeto:",
+        "currency": "Moeda:"
+      },
+      "message": {
+        "title": "Há mais alguma coisa que queira partilhar connosco?",
+        "description": "Sinta-se à vontade para partilhar quaisquer pensamentos adicionais, questões ou requisitos específicos:",
+        "placeholder": "Conte-nos sobre o seu cronograma, requisitos específicos, métodos de comunicação preferidos, ou quaisquer questões que possa ter..."
+      },
+      "contact": {
+        "title": "Vamos entrar em contacto",
+        "description": "Por favor, forneça as suas informações de contacto para que possamos entrar em contacto consigo:",
+        "firstName": "Primeiro Nome",
+        "firstNamePlaceholder": "João",
+        "lastName": "Último Nome",
+        "lastNamePlaceholder": "Silva", 
+        "company": "Empresa",
+        "companyPlaceholder": "Nome da sua empresa (opcional)",
+        "email": "Endereço de Email",
+        "emailPlaceholder": "seu.email@empresa.com",
+        "location": "Localização",
+        "locationPlaceholder": "Cidade, País",
+        "phone": "Número de Telefone",
+        "phonePlaceholder": "+351 912 345 678 (opcional)",
+        "summary": {
+          "title": "Resumo do Projeto",
+          "service": "Serviço",
+          "specificNeeds": "Necessidades específicas",
+          "description": "Descrição",
+          "budget": "Orçamento",
+          "additionalNotes": "Notas adicionais"
+        }
+      }
+    },
+    "buttons": {
+      "back": "Voltar",
+      "continue": "Continuar",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando..."
+    },
+    "validation": {
+      "required": "Este campo é obrigatório",
+      "email": "Por favor, insira um endereço de email válido",
+      "minlength": "Este campo deve ter pelo menos {{min}} caracteres"
+    }
+  },
+  "thankYou": {
+    "success": {
+      "label": "Sucesso!",
+      "subtitle": "Mensagem Recebida"
+    },
+    "title": "Obrigado pela sua consulta!",
+    "message": "Recebemos os detalhes do seu projeto e a nossa equipa de especialistas já está a analisar os seus requisitos. Receberá uma proposta personalizada dentro de **24 horas** adaptada especificamente às suas necessidades."
+  },
   "footer": {
     "company": "lopes2tech",
     "description": "Simplificando a vida através de soluções de automação inteligente.",

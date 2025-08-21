@@ -1,8 +1,8 @@
 <section id="contact" class="contact">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Let's Get Started</h2>
-      <p class="section-subtitle">Tell us about your project in just a few steps</p>
+      <h2 class="section-title">{{ 'multistep.title' | translate }}</h2>
+      <p class="section-subtitle">{{ 'multistep.subtitle' | translate }}</p>
     </div>
     
     <div class="multi-step-form">
@@ -22,12 +22,12 @@
             <div class="step-icon">
               <i class="fas fa-rocket"></i>
             </div>
-            <h3>Welcome! Let's understand your needs</h3>
-            <p>We'll ask you a few quick questions to better understand your project and provide you with the most relevant solutions.</p>
+            <h3>{{ 'multistep.steps.welcome.title' | translate }}</h3>
+            <p>{{ 'multistep.steps.welcome.description' | translate }}</p>
             
             <div class="step-actions">
               <button class="btn btn-primary" (click)="nextStep()">
-                Get Started <i class="fas fa-arrow-right"></i>
+                {{ 'multistep.steps.welcome.button' | translate }} <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -41,8 +41,8 @@
             <div class="step-icon">
               <i class="fas fa-question-circle"></i>
             </div>
-            <h3>What do you need?</h3>
-            <p>Select the service that best matches your requirements:</p>
+            <h3>{{ 'multistep.steps.service.title' | translate }}</h3>
+            <p>{{ 'multistep.steps.service.description' | translate }}</p>
             
             <div class="service-options">
               <div class="service-option" 
@@ -52,8 +52,8 @@
                   <i class="fas fa-cogs"></i>
                 </div>
                 <div class="option-content">
-                  <h4>Process Automation</h4>
-                  <p>Automate your daily operations and workflows</p>
+                  <h4>{{ 'multistep.steps.service.options.automation.title' | translate }}</h4>
+                  <p>{{ 'multistep.steps.service.options.automation.description' | translate }}</p>
                 </div>
               </div>
 
@@ -64,8 +64,8 @@
                   <i class="fas fa-laptop-code"></i>
                 </div>
                 <div class="option-content">
-                  <h4>Web Applications & SaaS</h4>
-                  <p>Custom web apps and SaaS platforms</p>
+                  <h4>{{ 'multistep.steps.service.options.webapp.title' | translate }}</h4>
+                  <p>{{ 'multistep.steps.service.options.webapp.description' | translate }}</p>
                 </div>
               </div>
 
@@ -76,8 +76,8 @@
                   <i class="fas fa-code"></i>
                 </div>
                 <div class="option-content">
-                  <h4>Web Development</h4>
-                  <p>Modern, responsive websites</p>
+                  <h4>{{ 'multistep.steps.service.options.web.title' | translate }}</h4>
+                  <p>{{ 'multistep.steps.service.options.web.description' | translate }}</p>
                 </div>
               </div>
 
@@ -88,8 +88,8 @@
                   <i class="fas fa-tools"></i>
                 </div>
                 <div class="option-content">
-                  <h4>Custom Tools</h4>
-                  <p>Specialized automation tools and integrations</p>
+                  <h4>{{ 'multistep.steps.service.options.tools.title' | translate }}</h4>
+                  <p>{{ 'multistep.steps.service.options.tools.description' | translate }}</p>
                 </div>
               </div>
 
@@ -100,8 +100,8 @@
                   <i class="fas fa-lightbulb"></i>
                 </div>
                 <div class="option-content">
-                  <h4>I don't quite know</h4>
-                  <p>Let's discuss your needs and find the best solution</p>
+                  <h4>{{ 'multistep.steps.service.options.unsure.title' | translate }}</h4>
+                  <p>{{ 'multistep.steps.service.options.unsure.description' | translate }}</p>
                 </div>
               </div>
 
@@ -112,20 +112,20 @@
                   <i class="fas fa-ellipsis-h"></i>
                 </div>
                 <div class="option-content">
-                  <h4>Other</h4>
-                  <p>Something else - tell us more about it</p>
+                  <h4>{{ 'multistep.steps.service.options.other.title' | translate }}</h4>
+                  <p>{{ 'multistep.steps.service.options.other.description' | translate }}</p>
                 </div>
               </div>
             </div>
             
             <div class="step-actions">
               <button class="btn btn-secondary" (click)="previousStep()">
-                <i class="fas fa-arrow-left"></i> Back
+                <i class="fas fa-arrow-left"></i> {{ 'multistep.buttons.back' | translate }}
               </button>
               <button class="btn btn-primary" 
                       [disabled]="!selectedService"
                       (click)="nextStep()">
-                Continue <i class="fas fa-arrow-right"></i>
+                {{ 'multistep.buttons.continue' | translate }} <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -140,11 +140,11 @@
               <i class="fas fa-list-check"></i>
             </div>
             @if (selectedService === 'unsure') {
-              <h3>What you want to improve?</h3>
-              <p>Help us understand your current challenges and goals.</p>
+              <h3>{{ 'multistep.steps.details.title_unsure' | translate }}</h3>
+              <p>{{ 'multistep.steps.details.description_unsure' | translate }}</p>
             } @else {
-              <h3>What else can I do for you?</h3>
-              <p>What specific services are you looking for?</p>
+              <h3>{{ 'multistep.steps.details.title' | translate }}</h3>
+              <p>{{ 'multistep.steps.details.description' | translate }}</p>
             }
             
             <!-- Process Automation Services -->
@@ -157,8 +157,8 @@
                     <i class="fas fa-robot"></i>
                   </div>
                   <div class="option-content">
-                    <h4>RPA (Robotic Process Automation)</h4>
-                    <p>Automate repetitive tasks and data entry</p>
+                    <h4>{{ 'multistep.steps.details.automation.rpa.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.automation.rpa.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -169,8 +169,8 @@
                     <i class="fas fa-sitemap"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Workflow Management</h4>
-                    <p>Streamline business processes and approvals</p>
+                    <h4>{{ 'multistep.steps.details.automation.workflow.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.automation.workflow.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -181,8 +181,8 @@
                     <i class="fas fa-link"></i>
                   </div>
                   <div class="option-content">
-                    <h4>System Integration</h4>
-                    <p>Connect different software and databases</p>
+                    <h4>{{ 'multistep.steps.details.automation.integration.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.automation.integration.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -193,8 +193,8 @@
                     <i class="fas fa-chart-line"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Automated Reporting</h4>
-                    <p>Generate reports and dashboards automatically</p>
+                    <h4>{{ 'multistep.steps.details.automation.reporting.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.automation.reporting.description' | translate }}</p>
                   </div>
                 </div>
               </div>
@@ -210,8 +210,8 @@
                     <i class="fas fa-cloud"></i>
                   </div>
                   <div class="option-content">
-                    <h4>SaaS Platform Development</h4>
-                    <p>Multi-tenant cloud applications</p>
+                    <h4>{{ 'multistep.steps.details.webapp.saas.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.webapp.saas.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -222,8 +222,8 @@
                     <i class="fab fa-angular"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Angular Applications</h4>
-                    <p>Modern frontend with Angular framework</p>
+                    <h4>{{ 'multistep.steps.details.webapp.angular.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.webapp.angular.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -234,8 +234,8 @@
                     <i class="fab fa-python"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Django Backend</h4>
-                    <p>Robust Python backend development</p>
+                    <h4>{{ 'multistep.steps.details.webapp.django.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.webapp.django.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -246,8 +246,8 @@
                     <i class="fas fa-exchange-alt"></i>
                   </div>
                   <div class="option-content">
-                    <h4>API Development</h4>
-                    <p>RESTful APIs and microservices</p>
+                    <h4>{{ 'multistep.steps.details.webapp.api.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.webapp.api.description' | translate }}</p>
                   </div>
                 </div>
               </div>
@@ -263,8 +263,8 @@
                     <i class="fas fa-file-alt"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Simple 1 page websites</h4>
-                    <p>Clean, focused single-page websites</p>
+                    <h4>{{ 'multistep.steps.details.web.responsive.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.web.responsive.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -275,8 +275,8 @@
                     <i class="fas fa-shopping-cart"></i>
                   </div>
                   <div class="option-content">
-                    <h4>E-commerce Solutions</h4>
-                    <p>Online stores and payment systems</p>
+                    <h4>{{ 'multistep.steps.details.web.ecommerce.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.web.ecommerce.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -287,8 +287,8 @@
                     <i class="fas fa-edit"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Content Management</h4>
-                    <p>Easy-to-use content management systems</p>
+                    <h4>{{ 'multistep.steps.details.web.cms.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.web.cms.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -299,8 +299,8 @@
                     <i class="fas fa-briefcase"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Portfolio & Business Sites</h4>
-                    <p>Professional websites and portfolios</p>
+                    <h4>{{ 'multistep.steps.details.web.portfolio.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.web.portfolio.description' | translate }}</p>
                   </div>
                 </div>
               </div>
@@ -316,8 +316,8 @@
                     <i class="fas fa-spider"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Web Scraping Tools</h4>
-                    <p>Automated data extraction and monitoring</p>
+                    <h4>{{ 'multistep.steps.details.tools.scraping.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.tools.scraping.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -328,8 +328,8 @@
                     <i class="fas fa-terminal"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Command Line Tools</h4>
-                    <p>Custom CLI applications and scripts</p>
+                    <h4>{{ 'multistep.steps.details.tools.cli.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.tools.cli.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -340,8 +340,8 @@
                     <i class="fas fa-desktop"></i>
                   </div>
                   <div class="option-content">
-                    <h4>Desktop Applications</h4>
-                    <p>Cross-platform desktop software</p>
+                    <h4>{{ 'multistep.steps.details.tools.desktop.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.tools.desktop.description' | translate }}</p>
                   </div>
                 </div>
 
@@ -352,8 +352,8 @@
                     <i class="fas fa-wrench"></i>
                   </div>
                   <div class="option-content">
-                    <h4>System Maintenance</h4>
-                    <p>Ongoing support and optimization</p>
+                    <h4>{{ 'multistep.steps.details.tools.maintenance.title' | translate }}</h4>
+                    <p>{{ 'multistep.steps.details.tools.maintenance.description' | translate }}</p>
                   </div>
                 </div>
               </div>
@@ -368,7 +368,7 @@
                     id="projectDescription" 
                     [(ngModel)]="projectDescription"
                     rows="4"
-                    placeholder="Describe your current challenges or areas where you'd like to see improvement..."
+                    placeholder="{{ 'multistep.steps.details.placeholders.unsure' | translate }}"
                     class="form-textarea"></textarea>
                 </div>
               </div>
@@ -382,7 +382,7 @@
                     id="projectDescription" 
                     [(ngModel)]="projectDescription"
                     rows="4"
-                    placeholder="Describe what you're looking to build or achieve..."
+                    placeholder="{{ 'multistep.steps.details.placeholders.other' | translate }}"
                     class="form-textarea"></textarea>
                 </div>
               </div>
@@ -390,12 +390,12 @@
             
             <div class="step-actions">
               <button class="btn btn-secondary" (click)="previousStep()">
-                <i class="fas fa-arrow-left"></i> Back
+                <i class="fas fa-arrow-left"></i> {{ 'multistep.buttons.back' | translate }}
               </button>
               <button class="btn btn-primary" 
                       [disabled]="!canProceedFromStep3()"
                       (click)="nextStep()">
-                Continue <i class="fas fa-arrow-right"></i>
+                {{ 'multistep.buttons.continue' | translate }} <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -409,15 +409,15 @@
             <div class="step-icon">
               <i class="fas fa-euro-sign"></i>
             </div>
-            <h3>What is your budget?</h3>
-            <p>Help us understand your budget range for this project:</p>
+            <h3>{{ 'multistep.steps.budget.title' | translate }}</h3>
+            <p>{{ 'multistep.steps.budget.description' | translate }}</p>
             
             <form [formGroup]="contactForm" class="budget-form">
               <!-- Budget Assessment -->
               <div class="form-group budget-section">
                 <!-- Currency Selection -->
                 <div class="currency-selector">
-                  <label>Currency:</label>
+                  <label>{{ 'multistep.steps.budget.currency' | translate }}:</label>
                   <div class="currency-options">
                     <button type="button" 
                             class="currency-option" 
@@ -464,10 +464,10 @@
               
               <div class="step-actions">
                 <button type="button" class="btn btn-secondary" (click)="previousStep()">
-                  <i class="fas fa-arrow-left"></i> Back
+                  <i class="fas fa-arrow-left"></i> {{ 'multistep.buttons.back' | translate }}
                 </button>
                 <button type="button" class="btn btn-primary" (click)="nextStep()">
-                  Continue <i class="fas fa-arrow-right"></i>
+                  {{ 'multistep.buttons.continue' | translate }} <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
             </form>
@@ -482,8 +482,8 @@
             <div class="step-icon">
               <i class="fas fa-comment-dots"></i>
             </div>
-            <h3>Is there anything else you want to share with us?</h3>
-            <p>Feel free to share any additional thoughts, questions, or specific requirements:</p>
+            <h3>{{ 'multistep.steps.message.title' | translate }}</h3>
+            <p>{{ 'multistep.steps.message.description' | translate }}</p>
             
             <form [formGroup]="contactForm" class="message-form">
               <div class="form-group">
@@ -491,16 +491,16 @@
                   id="additionalMessage"
                   formControlName="additionalMessage"
                   rows="6"
-                  placeholder="Tell us about your timeline, specific requirements, preferred communication methods, or any questions you might have..."
+                  placeholder="{{ 'multistep.steps.message.placeholder' | translate }}"
                   class="form-textarea"></textarea>
               </div>
               
               <div class="step-actions">
                 <button type="button" class="btn btn-secondary" (click)="previousStep()">
-                  <i class="fas fa-arrow-left"></i> Back
+                  <i class="fas fa-arrow-left"></i> {{ 'multistep.buttons.back' | translate }}
                 </button>
                 <button type="button" class="btn btn-primary" (click)="nextStep()">
-                  Continue <i class="fas fa-arrow-right"></i>
+                  {{ 'multistep.buttons.continue' | translate }} <i class="fas fa-arrow-right"></i>
                 </button>
               </div>
             </form>
@@ -515,18 +515,18 @@
             <div class="step-icon">
               <i class="fas fa-user"></i>
             </div>
-            <h3>Let's get in touch</h3>
-            <p>Please provide your contact information so we can reach out to you:</p>
+            <h3>{{ 'multistep.steps.contact.title' | translate }}</h3>
+            <p>{{ 'multistep.steps.contact.description' | translate }}</p>
             
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
               <div class="form-row">
                 <div class="form-group">
-                  <label for="firstName">First Name *</label>
+                  <label for="firstName">{{ 'multistep.steps.contact.firstName' | translate }} *</label>
                   <input 
                     type="text" 
                     id="firstName" 
                     formControlName="firstName"
-                    placeholder="John"
+                    placeholder="{{ 'multistep.steps.contact.firstNamePlaceholder' | translate }}"
                     [class.error]="contactForm.get('firstName')?.invalid && contactForm.get('firstName')?.touched">
                   @if (contactForm.get('firstName')?.invalid && contactForm.get('firstName')?.touched) {
                     <div class="error-message">{{ getErrorMessage('firstName') }}</div>
@@ -534,12 +534,12 @@
                 </div>
                 
                 <div class="form-group">
-                  <label for="lastName">Last Name *</label>
+                  <label for="lastName">{{ 'multistep.steps.contact.lastName' | translate }} *</label>
                   <input 
                     type="text" 
                     id="lastName" 
                     formControlName="lastName"
-                    placeholder="Doe"
+                    placeholder="{{ 'multistep.steps.contact.lastNamePlaceholder' | translate }}"
                     [class.error]="contactForm.get('lastName')?.invalid && contactForm.get('lastName')?.touched">
                   @if (contactForm.get('lastName')?.invalid && contactForm.get('lastName')?.touched) {
                     <div class="error-message">{{ getErrorMessage('lastName') }}</div>
@@ -548,22 +548,22 @@
               </div>
 
               <div class="form-group">
-                <label for="company">Company</label>
+                <label for="company">{{ 'multistep.steps.contact.company' | translate }}</label>
                 <input 
                   type="text" 
                   id="company" 
                   formControlName="company"
-                  placeholder="Your company name (optional)">
+                  placeholder="{{ 'multistep.steps.contact.companyPlaceholder' | translate }}">
               </div>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="email">Email Address *</label>
+                  <label for="email">{{ 'multistep.steps.contact.email' | translate }} *</label>
                   <input 
                     type="email" 
                     id="email" 
                     formControlName="email"
-                    placeholder="your.email@company.com"
+                    placeholder="{{ 'multistep.steps.contact.emailPlaceholder' | translate }}"
                     [class.error]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
                   @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
                     <div class="error-message">{{ getErrorMessage('email') }}</div>
@@ -571,12 +571,12 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="location">Location *</label>
+                  <label for="location">{{ 'multistep.steps.contact.location' | translate }} *</label>
                   <input 
                     type="text" 
                     id="location" 
                     formControlName="location"
-                    placeholder="City, Country"
+                    placeholder="{{ 'multistep.steps.contact.locationPlaceholder' | translate }}"
                     [class.error]="contactForm.get('location')?.invalid && contactForm.get('location')?.touched">
                   @if (contactForm.get('location')?.invalid && contactForm.get('location')?.touched) {
                     <div class="error-message">{{ getErrorMessage('location') }}</div>
@@ -585,52 +585,52 @@
               </div>
 
               <div class="form-group">
-                <label for="phone">Phone Number</label>
+                <label for="phone">{{ 'multistep.steps.contact.phone' | translate }}</label>
                 <input 
                   type="tel" 
                   id="phone" 
                   formControlName="phone"
-                  placeholder="+1 (555) 123-4567 (optional)">
+                  placeholder="{{ 'multistep.steps.contact.phonePlaceholder' | translate }}">
               </div>
 
               <!-- Project Summary -->
               <div class="project-summary">
-                <h4>Project Summary</h4>
+                <h4>{{ 'multistep.steps.contact.summary.title' | translate }}</h4>
                 <div class="summary-item">
-                  <strong>Service:</strong> {{ getServiceDisplayName(selectedService) }}
+                  <strong>{{ 'multistep.steps.contact.summary.service' | translate }}:</strong> {{ getServiceDisplayName(selectedService) }}
                 </div>
                 @if (selectedDetailServices.length > 0) {
                   <div class="summary-item">
-                    <strong>Specific needs:</strong> {{ getDetailServicesDisplay() }}
+                    <strong>{{ 'multistep.steps.contact.summary.specificNeeds' | translate }}:</strong> {{ getDetailServicesDisplay() }}
                   </div>
                 }
                 @if (projectDescription) {
                   <div class="summary-item">
-                    <strong>Description:</strong> {{ projectDescription }}
+                    <strong>{{ 'multistep.steps.contact.summary.description' | translate }}:</strong> {{ projectDescription }}
                   </div>
                 }
                 <div class="summary-item">
-                  <strong>Budget:</strong> {{ getCurrencySymbol() }}{{ formatBudget(contactForm.get('budget')?.value || 0) }}
+                  <strong>{{ 'multistep.steps.contact.summary.budget' | translate }}:</strong> {{ getCurrencySymbol() }}{{ formatBudget(contactForm.get('budget')?.value || 0) }}
                 </div>
                 @if (contactForm.get('additionalMessage')?.value) {
                   <div class="summary-item">
-                    <strong>Additional notes:</strong> {{ contactForm.get('additionalMessage')?.value }}
+                    <strong>{{ 'multistep.steps.contact.summary.additionalNotes' | translate }}:</strong> {{ contactForm.get('additionalMessage')?.value }}
                   </div>
                 }
               </div>
               
               <div class="step-actions">
                 <button type="button" class="btn btn-secondary" (click)="previousStep()">
-                  <i class="fas fa-arrow-left"></i> Back
+                  <i class="fas fa-arrow-left"></i> {{ 'multistep.buttons.back' | translate }}
                 </button>
                 <button 
                   type="submit" 
                   class="btn btn-primary"
                   [disabled]="contactForm.invalid || isSubmitting">
                   @if (isSubmitting) {
-                    <i class="fas fa-spinner fa-spin"></i> Sending...
+                    <i class="fas fa-spinner fa-spin"></i> {{ 'multistep.buttons.sending' | translate }}
                   } @else {
-                    <i class="fas fa-paper-plane"></i> Send Message
+                    <i class="fas fa-paper-plane"></i> {{ 'multistep.buttons.send' | translate }}
                   }
                 </button>
               </div>

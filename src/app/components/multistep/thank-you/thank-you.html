@@ -13,8 +13,8 @@
             <i class="fas fa-check-circle"></i>
           </div>
           <div class="success-text">
-            <span class="success-label">Success!</span>
-            <span class="success-subtitle">Message Received</span>
+            <span class="success-label">{{ 'thankYou.success.label' | translate }}</span>
+            <span class="success-subtitle">{{ 'thankYou.success.subtitle' | translate }}</span>
           </div>
         </div>
       </div>
@@ -22,10 +22,9 @@
     
     <!-- Main Thank You Content -->
     <div class="thank-you-content">
-      <h2>Thank you for your inquiry!</h2>
+      <h2>{{ 'thankYou.title' | translate }}</h2>
       <p class="thank-you-message">
-        <i class="fas fa-rocket"></i> We have received your project details and our expert team is already reviewing your requirements. 
-        You'll receive a personalized proposal within <strong>24 hours</strong> that's tailored specifically to your needs.
+        <i class="fas fa-rocket"></i> {{ 'thankYou.message' | translate }}
       </p>
     </div>
 

@@ -87,6 +87,185 @@
       "location": "Standort"
     }
   },
+  "multistep": {
+    "title": "Lassen Sie uns anfangen",
+    "subtitle": "Erzählen Sie uns in wenigen Schritten von Ihrem Projekt",
+    "progress": {
+      "step": "Schritt {{current}} von {{total}}"
+    },
+    "steps": {
+      "welcome": {
+        "title": "Willkommen! Lassen Sie uns Ihre Bedürfnisse verstehen",
+        "description": "Wir stellen Ihnen einige schnelle Fragen, um Ihr Projekt besser zu verstehen und Ihnen die relevantesten Lösungen anzubieten.",
+        "button": "Loslegen"
+      },
+      "service": {
+        "title": "Was brauchen Sie?",
+        "description": "Wählen Sie den Service, der am besten zu Ihren Anforderungen passt:",
+        "options": {
+          "automation": {
+            "title": "Prozessautomatisierung",
+            "description": "Automatisieren Sie Ihre täglichen Abläufe und Arbeitsschritte"
+          },
+          "webapp": {
+            "title": "Webanwendungen & SaaS",
+            "description": "Maßgeschneiderte Web-Apps und SaaS-Plattformen"
+          },
+          "web": {
+            "title": "Webentwicklung",
+            "description": "Moderne, responsive Websites"
+          },
+          "tools": {
+            "title": "Maßgeschneiderte Tools",
+            "description": "Spezialisierte Automatisierungs-Tools und Integrationen"
+          },
+          "unsure": {
+            "title": "Ich bin mir nicht ganz sicher",
+            "description": "Lassen Sie uns über Ihre Bedürfnisse sprechen und die beste Lösung finden"
+          },
+          "other": {
+            "title": "Anderes",
+            "description": "Etwas anderes - erzählen Sie uns mehr darüber"
+          }
+        }
+      },
+      "details": {
+        "title": "Was kann ich sonst noch für Sie tun?",
+        "title_unsure": "Was möchten Sie verbessern?",
+        "description": "Welche spezifischen Services suchen Sie?",
+        "description_unsure": "Helfen Sie uns, Ihre aktuellen Herausforderungen und Ziele zu verstehen.",
+        "automation": {
+          "rpa": {
+            "title": "RPA (Robotergestützte Prozessautomatisierung)",
+            "description": "Automatisieren Sie wiederkehrende Aufgaben und Dateneingabe"
+          },
+          "workflow": {
+            "title": "Workflow-Management",
+            "description": "Optimieren Sie Geschäftsprozesse und Genehmigungen"
+          },
+          "integration": {
+            "title": "Systemintegration",
+            "description": "Verbinden Sie verschiedene Software und Datenbanken"
+          },
+          "reporting": {
+            "title": "Automatisierte Berichte",
+            "description": "Generieren Sie automatisch Berichte und Dashboards"
+          }
+        },
+        "webapp": {
+          "saas": {
+            "title": "SaaS-Plattform-Entwicklung",
+            "description": "Multi-Tenant Cloud-Anwendungen"
+          },
+          "angular": {
+            "title": "Angular-Anwendungen",
+            "description": "Modernes Frontend mit Angular Framework"
+          },
+          "django": {
+            "title": "Django Backend",
+            "description": "Robuste Python Backend-Entwicklung"
+          },
+          "api": {
+            "title": "API-Entwicklung",
+            "description": "RESTful APIs und Microservices"
+          }
+        },
+        "web": {
+          "responsive": {
+            "title": "Einfache 1-Seiten-Websites",
+            "description": "Saubere, fokussierte Single-Page-Websites"
+          },
+          "ecommerce": {
+            "title": "E-Commerce-Lösungen",
+            "description": "Online-Shops und Zahlungssysteme"
+          },
+          "cms": {
+            "title": "Content-Management",
+            "description": "Benutzerfreundliche Content-Management-Systeme"
+          },
+          "portfolio": {
+            "title": "Portfolio- & Unternehmens-Sites",
+            "description": "Professionelle Websites und Portfolios"
+          }
+        },
+        "tools": {
+          "scraping": {
+            "title": "Web-Scraping-Tools",
+            "description": "Automatisierte Datenextraktion und Überwachung"
+          },
+          "cli": {
+            "title": "Kommandozeilen-Tools",
+            "description": "Maßgeschneiderte CLI-Anwendungen und Skripte"
+          },
+          "desktop": {
+            "title": "Desktop-Anwendungen",
+            "description": "Plattformübergreifende Desktop-Software"
+          },
+          "maintenance": {
+            "title": "System-Wartung",
+            "description": "Laufende Unterstützung und Optimierung"
+          }
+        },
+        "placeholders": {
+          "unsure": "Beschreiben Sie Ihre aktuellen Herausforderungen oder Bereiche, in denen Sie Verbesserungen sehen möchten...",
+          "other": "Beschreiben Sie, was Sie entwickeln oder erreichen möchten..."
+        }
+      },
+      "budget": {
+        "title": "Wie hoch ist Ihr Budget?",
+        "description": "Helfen Sie uns, Ihren Budgetrahmen für dieses Projekt zu verstehen:",
+        "currency": "Währung:"
+      },
+      "message": {
+        "title": "Gibt es sonst noch etwas, was Sie uns mitteilen möchten?",
+        "description": "Teilen Sie gerne zusätzliche Gedanken, Fragen oder spezifische Anforderungen mit:",
+        "placeholder": "Erzählen Sie uns von Ihrem Zeitplan, spezifischen Anforderungen, bevorzugten Kommunikationsmethoden oder Fragen, die Sie haben könnten..."
+      },
+      "contact": {
+        "title": "Lassen Sie uns in Kontakt treten",
+        "description": "Bitte geben Sie Ihre Kontaktdaten an, damit wir uns bei Ihnen melden können:",
+        "firstName": "Vorname",
+        "firstNamePlaceholder": "Max",
+        "lastName": "Nachname",
+        "lastNamePlaceholder": "Mustermann",
+        "company": "Unternehmen", 
+        "companyPlaceholder": "Ihr Firmenname (optional)",
+        "email": "E-Mail-Adresse",
+        "emailPlaceholder": "ihre.email@unternehmen.com",
+        "location": "Standort",
+        "locationPlaceholder": "Stadt, Land",
+        "phone": "Telefonnummer",
+        "phonePlaceholder": "+49 (0) 123 456789 (optional)",
+        "summary": {
+          "title": "Projektzusammenfassung",
+          "service": "Service",
+          "specificNeeds": "Spezifische Bedürfnisse",
+          "description": "Beschreibung",
+          "budget": "Budget",
+          "additionalNotes": "Zusätzliche Notizen"
+        }
+      }
+    },
+    "buttons": {
+      "back": "Zurück",
+      "continue": "Weiter",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet..."
+    },
+    "validation": {
+      "required": "Dieses Feld ist erforderlich",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "minlength": "Dieses Feld muss mindestens {{min}} Zeichen lang sein"
+    }
+  },
+  "thankYou": {
+    "success": {
+      "label": "Erfolg!",
+      "subtitle": "Nachricht Erhalten"
+    },
+    "title": "Vielen Dank für Ihre Anfrage!",
+    "message": "Wir haben Ihre Projektdetails erhalten und unser Expertenteam überprüft bereits Ihre Anforderungen. Sie erhalten innerhalb von **24 Stunden** ein personalisiertes Angebot, das speziell auf Ihre Bedürfnisse zugeschnitten ist."
+  },
   "footer": {
     "company": "lopes2tech",
     "description": "Das Leben durch intelligente Automatisierungslösungen vereinfachen.",

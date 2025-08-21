@@ -87,6 +87,185 @@
       "location": "Location"
     }
   },
+  "multistep": {
+    "title": "Let's Get Started",
+    "subtitle": "Tell us about your project in just a few steps",
+    "progress": {
+      "step": "Step {{current}} of {{total}}"
+    },
+    "steps": {
+      "welcome": {
+        "title": "Welcome! Let's understand your needs",
+        "description": "We'll ask you a few quick questions to better understand your project and provide you with the most relevant solutions.",
+        "button": "Get Started"
+      },
+      "service": {
+        "title": "What do you need?",
+        "description": "Select the service that best matches your requirements:",
+        "options": {
+          "automation": {
+            "title": "Process Automation",
+            "description": "Automate your daily operations and workflows"
+          },
+          "webapp": {
+            "title": "Web Applications & SaaS",
+            "description": "Custom web apps and SaaS platforms"
+          },
+          "web": {
+            "title": "Web Development",
+            "description": "Modern, responsive websites"
+          },
+          "tools": {
+            "title": "Custom Tools",
+            "description": "Specialized automation tools and integrations"
+          },
+          "unsure": {
+            "title": "I don't quite know",
+            "description": "Let's discuss your needs and find the best solution"
+          },
+          "other": {
+            "title": "Other",
+            "description": "Something else - tell us more about it"
+          }
+        }
+      },
+      "details": {
+        "title": "What else can I do for you?",
+        "title_unsure": "What you want to improve?",
+        "description": "What specific services are you looking for?",
+        "description_unsure": "Help us understand your current challenges and goals.",
+        "automation": {
+          "rpa": {
+            "title": "RPA (Robotic Process Automation)",
+            "description": "Automate repetitive tasks and data entry"
+          },
+          "workflow": {
+            "title": "Workflow Management",
+            "description": "Streamline business processes and approvals"
+          },
+          "integration": {
+            "title": "System Integration",
+            "description": "Connect different software and databases"
+          },
+          "reporting": {
+            "title": "Automated Reporting",
+            "description": "Generate reports and dashboards automatically"
+          }
+        },
+        "webapp": {
+          "saas": {
+            "title": "SaaS Platform Development",
+            "description": "Multi-tenant cloud applications"
+          },
+          "angular": {
+            "title": "Angular Applications",
+            "description": "Modern frontend with Angular framework"
+          },
+          "django": {
+            "title": "Django Backend",
+            "description": "Robust Python backend development"
+          },
+          "api": {
+            "title": "API Development",
+            "description": "RESTful APIs and microservices"
+          }
+        },
+        "web": {
+          "responsive": {
+            "title": "Simple 1 page websites",
+            "description": "Clean, focused single-page websites"
+          },
+          "ecommerce": {
+            "title": "E-commerce Solutions",
+            "description": "Online stores and payment systems"
+          },
+          "cms": {
+            "title": "Content Management",
+            "description": "Easy-to-use content management systems"
+          },
+          "portfolio": {
+            "title": "Portfolio & Business Sites",
+            "description": "Professional websites and portfolios"
+          }
+        },
+        "tools": {
+          "scraping": {
+            "title": "Web Scraping Tools",
+            "description": "Automated data extraction and monitoring"
+          },
+          "cli": {
+            "title": "Command Line Tools",
+            "description": "Custom CLI applications and scripts"
+          },
+          "desktop": {
+            "title": "Desktop Applications",
+            "description": "Cross-platform desktop software"
+          },
+          "maintenance": {
+            "title": "System Maintenance",
+            "description": "Ongoing support and optimization"
+          }
+        },
+        "placeholders": {
+          "unsure": "Describe your current challenges or areas where you'd like to see improvement...",
+          "other": "Describe what you're looking to build or achieve..."
+        }
+      },
+      "budget": {
+        "title": "What is your budget?",
+        "description": "Help us understand your budget range for this project:",
+        "currency": "Currency:"
+      },
+      "message": {
+        "title": "Is there anything else you want to share with us?",
+        "description": "Feel free to share any additional thoughts, questions, or specific requirements:",
+        "placeholder": "Tell us about your timeline, specific requirements, preferred communication methods, or any questions you might have..."
+      },
+      "contact": {
+        "title": "Let's get in touch",
+        "description": "Please provide your contact information so we can reach out to you:",
+        "firstName": "First Name",
+        "firstNamePlaceholder": "John",
+        "lastName": "Last Name", 
+        "lastNamePlaceholder": "Doe",
+        "company": "Company",
+        "companyPlaceholder": "Your company name (optional)",
+        "email": "Email Address",
+        "emailPlaceholder": "your.email@company.com",
+        "location": "Location",
+        "locationPlaceholder": "City, Country",
+        "phone": "Phone Number",
+        "phonePlaceholder": "+1 (555) 123-4567 (optional)",
+        "summary": {
+          "title": "Project Summary",
+          "service": "Service",
+          "specificNeeds": "Specific needs",
+          "description": "Description",
+          "budget": "Budget",
+          "additionalNotes": "Additional notes"
+        }
+      }
+    },
+    "buttons": {
+      "back": "Back",
+      "continue": "Continue",
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "validation": {
+      "required": "This field is required",
+      "email": "Please enter a valid email address",
+      "minlength": "This field must be at least {{min}} characters long"
+    }
+  },
+  "thankYou": {
+    "success": {
+      "label": "Success!",
+      "subtitle": "Message Received"
+    },
+    "title": "Thank you for your inquiry!",
+    "message": "We have received your project details and our expert team is already reviewing your requirements. You'll receive a personalized proposal within **24 hours** that's tailored specifically to your needs."
+  },
   "footer": {
     "company": "lopes2tech",
     "description": "Simplifying life through intelligent automation solutions.",
