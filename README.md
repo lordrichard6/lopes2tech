@@ -4,7 +4,7 @@ A modern, responsive website built with Angular 20+ showcasing lopes2tech's IT s
 
 ## About lopes2tech
 
-lopes2tech is a Swiss Sole Proprietorship company based in Rüschlikon, founded by Paulo R. Lopes. We specialize in:
+lopes2tech is a Swiss Sole Proprietorship company based in Zurich, founded by Paulo R. Lopes. We specialize in:
 
 - Process Automation
 - Web Development
@@ -14,9 +14,8 @@ lopes2tech is a Swiss Sole Proprietorship company based in Rüschlikon, founded 
 ## Company Information
 
 **Paulo R. Lopes**  
-lopes2tech - Sole Proprietorship  
-Riemenstr. 1a  
-Rüschlikon, Switzerland  
+lopes2tech - Sole Proprietorship 
+Zurich, Switzerland  
 Phone: +41 78 798 95 33
 
 ## Development
