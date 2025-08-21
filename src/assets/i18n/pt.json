@@ -28,7 +28,7 @@
     "items": {
       "automation": {
         "title": "Automação de Processos",
-        "description": "Desbloqueie eficiência automatizando as suas operações diárias. Com mais de 10 anos de experiência, projetamos sistemas inteligentes que reduzem tarefas manuais, minimizam erros e libertam recursos valiosos."
+        "description": "Desbloqueie eficiência automatizando as suas operações diárias. Projetamos sistemas inteligentes que reduzem tarefas manuais, minimizam erros e libertam recursos valiosos."
       },
       "web": {
         "title": "Desenvolvimento Web",
@@ -41,6 +41,27 @@
       "tools": {
         "title": "Ferramentas Personalizadas",
         "description": "Desenvolvemos ferramentas de automação que se integram no seu fluxo de trabalho e simplificam processos complexos. Desde automatizar entrada de dados até orquestrar operações digitais em grande escala, as nossas soluções são construídas para aumentar a produtividade e confiabilidade."
+      }
+    }
+  },
+  "serviceDialog": {
+    "title": "O que isto significa?",
+    "services": {
+      "automation": {
+        "explanation": "Usamos IA avançada e Modelos de Linguagem Grande (LLMs) para automatizar os seus processos de negócio de forma inteligente. Pense nisto como ter um assistente inteligente que pode compreender, aprender e responder naturalmente - tratando consultas de clientes, qualificando leads e gerindo fluxos de trabalho complexos sem intervenção humana.",
+        "example": "Por exemplo: um chatbot que pode responder a qualquer pergunta sobre os serviços da sua empresa em qualquer idioma, ou um sistema de IA que qualifica automaticamente leads fazendo as perguntas certas e encaminhando-os para o membro da equipa apropriado."
+      },
+      "web": {
+        "explanation": "Construímos websites que ficam bem em qualquer dispositivo e funcionam perfeitamente. Seja um simples website da empresa ou uma plataforma online complexa, criamos espaços digitais que representam o seu negócio profissionalmente e ajudam a conectar com clientes.",
+        "example": "Por exemplo: um website de restaurante onde os clientes podem ver menus, fazer reservas, e encomendar online tudo num só lugar."
+      },
+      "app": {
+        "explanation": "Criamos aplicações web poderosas e software baseado na nuvem que resolve problemas específicos do negócio. São como ferramentas digitais personalizadas construídas apenas para as suas necessidades - desde sistemas de gestão de clientes a mercados online.",
+        "example": "Por exemplo: um sistema de inventário personalizado que rastreia os seus produtos, alerta quando o stock está baixo, e encomenda automaticamente novos fornecimentos."
+      },
+      "tools": {
+        "explanation": "Desenvolvemos ferramentas de software especializadas que se integram com o que já usa. Estas soluções personalizadas automatizam tarefas específicas no seu fluxo de trabalho, como processamento de dados, gestão de ficheiros, ou conectar diferentes sistemas de software.",
+        "example": "Por exemplo: uma ferramenta que pega dados do seu sistema de vendas e cria automaticamente faturas no seu software de contabilidade."
       }
     }
   },

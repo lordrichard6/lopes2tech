@@ -28,7 +28,7 @@
     "items": {
       "automation": {
         "title": "Prozessautomatisierung",
-        "description": "Steigern Sie die Effizienz durch Automatisierung Ihrer täglichen Abläufe. Mit über 10 Jahren Erfahrung entwickeln wir intelligente Systeme, die manuelle Aufgaben reduzieren, Fehler minimieren und wertvolle Ressourcen freisetzen."
+        "description": "Steigern Sie die Effizienz durch Automatisierung Ihrer täglichen Abläufe. Wir entwickeln intelligente Systeme, die manuelle Aufgaben reduzieren, Fehler minimieren und wertvolle Ressourcen freisetzen."
       },
       "web": {
         "title": "Webentwicklung", 
@@ -41,6 +41,27 @@
       "tools": {
         "title": "Massgeschneiderte Tools",
         "description": "Wir entwickeln Automatisierungstools, die sich in Ihren Arbeitsablauf integrieren und komplexe Prozesse vereinfachen. Von der Automatisierung der Dateneingabe bis zur Orchestrierung umfassender digitaler Operationen sind unsere Lösungen darauf ausgelegt, Produktivität und Zuverlässigkeit zu steigern."
+      }
+    }
+  },
+  "serviceDialog": {
+    "title": "Was bedeutet das?",
+    "services": {
+      "automation": {
+        "explanation": "Wir verwenden fortschrittliche KI und Large Language Models (LLMs), um Ihre Geschäftsprozesse intelligent zu automatisieren. Stellen Sie es sich wie einen intelligenten Assistenten vor, der verstehen, lernen und natürlich reagieren kann - Kundenanfragen bearbeitet, Leads qualifiziert und komplexe Arbeitsabläufe ohne menschliches Eingreifen verwaltet.",
+        "example": "Zum Beispiel: ein Chatbot, der jede Frage zu Ihren Unternehmensdienstleistungen in jeder Sprache beantworten kann, oder ein KI-System, das automatisch Leads qualifiziert, indem es die richtigen Fragen stellt und sie an das entsprechende Teammitglied weiterleitet."
+      },
+      "web": {
+        "explanation": "Wir erstellen Websites, die auf jedem Gerät gut aussehen und perfekt funktionieren. Ob Sie eine einfache Firmenwebsite oder eine komplexe Online-Plattform benötigen, wir schaffen digitale Räume, die Ihr Unternehmen professionell repräsentieren und Ihnen helfen, mit Kunden in Kontakt zu treten.",
+        "example": "Zum Beispiel: eine Restaurant-Website, wo Kunden Menüs ansehen, Reservierungen machen und online bestellen können - alles an einem Ort."
+      },
+      "app": {
+        "explanation": "Wir entwickeln leistungsstarke Webanwendungen und Cloud-basierte Software, die spezifische Geschäftsprobleme lösen. Das sind wie maßgeschneiderte digitale Werkzeuge, die nur für Ihre Bedürfnisse entwickelt wurden - von Kundenverwaltungssystemen bis hin zu Online-Marktplätzen.",
+        "example": "Zum Beispiel: ein maßgeschneidertes Inventarsystem, das Ihre Produkte verfolgt, Sie warnt, wenn der Bestand niedrig ist, und automatisch neue Vorräte bestellt."
+      },
+      "tools": {
+        "explanation": "Wir entwickeln spezialisierte Software-Tools, die sich in das integrieren, was Sie bereits verwenden. Diese maßgeschneiderten Lösungen automatisieren spezifische Aufgaben in Ihrem Arbeitsablauf, wie Datenverarbeitung, Dateiverwaltung oder die Verbindung verschiedener Software-Systeme.",
+        "example": "Zum Beispiel: ein Tool, das Daten aus Ihrem Verkaufssystem nimmt und automatisch Rechnungen in Ihrer Buchhaltungssoftware erstellt."
       }
     }
   },

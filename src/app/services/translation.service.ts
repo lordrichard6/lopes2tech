@@ -22,7 +22,7 @@ export class TranslationService {
   ) {
     this.isBrowser = isPlatformBrowser(this.platformId);
     
-    // Set default translations first
+    // Set default translations first (fallback only)
     this.setDefaultTranslations();
     
     // Only initialize language detection in browser
@@ -33,9 +33,8 @@ export class TranslationService {
       // Priority: saved language > browser language > default (en)
       const preferredLang = savedLang || detectedLang || 'en';
       
-      if (preferredLang !== 'en') {
-        this.setLanguage(preferredLang);
-      }
+      // Always load from JSON files, even for English
+      this.setLanguage(preferredLang);
     }
   }
   
@@ -111,14 +110,14 @@ export class TranslationService {
         items: {
           automation: {
             title: 'Process Automation',
-            description: 'Unlock efficiency by automating your daily operations. With over 10 years of experience, we design intelligent systems that reduce manual tasks, minimize errors, and free up valuable resources.'
+            description: 'Unlock efficiency by automating your daily operations. We design intelligent systems that reduce manual tasks, minimize errors, and free up valuable resources.'
           },
           web: {
             title: 'Web Development',
             description: 'We build modern, responsive websites and web applications that not only showcase your brand but also integrate automation features to improve user experience and operational efficiency.'
           },
           app: {
-            title: 'App Development',
+            title: 'Webapp Development',
             description: 'We create seamless experiences with native and cross‑platform apps for macOS, iPad, and iOS. Our applications are designed to support your business needs while incorporating automation elements to streamline tasks.'
           },
           tools: {
@@ -256,6 +255,98 @@ export class TranslationService {
             description: 'Feel free to share any additional thoughts, questions, or specific requirements:',
             placeholder: 'Tell us about your timeline, specific requirements, preferred communication methods, or any questions you might have...'
           },
+          details: {
+            title: 'Tell us more about your specific needs',
+            description: 'Based on your selection, let\'s dive deeper into what you\'re looking for:',
+            automation: {
+              rpa: {
+                title: 'Robotic Process Automation (RPA)',
+                description: 'Automate repetitive tasks like data entry, file processing, and system interactions using AI-powered bots that can learn and adapt to your workflows.',
+                example: 'Example: Automatically processing invoices, extracting data, and updating your accounting system'
+              },
+              workflow: {
+                title: 'Workflow Automation',
+                description: 'Streamline business processes by connecting different systems and automating decision-making with intelligent LLM-powered logic.',
+                example: 'Example: Customer support ticket routing with AI analysis and automatic assignment to the right team'
+              },
+              integration: {
+                title: 'System Integration & APIs',
+                description: 'Connect your existing tools and systems to work together seamlessly with smart automation bridges.',
+                example: 'Example: Syncing customer data between your CRM, email platform, and billing system in real-time'
+              },
+              ai: {
+                title: 'AI-Powered Automation',
+                description: 'Leverage Large Language Models (LLMs) and AI to create intelligent automation that can understand context, make decisions, and learn from patterns.',
+                example: 'Example: AI chatbot that handles customer inquiries, processes orders, and escalates complex issues to humans'
+              }
+            },
+            webapp: {
+              saas: {
+                title: 'SaaS Platforms',
+                description: 'Full-featured Software as a Service solutions with user management, billing, and scalable architecture.',
+                example: 'Example: Project management platform with team collaboration, time tracking, and automated reporting'
+              },
+              portal: {
+                title: 'Customer/Employee Portals',
+                description: 'Secure portals for customers or employees to access information, submit requests, and track progress.',
+                example: 'Example: Employee self-service portal for HR requests, payroll access, and document management'
+              },
+              dashboard: {
+                title: 'Business Dashboards',
+                description: 'Real-time dashboards and analytics platforms to visualize your data and KPIs.',
+                example: 'Example: Sales dashboard showing real-time metrics, forecasts, and automated performance reports'
+              },
+              crm: {
+                title: 'CRM Systems',
+                description: 'Custom Customer Relationship Management systems tailored to your business processes.',
+                example: 'Example: Real estate CRM with property listings, client management, and automated follow-up campaigns'
+              }
+            },
+            web: {
+              corporate: {
+                title: 'Corporate Websites',
+                description: 'Professional websites that represent your brand and engage your audience.',
+                example: 'Example: Company website with service pages, team bios, case studies, and contact forms'
+              },
+              ecommerce: {
+                title: 'E-commerce',
+                description: 'Online stores with payment processing, inventory management, and customer accounts.',
+                example: 'Example: Fashion e-commerce site with product catalog, shopping cart, and order tracking'
+              },
+              landing: {
+                title: 'Landing Pages',
+                description: 'High-converting landing pages for marketing campaigns and lead generation.',
+                example: 'Example: Product launch page with video demos, testimonials, and conversion-optimized forms'
+              },
+              portfolio: {
+                title: 'Portfolio Sites',
+                description: 'Showcase your work, skills, and achievements with stunning visual presentations.',
+                example: 'Example: Photographer portfolio with image galleries, client testimonials, and booking system'
+              }
+            },
+            tools: {
+              desktop: {
+                title: 'Desktop Applications',
+                description: 'Native applications for Windows, macOS, and Linux with advanced functionality.',
+                example: 'Example: Inventory management desktop app with barcode scanning and offline synchronization'
+              },
+              mobile: {
+                title: 'Mobile Apps',
+                description: 'iOS and Android applications that extend your business to mobile devices.',
+                example: 'Example: Field service app for technicians with job scheduling, GPS tracking, and photo reports'
+              },
+              scripts: {
+                title: 'Automation Scripts',
+                description: 'Custom scripts and utilities to automate specific tasks in your workflow.',
+                example: 'Example: Data migration script that transfers customer records between different systems'
+              },
+              integrations: {
+                title: 'Third-party Integrations',
+                description: 'Connect your existing tools with custom integrations and middleware solutions.',
+                example: 'Example: Shopify integration that automatically updates inventory from your warehouse system'
+              }
+            }
+          },
           contact: {
             title: 'Let\'s get in touch',
             description: 'Please provide your contact information so we can reach out to you:',
@@ -295,6 +386,27 @@ export class TranslationService {
         },
         title: 'Thank you for your inquiry!',
         message: 'We have received your project details and our expert team is already reviewing your requirements. You\'ll receive a personalized proposal within **24 hours** that\'s tailored specifically to your needs.'
+      },
+      serviceDialog: {
+        title: 'What this means?',
+        services: {
+          automation: {
+            explanation: 'We use advanced AI and Large Language Models (LLMs) to automate your business processes intelligently. Think of it like having a smart assistant that can understand, learn, and respond naturally - handling customer inquiries, qualifying leads, and managing complex workflows without human intervention.',
+            example: 'For example: a chatbot that can answer any question about your company services in any language, or an AI system that automatically qualifies leads by asking the right questions and routing them to the appropriate team member.'
+          },
+          web: {
+            explanation: 'We build websites that look great on any device and work perfectly. Whether you need a simple company website or a complex online platform, we create digital spaces that represent your business professionally and help you connect with customers.',
+            example: 'For example: a restaurant website where customers can view menus, make reservations, and order online all in one place.'
+          },
+          app: {
+            explanation: 'We create powerful web applications and cloud-based software that solve specific business problems. These are like custom digital tools built just for your needs - from customer management systems to online marketplaces.',
+            example: 'For example: a custom inventory system that tracks your products, alerts you when stock is low, and automatically orders new supplies.'
+          },
+          tools: {
+            explanation: 'We develop specialized software tools that integrate with what you already use. These custom solutions automate specific tasks in your workflow, like data processing, file management, or connecting different software systems together.',
+            example: 'For example: a tool that takes data from your sales system and automatically creates invoices in your accounting software.'
+          }
+        }
       }
     };
   }
@@ -318,22 +430,23 @@ export class TranslationService {
       return;
     }
     
-    if (!this.translations[lang]) {
-      this.loadTranslation(lang).subscribe({
-        next: () => {
+    // Always load from JSON files to ensure consistency
+    this.loadTranslation(lang).subscribe({
+      next: () => {
+        this.currentLang.next(lang);
+        this.saveLanguage(lang);
+        this.setDocumentLanguage(lang);
+      },
+      error: (error) => {
+        console.error(`Failed to load translation for ${lang}:`, error);
+        // Fallback to hardcoded defaults for English only
+        if (lang === 'en') {
           this.currentLang.next(lang);
           this.saveLanguage(lang);
           this.setDocumentLanguage(lang);
-        },
-        error: (error) => {
-          console.error(`Failed to load translation for ${lang}:`, error);
         }
-      });
-    } else {
-      this.currentLang.next(lang);
-      this.saveLanguage(lang);
-      this.setDocumentLanguage(lang);
-    }
+      }
+    });
   }
   
   private setDocumentLanguage(lang: string): void {

@@ -4,29 +4,36 @@
     <p class="section-subtitle">{{ 'services.subtitle' | translate }}</p>
     
     <div class="services-grid">
-      <div class="service-card">
+      <div class="service-card" (click)="openServiceDialog('automation')">
         <div class="service-icon"><i class="fas fa-cogs"></i></div>
         <h3>{{ 'services.items.automation.title' | translate }}</h3>
         <p>{{ 'services.items.automation.description' | translate }}</p>
       </div>
       
-      <div class="service-card">
+      <div class="service-card" (click)="openServiceDialog('web')">
         <div class="service-icon"><i class="fas fa-code"></i></div>
         <h3>{{ 'services.items.web.title' | translate }}</h3>
         <p>{{ 'services.items.web.description' | translate }}</p>
       </div>
       
-      <div class="service-card">
+      <div class="service-card" (click)="openServiceDialog('app')">
         <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
         <h3>{{ 'services.items.app.title' | translate }}</h3>
         <p>{{ 'services.items.app.description' | translate }}</p>
       </div>
       
-      <div class="service-card">
+      <div class="service-card" (click)="openServiceDialog('tools')">
         <div class="service-icon"><i class="fas fa-tools"></i></div>
         <h3>{{ 'services.items.tools.title' | translate }}</h3>
         <p>{{ 'services.items.tools.description' | translate }}</p>
       </div>
     </div>
   </div>
+
+  <!-- Service Dialog -->
+  <app-service-dialog 
+    [isOpen]="isDialogOpen"
+    [serviceKey]="selectedService"
+    (close)="closeServiceDialog()">
+  </app-service-dialog>
 </section>

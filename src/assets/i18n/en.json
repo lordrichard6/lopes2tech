@@ -42,7 +42,7 @@
     "items": {
       "automation": {
         "title": "Process Automation",
-        "description": "Unlock efficiency by automating your daily operations. With over 10 years of experience, we design intelligent systems that reduce manual tasks, minimize errors, and free up valuable resources."
+        "description": "Unlock efficiency by automating your daily operations. We design intelligent systems that reduce manual tasks, minimize errors, and free up valuable resources."
       },
       "web": {
         "title": "Web Development", 
@@ -55,6 +55,27 @@
       "tools": {
         "title": "Custom Tools",
         "description": "We develop automation tools that integrate into your workflow and simplify complex processes. From automating data entry to orchestrating full-scale digital operations, our solutions are built to boost productivity and reliability."
+      }
+    }
+  },
+  "serviceDialog": {
+    "title": "What this means?",
+    "services": {
+      "automation": {
+        "explanation": "We use advanced AI and Large Language Models (LLMs) to automate your business processes intelligently. Think of it like having a smart assistant that can understand, learn, and respond naturally - handling customer inquiries, qualifying leads, and managing complex workflows without human intervention.",
+        "example": "For example: a chatbot that can answer any question about your company services in any language, or an AI system that automatically qualifies leads by asking the right questions and routing them to the appropriate team member."
+      },
+      "web": {
+        "explanation": "We build websites that look great on any device and work perfectly. Whether you need a simple company website or a complex online platform, we create digital spaces that represent your business professionally and help you connect with customers.",
+        "example": "For example: a restaurant website where customers can view menus, make reservations, and order online all in one place."
+      },
+      "app": {
+        "explanation": "We create powerful web applications and cloud-based software that solve specific business problems. These are like custom digital tools built just for your needs - from customer management systems to online marketplaces.",
+        "example": "For example: a custom inventory system that tracks your products, alerts you when stock is low, and automatically orders new supplies."
+      },
+      "tools": {
+        "explanation": "We develop specialized software tools that integrate with what you already use. These custom solutions automate specific tasks in your workflow, like data processing, file management, or connecting different software systems together.",
+        "example": "For example: a tool that takes data from your sales system and automatically creates invoices in your accounting software."
       }
     }
   },
