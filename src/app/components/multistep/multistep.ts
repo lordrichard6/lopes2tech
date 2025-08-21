@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { BusinessInfoService, BusinessInfo } from '../../services/business-info';
-import { EmailService, ContactFormData } from '../../services/email.service';
+import { EmailService, ContactFormData, MultiStepFormData } from '../../services/email.service';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
@@ -133,15 +133,64 @@ export class MultistepComponent implements OnInit {
       this.isSubmitting = true;
       
       try {
-        // For now, just show the thank you screen without sending emails
-        // Simulate a brief delay for better UX
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        // Prepare multi-step form data for EmailJS
+        const multiStepFormData: MultiStepFormData = {
+          firstName: this.contactForm.get('firstName')?.value || '',
+          lastName: this.contactForm.get('lastName')?.value || '',
+          email: this.contactForm.get('email')?.value || '',
+          company: this.contactForm.get('company')?.value || '',
+          location: this.contactForm.get('location')?.value || '',
+          phone: this.contactForm.get('phone')?.value || '',
+          selectedService: this.selectedService || '',
+          selectedDetailServices: this.selectedDetailServices,
+          projectDescription: this.projectDescription,
+          budget: this.contactForm.get('budget')?.value || 0,
+          currency: this.selectedCurrency,
+          additionalMessage: this.contactForm.get('additionalMessage')?.value || ''
+        };
+
+        // Try to send via EmailJS
+        const emailSent = await this.emailService.sendMultiStepFormEmail(multiStepFormData);
         
-        this.isSubmitted = true;
+        if (emailSent) {
+          console.log('Email sent successfully via EmailJS');
+          this.isSubmitted = true;
+        } else {
+          // Show error message and ask user if they want to use mailto
+          console.log('EmailJS failed, asking user for alternative');
+          const useMailto = confirm('Email service is currently unavailable. Would you like to open your email client to send the message manually?');
+          if (useMailto) {
+            const mailtoLink = this.emailService.getMultiStepMailtoLink(multiStepFormData);
+            window.open(mailtoLink, '_blank');
+          }
+          this.isSubmitted = true;
+        }
         
       } catch (error) {
         console.error('Error submitting form:', error);
-        alert('There was an error submitting your form. Please try again.');
+        
+        // Show error message and ask user if they want to use mailto
+        const useMailto = confirm('There was an error sending your message. Would you like to open your email client to send it manually?');
+        if (useMailto) {
+          const multiStepFormData: MultiStepFormData = {
+            firstName: this.contactForm.get('firstName')?.value || '',
+            lastName: this.contactForm.get('lastName')?.value || '',
+            email: this.contactForm.get('email')?.value || '',
+            company: this.contactForm.get('company')?.value || '',
+            location: this.contactForm.get('location')?.value || '',
+            phone: this.contactForm.get('phone')?.value || '',
+            selectedService: this.selectedService || '',
+            selectedDetailServices: this.selectedDetailServices,
+            projectDescription: this.projectDescription,
+            budget: this.contactForm.get('budget')?.value || 0,
+            currency: this.selectedCurrency,
+            additionalMessage: this.contactForm.get('additionalMessage')?.value || ''
+          };
+          
+          const mailtoLink = this.emailService.getMultiStepMailtoLink(multiStepFormData);
+          window.open(mailtoLink, '_blank');
+        }
+        this.isSubmitted = true;
       } finally {
         this.isSubmitting = false;
       }

@@ -1380,11 +1380,107 @@
   }
 }
 
-// Enhanced Mobile Responsive Design
-@media (max-width: 768px) {
+// Enhanced Responsive Design with Multiple Breakpoints
+
+// Large Tablets and Small Desktops (992px to 1199px)
+@media (max-width: 1199px) {
+  .multi-step-form {
+    max-width: 700px;
+    padding: 2.5rem;
+  }
+  
   .thank-you-screen {
-    min-height: auto;
-    padding: 2rem 0;
+    .thank-you-content h2 {
+      font-size: 3rem;
+    }
+    
+    .contact-summary-card {
+      padding: 2rem;
+    }
+  }
+}
+
+// Tablets (768px to 991px)
+@media (max-width: 991px) {
+  .contact {
+    padding: 6rem 0;
+  }
+  
+  .multi-step-form {
+    max-width: 600px;
+    padding: 2rem;
+  }
+  
+  .service-options,
+  .detailed-services {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .thank-you-screen {
+    .hero-section {
+      .logo-container .thank-you-logo {
+        height: 180px;
+      }
+      
+      .logo-glow {
+        width: 220px;
+        height: 220px;
+      }
+    }
+    
+    .thank-you-content h2 {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+// Mobile Landscape and Small Tablets (481px to 767px)
+@media (max-width: 767px) {
+  .contact {
+    padding: 5rem 0;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2.25rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .multi-step-form {
+    padding: 1.75rem;
+    margin: 0 1rem;
+  }
+  
+  .step-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+  
+  .currency-options {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .currency-option {
+    justify-content: center;
+    padding: 0.875rem 2rem;
+  }
+  
+  .thank-you-screen {
+    padding: 1.5rem 0;
     
     .step-content {
       padding: 1rem;
@@ -1399,12 +1495,12 @@
       
       .logo-container {
         .thank-you-logo {
-          height: 150px; // Still big on mobile
+          height: 160px;
         }
         
         .logo-glow {
-          width: 180px;
-          height: 180px;
+          width: 200px;
+          height: 200px;
         }
       }
       
@@ -1412,7 +1508,7 @@
         flex-direction: column;
         gap: 0.75rem;
         padding: 1.5rem;
-        max-width: 300px;
+        max-width: 320px;
         
         .success-icon {
           width: 50px;
@@ -1444,6 +1540,7 @@
       .thank-you-message {
         font-size: 1.1rem;
         margin-bottom: 2rem;
+        padding: 0 1rem;
       }
     }
     
@@ -1525,6 +1622,321 @@
       .tech-bubble {
         width: 40px;
         height: 40px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+// Mobile Portrait (320px to 480px)
+@media (max-width: 480px) {
+  .contact {
+    padding: 4rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.875rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .multi-step-form {
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 12px;
+  }
+  
+  .step-icon {
+    width: 60px;
+    height: 60px;
+    
+    i {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .step-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .step-content p {
+    font-size: 1rem;
+  }
+  
+  .service-option,
+  .service-detail-option {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  
+  .option-icon {
+    margin: 0 auto;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .currency-option {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .thank-you-screen {
+    padding: 1rem 0;
+    
+    .step-content {
+      padding: 0.5rem;
+    }
+    
+    .hero-section {
+      margin-bottom: 1.5rem;
+      
+      .logo-success-container {
+        gap: 1rem;
+      }
+      
+      .logo-container {
+        .thank-you-logo {
+          height: 120px;
+        }
+        
+        .logo-glow {
+          width: 150px;
+          height: 150px;
+        }
+      }
+      
+      .success-badge {
+        padding: 1.25rem;
+        max-width: 280px;
+        
+        .success-icon {
+          width: 45px;
+          height: 45px;
+          font-size: 1.1rem;
+          
+          &::before {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        
+        .success-text {
+          .success-label {
+            font-size: 1rem;
+          }
+          
+          .success-subtitle {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+    
+    .thank-you-content {
+      margin-top: 1rem;
+      
+      h2 {
+        font-size: 2rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+        
+        &::after {
+          width: 80px;
+          height: 3px;
+        }
+      }
+      
+      .thank-you-message {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
+        line-height: 1.6;
+      }
+    }
+    
+    .contact-summary-card {
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+      border-radius: 16px;
+      
+      .card-header {
+        margin-bottom: 1.5rem;
+        
+        h4 {
+          font-size: 1.2rem;
+        }
+        
+        i {
+          font-size: 1.25rem;
+        }
+      }
+      
+      .contact-details {
+        gap: 1rem;
+        
+        .contact-item {
+          padding: 1rem;
+          border-radius: 12px;
+          
+          .contact-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 1rem;
+          }
+          
+          .contact-info {
+            .contact-label {
+              font-size: 0.85rem;
+            }
+            
+            .contact-value {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    
+    .next-steps-section {
+      margin-bottom: 1.5rem;
+      
+      h4 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .timeline {
+        gap: 1.5rem;
+        
+        .timeline-item {
+          padding: 1.25rem;
+          border-radius: 16px;
+          
+          .timeline-marker {
+            width: 45px;
+            height: 45px;
+            font-size: 1rem;
+            border-radius: 12px;
+          }
+          
+          .timeline-content {
+            h5 {
+              font-size: 1rem;
+            }
+            
+            p {
+              font-size: 0.9rem;
+            }
+            
+            .timeline-duration {
+              font-size: 0.8rem;
+              padding: 0.2rem 0.6rem;
+            }
+          }
+        }
+      }
+    }
+    
+    .cta-section {
+      .cta-text {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
+      }
+      
+      .cta-button {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.95rem;
+        border-radius: 30px;
+        
+        span {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+    
+    .floating-elements {
+      .shark-bubble {
+        font-size: 1.25rem;
+      }
+      
+      .tech-bubble {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// Extra Small Devices (max-width: 375px)
+@media (max-width: 375px) {
+  .multi-step-form {
+    padding: 1.25rem;
+    margin: 0 0.25rem;
+  }
+  
+  .thank-you-screen {
+    .hero-section {
+      .logo-container {
+        .thank-you-logo {
+          height: 100px;
+        }
+        
+        .logo-glow {
+          width: 130px;
+          height: 130px;
+        }
+      }
+      
+      .success-badge {
+        max-width: 260px;
+        padding: 1rem;
+      }
+    }
+    
+    .thank-you-content {
+      h2 {
+        font-size: 1.75rem;
+      }
+      
+      .thank-you-message {
+        font-size: 0.95rem;
+        padding: 0 0.25rem;
+      }
+    }
+    
+    .contact-summary-card {
+      padding: 1rem;
+    }
+    
+    .next-steps-section {
+      .timeline {
+        .timeline-item {
+          padding: 1rem;
+        }
+      }
+    }
+    
+    .cta-section {
+      .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
       }
     }
   }
