@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { BusinessInfoService, BusinessInfo } from '../../services/business-info';
 import { EmailService, ContactFormData, MultiStepFormData } from '../../services/email.service';
 import { TranslatePipe } from '../../pipes/translate.pipe';
+import { ThankYouComponent } from './thank-you/thank-you';
 
 @Component({
   selector: 'app-multistep',
-  imports: [ReactiveFormsModule, FormsModule],
+  imports: [ReactiveFormsModule, FormsModule, ThankYouComponent],
   templateUrl: './multistep.html',
   styleUrl: './multistep.scss'
 })
@@ -315,5 +316,22 @@ export class MultistepComponent implements OnInit {
       'USD': '$'
     };
     return symbols[this.selectedCurrency] || '€';
+  }
+
+  getFormData(): MultiStepFormData {
+    return {
+      selectedService: this.getServiceDisplayName(this.selectedService),
+      selectedDetailServices: this.selectedDetailServices,
+      projectDescription: this.projectDescription,
+      budget: this.contactForm.get('budget')?.value || 0,
+      currency: this.getCurrencySymbol(),
+      additionalMessage: this.contactForm.get('additionalMessage')?.value || '',
+      firstName: this.contactForm.get('firstName')?.value || '',
+      lastName: this.contactForm.get('lastName')?.value || '',
+      company: this.contactForm.get('company')?.value || '',
+      email: this.contactForm.get('email')?.value || '',
+      location: this.contactForm.get('location')?.value || '',
+      phone: this.contactForm.get('phone')?.value || ''
+    };
   }
 }

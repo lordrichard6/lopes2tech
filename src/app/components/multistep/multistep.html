@@ -643,38 +643,7 @@
       
       <!-- Thank You Screen -->
       @if (isSubmitted) {
-        <div class="form-step thank-you-screen py-0">
-          <div class="step-content">
-            <!-- Hero Section with Large Shark Logo -->
-            <div class="hero-section py-0">
-              <div class="logo-success-container">
-                <div class="logo-container">
-                  <img src="/blue_simple.png" alt="Lopes2Tech Shark" class="thank-you-logo">
-                  <div class="logo-glow"></div>
-                </div>
-                
-                <div class="success-badge">
-                  <div class="success-icon">
-                    <i class="fas fa-check-circle"></i>
-                  </div>
-                  <div class="success-text">
-                    <span class="success-label">Success!</span>
-                    <span class="success-subtitle">Message Received</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Main Thank You Content -->
-            <div class="thank-you-content">
-              <h2>Thank you for your inquiry!</h2>
-              <p class="thank-you-message mb-0">
-                <i class="fas fa-rocket"></i> We have received your project details and our expert team is already reviewing your requirements. 
-                You'll receive a personalized proposal within <strong>24 hours</strong> that's tailored specifically to your needs.
-              </p>
-            </div>
-          </div>
-        </div>
+        <app-thank-you [formData]="getFormData()"></app-thank-you>
       }
     </div>
   </div>

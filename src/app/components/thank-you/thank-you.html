@@ -1,0 +1,167 @@
+<div class="thank-you-screen">
+  <div class="step-content">
+    <!-- Hero Section with Large Shark Logo -->
+    <div class="hero-section">
+      <div class="logo-success-container">
+        <div class="logo-container">
+          <img src="/blue_simple.png" alt="Lopes2Tech Shark" class="thank-you-logo">
+          <div class="logo-glow"></div>
+        </div>
+        
+        <div class="success-badge">
+          <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="success-text">
+            <span class="success-label">Success!</span>
+            <span class="success-subtitle">Message Received</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Thank You Content -->
+    <div class="thank-you-content">
+      <h2>Thank you for your inquiry!</h2>
+      <p class="thank-you-message">
+        <i class="fas fa-rocket"></i> We have received your project details and our expert team is already reviewing your requirements. 
+        You'll receive a personalized proposal within <strong>24 hours</strong> that's tailored specifically to your needs.
+      </p>
+    </div>
+
+    <!-- Contact Summary Card -->
+    @if (formData) {
+      <div class="contact-summary-card">
+        <div class="card-header">
+          <i class="fas fa-file-alt"></i>
+          <h4>Your Inquiry Summary</h4>
+        </div>
+        
+        <div class="contact-details">
+          <div class="contact-item primary">
+            <div class="contact-icon">
+              <i class="fas fa-hashtag"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Inquiry ID</span>
+              <span class="contact-value">{{ generateInquiryId() }}</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Contact Person</span>
+              <span class="contact-value">{{ formData.firstName }} {{ formData.lastName }}</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Email Address</span>
+              <span class="contact-value">{{ formData.email }}</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Service Requested</span>
+              <span class="contact-value">{{ formData.selectedService }}</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-euro-sign"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Budget Range</span>
+              <span class="contact-value">{{ formData.currency }}{{ formData.budget.toLocaleString() }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+    <!-- Next Steps Timeline -->
+    <div class="next-steps-section">
+      <h4><i class="fas fa-route"></i> What happens next?</h4>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">1</div>
+          <div class="timeline-content">
+            <h5>Review & Analysis</h5>
+            <p>Our experts analyze your requirements and technical specifications to create the perfect solution.</p>
+            <span class="timeline-duration">Within 2 hours</span>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">2</div>
+          <div class="timeline-content">
+            <h5>Custom Proposal</h5>
+            <p>We'll prepare a detailed project proposal with timeline, deliverables, and transparent pricing.</p>
+            <span class="timeline-duration">Within 24 hours</span>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">3</div>
+          <div class="timeline-content">
+            <h5>Discovery Call</h5>
+            <p>Let's discuss your vision, answer questions, and refine the approach together.</p>
+            <span class="timeline-duration">Within 48 hours</span>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">4</div>
+          <div class="timeline-content">
+            <h5>Project Kickoff</h5>
+            <p>Once approved, we'll begin development with regular updates and milestones.</p>
+            <span class="timeline-duration">ASAP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta-section">
+      <p class="cta-text">
+        Questions in the meantime? Feel free to reach out directly!
+      </p>
+      <button class="cta-button" onclick="window.location.href='mailto:lopes2tech.ch@gmail.com'">
+        <i class="fas fa-envelope"></i>
+        Contact Us Directly
+        <span>→</span>
+      </button>
+    </div>
+
+    <!-- Floating Elements for Visual Appeal -->
+    <div class="floating-elements">
+      <div class="floating-element shark-bubble bubble-1">🦈</div>
+      <div class="floating-element shark-bubble bubble-2">🦈</div>
+      <div class="floating-element shark-bubble bubble-3">🦈</div>
+      <div class="floating-element shark-bubble bubble-4">🦈</div>
+      
+      <div class="floating-element tech-bubble tech-1">
+        <i class="fas fa-code"></i>
+      </div>
+      <div class="floating-element tech-bubble tech-2">
+        <i class="fas fa-rocket"></i>
+      </div>
+      <div class="floating-element tech-bubble tech-3">
+        <i class="fas fa-cog"></i>
+      </div>
+    </div>
+  </div>
+</div>

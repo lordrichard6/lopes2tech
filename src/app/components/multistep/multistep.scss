@@ -796,7 +796,6 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1495,6 +1494,7 @@
       
       .logo-container {
         .thank-you-logo {
+          top: 0%;
           height: 160px;
         }
         
@@ -1706,7 +1706,7 @@
       margin-bottom: 1.5rem;
       
       .logo-success-container {
-        gap: 1rem;
+        gap: 0.2rem;
       }
       
       .logo-container {
