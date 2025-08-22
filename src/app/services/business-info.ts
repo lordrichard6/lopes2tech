@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 export interface BusinessInfo {
   companyName: string;
   ownerName: string;
+  address: string;
   city: string;
   country: string;
   phone: string;
@@ -26,7 +27,8 @@ export class BusinessInfoService {
     return {
       companyName: 'lopes2tech',
       ownerName: 'Paulo R. Lopes',
-      city: 'Zurich',
+      address: 'Zürich',
+      city: 'Zürich',
       country: 'Switzerland',
       phone: '+41 78 798 95 33',
       email: 'lopes2tech.ch@gmail.com' // Optional email
