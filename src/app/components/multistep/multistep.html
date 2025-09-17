@@ -42,66 +42,42 @@
               <i class="fas fa-question-circle"></i>
             </div>
             <h3>{{ 'multistep.steps.service.title' | translate }}</h3>
-            <p>{{ 'multistep.steps.service.description' | translate }}</p>
+            <p>{{ 'multistep.steps.service.description_small' | translate }}</p>
             
             <div class="service-options">
               <div class="service-option" 
-                   [class.selected]="selectedService === 'automation'"
-                   (click)="selectService('automation')">
+                   [class.selected]="selectedService === 'ai'"
+                   (click)="selectService('ai')">
                 <div class="option-icon">
-                  <i class="fas fa-cogs"></i>
+                  <i class="fas fa-robot"></i>
                 </div>
                 <div class="option-content">
-                  <h4>{{ 'multistep.steps.service.options.automation.title' | translate }}</h4>
-                  <p>{{ 'multistep.steps.service.options.automation.description' | translate }}</p>
+                  <h4>{{ 'servicesv2.items.ai.title' | translate }}</h4>
+                  <p>{{ 'servicesv2.items.ai.description_small' | translate }}</p>
                 </div>
               </div>
 
               <div class="service-option" 
-                   [class.selected]="selectedService === 'webapp'"
-                   (click)="selectService('webapp')">
+                   [class.selected]="selectedService === 'websites'"
+                   (click)="selectService('websites')">
                 <div class="option-icon">
-                  <i class="fas fa-laptop-code"></i>
+                  <i class="fas fa-globe"></i>
                 </div>
                 <div class="option-content">
-                  <h4>{{ 'multistep.steps.service.options.webapp.title' | translate }}</h4>
-                  <p>{{ 'multistep.steps.service.options.webapp.description' | translate }}</p>
+                  <h4>{{ 'servicesv2.items.websites.title' | translate }}</h4>
+                  <p>{{ 'servicesv2.items.websites.description_small' | translate }}</p>
                 </div>
               </div>
 
               <div class="service-option" 
-                   [class.selected]="selectedService === 'web'"
-                   (click)="selectService('web')">
+                   [class.selected]="selectedService === 'software'"
+                   (click)="selectService('software')">
                 <div class="option-icon">
-                  <i class="fas fa-code"></i>
+                  <i class="fas fa-desktop"></i>
                 </div>
                 <div class="option-content">
-                  <h4>{{ 'multistep.steps.service.options.web.title' | translate }}</h4>
-                  <p>{{ 'multistep.steps.service.options.web.description' | translate }}</p>
-                </div>
-              </div>
-
-              <div class="service-option" 
-                   [class.selected]="selectedService === 'tools'"
-                   (click)="selectService('tools')">
-                <div class="option-icon">
-                  <i class="fas fa-tools"></i>
-                </div>
-                <div class="option-content">
-                  <h4>{{ 'multistep.steps.service.options.tools.title' | translate }}</h4>
-                  <p>{{ 'multistep.steps.service.options.tools.description' | translate }}</p>
-                </div>
-              </div>
-
-              <div class="service-option" 
-                   [class.selected]="selectedService === 'unsure'"
-                   (click)="selectService('unsure')">
-                <div class="option-icon">
-                  <i class="fas fa-lightbulb"></i>
-                </div>
-                <div class="option-content">
-                  <h4>{{ 'multistep.steps.service.options.unsure.title' | translate }}</h4>
-                  <p>{{ 'multistep.steps.service.options.unsure.description' | translate }}</p>
+                  <h4>{{ 'servicesv2.items.software.title' | translate }}</h4>
+                  <p>{{ 'servicesv2.items.software.description_small' | translate }}</p>
                 </div>
               </div>
 
@@ -113,7 +89,7 @@
                 </div>
                 <div class="option-content">
                   <h4>{{ 'multistep.steps.service.options.other.title' | translate }}</h4>
-                  <p>{{ 'multistep.steps.service.options.other.description' | translate }}</p>
+                  <p>{{ 'multistep.steps.service.options.other.description_small' | translate }}</p>
                 </div>
               </div>
             </div>
@@ -132,351 +108,8 @@
         </div>
       }
 
-      <!-- Step 3: Specific Service Details -->
+      <!-- Step 3: Additional Message -->
       @if (currentStep === 3) {
-        <div class="form-step step-details">
-          <div class="step-content">
-            <div class="step-icon">
-              <i class="fas fa-list-check"></i>
-            </div>
-            @if (selectedService === 'unsure') {
-              <h3>{{ 'multistep.steps.details.title_unsure' | translate }}</h3>
-              <p>{{ 'multistep.steps.details.description_unsure' | translate }}</p>
-            } @else {
-              <h3>{{ 'multistep.steps.details.title' | translate }}</h3>
-              <p>{{ 'multistep.steps.details.description' | translate }}</p>
-            }
-            
-            <!-- Process Automation Services -->
-            @if (selectedService === 'automation') {
-              <div class="detailed-services">
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('rpa')"
-                     (click)="toggleDetailService('rpa')">
-                  <div class="option-icon">
-                    <i class="fas fa-robot"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.automation.rpa.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.automation.rpa.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('workflow')"
-                     (click)="toggleDetailService('workflow')">
-                  <div class="option-icon">
-                    <i class="fas fa-sitemap"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.automation.workflow.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.automation.workflow.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('integration')"
-                     (click)="toggleDetailService('integration')">
-                  <div class="option-icon">
-                    <i class="fas fa-link"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.automation.integration.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.automation.integration.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('reporting')"
-                     (click)="toggleDetailService('reporting')">
-                  <div class="option-icon">
-                    <i class="fas fa-chart-line"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.automation.reporting.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.automation.reporting.description' | translate }}</p>
-                  </div>
-                </div>
-              </div>
-            }
-
-            <!-- Web Applications & SaaS Services -->
-            @if (selectedService === 'webapp') {
-              <div class="detailed-services">
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('saas')"
-                     (click)="toggleDetailService('saas')">
-                  <div class="option-icon">
-                    <i class="fas fa-cloud"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.webapp.saas.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.webapp.saas.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('angular')"
-                     (click)="toggleDetailService('angular')">
-                  <div class="option-icon">
-                    <i class="fab fa-angular"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.webapp.angular.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.webapp.angular.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('django')"
-                     (click)="toggleDetailService('django')">
-                  <div class="option-icon">
-                    <i class="fab fa-python"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.webapp.django.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.webapp.django.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('api')"
-                     (click)="toggleDetailService('api')">
-                  <div class="option-icon">
-                    <i class="fas fa-exchange-alt"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.webapp.api.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.webapp.api.description' | translate }}</p>
-                  </div>
-                </div>
-              </div>
-            }
-
-            <!-- Web Development Services -->
-            @if (selectedService === 'web') {
-              <div class="detailed-services">
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('responsive')"
-                     (click)="toggleDetailService('responsive')">
-                  <div class="option-icon">
-                    <i class="fas fa-file-alt"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.web.responsive.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.web.responsive.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('ecommerce')"
-                     (click)="toggleDetailService('ecommerce')">
-                  <div class="option-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.web.ecommerce.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.web.ecommerce.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('cms')"
-                     (click)="toggleDetailService('cms')">
-                  <div class="option-icon">
-                    <i class="fas fa-edit"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.web.cms.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.web.cms.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('portfolio')"
-                     (click)="toggleDetailService('portfolio')">
-                  <div class="option-icon">
-                    <i class="fas fa-briefcase"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.web.portfolio.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.web.portfolio.description' | translate }}</p>
-                  </div>
-                </div>
-              </div>
-            }
-
-            <!-- Custom Tools Services -->
-            @if (selectedService === 'tools') {
-              <div class="detailed-services">
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('scraping')"
-                     (click)="toggleDetailService('scraping')">
-                  <div class="option-icon">
-                    <i class="fas fa-spider"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.tools.scraping.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.tools.scraping.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('cli')"
-                     (click)="toggleDetailService('cli')">
-                  <div class="option-icon">
-                    <i class="fas fa-terminal"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.tools.cli.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.tools.cli.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('desktop')"
-                     (click)="toggleDetailService('desktop')">
-                  <div class="option-icon">
-                    <i class="fas fa-desktop"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.tools.desktop.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.tools.desktop.description' | translate }}</p>
-                  </div>
-                </div>
-
-                <div class="service-detail-option" 
-                     [class.selected]="selectedDetailServices.includes('maintenance')"
-                     (click)="toggleDetailService('maintenance')">
-                  <div class="option-icon">
-                    <i class="fas fa-wrench"></i>
-                  </div>
-                  <div class="option-content">
-                    <h4>{{ 'multistep.steps.details.tools.maintenance.title' | translate }}</h4>
-                    <p>{{ 'multistep.steps.details.tools.maintenance.description' | translate }}</p>
-                  </div>
-                </div>
-              </div>
-            }
-
-            <!-- Generic option for "unsure" and "other" -->
-            <!-- Not Sure Yet -->
-            @if (selectedService === 'unsure') {
-              <div class="text-input-section">
-                <div class="form-group">
-                  <textarea 
-                    id="projectDescription" 
-                    [(ngModel)]="projectDescription"
-                    rows="4"
-                    placeholder="{{ 'multistep.steps.details.placeholders.unsure' | translate }}"
-                    class="form-textarea"></textarea>
-                </div>
-              </div>
-            }
-
-            <!-- Other Services -->
-            @if (selectedService === 'other') {
-              <div class="text-input-section">
-                <div class="form-group">
-                  <textarea 
-                    id="projectDescription" 
-                    [(ngModel)]="projectDescription"
-                    rows="4"
-                    placeholder="{{ 'multistep.steps.details.placeholders.other' | translate }}"
-                    class="form-textarea"></textarea>
-                </div>
-              </div>
-            }
-            
-            <div class="step-actions">
-              <button class="btn btn-secondary" (click)="previousStep()">
-                <i class="fas fa-arrow-left"></i> {{ 'multistep.buttons.back' | translate }}
-              </button>
-              <button class="btn btn-primary" 
-                      [disabled]="!canProceedFromStep3()"
-                      (click)="nextStep()">
-                {{ 'multistep.buttons.continue' | translate }} <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      }
-
-      <!-- Step 4: Budget Assessment -->
-      @if (currentStep === 4) {
-        <div class="form-step step-budget">
-          <div class="step-content">
-            <div class="step-icon">
-              <i class="fas fa-euro-sign"></i>
-            </div>
-            <h3>{{ 'multistep.steps.budget.title' | translate }}</h3>
-            <p>{{ 'multistep.steps.budget.description' | translate }}</p>
-            
-            <form [formGroup]="contactForm" class="budget-form">
-              <!-- Budget Assessment -->
-              <div class="form-group budget-section">
-                <!-- Currency Selection -->
-                <div class="currency-selector">
-                  <label>{{ 'multistep.steps.budget.currency' | translate }}:</label>
-                  <div class="currency-options">
-                    <button type="button" 
-                            class="currency-option" 
-                            [class.selected]="selectedCurrency === 'EUR'"
-                            (click)="selectCurrency('EUR')">
-                      <span class="currency-symbol">€</span>
-                      <!-- <span class="currency-name">Euro</span> -->
-                    </button>
-                    <button type="button" 
-                            class="currency-option" 
-                            [class.selected]="selectedCurrency === 'CHF'"
-                            (click)="selectCurrency('CHF')">
-                      <span class="currency-symbol">CHF</span>
-                      <!-- <span class="currency-name">Swiss Franc</span> -->
-                    </button>
-                    <button type="button" 
-                            class="currency-option" 
-                            [class.selected]="selectedCurrency === 'USD'"
-                            (click)="selectCurrency('USD')">
-                      <span class="currency-symbol">$</span>
-                      <!-- <span class="currency-name">US Dollar</span> -->
-                    </button>
-                  </div>
-                </div>
-
-                <div class="budget-slider-container">
-                  <input 
-                    type="range" 
-                    id="budget" 
-                    formControlName="budget"
-                    min="0" 
-                    max="50000" 
-                    step="500"
-                    class="budget-slider">
-                  <div class="budget-display">
-                    <span class="budget-value">{{ getCurrencySymbol() }}{{ formatBudget(contactForm.get('budget')?.value || 0) }}</span>
-                    <div class="budget-labels">
-                      <span class="min-label">{{ getCurrencySymbol() }}0</span>
-                      <span class="max-label">{{ getCurrencySymbol() }}50,000+</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="step-actions">
-                <button type="button" class="btn btn-secondary" (click)="previousStep()">
-                  <i class="fas fa-arrow-left"></i> {{ 'multistep.buttons.back' | translate }}
-                </button>
-                <button type="button" class="btn btn-primary" (click)="nextStep()">
-                  {{ 'multistep.buttons.continue' | translate }} <i class="fas fa-arrow-right"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      }
-
-      <!-- Step 5: Additional Message -->
-      @if (currentStep === 5) {
         <div class="form-step step-message">
           <div class="step-content">
             <div class="step-icon">
@@ -508,8 +141,8 @@
         </div>
       }
 
-      <!-- Step 6: Contact Information -->
-      @if (currentStep === 6) {
+      <!-- Step 4: Contact Information -->
+      @if (currentStep === 4) {
         <div class="form-step step-contact">
           <div class="step-content">
             <div class="step-icon">
@@ -599,19 +232,11 @@
                 <div class="summary-item">
                   <strong>{{ 'multistep.steps.contact.summary.service' | translate }}:</strong> {{ getServiceDisplayName(selectedService) }}
                 </div>
-                @if (selectedDetailServices.length > 0) {
-                  <div class="summary-item">
-                    <strong>{{ 'multistep.steps.contact.summary.specificNeeds' | translate }}:</strong> {{ getDetailServicesDisplay() }}
-                  </div>
-                }
                 @if (projectDescription) {
                   <div class="summary-item">
                     <strong>{{ 'multistep.steps.contact.summary.description' | translate }}:</strong> {{ projectDescription }}
                   </div>
                 }
-                <div class="summary-item">
-                  <strong>{{ 'multistep.steps.contact.summary.budget' | translate }}:</strong> {{ getCurrencySymbol() }}{{ formatBudget(contactForm.get('budget')?.value || 0) }}
-                </div>
                 @if (contactForm.get('additionalMessage')?.value) {
                   <div class="summary-item">
                     <strong>{{ 'multistep.steps.contact.summary.additionalNotes' | translate }}:</strong> {{ contactForm.get('additionalMessage')?.value }}

@@ -65,6 +65,27 @@
       }
     }
   },
+  "servicesv2": {
+    "title": "Os Nossos Serviços Principais",
+    "subtitle": "Soluções simples para as necessidades do seu negócio",
+    "items": {
+      "ai": {
+        "title": "Soluções de IA",
+        "description": "Criamos sistemas inteligentes que trabalham para si. Desde chatbots que respondem a perguntas de clientes até automação que gere tarefas repetitivas, as nossas soluções de IA poupam-lhe tempo e melhoram a eficiência do seu negócio.",
+        "description_small": "Sistemas de automação inteligente"
+      },
+      "websites": {
+        "title": "Websites",
+        "description": "Websites bonitos e rápidos que funcionam em todos os dispositivos. Seja um website empresarial simples, uma loja online, ou uma aplicação web personalizada, construímos sites modernos que o ajudam a alcançar mais clientes.",
+        "description_small": "Soluções web modernas"
+      },
+      "software": {
+        "title": "Software",
+        "description": "Software personalizado construído especificamente para as necessidades do seu negócio. Desde aplicações desktop a aplicações móveis e ferramentas especializadas, criamos software que resolve os seus desafios únicos e cresce com o seu negócio.",
+        "description_small": "Aplicações personalizadas"
+      }
+    }
+  },
   "about": {
     "badge": "Sobre Nós",
     "title": "Qualidade Suíça, Inovação Global",
@@ -123,7 +144,20 @@
       "service": {
         "title": "Do que precisa?",
         "description": "Selecione o serviço que melhor corresponde aos seus requisitos:",
+        "description_small": "Escolha o seu serviço:",
         "options": {
+          "ai": {
+            "title": "Soluções de IA",
+            "description": "Sistemas de automação inteligente e ferramentas com IA"
+          },
+          "websites": {
+            "title": "Websites",
+            "description": "Soluções web modernas e presença online"
+          },
+          "software": {
+            "title": "Software",
+            "description": "Aplicações personalizadas e ferramentas especializadas"
+          },
           "automation": {
             "title": "Automação de Processos",
             "description": "Automatize as suas operações e fluxos de trabalho diários"
@@ -146,90 +180,67 @@
           },
           "other": {
             "title": "Outro",
-            "description": "Algo diferente - conte-nos mais sobre isso"
+            "description": "Algo diferente - conte-nos mais sobre isso",
+            "description_small": "Conte-nos mais"
           }
         }
       },
       "details": {
-        "title": "Que mais posso fazer por si?",
-        "title_unsure": "O que pretende melhorar?",
-        "description": "Que serviços específicos está à procura?",
-        "description_unsure": "Ajude-nos a compreender os seus desafios e objetivos atuais.",
-        "automation": {
+        "title": "De que serviço precisa?",
+        "description": "Selecione todos os serviços que se aplicam ao seu projeto:",
+        "ai": {
           "rpa": {
-            "title": "RPA (Automação Robótica de Processos)",
-            "description": "Automatize tarefas repetitivas e entrada de dados"
+            "title": "RPA (Automação de Processos Robóticos)",
+            "description": "Automatizar tarefas repetitivas como entrada de dados, processamento de ficheiros e submissão de formulários"
+          },
+          "chatbot": {
+            "title": "Chatbots de IA & Assistentes Virtuais",
+            "description": "Chatbots inteligentes que podem tratar consultas de clientes e tarefas de suporte"
           },
           "workflow": {
-            "title": "Gestão de Fluxo de Trabalho",
-            "description": "Otimize processos de negócio e aprovações"
+            "title": "Automatização de Fluxo de Trabalho com IA",
+            "description": "Automatização inteligente que pode tomar decisões e tratar processos empresariais complexos"
           },
-          "integration": {
-            "title": "Integração de Sistemas",
-            "description": "Conecte diferentes softwares e bases de dados"
-          },
-          "reporting": {
-            "title": "Relatórios Automatizados",
-            "description": "Gere relatórios e dashboards automaticamente"
+          "analytics": {
+            "title": "Análise e Insights de IA",
+            "description": "Análise de dados automatizada e relatórios com insights gerados por IA"
           }
         },
-        "webapp": {
-          "saas": {
-            "title": "Desenvolvimento de Plataforma SaaS",
-            "description": "Aplicações cloud multi-inquilino"
-          },
-          "angular": {
-            "title": "Aplicações Angular",
-            "description": "Frontend moderno com framework Angular"
-          },
-          "django": {
-            "title": "Backend Django",
-            "description": "Desenvolvimento backend robusto em Python"
-          },
-          "api": {
-            "title": "Desenvolvimento de APIs",
-            "description": "APIs RESTful e microserviços"
-          }
-        },
-        "web": {
-          "responsive": {
-            "title": "Websites simples de 1 página",
-            "description": "Websites limpos e focados numa só página"
+        "websites": {
+          "corporate": {
+            "title": "Websites Corporativos",
+            "description": "Websites empresariais profissionais com design moderno e funcionalidade"
           },
           "ecommerce": {
-            "title": "Soluções E-commerce",
-            "description": "Lojas online e sistemas de pagamento"
-          },
-          "cms": {
-            "title": "Gestão de Conteúdo",
-            "description": "Sistemas de gestão de conteúdo fáceis de usar"
+            "title": "Lojas E-commerce",
+            "description": "Lojas online com processamento de pagamentos, gestão de inventário e contas de clientes"
           },
           "portfolio": {
-            "title": "Sites de Portfólio e Negócios",
-            "description": "Websites profissionais e portfólios"
+            "title": "Sites Portfolio & Showcase",
+            "description": "Portfólios criativos e websites de showcase para profissionais e agências"
+          },
+          "landing": {
+            "title": "Páginas de Destino",
+            "description": "Páginas de destino de alta conversão para campanhas de marketing e geração de leads"
           }
         },
-        "tools": {
-          "scraping": {
-            "title": "Ferramentas de Web Scraping",
-            "description": "Extração automatizada de dados e monitorização"
-          },
-          "cli": {
-            "title": "Ferramentas de Linha de Comando",
-            "description": "Aplicações CLI personalizadas e scripts"
+        "software": {
+          "webapp": {
+            "title": "Aplicações Web",
+            "description": "Aplicações web poderosas e software baseado na nuvem para soluções empresariais"
           },
           "desktop": {
             "title": "Aplicações Desktop",
-            "description": "Software desktop multiplataforma"
+            "description": "Software desktop multiplataforma para Windows, Mac e Linux"
           },
-          "maintenance": {
-            "title": "Manutenção de Sistemas",
-            "description": "Suporte contínuo e otimização"
+          "mobile": {
+            "title": "Aplicações Móveis",
+            "description": "Aplicações móveis nativas e multiplataforma para iOS e Android"
+          },
+          "tools": {
+            "title": "Ferramentas Personalizadas",
+            "description": "Ferramentas de software especializadas e soluções de automatização para necessidades empresariais específicas"
           }
-        },
-        "placeholders": {
-          "unsure": "Descreva os seus desafios atuais ou áreas onde gostaria de ver melhorias...",
-          "other": "Descreva o que pretende construir ou alcançar..."
         }
       },
       "budget": {

@@ -79,6 +79,27 @@
       }
     }
   },
+  "servicesv2": {
+    "title": "Our Core Services",
+    "subtitle": "Simple solutions for your business needs",
+    "items": {
+      "ai": {
+        "title": "AI Solutions",
+        "description": "We create smart systems that work for you. From chatbots that answer customer questions to automation that handles repetitive tasks, our AI solutions save you time and improve your business efficiency.",
+        "description_small": "Smart automation systems"
+      },
+      "websites": {
+        "title": "Websites",
+        "description": "Beautiful, fast websites that work on all devices. Whether you need a simple business website, an online store, or a custom web application, we build modern sites that help you reach more customers.",
+        "description_small": "Modern web solutions"
+      },
+      "software": {
+        "title": "Software",
+        "description": "Custom software built specifically for your business needs. From desktop applications to mobile apps and specialized tools, we create software that solves your unique challenges and grows with your business.",
+        "description_small": "Custom applications"
+      }
+    }
+  },
   "contact": {
     "title": "Send us a message",
     "subtitle": "We'll get back to you within 24 hours",
@@ -123,7 +144,20 @@
       "service": {
         "title": "What do you need?",
         "description": "Select the service that best matches your requirements:",
+        "description_small": "Choose your service:",
         "options": {
+          "ai": {
+            "title": "AI Solutions",
+            "description": "Smart automation systems and AI-powered tools"
+          },
+          "websites": {
+            "title": "Websites",
+            "description": "Modern web solutions and online presence"
+          },
+          "software": {
+            "title": "Software",
+            "description": "Custom applications and specialized tools"
+          },
           "automation": {
             "title": "Process Automation",
             "description": "Automate your daily operations and workflows"
@@ -146,89 +180,71 @@
           },
           "other": {
             "title": "Other",
-            "description": "Something else - tell us more about it"
+            "description": "Something else - tell us more about it",
+            "description_small": "Tell us more"
           }
         }
       },
       "details": {
-        "title": "What else can I do for you?",
-        "title_unsure": "What you want to improve?",
-        "description": "What specific services are you looking for?",
-        "description_unsure": "Help us understand your current challenges and goals.",
-        "automation": {
+        "title": "What specific services are you looking for?",
+        "title_other": "Tell us about your project",
+        "description": "Based on your selection, let's dive deeper into what you're looking for:",
+        "description_other": "Help us understand what you're trying to build or achieve.",
+        "ai": {
           "rpa": {
             "title": "RPA (Robotic Process Automation)",
-            "description": "Automate repetitive tasks and data entry"
+            "description": "Automate repetitive tasks like data entry, file processing, and form submissions"
+          },
+          "chatbot": {
+            "title": "AI Chatbots & Virtual Assistants",
+            "description": "Intelligent chatbots that can handle customer inquiries and support tasks"
           },
           "workflow": {
-            "title": "Workflow Management",
-            "description": "Streamline business processes and approvals"
+            "title": "AI-Powered Workflow Automation",
+            "description": "Smart automation that can make decisions and handle complex business processes"
           },
-          "integration": {
-            "title": "System Integration",
-            "description": "Connect different software and databases"
-          },
-          "reporting": {
-            "title": "Automated Reporting",
-            "description": "Generate reports and dashboards automatically"
+          "analytics": {
+            "title": "AI Analytics & Insights",
+            "description": "Automated data analysis and reporting with AI-generated insights"
           }
         },
-        "webapp": {
-          "saas": {
-            "title": "SaaS Platform Development",
-            "description": "Multi-tenant cloud applications"
-          },
-          "angular": {
-            "title": "Angular Applications",
-            "description": "Modern frontend with Angular framework"
-          },
-          "django": {
-            "title": "Django Backend",
-            "description": "Robust Python backend development"
-          },
-          "api": {
-            "title": "API Development",
-            "description": "RESTful APIs and microservices"
-          }
-        },
-        "web": {
-          "responsive": {
-            "title": "Simple 1 page websites",
-            "description": "Clean, focused single-page websites"
+        "websites": {
+          "corporate": {
+            "title": "Corporate Websites",
+            "description": "Professional business websites with modern design and functionality"
           },
           "ecommerce": {
-            "title": "E-commerce Solutions",
-            "description": "Online stores and payment systems"
-          },
-          "cms": {
-            "title": "Content Management",
-            "description": "Easy-to-use content management systems"
+            "title": "E-commerce Stores",
+            "description": "Online stores with payment processing, inventory management, and customer accounts"
           },
           "portfolio": {
-            "title": "Portfolio & Business Sites",
-            "description": "Professional websites and portfolios"
+            "title": "Portfolio & Showcase Sites",
+            "description": "Creative portfolios and showcase websites for professionals and agencies"
+          },
+          "landing": {
+            "title": "Landing Pages",
+            "description": "High-converting landing pages for marketing campaigns and lead generation"
           }
         },
-        "tools": {
-          "scraping": {
-            "title": "Web Scraping Tools",
-            "description": "Automated data extraction and monitoring"
-          },
-          "cli": {
-            "title": "Command Line Tools",
-            "description": "Custom CLI applications and scripts"
+        "software": {
+          "webapp": {
+            "title": "Web Applications",
+            "description": "Custom web applications and SaaS platforms with advanced functionality"
           },
           "desktop": {
             "title": "Desktop Applications",
-            "description": "Cross-platform desktop software"
+            "description": "Native desktop software for Windows, macOS, and Linux systems"
           },
-          "maintenance": {
-            "title": "System Maintenance",
-            "description": "Ongoing support and optimization"
+          "mobile": {
+            "title": "Mobile Apps",
+            "description": "Native and cross-platform mobile applications for iOS and Android"
+          },
+          "tools": {
+            "title": "Custom Tools & Scripts",
+            "description": "Specialized tools, command-line utilities, and automation scripts"
           }
         },
         "placeholders": {
-          "unsure": "Describe your current challenges or areas where you'd like to see improvement...",
           "other": "Describe what you're looking to build or achieve..."
         }
       },

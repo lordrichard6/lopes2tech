@@ -19,8 +19,6 @@ export interface MultiStepFormData {
   selectedService: string;
   selectedDetailServices: string[];
   projectDescription?: string;
-  budget: number;
-  currency: string;
   additionalMessage?: string;
 }
 
@@ -90,10 +88,6 @@ export class EmailService {
         .map(service => detailServiceLabels[service] || service)
         .join(', ');
 
-      const budgetText = formData.budget >= 50000 
-        ? `${currencySymbols[formData.currency] || '€'}50,000+`
-        : `${currencySymbols[formData.currency] || '€'}${formData.budget.toLocaleString()}`;
-
       const templateParams = {
         from_name: `${formData.firstName} ${formData.lastName}`,
         from_email: formData.email,
@@ -107,8 +101,6 @@ export class EmailService {
         service_category: serviceDisplayNames[formData.selectedService] || formData.selectedService,
         detail_services: detailServicesText || 'None specified',
         project_description: formData.projectDescription || 'Not provided',
-        budget_amount: budgetText,
-        currency: formData.currency,
         additional_message: formData.additionalMessage || 'None',
         reply_to: formData.email,
         // For simple templates that expect these specific variable names (matching your template)
@@ -121,10 +113,9 @@ export class EmailService {
         selectedService: serviceDisplayNames[formData.selectedService] || formData.selectedService,
         selectedDetailServices: detailServicesText || 'None specified',
         projectDescription: formData.projectDescription || 'Not provided',
-        budget: budgetText,
         additionalMessage: formData.additionalMessage || 'None',
         // Combined message for simple templates
-        message: this.buildFullMessage(formData, serviceDisplayNames, detailServiceLabels, currencySymbols)
+        message: this.buildFullMessage(formData, serviceDisplayNames, detailServiceLabels)
       };
 
       const response = await emailjs.send(
@@ -144,8 +135,7 @@ export class EmailService {
   private buildFullMessage(
     formData: MultiStepFormData, 
     serviceDisplayNames: { [key: string]: string },
-    detailServiceLabels: { [key: string]: string },
-    currencySymbols: { [key: string]: string }
+    detailServiceLabels: { [key: string]: string }
   ): string {
     let message = '=== NEW PROJECT INQUIRY ===\n\n';
     
@@ -169,12 +159,6 @@ export class EmailService {
     if (formData.projectDescription) {
       message += `Project Description: ${formData.projectDescription}\n`;
     }
-    
-    const budgetText = formData.budget >= 50000 
-      ? `${currencySymbols[formData.currency] || '€'}50,000+`
-      : `${currencySymbols[formData.currency] || '€'}${formData.budget.toLocaleString()}`;
-    
-    message += `Budget: ${budgetText}\n`;
     
     if (formData.additionalMessage) {
       message += '\n--- ADDITIONAL MESSAGE ---\n';
@@ -244,11 +228,6 @@ export class EmailService {
         'cli': 'Command Line Tools',
         'desktop': 'Desktop Applications',
         'maintenance': 'System Maintenance'
-      },
-      {
-        'EUR': '€',
-        'CHF': 'CHF',
-        'USD': '$'
       }
     );
     

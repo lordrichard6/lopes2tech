@@ -56,12 +56,33 @@
         "example": "Zum Beispiel: eine Restaurant-Website, wo Kunden Menüs ansehen, Reservierungen machen und online bestellen können - alles an einem Ort."
       },
       "app": {
-        "explanation": "Wir entwickeln leistungsstarke Webanwendungen und Cloud-basierte Software, die spezifische Geschäftsprobleme lösen. Das sind wie maßgeschneiderte digitale Werkzeuge, die nur für Ihre Bedürfnisse entwickelt wurden - von Kundenverwaltungssystemen bis hin zu Online-Marktplätzen.",
-        "example": "Zum Beispiel: ein maßgeschneidertes Inventarsystem, das Ihre Produkte verfolgt, Sie warnt, wenn der Bestand niedrig ist, und automatisch neue Vorräte bestellt."
+        "explanation": "Wir entwickeln leistungsstarke Webanwendungen und Cloud-basierte Software, die spezifische Geschäftsprobleme lösen. Das sind wie massgeschneiderte digitale Werkzeuge, die nur für Ihre Bedürfnisse entwickelt wurden - von Kundenverwaltungssystemen bis hin zu Online-Marktplätzen.",
+        "example": "Zum Beispiel: ein massgeschneidertes Inventarsystem, das Ihre Produkte verfolgt, Sie warnt, wenn der Bestand niedrig ist, und automatisch neue Vorräte bestellt."
       },
       "tools": {
-        "explanation": "Wir entwickeln spezialisierte Software-Tools, die sich in das integrieren, was Sie bereits verwenden. Diese maßgeschneiderten Lösungen automatisieren spezifische Aufgaben in Ihrem Arbeitsablauf, wie Datenverarbeitung, Dateiverwaltung oder die Verbindung verschiedener Software-Systeme.",
+        "explanation": "Wir entwickeln spezialisierte Software-Tools, die sich in das integrieren, was Sie bereits verwenden. Diese massgeschneiderten Lösungen automatisieren spezifische Aufgaben in Ihrem Arbeitsablauf, wie Datenverarbeitung, Dateiverwaltung oder die Verbindung verschiedener Software-Systeme.",
         "example": "Zum Beispiel: ein Tool, das Daten aus Ihrem Verkaufssystem nimmt und automatisch Rechnungen in Ihrer Buchhaltungssoftware erstellt."
+      }
+    }
+  },
+  "servicesv2": {
+    "title": "Unsere Kerndienstleistungen",
+    "subtitle": "Einfache Lösungen für Ihre Geschäftsanforderungen",
+    "items": {
+      "ai": {
+        "title": "KI-Lösungen",
+        "description": "Wir entwickeln intelligente Systeme, die für Sie arbeiten. Von Chatbots, die Kundenfragen beantworten, bis hin zur Automatisierung repetitiver Aufgaben - unsere KI-Lösungen sparen Ihnen Zeit und verbessern die Effizienz Ihres Unternehmens.",
+        "description_small": "Intelligente Automatisierungssysteme"
+      },
+      "websites": {
+        "title": "Websites",
+        "description": "Schöne, schnelle Websites, die auf allen Geräten funktionieren. Ob Sie eine einfache Unternehmenswebsite, einen Online-Shop oder eine massgeschneiderte Web-Anwendung benötigen - wir erstellen moderne Websites, die Ihnen helfen, mehr Kunden zu erreichen.",
+        "description_small": "Moderne Web-Lösungen"
+      },
+      "software": {
+        "title": "Software",
+        "description": "Massgeschneiderte Software, die speziell für Ihre Geschäftsanforderungen entwickelt wurde. Von Desktop-Anwendungen über mobile Apps bis hin zu spezialisierten Tools - wir erstellen Software, die Ihre einzigartigen Herausforderungen löst und mit Ihrem Unternehmen wächst.",
+        "description_small": "Massgeschneiderte Anwendungen"
       }
     }
   },
@@ -123,21 +144,34 @@
       "service": {
         "title": "Was brauchen Sie?",
         "description": "Wählen Sie den Service, der am besten zu Ihren Anforderungen passt:",
+        "description_small": "Wählen Sie Ihren Service:",
         "options": {
+          "ai": {
+            "title": "KI-Lösungen",
+            "description": "Intelligente Automatisierungssysteme und KI-gestützte Tools"
+          },
+          "websites": {
+            "title": "Websites",
+            "description": "Moderne Web-Lösungen und Online-Präsenz"
+          },
+          "software": {
+            "title": "Software",
+            "description": "Massgeschneiderte Anwendungen und spezialisierte Tools"
+          },
           "automation": {
             "title": "Prozessautomatisierung",
             "description": "Automatisieren Sie Ihre täglichen Abläufe und Arbeitsschritte"
           },
           "webapp": {
             "title": "Webanwendungen & SaaS",
-            "description": "Maßgeschneiderte Web-Apps und SaaS-Plattformen"
+            "description": "Massgeschneiderte Web-Apps und SaaS-Plattformen"
           },
           "web": {
             "title": "Webentwicklung",
             "description": "Moderne, responsive Websites"
           },
           "tools": {
-            "title": "Maßgeschneiderte Tools",
+            "title": "Massgeschneiderte Tools",
             "description": "Spezialisierte Automatisierungs-Tools und Integrationen"
           },
           "unsure": {
@@ -146,90 +180,67 @@
           },
           "other": {
             "title": "Anderes",
-            "description": "Etwas anderes - erzählen Sie uns mehr darüber"
+            "description": "Etwas anderes - erzählen Sie uns mehr darüber",
+            "description_small": "Erzählen Sie mehr"
           }
         }
       },
       "details": {
-        "title": "Was kann ich sonst noch für Sie tun?",
-        "title_unsure": "Was möchten Sie verbessern?",
-        "description": "Welche spezifischen Services suchen Sie?",
-        "description_unsure": "Helfen Sie uns, Ihre aktuellen Herausforderungen und Ziele zu verstehen.",
-        "automation": {
+        "title": "Welchen Service benötigen Sie?",
+        "description": "Wählen Sie alle Services aus, die für Ihr Projekt relevant sind:",
+        "ai": {
           "rpa": {
             "title": "RPA (Robotergestützte Prozessautomatisierung)",
-            "description": "Automatisieren Sie wiederkehrende Aufgaben und Dateneingabe"
+            "description": "Automatisierung wiederkehrender Aufgaben wie Dateneingabe, Dateienverarbeitung und Formularübermittlung"
+          },
+          "chatbot": {
+            "title": "KI-Chatbots & Virtuelle Assistenten",
+            "description": "Intelligente Chatbots, die Kundenanfragen und Support-Aufgaben bearbeiten können"
           },
           "workflow": {
-            "title": "Workflow-Management",
-            "description": "Optimieren Sie Geschäftsprozesse und Genehmigungen"
+            "title": "KI-gestützte Workflow-Automatisierung",
+            "description": "Smarte Automatisierung, die Entscheidungen treffen und komplexe Geschäftsprozesse bearbeiten kann"
           },
-          "integration": {
-            "title": "Systemintegration",
-            "description": "Verbinden Sie verschiedene Software und Datenbanken"
-          },
-          "reporting": {
-            "title": "Automatisierte Berichte",
-            "description": "Generieren Sie automatisch Berichte und Dashboards"
+          "analytics": {
+            "title": "KI-Analytik & Erkenntnisse",
+            "description": "Automatisierte Datenanalyse und Berichterstattung mit KI-generierten Erkenntnissen"
           }
         },
-        "webapp": {
-          "saas": {
-            "title": "SaaS-Plattform-Entwicklung",
-            "description": "Multi-Tenant Cloud-Anwendungen"
-          },
-          "angular": {
-            "title": "Angular-Anwendungen",
-            "description": "Modernes Frontend mit Angular Framework"
-          },
-          "django": {
-            "title": "Django Backend",
-            "description": "Robuste Python Backend-Entwicklung"
-          },
-          "api": {
-            "title": "API-Entwicklung",
-            "description": "RESTful APIs und Microservices"
-          }
-        },
-        "web": {
-          "responsive": {
-            "title": "Einfache 1-Seiten-Websites",
-            "description": "Saubere, fokussierte Single-Page-Websites"
+        "websites": {
+          "corporate": {
+            "title": "Unternehmens-Websites",
+            "description": "Professionelle Geschäftswebsites mit modernem Design und Funktionalität"
           },
           "ecommerce": {
-            "title": "E-Commerce-Lösungen",
-            "description": "Online-Shops und Zahlungssysteme"
-          },
-          "cms": {
-            "title": "Content-Management",
-            "description": "Benutzerfreundliche Content-Management-Systeme"
+            "title": "E-Commerce-Shops",
+            "description": "Online-Shops mit Zahlungsabwicklung, Lagerverwaltung und Kundenkonten"
           },
           "portfolio": {
-            "title": "Portfolio- & Unternehmens-Sites",
-            "description": "Professionelle Websites und Portfolios"
+            "title": "Portfolio & Showcase-Sites",
+            "description": "Kreative Portfolios und Showcase-Websites für Fachleute und Agenturen"
+          },
+          "landing": {
+            "title": "Landing Pages",
+            "description": "Hochkonvertierende Landing Pages für Marketingkampagnen und Lead-Generierung"
           }
         },
-        "tools": {
-          "scraping": {
-            "title": "Web-Scraping-Tools",
-            "description": "Automatisierte Datenextraktion und Überwachung"
-          },
-          "cli": {
-            "title": "Kommandozeilen-Tools",
-            "description": "Maßgeschneiderte CLI-Anwendungen und Skripte"
+        "software": {
+          "webapp": {
+            "title": "Web-Anwendungen",
+            "description": "Leistungsstarke Web-Anwendungen und cloud-basierte Software für Geschäftslösungen"
           },
           "desktop": {
             "title": "Desktop-Anwendungen",
-            "description": "Plattformübergreifende Desktop-Software"
+            "description": "Plattformübergreifende Desktop-Software für Windows, Mac und Linux"
           },
-          "maintenance": {
-            "title": "System-Wartung",
-            "description": "Laufende Unterstützung und Optimierung"
+          "mobile": {
+            "title": "Mobile Apps",
+            "description": "Native und plattformübergreifende mobile Anwendungen für iOS und Android"
+          },
+          "tools": {
+            "title": "Maßgeschneiderte Tools",
+            "description": "Spezialisierte Software-Tools und Automatisierungslösungen für spezifische Geschäftsanforderungen"
           }
-        },
-        "placeholders": {
-          "unsure": "Beschreiben Sie Ihre aktuellen Herausforderungen oder Bereiche, in denen Sie Verbesserungen sehen möchten...",
-          "other": "Beschreiben Sie, was Sie entwickeln oder erreichen möchten..."
         }
       },
       "budget": {
