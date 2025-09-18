@@ -1,0 +1,103 @@
+<div class="pricing-container">
+  <div class="pricing-hero">
+    <div class="hero-content">
+      <h1>Our Services & Pricing</h1>
+      <p class="hero-subtitle">Transparent pricing for professional technology solutions</p>
+    </div>
+  </div>
+
+  <div class="pricing-content">
+    <div class="container">
+      <!-- Dynamic Service Sections -->
+      <div class="service-section" *ngFor="let service of services">
+        <div class="service-header">
+          <div class="service-icon">
+            <i [class]="service.icon"></i>
+          </div>
+          <h2>{{ service.name }}</h2>
+          <p class="service-description">{{ service.description }}</p>
+        </div>
+
+        <!-- Dynamic Sub Services -->
+        <div class="sub-service" *ngFor="let subService of service.subServices">
+          <div class="sub-service-header">
+            <h3>{{ subService.name }}</h3>
+            <button 
+              class="toggle-button" 
+              (click)="toggleTable(subService.name)"
+              [class.active]="isTableVisible(subService.name)">
+              <i class="fas" [class.fa-chevron-down]="!isTableVisible(subService.name)" [class.fa-chevron-up]="isTableVisible(subService.name)"></i>
+              {{ isTableVisible(subService.name) ? 'Hide' : 'Show' }} Pricing
+            </button>
+          </div>
+          
+          <div 
+            class="pricing-table-container" 
+            *ngIf="isTableVisible(subService.name)"
+            [class.opening]="isTableOpening(subService.name)"
+            [class.closing]="isTableClosing(subService.name)">
+            
+            <!-- Service Description -->
+            <div class="sub-service-description">
+              <p>{{ subService.description }}</p>
+            </div>
+            
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Tier</th>
+                  <th>Switzerland (CHF)</th>
+                  <th>Portugal (€)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic Pricing Tiers -->
+                <tr 
+                  *ngFor="let tier of subService.tiers" 
+                  class="tier-row"
+                  [class.budget]="tier.name === 'Budget'"
+                  [class.mid-range]="tier.name === 'Mid-Range'"
+                  [class.premium]="tier.name === 'Premium'"
+                  [class.featured]="tier.isPopular"
+                >
+                  <td class="tier-name">
+                    <strong>{{ tier.name }}</strong>
+                    <span *ngIf="tier.isPopular" class="popular-badge">Most Popular</span>
+                  </td>
+                  <td class="pricing-details">
+                    <div class="price-item">
+                      <span class="price-type">Hourly:</span>
+                      <span class="price-value">{{ tier.chfHourly }}</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="price-type">Project:</span>
+                      <span class="price-value">{{ tier.chfProject }}</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="price-type">Retainer:</span>
+                      <span class="price-value">{{ tier.chfRetainer }}</span>
+                    </div>
+                  </td>
+                  <td class="pricing-details">
+                    <div class="price-item">
+                      <span class="price-type">Hourly:</span>
+                      <span class="price-value">{{ tier.eurHourly }}</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="price-type">Project:</span>
+                      <span class="price-value">{{ tier.eurProject }}</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="price-type">Retainer:</span>
+                      <span class="price-value">{{ tier.eurRetainer }}</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Startseite",
     "services": "Dienstleistungen",
+    "pricing": "Preise",
     "about": "Über uns",
     "contact": "Kontakt"
   },
@@ -127,6 +128,135 @@
       "phone": "Telefon",
       "email": "E-Mail",
       "location": "Standort"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Transparente Preise",
+      "subtitle": "Wählen Sie das perfekte Paket für Ihre Geschäftsanforderungen",
+      "badge": "Keine versteckten Gebühren"
+    },
+    "packages": {
+      "ai": {
+        "title": "KI-Lösungen",
+        "description": "Intelligente Automatisierung und KI-gestützte Tools für Ihr Unternehmen",
+        "basic": {
+          "title": "Starter",
+          "price": "2.500",
+          "feature1": "Einfache Chatbot-Integration",
+          "feature2": "Grundlegende Prozessautomatisierung",
+          "feature3": "E-Mail-Support",
+          "feature4": "30-tägige Implementierung"
+        },
+        "professional": {
+          "title": "Professionell",
+          "price": "8.500",
+          "feature1": "Erweiterte KI-Chatbots",
+          "feature2": "Individuelle Workflow-Automatisierung",
+          "feature3": "Datenanalyse-Integration",
+          "feature4": "Prioritäts-Support",
+          "feature5": "60-tägige Implementierung"
+        },
+        "enterprise": {
+          "title": "Enterprise",
+          "price": "25.000+",
+          "feature1": "Massgeschneiderte KI-Lösungen",
+          "feature2": "Machine-Learning-Modelle",
+          "feature3": "Enterprise-Integrationen",
+          "feature4": "Dedizierter Support",
+          "feature5": "Individueller Zeitplan"
+        }
+      },
+      "websites": {
+        "title": "Website-Lösungen",
+        "description": "Moderne, responsive Websites, die Besucher zu Kunden konvertieren",
+        "basic": {
+          "title": "Starter",
+          "price": "1.500",
+          "feature1": "5-seitige responsive Website",
+          "feature2": "Kontaktformular-Integration",
+          "feature3": "Grundlegende SEO-Optimierung",
+          "feature4": "14-tägige Lieferung"
+        },
+        "professional": {
+          "title": "Professionell",
+          "price": "4.500",
+          "feature1": "10-seitiges individuelles Design",
+          "feature2": "CMS-Integration",
+          "feature3": "Erweiterte SEO",
+          "feature4": "Analytics-Setup",
+          "feature5": "30-tägige Lieferung"
+        },
+        "enterprise": {
+          "title": "Enterprise",
+          "price": "12.000+",
+          "feature1": "Unbegrenzte Seiten",
+          "feature2": "E-Commerce-Funktionalität",
+          "feature3": "Individuelle Integrationen",
+          "feature4": "Performance-Optimierung",
+          "feature5": "Laufende Wartung"
+        }
+      },
+      "software": {
+        "title": "Software-Lösungen",
+        "description": "Massgeschneiderte Anwendungen für Ihre spezifischen Geschäftsanforderungen",
+        "basic": {
+          "title": "Starter",
+          "price": "5.000",
+          "feature1": "Einfache Desktop-Anwendung",
+          "feature2": "Grundfunktionalität",
+          "feature3": "Benutzerdokumentation",
+          "feature4": "45-tägige Entwicklung"
+        },
+        "professional": {
+          "title": "Professionell",
+          "price": "15.000",
+          "feature1": "Multi-Plattform-Anwendung",
+          "feature2": "Erweiterte Funktionen",
+          "feature3": "Datenbank-Integration",
+          "feature4": "API-Entwicklung",
+          "feature5": "90-tägige Entwicklung"
+        },
+        "enterprise": {
+          "title": "Enterprise",
+          "price": "50.000+",
+          "feature1": "Komplexe Systemarchitektur",
+          "feature2": "Cloud-Deployment",
+          "feature3": "Skalierbare Infrastruktur",
+          "feature4": "Enterprise-Sicherheit",
+          "feature5": "Individueller Zeitplan"
+        }
+      }
+    },
+    "badges": {
+      "popular": "Beliebteste"
+    },
+    "cta": {
+      "getStarted": "Loslegen"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Was ist im Preis enthalten?",
+        "answer": "Alle Pakete beinhalten Entwicklung, Tests, Dokumentation und anfänglichen Support. Zusätzliche Features und Wartung können separat besprochen werden."
+      },
+      "q2": {
+        "question": "Kann ich ein Paket anpassen?",
+        "answer": "Absolut! Alle unsere Pakete können an Ihre spezifischen Bedürfnisse angepasst werden. Kontaktieren Sie uns, um Ihre Anforderungen zu besprechen."
+      },
+      "q3": {
+        "question": "Wie sieht es mit laufendem Support aus?",
+        "answer": "Wir bieten verschiedene Support-Pakete nach Projektabschluss, einschließlich Wartung, Updates und Feature-Erweiterungen."
+      },
+      "q4": {
+        "question": "Wie lange dauert die Entwicklung?",
+        "answer": "Die Timeline variiert je nach Projektkomplexität. Wir stellen detaillierte Zeitpläne während der Beratungsphase bereit und halten Sie während der gesamten Entwicklung auf dem Laufenden."
+      }
+    },
+    "finalCta": {
+      "title": "Bereit anzufangen?",
+      "subtitle": "Lassen Sie uns Ihr Projekt besprechen und die perfekte Lösung für Ihre Bedürfnisse finden",
+      "button": "Kontaktieren Sie uns heute"
     }
   },
   "multistep": {

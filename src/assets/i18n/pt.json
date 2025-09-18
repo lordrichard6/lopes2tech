@@ -2,6 +2,7 @@
   "nav": {
     "home": "Início",
     "services": "Serviços",
+    "pricing": "Preços",
     "about": "Sobre",
     "contact": "Contacto"
   },
@@ -127,6 +128,135 @@
       "phone": "Telefone",
       "email": "Email",
       "location": "Localização"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Preços Transparentes",
+      "subtitle": "Escolha o pacote perfeito para as necessidades do seu negócio",
+      "badge": "Sem Taxas Ocultas"
+    },
+    "packages": {
+      "ai": {
+        "title": "Soluções de IA",
+        "description": "Automação inteligente e ferramentas com IA para o seu negócio",
+        "basic": {
+          "title": "Inicial",
+          "price": "2.500",
+          "feature1": "Integração simples de chatbot",
+          "feature2": "Automação básica de processos",
+          "feature3": "Suporte por email",
+          "feature4": "Implementação em 30 dias"
+        },
+        "professional": {
+          "title": "Profissional",
+          "price": "8.500",
+          "feature1": "Chatbots de IA avançados",
+          "feature2": "Automação de fluxo personalizada",
+          "feature3": "Integração de análise de dados",
+          "feature4": "Suporte prioritário",
+          "feature5": "Implementação em 60 dias"
+        },
+        "enterprise": {
+          "title": "Empresarial",
+          "price": "25.000+",
+          "feature1": "Soluções de IA personalizadas",
+          "feature2": "Modelos de aprendizagem automática",
+          "feature3": "Integrações empresariais",
+          "feature4": "Suporte dedicado",
+          "feature5": "Cronograma personalizado"
+        }
+      },
+      "websites": {
+        "title": "Soluções de Websites",
+        "description": "Websites modernos e responsivos que convertem visitantes em clientes",
+        "basic": {
+          "title": "Inicial",
+          "price": "1.500",
+          "feature1": "Website responsivo de 5 páginas",
+          "feature2": "Integração de formulário de contacto",
+          "feature3": "Otimização SEO básica",
+          "feature4": "Entrega em 14 dias"
+        },
+        "professional": {
+          "title": "Profissional",
+          "price": "4.500",
+          "feature1": "Design personalizado de 10 páginas",
+          "feature2": "Integração CMS",
+          "feature3": "SEO avançado",
+          "feature4": "Configuração de analytics",
+          "feature5": "Entrega em 30 dias"
+        },
+        "enterprise": {
+          "title": "Empresarial",
+          "price": "12.000+",
+          "feature1": "Páginas ilimitadas",
+          "feature2": "Funcionalidade e-commerce",
+          "feature3": "Integrações personalizadas",
+          "feature4": "Otimização de performance",
+          "feature5": "Manutenção contínua"
+        }
+      },
+      "software": {
+        "title": "Soluções de Software",
+        "description": "Aplicações personalizadas adaptadas às suas necessidades específicas",
+        "basic": {
+          "title": "Inicial",
+          "price": "5.000",
+          "feature1": "Aplicação desktop simples",
+          "feature2": "Funcionalidade básica",
+          "feature3": "Documentação do utilizador",
+          "feature4": "Desenvolvimento em 45 dias"
+        },
+        "professional": {
+          "title": "Profissional",
+          "price": "15.000",
+          "feature1": "Aplicação multi-plataforma",
+          "feature2": "Funcionalidades avançadas",
+          "feature3": "Integração de base de dados",
+          "feature4": "Desenvolvimento de API",
+          "feature5": "Desenvolvimento em 90 dias"
+        },
+        "enterprise": {
+          "title": "Empresarial",
+          "price": "50.000+",
+          "feature1": "Arquitetura de sistema complexa",
+          "feature2": "Implementação na nuvem",
+          "feature3": "Infraestrutura escalável",
+          "feature4": "Segurança empresarial",
+          "feature5": "Cronograma personalizado"
+        }
+      }
+    },
+    "badges": {
+      "popular": "Mais Popular"
+    },
+    "cta": {
+      "getStarted": "Começar"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "q1": {
+        "question": "O que está incluído no preço?",
+        "answer": "Todos os pacotes incluem desenvolvimento, testes, documentação e suporte inicial. Funcionalidades adicionais e manutenção podem ser discutidas separadamente."
+      },
+      "q2": {
+        "question": "Posso personalizar um pacote?",
+        "answer": "Absolutamente! Todos os nossos pacotes podem ser personalizados para se adequarem às suas necessidades específicas. Contacte-nos para discutir os seus requisitos."
+      },
+      "q3": {
+        "question": "E quanto ao suporte contínuo?",
+        "answer": "Oferecemos vários pacotes de suporte após a conclusão do projeto, incluindo manutenção, atualizações e melhorias de funcionalidades."
+      },
+      "q4": {
+        "question": "Quanto tempo demora o desenvolvimento?",
+        "answer": "O cronograma varia conforme a complexidade do projeto. Fornecemos cronogramas detalhados durante a fase de consulta e mantemo-lo atualizado durante todo o desenvolvimento."
+      }
+    },
+    "finalCta": {
+      "title": "Pronto para Começar?",
+      "subtitle": "Vamos discutir o seu projeto e encontrar a solução perfeita para as suas necessidades",
+      "button": "Contacte-nos Hoje"
     }
   },
   "multistep": {

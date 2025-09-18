@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "pricing": "Pricing",
     "about": "About",
     "contact": "Contact"
   },
@@ -127,6 +128,135 @@
       "phone": "Phone",
       "email": "Email",
       "location": "Location"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Transparent Pricing",
+      "subtitle": "Choose the perfect package for your business needs",
+      "badge": "No Hidden Fees"
+    },
+    "packages": {
+      "ai": {
+        "title": "AI Solutions",
+        "description": "Smart automation and AI-powered tools for your business",
+        "basic": {
+          "title": "Starter",
+          "price": "2,500",
+          "feature1": "Simple chatbot integration",
+          "feature2": "Basic process automation",
+          "feature3": "Email support",
+          "feature4": "30-day implementation"
+        },
+        "professional": {
+          "title": "Professional",
+          "price": "8,500",
+          "feature1": "Advanced AI chatbots",
+          "feature2": "Custom workflow automation",
+          "feature3": "Data analytics integration",
+          "feature4": "Priority support",
+          "feature5": "60-day implementation"
+        },
+        "enterprise": {
+          "title": "Enterprise",
+          "price": "25,000+",
+          "feature1": "Custom AI solutions",
+          "feature2": "Machine learning models",
+          "feature3": "Enterprise integrations",
+          "feature4": "Dedicated support",
+          "feature5": "Custom timeline"
+        }
+      },
+      "websites": {
+        "title": "Website Solutions",
+        "description": "Modern, responsive websites that convert visitors to customers",
+        "basic": {
+          "title": "Starter",
+          "price": "1,500",
+          "feature1": "5-page responsive website",
+          "feature2": "Contact form integration",
+          "feature3": "Basic SEO optimization",
+          "feature4": "14-day delivery"
+        },
+        "professional": {
+          "title": "Professional",
+          "price": "4,500",
+          "feature1": "10-page custom design",
+          "feature2": "CMS integration",
+          "feature3": "Advanced SEO",
+          "feature4": "Analytics setup",
+          "feature5": "30-day delivery"
+        },
+        "enterprise": {
+          "title": "Enterprise",
+          "price": "12,000+",
+          "feature1": "Unlimited pages",
+          "feature2": "E-commerce functionality",
+          "feature3": "Custom integrations",
+          "feature4": "Performance optimization",
+          "feature5": "Ongoing maintenance"
+        }
+      },
+      "software": {
+        "title": "Software Solutions",
+        "description": "Custom applications tailored to your specific business needs",
+        "basic": {
+          "title": "Starter",
+          "price": "5,000",
+          "feature1": "Simple desktop application",
+          "feature2": "Basic functionality",
+          "feature3": "User documentation",
+          "feature4": "45-day development"
+        },
+        "professional": {
+          "title": "Professional",
+          "price": "15,000",
+          "feature1": "Multi-platform application",
+          "feature2": "Advanced features",
+          "feature3": "Database integration",
+          "feature4": "API development",
+          "feature5": "90-day development"
+        },
+        "enterprise": {
+          "title": "Enterprise",
+          "price": "50,000+",
+          "feature1": "Complex system architecture",
+          "feature2": "Cloud deployment",
+          "feature3": "Scalable infrastructure",
+          "feature4": "Enterprise security",
+          "feature5": "Custom timeline"
+        }
+      }
+    },
+    "badges": {
+      "popular": "Most Popular"
+    },
+    "cta": {
+      "getStarted": "Get Started"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "What's included in the pricing?",
+        "answer": "All packages include development, testing, documentation, and initial support. Additional features and maintenance can be discussed separately."
+      },
+      "q2": {
+        "question": "Can I customize a package?",
+        "answer": "Absolutely! All our packages can be customized to fit your specific needs. Contact us to discuss your requirements."
+      },
+      "q3": {
+        "question": "What about ongoing support?",
+        "answer": "We offer various support packages after project completion, including maintenance, updates, and feature enhancements."
+      },
+      "q4": {
+        "question": "How long does development take?",
+        "answer": "Timeline varies by project complexity. We provide detailed timelines during the consultation phase and keep you updated throughout development."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Let's discuss your project and find the perfect solution for your needs",
+      "button": "Contact Us Today"
     }
   },
   "multistep": {

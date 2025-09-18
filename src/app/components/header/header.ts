@@ -1,11 +1,12 @@
 import { Component, OnInit, OnDestroy, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { LanguageSelectorComponent } from '../language-selector/language-selector';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, LanguageSelectorComponent, TranslatePipe],
+  imports: [CommonModule, RouterModule, LanguageSelectorComponent, TranslatePipe],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
