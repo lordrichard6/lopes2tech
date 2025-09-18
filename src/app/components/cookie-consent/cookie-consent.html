@@ -1,0 +1,126 @@
+@if (showBanner) {
+  <div class="cookie-banner" [class.show-details]="showDetails">
+    <div class="cookie-banner-backdrop" (click)="showDetails = false"></div>
+    
+    <div class="cookie-banner-content">
+      <div class="cookie-header">
+        <div class="cookie-icon">
+          <i class="fas fa-cookie-bite"></i>
+        </div>
+        <h3>{{ 'cookies.title' | translate }}</h3>
+        <button class="close-btn" (click)="acceptNecessary()" aria-label="Close cookie banner">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="cookie-main">
+        <p class="cookie-description">
+          {{ 'cookies.description' | translate }}
+        </p>
+        
+        <div class="cookie-actions">
+          <button class="btn btn-primary" (click)="acceptAll()">
+            <i class="fas fa-check"></i>
+            {{ 'cookies.acceptAll' | translate }}
+          </button>
+          
+          <button class="btn btn-secondary" (click)="acceptNecessary()">
+            {{ 'cookies.acceptNecessary' | translate }}
+          </button>
+          
+          <button class="btn btn-link" (click)="toggleDetails()">
+            <i class="fas fa-cog"></i>
+            {{ 'cookies.customize' | translate }}
+          </button>
+        </div>
+      </div>
+      
+      <!-- Cookie Details/Preferences -->
+      @if (showDetails) {
+        <div class="cookie-details">
+          <div class="cookie-categories">
+            <div class="category">
+              <div class="category-header">
+                <h4>{{ 'cookies.categories.necessary.title' | translate }}</h4>
+                <div class="toggle-switch">
+                  <input type="checkbox" 
+                         id="necessary" 
+                         [checked]="cookiePreferences.necessary" 
+                         disabled>
+                  <label for="necessary"></label>
+                </div>
+              </div>
+              <p>{{ 'cookies.categories.necessary.description' | translate }}</p>
+            </div>
+            
+            <div class="category">
+              <div class="category-header">
+                <h4>{{ 'cookies.categories.analytics.title' | translate }}</h4>
+                <div class="toggle-switch">
+                  <input type="checkbox" 
+                         id="analytics" 
+                         [(ngModel)]="cookiePreferences.analytics">
+                  <label for="analytics"></label>
+                </div>
+              </div>
+              <p>{{ 'cookies.categories.analytics.description' | translate }}</p>
+            </div>
+            
+            <div class="category">
+              <div class="category-header">
+                <h4>{{ 'cookies.categories.functional.title' | translate }}</h4>
+                <div class="toggle-switch">
+                  <input type="checkbox" 
+                           id="functional" 
+                           [(ngModel)]="cookiePreferences.functional">
+                  <label for="functional"></label>
+                </div>
+              </div>
+              <p>{{ 'cookies.categories.functional.description' | translate }}</p>
+            </div>
+            
+            <div class="category">
+              <div class="category-header">
+                <h4>{{ 'cookies.categories.marketing.title' | translate }}</h4>
+                <div class="toggle-switch">
+                  <input type="checkbox" 
+                         id="marketing" 
+                         [(ngModel)]="cookiePreferences.marketing">
+                  <label for="marketing"></label>
+                </div>
+              </div>
+              <p>{{ 'cookies.categories.marketing.description' | translate }}</p>
+            </div>
+          </div>
+          
+          <div class="cookie-details-actions">
+            <button class="btn btn-primary" (click)="saveCustomPreferences()">
+              <i class="fas fa-save"></i>
+              {{ 'cookies.savePreferences' | translate }}
+            </button>
+            
+            <button class="btn btn-secondary" (click)="acceptAll()">
+              {{ 'cookies.acceptAll' | translate }}
+            </button>
+          </div>
+        </div>
+      }
+      
+      <div class="cookie-footer">
+        <p class="cookie-links">
+          <a routerLink="/impressum">{{ 'cookies.privacyPolicy' | translate }}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+}
+
+<!-- Cookie Settings Floating Button (after consent given) -->
+@if (!showBanner) {
+  <button class="cookie-settings-btn" 
+          (click)="resetCookies()"
+          [attr.aria-label]="'cookies.manageSettings' | translate"
+          [attr.title]="'cookies.manageSettings' | translate">
+    <i class="fas fa-cookie-bite"></i>
+  </button>
+}

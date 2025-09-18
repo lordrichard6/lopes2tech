@@ -405,29 +405,57 @@
       },
       "disclaimer": {
         "title": "Disclaimer",
-        "content1": "The information provided on this website is for general informational purposes only. While we strive to keep the content accurate and up-to-date, we make no warranties about its completeness, reliability, or suitability for any purpose. Any reliance you place on such information is therefore strictly at your own risk.",
+        "content1": "The information on this website is provided in good faith and for general information purposes only. We make no warranties about the completeness, reliability, and accuracy of this information.",
         "content2": "All offers and services are non-binding. We reserve the right to change, supplement, or delete content without notice."
       },
       "links": {
-        "title": "References and Links",
+        "title": "External Links",
         "content": "Our website may contain links to third-party websites. We are not responsible for the content or privacy practices of these external sites. Use of such links is at your own risk."
       },
       "copyright": {
-        "title": "Copyrights",
+        "title": "Copyright",
         "content": "The copyright and all other rights to content, images, and files on this website belong exclusively to {company} or to the respective rights holders. Any reproduction requires prior written consent."
       },
       "data_protection": {
         "title": "Data Protection",
-        "content1": "In accordance with Article 13 of the Swiss Federal Constitution and the Data Protection Act (DSG), your personal data is treated confidentially. We do not sell or disclose your information to third parties without your consent unless required by law.",
+        "content1": "We implement appropriate technical and organizational measures, in cooperation with our hosting providers, to safeguard your data from unauthorized access, loss, or misuse.",
         "content2": "We implement appropriate technical and organizational measures, in cooperation with our hosting providers, to safeguard your data from unauthorized access, loss, or misuse."
       },
       "jurisdiction": {
-        "title": "Governing Law & Jurisdiction",
+        "title": "Jurisdiction",
         "content": "This website is governed by Swiss law. Any disputes arising from the use of this website shall be subject to the exclusive jurisdiction of the courts in Zürich, Switzerland."
       },
       "last_updated": "Last updated:",
       "back_home": "← Back to Home",
       "all_rights": "All rights reserved."
+    }
+  },
+  "cookies": {
+    "title": "Cookie Preferences",
+    "description": "We use cookies to enhance your browsing experience, provide personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.",
+    "acceptAll": "Accept All",
+    "acceptNecessary": "Accept Necessary Only",
+    "customize": "Customize Settings",
+    "savePreferences": "Save Preferences",
+    "manageSettings": "Manage Cookie Settings",
+    "privacyPolicy": "Privacy Policy",
+    "categories": {
+      "necessary": {
+        "title": "Necessary Cookies",
+        "description": "These cookies are essential for the website to function properly. They enable basic functionality such as page navigation and access to secure areas."
+      },
+      "analytics": {
+        "title": "Analytics Cookies", 
+        "description": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously."
+      },
+      "functional": {
+        "title": "Functional Cookies",
+        "description": "These cookies enable enhanced functionality and personalization, such as remembering your preferences and settings."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "These cookies are used to deliver relevant advertisements and track the effectiveness of our marketing campaigns."
+      }
     }
   }
 }

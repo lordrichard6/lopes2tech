@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <me  <meta name="twitter:image" content="https://lopes2tech.ch/favicon-512x512.png">
-  
-  <!-- Geographic Meta Tags -->charset="utf-8">
+  <meta charset="utf-8">
   <title>lopes2tech - Swiss IT Solutions & Automation | Zurich</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,12 +90,18 @@
   <!-- Theme Color -->
   <meta name="theme-color" content="#2563eb">
   
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) with Cookie Consent -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P45F7T7PLH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+
+    // Initialize with denied consent by default
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied'
+    });
 
     gtag('config', 'G-P45F7T7PLH');
   </script>
