@@ -4,6 +4,7 @@ import { ServicesV2Component } from '../services/servicesv2.component';
 import { About } from '../about/about';
 // import { Contact } from '../contact/contact';
 import { MultistepComponent } from '../multistep/multistep';
+import { TeamComponent } from '../team/team';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,8 @@ import { MultistepComponent } from '../multistep/multistep';
     Hero,
     ServicesV2Component,
     About,
-    MultistepComponent
+    MultistepComponent,
+    TeamComponent
     // Contact,
   ],
   template: `
@@ -20,6 +22,7 @@ import { MultistepComponent } from '../multistep/multistep';
     <app-servicesv2></app-servicesv2>
     <app-about></app-about>
     <app-multistep></app-multistep>
+    <app-team></app-team>
     <!-- <app-contact></app-contact> -->
   `,
   styles: []

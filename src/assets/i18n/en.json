@@ -430,6 +430,12 @@
       "all_rights": "All rights reserved."
     }
   },
+  "team": {
+    "title": "Meet Our Team",
+    "subtitle": "The passionate professionals behind lopes2tech",
+    "position": "Software Engineer",
+    "description": "I am a frontend developer, UX/UI designer and digital marketing enthusiast who is thorough in his profession. Born and raised in Portugal, ambition and the love for cheese brought me to Switzerland. I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX. I most enjoy building software and websites in the sweet spot where design and engineering meet."
+  },
   "cookies": {
     "title": "Cookie Preferences",
     "description": "We use cookies to enhance your browsing experience, provide personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.",
