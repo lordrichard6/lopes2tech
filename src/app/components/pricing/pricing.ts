@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { TranslatePipe } from '../../pipes/translate.pipe';
+import { TranslationService } from '../../services/translation.service';
 
 interface PricingTier {
   name: string;
@@ -29,7 +31,7 @@ interface Service {
 
 @Component({
   selector: 'app-pricing',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './pricing.html',
   styleUrl: './pricing.scss'
 })
@@ -83,17 +85,17 @@ export class PricingComponent {
   
   services: Service[] = [
     {
-      name: 'AI Solutions',
-      description: 'Cutting-edge artificial intelligence solutions to transform your business',
+      name: 'pricing.services.ai.title',
+      description: 'pricing.services.ai.description',
       icon: 'fas fa-brain',
       subServices: [
         {
-          name: 'Machine Learning Consultation & Development',
-          description: 'Implement robotic process automation (RPA) and custom workflow scripts to automate routine tasks. For businesses, this might mean automating data entry, file transfers, or repetitive office processes. Individuals and small business owners can benefit from personal automations (e.g. automated file backups or email sorting). This sub-service is profitable due to the strong demand for efficiency gains, and beneficial as it saves clients significant time and labor costs.',
+          name: 'pricing.services.ai.subServices.ml.title',
+          description: 'pricing.services.ai.subServices.ml.description',
           ctaService: 'ml-consultation',
           tiers: [
             {
-              name: 'Budget',
+              name: 'pricing.tiers.budget',
               chfHourly: '~CHF 120/hour',
               eurHourly: '~€50/hour',
               chfProject: 'CHF 5,000+ for basic ML model development and consultation',
@@ -102,7 +104,7 @@ export class PricingComponent {
               eurRetainer: '€1,000/month for ongoing ML support and model updates'
             },
             {
-              name: 'Mid-Range',
+              name: 'pricing.tiers.mid-range',
               isPopular: true,
               chfHourly: '~CHF 180/hour',
               eurHourly: '~€80/hour',
@@ -112,7 +114,7 @@ export class PricingComponent {
               eurRetainer: '€2,500/month for comprehensive ML development and maintenance'
             },
             {
-              name: 'Premium',
+              name: 'pricing.tiers.premium',
               chfHourly: '~CHF 250/hour',
               eurHourly: '~€120/hour',
               chfProject: 'CHF 100,000+ for enterprise-grade AI/ML systems',
@@ -123,12 +125,12 @@ export class PricingComponent {
           ]
         },
         {
-          name: 'AI-Powered Chatbot & Virtual Assistant Development',
-          description: 'Develop intelligent chatbots or voice assistants to handle customer service, bookings, or FAQs using AI (e.g. natural language processing). Businesses can deploy these on their websites or messaging platforms to assist customers 24/7, reducing support costs. Individuals (such as independent service providers or community website owners) can use chatbots to handle inquiries or as personal assistants for scheduling and home automation. This sub-service is profitable given the rising adoption of AI customer support, and beneficial as it improves responsiveness and user experience without needing human intervention.',
+          name: 'pricing.services.ai.subServices.chatbot.title',
+          description: 'pricing.services.ai.subServices.chatbot.description',
           ctaService: 'ai-chatbot',
           tiers: [
             {
-              name: 'Budget',
+              name: 'pricing.tiers.budget',
               chfHourly: '~CHF 100/hour',
               eurHourly: '~€45/hour',
               chfProject: 'CHF 3,000–8,000 for basic chatbot setup using existing platforms',
@@ -137,7 +139,7 @@ export class PricingComponent {
               eurRetainer: '€400/month for chatbot maintenance and basic updates'
             },
             {
-              name: 'Mid-Range',
+              name: 'pricing.tiers.mid-range',
               isPopular: true,
               chfHourly: '~CHF 150/hour',
               eurHourly: '~€70/hour',
@@ -147,7 +149,7 @@ export class PricingComponent {
               eurRetainer: '€750/month for advanced chatbot management and improvements'
             },
             {
-              name: 'Premium',
+              name: 'pricing.tiers.premium',
               chfHourly: '~CHF 200/hour',
               eurHourly: '~€100/hour',
               chfProject: 'CHF 50,000+ for enterprise AI virtual assistants with advanced integrations',
@@ -158,12 +160,12 @@ export class PricingComponent {
           ]
         },
         {
-          name: 'Automated Data Analytics & Reporting',
-          description: 'Provide solutions to automatically collect, analyze, and report data. For businesses, this could mean dashboards that update in real-time, automated weekly reports, or scripts that aggregate data from multiple sources (sales, web analytics, etc.). Individuals (e.g., freelancers or enthusiasts) might use personal finance trackers or automated research aggregators. This sub-service is profitable because data-driven decision making is a priority for many clients, and beneficial as it removes manual spreadsheet work and reduces errors.',
+          name: 'pricing.services.ai.subServices.analytics.title',
+          description: 'pricing.services.ai.subServices.analytics.description',
           ctaService: 'data-analytics',
           tiers: [
             {
-              name: 'Budget',
+              name: 'pricing.tiers.budget',
               chfHourly: '~CHF 90/hour',
               eurHourly: '~€40/hour',
               chfProject: 'CHF 2,500–7,000 for basic automated reporting dashboards',
@@ -172,7 +174,7 @@ export class PricingComponent {
               eurRetainer: '€300/month for dashboard maintenance and data updates'
             },
             {
-              name: 'Mid-Range',
+              name: 'pricing.tiers.mid-range',
               isPopular: true,
               chfHourly: '~CHF 140/hour',
               eurHourly: '~€60/hour',
@@ -182,7 +184,7 @@ export class PricingComponent {
               eurRetainer: '€600/month for advanced analytics management and reporting'
             },
             {
-              name: 'Premium',
+              name: 'pricing.tiers.premium',
               chfHourly: '~CHF 200/hour',
               eurHourly: '~€100/hour',
               chfProject: 'CHF 25,000+ for enterprise data analytics platforms with AI insights',
@@ -195,17 +197,17 @@ export class PricingComponent {
       ]
     },
     {
-      name: 'Web Development Services',
-      description: 'Professional website development and modern web solutions',
+      name: 'pricing.services.web.title',
+      description: 'pricing.services.web.description',
       icon: 'fas fa-globe',
       subServices: [
         {
-          name: 'Custom Website Design & Development',
-          description: 'End-to-end creation of custom websites – from design through development and deployment. This includes corporate websites, personal blogs/portfolios, or small business sites. For businesses, a professional website enhances credibility and marketing. For individuals, this service covers personal branding sites or hobby project sites. It\'s profitable due to constant demand for web presence, and beneficial as clients get a tailor-made site that meets their needs (mobile-responsive, SEO-friendly, etc.).',
+          name: 'pricing.services.web.subServices.website.title',
+          description: 'pricing.services.web.subServices.website.description',
           ctaService: 'website-development',
           tiers: [
             {
-              name: 'Budget',
+              name: 'pricing.tiers.budget',
               chfHourly: '~CHF 80/hour',
               eurHourly: '~€30/hour',
               chfProject: 'CHF 2,000+ for a basic 3-5 page website',
@@ -214,7 +216,7 @@ export class PricingComponent {
               eurRetainer: '€150/month for minimal updates & support'
             },
             {
-              name: 'Mid-Range',
+              name: 'pricing.tiers.mid-range',
               isPopular: true,
               chfHourly: '~CHF 140/hour',
               eurHourly: '~€50/hour',
@@ -224,7 +226,7 @@ export class PricingComponent {
               eurRetainer: '€400/month for content updates, security, SEO tuning'
             },
             {
-              name: 'Premium',
+              name: 'pricing.tiers.premium',
               chfHourly: '~CHF 200/hour',
               eurHourly: '~€80/hour',
               chfProject: 'CHF 20,000+ for a corporate or custom web application (advanced features, multilingual)',
@@ -235,12 +237,12 @@ export class PricingComponent {
           ]
         },
         {
-          name: 'E-Commerce Development',
-          description: 'Build online stores and e-commerce platforms. This includes setting up product catalogs, shopping carts, payment gateway integration, and security features. Businesses benefit by selling products/services online (opening new revenue streams), while individuals (for example, artisans or entrepreneurs) can launch their own web shop. E-commerce projects are profitable due to their complexity and ongoing needs, and beneficial as they enable clients to reach a wider market 24/7.',
+          name: 'pricing.services.web.subServices.ecommerce.title',
+          description: 'pricing.services.web.subServices.ecommerce.description',
           ctaService: 'ecommerce-development',
           tiers: [
             {
-              name: 'Budget',
+              name: 'pricing.tiers.budget',
               chfHourly: '~CHF 100/hour',
               eurHourly: '~€40/hour',
               chfProject: '~CHF 8,000–15,000 for a basic e-commerce site (small product range, standard template)',
@@ -249,7 +251,7 @@ export class PricingComponent {
               eurRetainer: '€250/month for maintenance & updates (inventory, patches)'
             },
             {
-              name: 'Mid-Range',
+              name: 'pricing.tiers.mid-range',
               isPopular: true,
               chfHourly: '~CHF 150/hour',
               eurHourly: '~€70/hour',
@@ -259,7 +261,7 @@ export class PricingComponent {
               eurRetainer: '€500/month for ongoing support (security, SEO, features)'
             },
             {
-              name: 'Premium',
+              name: 'pricing.tiers.premium',
               chfHourly: '~CHF 200/hour',
               eurHourly: '~€90/hour',
               chfProject: 'CHF 50,000+ for a large-scale e-commerce platform (hundreds of products, custom features, integrations)',
@@ -270,12 +272,12 @@ export class PricingComponent {
           ]
         },
         {
-          name: 'Website Maintenance & SEO Optimization',
-          description: 'Offer ongoing website maintenance (updates, backups, security monitoring) combined with search engine optimization (SEO) services to improve site visibility. Businesses often require continuous maintenance of their sites and SEO to drive traffic; individuals like bloggers or professionals also benefit from keeping their personal sites updated and search-friendly. This service is profitable due to its recurring revenue model, and beneficial as it ensures clients\' websites remain secure, up-to-date, and high in search rankings over time.',
+          name: 'pricing.services.web.subServices.maintenance.title',
+          description: 'pricing.services.web.subServices.maintenance.description',
           ctaService: 'website-maintenance-seo',
           tiers: [
             {
-              name: 'Budget',
+              name: 'pricing.tiers.budget',
               chfHourly: '~CHF 70/hour (for ad-hoc minor updates)',
               eurHourly: '~€30/hour (for ad-hoc minor updates)',
               chfProject: 'CHF 1,000 for initial SEO audit & basic fixes',
@@ -284,7 +286,7 @@ export class PricingComponent {
               eurRetainer: '€150/month for basic maintenance (updates, monitoring)'
             },
             {
-              name: 'Mid-Range',
+              name: 'pricing.tiers.mid-range',
               isPopular: true,
               chfHourly: '~CHF 120/hour (for content updates or SEO work)',
               eurHourly: '~€50/hour (for content updates or SEO work)',
@@ -294,7 +296,7 @@ export class PricingComponent {
               eurRetainer: '€400/month for standard maintenance + SEO (updates, backups, SEO tweaks)'
             },
             {
-              name: 'Premium',
+              name: 'pricing.tiers.premium',
               chfHourly: '~CHF 150/hour (for complex troubleshooting or redesign tasks)',
               eurHourly: '~€80/hour (for complex tasks or redesign)',
               chfProject: 'CHF 5,000+ for a full site revamp & SEO overhaul',
@@ -307,17 +309,17 @@ export class PricingComponent {
       ]
     },
     {
-      name: 'Software & App Development',
-      description: 'Custom software solutions and mobile applications for modern businesses',
+      name: 'pricing.services.software.title',
+      description: 'pricing.services.software.description',
       icon: 'fas fa-code',
       subServices: [
         {
-          name: 'Mobile Application Development',
-          description: 'Design and develop mobile apps for iOS and Android. For businesses, this could be a branded app for customers or a productivity app for employees. For individuals, it could mean bringing a personal app idea to life (a startup concept or a niche utility app). Lopes2Tech can handle the full app development lifecycle: UI/UX design, coding, testing, and deployment to app stores. This sub-service is profitable due to typically large project scopes, and beneficial as clients get a presence in the mobile space, reaching users on their smartphones.',
+          name: 'pricing.services.software.subServices.mobile.title',
+          description: 'pricing.services.software.subServices.mobile.description',
           ctaService: 'mobile-app-development',
           tiers: [
             {
-              name: 'Budget',
+              name: 'pricing.tiers.budget',
               chfHourly: '~CHF 100/hour',
               eurHourly: '~€45/hour',
               chfProject: 'CHF 15,000 for a basic app (single platform, minimal features)',
@@ -326,7 +328,7 @@ export class PricingComponent {
               eurRetainer: '€500/month for minor updates post-launch'
             },
             {
-              name: 'Mid-Range',
+              name: 'pricing.tiers.mid-range',
               isPopular: true,
               chfHourly: '~CHF 150/hour',
               eurHourly: '~€70/hour',
@@ -336,7 +338,7 @@ export class PricingComponent {
               eurRetainer: '€1,200/month for ongoing improvements and support'
             },
             {
-              name: 'Premium',
+              name: 'pricing.tiers.premium',
               chfHourly: '~CHF 200/hour',
               eurHourly: '~€100/hour',
               chfProject: 'CHF 80,000+ for a complex app (multi-platform, advanced features, integrations, high scalability)',
@@ -347,12 +349,12 @@ export class PricingComponent {
           ]
         },
         {
-          name: 'Custom Software Development',
-          description: 'Develop tailored software applications for desktop or cloud – for instance, a custom CRM system, a desktop tool for automating internal workflows, or a cross-platform application. Businesses may need custom software to handle specific operations (beyond off-the-shelf solutions), while individuals might commission a custom tool for a unique personal need or as a product to sell. Lopes2Tech\'s background in creating tools for macOS and iOS devices is a strength here. This service is profitable because custom builds often entail substantial projects, and beneficial as clients get software precisely fitting their requirements.',
+          name: 'pricing.services.software.subServices.custom.title',
+          description: 'pricing.services.software.subServices.custom.description',
           ctaService: 'custom-software-development',
           tiers: [
             {
-              name: 'Budget',
+              name: 'pricing.tiers.budget',
               chfHourly: '~CHF 90/hour',
               eurHourly: '~€40/hour',
               chfProject: 'CHF 5,000 for a simple tool or plug-in (e.g. a small macOS utility)',
@@ -361,7 +363,7 @@ export class PricingComponent {
               eurRetainer: '€300/month for short-term enhancements/support'
             },
             {
-              name: 'Mid-Range',
+              name: 'pricing.tiers.mid-range',
               isPopular: true,
               chfHourly: '~CHF 140/hour',
               eurHourly: '~€60/hour',
@@ -371,7 +373,7 @@ export class PricingComponent {
               eurRetainer: '€700/month for ongoing support and updates'
             },
             {
-              name: 'Premium',
+              name: 'pricing.tiers.premium',
               chfHourly: '~CHF 180/hour',
               eurHourly: '~€90/hour',
               chfProject: 'CHF 50,000+ for a large-scale or enterprise software solution (complex features, multi-user, cloud integration)',
@@ -382,12 +384,12 @@ export class PricingComponent {
           ]
         },
         {
-          name: 'System Integration & API Development',
-          description: 'Connect disparate systems and develop custom APIs. Many businesses use multiple software systems (CRM, ERP, e-commerce, etc.) that need to talk to each other; this service provides custom integration solutions or API endpoints to enable smooth data flow. Individuals with smart home setups or multiple apps might also seek custom integrations (for example, connecting a home database to a web service). It\'s profitable due to the specialized technical skills required, and beneficial as it eliminates manual data transfer and ensures consistency across platforms.',
+          name: 'pricing.services.software.subServices.integration.title',
+          description: 'pricing.services.software.subServices.integration.description',
           ctaService: 'system-integration-api',
           tiers: [
             {
-              name: 'Budget',
+              name: 'pricing.tiers.budget',
               chfHourly: '~CHF 100/hour',
               eurHourly: '~€45/hour',
               chfProject: 'CHF 3,000 for a basic integration or API script (e.g. connecting two services with existing APIs)',
@@ -396,7 +398,7 @@ export class PricingComponent {
               eurRetainer: '€200/month for monitoring & minor tweaks'
             },
             {
-              name: 'Mid-Range',
+              name: 'pricing.tiers.mid-range',
               isPopular: true,
               chfHourly: '~CHF 150/hour',
               eurHourly: '~€70/hour',
@@ -406,7 +408,7 @@ export class PricingComponent {
               eurRetainer: '€500/month for ongoing management and updates'
             },
             {
-              name: 'Premium',
+              name: 'pricing.tiers.premium',
               chfHourly: '~CHF 180–200/hour',
               eurHourly: '~€90/hour',
               chfProject: 'CHF 25,000+ for a complex enterprise integration project (many systems, custom middleware)',
@@ -420,7 +422,10 @@ export class PricingComponent {
     }
   ];
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private translationService: TranslationService
+  ) {}
 
   // Method to navigate to contact form
   contactUs() {

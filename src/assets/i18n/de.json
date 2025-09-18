@@ -132,131 +132,200 @@
   },
   "pricing": {
     "hero": {
-      "title": "Transparente Preise",
-      "subtitle": "Wählen Sie das perfekte Paket für Ihre Geschäftsanforderungen",
-      "badge": "Keine versteckten Gebühren"
+      "title": "Unsere Services & Preise",
+      "subtitle": "Transparente Preisgestaltung für erstklassige Technologie-Lösungen",
+      "description": "Von KI-Integration bis hin zu maßgeschneiderter Software-Entwicklung - wir bieten flexible Lösungen für jedes Budget und jeden Bedarf."
     },
-    "packages": {
+    "services": {
       "ai": {
         "title": "KI-Lösungen",
         "description": "Intelligente Automatisierung und KI-gestützte Tools für Ihr Unternehmen",
-        "basic": {
-          "title": "Starter",
-          "price": "2.500",
-          "feature1": "Einfache Chatbot-Integration",
-          "feature2": "Grundlegende Prozessautomatisierung",
-          "feature3": "E-Mail-Support",
-          "feature4": "30-tägige Implementierung"
-        },
-        "professional": {
-          "title": "Professionell",
-          "price": "8.500",
-          "feature1": "Erweiterte KI-Chatbots",
-          "feature2": "Individuelle Workflow-Automatisierung",
-          "feature3": "Datenanalyse-Integration",
-          "feature4": "Prioritäts-Support",
-          "feature5": "60-tägige Implementierung"
-        },
-        "enterprise": {
-          "title": "Enterprise",
-          "price": "25.000+",
-          "feature1": "Massgeschneiderte KI-Lösungen",
-          "feature2": "Machine-Learning-Modelle",
-          "feature3": "Enterprise-Integrationen",
-          "feature4": "Dedizierter Support",
-          "feature5": "Individueller Zeitplan"
+        "subservices": {
+          "automation": {
+            "title": "Intelligente Automatisierung",
+            "description": "Automatisieren Sie repetitive Aufgaben mit KI-gestützten Lösungen"
+          },
+          "chatbots": {
+            "title": "KI-Chatbots",
+            "description": "Intelligente Kundenbetreuung rund um die Uhr"
+          },
+          "dataAnalysis": {
+            "title": "Datenanalyse & Insights",
+            "description": "Verwandeln Sie Ihre Daten in verwertbare Geschäftserkenntnisse"
+          },
+          "nlp": {
+            "title": "Sprachverarbeitung",
+            "description": "Verarbeitung und Analyse natürlicher Sprache"
+          }
         }
       },
-      "websites": {
-        "title": "Website-Lösungen",
-        "description": "Moderne, responsive Websites, die Besucher zu Kunden konvertieren",
-        "basic": {
-          "title": "Starter",
-          "price": "1.500",
-          "feature1": "5-seitige responsive Website",
-          "feature2": "Kontaktformular-Integration",
-          "feature3": "Grundlegende SEO-Optimierung",
-          "feature4": "14-tägige Lieferung"
-        },
-        "professional": {
-          "title": "Professionell",
-          "price": "4.500",
-          "feature1": "10-seitiges individuelles Design",
-          "feature2": "CMS-Integration",
-          "feature3": "Erweiterte SEO",
-          "feature4": "Analytics-Setup",
-          "feature5": "30-tägige Lieferung"
-        },
-        "enterprise": {
-          "title": "Enterprise",
-          "price": "12.000+",
-          "feature1": "Unbegrenzte Seiten",
-          "feature2": "E-Commerce-Funktionalität",
-          "feature3": "Individuelle Integrationen",
-          "feature4": "Performance-Optimierung",
-          "feature5": "Laufende Wartung"
+      "web": {
+        "title": "Web-Entwicklung",
+        "description": "Moderne, responsive Websites und Web-Anwendungen",
+        "subservices": {
+          "corporate": {
+            "title": "Unternehmens-Websites",
+            "description": "Professionelle Online-Präsenz für Ihr Unternehmen"
+          },
+          "ecommerce": {
+            "title": "E-Commerce Plattformen",
+            "description": "Online-Shops mit modernen Payment-Systemen"
+          },
+          "webapp": {
+            "title": "Web-Anwendungen",
+            "description": "Komplexe webbasierte Anwendungen und Dashboards"
+          },
+          "maintenance": {
+            "title": "Wartung & Support",
+            "description": "Kontinuierliche Betreuung Ihrer Web-Projekte"
+          }
         }
       },
       "software": {
-        "title": "Software-Lösungen",
-        "description": "Massgeschneiderte Anwendungen für Ihre spezifischen Geschäftsanforderungen",
-        "basic": {
-          "title": "Starter",
-          "price": "5.000",
-          "feature1": "Einfache Desktop-Anwendung",
-          "feature2": "Grundfunktionalität",
-          "feature3": "Benutzerdokumentation",
-          "feature4": "45-tägige Entwicklung"
-        },
-        "professional": {
-          "title": "Professionell",
-          "price": "15.000",
-          "feature1": "Multi-Plattform-Anwendung",
-          "feature2": "Erweiterte Funktionen",
-          "feature3": "Datenbank-Integration",
-          "feature4": "API-Entwicklung",
-          "feature5": "90-tägige Entwicklung"
-        },
-        "enterprise": {
-          "title": "Enterprise",
-          "price": "50.000+",
-          "feature1": "Komplexe Systemarchitektur",
-          "feature2": "Cloud-Deployment",
-          "feature3": "Skalierbare Infrastruktur",
-          "feature4": "Enterprise-Sicherheit",
-          "feature5": "Individueller Zeitplan"
+        "title": "Software-Entwicklung",
+        "description": "Maßgeschneiderte Anwendungen für Ihre spezifischen Anforderungen",
+        "subservices": {
+          "desktop": {
+            "title": "Desktop-Anwendungen",
+            "description": "Native Anwendungen für Windows, macOS und Linux"
+          },
+          "mobile": {
+            "title": "Mobile Apps",
+            "description": "iOS und Android Anwendungen"
+          },
+          "api": {
+            "title": "API-Entwicklung",
+            "description": "RESTful APIs und Microservices-Architekturen"
+          },
+          "integration": {
+            "title": "System-Integration",
+            "description": "Verbindung bestehender Systeme und Datenquellen"
+          }
+        }
+      },
+      "consulting": {
+        "title": "Technologie-Beratung",
+        "description": "Strategische Beratung für Ihre digitale Transformation",
+        "subservices": {
+          "strategy": {
+            "title": "Digital-Strategie",
+            "description": "Roadmap für Ihre digitale Transformation"
+          },
+          "architecture": {
+            "title": "System-Architektur",
+            "description": "Planung skalierbarer Technologie-Infrastrukturen"
+          },
+          "audit": {
+            "title": "Technologie-Audit",
+            "description": "Bewertung bestehender Systeme und Optimierungsvorschläge"
+          },
+          "training": {
+            "title": "Team-Schulungen",
+            "description": "Weiterbildung Ihres Teams in neuen Technologien"
+          }
         }
       }
     },
-    "badges": {
-      "popular": "Beliebteste"
-    },
-    "cta": {
-      "getStarted": "Loslegen"
-    },
-    "faq": {
-      "title": "Häufig gestellte Fragen",
-      "q1": {
-        "question": "Was ist im Preis enthalten?",
-        "answer": "Alle Pakete beinhalten Entwicklung, Tests, Dokumentation und anfänglichen Support. Zusätzliche Features und Wartung können separat besprochen werden."
+    "tiers": {
+      "budget": "Budget",
+      "mid-range": "Mittelklasse",
+      "premium": "Premium",
+      "popularBadge": "Beliebteste",
+      "budgetTier": {
+        "title": "Budget",
+        "subtitle": "Ideal für kleine Projekte",
+        "features": [
+          "Grundlegende Funktionalitäten",
+          "Standard-Support",
+          "30 Tage Garantie",
+          "Dokumentation enthalten"
+        ]
       },
-      "q2": {
-        "question": "Kann ich ein Paket anpassen?",
-        "answer": "Absolut! Alle unsere Pakete können an Ihre spezifischen Bedürfnisse angepasst werden. Kontaktieren Sie uns, um Ihre Anforderungen zu besprechen."
+      "professional": {
+        "title": "Professional",
+        "subtitle": "Perfekt für Unternehmen",
+        "popular": true,
+        "features": [
+          "Erweiterte Features",
+          "Prioritäts-Support",
+          "90 Tage Garantie",
+          "Umfassende Dokumentation",
+          "Code-Reviews enthalten"
+        ]
       },
-      "q3": {
-        "question": "Wie sieht es mit laufendem Support aus?",
-        "answer": "Wir bieten verschiedene Support-Pakete nach Projektabschluss, einschließlich Wartung, Updates und Feature-Erweiterungen."
-      },
-      "q4": {
-        "question": "Wie lange dauert die Entwicklung?",
-        "answer": "Die Timeline variiert je nach Projektkomplexität. Wir stellen detaillierte Zeitpläne während der Beratungsphase bereit und halten Sie während der gesamten Entwicklung auf dem Laufenden."
+      "enterprise": {
+        "title": "Enterprise",
+        "subtitle": "Für komplexe Anforderungen",
+        "features": [
+          "Vollständig anpassbar",
+          "Dedicated Support Team",
+          "1 Jahr Garantie",
+          "Vollständige Dokumentation",
+          "On-site Training",
+          "24/7 Verfügbarkeit"
+        ]
       }
     },
-    "finalCta": {
-      "title": "Bereit anzufangen?",
-      "subtitle": "Lassen Sie uns Ihr Projekt besprechen und die perfekte Lösung für Ihre Bedürfnisse finden",
-      "button": "Kontaktieren Sie uns heute"
+    "pricing": {
+      "rates": {
+        "hourly": {
+          "title": "Stundensatz",
+          "rates": {
+            "junior": {
+              "title": "Junior Developer",
+              "rate": "45€/Stunde",
+              "description": "Für einfachere Aufgaben und Wartung"
+            },
+            "senior": {
+              "title": "Senior Developer",
+              "rate": "75€/Stunde",
+              "description": "Für komplexe Entwicklungsaufgaben"
+            },
+            "specialist": {
+              "title": "KI/ML Spezialist",
+              "rate": "95€/Stunde",
+              "description": "Für KI- und Machine Learning-Projekte"
+            },
+            "architect": {
+              "title": "Solution Architect",
+              "rate": "120€/Stunde",
+              "description": "Für System-Design und Architektur"
+            }
+          }
+        },
+        "project": {
+          "title": "Projektbasis",
+          "description": "Festpreise basierend auf Projektumfang und Komplexität",
+          "note": "Alle Projektpreise beinhalten Planung, Entwicklung, Tests und Deployment"
+        }
+      },
+      "tierLabel": "Stufe",
+      "switzerlandLabel": "Schweiz (CHF)",
+      "portugalLabel": "Portugal (€)",
+      "hourly": "Stündlich:",
+      "project": "Projekt:",
+      "retainer": "Vorauszahlung:",
+      "showPricing": "Preise anzeigen",
+      "hidePricing": "Preise ausblenden"
+    },
+    "features": {
+      "included": {
+        "title": "In allen Paketen enthalten",
+        "list": [
+          "Kostenlose Erstberatung",
+          "Agile Entwicklungsmethodik",
+          "Regular Progress Updates",
+          "Code-Qualitätssicherung",
+          "Deployment-Unterstützung",
+          "Post-Launch Support"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Bereit für Ihr nächstes Projekt?",
+      "subtitle": "Lassen Sie uns über Ihre Anforderungen sprechen und ein maßgeschneidertes Angebot erstellen",
+      "button": "Kostenloses Beratungsgespräch",
+      "secondary": "Mehr erfahren"
     }
   },
   "multistep": {

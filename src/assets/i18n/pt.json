@@ -132,131 +132,80 @@
   },
   "pricing": {
     "hero": {
-      "title": "Preços Transparentes",
-      "subtitle": "Escolha o pacote perfeito para as necessidades do seu negócio",
-      "badge": "Sem Taxas Ocultas"
+      "title": "Nossos Serviços e Preços",
+      "subtitle": "Preços transparentes para soluções tecnológicas profissionais"
     },
-    "packages": {
+    "services": {
       "ai": {
         "title": "Soluções de IA",
-        "description": "Automação inteligente e ferramentas com IA para o seu negócio",
-        "basic": {
-          "title": "Inicial",
-          "price": "2.500",
-          "feature1": "Integração simples de chatbot",
-          "feature2": "Automação básica de processos",
-          "feature3": "Suporte por email",
-          "feature4": "Implementação em 30 dias"
-        },
-        "professional": {
-          "title": "Profissional",
-          "price": "8.500",
-          "feature1": "Chatbots de IA avançados",
-          "feature2": "Automação de fluxo personalizada",
-          "feature3": "Integração de análise de dados",
-          "feature4": "Suporte prioritário",
-          "feature5": "Implementação em 60 dias"
-        },
-        "enterprise": {
-          "title": "Empresarial",
-          "price": "25.000+",
-          "feature1": "Soluções de IA personalizadas",
-          "feature2": "Modelos de aprendizagem automática",
-          "feature3": "Integrações empresariais",
-          "feature4": "Suporte dedicado",
-          "feature5": "Cronograma personalizado"
+        "description": "Soluções de inteligência artificial de ponta para transformar o seu negócio",
+        "subServices": {
+          "ml": {
+            "title": "Consulta e Desenvolvimento de Aprendizagem Automática",
+            "description": "Implementar automação de processos robóticos (RPA) e scripts de fluxo de trabalho personalizados para automatizar tarefas de rotina. Para empresas, isso pode significar automatizar entrada de dados, transferências de ficheiros ou processos de escritório repetitivos. Indivíduos e proprietários de pequenas empresas podem beneficiar de automações pessoais (por exemplo, backups automatizados de ficheiros ou classificação de emails). Este sub-serviço é rentável devido à forte procura por ganhos de eficiência, e benéfico pois economiza tempo significativo e custos de mão-de-obra aos clientes."
+          },
+          "chatbot": {
+            "title": "Desenvolvimento de Chatbots e Assistentes Virtuais com IA",
+            "description": "Desenvolver chatbots inteligentes ou assistentes de voz para tratar atendimento ao cliente, reservas ou FAQs usando IA (por exemplo, processamento de linguagem natural). As empresas podem implementá-los nos seus websites ou plataformas de mensagens para assistir clientes 24/7, reduzindo custos de suporte. Indivíduos (como prestadores de serviços independentes ou proprietários de websites comunitários) podem usar chatbots para tratar consultas ou como assistentes pessoais para agendamentos e automação doméstica. Este sub-serviço é rentável dada a crescente adoção de suporte ao cliente com IA, e benéfico pois melhora a capacidade de resposta e experiência do utilizador sem necessidade de intervenção humana."
+          },
+          "analytics": {
+            "title": "Análise de Dados Automatizada e Relatórios",
+            "description": "Fornecer soluções para recolher, analisar e reportar dados automaticamente. Para empresas, isso pode significar dashboards que se atualizam em tempo real, relatórios semanais automatizados ou scripts que agregam dados de múltiplas fontes (vendas, análise web, etc.). Indivíduos (por exemplo, freelancers ou entusiastas) podem usar rastreadores de finanças pessoais ou agregadores de pesquisa automatizados. Este sub-serviço é rentável porque a tomada de decisões baseada em dados é uma prioridade para muitos clientes, e benéfico pois remove o trabalho manual com folhas de cálculo e reduz erros."
+          }
         }
       },
-      "websites": {
-        "title": "Soluções de Websites",
-        "description": "Websites modernos e responsivos que convertem visitantes em clientes",
-        "basic": {
-          "title": "Inicial",
-          "price": "1.500",
-          "feature1": "Website responsivo de 5 páginas",
-          "feature2": "Integração de formulário de contacto",
-          "feature3": "Otimização SEO básica",
-          "feature4": "Entrega em 14 dias"
-        },
-        "professional": {
-          "title": "Profissional",
-          "price": "4.500",
-          "feature1": "Design personalizado de 10 páginas",
-          "feature2": "Integração CMS",
-          "feature3": "SEO avançado",
-          "feature4": "Configuração de analytics",
-          "feature5": "Entrega em 30 dias"
-        },
-        "enterprise": {
-          "title": "Empresarial",
-          "price": "12.000+",
-          "feature1": "Páginas ilimitadas",
-          "feature2": "Funcionalidade e-commerce",
-          "feature3": "Integrações personalizadas",
-          "feature4": "Otimização de performance",
-          "feature5": "Manutenção contínua"
+      "web": {
+        "title": "Serviços de Desenvolvimento Web",
+        "description": "Desenvolvimento profissional de websites e soluções web modernas",
+        "subServices": {
+          "website": {
+            "title": "Design e Desenvolvimento de Websites Personalizados",
+            "description": "Criação completa de websites personalizados – desde o design até ao desenvolvimento e implementação. Isto inclui websites corporativos, blogs/portfólios pessoais ou sites de pequenas empresas. Para empresas, um website profissional melhora a credibilidade e marketing. Para indivíduos, este serviço cobre sites de marca pessoal ou projetos de hobby. É rentável devido à procura constante de presença web, e benéfico pois os clientes obtêm um site feito à medida que atende às suas necessidades (responsivo para dispositivos móveis, otimizado para SEO, etc.)."
+          },
+          "ecommerce": {
+            "title": "Desenvolvimento de E-Commerce",
+            "description": "Construir lojas online e plataformas de e-commerce. Isto inclui configurar catálogos de produtos, carrinhos de compras, integração de gateway de pagamento e funcionalidades de segurança. As empresas beneficiam vendendo produtos/serviços online (abrindo novos fluxos de receita), enquanto indivíduos (por exemplo, artesãos ou empreendedores) podem lançar a sua própria loja web. Projetos de e-commerce são rentáveis devido à sua complexidade e necessidades contínuas, e benéficos pois permitem aos clientes alcançar um mercado mais amplo 24/7."
+          },
+          "maintenance": {
+            "title": "Manutenção de Websites e Otimização SEO",
+            "description": "Oferecer manutenção contínua de websites (atualizações, backups, monitorização de segurança) combinada com serviços de otimização para motores de busca (SEO) para melhorar a visibilidade do site. As empresas frequentemente requerem manutenção contínua dos seus sites e SEO para gerar tráfego; indivíduos como bloggers ou profissionais também beneficiam de manter os seus sites pessoais atualizados e otimizados para pesquisas. Este serviço é rentável devido ao seu modelo de receita recorrente, e benéfico pois garante que os websites dos clientes permaneçam seguros, atualizados e bem posicionados nos rankings de pesquisa ao longo do tempo."
+          }
         }
       },
       "software": {
-        "title": "Soluções de Software",
-        "description": "Aplicações personalizadas adaptadas às suas necessidades específicas",
-        "basic": {
-          "title": "Inicial",
-          "price": "5.000",
-          "feature1": "Aplicação desktop simples",
-          "feature2": "Funcionalidade básica",
-          "feature3": "Documentação do utilizador",
-          "feature4": "Desenvolvimento em 45 dias"
-        },
-        "professional": {
-          "title": "Profissional",
-          "price": "15.000",
-          "feature1": "Aplicação multi-plataforma",
-          "feature2": "Funcionalidades avançadas",
-          "feature3": "Integração de base de dados",
-          "feature4": "Desenvolvimento de API",
-          "feature5": "Desenvolvimento em 90 dias"
-        },
-        "enterprise": {
-          "title": "Empresarial",
-          "price": "50.000+",
-          "feature1": "Arquitetura de sistema complexa",
-          "feature2": "Implementação na nuvem",
-          "feature3": "Infraestrutura escalável",
-          "feature4": "Segurança empresarial",
-          "feature5": "Cronograma personalizado"
+        "title": "Desenvolvimento de Software e Aplicações",
+        "description": "Soluções de software personalizadas e aplicações móveis para empresas modernas",
+        "subServices": {
+          "mobile": {
+            "title": "Desenvolvimento de Aplicações Móveis",
+            "description": "Projetar e desenvolver aplicações móveis para iOS e Android. Para empresas, isto pode ser uma aplicação de marca para clientes ou uma aplicação de produtividade para funcionários. Para indivíduos, pode significar dar vida a uma ideia de aplicação pessoal (um conceito de startup ou uma aplicação utilitária de nicho). A Lopes2Tech pode tratar de todo o ciclo de vida de desenvolvimento de aplicações: design UI/UX, codificação, testes e implementação nas lojas de aplicações. Este sub-serviço é rentável devido aos âmbitos de projeto tipicamente grandes, e benéfico pois os clientes obtêm presença no espaço móvel, alcançando utilizadores nos seus smartphones."
+          },
+          "custom": {
+            "title": "Desenvolvimento de Software Personalizado",
+            "description": "Desenvolver aplicações de software sob medida para desktop ou nuvem – por exemplo, um sistema CRM personalizado, uma ferramenta de desktop para automatizar fluxos de trabalho internos ou uma aplicação multi-plataforma. As empresas podem precisar de software personalizado para tratar operações específicas (além de soluções prontas), enquanto indivíduos podem encomendar uma ferramenta personalizada para uma necessidade pessoal única ou como produto para vender. A experiência da Lopes2Tech na criação de ferramentas para dispositivos macOS e iOS é uma força aqui. Este serviço é rentável porque construções personalizadas frequentemente envolvem projetos substanciais, e benéfico pois os clientes obtêm software que se adequa precisamente aos seus requisitos."
+          },
+          "integration": {
+            "title": "Integração de Sistemas e Desenvolvimento de API",
+            "description": "Conectar sistemas díspares e desenvolver APIs personalizadas. Muitas empresas usam múltiplos sistemas de software (CRM, ERP, e-commerce, etc.) que precisam de comunicar entre si; este serviço fornece soluções de integração personalizadas ou endpoints de API para permitir fluxo suave de dados. Indivíduos com configurações de casa inteligente ou múltiplas aplicações também podem procurar integrações personalizadas (por exemplo, conectar uma base de dados doméstica a um serviço web). É rentável devido às competências técnicas especializadas necessárias, e benéfico pois elimina a transferência manual de dados e garante consistência entre plataformas."
+          }
         }
       }
     },
-    "badges": {
-      "popular": "Mais Popular"
+    "tiers": {
+      "budget": "Económico",
+      "mid-range": "Médio",
+      "premium": "Premium",
+      "popularBadge": "Mais Popular"
     },
-    "cta": {
-      "getStarted": "Começar"
-    },
-    "faq": {
-      "title": "Perguntas Frequentes",
-      "q1": {
-        "question": "O que está incluído no preço?",
-        "answer": "Todos os pacotes incluem desenvolvimento, testes, documentação e suporte inicial. Funcionalidades adicionais e manutenção podem ser discutidas separadamente."
-      },
-      "q2": {
-        "question": "Posso personalizar um pacote?",
-        "answer": "Absolutamente! Todos os nossos pacotes podem ser personalizados para se adequarem às suas necessidades específicas. Contacte-nos para discutir os seus requisitos."
-      },
-      "q3": {
-        "question": "E quanto ao suporte contínuo?",
-        "answer": "Oferecemos vários pacotes de suporte após a conclusão do projeto, incluindo manutenção, atualizações e melhorias de funcionalidades."
-      },
-      "q4": {
-        "question": "Quanto tempo demora o desenvolvimento?",
-        "answer": "O cronograma varia conforme a complexidade do projeto. Fornecemos cronogramas detalhados durante a fase de consulta e mantemo-lo atualizado durante todo o desenvolvimento."
-      }
-    },
-    "finalCta": {
-      "title": "Pronto para Começar?",
-      "subtitle": "Vamos discutir o seu projeto e encontrar a solução perfeita para as suas necessidades",
-      "button": "Contacte-nos Hoje"
+    "pricing": {
+      "tierLabel": "Nível",
+      "switzerlandLabel": "Suíça (CHF)",
+      "portugalLabel": "Portugal (€)",
+      "hourly": "Por hora:",
+      "project": "Projeto:",
+      "retainer": "Retenção:",
+      "showPricing": "Mostrar Preços",
+      "hidePricing": "Ocultar Preços"
     }
   },
   "multistep": {

@@ -132,131 +132,80 @@
   },
   "pricing": {
     "hero": {
-      "title": "Transparent Pricing",
-      "subtitle": "Choose the perfect package for your business needs",
-      "badge": "No Hidden Fees"
+      "title": "Our Services & Pricing",
+      "subtitle": "Transparent pricing for professional technology solutions"
     },
-    "packages": {
+    "services": {
       "ai": {
         "title": "AI Solutions",
-        "description": "Smart automation and AI-powered tools for your business",
-        "basic": {
-          "title": "Starter",
-          "price": "2,500",
-          "feature1": "Simple chatbot integration",
-          "feature2": "Basic process automation",
-          "feature3": "Email support",
-          "feature4": "30-day implementation"
-        },
-        "professional": {
-          "title": "Professional",
-          "price": "8,500",
-          "feature1": "Advanced AI chatbots",
-          "feature2": "Custom workflow automation",
-          "feature3": "Data analytics integration",
-          "feature4": "Priority support",
-          "feature5": "60-day implementation"
-        },
-        "enterprise": {
-          "title": "Enterprise",
-          "price": "25,000+",
-          "feature1": "Custom AI solutions",
-          "feature2": "Machine learning models",
-          "feature3": "Enterprise integrations",
-          "feature4": "Dedicated support",
-          "feature5": "Custom timeline"
+        "description": "Cutting-edge artificial intelligence solutions to transform your business",
+        "subServices": {
+          "ml": {
+            "title": "Machine Learning Consultation & Development",
+            "description": "Implement robotic process automation (RPA) and custom workflow scripts to automate routine tasks. For businesses, this might mean automating data entry, file transfers, or repetitive office processes. Individuals and small business owners can benefit from personal automations (e.g. automated file backups or email sorting). This sub-service is profitable due to the strong demand for efficiency gains, and beneficial as it saves clients significant time and labor costs."
+          },
+          "chatbot": {
+            "title": "AI-Powered Chatbot & Virtual Assistant Development",
+            "description": "Develop intelligent chatbots or voice assistants to handle customer service, bookings, or FAQs using AI (e.g. natural language processing). Businesses can deploy these on their websites or messaging platforms to assist customers 24/7, reducing support costs. Individuals (such as independent service providers or community website owners) can use chatbots to handle inquiries or as personal assistants for scheduling and home automation. This sub-service is profitable given the rising adoption of AI customer support, and beneficial as it improves responsiveness and user experience without needing human intervention."
+          },
+          "analytics": {
+            "title": "Automated Data Analytics & Reporting",
+            "description": "Provide solutions to automatically collect, analyze, and report data. For businesses, this could mean dashboards that update in real-time, automated weekly reports, or scripts that aggregate data from multiple sources (sales, web analytics, etc.). Individuals (e.g., freelancers or enthusiasts) might use personal finance trackers or automated research aggregators. This sub-service is profitable because data-driven decision making is a priority for many clients, and beneficial as it removes manual spreadsheet work and reduces errors."
+          }
         }
       },
-      "websites": {
-        "title": "Website Solutions",
-        "description": "Modern, responsive websites that convert visitors to customers",
-        "basic": {
-          "title": "Starter",
-          "price": "1,500",
-          "feature1": "5-page responsive website",
-          "feature2": "Contact form integration",
-          "feature3": "Basic SEO optimization",
-          "feature4": "14-day delivery"
-        },
-        "professional": {
-          "title": "Professional",
-          "price": "4,500",
-          "feature1": "10-page custom design",
-          "feature2": "CMS integration",
-          "feature3": "Advanced SEO",
-          "feature4": "Analytics setup",
-          "feature5": "30-day delivery"
-        },
-        "enterprise": {
-          "title": "Enterprise",
-          "price": "12,000+",
-          "feature1": "Unlimited pages",
-          "feature2": "E-commerce functionality",
-          "feature3": "Custom integrations",
-          "feature4": "Performance optimization",
-          "feature5": "Ongoing maintenance"
+      "web": {
+        "title": "Web Development Services", 
+        "description": "Professional website development and modern web solutions",
+        "subServices": {
+          "website": {
+            "title": "Custom Website Design & Development",
+            "description": "End-to-end creation of custom websites – from design through development and deployment. This includes corporate websites, personal blogs/portfolios, or small business sites. For businesses, a professional website enhances credibility and marketing. For individuals, this service covers personal branding sites or hobby project sites. It's profitable due to constant demand for web presence, and beneficial as clients get a tailor-made site that meets their needs (mobile-responsive, SEO-friendly, etc.)."
+          },
+          "ecommerce": {
+            "title": "E-Commerce Development",
+            "description": "Build online stores and e-commerce platforms. This includes setting up product catalogs, shopping carts, payment gateway integration, and security features. Businesses benefit by selling products/services online (opening new revenue streams), while individuals (for example, artisans or entrepreneurs) can launch their own web shop. E-commerce projects are profitable due to their complexity and ongoing needs, and beneficial as they enable clients to reach a wider market 24/7."
+          },
+          "maintenance": {
+            "title": "Website Maintenance & SEO Optimization",
+            "description": "Offer ongoing website maintenance (updates, backups, security monitoring) combined with search engine optimization (SEO) services to improve site visibility. Businesses often require continuous maintenance of their sites and SEO to drive traffic; individuals like bloggers or professionals also benefit from keeping their personal sites updated and search-friendly. This service is profitable due to its recurring revenue model, and beneficial as it ensures clients' websites remain secure, up-to-date, and high in search rankings over time."
+          }
         }
       },
       "software": {
-        "title": "Software Solutions",
-        "description": "Custom applications tailored to your specific business needs",
-        "basic": {
-          "title": "Starter",
-          "price": "5,000",
-          "feature1": "Simple desktop application",
-          "feature2": "Basic functionality",
-          "feature3": "User documentation",
-          "feature4": "45-day development"
-        },
-        "professional": {
-          "title": "Professional",
-          "price": "15,000",
-          "feature1": "Multi-platform application",
-          "feature2": "Advanced features",
-          "feature3": "Database integration",
-          "feature4": "API development",
-          "feature5": "90-day development"
-        },
-        "enterprise": {
-          "title": "Enterprise",
-          "price": "50,000+",
-          "feature1": "Complex system architecture",
-          "feature2": "Cloud deployment",
-          "feature3": "Scalable infrastructure",
-          "feature4": "Enterprise security",
-          "feature5": "Custom timeline"
+        "title": "Software & App Development",
+        "description": "Custom software solutions and mobile applications for modern businesses",
+        "subServices": {
+          "mobile": {
+            "title": "Mobile Application Development",
+            "description": "Design and develop mobile apps for iOS and Android. For businesses, this could be a branded app for customers or a productivity app for employees. For individuals, it could mean bringing a personal app idea to life (a startup concept or a niche utility app). Lopes2Tech can handle the full app development lifecycle: UI/UX design, coding, testing, and deployment to app stores. This sub-service is profitable due to typically large project scopes, and beneficial as clients get a presence in the mobile space, reaching users on their smartphones."
+          },
+          "custom": {
+            "title": "Custom Software Development",
+            "description": "Develop tailored software applications for desktop or cloud – for instance, a custom CRM system, a desktop tool for automating internal workflows, or a cross-platform application. Businesses may need custom software to handle specific operations (beyond off-the-shelf solutions), while individuals might commission a custom tool for a unique personal need or as a product to sell. Lopes2Tech's background in creating tools for macOS and iOS devices is a strength here. This service is profitable because custom builds often entail substantial projects, and beneficial as clients get software precisely fitting their requirements."
+          },
+          "integration": {
+            "title": "System Integration & API Development",
+            "description": "Connect disparate systems and develop custom APIs. Many businesses use multiple software systems (CRM, ERP, e-commerce, etc.) that need to talk to each other; this service provides custom integration solutions or API endpoints to enable smooth data flow. Individuals with smart home setups or multiple apps might also seek custom integrations (for example, connecting a home database to a web service). It's profitable due to the specialized technical skills required, and beneficial as it eliminates manual data transfer and ensures consistency across platforms."
+          }
         }
       }
     },
-    "badges": {
-      "popular": "Most Popular"
+    "tiers": {
+      "budget": "Budget",
+      "mid-range": "Mid-Range", 
+      "premium": "Premium",
+      "popularBadge": "Most Popular"
     },
-    "cta": {
-      "getStarted": "Get Started"
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "q1": {
-        "question": "What's included in the pricing?",
-        "answer": "All packages include development, testing, documentation, and initial support. Additional features and maintenance can be discussed separately."
-      },
-      "q2": {
-        "question": "Can I customize a package?",
-        "answer": "Absolutely! All our packages can be customized to fit your specific needs. Contact us to discuss your requirements."
-      },
-      "q3": {
-        "question": "What about ongoing support?",
-        "answer": "We offer various support packages after project completion, including maintenance, updates, and feature enhancements."
-      },
-      "q4": {
-        "question": "How long does development take?",
-        "answer": "Timeline varies by project complexity. We provide detailed timelines during the consultation phase and keep you updated throughout development."
-      }
-    },
-    "finalCta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Let's discuss your project and find the perfect solution for your needs",
-      "button": "Contact Us Today"
+    "pricing": {
+      "tierLabel": "Tier",
+      "switzerlandLabel": "Switzerland (CHF)",
+      "portugalLabel": "Portugal (€)",
+      "hourly": "Hourly:",
+      "project": "Project:",
+      "retainer": "Retainer:",
+      "showPricing": "Show Pricing",
+      "hidePricing": "Hide Pricing"
     }
   },
   "multistep": {

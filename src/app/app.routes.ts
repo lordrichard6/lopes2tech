@@ -1,11 +1,17 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home';
-import { ImpressumComponent } from './components/impressum/impressum';
-import { PricingComponent } from './components/pricing/pricing';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'pricing', component: PricingComponent },
-  { path: 'impressum', component: ImpressumComponent },
+  { 
+    path: '', 
+    loadComponent: () => import('./components/home/home').then(m => m.HomeComponent)
+  },
+  { 
+    path: 'pricing', 
+    loadComponent: () => import('./components/pricing/pricing').then(m => m.PricingComponent)
+  },
+  { 
+    path: 'impressum', 
+    loadComponent: () => import('./components/impressum/impressum').then(m => m.ImpressumComponent)
+  },
   { path: '**', redirectTo: '' }
 ];
