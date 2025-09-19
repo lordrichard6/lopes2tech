@@ -46,23 +46,63 @@
     }
   },
   "serviceDialog": {
-    "title": "O que isto significa?",
+    "examples": {
+      "title": "Exemplos Práticos"
+    },
     "services": {
-      "automation": {
-        "explanation": "Usamos IA avançada e Modelos de Linguagem Grande (LLMs) para automatizar os seus processos de negócio de forma inteligente. Pense nisto como ter um assistente inteligente que pode compreender, aprender e responder naturalmente - tratando consultas de clientes, qualificando leads e gerindo fluxos de trabalho complexos sem intervenção humana.",
-        "example": "Por exemplo: um chatbot que pode responder a qualquer pergunta sobre os serviços da sua empresa em qualquer idioma, ou um sistema de IA que qualifica automaticamente leads fazendo as perguntas certas e encaminhando-os para o membro da equipa apropriado."
+      "ai": {
+        "title": "Soluções de IA & Automação",
+        "description": "Transforme o seu negócio com automação inteligente alimentada por tecnologia de IA de vanguarda. As nossas soluções reduzem o trabalho manual, melhoram a precisão e escalam as suas operações de forma eficiente.",
+        "examples": {
+          "example1": {
+            "title": "Chatbot de Suporte ao Cliente com IA",
+            "description": "Implemente chatbots inteligentes que lidam com consultas de clientes 24/7, reduzem custos de suporte em 60%, e fornecem respostas instantâneas em múltiplas línguas. Perfeito para e-commerce, plataformas SaaS e empresas de serviços."
+          },
+          "example2": {
+            "title": "Processamento Automatizado de Dados & Analytics",
+            "description": "Implemente sistemas de machine learning que processam automaticamente faturas, extraem dados de documentos e geram insights de negócio. Elimine entrada manual de dados e reduza o tempo de processamento em 80%."
+          },
+          "example3": {
+            "title": "Sistema Inteligente de Qualificação de Leads",
+            "description": "Crie sistemas de IA que qualificam automaticamente leads de vendas, pontuam prospects baseado no comportamento e direcionam oportunidades de alto valor para a sua equipa de vendas. Aumente taxas de conversão e otimize a eficiência de vendas."
+          }
+        }
       },
       "web": {
-        "explanation": "Construímos websites que ficam bem em qualquer dispositivo e funcionam perfeitamente. Seja um simples website da empresa ou uma plataforma online complexa, criamos espaços digitais que representam o seu negócio profissionalmente e ajudam a conectar com clientes.",
-        "example": "Por exemplo: um website de restaurante onde os clientes podem ver menus, fazer reservas, e encomendar online tudo num só lugar."
+        "title": "Desenvolvimento Web Moderno",
+        "description": "Construa websites de alto desempenho, otimizados para SEO que impulsionam o crescimento do negócio. Os nossos designs responsivos funcionam perfeitamente em todos os dispositivos e são otimizados para motores de busca e experiência do utilizador.",
+        "examples": {
+          "example1": {
+            "title": "Plataforma E-Commerce com Integração de Pagamentos",
+            "description": "Desenvolva lojas online completas com processamento seguro de pagamentos, gestão de inventário, contas de clientes e checkout otimizado para móvel. Aumente vendas online com soluções profissionais de e-commerce."
+          },
+          "example2": {
+            "title": "Website Corporativo com Integração CMS",
+            "description": "Crie websites empresariais profissionais com sistemas de gestão de conteúdo, otimização SEO, formulários de contacto e integração de analytics. Melhore a sua presença online e gere mais leads."
+          },
+          "example3": {
+            "title": "Aplicações Web Progressivas (PWA)",
+            "description": "Construa aplicações web que funcionam como apps móveis nativas, oferecem funcionalidade offline, notificações push e tempos de carregamento rápidos. Forneça experiências tipo app sem dependências de app store."
+          }
+        }
       },
-      "app": {
-        "explanation": "Criamos aplicações web poderosas e software baseado na nuvem que resolve problemas específicos do negócio. São como ferramentas digitais personalizadas construídas apenas para as suas necessidades - desde sistemas de gestão de clientes a mercados online.",
-        "example": "Por exemplo: um sistema de inventário personalizado que rastreia os seus produtos, alerta quando o stock está baixo, e encomenda automaticamente novos fornecimentos."
-      },
-      "tools": {
-        "explanation": "Desenvolvemos ferramentas de software especializadas que se integram com o que já usa. Estas soluções personalizadas automatizam tarefas específicas no seu fluxo de trabalho, como processamento de dados, gestão de ficheiros, ou conectar diferentes sistemas de software.",
-        "example": "Por exemplo: uma ferramenta que pega dados do seu sistema de vendas e cria automaticamente faturas no seu software de contabilidade."
+      "software": {
+        "title": "Desenvolvimento de Software Personalizado",
+        "description": "Desenhe e desenvolva soluções de software sob medida que resolvem os seus desafios únicos de negócio. Desde aplicações desktop a apps móveis, criamos software escalável, seguro e user-friendly.",
+        "examples": {
+          "example1": {
+            "title": "Aplicação Móvel Multi-Plataforma",
+            "description": "Desenvolva apps nativas iOS e Android com dados sincronizados, notificações push e capacidades offline. Alcance os seus clientes nos seus dispositivos preferidos com experiências de utilizador consistentes."
+          },
+          "example2": {
+            "title": "Sistema de Gestão Empresarial Personalizado",
+            "description": "Construa sistemas abrangentes de CRM, ERP ou gestão de projetos adaptados aos seus fluxos de trabalho. Integre com ferramentas existentes, automatize processos e centralize operações empresariais numa plataforma."
+          },
+          "example3": {
+            "title": "Desenvolvimento de API & Integração de Sistemas",
+            "description": "Crie APIs personalizadas e integre sistemas díspares para permitir fluxo de dados sem falhas. Conecte as suas ferramentas de software existentes, automatize sincronização de dados e elimine transferência manual de dados."
+          }
+        }
       }
     }
   },

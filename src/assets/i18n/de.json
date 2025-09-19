@@ -46,23 +46,63 @@
     }
   },
   "serviceDialog": {
-    "title": "Was bedeutet das?",
+    "examples": {
+      "title": "Praxisbeispiele"
+    },
     "services": {
-      "automation": {
-        "explanation": "Wir verwenden fortschrittliche KI und Large Language Models (LLMs), um Ihre Geschäftsprozesse intelligent zu automatisieren. Stellen Sie es sich wie einen intelligenten Assistenten vor, der verstehen, lernen und natürlich reagieren kann - Kundenanfragen bearbeitet, Leads qualifiziert und komplexe Arbeitsabläufe ohne menschliches Eingreifen verwaltet.",
-        "example": "Zum Beispiel: ein Chatbot, der jede Frage zu Ihren Unternehmensdienstleistungen in jeder Sprache beantworten kann, oder ein KI-System, das automatisch Leads qualifiziert, indem es die richtigen Fragen stellt und sie an das entsprechende Teammitglied weiterleitet."
+      "ai": {
+        "title": "KI-Lösungen & Automatisierung",
+        "description": "Transformieren Sie Ihr Unternehmen mit intelligenter Automatisierung auf Basis modernster KI-Technologie. Unsere Lösungen reduzieren manuelle Arbeit, verbessern die Genauigkeit und skalieren Ihre Abläufe effizient.",
+        "examples": {
+          "example1": {
+            "title": "KI-gestützter Kundensupport-Chatbot",
+            "description": "Implementieren Sie intelligente Chatbots, die Kundenanfragen rund um die Uhr bearbeiten, Supportkosten um 60% reduzieren und sofortige Antworten in mehreren Sprachen bieten. Perfekt für E-Commerce, SaaS-Plattformen und Dienstleistungsunternehmen."
+          },
+          "example2": {
+            "title": "Automatisierte Datenverarbeitung & Analytics",
+            "description": "Setzen Sie Machine-Learning-Systeme ein, die automatisch Rechnungen verarbeiten, Daten aus Dokumenten extrahieren und Geschäftseinblicke generieren. Eliminieren Sie manuelle Dateneingabe und reduzieren Sie die Verarbeitungszeit um 80%."
+          },
+          "example3": {
+            "title": "Intelligentes Lead-Qualifizierungssystem",
+            "description": "Erstellen Sie KI-Systeme, die automatisch Verkaufs-Leads qualifizieren, Interessenten basierend auf Verhalten bewerten und hochwertige Gelegenheiten an Ihr Verkaufsteam weiterleiten. Steigern Sie Konversionsraten und optimieren Sie die Verkaufseffizienz."
+          }
+        }
       },
       "web": {
-        "explanation": "Wir erstellen Websites, die auf jedem Gerät gut aussehen und perfekt funktionieren. Ob Sie eine einfache Firmenwebsite oder eine komplexe Online-Plattform benötigen, wir schaffen digitale Räume, die Ihr Unternehmen professionell repräsentieren und Ihnen helfen, mit Kunden in Kontakt zu treten.",
-        "example": "Zum Beispiel: eine Restaurant-Website, wo Kunden Menüs ansehen, Reservierungen machen und online bestellen können - alles an einem Ort."
+        "title": "Moderne Webentwicklung",
+        "description": "Entwickeln Sie leistungsstarke, SEO-optimierte Websites, die das Unternehmenswachstum vorantreiben. Unsere responsiven Designs funktionieren einwandfrei auf allen Geräten und sind für Suchmaschinen und Benutzererfahrung optimiert.",
+        "examples": {
+          "example1": {
+            "title": "E-Commerce-Plattform mit Zahlungsintegration",
+            "description": "Entwickeln Sie vollständige Online-Shops mit sicherer Zahlungsabwicklung, Lagerverwaltung, Kundenkonten und mobil-optimiertem Checkout. Steigern Sie Online-Verkäufe mit professionellen E-Commerce-Lösungen."
+          },
+          "example2": {
+            "title": "Unternehmenswebsite mit CMS-Integration",
+            "description": "Erstellen Sie professionelle Unternehmenswebsites mit Content-Management-Systemen, SEO-Optimierung, Kontaktformularen und Analytics-Integration. Verbessern Sie Ihre Online-Präsenz und generieren Sie mehr Leads."
+          },
+          "example3": {
+            "title": "Progressive Web Applications (PWA)",
+            "description": "Entwickeln Sie Webanwendungen, die wie native mobile Apps funktionieren, Offline-Funktionalität, Push-Benachrichtigungen und schnelle Ladezeiten bieten. Bieten Sie App-ähnliche Erfahrungen ohne App-Store-Abhängigkeiten."
+          }
+        }
       },
-      "app": {
-        "explanation": "Wir entwickeln leistungsstarke Webanwendungen und Cloud-basierte Software, die spezifische Geschäftsprobleme lösen. Das sind wie massgeschneiderte digitale Werkzeuge, die nur für Ihre Bedürfnisse entwickelt wurden - von Kundenverwaltungssystemen bis hin zu Online-Marktplätzen.",
-        "example": "Zum Beispiel: ein massgeschneidertes Inventarsystem, das Ihre Produkte verfolgt, Sie warnt, wenn der Bestand niedrig ist, und automatisch neue Vorräte bestellt."
-      },
-      "tools": {
-        "explanation": "Wir entwickeln spezialisierte Software-Tools, die sich in das integrieren, was Sie bereits verwenden. Diese massgeschneiderten Lösungen automatisieren spezifische Aufgaben in Ihrem Arbeitsablauf, wie Datenverarbeitung, Dateiverwaltung oder die Verbindung verschiedener Software-Systeme.",
-        "example": "Zum Beispiel: ein Tool, das Daten aus Ihrem Verkaufssystem nimmt und automatisch Rechnungen in Ihrer Buchhaltungssoftware erstellt."
+      "software": {
+        "title": "Massgeschneiderte Softwareentwicklung",
+        "description": "Entwerfen und entwickeln Sie massgeschneiderte Softwarelösungen, die Ihre einzigartigen Geschäftsherausforderungen lösen. Von Desktop-Anwendungen bis hin zu mobilen Apps - wir erstellen skalierbare, sichere und benutzerfreundliche Software.",
+        "examples": {
+          "example1": {
+            "title": "Plattformübergreifende Mobile Application",
+            "description": "Entwickeln Sie native iOS- und Android-Apps mit synchronisierten Daten, Push-Benachrichtigungen und Offline-Funktionen. Erreichen Sie Ihre Kunden auf ihren bevorzugten Geräten mit konsistenten Benutzererfahrungen."
+          },
+          "example2": {
+            "title": "Massgeschneidertes Business-Management-System",
+            "description": "Entwickeln Sie umfassende CRM-, ERP- oder Projektmanagement-Systeme, die auf Ihre Arbeitsabläufe zugeschnitten sind. Integrieren Sie bestehende Tools, automatisieren Sie Prozesse und zentralisieren Sie Geschäftsabläufe in einer Plattform."
+          },
+          "example3": {
+            "title": "API-Entwicklung & Systemintegration",
+            "description": "Erstellen Sie massgeschneiderte APIs und integrieren Sie verschiedene Systeme für nahtlosen Datenfluss. Verbinden Sie Ihre bestehenden Software-Tools, automatisieren Sie Datensynchronisation und eliminieren Sie manuellen Datentransfer."
+          }
+        }
       }
     }
   },

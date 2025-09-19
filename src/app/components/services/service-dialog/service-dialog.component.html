@@ -4,8 +4,11 @@
        (keydown)="onKeydown($event)"
        tabindex="0">
     <div class="dialog-container" role="dialog" aria-modal="true">
+      <!-- Background Image -->
+      <div class="dialog-background-image" [ngClass]="'bg-' + serviceKey"></div>
+      
       <div class="dialog-header">
-        <h3 class="dialog-title">{{ 'serviceDialog.title' | translate }}</h3>
+        <h3 class="dialog-title">{{ ('serviceDialog.services.' + serviceKey + '.title') | translate }}</h3>
         <button class="close-button" 
                 (click)="closeDialog()" 
                 aria-label="Close dialog"
@@ -15,13 +18,33 @@
       </div>
       
       <div class="dialog-content">
-        <p class="service-explanation">
-          {{ ('serviceDialog.services.' + serviceKey + '.explanation') | translate }}
+        <p class="service-description">
+          {{ ('serviceDialog.services.' + serviceKey + '.description') | translate }}
         </p>
         
-        <p class="service-example">
-          {{ ('serviceDialog.services.' + serviceKey + '.example') | translate }}
-        </p>
+        <div class="examples-section">
+          <h4 class="examples-title">{{ 'serviceDialog.examples.title' | translate }}</h4>
+          
+          <div class="example-grid">
+            <div class="example-card">
+              <div class="example-number">1</div>
+              <h5 class="example-title">{{ ('serviceDialog.services.' + serviceKey + '.examples.example1.title') | translate }}</h5>
+              <p class="example-description">{{ ('serviceDialog.services.' + serviceKey + '.examples.example1.description') | translate }}</p>
+            </div>
+            
+            <div class="example-card">
+              <div class="example-number">2</div>
+              <h5 class="example-title">{{ ('serviceDialog.services.' + serviceKey + '.examples.example2.title') | translate }}</h5>
+              <p class="example-description">{{ ('serviceDialog.services.' + serviceKey + '.examples.example2.description') | translate }}</p>
+            </div>
+            
+            <div class="example-card">
+              <div class="example-number">3</div>
+              <h5 class="example-title">{{ ('serviceDialog.services.' + serviceKey + '.examples.example3.title') | translate }}</h5>
+              <p class="example-description">{{ ('serviceDialog.services.' + serviceKey + '.examples.example3.description') | translate }}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

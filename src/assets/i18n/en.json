@@ -60,23 +60,63 @@
     }
   },
   "serviceDialog": {
-    "title": "What this means?",
+    "examples": {
+      "title": "Real-World Examples"
+    },
     "services": {
-      "automation": {
-        "explanation": "We use advanced AI and Large Language Models (LLMs) to automate your business processes intelligently. Think of it like having a smart assistant that can understand, learn, and respond naturally - handling customer inquiries, qualifying leads, and managing complex workflows without human intervention.",
-        "example": "For example: a chatbot that can answer any question about your company services in any language, or an AI system that automatically qualifies leads by asking the right questions and routing them to the appropriate team member."
+      "ai": {
+        "title": "AI Solutions & Automation",
+        "description": "Transform your business with intelligent automation powered by cutting-edge AI technology. Our solutions reduce manual work, improve accuracy, and scale your operations efficiently.",
+        "examples": {
+          "example1": {
+            "title": "AI-Powered Customer Support Chatbot",
+            "description": "Deploy intelligent chatbots that handle customer inquiries 24/7, reduce support costs by 60%, and provide instant responses in multiple languages. Perfect for e-commerce, SaaS platforms, and service businesses."
+          },
+          "example2": {
+            "title": "Automated Data Processing & Analytics",
+            "description": "Implement machine learning systems that automatically process invoices, extract data from documents, and generate business insights. Eliminate manual data entry and reduce processing time by 80%."
+          },
+          "example3": {
+            "title": "Intelligent Lead Qualification System",
+            "description": "Create AI systems that automatically qualify sales leads, score prospects based on behavior, and route high-value opportunities to your sales team. Increase conversion rates and optimize sales efficiency."
+          }
+        }
       },
       "web": {
-        "explanation": "We build websites that look great on any device and work perfectly. Whether you need a simple company website or a complex online platform, we create digital spaces that represent your business professionally and help you connect with customers.",
-        "example": "For example: a restaurant website where customers can view menus, make reservations, and order online all in one place."
+        "title": "Modern Web Development",
+        "description": "Build high-performance, SEO-optimized websites that drive business growth. Our responsive designs work flawlessly across all devices and are optimized for search engines and user experience.",
+        "examples": {
+          "example1": {
+            "title": "E-Commerce Platform with Payment Integration",
+            "description": "Develop complete online stores with secure payment processing, inventory management, customer accounts, and mobile-optimized checkout. Increase online sales with professional e-commerce solutions."
+          },
+          "example2": {
+            "title": "Corporate Website with CMS Integration",
+            "description": "Create professional business websites with content management systems, SEO optimization, contact forms, and analytics integration. Enhance your online presence and generate more leads."
+          },
+          "example3": {
+            "title": "Progressive Web Applications (PWA)",
+            "description": "Build web applications that work like native mobile apps, offer offline functionality, push notifications, and fast loading times. Provide app-like experiences without app store dependencies."
+          }
+        }
       },
-      "app": {
-        "explanation": "We create powerful web applications and cloud-based software that solve specific business problems. These are like custom digital tools built just for your needs - from customer management systems to online marketplaces.",
-        "example": "For example: a custom inventory system that tracks your products, alerts you when stock is low, and automatically orders new supplies."
-      },
-      "tools": {
-        "explanation": "We develop specialized software tools that integrate with what you already use. These custom solutions automate specific tasks in your workflow, like data processing, file management, or connecting different software systems together.",
-        "example": "For example: a tool that takes data from your sales system and automatically creates invoices in your accounting software."
+      "software": {
+        "title": "Custom Software Development",
+        "description": "Design and develop tailored software solutions that solve your unique business challenges. From desktop applications to mobile apps, we create scalable, secure, and user-friendly software.",
+        "examples": {
+          "example1": {
+            "title": "Cross-Platform Mobile Application",
+            "description": "Develop native iOS and Android apps with synchronized data, push notifications, and offline capabilities. Reach your customers on their preferred devices with consistent user experiences."
+          },
+          "example2": {
+            "title": "Custom Business Management System",
+            "description": "Build comprehensive CRM, ERP, or project management systems tailored to your workflows. Integrate with existing tools, automate processes, and centralize business operations in one platform."
+          },
+          "example3": {
+            "title": "API Development & System Integration",
+            "description": "Create custom APIs and integrate disparate systems to enable seamless data flow. Connect your existing software tools, automate data synchronization, and eliminate manual data transfer."
+          }
+        }
       }
     }
   },

@@ -4,7 +4,7 @@
     <p class="section-subtitle">{{ 'servicesv2.subtitle' | translate }}</p>
     
     <div class="services-row">
-      <div class="service-card">
+      <div class="service-card" (click)="openServiceDialog('ai')">
         <div class="service-icon">
           <img src="/serv_ai.png" alt="AI Services" class="service-image">
         </div>
@@ -12,7 +12,7 @@
         <p>{{ 'servicesv2.items.ai.description' | translate }}</p>
       </div>
       
-      <div class="service-card">
+      <div class="service-card" (click)="openServiceDialog('web')">
         <div class="service-icon">
           <img src="/serv_web.png" alt="Web Development" class="service-image">
         </div>
@@ -20,7 +20,7 @@
         <p>{{ 'servicesv2.items.websites.description' | translate }}</p>
       </div>
       
-      <div class="service-card">
+      <div class="service-card" (click)="openServiceDialog('software')">
         <div class="service-icon">
           <img src="/serv_soft.png" alt="Software Development" class="service-image">
         </div>
@@ -29,4 +29,11 @@
       </div>
     </div>
   </div>
+
+  <!-- Service Dialog -->
+  <app-service-dialog 
+    [isOpen]="isDialogOpen"
+    [serviceKey]="selectedServiceKey"
+    (close)="closeServiceDialog()">
+  </app-service-dialog>
 </section>
