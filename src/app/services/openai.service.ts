@@ -119,7 +119,7 @@ Remember: You're like a friendly tech expert at a coffee shop, not a corporate s
   private getLanguageInstructions(language: string): string {
     switch (language) {
       case 'pt':
-        return `IMPORTANTE: Responda SEMPRE em português europeu. Use linguagem casual e amigável - contrações, gírias leves quando apropriado, emojis. Seja natural e descontraído, como um amigo que entende de tecnologia.`;
+        return `IMPORTANTE: Responda SEMPRE em português europeu. Use linguagem casual e amigável, mas mantenha o registo mais neutro. Seja natural e descontraído, como um amigo que percebe de tecnologia.`;
       case 'de':
         return `WICHTIG: Antworten Sie IMMER auf Deutsch. Verwenden Sie eine lockere, freundliche Sprache - seien Sie natürlich und entspannt, wie ein technikbegeisterter Freund. Nutzen Sie Umgangssprache und Emojis.`;
       case 'en':
@@ -131,7 +131,7 @@ Remember: You're like a friendly tech expert at a coffee shop, not a corporate s
   private getFallbackMessage(language: string): string {
     switch (language) {
       case 'pt':
-        return 'Desculpe, mas estou com dificuldades técnicas no momento. Por favor, entre em contato com nossa equipe diretamente para obter assistência.';
+        return 'Peço desculpa, mas estou com dificuldades técnicas neste momento. Por favor, entre em contacto com a nossa equipa directamente para obter assistência.';
       case 'de':
         return 'Entschuldigung, aber ich habe gerade technische Schwierigkeiten. Bitte kontaktieren Sie unser Team direkt für Unterstützung.';
       case 'en':
@@ -186,30 +186,30 @@ Remember: You're like a friendly tech expert at a coffee shop, not a corporate s
 
   private getFallbackResponsePT(msg: string): string {
     if (msg.includes('ia') || msg.includes('inteligencia') || msg.includes('automacao') || msg.includes('chatbot')) {
-      return '🤖 A gente faz bots inteligentes e automação que cuidam do trabalho chato pra você! Chatbots que entendem de verdade, sistemas que processam dados sozinhos - basicamente tecnologia que trabalha enquanto você descansa 😴';
+      return '🤖 Fazemos bots inteligentes e automação que cuidam do trabalho aborrecido por si! Chatbots que percebem mesmo, sistemas que processam dados automaticamente - basicamente tecnologia que trabalha enquanto descansa 😴';
     }
     
     if (msg.includes('web') || msg.includes('site') || msg.includes('website')) {
-      return '🌐 Criamos sites que ficam lindos e funcionam perfeitamente em qualquer lugar - celular, tablet, computador. De lojas online a sites corporativos, fazemos experiências digitais que as pessoas realmente querem usar!';
+      return '🌐 Criamos sites que ficam fantásticos e funcionam perfeitamente em qualquer lugar - telemóvel, tablet, computador. De lojas online a sites corporativos, fazemos experiências digitais que as pessoas realmente querem usar!';
     }
     
     if (msg.includes('software') || msg.includes('app') || msg.includes('aplicativo') || msg.includes('mobile')) {
-      return '📱 Apps e software sob medida? Essa é nossa! Apps mobile, ferramentas desktop, sistemas empresariais - desenvolvemos o que você precisar pra facilitar sua vida. Tecnologia moderna, feita direito.';
+      return '📱 Apps e software à medida? É a nossa especialidade! Apps mobile, ferramentas desktop, sistemas empresariais - desenvolvemos o que precisar para facilitar a sua vida. Tecnologia moderna, feita como deve ser.';
     }
     
     if (msg.includes('preco') || msg.includes('custo') || msg.includes('orcamento')) {
-      return '💰 O preço depende mesmo do que você tá procurando, mas somos bem justos! Cada projeto é diferente, então vamos conversar sobre o que você precisa e descobrimos juntos 😊';
+      return '💰 O preço depende mesmo do que procura, mas somos bastante justos! Cada projecto é diferente, por isso vamos conversar sobre o que precisa e descobrimos juntos 😊';
     }
     
     if (msg.includes('equipe') || msg.includes('quem') || msg.includes('dono') || msg.includes('empresa') || msg.includes('paulo')) {
-      return '👨‍💻 A lopes2tech é do Paulo - ele é o cara que constrói tudo! É uma operação enxuta, na maior parte do tempo só ele, mas quando os projetos precisam de mais expertise, ele traz colaboradores de confiança. Atendimento pessoal, sem firula corporativa!';
+      return '👨‍💻 A lopes2tech é do Paulo - ele é quem constrói tudo! É uma operação enxuta, na maior parte do tempo só ele, mas quando os projectos precisam de mais experiência, traz colaboradores de confiança. Atendimento pessoal, sem complicações corporativas!';
     }
     
     if (msg.includes('contato') || msg.includes('ola') || msg.includes('oi')) {
-      return '👋 E aí! Tô aqui pra te ajudar a descobrir como a lopes2tech pode realizar seus sonhos tecnológicos. Fazemos automação com IA, desenvolvimento web e software personalizado. O que tá rolando?';
+      return '👋 Olá! Estou aqui para o ajudar a descobrir como a lopes2tech pode realizar os seus sonhos tecnológicos. Fazemos automação com IA, desenvolvimento web e software personalizado. O que se passa?';
     }
 
-    return '🤔 Pergunta interessante! Tô aqui pra bater um papo sobre todas as coisas legais que fazemos - automação com IA, desenvolvimento web, software personalizado. O que você gostaria de saber mais? Ou me conta que problema você tá tentando resolver!';
+    return '🤔 Pergunta interessante! Estou aqui para falar sobre todas as coisas fixes que fazemos - automação com IA, desenvolvimento web, software personalizado. O que gostaria de saber mais? Ou conte-me que problema está a tentar resolver!';
   }
 
   private getFallbackResponseDE(msg: string): string {
