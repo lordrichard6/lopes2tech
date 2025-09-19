@@ -1,59 +1,43 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { TranslationService } from './translation.service';
-import OpenAI from 'openai';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OpenaiService {
-  private openai: OpenAI;
 
-  constructor(private translationService: TranslationService) {
-    this.openai = new OpenAI({
-      apiKey: environment.openai.apiKey,
-      dangerouslyAllowBrowser: true // Note: In production, consider using a backend proxy
-    });
-  }
+  constructor(private translationService: TranslationService) {}
 
   async getChatResponse(message: string, conversationHistory: any[] = []): Promise<string> {
     try {
       // Get current language
       const currentLang = this.translationService.getCurrentLanguageValue();
       
-      // System prompt with language-specific instructions
-      const systemMessage = {
-        role: 'system' as const,
-        content: this.getSystemPrompt(currentLang)
-      };
-
-      // Prepare messages array with system message, conversation history, and current message
-      const messages = [
-        systemMessage,
-        ...conversationHistory.map(msg => ({
-          role: msg.sender === 'user' ? 'user' as const : 'assistant' as const,
-          content: msg.content
-        })),
-        {
-          role: 'user' as const,
-          content: message
-        }
-      ];
-
-      const completion = await this.openai.chat.completions.create({
-        model: 'gpt-3.5-turbo',
-        messages: messages,
-        max_tokens: 300,
-        temperature: 0.7,
-        presence_penalty: 0.1,
-        frequency_penalty: 0.1
+      // Call our secure API endpoint instead of OpenAI directly
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: message,
+          conversationHistory: conversationHistory,
+          language: currentLang
+        })
       });
 
-      return completion.choices[0]?.message?.content || this.getFallbackMessage(currentLang);
-    } catch (error) {
-      console.error('OpenAI API Error:', error);
+      if (!response.ok) {
+        throw new Error(`API request failed: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data.response || this.getFallbackMessage(currentLang);
       
-      // Fallback to predefined responses if OpenAI fails
+    } catch (error) {
+      console.error('API Error:', error);
+      
+      // Fallback to predefined responses if API fails
       return this.getFallbackResponse(message);
     }
   }

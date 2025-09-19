@@ -6,8 +6,7 @@ export const environment = {
     publicKey: 'UTMnn_JYmng2HjtVm'
   },
   openai: {
-    // Set your OpenAI API key here for local development
-    // For production, use environment variables
+    // API calls now go through /api/chat endpoint (no key needed in frontend)
     apiKey: ''
   }
 };
