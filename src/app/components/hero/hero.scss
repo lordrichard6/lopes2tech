@@ -21,6 +21,40 @@
   opacity: 0.6;
 }
 
+// Centered Logo GIF
+.hero-logo-gif {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  height: auto;
+  opacity: 0.3;
+  pointer-events: none;
+  
+  // Entry animation
+  animation: logoEntrance 2s ease-out 0.5s both;
+}
+
+// Logo entrance animation keyframes
+@keyframes logoEntrance {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.3) rotate(-10deg);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.2;
+    transform: translate(-50%, -50%) scale(1.1) rotate(2deg);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    filter: blur(1px);
+  }
+}
+
 .hero-background {
   position: absolute;
   top: 0;
