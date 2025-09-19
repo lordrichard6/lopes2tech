@@ -1,0 +1,40 @@
+<div class="chat-container">
+  <div class="chat-toggle" (click)="toggleChat()">
+    💬
+  </div>
+  
+  <div class="chat-window" [class.open]="isOpen">
+    <div class="chat-header">
+      <h4>AI Assistant</h4>
+      <button class="close-btn" (click)="toggleChat()">✕</button>
+    </div>
+    
+    <div class="chat-messages">
+      <div *ngFor="let message of messages" 
+           class="message" 
+           [class.user]="message.sender === 'user'"
+           [class.bot]="message.sender === 'bot'">
+        <div class="message-content">
+          {{ message.content }}
+        </div>
+      </div>
+    </div>
+    
+    <div class="chat-input">
+      <input 
+        type="text" 
+        [(ngModel)]="currentMessage" 
+        (keyup.enter)="sendMessage()"
+        [disabled]="isLoading"
+        placeholder="Ask me about our AI services..."
+        class="message-input">
+      <button 
+        (click)="sendMessage()" 
+        [disabled]="!currentMessage.trim() || isLoading"
+        class="send-btn">
+        <span *ngIf="!isLoading">Send</span>
+        <span *ngIf="isLoading">...</span>
+      </button>
+    </div>
+  </div>
+</div>

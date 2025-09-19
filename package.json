@@ -33,6 +33,7 @@
     "@fortawesome/fontawesome-free": "^7.0.0",
     "@types/three": "^0.180.0",
     "express": "^5.1.0",
+    "openai": "^5.21.0",
     "rxjs": "~7.8.0",
     "three": "^0.180.0",
     "tslib": "^2.3.0",

@@ -5,6 +5,7 @@ import { About } from '../about/about';
 // import { Contact } from '../contact/contact';
 import { MultistepComponent } from '../multistep/multistep';
 import { TeamComponent } from '../team/team';
+import { AiChatComponent } from '../ai-chat/ai-chat.component';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,8 @@ import { TeamComponent } from '../team/team';
     ServicesV2Component,
     About,
     MultistepComponent,
-    TeamComponent
+    TeamComponent,
+    AiChatComponent
     // Contact,
   ],
   template: `
@@ -24,6 +26,9 @@ import { TeamComponent } from '../team/team';
     <app-multistep></app-multistep>
     <app-team></app-team>
     <!-- <app-contact></app-contact> -->
+    
+    <!-- AI Chat Assistant -->
+    <app-ai-chat></app-ai-chat>
   `,
   styles: []
 })
