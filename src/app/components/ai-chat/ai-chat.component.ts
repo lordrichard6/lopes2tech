@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { OpenaiService } from '../../services/openai.service';
 import { TranslationService } from '../../services/translation.service';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 interface ChatMessage {
   sender: 'user' | 'bot';
@@ -13,7 +14,7 @@ interface ChatMessage {
 @Component({
   selector: 'app-ai-chat',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TranslatePipe],
   templateUrl: './ai-chat.component.html',
   styleUrls: ['./ai-chat.component.scss']
 })

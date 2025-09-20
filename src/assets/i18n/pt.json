@@ -6,6 +6,11 @@
     "about": "Sobre",
     "contact": "Contacto"
   },
+  "ai": {
+    "assistant": "Assistente de IA",
+    "placeholder": "Pergunte sobre os nossos serviços de IA...",
+    "send": "Enviar"
+  },
   "hero": {
     "badge": "✨ Automação Simplificada",
     "title": {

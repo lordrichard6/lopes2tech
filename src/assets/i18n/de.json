@@ -6,6 +6,11 @@
     "about": "Über uns",
     "contact": "Kontakt"
   },
+  "ai": {
+    "assistant": "KI-Assistent",
+    "placeholder": "Fragen Sie nach unseren KI-Diensten...",
+    "send": "Senden"
+  },
   "hero": {
     "badge": "✨ Automatisierung Vereinfacht",
     "title": {

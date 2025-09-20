@@ -20,11 +20,51 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   margin-left: auto;
+  position: relative;
+  
+  // Pulse animation to make it stand out
+  animation: chatPulse 2s infinite;
+  
+  // Icon animation
+  i {
+    animation: chatBounce 1.5s ease-in-out infinite;
+  }
 }
 
 .chat-toggle:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  animation: none; // Stop pulse on hover
+  
+  i {
+    animation: none; // Stop bounce on hover
+  }
+}
+
+// Pulse animation keyframes
+@keyframes chatPulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 0 rgba(8, 145, 178, 0.4);
+  }
+  70% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 10px rgba(8, 145, 178, 0);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 0 rgba(8, 145, 178, 0);
+  }
+}
+
+// Bounce animation for the icon
+@keyframes chatBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  60% {
+    transform: translateY(-1px);
+  }
 }
 
 .chat-window {

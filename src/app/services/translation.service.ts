@@ -73,6 +73,11 @@ export class TranslationService {
         about: 'About',
         contact: 'Contact'
       },
+      ai: {
+        assistant: 'AI Assistant',
+        placeholder: 'Ask me about our AI services...',
+        send: 'Send'
+      },
       hero: {
         badge: '✨ Automation Simplified',
         title: {

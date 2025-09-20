@@ -1,11 +1,11 @@
 <div class="chat-container">
   <div class="chat-toggle" (click)="toggleChat()">
-    💬
+    <i class="fas fa-comments"></i>
   </div>
   
   <div class="chat-window" [class.open]="isOpen">
     <div class="chat-header">
-      <h4>AI Assistant</h4>
+      <h4>{{ 'ai.assistant' | translate }}</h4>
       <button class="close-btn" (click)="toggleChat()">✕</button>
     </div>
     
@@ -26,13 +26,13 @@
         [(ngModel)]="currentMessage" 
         (keyup.enter)="sendMessage()"
         [disabled]="isLoading"
-        placeholder="Ask me about our AI services..."
+        [placeholder]="'ai.placeholder' | translate"
         class="message-input">
       <button 
         (click)="sendMessage()" 
         [disabled]="!currentMessage.trim() || isLoading"
         class="send-btn">
-        <span *ngIf="!isLoading">Send</span>
+        <span *ngIf="!isLoading">{{ 'ai.send' | translate }}</span>
         <span *ngIf="isLoading">...</span>
       </button>
     </div>
