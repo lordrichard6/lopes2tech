@@ -422,6 +422,49 @@
     "title": "Obrigado pela sua consulta!",
     "message": "Recebemos os detalhes do seu projeto e a nossa equipa de especialistas já está a analisar os seus requisitos. Receberá uma proposta personalizada dentro de **24 horas** adaptada especificamente às suas necessidades."
   },
+  "portfolio": {
+    "badge": "O Meu Portfólio",
+    "title": "Projeto em Destaque",
+    "subtitle": "Explore a nossa mais recente solução de tecnologia para saúde",
+    "theraflow": {
+      "title": "TheraFlow",
+      "tagline": "O CRM Simples Criado para Terapeutas e Coaches",
+      "description": "Gira o teu consultório com confiança. Agenda sessões, acompanha o progresso dos clientes, processa pagamentos e mantém notas seguras - tudo numa plataforma focada na privacidade e construída com precisão suíça.",
+      "features": {
+        "title": "Tudo o Que Precisas para Gerir o Teu Consultório",
+        "scheduling": {
+          "title": "Agendamento e Calendário",
+          "description": "Sincronização Google/Outlook, gestão inteligente de disponibilidade, portal de auto-agendamento e suporte automático de fuso horário"
+        },
+        "clients": {
+          "title": "Gestão de Clientes",
+          "description": "Perfis detalhados com notas seguras, histórico, formulários de admissão e categorização inteligente"
+        },
+        "sessions": {
+          "title": "Gestão de Sessões",
+          "description": "Registo abrangente, acompanhamento de progresso, formato SOAP/DAR(N) e modelos personalizáveis"
+        },
+        "billing": {
+          "title": "Faturação e Pagamentos",
+          "description": "Faturação profissional, integração Stripe/PayPal, acompanhamento de pagamentos pendentes e relatórios financeiros"
+        },
+        "reminders": {
+          "title": "Lembretes e Notificações",
+          "description": "Lembretes por email/SMS, follow-ups automáticos, fluxos de check-in, reduz faltas em 80%"
+        },
+        "security": {
+          "title": "Segurança e Conformidade",
+          "description": "Encriptação end-to-end, conformidade total com GDPR, HIPAA opcional, controlo de acesso baseado em funções"
+        }
+      },
+      "stats": {
+        "practitioners": "Profissionais",
+        "sessions": "Sessões Geridas",
+        "uptime": "Disponibilidade"
+      },
+      "cta": "Visitar TheraFlow"
+    }
+  },
   "footer": {
     "company": "lopes2tech",
     "description": "Simplificando a vida através de soluções de automação inteligente.",

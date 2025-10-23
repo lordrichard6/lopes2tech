@@ -160,6 +160,49 @@ export class TranslationService {
           location: 'Location'
         }
       },
+      portfolio: {
+        badge: 'My Portfolio',
+        title: 'Featured Project',
+        subtitle: 'Explore our latest healthcare technology solution',
+        theraflow: {
+          title: 'TheraFlow',
+          tagline: 'The Simple CRM Built for Therapists & Coaches',
+          description: 'Manage your practice with confidence. Schedule sessions, track client progress, handle payments, and maintain secure notes - all in one privacy-focused platform built with Swiss precision.',
+          features: {
+            title: 'Everything You Need to Run Your Practice',
+            scheduling: {
+              title: 'Scheduling & Calendar',
+              description: 'Google/Outlook sync, smart availability, self-booking portal, and automatic timezone support'
+            },
+            clients: {
+              title: 'Client Management',
+              description: 'Detailed profiles with secure notes, history tracking, intake forms, and smart categorization'
+            },
+            sessions: {
+              title: 'Session Management',
+              description: 'Comprehensive logging, progress tracking, SOAP/DAR(N) format, and customizable templates'
+            },
+            billing: {
+              title: 'Billing & Payments',
+              description: 'Professional invoicing, Stripe/PayPal integration, unpaid tracking, and financial reports'
+            },
+            reminders: {
+              title: 'Reminders & Notifications',
+              description: 'Email/SMS reminders, automated follow-ups, check-in workflows, reduce no-shows by 80%'
+            },
+            security: {
+              title: 'Security & Compliance',
+              description: 'End-to-end encryption, full GDPR compliance, optional HIPAA, role-based access control'
+            }
+          },
+          stats: {
+            practitioners: 'Practitioners',
+            sessions: 'Sessions Managed',
+            uptime: 'Uptime'
+          },
+          cta: 'Visit TheraFlow'
+        }
+      },
       footer: {
         company: 'lopes2tech',
         description: 'Simplifying life through intelligent automation solutions.',

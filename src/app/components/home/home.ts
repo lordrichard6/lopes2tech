@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Hero } from '../hero/hero';
 import { ServicesV2Component } from '../services/servicesv2.component';
 import { About } from '../about/about';
+import { Portfolio } from '../portfolio/portfolio';
 // import { Contact } from '../contact/contact';
 import { MultistepComponent } from '../multistep/multistep';
 import { TeamComponent } from '../team/team';
@@ -14,6 +15,7 @@ import { AiChatComponent } from '../ai-chat/ai-chat.component';
     Hero,
     ServicesV2Component,
     About,
+    Portfolio,
     MultistepComponent,
     TeamComponent,
     AiChatComponent
@@ -23,6 +25,7 @@ import { AiChatComponent } from '../ai-chat/ai-chat.component';
     <app-hero></app-hero>
     <app-servicesv2></app-servicesv2>
     <app-about></app-about>
+    <app-portfolio></app-portfolio>
     <app-multistep></app-multistep>
     <app-team></app-team>
     <!-- <app-contact></app-contact> -->
