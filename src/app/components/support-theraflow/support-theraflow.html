@@ -1,0 +1,80 @@
+<section class="support-theraflow">
+  <div class="container">
+    <!-- Header -->
+    <div class="page-header">
+      <div class="logo-section">
+        <img src="/theraflow-logo.svg" alt="TheraFlow" class="header-logo">
+        <span class="beta-badge">{{ 'portfolio.theraflow.beta' | translate }}</span>
+      </div>
+      <h1 class="page-title">{{ 'support.title' | translate }}</h1>
+      <p class="page-subtitle">{{ 'support.subtitle' | translate }}</p>
+    </div>
+
+    <!-- Support Section -->
+    <div class="support-amounts-section">
+      <div class="amount-header">
+        <h3 class="amount-title">{{ 'support.amounts.title' | translate }}</h3>
+        <p class="amount-subtitle">{{ 'support.amounts.subtitle' | translate }}</p>
+      </div>
+
+      <!-- Support Button -->
+      <button 
+        class="btn-support-main" 
+        (click)="supportViaStripe()">
+        <i class="fas fa-heart"></i>
+        <span>{{ 'support.amounts.cta' | translate }}</span>
+      </button>
+    </div>
+
+    <!-- Investment Section -->
+    <div class="investment-section">
+      <div class="investment-card">
+        <div class="investment-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="investment-content">
+          <h3>{{ 'support.investment.title' | translate }}</h3>
+          <p>{{ 'support.investment.description' | translate }}</p>
+          <button class="btn-investor" (click)="openInvestorForm()">
+            <span>{{ 'support.investment.button' | translate }}</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <h2 class="section-title">{{ 'support.faq.title' | translate }}</h2>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>{{ 'support.faq.q1.question' | translate }}</h4>
+          <p>{{ 'support.faq.q1.answer' | translate }}</p>
+        </div>
+        
+        <div class="faq-item">
+          <h4>{{ 'support.faq.q2.question' | translate }}</h4>
+          <p>{{ 'support.faq.q2.answer' | translate }}</p>
+        </div>
+        
+        <div class="faq-item">
+          <h4>{{ 'support.faq.q3.question' | translate }}</h4>
+          <p>{{ 'support.faq.q3.answer' | translate }}</p>
+        </div>
+        
+        <div class="faq-item">
+          <h4>{{ 'support.faq.q4.question' | translate }}</h4>
+          <p>{{ 'support.faq.q4.answer' | translate }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thank You Message -->
+    <div class="thank-you-section">
+      <i class="fas fa-heart thank-you-icon"></i>
+      <h3>{{ 'support.thankYou.title' | translate }}</h3>
+      <p>{{ 'support.thankYou.message' | translate }}</p>
+    </div>
+  </div>
+</section>

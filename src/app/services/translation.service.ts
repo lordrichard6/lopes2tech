@@ -169,7 +169,7 @@ export class TranslationService {
           beta: 'Beta',
           tagline: 'The Simple CRM Built for Therapists & Coaches',
           description: 'Manage your practice with confidence. Schedule sessions, track client progress, handle payments, and maintain secure notes - all in one privacy-focused platform built with Swiss precision.',
-          donation: 'This project is currently in beta. If you\'d like to support its development, consider making a donation!',
+          donation: 'This SaaS product is currently in beta. Support its development through crowdfunding, investment, or donations to help bring this solution to more practitioners!',
           features: {
             title: 'Everything You Need to Run Your Practice',
             scheduling: {

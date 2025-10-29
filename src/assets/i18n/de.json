@@ -551,7 +551,7 @@
       "beta": "Beta",
       "tagline": "Das Einfache CRM für Therapeuten & Coaches",
       "description": "Verwalten Sie Ihre Praxis mit Vertrauen. Planen Sie Sitzungen, verfolgen Sie Fortschritte von Klienten, verarbeiten Sie Zahlungen und führen Sie sichere Notizen - alles auf einer datenschutzorientierten Plattform mit Schweizer Präzision.",
-      "donation": "Dieses Projekt befindet sich derzeit in der Beta-Phase. Wenn Sie die Entwicklung unterstützen möchten, ziehen Sie bitte eine Spende in Betracht!",
+      "donation": "Dieses SaaS-Produkt befindet sich derzeit in der Beta-Phase. Unterstützen Sie die Entwicklung durch Crowdfunding, Investitionen oder Spenden, um diese Lösung mehr Praktikern zugänglich zu machen!",
       "features": {
         "title": "Alles, Was Sie für Ihre Praxis Benötigen",
         "scheduling": {
@@ -584,7 +584,46 @@
         "sessions": "Verwaltete Sitzungen",
         "uptime": "Verfügbarkeit"
       },
-      "cta": "TheraFlow Besuchen"
+      "cta": "TheraFlow besuchen",
+      "supportButton": "Projekt unterstützen"
+    }
+  },
+  "support": {
+    "title": "TheraFlow Entwicklung unterstützen",
+    "subtitle": "Helfen Sie uns, diese SaaS-Lösung weltweit für Gesundheitsfachkräfte bereitzustellen. Ihre Unterstützung beschleunigt die Entwicklung und hält TheraFlow für alle zugänglich.",
+    "amounts": {
+      "title": "TheraFlow Entwicklung unterstützen",
+      "subtitle": "Ihr Beitrag hilft uns, bessere Tools für Therapeuten zu entwickeln. Wählen Sie einen beliebigen Betrag, den Sie spenden möchten.",
+      "customNote": "Klicken Sie auf die Schaltfläche unten, um zu spenden - Sie können Ihren Betrag auf der sicheren Zahlungsseite wählen.",
+      "cta": "TheraFlow unterstützen"
+    },
+    "investment": {
+      "title": "Interesse an einer Investition?",
+      "description": "Wir suchen strategische Investoren, um die Entwicklung zu beschleunigen und TheraFlow global zu skalieren. Schließen Sie sich uns an und revolutionieren Sie die Praxisverwaltung für Gesundheitsfachkräfte.",
+      "button": "Für Investition kontaktieren"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": {
+        "question": "Ist dies eine einmalige Zahlung?",
+        "answer": "Ja! Alle Unterstützungsbeiträge sind einmalige Zahlungen. Wählen Sie jeden Betrag, der für Sie passend erscheint."
+      },
+      "q2": {
+        "question": "Wann wird TheraFlow lanciert?",
+        "answer": "Wir befinden uns derzeit in der Beta-Phase mit ausgewählten Praktikern. Die vollständige Markteinführung ist für Q2 2025 geplant. Frühe Unterstützer erhalten sofortigen Zugang."
+      },
+      "q3": {
+        "question": "Wie wird meine Unterstützung verwendet?",
+        "answer": "Ihr Beitrag finanziert direkt die Entwicklung, Infrastrukturkosten, Sicherheitsaudits und Compliance-Zertifizierungen (DSGVO, HIPAA)."
+      },
+      "q4": {
+        "question": "Kann ich eine Rückerstattung erhalten?",
+        "answer": "Ja! Wenn Sie innerhalb von 30 Tagen nicht zufrieden sind, erstatten wir den vollen Betrag zurück, ohne Fragen zu stellen."
+      }
+    },
+    "thankYou": {
+      "title": "Vielen Dank für Ihre Unterstützung!",
+      "message": "Jeder Beitrag, ob groß oder klein, hilft uns, bessere Tools für Gesundheitsfachkräfte zu entwickeln. Gemeinsam machen wir die Praxisverwaltung einfacher und zugänglicher."
     }
   },
   "footer": {

@@ -153,9 +153,15 @@
 }
 
 .cta-section {
-  text-align: center;
   padding-top: 2rem;
   border-top: 1px solid #e0e7ff;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn-visit {
@@ -163,21 +169,38 @@
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
   color: white;
   text-decoration: none;
   border-radius: 12px;
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.25);
   
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(139, 92, 246, 0.35);
+  &.btn-primary {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.25);
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(139, 92, 246, 0.35);
+      
+      i {
+        transform: translateX(4px);
+      }
+    }
+  }
+  
+  &.btn-support {
+    background: linear-gradient(135deg, #ec4899, #db2777);
+    box-shadow: 0 4px 16px rgba(236, 72, 153, 0.25);
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(236, 72, 153, 0.35);
+    }
     
     i {
-      transform: translateX(4px);
+      animation: heartbeat 1.5s ease-in-out infinite;
     }
   }
   

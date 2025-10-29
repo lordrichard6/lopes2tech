@@ -431,7 +431,7 @@
       "beta": "Beta",
       "tagline": "O CRM Simples Criado para Terapeutas e Coaches",
       "description": "Gira o teu consultório com confiança. Agenda sessões, acompanha o progresso dos clientes, processa pagamentos e mantém notas seguras - tudo numa plataforma focada na privacidade e construída com precisão suíça.",
-      "donation": "Este projeto está atualmente em beta. Se gostarias de apoiar o seu desenvolvimento, considera fazer uma doação!",
+      "donation": "Este produto SaaS está atualmente em beta. Apoia o seu desenvolvimento através de crowdfunding, investimento ou doações para ajudar a levar esta solução a mais profissionais!",
       "features": {
         "title": "Tudo o Que Precisas para Gerir o Teu Consultório",
         "scheduling": {
@@ -464,7 +464,46 @@
         "sessions": "Sessões Geridas",
         "uptime": "Disponibilidade"
       },
-      "cta": "Visitar TheraFlow"
+      "cta": "Visitar TheraFlow",
+      "supportButton": "Apoiar Projeto"
+    }
+  },
+  "support": {
+    "title": "Apoiar o Desenvolvimento do TheraFlow",
+    "subtitle": "Ajude-nos a trazer esta solução SaaS para profissionais de saúde em todo o mundo. O seu apoio acelera o desenvolvimento e mantém o TheraFlow acessível a todos.",
+    "amounts": {
+      "title": "Apoiar o Desenvolvimento do TheraFlow",
+      "subtitle": "A sua contribuição ajuda-nos a construir melhores ferramentas para terapeutas. Escolha qualquer valor que deseje contribuir.",
+      "customNote": "Clique no botão abaixo para doar - poderá escolher o seu valor na página de pagamento segura.",
+      "cta": "Apoiar TheraFlow"
+    },
+    "investment": {
+      "title": "Interessado em Investir?",
+      "description": "Estamos à procura de investidores estratégicos para acelerar o desenvolvimento e escalar o TheraFlow globalmente. Junte-se a nós na revolução da gestão de consultórios para profissionais de saúde.",
+      "button": "Contactar para Investimento"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "q1": {
+        "question": "É um pagamento único?",
+        "answer": "Sim! Todas as contribuições de apoio são pagamentos únicos. Escolha qualquer valor que considere adequado."
+      },
+      "q2": {
+        "question": "Quando será lançado o TheraFlow?",
+        "answer": "Estamos atualmente em beta com profissionais selecionados. O lançamento completo está planeado para o 2º trimestre de 2025. Os apoiantes iniciais obtêm acesso imediato."
+      },
+      "q3": {
+        "question": "Como será usado o meu apoio?",
+        "answer": "A sua contribuição financia diretamente o desenvolvimento, custos de infraestrutura, auditorias de segurança e certificações de conformidade (GDPR, HIPAA)."
+      },
+      "q4": {
+        "question": "Posso obter um reembolso?",
+        "answer": "Sim! Se não estiver satisfeito dentro de 30 dias, forneceremos um reembolso total, sem perguntas."
+      }
+    },
+    "thankYou": {
+      "title": "Obrigado pelo Seu Apoio!",
+      "message": "Cada contribuição, grande ou pequena, ajuda-nos a construir melhores ferramentas para profissionais de saúde. Juntos, estamos a tornar a gestão de consultórios mais simples e acessível."
     }
   },
   "footer": {

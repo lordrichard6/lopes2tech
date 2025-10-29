@@ -436,7 +436,7 @@
       "beta": "Beta",
       "tagline": "The Simple CRM Built for Therapists & Coaches",
       "description": "Manage your practice with confidence. Schedule sessions, track client progress, handle payments, and maintain secure notes - all in one privacy-focused platform built with Swiss precision.",
-      "donation": "This project is currently in beta. If you'd like to support its development, consider making a donation!",
+      "donation": "This SaaS product is currently in beta. Support its development through crowdfunding, investment, or donations to help bring this solution to more practitioners!",
       "features": {
         "title": "Everything You Need to Run Your Practice",
         "scheduling": {
@@ -469,7 +469,46 @@
         "sessions": "Sessions Managed",
         "uptime": "Uptime"
       },
-      "cta": "Visit TheraFlow"
+      "cta": "Visit TheraFlow",
+      "supportButton": "Support Project"
+    }
+  },
+  "support": {
+    "title": "Support TheraFlow Development",
+    "subtitle": "Help us bring this SaaS solution to healthcare professionals worldwide. Your support accelerates development and keeps TheraFlow accessible to everyone.",
+    "amounts": {
+      "title": "Support TheraFlow Development",
+      "subtitle": "Your contribution helps us build better tools for therapists. Choose any amount you'd like to contribute.",
+      "customNote": "Click the button below to donate - you'll be able to choose your amount on the secure payment page.",
+      "cta": "Support TheraFlow"
+    },
+    "investment": {
+      "title": "Interested in Investing?",
+      "description": "We're seeking strategic investors to accelerate development and scale TheraFlow globally. Join us in revolutionizing practice management for healthcare professionals.",
+      "button": "Contact for Investment"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "Is this a one-time payment?",
+        "answer": "Yes! All support contributions are one-time payments. Choose any amount that feels right for you."
+      },
+      "q2": {
+        "question": "When will TheraFlow launch?",
+        "answer": "We're currently in beta with select practitioners. Full launch is planned for Q2 2025. Early supporters get immediate access."
+      },
+      "q3": {
+        "question": "How will my support be used?",
+        "answer": "Your contribution directly funds development, infrastructure costs, security audits, and compliance certifications (GDPR, HIPAA)."
+      },
+      "q4": {
+        "question": "Can I get a refund?",
+        "answer": "Yes! If you're not satisfied within 30 days, we'll provide a full refund, no questions asked."
+      }
+    },
+    "thankYou": {
+      "title": "Thank You for Your Support!",
+      "message": "Every contribution, big or small, helps us build better tools for healthcare professionals. Together, we're making practice management simpler and more accessible."
     }
   },
   "footer": {
