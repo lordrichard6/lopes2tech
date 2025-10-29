@@ -470,40 +470,36 @@
   },
   "support": {
     "title": "Apoiar o Desenvolvimento do TheraFlow",
-    "subtitle": "Ajude-nos a trazer esta solução SaaS para profissionais de saúde em todo o mundo. O seu apoio acelera o desenvolvimento e mantém o TheraFlow acessível a todos.",
+    "subtitle": "Ajude-me a trazer esta solução SaaS para profissionais de saúde em todo o mundo. O seu apoio acelera o desenvolvimento e mantém o TheraFlow acessível a todos.",
     "amounts": {
       "title": "Apoiar o Desenvolvimento do TheraFlow",
-      "subtitle": "A sua contribuição ajuda-nos a construir melhores ferramentas para terapeutas. Escolha qualquer valor que deseje contribuir.",
+      "subtitle": "A sua contribuição ajuda-me a construir melhores ferramentas para terapeutas. Escolha qualquer valor que deseje contribuir.",
       "customNote": "Clique no botão abaixo para doar - poderá escolher o seu valor na página de pagamento segura.",
       "cta": "Apoiar TheraFlow"
     },
     "investment": {
       "title": "Interessado em Investir?",
-      "description": "Estamos à procura de investidores estratégicos para acelerar o desenvolvimento e escalar o TheraFlow globalmente. Junte-se a nós na revolução da gestão de consultórios para profissionais de saúde.",
+      "description": "Estou à procura de investidores estratégicos para acelerar o desenvolvimento e escalar o TheraFlow globalmente. Junte-se a mim na revolução da gestão de consultórios para profissionais de saúde.",
       "button": "Contactar para Investimento"
     },
     "faq": {
       "title": "Perguntas Frequentes",
       "q1": {
-        "question": "É um pagamento único?",
-        "answer": "Sim! Todas as contribuições de apoio são pagamentos únicos. Escolha qualquer valor que considere adequado."
+        "question": "É uma doação única?",
+        "answer": "Sim! Todas as contribuições são doações únicas. Escolha qualquer valor que considere adequado."
       },
       "q2": {
         "question": "Quando será lançado o TheraFlow?",
-        "answer": "Estamos atualmente em beta com profissionais selecionados. O lançamento completo está planeado para o 2º trimestre de 2025. Os apoiantes iniciais obtêm acesso imediato."
+        "answer": "Estou atualmente em beta com profissionais selecionados. O lançamento completo está planeado para o 1º trimestre de 2026. Os apoiantes iniciais obtêm acesso imediato."
       },
       "q3": {
-        "question": "Como será usado o meu apoio?",
+        "question": "Como será usada a minha doação?",
         "answer": "A sua contribuição financia diretamente o desenvolvimento, custos de infraestrutura, auditorias de segurança e certificações de conformidade (GDPR, HIPAA)."
-      },
-      "q4": {
-        "question": "Posso obter um reembolso?",
-        "answer": "Sim! Se não estiver satisfeito dentro de 30 dias, forneceremos um reembolso total, sem perguntas."
       }
     },
     "thankYou": {
-      "title": "Obrigado pelo Seu Apoio!",
-      "message": "Cada contribuição, grande ou pequena, ajuda-nos a construir melhores ferramentas para profissionais de saúde. Juntos, estamos a tornar a gestão de consultórios mais simples e acessível."
+      "title": "Obrigado pelo Seu Apoio! 💜",
+      "message": "Cada contribuição ajuda-me a manter o TheraFlow acessível e com preços justos para terapeutas em todo o mundo. O seu apoio permite-me focar em construir a melhor ferramenta possível sem comprometer a qualidade ou os preços. Juntos, estamos a tornar a gestão de consultórios mais simples para profissionais de saúde em toda a parte!"
     }
   },
   "footer": {

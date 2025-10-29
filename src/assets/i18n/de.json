@@ -590,40 +590,36 @@
   },
   "support": {
     "title": "TheraFlow Entwicklung unterstützen",
-    "subtitle": "Helfen Sie uns, diese SaaS-Lösung weltweit für Gesundheitsfachkräfte bereitzustellen. Ihre Unterstützung beschleunigt die Entwicklung und hält TheraFlow für alle zugänglich.",
+    "subtitle": "Helfen Sie mir, diese SaaS-Lösung weltweit für Gesundheitsfachkräfte bereitzustellen. Ihre Unterstützung beschleunigt die Entwicklung und hält TheraFlow für alle zugänglich.",
     "amounts": {
       "title": "TheraFlow Entwicklung unterstützen",
-      "subtitle": "Ihr Beitrag hilft uns, bessere Tools für Therapeuten zu entwickeln. Wählen Sie einen beliebigen Betrag, den Sie spenden möchten.",
+      "subtitle": "Ihr Beitrag hilft mir, bessere Tools für Therapeuten zu entwickeln. Wählen Sie einen beliebigen Betrag, den Sie spenden möchten.",
       "customNote": "Klicken Sie auf die Schaltfläche unten, um zu spenden - Sie können Ihren Betrag auf der sicheren Zahlungsseite wählen.",
       "cta": "TheraFlow unterstützen"
     },
     "investment": {
       "title": "Interesse an einer Investition?",
-      "description": "Wir suchen strategische Investoren, um die Entwicklung zu beschleunigen und TheraFlow global zu skalieren. Schließen Sie sich uns an und revolutionieren Sie die Praxisverwaltung für Gesundheitsfachkräfte.",
+      "description": "Ich suche strategische Investoren, um die Entwicklung zu beschleunigen und TheraFlow global zu skalieren. Schließen Sie sich mir an und revolutionieren Sie die Praxisverwaltung für Gesundheitsfachkräfte.",
       "button": "Für Investition kontaktieren"
     },
     "faq": {
       "title": "Häufig gestellte Fragen",
       "q1": {
-        "question": "Ist dies eine einmalige Zahlung?",
-        "answer": "Ja! Alle Unterstützungsbeiträge sind einmalige Zahlungen. Wählen Sie jeden Betrag, der für Sie passend erscheint."
+        "question": "Ist dies eine einmalige Spende?",
+        "answer": "Ja! Alle Beiträge sind einmalige Spenden. Wählen Sie jeden Betrag, der für Sie passend erscheint."
       },
       "q2": {
         "question": "Wann wird TheraFlow lanciert?",
-        "answer": "Wir befinden uns derzeit in der Beta-Phase mit ausgewählten Praktikern. Die vollständige Markteinführung ist für Q2 2025 geplant. Frühe Unterstützer erhalten sofortigen Zugang."
+        "answer": "Ich befinde mich derzeit in der Beta-Phase mit ausgewählten Praktikern. Die vollständige Markteinführung ist für Q1 2026 geplant. Frühe Unterstützer erhalten sofortigen Zugang."
       },
       "q3": {
-        "question": "Wie wird meine Unterstützung verwendet?",
+        "question": "Wie wird meine Spende verwendet?",
         "answer": "Ihr Beitrag finanziert direkt die Entwicklung, Infrastrukturkosten, Sicherheitsaudits und Compliance-Zertifizierungen (DSGVO, HIPAA)."
-      },
-      "q4": {
-        "question": "Kann ich eine Rückerstattung erhalten?",
-        "answer": "Ja! Wenn Sie innerhalb von 30 Tagen nicht zufrieden sind, erstatten wir den vollen Betrag zurück, ohne Fragen zu stellen."
       }
     },
     "thankYou": {
-      "title": "Vielen Dank für Ihre Unterstützung!",
-      "message": "Jeder Beitrag, ob groß oder klein, hilft uns, bessere Tools für Gesundheitsfachkräfte zu entwickeln. Gemeinsam machen wir die Praxisverwaltung einfacher und zugänglicher."
+      "title": "Vielen Dank für Ihre Unterstützung! 💜",
+      "message": "Jeder Beitrag hilft mir, TheraFlow erschwinglich und zugänglich für Therapeuten weltweit zu halten. Ihre Unterstützung ermöglicht es mir, mich auf das Erstellen des bestmöglichen Tools zu konzentrieren, ohne Kompromisse bei Qualität oder Preisgestaltung einzugehen. Gemeinsam machen wir die Praxisverwaltung für Gesundheitsfachkräfte überall einfacher!"
     }
   },
   "footer": {

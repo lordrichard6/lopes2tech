@@ -475,40 +475,36 @@
   },
   "support": {
     "title": "Support TheraFlow Development",
-    "subtitle": "Help us bring this SaaS solution to healthcare professionals worldwide. Your support accelerates development and keeps TheraFlow accessible to everyone.",
+    "subtitle": "Help me bring this SaaS solution to healthcare professionals worldwide. Your support accelerates development and keeps TheraFlow accessible to everyone.",
     "amounts": {
       "title": "Support TheraFlow Development",
-      "subtitle": "Your contribution helps us build better tools for therapists. Choose any amount you'd like to contribute.",
+      "subtitle": "Your contribution helps me build better tools for therapists. Choose any amount you'd like to contribute.",
       "customNote": "Click the button below to donate - you'll be able to choose your amount on the secure payment page.",
       "cta": "Support TheraFlow"
     },
     "investment": {
       "title": "Interested in Investing?",
-      "description": "We're seeking strategic investors to accelerate development and scale TheraFlow globally. Join us in revolutionizing practice management for healthcare professionals.",
+      "description": "I'm seeking strategic investors to accelerate development and scale TheraFlow globally. Join me in revolutionizing practice management for healthcare professionals.",
       "button": "Contact for Investment"
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "q1": {
-        "question": "Is this a one-time payment?",
-        "answer": "Yes! All support contributions are one-time payments. Choose any amount that feels right for you."
+        "question": "Is this a one-time donation?",
+        "answer": "Yes! All contributions are one-time donations. Choose any amount that feels right for you."
       },
       "q2": {
         "question": "When will TheraFlow launch?",
-        "answer": "We're currently in beta with select practitioners. Full launch is planned for Q2 2025. Early supporters get immediate access."
+        "answer": "I'm currently in beta with select practitioners. Full launch is planned for Q1 2026. Early supporters get immediate access."
       },
       "q3": {
-        "question": "How will my support be used?",
+        "question": "How will my donation be used?",
         "answer": "Your contribution directly funds development, infrastructure costs, security audits, and compliance certifications (GDPR, HIPAA)."
-      },
-      "q4": {
-        "question": "Can I get a refund?",
-        "answer": "Yes! If you're not satisfied within 30 days, we'll provide a full refund, no questions asked."
       }
     },
     "thankYou": {
-      "title": "Thank You for Your Support!",
-      "message": "Every contribution, big or small, helps us build better tools for healthcare professionals. Together, we're making practice management simpler and more accessible."
+      "title": "Thank You for Your Support! 💜",
+      "message": "Every contribution helps me keep TheraFlow affordable and accessible for therapists worldwide. Your support allows me to focus on building the best possible tool without compromising on quality or pricing. Together, we're making practice management simpler for healthcare professionals everywhere!"
     }
   },
   "footer": {
