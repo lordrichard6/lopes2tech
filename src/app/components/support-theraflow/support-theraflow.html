@@ -20,9 +20,17 @@
       <!-- Support Button -->
       <button 
         class="btn-support-main" 
-        (click)="supportViaStripe()">
-        <i class="fas fa-heart"></i>
-        <span>{{ 'support.amounts.cta' | translate }}</span>
+        [disabled]="isLoadingDonation"
+        [class.loading]="isLoadingDonation"
+        (click)="supportViaStripe()"
+        aria-label="Support TheraFlow development via secure Stripe payment">
+        @if (isLoadingDonation) {
+          <i class="fas fa-spinner fa-spin"></i>
+          <span>Opening secure payment...</span>
+        } @else {
+          <i class="fas fa-heart"></i>
+          <span>{{ 'support.amounts.cta' | translate }}</span>
+        }
       </button>
     </div>
 
@@ -30,14 +38,17 @@
     <div class="investment-section">
       <div class="investment-card">
         <div class="investment-icon">
-          <i class="fas fa-chart-line"></i>
+          <i class="fas fa-chart-line" aria-hidden="true"></i>
         </div>
         <div class="investment-content">
           <h3>{{ 'support.investment.title' | translate }}</h3>
           <p>{{ 'support.investment.description' | translate }}</p>
-          <button class="btn-investor" (click)="openInvestorForm()">
+          <button 
+            class="btn-investor" 
+            (click)="openInvestorForm()"
+            aria-label="Contact for investment opportunities in TheraFlow">
             <span>{{ 'support.investment.button' | translate }}</span>
-            <i class="fas fa-arrow-right"></i>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </button>
         </div>
       </div>
@@ -67,7 +78,7 @@
 
     <!-- Thank You Message -->
     <div class="thank-you-section">
-      <i class="fas fa-heart thank-you-icon"></i>
+      <i class="fas fa-heart thank-you-icon" aria-hidden="true"></i>
       <h3>{{ 'support.thankYou.title' | translate }}</h3>
       <p>{{ 'support.thankYou.message' | translate }}</p>
     </div>
