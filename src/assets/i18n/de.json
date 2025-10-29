@@ -548,8 +548,10 @@
     "subtitle": "Entdecken Sie unsere neueste Gesundheitstechnologie-Lösung",
     "theraflow": {
       "title": "TheraFlow",
+      "beta": "Beta",
       "tagline": "Das Einfache CRM für Therapeuten & Coaches",
       "description": "Verwalten Sie Ihre Praxis mit Vertrauen. Planen Sie Sitzungen, verfolgen Sie Fortschritte von Klienten, verarbeiten Sie Zahlungen und führen Sie sichere Notizen - alles auf einer datenschutzorientierten Plattform mit Schweizer Präzision.",
+      "donation": "Dieses Projekt befindet sich derzeit in der Beta-Phase. Wenn Sie die Entwicklung unterstützen möchten, ziehen Sie bitte eine Spende in Betracht!",
       "features": {
         "title": "Alles, Was Sie für Ihre Praxis Benötigen",
         "scheduling": {

@@ -186,11 +186,12 @@
 }
 
 .logo-image {
-  height: 70px;
+  height: 80px;
   width: auto;
   object-fit: contain;
   position: absolute;
-  top: -0.5rem;
+  top: -0.75rem;
+  left: -1rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   filter: drop-shadow(0 2px 8px rgba(var(--ocean-cyan), 0.3))
           drop-shadow(0 0 15px rgba(var(--ocean-cyan), 0.2));
