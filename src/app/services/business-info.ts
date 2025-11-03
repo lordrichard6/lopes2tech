@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { APP_CONSTANTS } from '../config/constants';
 
 export interface BusinessInfo {
   companyName: string;
@@ -25,13 +26,13 @@ export class BusinessInfoService {
 
   getBusinessInfo(): BusinessInfo {
     return {
-      companyName: 'lopes2tech',
-      ownerName: 'Paulo R. Lopes',
-      address: 'Zürich',
-      city: 'Zürich',
-      country: 'Switzerland',
-      phone: '+41 78 798 95 33',
-      email: 'lopes2tech.ch@gmail.com' // Optional email
+      companyName: APP_CONSTANTS.BUSINESS.COMPANY_NAME,
+      ownerName: APP_CONSTANTS.BUSINESS.OWNER_NAME,
+      address: APP_CONSTANTS.BUSINESS.ADDRESS,
+      city: APP_CONSTANTS.BUSINESS.CITY,
+      country: APP_CONSTANTS.BUSINESS.COUNTRY,
+      phone: APP_CONSTANTS.BUSINESS.PHONE,
+      email: APP_CONSTANTS.BUSINESS.EMAIL
     };
   }
 

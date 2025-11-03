@@ -3,13 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { OpenaiService } from '../../services/openai.service';
 import { TranslationService } from '../../services/translation.service';
+import { LoggerService } from '../../services/logger.service';
 import { TranslatePipe } from '../../pipes/translate.pipe';
-
-interface ChatMessage {
-  sender: 'user' | 'bot';
-  content: string;
-  timestamp: Date;
-}
+import { ChatMessage } from '../../types/chat.types';
 
 @Component({
   selector: 'app-ai-chat',
@@ -26,7 +22,8 @@ export class AiChatComponent {
 
   constructor(
     private openaiService: OpenaiService,
-    private translationService: TranslationService
+    private translationService: TranslationService,
+    private logger: LoggerService
   ) {
     // Subscribe to language changes and update welcome message
     this.translationService.getCurrentLanguage().subscribe(lang => {
@@ -85,7 +82,7 @@ export class AiChatComponent {
         timestamp: new Date()
       });
     } catch (error) {
-      console.error('Error getting AI response:', error);
+      this.logger.error('Error getting AI response', error, 'AiChatComponent');
       
       // Language-aware error message
       const currentLang = this.translationService.getCurrentLanguageValue();

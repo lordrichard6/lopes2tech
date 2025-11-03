@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BusinessInfoService, BusinessInfo } from '../../services/business-info';
 import { EmailService, ContactFormData } from '../../services/email.service';
+import { LoggerService } from '../../services/logger.service';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
@@ -18,7 +19,8 @@ export class Contact implements OnInit {
   constructor(
     private fb: FormBuilder,
     private businessInfoService: BusinessInfoService,
-    private emailService: EmailService
+    private emailService: EmailService,
+    private logger: LoggerService
   ) {
     this.contactForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(2)]],
@@ -56,14 +58,14 @@ export class Contact implements OnInit {
           this.openMailtoLink(formData);
         }
       } catch (error) {
-        console.error('Error sending email:', error);
+        this.logger.error('Error sending email', error, 'ContactComponent');
         // Fallback to mailto link
         this.openMailtoLink(formData);
       } finally {
         this.isSubmitting = false;
       }
     } else {
-      console.log('Form is invalid');
+      this.logger.debug('Form is invalid', this.contactForm.errors, 'ContactComponent');
       this.markFormGroupTouched();
     }
   }

@@ -382,16 +382,27 @@
     animation: bounce 2s infinite 2s;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
     
     &:hover {
       border-color: var(--accent-color);
       color: var(--accent-color);
       transform: translateY(-5px);
       box-shadow: 0 10px 25px rgba(var(--ocean-cyan), 0.3);
+      animation-play-state: paused;
+    }
+    
+    &:active {
+      transform: translateY(-3px) scale(0.95);
     }
     
     i {
       font-size: 1.4rem;
+      transition: transform 0.3s ease;
+    }
+    
+    &:hover i {
+      transform: translateY(3px);
     }
   }
 }

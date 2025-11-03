@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import emailjs from '@emailjs/browser';
 import { environment } from '../../environments/environment';
+import { LoggerService } from './logger.service';
+import { APP_CONSTANTS } from '../config/constants';
 
 export interface ContactFormData {
   name: string;
@@ -26,7 +28,7 @@ export interface MultiStepFormData {
   providedIn: 'root'
 })
 export class EmailService {
-  constructor() {
+  constructor(private logger: LoggerService) {
     // Initialize EmailJS with public key from environment
     if (environment.emailjs.publicKey && environment.emailjs.publicKey !== 'YOUR_EMAILJS_PUBLIC_KEY') {
       emailjs.init(environment.emailjs.publicKey);
@@ -36,12 +38,12 @@ export class EmailService {
   async sendMultiStepFormEmail(formData: MultiStepFormData): Promise<boolean> {
     // Check if EmailJS is configured
     if (!environment.emailjs.serviceId || environment.emailjs.serviceId === 'YOUR_EMAILJS_SERVICE_ID') {
-      console.warn('EmailJS not configured, falling back to mailto');
+      this.logger.warn('EmailJS not configured, falling back to mailto', undefined, 'EmailService');
       return false;
     }
 
     if (!environment.emailjs.templateId || environment.emailjs.templateId === 'YOUR_EMAILJS_TEMPLATE_ID') {
-      console.warn('EmailJS template not configured');
+      this.logger.warn('EmailJS template not configured', undefined, 'EmailService');
       return false;
     }
 
@@ -91,7 +93,7 @@ export class EmailService {
       const templateParams = {
         from_name: `${formData.firstName} ${formData.lastName}`,
         from_email: formData.email,
-        to_email: 'lopes2tech.ch@gmail.com',
+        to_email: APP_CONSTANTS.BUSINESS.EMAIL,
         client_first_name: formData.firstName,
         client_last_name: formData.lastName,
         client_email: formData.email,
@@ -124,10 +126,10 @@ export class EmailService {
         templateParams
       );
 
-      console.log('Multi-step form email sent successfully:', response);
+      this.logger.info('Multi-step form email sent successfully', response, 'EmailService');
       return true;
     } catch (error) {
-      console.error('Failed to send multi-step form email:', error);
+      this.logger.error('Failed to send multi-step form email', error, 'EmailService');
       return false;
     }
   }
@@ -171,7 +173,7 @@ export class EmailService {
   async sendContactEmail(formData: ContactFormData): Promise<boolean> {
     // Check if EmailJS is configured
     if (!environment.emailjs.serviceId || environment.emailjs.serviceId === 'YOUR_EMAILJS_SERVICE_ID') {
-      console.warn('EmailJS not configured, falling back to mailto');
+      this.logger.warn('EmailJS not configured, falling back to mailto', undefined, 'EmailService');
       return false;
     }
 
@@ -190,10 +192,10 @@ export class EmailService {
         templateParams
       );
 
-      console.log('Email sent successfully:', response);
+      this.logger.info('Contact email sent successfully', response, 'EmailService');
       return true;
     } catch (error) {
-      console.error('Failed to send email:', error);
+      this.logger.error('Failed to send contact email', error, 'EmailService');
       return false;
     }
   }
@@ -231,7 +233,7 @@ export class EmailService {
       }
     );
     
-    return `mailto:lopes2tech.ch@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    return `mailto:${APP_CONSTANTS.BUSINESS.EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 
   // Alternative method using Gmail SMTP (for reference)
@@ -246,6 +248,6 @@ Message:
 ${formData.message}
     `;
     
-    return `mailto:lopes2tech.ch@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    return `mailto:${APP_CONSTANTS.BUSINESS.EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 }

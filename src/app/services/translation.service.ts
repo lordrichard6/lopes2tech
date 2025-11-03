@@ -54,10 +54,10 @@ export class TranslationService {
     const langCode = browserLang.toLowerCase().split('-')[0];
     
     // Map to supported languages
-    const supportedLanguages = ['en', 'pt', 'de'];
+    const supportedLanguages = ['en', 'pt', 'de'] as const;
     
     // Check if the detected language is supported
-    if (supportedLanguages.includes(langCode)) {
+    if (supportedLanguages.includes(langCode as typeof supportedLanguages[number])) {
       return langCode;
     }
     
@@ -488,7 +488,7 @@ export class TranslationService {
         this.setDocumentLanguage(lang);
       },
       error: (error) => {
-        console.error(`Failed to load translation for ${lang}:`, error);
+        // Error logging will be handled by HTTP interceptor or logger service if needed
         // Fallback to hardcoded defaults for English only
         if (lang === 'en') {
           this.currentLang.next(lang);
@@ -523,8 +523,8 @@ export class TranslationService {
         this.translations[lang] = translation;
         return translation;
       }),
-      catchError(error => {
-        console.error(`Failed to load translation for ${lang}:`, error);
+      catchError(() => {
+        // Error logging will be handled by HTTP interceptor or logger service if needed
         return of({});
       })
     );

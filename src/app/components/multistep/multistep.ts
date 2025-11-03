@@ -3,6 +3,7 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
 import { FormsModule } from '@angular/forms';
 import { BusinessInfoService, BusinessInfo } from '../../services/business-info';
 import { EmailService, ContactFormData, MultiStepFormData } from '../../services/email.service';
+import { LoggerService } from '../../services/logger.service';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { TranslationService } from '../../services/translation.service';
 import { ThankYouComponent } from './thank-you/thank-you';
@@ -30,7 +31,8 @@ export class MultistepComponent implements OnInit {
     private fb: FormBuilder,
     private businessInfoService: BusinessInfoService,
     private emailService: EmailService,
-    private translationService: TranslationService
+    private translationService: TranslationService,
+    private logger: LoggerService
   ) {
     this.contactForm = this.fb.group({
       additionalMessage: [''], // Additional message field
@@ -101,11 +103,11 @@ export class MultistepComponent implements OnInit {
         const emailSent = await this.emailService.sendMultiStepFormEmail(multiStepFormData);
         
         if (emailSent) {
-          console.log('Email sent successfully via EmailJS');
+          this.logger.info('Email sent successfully via EmailJS', undefined, 'MultistepComponent');
           this.isSubmitted = true;
         } else {
           // Show error message and ask user if they want to use mailto
-          console.log('EmailJS failed, asking user for alternative');
+          this.logger.warn('EmailJS failed, asking user for alternative', undefined, 'MultistepComponent');
           const useMailto = confirm('Email service is currently unavailable. Would you like to open your email client to send the message manually?');
           if (useMailto) {
             const mailtoLink = this.emailService.getMultiStepMailtoLink(multiStepFormData);
@@ -115,7 +117,7 @@ export class MultistepComponent implements OnInit {
         }
         
       } catch (error) {
-        console.error('Error submitting form:', error);
+        this.logger.error('Error submitting form', error, 'MultistepComponent');
         
         // Show error message and ask user if they want to use mailto
         const useMailto = confirm('There was an error sending your message. Would you like to open your email client to send it manually?');
@@ -141,7 +143,7 @@ export class MultistepComponent implements OnInit {
         this.isSubmitting = false;
       }
     } else {
-      console.log('Form is invalid');
+      this.logger.debug('Form is invalid', this.contactForm.errors, 'MultistepComponent');
       this.markFormGroupTouched();
     }
   }

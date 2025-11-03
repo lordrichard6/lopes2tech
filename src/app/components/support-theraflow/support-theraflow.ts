@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslatePipe } from '../../pipes/translate.pipe';
+import { GoogleAnalyticsService } from '../../services/google-analytics.service';
+import { LoggerService } from '../../services/logger.service';
+import { APP_CONSTANTS } from '../../config/constants';
 
 @Component({
   selector: 'app-support-theraflow',
@@ -10,31 +13,25 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
   styleUrl: './support-theraflow.scss'
 })
 export class SupportTheraflowComponent {
-  // Live Stripe Payment Link with "Customer chooses price"
-  // Configured at: https://dashboard.stripe.com/payment-links
-  // Customers can choose any amount they want to donate
-  private readonly STRIPE_CUSTOM_LINK = 'https://donate.stripe.com/7sY8wQ8Y2b0ddXXaGK1Nu00';
-  
   // UI State
   isLoadingDonation = false;
   
+  constructor(
+    private analyticsService: GoogleAnalyticsService,
+    private logger: LoggerService
+  ) {}
+  
   /**
-   * Track analytics event (ready for GA4 integration)
-   * TODO: Replace with actual analytics service
+   * Track analytics event using GoogleAnalyticsService
    */
-  private trackEvent(eventName: string, eventParams?: Record<string, any>): void {
-    // Log to console for now - replace with analytics service later
-    console.log('📊 Analytics Event:', eventName, eventParams);
-    
-    // Example for future GA4 integration:
-    // if (typeof gtag !== 'undefined') {
-    //   gtag('event', eventName, eventParams);
-    // }
+  private trackEvent(action: string, category: string, label?: string, value?: number, eventParams?: Record<string, any>): void {
+    this.analyticsService.trackEvent(action, category, label, value);
+    this.logger.debug('Analytics Event', { action, category, label, value, ...eventParams }, 'SupportTheraflowComponent');
   }
 
   openInvestorForm(): void {
     // Track investment inquiry
-    this.trackEvent('investment_inquiry_click', {
+    this.trackEvent('click', 'button', 'investment_inquiry', undefined, {
       button_location: 'support_page',
       contact_method: 'email'
     });
@@ -52,7 +49,7 @@ export class SupportTheraflowComponent {
       'Best regards'
     );
     
-    const mailtoLink = `mailto:lopes2tech.ch@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:${APP_CONSTANTS.BUSINESS.EMAIL}?subject=${subject}&body=${body}`;
     
     // Try to open email client
     try {
@@ -63,27 +60,28 @@ export class SupportTheraflowComponent {
         if (document.hasFocus()) {
           // Still on page, email client probably didn't open
           const copyEmail = confirm(
-            'Email client not detected.\n\n' +
-            'Would you like to copy the email address to your clipboard?\n\n' +
-            'Email: lopes2tech.ch@gmail.com\n' +
-            'Subject: TheraFlow Investment Inquiry'
+            `Email client not detected.\n\n` +
+            `Would you like to copy the email address to your clipboard?\n\n` +
+            `Email: ${APP_CONSTANTS.BUSINESS.EMAIL}\n` +
+            `Subject: TheraFlow Investment Inquiry`
           );
           
           if (copyEmail) {
-            navigator.clipboard.writeText('lopes2tech.ch@gmail.com').then(() => {
-              alert('✅ Email address copied to clipboard!\n\nSubject: TheraFlow Investment Inquiry');
+            navigator.clipboard.writeText(APP_CONSTANTS.BUSINESS.EMAIL).then(() => {
+              alert(`✅ Email address copied to clipboard!\n\nSubject: TheraFlow Investment Inquiry`);
             }).catch(() => {
-              alert('📧 Contact email: lopes2tech.ch@gmail.com\n\nSubject: TheraFlow Investment Inquiry');
+              alert(`📧 Contact email: ${APP_CONSTANTS.BUSINESS.EMAIL}\n\nSubject: TheraFlow Investment Inquiry`);
             });
           }
         }
       }, 1000);
     } catch (error) {
+      this.logger.error('Error opening investor form', error, 'SupportTheraflowComponent');
       // Fallback: show email address
       alert(
-        '📧 Please contact me at:\n\n' +
-        'Email: lopes2tech.ch@gmail.com\n' +
-        'Subject: TheraFlow Investment Inquiry'
+        `📧 Please contact me at:\n\n` +
+        `Email: ${APP_CONSTANTS.BUSINESS.EMAIL}\n` +
+        `Subject: TheraFlow Investment Inquiry`
       );
     }
   }
@@ -93,7 +91,7 @@ export class SupportTheraflowComponent {
     this.isLoadingDonation = true;
     
     // Track donation button click
-    this.trackEvent('donation_button_click', {
+    this.trackEvent('click', 'button', 'donation_button', undefined, {
       button_location: 'support_page',
       currency: 'CHF',
       payment_method: 'stripe'
@@ -101,23 +99,23 @@ export class SupportTheraflowComponent {
     
     try {
       // Open Stripe payment link in new tab
-      const opened = window.open(this.STRIPE_CUSTOM_LINK, '_blank', 'noopener,noreferrer');
+      const opened = window.open(APP_CONSTANTS.STRIPE.DONATION_LINK, '_blank', 'noopener,noreferrer');
       
       // Check if popup was blocked
       if (!opened || opened.closed || typeof opened.closed === 'undefined') {
-        console.warn('Popup blocked - showing fallback');
-        this.trackEvent('popup_blocked', { fallback: 'same_tab' });
+        this.logger.warn('Popup blocked - showing fallback', undefined, 'SupportTheraflowComponent');
+        this.trackEvent('popup_blocked', 'user_interaction', 'stripe_donation', undefined, { fallback: 'same_tab' });
         // Fallback: navigate in same tab
-        window.location.href = this.STRIPE_CUSTOM_LINK;
+        window.location.href = APP_CONSTANTS.STRIPE.DONATION_LINK;
       } else {
         // Track successful click
-        this.trackEvent('donation_link_opened', { method: 'new_tab' });
+        this.trackEvent('donation_link_opened', 'user_interaction', 'stripe_donation', undefined, { method: 'new_tab' });
       }
     } catch (error) {
-      console.error('Failed to open Stripe link:', error);
-      this.trackEvent('donation_error', { error: String(error) });
+      this.logger.error('Failed to open Stripe link', error, 'SupportTheraflowComponent');
+      this.trackEvent('donation_error', 'error', 'stripe_donation', undefined, { error: String(error) });
       // Fallback: try direct navigation
-      window.location.href = this.STRIPE_CUSTOM_LINK;
+      window.location.href = APP_CONSTANTS.STRIPE.DONATION_LINK;
     } finally {
       // Reset loading state after 2 seconds
       setTimeout(() => {

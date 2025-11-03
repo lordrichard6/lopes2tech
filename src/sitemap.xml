@@ -13,10 +13,32 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://lopes2tech.ch/" />
   </url>
   
+  <!-- Pricing -->
+  <!-- <url>
+    <loc>https://lopes2tech.ch/pricing</loc>
+    <lastmod>2025-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lopes2tech.ch/pricing" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lopes2tech.ch/pricing" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lopes2tech.ch/pricing" />
+  </url> -->
+  
+  <!-- Support TheraFlow -->
+  <url>
+    <loc>https://lopes2tech.ch/support-theraflow</loc>
+    <lastmod>2025-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lopes2tech.ch/support-theraflow" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lopes2tech.ch/support-theraflow" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lopes2tech.ch/support-theraflow" />
+  </url>
+  
   <!-- Impressum -->
   <url>
     <loc>https://lopes2tech.ch/impressum</loc>
-    <lastmod>2025-09-18</lastmod>
+    <lastmod>2025-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lopes2tech.ch/impressum" />

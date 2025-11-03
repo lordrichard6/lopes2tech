@@ -1,146 +1,16 @@
-// Vercel Serverless Function for OpenAI Chat
-import OpenAI from 'openai';
+/**
+ * Shared fallback response utilities
+ * Used by both the frontend service and backend API
+ */
 
-export default async function handler(req, res) {
-  // Only allow POST requests
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
+export type Language = 'en' | 'pt' | 'de';
 
-  // CORS headers - TODO: Restrict origin in production
-  const allowedOrigins = process.env.ALLOWED_ORIGINS?.split(',') || ['*'];
-  const origin = req.headers.origin;
-  
-  if (allowedOrigins.includes('*') || allowedOrigins.includes(origin)) {
-    res.setHeader('Access-Control-Allow-Origin', origin || '*');
-  }
-  
-  res.setHeader('Access-Control-Allow-Methods', 'POST');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-
-  try {
-    const openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY // Vercel environment variable
-    });
-
-    const { message, conversationHistory = [], language = 'en' } = req.body;
-
-    if (!message) {
-      return res.status(400).json({ error: 'Message is required' });
-    }
-
-    // System prompt based on language - Full agent behavior
-    const getLanguageInstructions = (language) => {
-      switch (language) {
-        case 'pt':
-          return `IMPORTANTE: Responda SEMPRE em português europeu. Use linguagem casual e amigável, mas mantenha o registo mais neutro. Seja natural e descontraído, como um amigo que percebe de tecnologia.`;
-        case 'de':
-          return `WICHTIG: Antworten Sie IMMER auf Deutsch. Verwenden Sie eine lockere, freundliche Sprache - seien Sie natürlich und entspannt, wie ein technikbegeisterter Freund. Nutzen Sie Umgangssprache und Emojis.`;
-        case 'en':
-        default:
-          return `IMPORTANT: Always respond in English. Use casual, friendly language with contractions and emojis. Be natural and relaxed.`;
-      }
-    };
-
-    const languageInstructions = getLanguageInstructions(language);
-
-    const systemPrompt = `You are a friendly, casual AI assistant for lopes2tech, a tech company that makes cool stuff:
-
-🤖 What we do:
-- AI & Automation: Smart chatbots, workflow automation, data processing
-- Web Development: Modern websites, e-commerce, web apps 
-- Custom Software: Mobile apps, desktop tools, integrations
-
-�️ Tech we love:
-Frontend: Angular, React, Vue.js, TypeScript
-Backend: Node.js, Python, .NET, PHP  
-Databases: PostgreSQL, MongoDB, MySQL
-Cloud: AWS, Azure, Google Cloud
-AI/ML: OpenAI, TensorFlow, PyTorch
-
-�👨‍💻 About the company:
-- lopes2tech is run by Paulo, a passionate tech entrepreneur
-- It's a solo operation with Paulo as the main developer and business owner
-- When bigger projects come up, Paulo brings in trusted collaborators and specialists
-- This lean approach means direct communication with the person who actually builds your stuff
-- Paulo has years of experience in automation, web development, and custom software solutions
-- The company focuses on quality over quantity - personal attention to every project
-
-🏢 Company structure:
-- Core team: Just Paulo (owner/developer)
-- Extended network: Collaborators brought in for specific expertise when needed
-- This means you get personal service and direct access to the person building your solution
-- No corporate bureaucracy, just straightforward tech solutions
-
-${languageInstructions}
-
-Your personality:
-- Be conversational and friendly, not corporate or stuffy
-- Use casual language - contractions, simple words, emojis
-- Be enthusiastic about tech and solutions
-- Ask follow-up questions to understand needs better
-- Make complex tech sound simple and exciting
-- Use "we" when talking about the company (Paulo + collaborators when needed)
-- Keep responses short and punchy (2-3 sentences max usually)
-- Be helpful but not pushy about sales
-- When talking about the team, mention it's Paulo-led with collaborators as needed
-
-Examples of your tone:
-❌ "We would be delighted to provide you with a comprehensive solution"
-✅ "We'd love to build something awesome for you!"
-
-❌ "Our extensive experience enables us to deliver optimal results"  
-✅ "Paulo's been doing this for years and knows how to make it work great"
-
-If asked about pricing: Keep it simple - "Pricing depends on what you need, but we're pretty reasonable! Want to chat about your project?"
-
-If asked about the team/owner: "lopes2tech is Paulo's baby - he's the main guy who builds everything. When projects need extra hands, he brings in trusted collaborators. So you get personal service plus expertise!"
-
-Remember: You're like a friendly tech expert at a coffee shop, not a corporate sales rep!`;
-
-    const messages = [
-      { role: 'system', content: systemPrompt },
-      ...conversationHistory.map(msg => ({
-        role: msg.sender === 'user' ? 'user' : 'assistant',
-        content: msg.content
-      })),
-      { role: 'user', content: message }
-    ];
-
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-3.5-turbo',
-      messages: messages,
-      max_tokens: 300,
-      temperature: 0.7,
-      presence_penalty: 0.1,
-      frequency_penalty: 0.1
-    });
-
-    const response = completion.choices[0]?.message?.content || getFallbackResponse(message, language);
-    
-    return res.status(200).json({ response });
-
-  } catch (error) {
-    // Log error (in production, consider using a proper logging service)
-    // For now, we'll still log but could integrate with Sentry, LogRocket, etc.
-    if (process.env.NODE_ENV !== 'production') {
-      console.error('OpenAI API Error:', error);
-    }
-    
-    // Return fallback response to ensure user always gets a reply
-    const message = req.body?.message || '';
-    const language = req.body?.language || 'en';
-    
-    return res.status(500).json({ 
-      response: getFallbackResponse(message, language)
-    });
-  }
-}
-
-function getFallbackResponse(message, language) {
+/**
+ * Get fallback response based on message content and language
+ */
+export function getFallbackResponse(message: string, language: Language = 'en'): string {
   const msg = message?.toLowerCase() || '';
   
-  // Language-specific detailed fallback responses
   switch (language) {
     case 'pt':
       return getFallbackResponsePT(msg);
@@ -152,9 +22,9 @@ function getFallbackResponse(message, language) {
   }
 }
 
-function getFallbackResponseEN(msg) {
+function getFallbackResponseEN(msg: string): string {
   if (msg.includes('ai') || msg.includes('automation') || msg.includes('chatbot')) {
-    return '� We build smart bots and automation stuff that handles the boring work for you! Think chatbots that actually understand people, systems that process data automatically - basically tech that works while you sleep 😴';
+    return '🤖 We build smart bots and automation stuff that handles the boring work for you! Think chatbots that actually understand people, systems that process data automatically - basically tech that works while you sleep 😴';
   }
   
   if (msg.includes('web') || msg.includes('website') || msg.includes('site')) {
@@ -180,7 +50,7 @@ function getFallbackResponseEN(msg) {
   return '🤔 Interesting question! I\'m here to chat about all the cool tech stuff we do - AI automation, web development, custom software. What would you like to know more about? Or just tell me what problem you\'re trying to solve!';
 }
 
-function getFallbackResponsePT(msg) {
+function getFallbackResponsePT(msg: string): string {
   if (msg.includes('ia') || msg.includes('inteligencia') || msg.includes('automacao') || msg.includes('chatbot')) {
     return '🤖 Fazemos bots inteligentes e automação que cuidam do trabalho aborrecido por si! Chatbots que percebem mesmo, sistemas que processam dados automaticamente - basicamente tecnologia que trabalha enquanto descansa 😴';
   }
@@ -208,7 +78,7 @@ function getFallbackResponsePT(msg) {
   return '🤔 Pergunta interessante! Estou aqui para falar sobre todas as coisas fixes que fazemos - automação com IA, desenvolvimento web, software personalizado. O que gostaria de saber mais? Ou conte-me que problema está a tentar resolver!';
 }
 
-function getFallbackResponseDE(msg) {
+function getFallbackResponseDE(msg: string): string {
   if (msg.includes('ki') || msg.includes('automatisierung') || msg.includes('chatbot')) {
     return '🤖 Wir bauen smarte Bots und Automatisierung, die dir die langweilige Arbeit abnehmen! Chatbots die Menschen wirklich verstehen, Systeme die Daten automatisch verarbeiten - basically Tech die arbeitet während du schläfst 😴';
   }
@@ -235,3 +105,4 @@ function getFallbackResponseDE(msg) {
 
   return '🤔 Interessante Frage! Ich bin hier um über all die coolen Tech-Sachen zu quatschen die wir machen - KI-Automatisierung, Web-Entwicklung, custom Software. Was möchtest du wissen? Oder erzähl mir einfach welches Problem du lösen willst!';
 }
+
