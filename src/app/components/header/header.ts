@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy, HostListener, Inject, PLATFORM_ID } from '@angular/core';
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { ChangeDetectionStrategy, Component, HostListener, Inject, OnInit, PLATFORM_ID, Renderer2 } from '@angular/core';
+import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { LanguageSelectorComponent } from '../language-selector/language-selector';
 import { TranslatePipe } from '../../pipes/translate.pipe';
@@ -8,40 +8,41 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
   selector: 'app-header',
   imports: [CommonModule, RouterModule, LanguageSelectorComponent, TranslatePipe],
   templateUrl: './header.html',
-  styleUrl: './header.scss'
+  styleUrl: './header.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class Header implements OnInit, OnDestroy {
+export class Header implements OnInit {
   isMenuOpen = false;
   isScrolled = false;
-  isDarkTheme = false; // Default to light theme (original colors)
+  isDarkTheme = false;
+  private readonly isBrowser: boolean;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    @Inject(PLATFORM_ID) private readonly platformId: Object,
+    private readonly renderer: Renderer2,
+    @Inject(DOCUMENT) private readonly document: Document
+  ) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    if (isPlatformBrowser(this.platformId)) {
+    if (this.isBrowser) {
       this.isScrolled = window.pageYOffset > 100;
     }
   }
 
   ngOnInit() {
-    // Initial scroll check - only in browser
-    if (isPlatformBrowser(this.platformId)) {
+    if (this.isBrowser) {
       this.isScrolled = window.pageYOffset > 100;
-      
-      // Load theme preference from localStorage
+
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme) {
         this.isDarkTheme = savedTheme === 'dark';
       }
-      
-      // Apply theme to document
+
       this.applyTheme();
     }
-  }
-
-  ngOnDestroy() {
-    // Cleanup if needed
   }
 
   toggleMenu() {
@@ -54,26 +55,26 @@ export class Header implements OnInit, OnDestroy {
 
   toggleTheme() {
     this.isDarkTheme = !this.isDarkTheme;
-    
-    if (isPlatformBrowser(this.platformId)) {
-      // Save theme preference
+
+    if (this.isBrowser) {
       localStorage.setItem('theme', this.isDarkTheme ? 'dark' : 'light');
-      
-      // Apply theme
       this.applyTheme();
     }
   }
 
   private applyTheme() {
-    if (isPlatformBrowser(this.platformId)) {
-      const body = document.body;
-      if (this.isDarkTheme) {
-        body.classList.remove('light-theme');
-        body.classList.add('dark-theme');
-      } else {
-        body.classList.remove('dark-theme');
-        body.classList.add('light-theme');
-      }
+    if (!this.isBrowser) {
+      return;
+    }
+
+    const body = this.document.body;
+
+    if (this.isDarkTheme) {
+      this.renderer.removeClass(body, 'light-theme');
+      this.renderer.addClass(body, 'dark-theme');
+    } else {
+      this.renderer.removeClass(body, 'dark-theme');
+      this.renderer.addClass(body, 'light-theme');
     }
   }
 }

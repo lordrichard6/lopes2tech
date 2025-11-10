@@ -11,6 +11,12 @@
     "placeholder": "Fragen Sie nach unseren KI-Diensten...",
     "send": "Senden"
   },
+  "header": {
+    "themeToggle": {
+      "lightLabel": "Zum hellen Thema wechseln",
+      "darkLabel": "Zum dunklen Thema wechseln"
+    }
+  },
   "hero": {
     "badge": "✨ Automatisierung Vereinfacht",
     "title": {

@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ElementRef, ViewChild, PLATFORM_ID, inject } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnDestroy, ViewChild, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import * as THREE from 'three';
@@ -7,12 +7,13 @@ import * as THREE from 'three';
   selector: 'app-hero',
   imports: [TranslatePipe],
   templateUrl: './hero.html',
-  styleUrl: './hero.scss'
+  styleUrl: './hero.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class Hero implements OnInit, OnDestroy {
+export class Hero implements AfterViewInit, OnDestroy {
   @ViewChild('threeCanvas', { static: true }) canvasRef!: ElementRef<HTMLCanvasElement>;
-  
-  private platformId = inject(PLATFORM_ID);
+
+  private readonly isBrowser: boolean;
   private scene!: THREE.Scene;
   private camera!: THREE.PerspectiveCamera;
   private renderer!: THREE.WebGLRenderer;
@@ -21,30 +22,46 @@ export class Hero implements OnInit, OnDestroy {
   private mouseX = 0;
   private mouseY = 0;
 
-  ngOnInit() {
-    if (isPlatformBrowser(this.platformId)) {
-      this.initThree();
-      this.animate();
-      this.setupMouseListener();
+  private readonly handleResize = () => this.onWindowResize();
+  private readonly handleMouseMove = (event: MouseEvent) => {
+    this.mouseX = (event.clientX - window.innerWidth / 2) / 100;
+    this.mouseY = (event.clientY - window.innerHeight / 2) / 100;
+  };
+
+  constructor(@Inject(PLATFORM_ID) platformId: Object) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
+
+  ngAfterViewInit() {
+    if (!this.isBrowser) {
+      return;
     }
+
+    this.initThree();
+    this.animate();
+    this.addEventListeners();
   }
 
   ngOnDestroy() {
-    if (isPlatformBrowser(this.platformId)) {
-      if (this.animationId) {
-        cancelAnimationFrame(this.animationId);
-      }
-      if (this.renderer) {
-        this.renderer.dispose();
-      }
+    if (!this.isBrowser) {
+      return;
+    }
+
+    window.removeEventListener('resize', this.handleResize);
+    document.removeEventListener('mousemove', this.handleMouseMove);
+
+    if (this.animationId) {
+      cancelAnimationFrame(this.animationId);
+    }
+
+    if (this.renderer) {
+      this.renderer.dispose();
     }
   }
 
   private initThree() {
-    // Scene setup
     this.scene = new THREE.Scene();
-    
-    // Camera setup
+
     this.camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
@@ -62,11 +79,7 @@ export class Hero implements OnInit, OnDestroy {
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-    // Create particle system
     this.createParticleSystem();
-
-    // Handle window resize
-    window.addEventListener('resize', () => this.onWindowResize());
   }
 
   private createParticleSystem() {
@@ -120,15 +133,12 @@ export class Hero implements OnInit, OnDestroy {
     const time = Date.now() * 0.0005;
     
     if (this.particles) {
-      // Create wave motion
       this.particles.rotation.x = time * 0.1;
       this.particles.rotation.y = time * 0.05;
-      
-      // Mouse interaction
+
       this.particles.rotation.x += this.mouseY * 0.0001;
       this.particles.rotation.y += this.mouseX * 0.0001;
 
-      // Animate individual particles
       const positions = this.particles.geometry.attributes['position'].array as Float32Array;
       for (let i = 0; i < positions.length; i += 3) {
         positions[i + 1] += Math.sin(time + positions[i]) * 0.001; // y wave motion
@@ -139,11 +149,9 @@ export class Hero implements OnInit, OnDestroy {
     this.renderer.render(this.scene, this.camera);
   }
 
-  private setupMouseListener() {
-    document.addEventListener('mousemove', (event) => {
-      this.mouseX = (event.clientX - window.innerWidth / 2) / 100;
-      this.mouseY = (event.clientY - window.innerHeight / 2) / 100;
-    });
+  private addEventListeners() {
+    window.addEventListener('resize', this.handleResize);
+    document.addEventListener('mousemove', this.handleMouseMove);
   }
 
   private onWindowResize() {

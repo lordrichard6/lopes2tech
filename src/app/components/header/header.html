@@ -1,12 +1,9 @@
 <header class="header" [class.scrolled]="isScrolled">
   <nav class="nav">
     <div class="nav-container">
-      <!-- <div class="logo-background">
-        <img src="/logo_raw.svg" alt="lopes2tech Swiss IT Solutions - Background Logo" class="logo-bg-image">
-      </div> -->
       <div class="logo" [class.neon-active]="isScrolled">
         <img src="/logo_w.svg" alt="lopes2tech Swiss IT Solutions Company Logo" class="logo-image light-theme-logo">
-        <img src="/blue_simple.svg" alt="lopes2tech Swiss IT Solutions Company Logo - Light Theme" class="logo-image dark-theme-logo">
+        <img src="/blue_simple.svg" alt="lopes2tech Swiss IT Solutions Company Logo - Dark Theme" class="logo-image dark-theme-logo">
         <div class="logo-text">
           <span class="logo-part logo-lopes">lopes</span>
           <span class="logo-part logo-number">2</span>
@@ -19,7 +16,7 @@
         
         <button class="theme-toggle" 
                 (click)="toggleTheme()"
-                [attr.aria-label]="isDarkTheme ? 'Switch to light theme' : 'Switch to dark theme'">
+                [attr.aria-label]="(isDarkTheme ? 'header.themeToggle.lightLabel' : 'header.themeToggle.darkLabel') | translate">
           <i class="fas fa-sun" [class.hidden]="isDarkTheme"></i>
           <i class="fas fa-moon" [class.hidden]="!isDarkTheme"></i>
         </button>
@@ -36,7 +33,6 @@
       <ul class="nav-menu" [class.active]="isMenuOpen">
         <li><a href="#home" (click)="closeMenu()">{{ 'nav.home' | translate }}</a></li>
         <li><a href="#services" (click)="closeMenu()">{{ 'nav.services' | translate }}</a></li>
-        <!-- <li><a routerLink="/pricing" (click)="closeMenu()">{{ 'nav.pricing' | translate }}</a></li> -->
         <li><a href="#about" (click)="closeMenu()">{{ 'nav.about' | translate }}</a></li>
         <li><a href="#contact" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a></li>
       </ul>

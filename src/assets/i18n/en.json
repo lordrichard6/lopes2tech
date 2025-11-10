@@ -11,6 +11,12 @@
     "placeholder": "Ask me about our AI services...",
     "send": "Send"
   },
+  "header": {
+    "themeToggle": {
+      "lightLabel": "Switch to light theme",
+      "darkLabel": "Switch to dark theme"
+    }
+  },
   "hero": {
     "badge": "✨ Automation Simplified",
     "title": {
