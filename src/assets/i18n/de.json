@@ -114,6 +114,7 @@
   "servicesv2": {
     "title": "Unsere Kerndienstleistungen",
     "subtitle": "Einfache Lösungen für Ihre Geschäftsanforderungen",
+    "badge": "Mehr Infos",
     "items": {
       "ai": {
         "title": "KI-Lösungen",
@@ -133,22 +134,34 @@
     }
   },
   "about": {
-    "badge": "Über uns",
-    "title": "Schweizer Qualität, Globale Innovation",
-    "subtitle": "Bei lopes2tech verbinden wir Schweizer Präzision mit einem Jahrzehnt engagierter Automatisierungserfahrung.",
-    "description1": "Wir sind leidenschaftlich dabei, Unternehmen dabei zu helfen, ihr volles Potenzial zu entfalten, indem wir repetitive Aufgaben automatisieren, Prozesse optimieren und massgeschneiderte digitale Tools erstellen.",
-    "description2": "Ob Sie eine robuste Web-App oder eine Suite von benutzerdefinierten Automatisierungstools für macOS, iPad und iOS benötigen, wir haben die Expertise, um Lösungen zu liefern, die nahtlos für Sie funktionieren.",
+    "badge": "Über Lopes2tech",
+    "title": "Leidenschaft, Entschlossenheit, Ergebnisse...",
+    "subtitle": "Ich bin ein hoch motiviertes Ein-Personen-Automationstudio, das reale Geschäftsprobleme schnell, präzise und ohne Schnickschnack löst.",
+    "description1": "Ich bin ein natürlicher Problemlöser, der gerne chaotische Abläufe analysiert, wiederkehrende Klicks eliminiert und sie durch intelligente Automatisierung ersetzt.",
+    "description2": "Ich tauche tief in Ihre Geschäftsprozesse ein, wähle die passenden Tools und baue Systeme, die Ihr Team von Fleißarbeit befreien – damit Sie sich auf Gewinn statt Papierkram konzentrieren können.",
     "features": {
-      "title": "Warum uns wählen",
-      "swiss": "Schweizer Präzision und Zuverlässigkeit",
+      "title": "Warum mich wählen",
+      "swiss": "Extrem wettbewerbsfähige Preise",
       "technology": "Expertise in modernster Technologie", 
       "service": "Personalisierter Service-Ansatz",
       "delivery": "End-to-End Lösungslieferung"
+    },
+    "founder": {
+      "title": "Wer bin ich?"
     }
   },
   "contact": {
-    "title": "Senden Sie uns eine Nachricht",
-    "subtitle": "Wir melden uns innerhalb von 24 Stunden zurück",
+    "hero": {
+      "badge": "Kontakt aufnehmen",
+      "title": "Planen wir Ihren nächsten Automatisierungs-Erfolg",
+      "subtitle": "Teilen Sie den Prozess, der Sie ausbremst. Ich analysiere ihn persönlich und melde mich innerhalb eines Tages mit Ideen, Zeitplan und klaren nächsten Schritten."
+    },
+    "meeting": {
+      "title": "Lassen Sie uns schnell ein Meeting buchen",
+      "description": "Beschreiben Sie kurz Ihr Projekt. Ich melde mich noch am selben Tag mit einem Kalender-Link und einem passenden Vorschlag.",
+      "successTitle": "Vielen Dank für Ihre Nachricht!",
+      "successDescription": "Ich habe Ihre Anfrage erhalten und sende Ihnen in Kürze einen Kalender-Link sowie die nächsten Schritte."
+    },
     "form": {
       "name": {
         "label": "Vollständiger Name",
@@ -673,7 +686,7 @@
   "team": {
     "title": "Unser Team",
     "subtitle": "Die leidenschaftlichen Fachkräfte hinter lopes2tech",
-    "position": "Software-Ingenieur",
+    "position": "Developer & Founder",
     "description": "Ich bin ein Frontend-Entwickler, UX/UI-Designer und Digital-Marketing-Enthusiast, der in seinem Beruf gründlich ist. Geboren und aufgewachsen in Portugal, brachten mich Ehrgeiz und die Liebe zum Käse in die Schweiz. Ich habe eine Leidenschaft für modernste, pixelgenaue, schöne Interfaces und intuitiv implementierte UX. Am liebsten entwickle ich Software und Websites an der Schnittstelle zwischen Design und Engineering."
   },
   "cookies": {

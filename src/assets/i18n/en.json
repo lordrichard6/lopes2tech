@@ -29,17 +29,20 @@
     }
   },
   "about": {
-    "badge": "About Us",
-    "title": "Swiss Quality, Global Innovation",
-    "subtitle": "At lopes2tech, we blend Swiss precision with a decade of dedicated automation experience.",
-    "description1": "We're passionate about helping businesses unlock their full potential by automating repetitive tasks, optimizing processes, and creating tailored digital tools.",
-    "description2": "Whether you need a robust web app or a suite of custom automation tools for macOS, iPad, and iOS, we have the expertise to deliver solutions that work seamlessly for you.",
+    "badge": "About Lopes2tech",
+    "title": "Passion, determination, results...",
+    "subtitle": "I’m a one-person automation studio obsessed with solving real business problems quickly, precisely, and with zero fluff.",
+    "description1": "I’m a natural problem-solver who loves dissecting messy workflows, hunting down the repetitive clicks, and replacing them with smart automation.",
+    "description2": "I’ll dive into how your business actually runs, pick the right tools, and build systems that free your team from busywork so you can focus on profit—not paperwork.",
     "features": {
-      "title": "Why Choose Us",
-      "swiss": "Swiss precision and reliability",
+      "title": "Why choose me",
+      "swiss": "Extremely competitive prices",
       "technology": "Cutting-edge technology expertise", 
       "service": "Personalized service approach",
       "delivery": "End-to-end solution delivery"
+    },
+    "founder": {
+      "title": "Who am I?"
     }
   },
   "services": {
@@ -128,6 +131,7 @@
   "servicesv2": {
     "title": "Our Core Services",
     "subtitle": "Simple solutions for your business needs",
+    "badge": "More info",
     "items": {
       "ai": {
         "title": "AI Solutions",
@@ -147,8 +151,17 @@
     }
   },
   "contact": {
-    "title": "Send us a message",
-    "subtitle": "We'll get back to you within 24 hours",
+    "hero": {
+      "badge": "Reach Out",
+      "title": "Let’s plan your next automation win",
+      "subtitle": "Share the workflow headache that’s slowing you down. I’ll review it personally and reply within a day with ideas, timelines, and clear next steps."
+    },
+    "meeting": {
+      "title": "Let’s book a meeting ASAP",
+      "description": "Tell me about the project you have in mind. I’ll get back to you the same day with a calendar link and a tailored proposal.",
+      "successTitle": "Thanks for your message!",
+      "successDescription": "I received your note and will reply shortly with a calendar link so we can speak ASAP."
+    },
     "form": {
       "name": {
         "label": "Full Name",
@@ -558,7 +571,7 @@
   "team": {
     "title": "Meet Our Team",
     "subtitle": "The passionate professionals behind lopes2tech",
-    "position": "Software Engineer",
+    "position": "Developer & Founder",
     "description": "I am a frontend developer, UX/UI designer and digital marketing enthusiast who is thorough in his profession. Born and raised in Portugal, ambition and the love for cheese brought me to Switzerland. I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively implemented UX. I most enjoy building software and websites in the sweet spot where design and engineering meet."
   },
   "cookies": {

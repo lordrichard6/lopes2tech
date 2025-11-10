@@ -7,7 +7,7 @@ import { SEOData } from '../services/seo.service';
 export const SEO_ROUTES_CONFIG: Record<string, SEOData> = {
   '': {
     title: 'Swiss IT Solutions & Automation | Zurich',
-    description: 'Transform your business with Swiss precision IT solutions. 10+ years automating processes, building web apps & custom software in Zurich. Free consultation: +41 78 798 95 33',
+    description: 'Transform your business with Swiss precision IT solutions. 8+ years automating processes, building web apps & custom software in Zurich. Free consultation: +41 78 798 95 33',
     keywords: 'IT solutions Switzerland, process automation, web development, app development, custom software, business automation, Zurich, Swiss IT services, lopes2tech',
     url: 'https://lopes2tech.ch/',
     type: 'website'
@@ -24,6 +24,13 @@ export const SEO_ROUTES_CONFIG: Record<string, SEOData> = {
     description: 'Support TheraFlow development through investment or donations. Help bring this therapist-focused CRM to more practitioners worldwide.',
     keywords: 'TheraFlow support, therapist CRM, invest in software, donate to software, healthcare technology',
     url: 'https://lopes2tech.ch/support-theraflow',
+    type: 'website'
+  },
+  'ai-solutions': {
+    title: 'AI Solutions & Automation Services | lopes2tech',
+    description: 'Fast AI automations that solve admin, lead capture, and follow-ups. Fixed scope, one-week delivery. Lead capture, booking automation, chatbots, and more.',
+    keywords: 'AI automation, business automation, lead capture automation, chatbot, AI solutions Switzerland, workflow automation, n8n, Make.com',
+    url: 'https://lopes2tech.ch/ai-solutions',
     type: 'website'
   },
   'impressum': {

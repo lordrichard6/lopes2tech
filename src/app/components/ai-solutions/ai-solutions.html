@@ -1,0 +1,84 @@
+<div class="ai-solutions-container">
+  <div class="ai-solutions-hero">
+    <div class="hero-content">
+      <h1>AI Solutions</h1>
+      <p class="hero-subtitle">
+        Drop Webflow. Sell fast AI automations that solve admin, lead capture, and follow-ups. Fixed scope. One-week delivery.
+      </p>
+    </div>
+  </div>
+
+  <div class="ai-solutions-content">
+    <div class="container">
+      <div class="industry-filter">
+        <span class="filter-label">Select your industry</span>
+        <div class="industry-buttons">
+          <button
+            type="button"
+            class="industry-button"
+            *ngFor="let industry of industries"
+            (click)="selectIndustry(industry)"
+            [class.active]="industry.value === selectedIndustry">
+            {{ industry.label }}
+          </button>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <h2>The AI services I can do for you</h2>
+      </div>
+
+      <div class="services-grid" [@industrySwitch]="selectedIndustry">
+        <div class="service-card" *ngFor="let service of services">
+          <div class="service-number">{{ service.id }}</div>
+          <h3 class="service-title">{{ service.title }}</h3>
+          
+          <div class="service-section">
+            <h4 class="section-label">The Problem</h4>
+            <p class="service-problem">{{ getServiceProblem(service) }}</p>
+          </div>
+
+          <div class="service-section">
+            <h4 class="section-label">The Solution</h4>
+            <p class="service-solution">{{ getServiceSolution(service) }}</p>
+          </div>
+
+          <div class="service-footer">
+            <div class="price-badge">
+              <span class="price-label">Price:</span>
+              <span class="price-value">{{ service.price }}</span>
+            </div>
+            <div class="time-badge">
+              <span class="time-label">Time:</span>
+              <span class="time-value">{{ service.time }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="packages-section">
+        <div class="section-header">
+          <h2>Your standard package menu</h2>
+        </div>
+
+        <div class="packages-grid">
+          <div class="package-card" *ngFor="let pkg of packages">
+            <h3 class="package-name">{{ pkg.name }}</h3>
+            <div class="package-price">{{ pkg.price }}</div>
+            <p class="package-description">{{ pkg.description }}</p>
+          </div>
+        </div>
+      </div>
+
+      <app-meeting-section
+        id="ai-meeting-form"
+        [context]="'AI Solutions Page'"
+        title="Lets book a meeting ASAP"
+        description="Tell me a bit about your company and what you need automated. I’ll respond the same day with a calendar link and next steps."
+        successTitle="Thanks for reaching out!"
+        successDescription="I received your message and will reply shortly with a calendar link so we can speak ASAP.">
+      </app-meeting-section>
+    </div>
+  </div>
+</div>
+

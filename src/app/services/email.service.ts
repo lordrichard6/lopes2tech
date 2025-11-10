@@ -8,7 +8,9 @@ export interface ContactFormData {
   name: string;
   email: string;
   company?: string;
+  phone?: string;
   message: string;
+  context?: string;
 }
 
 export interface MultiStepFormData {
@@ -177,18 +179,34 @@ export class EmailService {
       return false;
     }
 
+    const templateId =
+      environment.emailjs.contactTemplateId &&
+      environment.emailjs.contactTemplateId !== 'YOUR_EMAILJS_CONTACT_TEMPLATE_ID'
+        ? environment.emailjs.contactTemplateId
+        : environment.emailjs.templateId;
+
+    if (!templateId || templateId === 'YOUR_EMAILJS_TEMPLATE_ID') {
+      this.logger.warn('EmailJS contact template not configured', undefined, 'EmailService');
+      return false;
+    }
+
     try {
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         company: formData.company || 'Not provided',
+        phone: formData.phone || 'Not provided',
         message: formData.message,
-        reply_to: formData.email
+        reply_to: formData.email,
+        // Template-specific values
+        name: formData.name,
+        email: APP_CONSTANTS.BUSINESS.EMAIL,
+        context: formData.context || 'Unknown context'
       };
 
       const response = await emailjs.send(
         environment.emailjs.serviceId,
-        environment.emailjs.templateId,
+        templateId,
         templateParams
       );
 
@@ -242,7 +260,9 @@ export class EmailService {
     const body = `
 Name: ${formData.name}
 Email: ${formData.email}
+Phone: ${formData.phone || 'Not provided'}
 Company: ${formData.company || 'Not provided'}
+Context: ${formData.context || 'Unknown context'}
 
 Message:
 ${formData.message}

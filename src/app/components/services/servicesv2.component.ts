@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { ServiceDialogComponent } from './service-dialog/service-dialog.component';
 
@@ -12,7 +13,15 @@ export class ServicesV2Component {
   isDialogOpen = false;
   selectedServiceKey = '';
 
+  constructor(private router: Router) {}
+
   openServiceDialog(serviceKey: string): void {
+    // Navigate to AI Solutions page when clicking on AI service
+    if (serviceKey === 'ai') {
+      this.router.navigate(['/ai-solutions']);
+      return;
+    }
+    
     this.selectedServiceKey = serviceKey;
     this.isDialogOpen = true;
   }

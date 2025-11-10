@@ -199,7 +199,7 @@ export class SEOService {
   resetToDefaults(): void {
     this.updateSEO({
       title: 'Swiss IT Solutions & Automation | Zurich',
-      description: 'Transform your business with Swiss precision IT solutions. 10+ years automating processes, building web apps & custom software in Zurich. Free consultation: +41 78 798 95 33',
+      description: 'Transform your business with Swiss precision IT solutions. 8+ years automating processes, building web apps & custom software in Zurich. Free consultation: +41 78 798 95 33',
       keywords: 'IT solutions Switzerland, process automation, web development, app development, custom software, business automation, Zurich, Swiss IT services, lopes2tech',
       url: this.defaultUrl,
       image: this.defaultImage

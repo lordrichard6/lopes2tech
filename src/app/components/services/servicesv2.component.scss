@@ -79,6 +79,31 @@
   }
 }
 
+.service-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: rgba(var(--ocean-cyan), 0.15);
+  color: var(--wave-blue);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--ocean-cyan), 0.25);
+  box-shadow: 0 12px 24px rgba(14, 116, 144, 0.1);
+  opacity: 0;
+  transform: translate3d(0, -10px, 0);
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.service-card:hover .service-badge {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 .service-icon {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -146,5 +171,11 @@
     grid-column: auto;
     max-width: none;
     margin: 0;
+  }
+
+  .service-badge {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    pointer-events: auto;
   }
 }

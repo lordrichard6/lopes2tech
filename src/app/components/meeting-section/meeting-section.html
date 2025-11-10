@@ -1,0 +1,90 @@
+<section class="meeting-section" id="meeting-form">
+  <div class="meeting-intro">
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
+  </div>
+
+  <form
+    *ngIf="!meetingSubmitted || meetingStatus !== 'success'"
+    class="meeting-form"
+    [formGroup]="meetingForm"
+    (ngSubmit)="submitMeetingForm()"
+    novalidate>
+
+    <div class="form-grid">
+      <label class="form-field">
+        <span>Name *</span>
+        <input
+          type="text"
+          formControlName="name"
+          [class.invalid]="fieldInvalid('name')"
+          placeholder="Jane Doe" />
+        <small *ngIf="fieldInvalid('name')">{{ fieldError('name') }}</small>
+      </label>
+
+      <label class="form-field">
+        <span>Company</span>
+        <input
+          type="text"
+          formControlName="company"
+          placeholder="Acme AG" />
+      </label>
+
+      <label class="form-field">
+        <span>Email *</span>
+        <input
+          type="email"
+          formControlName="email"
+          [class.invalid]="fieldInvalid('email')"
+          placeholder="you@company.com" />
+        <small *ngIf="fieldInvalid('email')">{{ fieldError('email') }}</small>
+      </label>
+
+      <label class="form-field">
+        <span>Phone</span>
+        <input
+          type="tel"
+          formControlName="phone"
+          placeholder="+41 78 123 45 67" />
+      </label>
+    </div>
+
+    <label class="form-field full-width">
+      <span>Message *</span>
+      <textarea
+        rows="5"
+        formControlName="message"
+        [class.invalid]="fieldInvalid('message')"
+        placeholder="Project scope, current tools, desired outcome..."></textarea>
+      <small *ngIf="fieldInvalid('message')">{{ fieldError('message') }}</small>
+    </label>
+
+    <input type="hidden" formControlName="context" />
+
+    <div class="form-footer">
+      <button
+        type="submit"
+        class="submit-button"
+        [disabled]="meetingSubmitting">
+        <span *ngIf="!meetingSubmitting">Send message</span>
+        <span *ngIf="meetingSubmitting" class="loading-dots">
+          Sending<span>.</span><span>.</span><span>.</span>
+        </span>
+      </button>
+
+      <div class="submission-status" *ngIf="meetingSubmitted && meetingStatus === 'error'">
+        <span class="status-error">
+          {{ meetingErrorMessage }}
+        </span>
+      </div>
+    </div>
+  </form>
+
+  <div
+    class="meeting-success"
+    *ngIf="meetingSubmitted && meetingStatus === 'success'">
+    <img src="/logo_ani.gif" alt="lopes2tech animated logo" class="success-logo" />
+    <h3>{{ successTitle }}</h3>
+    <p>{{ successDescription }}</p>
+  </div>
+</section>
