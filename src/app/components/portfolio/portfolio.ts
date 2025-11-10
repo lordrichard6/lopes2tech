@@ -1,11 +1,58 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Inject, OnDestroy, PLATFORM_ID, QueryList, Renderer2, ViewChildren } from '@angular/core';
 import { TranslatePipe } from '../../pipes/translate.pipe';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-portfolio',
   imports: [TranslatePipe],
   templateUrl: './portfolio.html',
-  styleUrl: './portfolio.scss'
+  styleUrl: './portfolio.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class Portfolio {
+export class Portfolio implements AfterViewInit, OnDestroy {
+  private readonly isBrowser: boolean;
+  private intersectionObserver?: IntersectionObserver;
+  private readonly triggeredElements = new WeakSet<Element>();
+
+  @ViewChildren('revealItem', { read: ElementRef }) private revealItems!: QueryList<ElementRef<HTMLElement>>;
+
+  constructor(@Inject(PLATFORM_ID) platformId: Object, private readonly renderer: Renderer2) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
+
+  ngAfterViewInit(): void {
+    if (!this.isBrowser) {
+      return;
+    }
+
+    this.intersectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const element = entry.target as HTMLElement;
+          if (entry.isIntersecting) {
+            this.renderer.addClass(element, 'is-visible');
+            this.triggeredElements.add(element);
+            this.intersectionObserver?.unobserve(element);
+          }
+        });
+      },
+      { threshold: 0.2, rootMargin: '0px 0px -10% 0px' }
+    );
+
+    this.revealItems.forEach((item) => {
+      const element = item.nativeElement;
+      if (!this.triggeredElements.has(element)) {
+        this.renderer.removeClass(element, 'is-visible');
+        this.intersectionObserver?.observe(element);
+      }
+    });
+  }
+
+  ngOnDestroy(): void {
+    if (!this.isBrowser) {
+      return;
+    }
+
+    this.intersectionObserver?.disconnect();
+  }
 }

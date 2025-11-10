@@ -4,32 +4,24 @@
     <p class="section-subtitle">{{ 'servicesv2.subtitle' | translate }}</p>
     
     <div class="services-row">
-      <div class="service-card" (click)="openServiceDialog('ai')">
-        <span class="service-badge">{{ 'servicesv2.badge' | translate }}</span>
-        <div class="service-icon">
-          <img src="/serv_ai.png" alt="AI Services" class="service-image">
-        </div>
-        <h3>{{ 'servicesv2.items.ai.title' | translate }}</h3>
-        <p>{{ 'servicesv2.items.ai.description' | translate }}</p>
-      </div>
-      
-      <div class="service-card" (click)="openServiceDialog('web')">
-        <span class="service-badge">{{ 'servicesv2.badge' | translate }}</span>
-        <div class="service-icon">
-          <img src="/serv_web.png" alt="Web Development" class="service-image">
-        </div>
-        <h3>{{ 'servicesv2.items.websites.title' | translate }}</h3>
-        <p>{{ 'servicesv2.items.websites.description' | translate }}</p>
-      </div>
-      
-      <div class="service-card" (click)="openServiceDialog('software')">
-        <span class="service-badge">{{ 'servicesv2.badge' | translate }}</span>
-        <div class="service-icon">
-          <img src="/serv_soft.png" alt="Software Development" class="service-image">
-        </div>
-        <h3>{{ 'servicesv2.items.software.title' | translate }}</h3>
-        <p>{{ 'servicesv2.items.software.description' | translate }}</p>
-      </div>
+      @for (service of serviceCards; track service.translationKey) {
+        <button
+          #serviceCard
+          type="button"
+          class="service-card"
+          (click)="handleServiceSelection(service)"
+          [attr.aria-label]="('servicesv2.items.' + service.translationKey + '.title') | translate">
+          <span class="service-badge">{{ 'servicesv2.badge' | translate }}</span>
+          <div class="service-icon">
+            <img
+              [src]="service.image"
+              class="service-image"
+              [alt]="('servicesv2.items.' + service.translationKey + '.title') | translate">
+          </div>
+          <h3>{{ ('servicesv2.items.' + service.translationKey + '.title') | translate }}</h3>
+          <p>{{ ('servicesv2.items.' + service.translationKey + '.description') | translate }}</p>
+        </button>
+      }
     </div>
   </div>
 

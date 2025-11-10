@@ -1,6 +1,6 @@
 <section id="portfolio" class="portfolio">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal-on-scroll" #revealItem>
       <div class="section-badge">
         <i class="fas fa-briefcase"></i>
         <span>{{ 'portfolio.badge' | translate }}</span>
@@ -8,13 +8,13 @@
       <h2 class="section-title">{{ 'portfolio.title' | translate }}</h2>
     </div>
 
-    <div class="portfolio-card">
-      <div class="card-content">
-        <div class="logo-section">
+    <div class="portfolio-card reveal-on-scroll" #revealItem>
+      <div class="card-content reveal-on-scroll" #revealItem>
+        <div class="logo-section reveal-on-scroll" #revealItem>
           <img src="/theraflow-logo.svg" alt="TheraFlow CRM" class="project-logo">
         </div>
         
-        <div class="text-section">
+        <div class="text-section reveal-on-scroll" #revealItem>
           <div class="title-with-badge">
             <h3 class="project-title">{{ 'portfolio.theraflow.title' | translate }}</h3>
             <span class="beta-badge">{{ 'portfolio.theraflow.beta' | translate }}</span>
@@ -28,8 +28,8 @@
         </div>
       </div>
       
-      <div class="cta-section">
-        <div class="cta-buttons">
+      <div class="cta-section reveal-on-scroll" #revealItem>
+        <div class="cta-buttons reveal-on-scroll" #revealItem>
           <a href="https://www.theraflow-crm.ch/" target="_blank" rel="noopener noreferrer" class="btn-visit btn-primary">
             <span>{{ 'portfolio.theraflow.cta' | translate }}</span>
             <i class="fas fa-arrow-right"></i>

@@ -116,6 +116,20 @@
   z-index: 1;
 }
 
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .about-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -125,7 +139,6 @@
 // Section Header
 .section-header {
   margin-bottom: 4rem;
-  animation: fadeInUp 1s ease-out;
 }
 
 .section-badge {
@@ -141,7 +154,6 @@
   color: var(--ocean-blue);
   font-weight: 600;
   font-size: 0.9rem;
-  animation: fadeInUp 1s ease-out 0.2s both;
   
   i {
     font-size: 1rem;
@@ -154,7 +166,6 @@
   margin-bottom: 2rem;
   color: var(--text-dark);
   position: relative;
-  animation: fadeInUp 1s ease-out 0.4s both;
   
   &::after {
     content: '';
@@ -173,7 +184,6 @@
 // About Text
 .about-text {
   margin-bottom: 5rem;
-  animation: fadeInUp 1s ease-out 0.6s both;
   
   p {
     font-size: 1.2rem;
@@ -210,7 +220,6 @@
 // Features Section
 .features-container {
   margin-bottom: 5rem;
-  animation: fadeInUp 1s ease-out 0.8s both;
 }
 
 .features-title {
@@ -316,7 +325,6 @@
 .founder-section {
   margin-top: 5rem;
   text-align: left;
-  animation: fadeInUp 1s ease-out 1s both;
 }
 
 .founder-title {

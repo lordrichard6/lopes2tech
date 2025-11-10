@@ -107,6 +107,10 @@ export class TranslationService {
           technology: 'Cutting-edge technology expertise',
           service: 'Personalized service approach',
           delivery: 'End-to-end solution delivery'
+        },
+        founder: {
+          title: 'Who am I?',
+          alt: 'Portrait of Paulo R. Lopes, developer and founder of lopes2tech'
         }
       },
       services: {
@@ -128,6 +132,25 @@ export class TranslationService {
           tools: {
             title: 'Custom Tools',
             description: 'We develop automation tools that integrate into your workflow and simplify complex processes. From automating data entry to orchestrating full-scale digital operations, our solutions are built to boost productivity and reliability.'
+          }
+        }
+      },
+      servicesv2: {
+        title: 'Our Core Services',
+        subtitle: 'Simple solutions for your business needs',
+        badge: 'More info',
+        items: {
+          ai: {
+            title: 'AI Solutions',
+            description: 'We create smart systems that work for you. From chatbots that answer customer questions to automation that handles repetitive tasks, our AI solutions save you time and improve your business efficiency.'
+          },
+          websites: {
+            title: 'Websites',
+            description: 'Beautiful, fast websites that work on all devices. Whether you need a simple business website, an online store, or a custom web application, we build modern sites that help you reach more customers.'
+          },
+          software: {
+            title: 'Software',
+            description: 'Custom software built specifically for your business needs. From desktop applications to mobile apps and specialized tools, we create software that solves your unique challenges and grows with your business.'
           }
         }
       },
