@@ -1,6 +1,7 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Inject, OnDestroy, PLATFORM_ID, QueryList, Renderer2, ViewChildren } from '@angular/core';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { isPlatformBrowser } from '@angular/common';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-about',
@@ -21,6 +22,7 @@ export class About implements AfterViewInit, OnDestroy {
   private readonly isBrowser: boolean;
   private intersectionObserver?: IntersectionObserver;
   private readonly triggeredElements = new WeakSet<Element>();
+  private queryChangesSub?: Subscription;
 
   @ViewChildren('revealItem', { read: ElementRef }) private revealItems!: QueryList<ElementRef<HTMLElement>>;
 
@@ -30,6 +32,15 @@ export class About implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
     if (!this.isBrowser) {
+      return;
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      this.revealItems.forEach((item) => {
+        const element = item.nativeElement;
+        this.renderer.addClass(element, 'is-visible');
+        this.triggeredElements.add(element);
+      });
       return;
     }
 
@@ -54,6 +65,16 @@ export class About implements AfterViewInit, OnDestroy {
         this.intersectionObserver?.observe(element);
       }
     });
+
+    this.queryChangesSub = this.revealItems.changes.subscribe((items: QueryList<ElementRef<HTMLElement>>) => {
+      items.forEach((item) => {
+        const element = item.nativeElement;
+        if (!this.triggeredElements.has(element)) {
+          this.renderer.removeClass(element, 'is-visible');
+          this.intersectionObserver?.observe(element);
+        }
+      });
+    });
   }
 
   ngOnDestroy(): void {
@@ -62,5 +83,6 @@ export class About implements AfterViewInit, OnDestroy {
     }
 
     this.intersectionObserver?.disconnect();
+    this.queryChangesSub?.unsubscribe();
   }
 }
