@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { EmailService } from '../../services/email.service';
 import { LoggerService } from '../../services/logger.service';
+import { TranslationService } from '../../services/translation.service';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-meeting-section',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, TranslatePipe],
   templateUrl: './meeting-section.html',
   styleUrl: './meeting-section.scss'
 })
@@ -27,7 +29,8 @@ export class MeetingSectionComponent implements OnChanges {
   constructor(
     private fb: FormBuilder,
     private emailService: EmailService,
-    private logger: LoggerService
+    private logger: LoggerService,
+    private translation: TranslationService
   ) {
     this.meetingForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(2)]],
@@ -74,14 +77,12 @@ export class MeetingSectionComponent implements OnChanges {
       if (sent) {
         this.meetingForm.reset({ context: this.context ?? '' });
       } else {
-        this.meetingErrorMessage =
-          'We could not send your message automatically. Please try again or email us directly.';
+        this.meetingErrorMessage = this.translation.instant('meetingForm.status.error');
       }
     } catch (error) {
       this.logger.error('Error submitting meeting form', error, 'MeetingSectionComponent');
       this.meetingStatus = 'error';
-      this.meetingErrorMessage =
-        'Something went wrong sending your message. Please try again in a moment.';
+      this.meetingErrorMessage = this.translation.instant('meetingForm.status.errorAlt');
     } finally {
       this.meetingSubmitting = false;
       this.meetingSubmitted = true;
@@ -98,16 +99,16 @@ export class MeetingSectionComponent implements OnChanges {
     if (!control) return '';
 
     if (control.hasError('required')) {
-      return 'This field is required.';
+      return this.translation.instant('meetingForm.validation.required');
     }
 
     if (control.hasError('email')) {
-      return 'Please enter a valid email.';
+      return this.translation.instant('meetingForm.validation.email');
     }
 
     if (control.hasError('minlength')) {
       const min = control.errors?.['minlength'].requiredLength;
-      return `Please enter at least ${min} characters.`;
+      return this.translation.instant('meetingForm.validation.minlength', { min });
     }
 
     return '';

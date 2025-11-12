@@ -114,6 +114,7 @@
   "servicesv2": {
     "title": "Os Nossos Serviços Principais",
     "subtitle": "Soluções simples para as necessidades do seu negócio",
+    "badge": "Mais info",
     "items": {
       "ai": {
         "title": "Soluções de IA",
@@ -132,47 +133,539 @@
       }
     }
   },
+  "aiSolutions": {
+    "hero": {
+      "title": "Soluções de IA",
+      "subtitle": "Esqueça o Webflow. Venda automações de IA rápidas que resolvem tarefas administrativas, captação de leads e follow-ups. Escopo fixo. Entrega em uma semana.",
+      "badge": "Automações extremamente focadas",
+      "scroll": "Ver serviços"
+    },
+    "filter": {
+      "label": "Selecione a sua indústria"
+    },
+    "sectionTitle": "Os serviços de IA que posso implementar para si",
+    "labels": {
+      "problem": "O Problema",
+      "solution": "A Solução",
+      "price": "Preço:",
+      "time": "Tempo:"
+    },
+    "industries": {
+      "clinics": "Clínicas & Terapeutas",
+      "dentists": "Dentistas & Estética",
+      "construction": "Construção & Oficios",
+      "agencies": "Agências",
+      "ecommerce": "E-commerce",
+      "realestate": "Imobiliário",
+      "hospitality": "Hospitalidade",
+      "services": "Serviços Profissionais"
+    },
+    "packages": {
+      "title": "O seu menu padrão de pacotes",
+      "cards": {
+        "carePlan": {
+          "title": "Care Plan",
+          "price": "a partir de CHF 149/mês",
+          "description": "Monitorização, pequenos ajustes, logs e gestão de modelos/chaves.",
+          "more": "Mais detalhes"
+        },
+        "trio": {
+          "title": "Desconto Trio",
+          "price": "20% off",
+          "description": "Agrupe três automações e poupe."
+        }
+      },
+      "carePlan": {
+        "tiers": {
+          "lite": {
+            "title": "Lite",
+            "price": "CHF 149/mês",
+            "description": "Monitorização, logs, alertas, 1 hora de ajustes, resposta ≤1 dia útil. Excedente CHF 120/h."
+          },
+          "pro": {
+            "title": "Pro",
+            "price": "CHF 299/mês",
+            "description": "Tudo do Lite, 3 horas incluídas, resposta ≤8 horas úteis, relatório mensal, pequenas edições de copy/fluxo. Excedente CHF 110/h."
+          },
+          "scale": {
+            "title": "Scale",
+            "price": "CHF 699/mês",
+            "description": "8 horas incluídas, resposta ≤4 horas úteis, ajustes avançados, testes A/B, roadmap trimestral. Excedente CHF 100/h."
+          }
+        }
+      }
+    },
+    "meeting": {
+      "title": "Vamos marcar uma reunião já",
+      "description": "Conte-me um pouco sobre a sua empresa e o que precisa de automatizar. Respondo no mesmo dia com um link de calendário e os próximos passos.",
+      "successTitle": "Obrigado pelo contacto!",
+      "successDescription": "Recebi a sua mensagem e vou responder em breve com um link de calendário para falarmos o quanto antes."
+    },
+    "services": {
+      "note": "Observação: após a implementação, continuam por sua conta as assinaturas ou APIs necessárias, mais a minha manutenção de automação de CHF 49/mês (já incluída se optar por um plano de cuidados). Esses valores podem variar conforme o porte da empresa e o nível de utilização das ferramentas.",
+      "leadCapture": {
+        "title": "Automação de Captura de Leads",
+        "problem": "Novos contactos ficam demasiado tempo sem resposta e os leads quentes arrefecem.",
+        "solution": "Capture cada lead automaticamente e envie mensagens instantâneas por WhatsApp, SMS e e-mail.",
+        "industry": {
+          "clinics": {
+            "problem": "Pacientes preenchem formulários de entrada, mas ninguém responde com rapidez – eles marcam noutra clínica.",
+            "solution": "Envie uma saudação imediata por WhatsApp/SMS, crie o paciente no sistema e lembre a equipa de agendar a consulta."
+          },
+          "dentists": {
+            "problem": "Pedidos estéticos esperam horas por um retorno e acabam noutra clínica.",
+            "solution": "Envie automaticamente uma mensagem simpática, registe o lead no CRM e alerte a coordenação de tratamentos."
+          },
+          "construction": {
+            "problem": "Proprietários pedem orçamentos e não obtêm resposta durante dias, escolhendo outro empreiteiro.",
+            "solution": "Registe o lead, envie um SMS de agradecimento com os próximos passos e avise o orçamentista de imediato."
+          },
+          "agencies": {
+            "problem": "Pedidos de campanha acumulam-se no e-mail; quando responde, o orçamento já foi alocado.",
+            "solution": "Enriqueça o lead, responda na hora e atribua o account manager com todo o contexto UTM."
+          },
+          "ecommerce": {
+            "problem": "Formulários de passatempos recolhem e-mails, mas ninguém incentiva a compra.",
+            "solution": "Envie uma oferta imediata por WhatsApp/SMS e adicione o contacto ao fluxo da Klaviyo/CRM."
+          }
+        }
+      },
+      "bookingReminder": {
+        "title": "Workflow de Lembretes de Agendamento",
+        "problem": "Clientes esquecem-se da marcação e simplesmente não aparecem.",
+        "solution": "Envie lembretes inteligentes, links fáceis de reagendamento e follow-ups quando alguém falta.",
+        "industry": {
+          "clinics": {
+            "problem": "Clientes de terapia faltam às sessões porque esquecem a hora ou o link.",
+            "solution": "Envie lembretes por WhatsApp, partilhe links de teleconsulta e reforce automaticamente o reagendamento de no-shows."
+          },
+          "dentists": {
+            "problem": "Pacientes faltam a higienizações e as cadeiras ficam vazias.",
+            "solution": "Envie lembretes simpáticos, ofereça reagendamento em um clique e avise a equipa se a pessoa continuar ausente."
+          },
+          "construction": {
+            "problem": "Visitas ao local são perdidas porque o proprietário esquece a visita.",
+            "solution": "Envie SMS com link do mapa e avise a equipa caso o cliente cancele ou não esteja presente."
+          },
+          "agencies": {
+            "problem": "Discovery calls são perdidas, desperdiçando o tempo de preparação.",
+            "solution": "Envie lembretes com branding, links do calendário e follow-ups automáticos para reagendar."
+          },
+          "ecommerce": {
+            "problem": "Consultas virtuais de styling ou demonstrações são frequentemente ignoradas.",
+            "solution": "Envie lembretes com teasers de produto e opções rápidas de reagendamento para manter o interesse."
+          }
+        }
+      },
+      "quotesInvoices": {
+        "title": "Automação de Orçamentos e Faturas",
+        "problem": "Orçamentos e faturas manuais atrasam o fluxo de caixa e criam erros.",
+        "solution": "Crie e envie faturas automaticamente quando um negócio é ganho e reconcilie pagamentos sem trabalho manual.",
+        "industry": {
+          "clinics": {
+            "problem": "Pacotes terapêuticos são vendidos, mas as faturas saem dias depois, atrasando o início do tratamento.",
+            "solution": "Gere a fatura do plano de imediato, envie com link de pagamento e marque o pagamento automaticamente."
+          },
+          "dentists": {
+            "problem": "Planos de tratamento estético exigem orçamentos manuais e telefonemas para cobrar sinal.",
+            "solution": "Crie o orçamento, envie o PDF por e-mail ou SMS e cobre o sinal via Stripe na hora."
+          },
+          "construction": {
+            "problem": "Propostas, sinais e faturas de progresso são controlados em folhas de cálculo.",
+            "solution": "Monte o orçamento automaticamente, envie com links de aceitação/pagamento e atualize a ferramenta de custos."
+          },
+          "agencies": {
+            "problem": "Faturas de retainer saem tarde, atrasando o reconhecimento de receita.",
+            "solution": "Emita a fatura assim que o negócio estiver ganho e faça a cobrança automática."
+          },
+          "ecommerce": {
+            "problem": "Encomendas no atacado exigem proformas manuais e controlo manual de pagamentos.",
+            "solution": "Crie e envie a fatura automaticamente com pagamento online e sincronize o estado da encomenda quando pago."
+          }
+        }
+      },
+      "faqChatbot": {
+        "title": "Chatbot de FAQ (Web & WhatsApp)",
+        "problem": "Clientes repetem as mesmas perguntas e esperam por respostas lentas.",
+        "solution": "Ofereça um chatbot de IA que responde na hora, encaminha conversas complexas e regista os leads.",
+        "industry": {
+          "clinics": {
+            "problem": "Pacientes perguntam sobre seguro, lista de espera e tipos de sessões, lotando o telefone.",
+            "solution": "Deixe o chatbot responder perguntas recorrentes, partilhar formulários de entrada e avisar a equipa quando precisar de toque humano."
+          },
+          "dentists": {
+            "problem": "Pacientes enviam mensagens sobre branqueamento ou implantes a qualquer hora.",
+            "solution": "Forneça respostas instantâneas, partilhe antes/depois e agende consultas quando estiverem prontos."
+          },
+          "construction": {
+            "problem": "Proprietários perguntam repetidamente sobre serviços, áreas de atuação e licenças.",
+            "solution": "Responda FAQs automaticamente, recolha dados do projeto e entregue leads qualificados à equipa comercial."
+          },
+          "agencies": {
+            "problem": "Prospects querem saber retainer mínimo, processos e prazos antes de agendar reunião.",
+            "solution": "Entregue respostas polidas, partilhe estudos de caso relevantes e registe o lead diretamente no CRM."
+          },
+          "ecommerce": {
+            "problem": "Clientes perguntam sobre envio, devolução e tamanhos e abandonam o carrinho enquanto esperam.",
+            "solution": "Responda de imediato, indique os produtos certos e escale para humano quando a venda estiver em jogo."
+          }
+        }
+      },
+      "emailTriage": {
+        "title": "Assistente de Triagem de E-mails com IA",
+        "problem": "A caixa de suporte está a abarrotar e ninguém sabe qual e-mail responder primeiro.",
+        "solution": "Classifique, resuma e etiquete e-mails automaticamente, e gere o primeiro rascunho de resposta.",
+        "industry": {
+          "clinics": {
+            "problem": "Administração vasculha a caixa à procura de mensagens urgentes e perde atualizações importantes.",
+            "solution": "Assinale e-mails clínicos urgentes, resuma o restante e sugira respostas para aprovação rápida."
+          },
+          "dentists": {
+            "problem": "Consultas, seguros e atualizações de laboratório misturam-se numa só caixa.",
+            "solution": "Ordene por urgência, prepare respostas simpáticas e crie tarefas no software da clínica."
+          },
+          "construction": {
+            "problem": "Atualizações de obra, orçamentos de fornecedores e aprovações de clientes perdem-se em threads.",
+            "solution": "Etiquete por projeto, crie tarefas na ferramenta de PM e destaque o que é crítico para o gestor."
+          },
+          "agencies": {
+            "problem": "Pedidos e aprovações de clientes perdem-se em caixas partilhadas.",
+            "solution": "Resuma cada e-mail, priorize itens urgentes e crie tickets no quadro de tarefas."
+          },
+          "ecommerce": {
+            "problem": "support@ recebe milhares de questões sobre encomendas e devoluções.",
+            "solution": "Categorize por tema, prepare respostas modelo e crie tickets para casos complexos."
+          }
+        }
+      },
+      "contractAutomation": {
+        "title": "Fluxo de Automação de Contratos",
+        "problem": "Montar contratos manualmente consome tempo e traz risco de erros caros.",
+        "solution": "Gere o contrato automaticamente, envie para assinatura digital e arquive onde todos encontram.",
+        "industry": {
+          "clinics": {
+            "problem": "Acordos terapêuticos são criados à mão e muitas vezes voltam sem assinatura.",
+            "solution": "Gere acordos personalizados no acto, envie para assinatura digital e arquive no EMR."
+          },
+          "dentists": {
+            "problem": "Consentimentos estéticos são copiados e colados paciente a paciente.",
+            "solution": "Preencha com detalhes do paciente, envie para assinatura e associe ao plano de tratamento."
+          },
+          "construction": {
+            "problem": "Contratos de projeto são editados em Word toda vez, gerando caos de versões.",
+            "solution": "Combine dados do cliente, envie para assinatura e sincronize o contrato na pasta da obra."
+          },
+          "agencies": {
+            "problem": "Contratos de retainer precisam de revisão jurídica sempre, atrasando o onboarding.",
+            "solution": "Crie o contrato a partir de inputs, encaminhe para assinatura e arquive no espaço do cliente."
+          },
+          "ecommerce": {
+            "problem": "Acordos de atacado e NDAs são geridos manualmente e perdem-se nos e-mails.",
+            "solution": "Gere o documento, recolha assinaturas e ligue-o ao perfil do cliente automaticamente."
+          }
+        }
+      },
+      "reputationBooster": {
+        "title": "Automação de Reforço de Reputação",
+        "problem": "Pede avaliações apenas de vez em quando, deixando clientes satisfeitos em silêncio.",
+        "solution": "Solicite reviews automaticamente, celebre as 5 estrelas e intercepte feedback negativo antes de ser público.",
+        "industry": {
+          "clinics": {
+            "problem": "Experiências positivas não viram avaliações, a clínica parece apagada online.",
+            "solution": "Peça review após cada visita, publique 5 estrelas e avise a equipa para acompanhar notas baixas."
+          },
+          "dentists": {
+            "problem": "Pacientes de estética adoram o resultado mas raramente deixam feedback.",
+            "solution": "Envie pedidos personalizados com lembrete fotográfico e escale internamente feedback negativo."
+          },
+          "construction": {
+            "problem": "Projetos concluídos não rendem testemunhos e novos clientes ficam na dúvida.",
+            "solution": "Envie SMS ao proprietário quando a obra termina, publique 5 estrelas e abra ticket se a nota for abaixo de quatro."
+          },
+          "agencies": {
+            "problem": "Clientes elogiam em privado, mas o perfil do Google parece vazio.",
+            "solution": "Dispare pedidos quando campanhas têm sucesso e encaminhe notas baixas ao account lead."
+          },
+          "ecommerce": {
+            "problem": "Clientes felizes não deixam reviews, os produtos parecem sem prova social.",
+            "solution": "Solicite após a entrega, premie 5 estrelas e avise o suporte se alguém estiver insatisfeito."
+          }
+        }
+      },
+      "crmHygiene": {
+        "title": "Bot de Higienização de Dados no CRM",
+        "problem": "O seu CRM fica caótico rapidamente – duplicados, telefones errados, campos vazios.",
+        "solution": "Execute uma limpeza nocturna que junta duplicados, corrige dados e assinala lacunas para a equipa.",
+        "industry": {
+          "clinics": {
+            "problem": "Registos de pacientes duplicam-se em formulários e confundem a marcação de consultas.",
+            "solution": "Una registos duplicados, limpe contactos e destaque dados de seguro em falta todas as noites."
+          },
+          "dentists": {
+            "problem": "Listas de potenciais pacientes têm duplicados e números desactualizados.",
+            "solution": "Limpe o CRM diariamente para que a recepção ligue com o nome e telefone correctos."
+          },
+          "construction": {
+            "problem": "Vários contactos para o mesmo imóvel tornam a pipeline confusa.",
+            "solution": "Consolide registos, normalize telefones/moradas e identifique licenças ou orçamento em falta."
+          },
+          "agencies": {
+            "problem": "Leads aparecem várias vezes com diferentes UTMs, distorcendo relatórios.",
+            "solution": "Una duplicados, mantenha campos de tracking consistentes e sinalize dados de empresa em falta."
+          },
+          "ecommerce": {
+            "problem": "Perfis de clientes duplicam-se entre Shopify, Klaviyo e o CRM.",
+            "solution": "Sincronize e dedupe os dados todas as noites para manter segmentação e mensagens precisas."
+          }
+        }
+      },
+      "kpiReports": {
+        "title": "Relatórios Automáticos de KPIs",
+        "problem": "Relatórios demoram horas em folhas de cálculo e ninguém vê os números a tempo.",
+        "solution": "Puxe dados automaticamente, gere relatórios claros e envie insights para a equipa com regularidade.",
+        "industry": {
+          "clinics": {
+            "problem": "Números semanais de novos pacientes ou utilização dos terapeutas só chegam no fim do mês.",
+            "solution": "Envie um relatório semanal com novas marcações, cancelamentos e utilização automaticamente."
+          },
+          "dentists": {
+            "problem": "Produção, cobranças e tempo de cadeira estão escondidos no software da clínica.",
+            "solution": "Envie diariamente um dashboard com produção, aceitação de casos e saldos pendentes."
+          },
+          "construction": {
+            "problem": "Gestores de projeto recolhem manualmente orçamentos vs. realizado para cada reunião.",
+            "solution": "Compila margens, change orders e cashflow num resumo diário e partilhe com a direção."
+          },
+          "agencies": {
+            "problem": "KPIs de campanhas estão em plataformas diferentes, dificultando a visibilidade.",
+            "solution": "Agregue investimento, leads e ROI e envie um resumo em linguagem simples para cada equipa."
+          },
+          "ecommerce": {
+            "problem": "Vendas, devoluções e CAC vivem em ferramentas separadas.",
+            "solution": "Combine dados de Shopify, Stripe e anúncios num snapshot diário com notas accionáveis."
+          }
+        }
+      },
+      "whatsappFunnel": {
+        "title": "Funil de Leads no WhatsApp",
+        "problem": "As pessoas clicam no seu link de WhatsApp, mas a conversa morre de imediato.",
+        "solution": "Guie-as por um fluxo guiado que recolhe detalhes, entrega valor e agenda o próximo passo.",
+        "industry": {
+          "clinics": {
+            "problem": "QR codes em eventos geram interesse, mas leads não completam os formulários.",
+            "solution": "Conduza perguntas de triagem, envie recursos e encaminhe o lead para a recepção."
+          },
+          "dentists": {
+            "problem": "Campanhas de sorriso não avançam porque ninguém conduz o chat.",
+            "solution": "Recolha preferências de branqueamento/implantes, partilhe antes/depois e agende consultas automaticamente."
+          },
+          "construction": {
+            "problem": "Visitantes do showroom scanem o QR, mas ninguém captura dados do projeto.",
+            "solution": "Obtenha orçamento, cronograma e localização e marque a visita ao local num só fluxo."
+          },
+          "agencies": {
+            "problem": "Anúncios no Meta trazem prospects para o WhatsApp, mas a conversa desaparece.",
+            "solution": "Qualifique com perguntas-chave, partilhe credenciais e marque logo uma reunião."
+          },
+          "ecommerce": {
+            "problem": "Giveaways no WhatsApp geram subscritores, mas raramente vendas.",
+            "solution": "Entregue o lead magnet, recolha e-mail + preferências e envie um código promocional automático."
+          }
+        }
+      },
+      "supportAssistant": {
+        "title": "Assistente de Tickets de Suporte",
+        "problem": "Agentes vasculham conversas antigas antes de conseguirem escrever uma resposta.",
+        "solution": "Mostre todo o histórico na hora e sugira a próxima resposta para a equipa responder em minutos.",
+        "industry": {
+          "clinics": {
+            "problem": "Coordenadores revêm notas antes de responder a perguntas de pacientes.",
+            "solution": "Puxe o histórico do paciente, resuma e sugira o melhor próximo passo."
+          },
+          "dentists": {
+            "problem": "Rececionistas consultam fichas antes de responder sobre planos ou casos de laboratório.",
+            "solution": "Mostre consultas anteriores e notas de tratamento e proponha uma resposta polida imediatamente."
+          },
+          "construction": {
+            "problem": "Equipas de suporte pesquisam e-mails para esclarecer dúvidas de obra.",
+            "solution": "Reúna contexto do projeto, apresente os desenhos mais recentes e prepare a resposta para o gestor."
+          },
+          "agencies": {
+            "problem": "Account managers relêem longas threads antes de responder ao cliente.",
+            "solution": "Resuma o fio, destaque tarefas pendentes e gere um update pronto para o cliente."
+          },
+          "ecommerce": {
+            "problem": "Agentes de suporte procuram histórico de encomendas antes de responder cada ticket.",
+            "solution": "Mostre a linha temporal da encomenda, tickets anteriores e um rascunho de resposta em segundos."
+          }
+        }
+      },
+      "hrOnboarding": {
+        "title": "Automação de Onboarding de RH",
+        "problem": "Novas contratações esperam por acessos, papelada e equipamento porque o onboarding é manual.",
+        "solution": "Dispare todas as tarefas de onboarding automaticamente para que a pessoa comece pronta no primeiro dia.",
+        "industry": {
+          "clinics": {
+            "problem": "Terapeutas começam sem logins do EMR ou modelos de consentimento preparados.",
+            "solution": "Crie acessos, envie pacotes de políticas e atribua tarefas de onboarding assim que a oferta é aceite."
+          },
+          "dentists": {
+            "problem": "Novos higienistas chegam sem acesso aos sistemas ou noções básicas de equipamento.",
+            "solution": "Gere logins, agende formações e partilhe SOPs no momento da assinatura."
+          },
+          "construction": {
+            "problem": "Equipas de campo aparecem sem credenciais de segurança ou acesso ao projeto.",
+            "solution": "Emita crachás, listas de segurança e tarefas antes do primeiro dia."
+          },
+          "agencies": {
+            "problem": "Novos account managers esperam por acessos e contexto dos clientes.",
+            "solution": "Providencie ferramentas, partilhe documentação e agende reuniões de apresentação automaticamente."
+          },
+          "ecommerce": {
+            "problem": "Contratações no armazém começam sem acessos ou informações de turno.",
+            "solution": "Crie contas, envie vídeos de formação e atribua tarefas da primeira semana automaticamente."
+          }
+        }
+      },
+      "linkedinContent": {
+        "title": "Automação de Conteúdo para LinkedIn",
+        "problem": "Estar diariamente no LinkedIn exige pesquisa, escrita e agendamento constantes – trabalho para o qual não há tempo.",
+        "solution": "Registe temas uma vez e deixe o agente pesquisar, redigir e agendar um post polido todos os dias às 9h, sem esforço.",
+        "industry": {
+          "clinics": {
+            "problem": "Terapeutas querem partilhar conhecimento, mas pesquisar e escrever rouba tempo dos pacientes.",
+            "solution": "Liste temas de terapia e receba conteúdos pesquisados e prontos para publicar diariamente às 9h."
+          },
+          "dentists": {
+            "problem": "Dentistas estéticos têm dificuldade em mostrar casos com consistência porque cada post demora horas.",
+            "solution": "Anote os tópicos de sorriso e deixe o sistema pesquisar, escrever e agendar posts refinados todas as manhãs."
+          },
+          "construction": {
+            "problem": "Líderes de projeto raramente partilham conquistas porque escrever atualizações consome uma tarde.",
+            "solution": "Registe os projetos que quer destacar e acorde com publicações pesquisadas a irem ao ar às 9h."
+          },
+          "agencies": {
+            "problem": "Founders equilibram trabalho com clientes e nunca têm tempo para thought leadership diário.",
+            "solution": "Crie uma lista de temas e deixe o agente pesquisar, redigir e agendar posts polidos todas as manhãs sem esforço."
+          },
+          "ecommerce": {
+            "problem": "Donos de marca escrevem histórias manualmente, por isso as publicações tornam-se irregulares e sem pesquisa.",
+            "solution": "Registe ideias de produto e deixe o agente pesquisar, escrever e agendar posts envolventes todos os dias às 9h."
+          }
+        }
+      },
+      "invoiceLedger": {
+        "title": "Automação de Recepção e Registo de Faturas",
+        "problem": "Faturas são largadas numa pasta partilhada, acumulam-se sem organização e ninguém atualiza o controlo financeiro a tempo.",
+        "solution": "Monitorize a pasta no Drive, organize cada fatura automaticamente, extraia os dados e acrescente ao Google Sheet na hora.",
+        "industry": {
+          "clinics": {
+            "problem": "Faturas de fornecedores ficam no Drive, prazos são perdidos e os gastos fogem ao controlo.",
+            "solution": "Carregue a fatura uma vez, organize-a por fornecedor, capture os valores e sincronize com a folha de despesas."
+          },
+          "dentists": {
+            "problem": "Faturas de material dentário acumulam-se em pastas e a contabilidade atrasa.",
+            "solution": "Assim que Finance faz upload, a fatura é arquivada no mês correcto, valores extraídos e o controlo atualizado."
+          },
+          "construction": {
+            "problem": "Encarregados sobem faturas mas ninguém etiqueta projetos ou atualiza o mapa de custos rapidamente.",
+            "solution": "Detete novas faturas, mova para a pasta do projeto, extraia linhas e lance no ledger imediatamente."
+          },
+          "agencies": {
+            "problem": "Faturas de fornecedores chegam ao Drive e a equipa de operações passa a sexta-feira a conciliar manualmente.",
+            "solution": "Revise cada fatura automaticamente, capture totais e prazo e adicione ao registo de contas a pagar."
+          },
+          "ecommerce": {
+            "problem": "Faturas de inventário acumulam-se e as folhas de cash flow ficam desatualizadas.",
+            "solution": "Arquive cada fatura na pasta correcta, extraia os principais números e actualize o controlo de despesas imediatamente."
+          }
+        }
+      }
+    }
+  },
   "about": {
-    "badge": "Sobre Nós",
-    "title": "Qualidade Suíça, Inovação Global",
-    "subtitle": "Na lopes2tech, combinamos a precisão suíça com uma década de experiência dedicada em automação.",
-    "description1": "Temos paixão por ajudar empresas a descobrir todo o seu potencial automatizando tarefas repetitivas, otimizando processos e criando ferramentas digitais personalizadas.",
-    "description2": "Seja uma aplicação web robusta ou um conjunto de ferramentas de automação personalizadas para macOS, iPad e iOS, temos a experiência para entregar soluções que funcionam perfeitamente para si.",
+    "badge": "Sobre a Lopes2tech",
+    "title": "Paixão, determinação, resultados...",
+    "subtitle": "Sou um estúdio de automação de uma só pessoa obcecado em resolver problemas reais de negócio com rapidez, precisão e zero floreado.",
+    "description1": "Sou um solucionador nato que adora dissecar workflows caóticos, caçar cliques repetitivos e substituí-los por automação inteligente.",
+    "description2": "Mergulho a fundo em como o seu negócio realmente funciona, escolho as ferramentas certas e construo sistemas que libertam a sua equipa do trabalho braçal para que se foque no lucro — não na papelada.",
     "features": {
-      "title": "Por que Escolher-nos",
-      "swiss": "Precisão e confiabilidade suíça",
+      "title": "Porque escolher-me",
+      "swiss": "Preços extremamente competitivos",
       "technology": "Experiência em tecnologia de ponta",
       "service": "Abordagem de serviço personalizada",
-      "delivery": "Entrega de soluções completas"
+      "delivery": "Entrega ponta a ponta"
+    },
+    "founder": {
+      "title": "Quem sou eu?",
+      "alt": "Retrato de Paulo R. Lopes, desenvolvedor e fundador da lopes2tech"
     }
   },
   "contact": {
-    "title": "Envie-nos uma mensagem",
-    "subtitle": "Responderemos dentro de 24 horas",
+    "hero": {
+      "badge": "Entre em contacto",
+      "title": "Vamos planear a sua próxima vitória em automação",
+      "subtitle": "Partilhe o fluxo que está a travá-lo. Vou analisá-lo pessoalmente e responder em até um dia com ideias, cronograma e próximos passos claros."
+    },
+    "meeting": {
+      "title": "Vamos agendar uma reunião o quanto antes",
+      "description": "Conte-me o projeto que tem em mente. No mesmo dia envio um link de calendário e uma proposta ajustada.",
+      "successTitle": "Obrigado pela sua mensagem!",
+      "successDescription": "Recebi a sua nota e vou responder em breve com um link de calendário para falarmos o quanto antes."
+    },
     "form": {
       "name": {
-        "label": "Nome Completo",
+        "label": "Nome completo",
         "placeholder": "Insira o seu nome completo"
       },
       "email": {
-        "label": "Endereço de Email",
+        "label": "Endereço de email",
         "placeholder": "Insira o seu endereço de email"
       },
       "company": {
-        "label": "Empresa (Opcional)",
-        "placeholder": "Insira o nome da sua empresa"
+        "label": "Empresa (opcional)",
+        "placeholder": "Nome da sua empresa (opcional)"
       },
       "message": {
         "label": "Mensagem",
-        "placeholder": "Conte-nos sobre o seu projeto ou como podemos ajudá-lo..."
+        "placeholder": "Conte-nos sobre o seu projeto ou como podemos ajudar..."
       },
-      "send": "Enviar Mensagem",
-      "sending": "Enviando..."
+      "send": "Enviar mensagem",
+      "sending": "A enviar..."
     },
     "info": {
       "phone": "Telefone",
       "email": "Email",
       "location": "Localização"
+    }
+  },
+  "meetingForm": {
+    "labels": {
+      "name": "Nome",
+      "company": "Empresa",
+      "email": "Email",
+      "phone": "Telefone",
+      "message": "Mensagem"
+    },
+    "placeholders": {
+      "name": "Jane Doe",
+      "company": "Acme AG",
+      "email": "voce@empresa.com",
+      "phone": "+351 91 234 56 78",
+      "message": "Escopo do projeto, ferramentas atuais, resultado desejado..."
+    },
+    "button": {
+      "submit": "Enviar mensagem",
+      "sending": "A enviar"
+    },
+    "status": {
+      "error": "Não foi possível enviar a mensagem automaticamente. Por favor tente novamente ou envie-nos um email diretamente.",
+      "errorAlt": "Ocorreu um erro ao enviar a mensagem. Tente novamente dentro de instantes."
+    },
+    "validation": {
+      "required": "Este campo é obrigatório.",
+      "email": "Introduza um email válido.",
+      "minlength": "Introduza pelo menos {{min}} caracteres."
     }
   },
   "pricing": {

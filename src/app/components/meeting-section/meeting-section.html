@@ -13,49 +13,49 @@
 
     <div class="form-grid">
       <label class="form-field">
-        <span>Name *</span>
+        <span>{{ 'meetingForm.labels.name' | translate }} *</span>
         <input
           type="text"
           formControlName="name"
           [class.invalid]="fieldInvalid('name')"
-          placeholder="Jane Doe" />
+          [placeholder]="'meetingForm.placeholders.name' | translate" />
         <small *ngIf="fieldInvalid('name')">{{ fieldError('name') }}</small>
       </label>
 
       <label class="form-field">
-        <span>Company</span>
+        <span>{{ 'meetingForm.labels.company' | translate }}</span>
         <input
           type="text"
           formControlName="company"
-          placeholder="Acme AG" />
+          [placeholder]="'meetingForm.placeholders.company' | translate" />
       </label>
 
       <label class="form-field">
-        <span>Email *</span>
+        <span>{{ 'meetingForm.labels.email' | translate }} *</span>
         <input
           type="email"
           formControlName="email"
           [class.invalid]="fieldInvalid('email')"
-          placeholder="you@company.com" />
+          [placeholder]="'meetingForm.placeholders.email' | translate" />
         <small *ngIf="fieldInvalid('email')">{{ fieldError('email') }}</small>
       </label>
 
       <label class="form-field">
-        <span>Phone</span>
+        <span>{{ 'meetingForm.labels.phone' | translate }}</span>
         <input
           type="tel"
           formControlName="phone"
-          placeholder="+41 78 123 45 67" />
+          [placeholder]="'meetingForm.placeholders.phone' | translate" />
       </label>
     </div>
 
     <label class="form-field full-width">
-      <span>Message *</span>
+      <span>{{ 'meetingForm.labels.message' | translate }} *</span>
       <textarea
         rows="5"
         formControlName="message"
         [class.invalid]="fieldInvalid('message')"
-        placeholder="Project scope, current tools, desired outcome..."></textarea>
+        [placeholder]="'meetingForm.placeholders.message' | translate"></textarea>
       <small *ngIf="fieldInvalid('message')">{{ fieldError('message') }}</small>
     </label>
 
@@ -66,9 +66,9 @@
         type="submit"
         class="submit-button"
         [disabled]="meetingSubmitting">
-        <span *ngIf="!meetingSubmitting">Send message</span>
+        <span *ngIf="!meetingSubmitting">{{ 'meetingForm.button.submit' | translate }}</span>
         <span *ngIf="meetingSubmitting" class="loading-dots">
-          Sending<span>.</span><span>.</span><span>.</span>
+          {{ 'meetingForm.button.sending' | translate }}<span>.</span><span>.</span><span>.</span>
         </span>
       </button>
 

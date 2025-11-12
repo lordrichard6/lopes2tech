@@ -1,5 +1,17 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {
+  ChangeDetectorRef,
+  Component,
+  HostListener,
+  Inject,
+  OnInit,
+  OnDestroy,
+  PLATFORM_ID,
+} from '@angular/core';
+import {
+  CommonModule,
+  DOCUMENT,
+  isPlatformBrowser,
+} from '@angular/common';
 import {
   animate,
   keyframes,
@@ -10,6 +22,10 @@ import {
   trigger,
 } from '@angular/animations';
 import { MeetingSectionComponent } from '../meeting-section/meeting-section';
+import { TranslatePipe } from '../../pipes/translate.pipe';
+import { TranslationService } from '../../services/translation.service';
+import { AiSolutionsHeroAnimationComponent } from './hero-animation/hero-animation.component';
+import { Subscription } from 'rxjs';
 
 interface IndustryCopy {
   problem: string;
@@ -19,6 +35,7 @@ interface IndustryCopy {
 interface AIService {
   id: number;
   title: string;
+  translationKey: string;
   baseProblem: string;
   baseSolution: string;
   industryCopy?: Record<string, IndustryCopy>;
@@ -30,20 +47,25 @@ interface AIService {
 }
 
 interface Package {
-  name: string;
-  price: string;
-  description: string;
+  translationKey: string;
+  hasDialog: boolean;
 }
 
 interface Industry {
   label: string;
+  labelKey: string;
   value: string;
 }
 
 @Component({
   selector: 'app-ai-solutions',
   standalone: true,
-  imports: [CommonModule, MeetingSectionComponent],
+  imports: [
+    CommonModule,
+    MeetingSectionComponent,
+    TranslatePipe,
+    AiSolutionsHeroAnimationComponent,
+  ],
   templateUrl: './ai-solutions.html',
   styleUrl: './ai-solutions.scss',
   animations: [
@@ -90,27 +112,76 @@ interface Industry {
     ]),
   ]
 })
-export class AISolutionsComponent {
+export class AISolutionsComponent implements OnInit, OnDestroy {
   industries: Industry[] = [
-    { label: 'Clinics & Therapists', value: 'clinics' },
-    { label: 'Dentists & Beauty', value: 'dentists' },
-    { label: 'Construction & Trades', value: 'construction' },
-    { label: 'Agencies', value: 'agencies' },
-    { label: 'E-commerce', value: 'ecommerce' },
-    { label: 'Real Estate', value: 'realestate' },
-    { label: 'Hospitality', value: 'hospitality' },
-    { label: 'Professional Services', value: 'services' }
+    {
+      label: 'Clinics & Therapists',
+      labelKey: 'aiSolutions.industries.clinics',
+      value: 'clinics'
+    },
+    {
+      label: 'Dentists & Beauty',
+      labelKey: 'aiSolutions.industries.dentists',
+      value: 'dentists'
+    },
+    {
+      label: 'Construction & Trades',
+      labelKey: 'aiSolutions.industries.construction',
+      value: 'construction'
+    },
+    {
+      label: 'Agencies',
+      labelKey: 'aiSolutions.industries.agencies',
+      value: 'agencies'
+    },
+    {
+      label: 'E-commerce',
+      labelKey: 'aiSolutions.industries.ecommerce',
+      value: 'ecommerce'
+    },
+    {
+      label: 'Real Estate',
+      labelKey: 'aiSolutions.industries.realestate',
+      value: 'realestate'
+    },
+    {
+      label: 'Hospitality',
+      labelKey: 'aiSolutions.industries.hospitality',
+      value: 'hospitality'
+    },
+    {
+      label: 'Professional Services',
+      labelKey: 'aiSolutions.industries.services',
+      value: 'services'
+    }
   ];
 
   selectedIndustry = this.industries[0].value;
+  private languageSubscription: Subscription;
+  private isBrowser: boolean;
+
+  constructor(
+    private translationService: TranslationService,
+    private cdr: ChangeDetectorRef,
+    @Inject(DOCUMENT) private document: Document,
+    @Inject(PLATFORM_ID) platformId: object
+  ) {
+    this.isBrowser = isPlatformBrowser(platformId);
+    this.languageSubscription = this.translationService
+      .getCurrentLanguage()
+      .subscribe(() => {
+        this.cdr.markForCheck();
+      });
+  }
 
   services: AIService[] = [
     {
       id: 1,
       title: 'Lead Capture Automation',
+      translationKey: 'aiSolutions.services.leadCapture',
       baseProblem: 'New enquiries sit too long without a reply, so hot leads cool down.',
       baseSolution: 'Capture every lead automatically and message them instantly via WhatsApp, SMS, and email.',
-      price: 'CHF 900–1,600',
+      price: 'from CHF 900',
       time: '1–2 days',
       triggers: 'Tally/Typeform/Google Form, Facebook Lead Ads',
       actions: 'dedupe in HubSpot/Zoho, assign owner, send WhatsApp/SMS and email, create task, log UTM',
@@ -141,9 +212,10 @@ export class AISolutionsComponent {
     {
       id: 2,
       title: 'Booking Reminder Workflow',
+      translationKey: 'aiSolutions.services.bookingReminder',
       baseProblem: 'Clients forget their booking and simply do not show up.',
       baseSolution: 'Send smart reminders, easy reschedule links, and follow-ups when someone misses an appointment.',
-      price: 'CHF 800–1,400',
+      price: 'from CHF 800',
       time: '1–2 days',
       triggers: 'Calendly/Cal.com booking',
       actions: 'email + WhatsApp reminders, reschedule link, post-no-show sequence, CRM update',
@@ -173,9 +245,10 @@ export class AISolutionsComponent {
     {
       id: 3,
       title: 'Quotes & Invoices Automation',
+      translationKey: 'aiSolutions.services.quotesInvoices',
       baseProblem: 'Manual quoting and invoicing slows cash flow and introduces mistakes.',
       baseSolution: 'Create and send invoices automatically when a deal is won, and reconcile payments without manual work.',
-      price: 'CHF 1,100–1,900',
+      price: 'from CHF 1,100',
       time: '2–3 days',
       triggers: 'deal moves to "Won"',
       actions: 'generate invoice in Stripe/Zoho Books, email PDF, payment link, reconcile on payment',
@@ -205,9 +278,10 @@ export class AISolutionsComponent {
     {
       id: 4,
       title: 'FAQ Chatbot (Web & WhatsApp)',
+      translationKey: 'aiSolutions.services.faqChatbot',
       baseProblem: 'Customers keep asking the same questions and wait for slow replies.',
       baseSolution: 'Give them an AI chatbot that answers instantly, passes complex chats to humans, and logs leads.',
-      price: 'CHF 1,500–2,500',
+      price: 'from CHF 1,500',
       time: '3–5 days',
       triggers: 'Input: a Notion or Google Doc knowledge base',
       actions: 'GPT answer with sources, handoff to human, log leads in CRM',
@@ -238,9 +312,10 @@ export class AISolutionsComponent {
     {
       id: 5,
       title: 'AI Email Triage Assistant',
+      translationKey: 'aiSolutions.services.emailTriage',
       baseProblem: 'The support inbox is overflowing and nobody knows which email to answer first.',
       baseSolution: 'Classify, summarise, and label emails automatically, then draft the first reply for your team.',
-      price: 'CHF 900–1,600',
+      price: 'from CHF 900',
       time: '1–2 days',
       triggers: 'inbound to support@',
       actions: 'classify, summarize, urgency label, create ticket in Notion/Jira/HubSpot, draft reply',
@@ -270,9 +345,10 @@ export class AISolutionsComponent {
     {
       id: 6,
       title: 'Contract Automation Flow',
+      translationKey: 'aiSolutions.services.contractAutomation',
       baseProblem: 'Building contracts manually takes time and risks costly mistakes.',
       baseSolution: 'Generate the contract automatically, send it for e-signature, and file it where everyone can find it.',
-      price: 'CHF 1,100–1,900',
+      price: 'from CHF 1,100',
       time: '2–3 days',
       triggers: 'client fills short form',
       actions: 'GPT fills template, creates PDF, sends for e-signature, stores in Drive, links in CRM',
@@ -303,9 +379,10 @@ export class AISolutionsComponent {
     {
       id: 7,
       title: 'Reputation Booster Automation',
+      translationKey: 'aiSolutions.services.reputationBooster',
       baseProblem: 'You only ask for reviews occasionally, so happy customers stay silent.',
       baseSolution: 'Request reviews automatically, celebrate the five-stars, and intercept the bad ones before they go public.',
-      price: 'CHF 700–1,200',
+      price: 'from CHF 700',
       time: '1 day',
       triggers: 'job closed in CRM',
       actions: 'request Google review, if 4–5★ publish, if ≤3★ open internal ticket, weekly report',
@@ -335,9 +412,10 @@ export class AISolutionsComponent {
     {
       id: 8,
       title: 'CRM Data Hygiene Bot',
+      translationKey: 'aiSolutions.services.crmHygiene',
       baseProblem: 'Your CRM gets messy fast — duplicates, bad phone numbers, missing fields.',
       baseSolution: 'Run a nightly clean-up that merges duplicates, fixes data, and flags gaps for the team.',
-      price: 'CHF 1,200–2,000',
+      price: 'from CHF 1,200',
       time: '2–3 days',
       triggers: 'Nightly job',
       actions: 'merge duplicates, normalize phones, enrich via Clearbit/Dropcontact, flag missing fields',
@@ -367,9 +445,10 @@ export class AISolutionsComponent {
     {
       id: 9,
       title: 'KPI Auto-Reports',
+      translationKey: 'aiSolutions.services.kpiReports',
       baseProblem: 'Reporting takes hours of spreadsheet work, so nobody sees the numbers on time.',
       baseSolution: 'Pull data automatically, generate clear reports, and send insights to your team on schedule.',
-      price: 'CHF 800–1,500',
+      price: 'from CHF 800',
       time: '1–2 days',
       triggers: 'daily/weekly',
       actions: 'pull Stripe, Calendly, CRM, produce chart PDF + Slack/Email summary with insights from GPT',
@@ -399,9 +478,10 @@ export class AISolutionsComponent {
     {
       id: 10,
       title: 'WhatsApp Lead Funnel',
+      translationKey: 'aiSolutions.services.whatsappFunnel',
       baseProblem: 'People click your WhatsApp link but the conversation stalls immediately.',
       baseSolution: 'Guide them through a scripted flow that collects details, delivers value, and books the next step.',
-      price: 'CHF 1,100–1,900',
+      price: 'from CHF 1,100',
       time: '2–3 days',
       triggers: 'QR or ad click to WhatsApp',
       actions: 'menu, collect email, deliver PDF, add to CRM + newsletter, schedule call link',
@@ -431,9 +511,10 @@ export class AISolutionsComponent {
     {
       id: 11,
       title: 'Support Ticket Assistant',
+      translationKey: 'aiSolutions.services.supportAssistant',
       baseProblem: 'Agents dig through old conversations before they can even draft a reply.',
       baseSolution: 'Show the full history instantly and suggest the next reply so the team can respond in minutes.',
-      price: 'CHF 1,300–2,200',
+      price: 'from CHF 1,300',
       time: '3 days',
       triggers: 'new ticket',
       actions: 'retrieve past emails/docs, propose first reply, suggest next steps, escalate rules',
@@ -463,9 +544,10 @@ export class AISolutionsComponent {
     {
       id: 12,
       title: 'HR Onboarding Automation',
+      translationKey: 'aiSolutions.services.hrOnboarding',
       baseProblem: 'New hires wait for accounts, paperwork, and equipment because onboarding is manual.',
       baseSolution: 'Kick off every onboarding task automatically so the new teammate is ready on day one.',
-      price: 'CHF 1,000–1,800',
+      price: 'from CHF 1,000',
       time: '2–3 days',
       triggers: 'signed offer',
       actions: 'create accounts, send onboarding pack, checklist in Notion, calendar events, payroll entry',
@@ -491,55 +573,238 @@ export class AISolutionsComponent {
           solution: 'Create system accounts, send training videos, and assign first-week tasks automatically.'
         }
       }
+    },
+    {
+      id: 13,
+      title: 'LinkedIn Content Creator Automation',
+      translationKey: 'aiSolutions.services.linkedinContent',
+      baseProblem:
+        'Showing up on LinkedIn daily means endless research, drafting, and scheduling work you never have time to do.',
+      baseSolution:
+        'Add topics once, let the agent research, draft, and queue a polished post every day at 9 a.m.—no manual effort needed.',
+      price: 'from CHF 900',
+      time: '1–2 days',
+      triggers: 'Notion task, Google Sheet row, or audio note upload',
+      actions:
+        'collect topic list, research, draft post with GPT, optional approval, schedule via Buffer/SocialBee, log performance',
+      industryCopy: {
+        clinics: {
+          problem:
+            'Therapists want to share expertise on LinkedIn but researching and writing each post steals time from patient care.',
+          solution:
+            'Drop therapy topics into a list and receive researched, ready-to-post content publishing daily at 9 a.m. automatically.'
+        },
+        dentists: {
+          problem:
+            'Cosmetic dentists struggle to showcase case studies consistently because every post takes hours to prepare.',
+          solution:
+            'List the smile topics once and let the system research, draft, and schedule polished posts every morning.'
+        },
+        construction: {
+          problem:
+            'Project leaders rarely share wins on LinkedIn because researching and writing updates takes an afternoon.',
+          solution:
+            'Log the projects you want to highlight and wake up to daily, researched posts going live at 9 a.m.'
+        },
+        agencies: {
+          problem:
+            'Founders juggle client work and never find time to research, write, and publish daily thought-leadership posts.',
+          solution:
+            'Create a topic backlog and have the agent research, craft, and queue a polished post every morning without your involvement.'
+        },
+        ecommerce: {
+          problem:
+            'Brand owners draft LinkedIn stories manually so updates happen sporadically and research slips.',
+          solution:
+            'Log product story ideas once, then let the agent research, write, and auto-schedule engaging posts daily at 9 a.m.'
+        }
+      }
+    },
+    {
+      id: 14,
+      title: 'Invoice Intake Ledger Automation',
+      translationKey: 'aiSolutions.services.invoiceLedger',
+      baseProblem:
+        'Invoices get dropped in shared folders, pile up unsorted, and nobody updates the finance tracker on time.',
+      baseSolution:
+        'Monitor the Drive folder, auto-sort each invoice, extract the key fields, and append them to your Google Sheet ledger instantly.',
+      price: 'from CHF 1,000',
+      time: '1–2 days',
+      triggers: 'new PDF/image in Google Drive folder',
+      actions:
+        'detect new invoice, rename + file by vendor/month, OCR totals + due dates, append to Google Sheet, alert finance if data missing',
+      industryCopy: {
+        clinics: {
+          problem:
+            'Supplier invoices sit in Drive, so therapists miss payment deadlines and lose track of expenses.',
+          solution:
+            'Drop the invoice once, auto-sort it by vendor, capture the totals, and sync everything to your expense sheet automatically.'
+        },
+        dentists: {
+          problem:
+            'Dental supply invoices pile up in folders and bookkeeping falls behind.',
+          solution:
+            'As soon as finance uploads an invoice, file it into the right month, pull the amounts, and update your tracking sheet.'
+        },
+        construction: {
+          problem:
+            'Site managers upload invoices but no one tags projects or updates the cost log fast enough.',
+          solution:
+            'Detect new invoices, route them into project folders, extract line items, and push them into the cost ledger immediately.'
+        },
+        agencies: {
+          problem:
+            'Vendor invoices land in Drive and the ops team spends Fridays reconciling them manually.',
+          solution:
+            'Auto-review each invoice, grab the totals and due date, and append it to your AP tracker the moment it’s uploaded.'
+        },
+        ecommerce: {
+          problem:
+            'Inventory invoices stack up and cash-flow spreadsheets lag behind reality.',
+          solution:
+            'File every supplier invoice into the right archive, extract the key numbers, and refresh the inventory spend sheet instantly.'
+        }
+      }
     }
   ];
 
   packages: Package[] = [
     {
-      name: 'Diagnostic Sprint',
-      price: 'CHF 499',
-      description: '90-min audit, map 3 automations, implement 1 quick win.'
+      translationKey: 'carePlan',
+      hasDialog: true
     },
     {
-      name: 'Core Build',
-      price: 'CHF 1,300',
-      description: 'One end-to-end automation + docs + handover.'
-    },
-    {
-      name: 'Plus Build',
-      price: 'CHF 2,500',
-      description: 'Two automations + QA + staff training.'
-    },
-    {
-      name: 'Care Plan',
-      price: 'CHF 199–399/mo',
-      description: 'Uptime checks, small changes, logs, model/key management.'
+      translationKey: 'trio',
+      hasDialog: false
     }
+  ];
+
+  isPackageDialogOpen = false;
+  selectedPackage: Package | null = null;
+
+  readonly carePlanOptions = [
+    { translationKey: 'lite' },
+    { translationKey: 'pro' },
+    { translationKey: 'scale' },
   ];
 
   selectIndustry(industry: Industry): void {
     this.selectedIndustry = industry.value;
   }
 
-  getServiceProblem(service: AIService): string {
-    return (
-      service.industryCopy?.[this.selectedIndustry]?.problem ??
-      service.baseProblem
+  getServiceTitle(service: AIService): string {
+    return this.getTranslatedValue(
+      `${service.translationKey}.title`,
+      service.title
     );
+  }
+
+  getIndustryLabel(industry: Industry): string {
+    return this.getTranslatedValue(industry.labelKey, industry.label);
+  }
+
+  getServiceProblem(service: AIService): string {
+    const industryKey = `${service.translationKey}.industry.${this.selectedIndustry}.problem`;
+    const industryFallback =
+      service.industryCopy?.[this.selectedIndustry]?.problem ?? '';
+    const baseKey = `${service.translationKey}.problem`;
+
+    const industryTranslated = this.getTranslatedValue(
+      industryKey,
+      industryFallback
+    );
+
+    if (industryFallback || industryTranslated !== industryFallback) {
+      return industryTranslated;
+    }
+
+    return this.getTranslatedValue(baseKey, service.baseProblem);
   }
 
   getServiceSolution(service: AIService): string {
-    return (
-      service.industryCopy?.[this.selectedIndustry]?.solution ??
-      service.baseSolution
+    const industryKey = `${service.translationKey}.industry.${this.selectedIndustry}.solution`;
+    const industryFallback =
+      service.industryCopy?.[this.selectedIndustry]?.solution ?? '';
+    const baseKey = `${service.translationKey}.solution`;
+
+    const industryTranslated = this.getTranslatedValue(
+      industryKey,
+      industryFallback
     );
+
+    if (industryFallback || industryTranslated !== industryFallback) {
+      return industryTranslated;
+    }
+
+    return this.getTranslatedValue(baseKey, service.baseSolution);
+  }
+
+  ngOnInit(): void {
+    if (!this.isBrowser) {
+      return;
+    }
+
+    this.document.defaultView?.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'auto',
+    });
+  }
+
+  scrollToServices(): void {
+    if (!this.isBrowser) {
+      return;
+    }
+
+    const target = this.document.getElementById('ai-services');
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  openPackageDialog(pkg: Package): void {
+    this.selectedPackage = pkg;
+    this.isPackageDialogOpen = true;
+  }
+
+  closePackageDialog(): void {
+    this.isPackageDialogOpen = false;
+    this.selectedPackage = null;
+  }
+
+  @HostListener('document:keydown.escape')
+  handleEscape(): void {
+    if (this.isPackageDialogOpen) {
+      this.closePackageDialog();
+    }
   }
 
   get selectedIndustryLabel(): string {
-    return (
+    const labelKey =
       this.industries.find((item) => item.value === this.selectedIndustry)
-        ?.label ?? ''
-    );
+        ?.labelKey ?? '';
+
+    const fallback =
+      this.industries.find((item) => item.value === this.selectedIndustry)
+        ?.label ?? '';
+
+    return this.getTranslatedValue(labelKey, fallback);
+  }
+
+  private getTranslatedValue(key: string, fallback: string): string {
+    if (!key) {
+      return fallback;
+    }
+
+    const translated = this.translationService.instant(key);
+
+    if (translated && translated !== key) {
+      return translated;
+    }
+
+    return fallback;
+  }
+
+  ngOnDestroy(): void {
+    this.languageSubscription?.unsubscribe();
   }
 }
 

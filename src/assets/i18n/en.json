@@ -34,6 +34,24 @@
       "support": "Support Available"
     }
   },
+  "aiSolutionsArchive": {
+    "services": {
+      "linkedInContentCreator": {
+        "title": "LinkedIn Content Creator Automation",
+        "problem": "Showing up on LinkedIn daily means endless research, drafting, and scheduling work you never have time to do.",
+        "solution": "Add topics once, let the agent research, draft, and queue a polished post every day at 9 a.m.—no manual effort needed.",
+        "price": "from CHF 900",
+        "time": "1–2 days"
+      },
+      "invoiceIntakeLedger": {
+        "title": "Invoice Intake Ledger Automation",
+        "problem": "Invoices get dropped in shared folders, pile up unsorted, and nobody updates the finance tracker on time.",
+        "solution": "Monitor the Drive folder, auto-sort each invoice, extract the key fields, and append them to your Google Sheet ledger instantly.",
+        "price": "from CHF 1,000",
+        "time": "1–2 days"
+      }
+    }
+  },
   "about": {
     "badge": "About Lopes2tech",
     "title": "Passion, determination, results...",
@@ -175,7 +193,7 @@
         "placeholder": "Enter your full name"
       },
       "email": {
-        "label": "Email Address", 
+        "label": "Email Address",
         "placeholder": "Enter your email address"
       },
       "company": {
@@ -193,6 +211,35 @@
       "phone": "Phone",
       "email": "Email",
       "location": "Location"
+    }
+  },
+  "meetingForm": {
+    "labels": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Jane Doe",
+      "company": "Acme AG",
+      "email": "you@company.com",
+      "phone": "+41 78 123 45 67",
+      "message": "Project scope, current tools, desired outcome..."
+    },
+    "button": {
+      "submit": "Send message",
+      "sending": "Sending"
+    },
+    "status": {
+      "error": "We could not send your message automatically. Please try again or email us directly.",
+      "errorAlt": "Something went wrong sending your message. Please try again in a moment."
+    },
+    "validation": {
+      "required": "This field is required.",
+      "email": "Please enter a valid email.",
+      "minlength": "Please enter at least {{min}} characters."
     }
   },
   "pricing": {
@@ -437,6 +484,456 @@
       "required": "This field is required",
       "email": "Please enter a valid email address",
       "minlength": "This field must be at least {{min}} characters long"
+    }
+  },
+  "aiSolutions": {
+    "hero": {
+      "title": "AI Solutions",
+      "subtitle": "Drop Webflow. Sell fast AI automations that solve admin, lead capture, and follow-ups. Fixed scope. One-week delivery.",
+      "badge": "Hyper-focused automations",
+      "scroll": "See the services"
+    },
+    "filter": {
+      "label": "Select your industry"
+    },
+    "sectionTitle": "The AI services I can do for you",
+    "labels": {
+      "problem": "The Problem",
+      "solution": "The Solution",
+      "price": "Price:",
+      "time": "Time:"
+    },
+    "industries": {
+      "clinics": "Clinics & Therapists",
+      "dentists": "Dentists & Beauty",
+      "construction": "Construction & Trades",
+      "agencies": "Agencies",
+      "ecommerce": "E-commerce",
+      "realestate": "Real Estate",
+      "hospitality": "Hospitality",
+      "services": "Professional Services"
+    },
+    "packages": {
+      "title": "Your standard package menu",
+      "cards": {
+        "carePlan": {
+          "title": "Care Plan",
+          "price": "from CHF 149/mo",
+          "description": "Uptime checks, small changes, logs, model/key management.",
+          "more": "More info"
+        },
+        "trio": {
+          "title": "Trio discount",
+          "price": "20% off",
+          "description": "Bundle three automations and save."
+        }
+      },
+      "carePlan": {
+        "tiers": {
+          "lite": {
+            "title": "Lite",
+            "price": "CHF 149/mo",
+            "description": "Monitoring, logs, alerts, 1 hour of tweaks, response ≤1 business day. Overage CHF 120/h."
+          },
+          "pro": {
+            "title": "Pro",
+            "price": "CHF 299/mo",
+            "description": "Everything in Lite, 3 hours included, response ≤8 business hours, monthly report, minor copy/flow edits. Overage CHF 110/h."
+          },
+          "scale": {
+            "title": "Scale",
+            "price": "CHF 699/mo",
+            "description": "8 hours included, response ≤4 business hours, advanced tweaks, A/B tests, quarterly roadmap. Overage CHF 100/h."
+          }
+        }
+      }
+    },
+    "meeting": {
+      "title": "Lets book a meeting ASAP",
+      "description": "Tell me a bit about your company and what you need automated. I’ll respond the same day with a calendar link and next steps.",
+      "successTitle": "Thanks for reaching out!",
+      "successDescription": "I received your message and will reply shortly with a calendar link so we can speak ASAP."
+    },
+    "services": {
+      "note": "Heads-up: after implementation you’ll still cover any required subscription or API fees plus my CHF 49/month automation upkeep (already included if you choose a care plan). Fees may vary depending on the size of your company and tool usage.",
+      "leadCapture": {
+        "title": "Lead Capture Automation",
+        "problem": "New enquiries sit too long without a reply, so hot leads cool down.",
+        "solution": "Capture every lead automatically and message them instantly via WhatsApp, SMS, and email.",
+        "industry": {
+          "clinics": {
+            "problem": "Patients complete intake forms but no one replies quickly, so they book another clinic.",
+            "solution": "Send an immediate WhatsApp/SMS greeting, create the patient in your system, and prompt staff to book the consult."
+          },
+          "dentists": {
+            "problem": "Cosmetic enquiries wait hours for a call back and switch to a different practice.",
+            "solution": "Auto-send a friendly WhatsApp, drop the lead into your CRM, and alert the treatment coordinator instantly."
+          },
+          "construction": {
+            "problem": "Homeowners requesting quotes hear nothing for days, so they hire a different contractor.",
+            "solution": "Log the lead, text them a thanks with next steps, and notify your estimator straight away."
+          },
+          "agencies": {
+            "problem": "Campaign enquiries pile up in inboxes; by the time you answer, the budget moved elsewhere.",
+            "solution": "Enrich the lead, message them immediately, and assign the account manager with full UTM context."
+          },
+          "ecommerce": {
+            "problem": "Giveaway forms collect emails but nobody nudges shoppers to buy.",
+            "solution": "Send an instant WhatsApp/SMS offer and add the contact to your Klaviyo/CRM flow."
+          }
+        }
+      },
+      "bookingReminder": {
+        "title": "Booking Reminder Workflow",
+        "problem": "Clients forget their booking and simply do not show up.",
+        "solution": "Send smart reminders, easy reschedule links, and follow-ups when someone misses an appointment.",
+        "industry": {
+          "clinics": {
+            "problem": "Therapy clients miss sessions because they forget the time or link.",
+            "solution": "Send WhatsApp reminders, share telehealth links, and follow up to rebook no-shows automatically."
+          },
+          "dentists": {
+            "problem": "Patients skip hygiene appointments and hygiene chairs sit empty.",
+            "solution": "Send friendly reminders, offer one-click reschedules, and alert staff if someone still misses the slot."
+          },
+          "construction": {
+            "problem": "Site surveys get missed because homeowners forget the visit.",
+            "solution": "Send SMS reminders with map links and notify your crew if the homeowner cancels or no-shows."
+          },
+          "agencies": {
+            "problem": "Discovery calls are missed, wasting prep time.",
+            "solution": "Send branded reminders, calendar links, and automatic follow-ups to rebook prospects."
+          },
+          "ecommerce": {
+            "problem": "Virtual styling or demo calls often get skipped.",
+            "solution": "Send reminders with product teasers and quick reschedule options to keep shoppers engaged."
+          }
+        }
+      },
+      "quotesInvoices": {
+        "title": "Quotes & Invoices Automation",
+        "problem": "Manual quoting and invoicing slows cash flow and introduces mistakes.",
+        "solution": "Create and send invoices automatically when a deal is won, and reconcile payments without manual work.",
+        "industry": {
+          "clinics": {
+            "problem": "Therapy packages are sold but invoices are sent days later, delaying treatment start.",
+            "solution": "Generate the care plan invoice instantly, email it with payment links, and mark it paid automatically."
+          },
+          "dentists": {
+            "problem": "Cosmetic treatment plans need manual quotes and follow-up calls to take deposits.",
+            "solution": "Create the treatment estimate, email or text the PDF, and collect the deposit via Stripe immediately."
+          },
+          "construction": {
+            "problem": "Project bids, deposits, and progress invoices are tracked in spreadsheets.",
+            "solution": "Auto-build the estimate, send it with acceptance and payment links, and update your job costing tool."
+          },
+          "agencies": {
+            "problem": "Retainer invoices are sent late so revenue recognition slips.",
+            "solution": "Issue the invoice as soon as a deal is marked “won” and chase payment automatically."
+          },
+          "ecommerce": {
+            "problem": "Wholesale orders require manual pro-forma invoices and payment tracking.",
+            "solution": "Create and send the invoice automatically with online payment and sync the order status when paid."
+          }
+        }
+      },
+      "faqChatbot": {
+        "title": "FAQ Chatbot (Web & WhatsApp)",
+        "problem": "Customers keep asking the same questions and wait for slow replies.",
+        "solution": "Give them an AI chatbot that answers instantly, passes complex chats to humans, and logs leads.",
+        "industry": {
+          "clinics": {
+            "problem": "Patients ask about insurance, waitlists, and session types, filling up the phone lines.",
+            "solution": "Let the chatbot answer routine questions, share intake forms, and alert staff when a human touch is needed."
+          },
+          "dentists": {
+            "problem": "Patients message about whitening or implant pricing at all hours.",
+            "solution": "Provide instant answers, share before/after galleries, and book consultations when they are ready."
+          },
+          "construction": {
+            "problem": "Homeowners repeatedly ask about services, coverage areas, and permit steps.",
+            "solution": "Answer FAQs automatically, collect project details, and hand qualified leads to your sales team."
+          },
+          "agencies": {
+            "problem": "Prospects want to know minimum retainers, processes, and timelines before booking a call.",
+            "solution": "Deliver polished answers, share relevant case studies, and capture the lead directly into your CRM."
+          },
+          "ecommerce": {
+            "problem": "Shoppers ask about shipping, returns, and sizing and abandon carts while waiting.",
+            "solution": "Reply immediately, surface the right products, and escalate to a human when a sale is on the line."
+          }
+        }
+      },
+      "emailTriage": {
+        "title": "AI Email Triage Assistant",
+        "problem": "The support inbox is overflowing and nobody knows which email to answer first.",
+        "solution": "Classify, summarise, and label emails automatically, then draft the first reply for your team.",
+        "industry": {
+          "clinics": {
+            "problem": "Admins dig through inboxes for urgent patient messages and miss important updates.",
+            "solution": "Flag urgent clinical emails, summarise the rest, and suggest replies for quick approval."
+          },
+          "dentists": {
+            "problem": "Treatment enquiries, insurance queries, and lab updates all mix in one inbox.",
+            "solution": "Sort messages by urgency, draft friendly replies, and push tasks to your practice software."
+          },
+          "construction": {
+            "problem": "Jobsite updates, supplier quotes, and client approvals are buried in email threads.",
+            "solution": "Tag emails by project, create tasks in your PM tool, and highlight the critical ones for the PM."
+          },
+          "agencies": {
+            "problem": "Client requests and approvals are lost in shared inboxes.",
+            "solution": "Summarise each client email, prioritise urgent items, and create tickets in your task board."
+          },
+          "ecommerce": {
+            "problem": "Support@ is flooded with order questions and returns.",
+            "solution": "Categorise by topic, draft answer templates, and create support tickets for tricky cases."
+          }
+        }
+      },
+      "contractAutomation": {
+        "title": "Contract Automation Flow",
+        "problem": "Building contracts manually takes time and risks costly mistakes.",
+        "solution": "Generate the contract automatically, send it for e-signature, and file it where everyone can find it.",
+        "industry": {
+          "clinics": {
+            "problem": "Therapy agreements are built manually and often come back unsigned.",
+            "solution": "Generate tailored agreements instantly, send them for e-signature, and store them in the EMR."
+          },
+          "dentists": {
+            "problem": "Cosmetic consent forms are copied and pasted for each patient.",
+            "solution": "Fill the consent with patient details, send it for signature, and save it with the treatment plan."
+          },
+          "construction": {
+            "problem": "Project contracts are edited in Word each time, creating version chaos.",
+            "solution": "Merge client data, send for signature, and sync the signed contract to your job folder automatically."
+          },
+          "agencies": {
+            "problem": "Retainer agreements need legal review every time, delaying onboarding.",
+            "solution": "Create the contract from form inputs, route it for signing, and drop it into the client workspace."
+          },
+          "ecommerce": {
+            "problem": "Wholesale agreements and NDAs are handled manually and lost in email threads.",
+            "solution": "Auto-generate the document, collect signatures, and link it to the customer profile instantly."
+          }
+        }
+      },
+      "reputationBooster": {
+        "title": "Reputation Booster Automation",
+        "problem": "You only ask for reviews occasionally, so happy customers stay silent.",
+        "solution": "Request reviews automatically, celebrate the five-stars, and intercept the bad ones before they go public.",
+        "industry": {
+          "clinics": {
+            "problem": "Great patient experiences go unreviewed, so the clinic looks quiet online.",
+            "solution": "Ask for a review after each successful visit, publish five-stars, and alert staff to follow up on anything lower."
+          },
+          "dentists": {
+            "problem": "Smile makeover patients love the results but rarely leave feedback.",
+            "solution": "Send a personalised review request with photo reminders and escalate negative feedback internally."
+          },
+          "construction": {
+            "problem": "Completed projects don't turn into testimonials, so new clients waver.",
+            "solution": "Text the homeowner when the job closes, publish the five-star response, and open a ticket if it's below four."
+          },
+          "agencies": {
+            "problem": "Clients praise you privately but your Google profile looks empty.",
+            "solution": "Trigger review requests when campaigns launch successfully and route low scores to the account lead."
+          },
+          "ecommerce": {
+            "problem": "Happy shoppers don't leave reviews, so products look unproven.",
+            "solution": "Send requests after delivery, reward five-stars, and notify support if someone is unhappy."
+          }
+        }
+      },
+      "crmHygiene": {
+        "title": "CRM Data Hygiene Bot",
+        "problem": "Your CRM gets messy fast — duplicates, bad phone numbers, missing fields.",
+        "solution": "Run a nightly clean-up that merges duplicates, fixes data, and flags gaps for the team.",
+        "industry": {
+          "clinics": {
+            "problem": "Patient records are duplicated across forms, causing confusion during scheduling.",
+            "solution": "Merge duplicate patient records, clean contact info, and flag missing insurance details every night."
+          },
+          "dentists": {
+            "problem": "Prospective patient lists contain duplicates and outdated phone numbers.",
+            "solution": "Clean up the CRM daily so your front desk calls the right number with the right name."
+          },
+          "construction": {
+            "problem": "Multiple contacts for the same property clutter job pipelines.",
+            "solution": "Consolidate property records, normalise phone/address formats, and spot missing permits or budgets."
+          },
+          "agencies": {
+            "problem": "Leads appear multiple times with different UTM tags, confusing reporting.",
+            "solution": "Merge duplicates, keep tracking fields consistent, and highlight missing company data."
+          },
+          "ecommerce": {
+            "problem": "Customer profiles are duplicated across Shopify, Klaviyo, and the CRM.",
+            "solution": "Sync and dedupe customer data nightly so segmentation and messaging stay accurate."
+          }
+        }
+      },
+      "kpiReports": {
+        "title": "KPI Auto-Reports",
+        "problem": "Reporting takes hours of spreadsheet work, so nobody sees the numbers on time.",
+        "solution": "Pull data automatically, generate clear reports, and send insights to your team on schedule.",
+        "industry": {
+          "clinics": {
+            "problem": "You don't see weekly new patient counts or therapist utilisation until month-end.",
+            "solution": "Send a weekly report with new bookings, cancellations, and utilisation automatically to the team."
+          },
+          "dentists": {
+            "problem": "Production, collections, and chair time numbers are buried in practice software.",
+            "solution": "Email a dashboard each morning summarising production, case acceptance, and outstanding balances."
+          },
+          "construction": {
+            "problem": "Project managers manually gather job budgets vs. actuals for meetings.",
+            "solution": "Compile job margins, change orders, and cash flow into a daily digest and Slack it to leadership."
+          },
+          "agencies": {
+            "problem": "Campaign KPIs are in different ad platforms, so managers fly blind.",
+            "solution": "Aggregate ad spend, leads, and ROI, then send a plain-language summary to each account team."
+          },
+          "ecommerce": {
+            "problem": "Sales, returns, and CAC numbers live in separate tools.",
+            "solution": "Pull Shopify, Stripe, and ad platform data into one daily snapshot with actionable notes."
+          }
+        }
+      },
+      "whatsappFunnel": {
+        "title": "WhatsApp Lead Funnel",
+        "problem": "People click your WhatsApp link but the conversation stalls immediately.",
+        "solution": "Guide them through a scripted flow that collects details, delivers value, and books the next step.",
+        "industry": {
+          "clinics": {
+            "problem": "Event QR codes spark interest but leads don't fill in intake forms.",
+            "solution": "Walk the prospect through triage questions, send resources, and hand the lead to the front desk."
+          },
+          "dentists": {
+            "problem": "Smile campaign clicks go nowhere because nobody guides the chat.",
+            "solution": "Collect whitening or implant preferences, share before/after images, and book a consult automatically."
+          },
+          "construction": {
+            "problem": "Showroom visitors scan a QR but no one captures their project details.",
+            "solution": "Gather budget, timeline, and location, then schedule a site visit in one flow."
+          },
+          "agencies": {
+            "problem": "Meta ads drive prospects into WhatsApp but the conversation dies.",
+            "solution": "Qualify the lead with key questions, share creds, and slot them into the calendar instantly."
+          },
+          "ecommerce": {
+            "problem": "Whatsapp giveaways grow subscribers but rarely convert to sales.",
+            "solution": "Deliver the lead magnet, capture email + preferences, and send a promo code on autopilot."
+          }
+        }
+      },
+      "supportAssistant": {
+        "title": "Support Ticket Assistant",
+        "problem": "Agents dig through old conversations before they can even draft a reply.",
+        "solution": "Show the full history instantly and suggest the next reply so the team can respond in minutes.",
+        "industry": {
+          "clinics": {
+            "problem": "Care coordinators search through notes before answering patient questions.",
+            "solution": "Pull the patient’s history, summarise it, and suggest the next best response to the coordinator."
+          },
+          "dentists": {
+            "problem": "Front desk staff dig into charts before replying about treatment plans or lab cases.",
+            "solution": "Show past appointments and treatment notes and propose a polished response immediately."
+          },
+          "construction": {
+            "problem": "Project support teams search through emails to answer site questions.",
+            "solution": "Gather job context, surface the latest drawings, and draft the reply for the project manager."
+          },
+          "agencies": {
+            "problem": "Account managers review long email chains before responding to clients.",
+            "solution": "Summarise the thread, highlight open tasks, and draft a client-ready update automatically."
+          },
+          "ecommerce": {
+            "problem": "Support agents hunt for order history before answering each ticket.",
+            "solution": "Display the order timeline, past tickets, and a suggested reply in seconds."
+          }
+        }
+      },
+      "hrOnboarding": {
+        "title": "HR Onboarding Automation",
+        "problem": "New hires wait for accounts, paperwork, and equipment because onboarding is manual.",
+        "solution": "Kick off every onboarding task automatically so the new teammate is ready on day one.",
+        "industry": {
+          "clinics": {
+            "problem": "Therapists start without EMR logins or consent templates ready.",
+            "solution": "Create accounts, send policy packs, and assign onboarding tasks automatically after offer acceptance."
+          },
+          "dentists": {
+            "problem": "New hygienists arrive without system access or equipment basics.",
+            "solution": "Generate logins, schedule training, and share SOPs the moment the offer is signed."
+          },
+          "construction": {
+            "problem": "Field crews show up without safety credentials or project access.",
+            "solution": "Issue access badges, safety checklists, and onboarding tasks automatically before day one."
+          },
+          "agencies": {
+            "problem": "New account managers wait for tool access and client context.",
+            "solution": "Provision tools, share client documentation, and schedule intro calls automatically."
+          },
+          "ecommerce": {
+            "problem": "Warehouse hires start without system access or shift info.",
+            "solution": "Create system accounts, send training videos, and assign first-week tasks automatically."
+          }
+        }
+      },
+      "linkedinContent": {
+        "title": "LinkedIn Content Creator Automation",
+        "problem": "Showing up on LinkedIn daily means endless research, drafting, and scheduling work you never have time to do.",
+        "solution": "Add topics once, let the agent research, draft, and queue a polished post every day at 9 a.m.—no manual effort needed.",
+        "industry": {
+          "clinics": {
+            "problem": "Therapists want to share expertise on LinkedIn but researching and writing each post steals time from patient care.",
+            "solution": "Drop therapy topics into a list and receive researched, ready-to-post content publishing daily at 9 a.m. automatically."
+          },
+          "dentists": {
+            "problem": "Cosmetic dentists struggle to showcase case studies consistently because every post takes hours to prepare.",
+            "solution": "List the smile topics once and let the system research, draft, and schedule polished posts every morning."
+          },
+          "construction": {
+            "problem": "Project leaders rarely share wins on LinkedIn because researching and writing updates takes an afternoon.",
+            "solution": "Log the projects you want to highlight and wake up to daily, researched posts going live at 9 a.m."
+          },
+          "agencies": {
+            "problem": "Founders juggle client work and never find time to research, write, and publish daily thought-leadership posts.",
+            "solution": "Create a topic backlog and have the agent research, craft, and queue a polished post every morning without your involvement."
+          },
+          "ecommerce": {
+            "problem": "Brand owners draft LinkedIn stories manually so updates happen sporadically and research slips.",
+            "solution": "Log product story ideas once, then let the agent research, write, and auto-schedule engaging posts daily at 9 a.m."
+          }
+        }
+      },
+      "invoiceLedger": {
+        "title": "Invoice Intake Ledger Automation",
+        "problem": "Invoices get dropped in shared folders, pile up unsorted, and nobody updates the finance tracker on time.",
+        "solution": "Monitor the Drive folder, auto-sort each invoice, extract the key fields, and append them to your Google Sheet ledger instantly.",
+        "industry": {
+          "clinics": {
+            "problem": "Supplier invoices sit in Drive, so therapists miss payment deadlines and lose track of expenses.",
+            "solution": "Drop the invoice once, auto-sort it by vendor, capture the totals, and sync everything to your expense sheet automatically."
+          },
+          "dentists": {
+            "problem": "Dental supply invoices pile up in folders and bookkeeping falls behind.",
+            "solution": "As soon as finance uploads an invoice, file it into the right month, pull the amounts, and update your tracking sheet."
+          },
+          "construction": {
+            "problem": "Site managers upload invoices but no one tags projects or updates the cost log fast enough.",
+            "solution": "Detect new invoices, route them into project folders, extract line items, and push them into the cost ledger immediately."
+          },
+          "agencies": {
+            "problem": "Vendor invoices land in Drive and the ops team spends Fridays reconciling them manually.",
+            "solution": "Auto-review each invoice, grab the totals and due date, and append it to your AP tracker the moment it’s uploaded."
+          },
+          "ecommerce": {
+            "problem": "Inventory invoices stack up and cash-flow spreadsheets lag behind reality.",
+            "solution": "File every supplier invoice into the right archive, extract the key numbers, and refresh the inventory spend sheet instantly."
+          }
+        }
+      }
     }
   },
   "thankYou": {

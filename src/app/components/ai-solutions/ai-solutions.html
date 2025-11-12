@@ -1,84 +1,201 @@
 <div class="ai-solutions-container">
   <div class="ai-solutions-hero">
+    <app-ai-solutions-hero-animation class="hero-animation"></app-ai-solutions-hero-animation>
     <div class="hero-content">
-      <h1>AI Solutions</h1>
+      <h1>{{ 'aiSolutions.hero.title' | translate }}</h1>
       <p class="hero-subtitle">
-        Drop Webflow. Sell fast AI automations that solve admin, lead capture, and follow-ups. Fixed scope. One-week delivery.
+        {{ 'aiSolutions.hero.subtitle' | translate }}
       </p>
+
+      <button
+        type="button"
+        class="hero-scroll"
+        (click)="scrollToServices()"
+        [attr.aria-label]="'aiSolutions.hero.scroll' | translate">
+<!--         <span class="scroll-text">
+          {{ 'aiSolutions.hero.scroll' | translate }}
+        </span> -->
+        <span class="scroll-icon" aria-hidden="true"></span>
+      </button>
     </div>
   </div>
 
   <div class="ai-solutions-content">
+    <div class="ai-content-orbit" aria-hidden="true">
+      <div class="orbit-track orbit-track--one">
+        <div class="orbit-node orbit-node--primary"></div>
+      </div>
+      <div class="orbit-track orbit-track--two">
+        <div class="orbit-node orbit-node--secondary"></div>
+      </div>
+      <div class="orbit-track orbit-track--three">
+        <div class="orbit-node orbit-node--tertiary"></div>
+      </div>
+      <div class="orbit-glow orbit-glow--one"></div>
+      <div class="orbit-glow orbit-glow--two"></div>
+      <div class="floating-chip floating-chip--left"></div>
+      <div class="floating-chip floating-chip--right"></div>
+    </div>
     <div class="container">
       <div class="industry-filter">
-        <span class="filter-label">Select your industry</span>
+        <span class="filter-label">{{ 'aiSolutions.filter.label' | translate }}</span>
         <div class="industry-buttons">
-          <button
+        <button
             type="button"
             class="industry-button"
             *ngFor="let industry of industries"
             (click)="selectIndustry(industry)"
             [class.active]="industry.value === selectedIndustry">
-            {{ industry.label }}
+          {{ getIndustryLabel(industry) }}
           </button>
         </div>
       </div>
 
       <div class="section-header">
-        <h2>The AI services I can do for you</h2>
+        <h2>{{ 'aiSolutions.sectionTitle' | translate }}</h2>
       </div>
 
-      <div class="services-grid" [@industrySwitch]="selectedIndustry">
+      <div
+        class="services-grid"
+        id="ai-services"
+        [@industrySwitch]="selectedIndustry">
         <div class="service-card" *ngFor="let service of services">
           <div class="service-number">{{ service.id }}</div>
-          <h3 class="service-title">{{ service.title }}</h3>
+          <h3 class="service-title">{{ getServiceTitle(service) }}</h3>
           
           <div class="service-section">
-            <h4 class="section-label">The Problem</h4>
+            <h4 class="section-label">{{ 'aiSolutions.labels.problem' | translate }}</h4>
             <p class="service-problem">{{ getServiceProblem(service) }}</p>
           </div>
 
           <div class="service-section">
-            <h4 class="section-label">The Solution</h4>
+            <h4 class="section-label">{{ 'aiSolutions.labels.solution' | translate }}</h4>
             <p class="service-solution">{{ getServiceSolution(service) }}</p>
           </div>
 
           <div class="service-footer">
             <div class="price-badge">
-              <span class="price-label">Price:</span>
+              <span class="price-label">{{ 'aiSolutions.labels.price' | translate }}</span>
               <span class="price-value">{{ service.price }}</span>
             </div>
             <div class="time-badge">
-              <span class="time-label">Time:</span>
+              <span class="time-label">{{ 'aiSolutions.labels.time' | translate }}</span>
               <span class="time-value">{{ service.time }}</span>
             </div>
           </div>
         </div>
       </div>
 
+      <p class="services-note">
+        {{ 'aiSolutions.services.note' | translate }}
+      </p>
+
       <div class="packages-section">
         <div class="section-header">
-          <h2>Your standard package menu</h2>
+          <h2>{{ 'aiSolutions.packages.title' | translate }}</h2>
         </div>
 
-        <div class="packages-grid">
-          <div class="package-card" *ngFor="let pkg of packages">
-            <h3 class="package-name">{{ pkg.name }}</h3>
-            <div class="package-price">{{ pkg.price }}</div>
-            <p class="package-description">{{ pkg.description }}</p>
+      <div class="packages-grid">
+        <div
+          class="package-card"
+          *ngFor="let pkg of packages"
+          [class.care-plan-card]="pkg.translationKey === 'carePlan'"
+          [class.trio-card]="pkg.translationKey === 'trio'"
+          [attr.role]="pkg.hasDialog ? 'button' : null"
+          [attr.tabindex]="pkg.hasDialog ? 0 : null"
+          (click)="pkg.hasDialog && openPackageDialog(pkg)"
+          (keydown.enter)="pkg.hasDialog && openPackageDialog(pkg)"
+        >
+          <h3 class="package-name">
+            {{ ('aiSolutions.packages.cards.' + pkg.translationKey + '.title') | translate }}
+            @if (pkg.hasDialog) {
+              <span class="care-plan-more">
+                {{ 'aiSolutions.packages.cards.carePlan.more' | translate }}
+              </span>
+            }
+          </h3>
+          <div class="package-price">
+            {{ ('aiSolutions.packages.cards.' + pkg.translationKey + '.price') | translate }}
           </div>
+          <p class="package-description">
+            {{ ('aiSolutions.packages.cards.' + pkg.translationKey + '.description') | translate }}
+          </p>
         </div>
       </div>
 
       <app-meeting-section
         id="ai-meeting-form"
         [context]="'AI Solutions Page'"
-        title="Lets book a meeting ASAP"
-        description="Tell me a bit about your company and what you need automated. I’ll respond the same day with a calendar link and next steps."
-        successTitle="Thanks for reaching out!"
-        successDescription="I received your message and will reply shortly with a calendar link so we can speak ASAP.">
+        [title]="'aiSolutions.meeting.title' | translate"
+        [description]="'aiSolutions.meeting.description' | translate"
+        [successTitle]="'aiSolutions.meeting.successTitle' | translate"
+        [successDescription]="'aiSolutions.meeting.successDescription' | translate">
       </app-meeting-section>
     </div>
   </div>
+
+  @if (isPackageDialogOpen) {
+    <div
+      class="package-dialog-backdrop"
+      (click)="closePackageDialog()"
+      tabindex="-1"
+    >
+      <div
+        class="package-dialog"
+        role="dialog"
+        aria-modal="true"
+        (click)="$event.stopPropagation()"
+      >
+        <button
+          type="button"
+          class="package-dialog-close"
+          (click)="closePackageDialog()"
+          aria-label="Close dialog"
+        >
+          ×
+        </button>
+        <h3 class="package-dialog-title">
+          @if (selectedPackage) {
+            {{ ('aiSolutions.packages.cards.' + selectedPackage.translationKey + '.title') | translate }}
+          }
+        </h3>
+
+        @if (selectedPackage?.translationKey === 'carePlan') {
+          <div class="care-plan-grid">
+            <div
+              class="care-plan-tier"
+              *ngFor="let option of carePlanOptions"
+            >
+              <div class="care-plan-tier-header">
+                <span class="care-plan-tier-label">
+                  {{
+                    ('aiSolutions.packages.carePlan.tiers.'
+                      + option.translationKey
+                      + '.title') | translate
+                  }}
+                </span>
+                <span class="care-plan-tier-price">
+                  {{
+                    ('aiSolutions.packages.carePlan.tiers.'
+                      + option.translationKey
+                      + '.price') | translate
+                  }}
+                </span>
+              </div>
+              <p class="care-plan-tier-description">
+                {{
+                  ('aiSolutions.packages.carePlan.tiers.'
+                    + option.translationKey
+                    + '.description') | translate
+                }}
+              </p>
+            </div>
+          </div>
+        } @else {
+          <p class="package-dialog-body">Hello world</p>
+        }
+      </div>
+    </div>
+  }
 </div>
 
