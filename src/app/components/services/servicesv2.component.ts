@@ -53,6 +53,7 @@ export class ServicesV2Component implements AfterViewInit, OnDestroy {
 
   constructor(
     @Inject(PLATFORM_ID) platformId: Object,
+    private readonly hostRef: ElementRef<HTMLElement>,
     private readonly router: Router,
     private readonly renderer: Renderer2
   ) {
@@ -75,6 +76,8 @@ export class ServicesV2Component implements AfterViewInit, OnDestroy {
     if (!this.isBrowser) {
       return;
     }
+
+    this.renderer.addClass(this.hostRef.nativeElement, 'js-enabled');
 
     this.intersectionObserver = new IntersectionObserver(
       (entries) => {

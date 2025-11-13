@@ -25,7 +25,7 @@
     },
     "subtitle": "Let technology work for you. We automate your daily tasks so you can focus on what truly matters.",
     "cta": {
-      "primary": "Get Started",
+      "primary": "Schedule a free call NOW!",
       "secondary": "See How It Works"
     },
     "stats": {
@@ -173,6 +173,25 @@
         "description": "Custom software built specifically for your business needs. From desktop applications to mobile apps and specialized tools, we create software that solves your unique challenges and grows with your business.",
         "description_small": "Custom applications"
       }
+    },
+    "process": {
+      "title": "A clear path from idea to automation",
+      "subtitle": "We partner with you through three focused steps to deliver dependable results.",
+      "steps": {
+        "discovery": {
+          "title": "Discover & Align",
+          "description": "Schedule a free, quick call where we unpack your workflow, identify the pain points, and understand what a win looks like for you."
+        },
+        "proposal": {
+          "title": "Tailored Proposal",
+          "description": "I review every detail you shared and come back with a concrete plan outlining timeline, scope, and pricing so you know exactly what to expect."
+        },
+        "delivery": {
+          "title": "Implementation & Launch",
+          "description": "Once approved, I build, test, and deploy the automation, keeping you in the loop until everything is delivered and running smoothly."
+        }
+      },
+      "cta": "Schedule your free call now"
     }
   },
   "contact": {

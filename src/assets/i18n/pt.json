@@ -14,12 +14,12 @@
   "hero": {
     "badge": "✨ Automação Simplificada",
     "title": {
-      "line1": "Simplifique",
-      "line2": "sua vida"
+      "line1": "Simplifica",
+      "line2": "a tua vida"
     },
-    "subtitle": "Deixe a tecnologia trabalhar para si. Automatizamos as suas tarefas diárias para que possa focar-se no que realmente importa.",
+    "subtitle": "Deixa a tecnologia trabalhar para ti. Automatizamos as tuas tarefas diárias para que possas focar-te no que realmente importa.",
     "cta": {
-      "primary": "Começar",
+      "primary": "Marca uma chamada gratuita AGORA!",
       "secondary": "Ver Como Funciona"
     },
     "stats": {
@@ -112,25 +112,44 @@
     }
   },
   "servicesv2": {
-    "title": "Os Nossos Serviços Principais",
-    "subtitle": "Soluções simples para as necessidades do seu negócio",
+    "title": "Os meus Serviços Principais",
+    "subtitle": "Soluções simples para as necessidades do teu negócio",
     "badge": "Mais info",
     "items": {
       "ai": {
         "title": "Soluções de IA",
-        "description": "Criamos sistemas inteligentes que trabalham para si. Desde chatbots que respondem a perguntas de clientes até automação que gere tarefas repetitivas, as nossas soluções de IA poupam-lhe tempo e melhoram a eficiência do seu negócio.",
+        "description": "Criamos sistemas inteligentes que trabalham para ti. Desde chatbots que respondem a perguntas de clientes até automação que gere tarefas repetitivas, as nossas soluções de IA poupam-lhe tempo e melhoram a eficiência do seu negócio.",
         "description_small": "Sistemas de automação inteligente"
       },
       "websites": {
         "title": "Websites",
-        "description": "Websites bonitos e rápidos que funcionam em todos os dispositivos. Seja um website empresarial simples, uma loja online, ou uma aplicação web personalizada, construímos sites modernos que o ajudam a alcançar mais clientes.",
+        "description": "Websites de uma beldade rara e rápidos que funcionam em todos os dispositivos. Seja um website empresarial simples, uma loja online, ou uma aplicação web personalizada, construímos sites modernos que o ajudam a alcançar mais clientes.",
         "description_small": "Soluções web modernas"
       },
       "software": {
         "title": "Software",
-        "description": "Software personalizado construído especificamente para as necessidades do seu negócio. Desde aplicações desktop a aplicações móveis e ferramentas especializadas, criamos software que resolve os seus desafios únicos e cresce com o seu negócio.",
+        "description": "Software personalizado construído especificamente para as necessidades do teu negócio. Desde aplicações desktop a aplicações móveis e ferramentas especializadas, criamos software que resolve os seus desafios únicos e cresce com o seu negócio.",
         "description_small": "Aplicações personalizadas"
       }
+    },
+    "process": {
+      "title": "Da ideia à automação sem surpresas",
+      "subtitle": "Acompanhamos você em três passos para entregar resultados de confiança.",
+      "steps": {
+        "discovery": {
+          "title": "Descoberta & Alinhamento",
+          "description": "Agende uma chamada gratuita e rápida para entendermos o seu fluxo de trabalho, os pontos de dor e o que significa sucesso para a sua equipa."
+        },
+        "proposal": {
+          "title": "Proposta Personalizada",
+          "description": "Analiso todas as informações e apresento um plano concreto com prazo, escopo e investimento, para que saiba exatamente o próximo passo."
+        },
+        "delivery": {
+          "title": "Implementação & Entrega",
+          "description": "Após a aprovação, construo, testo e implemento a automação, mantendo-o informado até que tudo esteja entregue e a funcionar sem fricção."
+        }
+      },
+      "cta": "Agende a sua chamada gratuita agora"
     }
   },
   "aiSolutions": {

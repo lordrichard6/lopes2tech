@@ -58,8 +58,8 @@
   -webkit-appearance: none;
   font: inherit;
   line-height: inherit;
-  opacity: 0;
-  transform: translateY(32px);
+  opacity: 1;
+  transform: none;
   transition:
     opacity 0.6s ease,
     transform 0.6s cubic-bezier(0.19, 1, 0.22, 1),
@@ -101,7 +101,7 @@
   }
 }
 
-.service-card.is-visible {
+.servicesv2.js-enabled .service-card.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -129,6 +129,11 @@
 .service-card:hover .service-badge {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+.servicesv2.js-enabled .service-card {
+  opacity: 0;
+  transform: translateY(32px);
 }
 
 .service-icon {
@@ -162,6 +167,157 @@
   color: var(--text-light);
   line-height: 1.7;
   font-size: 0.95rem;
+}
+
+.services-roadmap {
+  margin-top: 5rem;
+  background: linear-gradient(135deg, rgba(111, 209, 237, 0.12), rgba(14, 116, 144, 0.08));
+  border: 1px solid rgba(14, 116, 144, 0.2);
+  border-radius: 16px;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(111, 209, 237, 0.3), transparent 55%);
+    pointer-events: none;
+  }
+}
+
+.roadmap-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.roadmap-summary {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+
+.roadmap-steps {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.roadmap-step {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 15px 30px rgba(14, 116, 144, 0.12);
+  border: 1px solid rgba(14, 116, 144, 0.15);
+  max-width: 320px;
+  flex: 1 1 280px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -1.5rem;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'%3E%3Cpath fill='%230e7490' d='M13.172 12L8.222 7.05l1.414-1.414L16 12l-6.364 6.364l-1.414-1.414z'/%3E%3C/svg%3E") no-repeat center;
+    opacity: 0.6;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.step-marker {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gradient);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px rgba(14, 116, 144, 0.25);
+}
+
+.step-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+}
+
+.step-content p {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 0.98rem;
+  margin: 0;
+}
+
+.roadmap-cta {
+  margin-top: 3rem;
+  text-align: center;
+
+  .btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.25rem;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    overflow: hidden;
+    background: var(--gradient);
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(var(--ocean-cyan), 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    &:hover::before {
+      left: 100%;
+    }
+
+    i {
+      font-size: 0.95rem;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(var(--ocean-cyan), 0.4);
+    }
+
+    &:hover i {
+      transform: translateX(5px);
+    }
+  }
 }
 
 // Responsive Design
@@ -198,5 +354,28 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
     pointer-events: auto;
+  }
+
+  .services-roadmap {
+    padding: 2.25rem 1.75rem;
+  }
+
+  .roadmap-steps {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .roadmap-step {
+    max-width: 100%;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .roadmap-cta .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
