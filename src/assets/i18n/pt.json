@@ -1014,6 +1014,13 @@
       "message": "Cada contribuição ajuda-me a manter o TheraFlow acessível e com preços justos para terapeutas em todo o mundo. O seu apoio permite-me focar em construir a melhor ferramenta possível sem comprometer a qualidade ou os preços. Juntos, estamos a tornar a gestão de consultórios mais simples para profissionais de saúde em toda a parte!"
     }
   },
+  "unsubscribed": {
+    "privacyBadge": "A sua privacidade é importante",
+    "headline": "Cancelou a subscrição",
+    "message": "Cancelou a subscrição dos emails da Lopes2Tech. Não receberá mais emails meus.",
+    "secondary": "Antes de sair, visite o meu website",
+    "cta": "Visitar a Lopes2Tech"
+  },
   "footer": {
     "company": "lopes2tech",
     "description": "Simplificando a vida através de soluções de automação inteligente.",

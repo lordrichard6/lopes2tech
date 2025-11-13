@@ -1043,6 +1043,13 @@
       "message": "Every contribution helps me keep TheraFlow affordable and accessible for therapists worldwide. Your support allows me to focus on building the best possible tool without compromising on quality or pricing. Together, we're making practice management simpler for healthcare professionals everywhere!"
     }
   },
+  "unsubscribed": {
+    "privacyBadge": "Your privacy is important",
+    "headline": "You're unsubscribed",
+    "message": "You have unsubscribed from Lopes2Tech emails. You won't receive any more emails from me.",
+    "secondary": "Before you leave, check my website",
+    "cta": "Explore Lopes2Tech"
+  },
   "footer": {
     "company": "lopes2tech",
     "description": "Simplifying life through intelligent automation solutions.",

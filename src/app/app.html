@@ -1,4 +1,8 @@
-<app-header></app-header>
+<ng-container *ngIf="!minimalLayout">
+  <app-header></app-header>
+</ng-container>
 <router-outlet />
-<app-footer></app-footer>
-<app-cookie-consent></app-cookie-consent>
+<ng-container *ngIf="!minimalLayout">
+  <app-footer></app-footer>
+  <app-cookie-consent></app-cookie-consent>
+</ng-container>

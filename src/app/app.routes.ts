@@ -22,6 +22,11 @@ export const routes: Routes = [
     loadComponent: () => import('./components/ai-solutions/ai-solutions').then(m => m.AISolutionsComponent),
     canActivate: [seoGuard]
   },
+  {
+    path: 'unsubscribed',
+    loadComponent: () => import('./components/unsubscribed/unsubscribed').then(m => m.UnsubscribedComponent),
+    canActivate: [seoGuard]
+  },
   { 
     path: 'impressum', 
     loadComponent: () => import('./components/impressum/impressum').then(m => m.ImpressumComponent),
