@@ -61,7 +61,7 @@
         "description": "Steigern Sie die Effizienz durch Automatisierung Ihrer täglichen Abläufe. Wir entwickeln intelligente Systeme, die manuelle Aufgaben reduzieren, Fehler minimieren und wertvolle Ressourcen freisetzen."
       },
       "web": {
-        "title": "Webentwicklung", 
+        "title": "Webentwicklung",
         "description": "Wir erstellen moderne, responsive Websites und Webanwendungen, die nicht nur Ihre Marke präsentieren, sondern auch Automatisierungsfunktionen integrieren, um die Benutzererfahrung und operative Effizienz zu verbessern."
       },
       "app": {
@@ -185,7 +185,7 @@
     "features": {
       "title": "Warum mich wählen",
       "swiss": "Extrem wettbewerbsfähige Preise",
-      "technology": "Expertise in modernster Technologie", 
+      "technology": "Expertise in modernster Technologie",
       "service": "Personalisierter Service-Ansatz",
       "delivery": "End-to-End Lösungslieferung"
     },
@@ -590,7 +590,7 @@
         "firstNamePlaceholder": "Max",
         "lastName": "Nachname",
         "lastNamePlaceholder": "Mustermann",
-        "company": "Unternehmen", 
+        "company": "Unternehmen",
         "companyPlaceholder": "Ihr Firmenname (optional)",
         "email": "E-Mail-Adresse",
         "emailPlaceholder": "ihre.email@unternehmen.com",
@@ -689,382 +689,199 @@
       "successDescription": "Ich habe Ihre Nachricht erhalten und sende Ihnen in Kürze einen Kalender-Link, damit wir schnell sprechen können."
     },
     "services": {
-      "note": "Hinweis: Nach der Implementierung übernehmen Sie weiterhin die erforderlichen Abo- oder API-Gebühren zuzüglich meiner Automationspauschale von CHF 49 pro Monat (bereits im Preis eines Care-Plans enthalten). Die Gebühren können je nach Unternehmensgröße und Nutzung der Tools variieren.",
-      "leadCapture": {
-        "title": "Lead-Erfassung automatisieren",
-        "problem": "Neue Anfragen bleiben zu lange unbeantwortet und warme Leads kühlen ab.",
-        "solution": "Erfassen Sie jeden Lead automatisch und versenden Sie sofort WhatsApp-, SMS- oder E-Mail-Nachrichten.",
+      "note": "Hinweis: Nach dem Go-live tragen Sie weiterhin nötige Abos oder API-Gebühren sowie meinen Wartungsplan von 49 CHF/Monat (im Care Plan bereits enthalten). Die Beträge variieren je nach Unternehmensgröße und Tool-Nutzung.",
+      "customerSupportAgent": {
+        "title": "KI-Kundensupport-Agent",
+        "problem": "Support-Teams versinken in sich wiederholenden Tickets, Kunden warten stundenlang auf Basics und brechen Käufe oder Anrufe ab.",
+        "solution": "Starten Sie einen KI-Agenten, der FAQs über Chat, E-Mail und WhatsApp beantwortet, Sonderfälle eskaliert und jede Interaktion protokolliert.",
         "industry": {
           "clinics": {
-            "problem": "Patient:innen füllen Intake-Formulare aus, doch niemand antwortet schnell – sie buchen bei einer anderen Praxis.",
-            "solution": "Versenden Sie umgehend eine WhatsApp/SMS-Begrüßung, legen Sie den Patienten im System an und erinnern Sie das Team an die Terminbuchung."
+            "problem": "Patienten wollen Versicherungs- oder Termininfos, während die Rezeption ständig telefoniert.",
+            "solution": "Der Agent beantwortet Intake-, Versicherungs- und Vorbereitungsfragen sofort und leitet nur heikle Fälle an das Team weiter."
           },
           "dentists": {
-            "problem": "Ästhetik-Anfragen warten stundenlang auf einen Rückruf und wechseln zur Konkurrenz.",
-            "solution": "Senden Sie automatisch eine freundliche WhatsApp, legen Sie den Lead im CRM ab und informieren Sie sofort die Behandlungskoordination."
+            "problem": "Fragen zu Smile-Treatments stapeln sich über Nacht, Interessenten warten bis Öffnungszeiten und springen ab.",
+            "solution": "Der Agent nennt Zeitpläne, Finanzierung und bucht Termine, während er das Team informiert, wenn ein Mensch gebraucht wird."
           },
           "construction": {
-            "problem": "Hausbesitzer erhalten tagelang keine Rückmeldung auf Angebotsanfragen und wählen einen anderen Anbieter.",
-            "solution": "Protokollieren Sie den Lead, bedanken Sie sich per SMS mit nächsten Schritten und benachrichtigen Sie sofort Ihren Kalkulator."
+            "problem": "Hauseigentümer fragen nach Genehmigungen, Zugang oder Zahlungen, doch nach Feierabend liest niemand das Shared-Postfach.",
+            "solution": "Ein automatischer Koordinator beantwortet Projekt-FAQs, sammelt fehlende Infos und eskaliert nur an den Bauleiter."
           },
           "agencies": {
-            "problem": "Kampagnen-Anfragen stapeln sich im Posteingang; bis zur Antwort ist das Budget weitergezogen.",
-            "solution": "Anreichern, sofort anschreiben und den Account Manager mit vollständigem UTM-Kontext zuweisen."
+            "problem": "Kunden eröffnen Tickets für Reporting, Scope oder Rechnungen und Slack/E-Mail werden chaotisch.",
+            "solution": "Setzen Sie einen KI-Concierge ein, der Tickets triagiert, Playbooks liefert und den richtigen Strategen einbindet."
           },
           "ecommerce": {
-            "problem": "Gewinnspiel-Formulare sammeln E-Mails, aber niemand erinnert die Teilnehmer an den Kauf.",
-            "solution": "Versenden Sie ein sofortiges WhatsApp/SMS-Angebot und fügen Sie den Kontakt direkt Ihrer Klaviyo/CRM-Automation hinzu."
+            "problem": "Fragen zu Bestellungen und Retouren überrollen das Support-Team, Antworten dauern und Rückerstattungen steigen.",
+            "solution": "Der Agent prüft Bestellungen, verarbeitet Retouren und gibt komplexe VIP-Fälle mit Kontext an Mitarbeitende ab."
+          },
+          "realestate": {
+            "problem": "Käufer und Mieter fragen nach Objekten, Besichtigungen oder Dokumenten und erhalten selten schnelle Antworten.",
+            "solution": "Leiten Sie sie an einen KI-Concierge weiter, der Verfügbarkeiten klärt, Termine bucht und heiße Leads an Makler eskaliert."
+          },
+          "hospitality": {
+            "problem": "Gäste bombardieren WhatsApp und E-Mail mit Upgrade- oder Transferwünschen, während der Concierge-Schalter ausgelastet ist.",
+            "solution": "Ein digitaler Concierge bearbeitet Routineanfragen rund um die Uhr und pingt das Team nur bei Vor-Ort-Bedarf."
+          },
+          "services": {
+            "problem": "Beratungen sammeln Onboarding-Fragen, Vertragswünsche und Projektupdates in einem Postfach.",
+            "solution": "Ein KI-Koordinator liefert SOPs, fordert fehlende Unterlagen an und leitet komplexe Fälle an den passenden Consultant weiter."
           }
         }
       },
-      "bookingReminder": {
-        "title": "Termin-Erinnerungsworkflow",
-        "problem": "Kund:innen vergessen Termine und erscheinen einfach nicht.",
-        "solution": "Versenden Sie smarte Erinnerungen, einfache Umbuchungslinks und Follow-ups für No-Shows.",
+      "salesOutreachAgent": {
+        "title": "KI Sales & Outreach Agent",
+        "problem": "Kalter Vertrieb stockt, weil niemand Zeit hat, Leads zu recherchieren, E-Mails zu personalisieren und konsequent nachzufassen.",
+        "solution": "Setzen Sie einen KI-SDR ein, der Leads anreichert, personalisierte Sequenzen schreibt, kanalübergreifend versendet und automatisch Termine bucht.",
         "industry": {
           "clinics": {
-            "problem": "Therapie-Klient:innen verpassen Sitzungen, weil Zeit oder Link vergessen werden.",
-            "solution": "WhatsApp-Erinnerungen, Telehealth-Links teilen und No-Shows automatisch zum Neubuchen anstupsen."
+            "problem": "Kliniken verlassen sich auf Empfehlungen und reagieren nicht strukturiert auf Corporate-Wellness-Leads.",
+            "solution": "Der SDR recherchiert HR-Kontakte, personalisiert Wellness-Pitches und plant Discovery-Calls eigenständig."
           },
           "dentists": {
-            "problem": "Prophylaxe-Termine bleiben leer, weil Patient:innen sie vergessen.",
-            "solution": "Freundliche Erinnerungen, Ein-Klick-Umbuchung und Benachrichtigung des Teams bei No-Shows."
+            "problem": "Interessenten für Smile-Makeovers erhalten kein konsistentes Nurturing und wechseln zur Konkurrenz.",
+            "solution": "Der Agent versendet edukative Sequenzen, zeigt Cases und verfolgt Anzahlungen, während alles im CRM landet."
           },
           "construction": {
-            "problem": "Ortstermine platzen, weil Hausbesitzer den Besuch vergessen.",
-            "solution": "SMS-Erinnerung mit Kartenlink senden und das Team informieren, falls abgesagt oder niemand antrifft."
+            "problem": "Kalkulatoren jonglieren Angebote und schaffen kein individuelles Outreach zu neuen Bauträgern.",
+            "solution": "Der Agent beobachtet Ausschreibungen, reichert Entscheider an und verschickt markenkonsistente Follow-ups, die Besichtigungen sichern."
           },
           "agencies": {
-            "problem": "Discovery Calls werden verpasst und vorbereitete Arbeit verpufft.",
-            "solution": "Gebrandete Erinnerungen, Kalenderlinks und automatische Follow-ups zum Neubuchen versenden."
+            "problem": "Decks werden heruntergeladen, doch niemand führt Multi-Touch-Follow-ups über E-Mail und LinkedIn.",
+            "solution": "Der SDR segmentiert ICPs, baut Sequenzen mit Case Studies und bucht qualifizierte Erstgespräche für die Partner."
           },
           "ecommerce": {
-            "problem": "Virtuelle Styling- oder Demo-Calls werden häufig übersprungen.",
-            "solution": "Mit Produkt-Teasern erinnern und einfache Umbuchungsoptionen anbieten, damit Interessenten aktiv bleiben."
+            "problem": "Wholesale-Partner zeigen Interesse, aber die Marke schafft keinen personalisierten Outreach.",
+            "solution": "Automatisieren Sie Recherche, individuelle Pitches und Reorder-Erinnerungen, damit das B2B-Geschäft ohne neues Team wächst."
+          },
+          "realestate": {
+            "problem": "Bauträger und Käufer fordern Exposés an, doch Makler setzen auf manuelle Nachfassaktionen und verlieren Tempo.",
+            "solution": "Der SDR nurtured Leads mit passenden Vergleichen, plant Besichtigungen und hält Makler informiert."
+          },
+          "hospitality": {
+            "problem": "Corporate-Event-Leads bleiben liegen, weil das Sales-Team vor Ort ausgelastet ist.",
+            "solution": "Der Agent recherchiert Planer, versendet zugeschnittene Angebote und blockt Termine im Kalender des Event-Teams."
+          },
+          "services": {
+            "problem": "Professionelle Dienstleistungen vertrauen auf Empfehlungen und senden generisches Outbound, wodurch Quoten niedrig bleiben.",
+            "solution": "Mit KI-gestützter Recherche und Sequenzen wird die Spezialisierung sichtbar und qualifizierte Beratungen entstehen."
           }
         }
       },
-      "quotesInvoices": {
-        "title": "Angebots- & Rechnungsautomatisierung",
-        "problem": "Manuelle Angebote und Rechnungen bremsen den Cashflow und verursachen Fehler.",
-        "solution": "Erstellen und versenden Sie Rechnungen automatisch, sobald ein Deal gewonnen ist, und stimmen Sie Zahlungen ohne Handarbeit ab.",
+      "voiceAgent": {
+        "title": "KI-Sprachagent",
+        "problem": "Telefonleitungen sind überlastet und Anrufer legen auf, bevor jemand abnimmt – Buchungen und Zufriedenheit sinken.",
+        "solution": "Implementieren Sie einen KI-Sprachagenten, der Anrufer begrüßt, qualifiziert, weiterleitet oder Termine bucht und jede Interaktion im CRM speichert.",
         "industry": {
           "clinics": {
-            "problem": "Therapie-Pakete werden verkauft, aber Rechnungen gehen erst Tage später raus – der Behandlungsstart verzögert sich.",
-            "solution": "Sofort Rechnungen erzeugen, mit Zahlungslink verschicken und Zahlungseingänge automatisch verbuchen."
+            "problem": "Patienten rufen zum Umbuchen oder für Vorabfragen an und hängen lange in der Warteschleife.",
+            "solution": "Der Agent bestätigt Identität, gibt Hinweise und vergibt Slots, während dringende Fälle ans Team gehen."
           },
           "dentists": {
-            "problem": "Kosmetische Behandlungen erfordern manuell erstellte Kostenvoranschläge und Telefonate für Anzahlungen.",
-            "solution": "Behandlungsangebote generieren, per E-Mail/SMS verschicken und Anzahlungen direkt via Stripe einziehen."
+            "problem": "Wertvolle Smile-Leads rufen nach Feierabend an und erreichen keine Behandlungskoordination.",
+            "solution": "Der Sprachbot qualifiziert Behandlungen, sammelt Fotos und reserviert Beratungen, bevor er an den Zahnarzt weitergibt."
           },
           "construction": {
-            "problem": "Projektangebote, Anzahlungen und Abschlagsrechnungen werden in Tabellen geführt.",
-            "solution": "Automatisch Angebote erzeugen, mit Annahme- und Zahlungslink versenden und die Projektkalkulation aktualisieren."
+            "problem": "Teams und Kunden fragen per Telefon nach Baustatus oder Lieferfenstern, doch das Büro kommt nicht hinterher.",
+            "solution": "Der Agent protokolliert Tickets, nennt Liefer-ETAs und eskaliert Notfälle direkt an den Projektleiter."
           },
           "agencies": {
-            "problem": "Retainer-Rechnungen werden zu spät verschickt, wodurch Erlöse wegbrechen.",
-            "solution": "Rechnung sofort nach Status \"Gewonnen\" erstellen und die Zahlung automatisch nachverfolgen."
+            "problem": "Prospects rufen wegen Angeboten oder Kampagnenänderungen an, während das Team in Meetings sitzt.",
+            "solution": "Ein KI-Hotline leitet VIPs, protokolliert Wünsche und informiert sofort den Account Lead."
           },
           "ecommerce": {
-            "problem": "Großhandelsbestellungen benötigen manuelle Proforma-Rechnungen und händisches Tracking.",
-            "solution": "Rechnungen automatisch erstellen, online bezahlen lassen und den Auftragsstatus beim Zahlungseingang synchronisieren."
+            "problem": "Kleine Support-Teams können Bestell- oder Retourenanrufe nicht schnell beantworten und verlieren Kunden.",
+            "solution": "Der Sprachagent ruft Bestellungen ab, verarbeitet Umtausch und übergibt heikle Billing-Fälle an Menschen."
+          },
+          "realestate": {
+            "problem": "Objektanfragen treffen rund um die Uhr ein, aber Makler können nicht jeden Anruf annehmen.",
+            "solution": "Der Voice-Concierge qualifiziert Käufer vor, vereinbart Besichtigungen und sendet automatische Bestätigungen."
+          },
+          "hospitality": {
+            "problem": "Rezeptionen erhalten gleichzeitig Upgrade-, Transfer- und Amenity-Wünsche.",
+            "solution": "Ein Sprach-Concierge erledigt Standardanfragen und leitet VIPs oder Notfälle an das Team."
+          },
+          "services": {
+            "problem": "Berater oder Kanzleien verpassen Anrufe von Interessenten nach Büroschluss.",
+            "solution": "Der Agent sammelt Kontext, weist ihn dem richtigen Partner zu und bucht dringende Gespräche ein."
           }
         }
       },
-      "faqChatbot": {
-        "title": "FAQ-Chatbot (Web & WhatsApp)",
-        "problem": "Kund:innen stellen immer wieder die gleichen Fragen und warten auf langsame Antworten.",
-        "solution": "Ein KI-Chatbot beantwortet sofort, übergibt komplexe Anliegen an Menschen und protokolliert Leads.",
+      "knowledgeBaseAgent": {
+        "title": "KI-Wissensdatenbank & internes Helpdesk",
+        "problem": "Teams verschwenden Stunden damit, Dokumente, SOPs und Tickets zu durchsuchen, um immer dieselben Fragen zu beantworten.",
+        "solution": "Liefern Sie einen RAG-Agenten, der Notion, Drive, CRM und Tickets indexiert und geprüfte Antworten in Sekunden liefert.",
         "industry": {
           "clinics": {
-            "problem": "Patient:innen fragen nach Versicherung, Warteliste und Angeboten – die Telefonleitungen sind blockiert.",
-            "solution": "Der Chatbot beantwortet Standards, teilt Intake-Formulare und benachrichtigt das Team bei Beratungsbedarf."
+            "problem": "Therapeuten und Admins wühlen manuell in SOPs und Patientenrichtlinien und Entscheidungen verzögern sich.",
+            "solution": "Stellen Sie einen datenschutzkonformen Assistenten bereit, der Protokolle, Intake-Anforderungen und Eskalationspfade sofort liefert."
           },
           "dentists": {
-            "problem": "Patient:innen schreiben rund um die Uhr zu Bleaching- oder Implantatpreisen.",
-            "solution": "Sofortige Antworten liefern, Vorher/Nachher-Galerien teilen und bei echter Kaufabsicht Termine buchen."
+            "problem": "Neue Prophylaxe-Teams finden Behandlungsleitfäden oder Versicherungsregeln nicht und der Inhaber beantwortet alles.",
+            "solution": "Bündeln Sie Einverständnisse, Laborabläufe und Abrechnungs-FAQs in einem sicheren Bot für jede Behandlungseinheit."
           },
           "construction": {
-            "problem": "Hausbesitzer fragen ständig nach Leistungen, Regionen oder Genehmigungen.",
-            "solution": "FAQs automatisch beantworten, Projektdaten erfassen und qualifizierte Leads an den Vertrieb weitergeben."
+            "problem": "Bauleiter brauchen Sicherheitsunterlagen, Genehmigungen oder Change-Order-Prozesse und verlieren Zeit im SharePoint.",
+            "solution": "Bieten Sie ein Baustellen-Gehirn, das Codes, Sicherheit und Lieferantenfragen mobil beantwortet."
           },
           "agencies": {
-            "problem": "Interessenten wollen Retainer, Abläufe und Timings kennen, bevor sie einen Call buchen.",
-            "solution": "Polierte Antworten liefern, passende Case Studies teilen und Leads direkt im CRM erfassen."
+            "problem": "Strategen suchen Playbooks, Kunden-Decks oder historische Ergebnisse und verlieren Onboarding-Zeit.",
+            "solution": "Teams fragen Kampagnen-SOPs, Brand-Guidelines und Performance-Daten direkt in Slack mit Quellen an."
           },
           "ecommerce": {
-            "problem": "Shopper fragen nach Versand, Retouren oder Größen und geben beim Warten den Kauf auf.",
-            "solution": "Sofort reagieren, passende Produkte vorschlagen und bei Kaufabschluss an das Team übergeben."
+            "problem": "Ops und Support suchen Versandregeln oder Promo-Bedingungen in Notion und liefern uneinheitliche Antworten.",
+            "solution": "Ein durchsuchbares Wissenshirn beantwortet Fulfillment-, CX- und Finance-Policies mit Referenzen."
+          },
+          "realestate": {
+            "problem": "Makler brauchen unterwegs Compliance-Dokumente, Vermieterregeln und Vertragsvorlagen.",
+            "solution": "Ein Brokerage-Assistent stellt Formulare, Checklisten und rechtliche Hinweise on-demand bereit."
+          },
+          "hospitality": {
+            "problem": "Hotelteams jonglieren SOP-Ordner für Housekeeping, F&B und Recovery und Trainings dauern Wochen.",
+            "solution": "Ein mehrsprachiger, mobiler Bot beantwortet SOP- und Brand-Standards sofort."
+          },
+          "services": {
+            "problem": "Consultants verlassen sich auf Seniors, um Proposal-Templates oder Benchmarks zu finden.",
+            "solution": "Ein privater RAG-Hub liefert wiederverwendbare Slides, Pricing-Modelle und Case Studies mit Quellen."
           }
         }
       },
-      "emailTriage": {
-        "title": "KI-E-Mail-Triage-Assistent",
-        "problem": "Der Support-Posteingang quillt über und niemand weiß, welche Mail zuerst dran ist.",
-        "solution": "E-Mails automatisch klassifizieren, zusammenfassen, priorisieren und erste Antwortentwürfe erstellen.",
+      "workflowAutomation": {
+        "title": "KI-Workflow- und Backoffice-Automatisierung",
+        "problem": "Ops-Teams kopieren Daten zwischen Tools, Fehler häufen sich und Prozesse stocken.",
+        "solution": "Bauen Sie Automationspakete, die Events beobachten, Daten anreichern, CRMs/ERPs aktualisieren, Dokumente erzeugen und Teams automatisch informieren.",
         "industry": {
           "clinics": {
-            "problem": "Admins suchen dringend nach wichtigen Patienten-Mails und übersehen kritische Updates.",
-            "solution": "Dringende Klinik-Mails markieren, den Rest zusammenfassen und Antwortvorschläge bereitstellen."
+            "problem": "Intake-Formulare, Laborergebnisse und Abrechnung werden zwischen Systemen kopiert und erzeugen Fehler.",
+            "solution": "Automatisieren Sie Intake → EMR → Billing, sodass jede Einsendung Anreicherung, Benachrichtigungen und Audit-Logs auslöst."
           },
           "dentists": {
-            "problem": "Behandlungsanfragen, Versicherungsfragen und Labor-Updates landen alle im selben Postfach.",
-            "solution": "Nach Dringlichkeit sortieren, freundliche Antworten vorschlagen und Aufgaben ins Praxis-System pushen."
+            "problem": "Behandlungspläne, Finanz-Nachfassungen und Laboraufträge brauchen manuelle Updates.",
+            "solution": "Flows synchronisieren Status, senden Zahlungs-Erinnerungen und informieren, sobald das Labor liefert."
           },
           "construction": {
-            "problem": "Baustellen-Updates, Lieferantenangebote und Kundenfreigaben verstecken sich in Threads.",
-            "solution": "E-Mails nach Projekt markieren, Aufgaben im PM-Tool anlegen und kritische Themen hervorheben."
+            "problem": "Bestellungen, Inspektionen und Kostentracking liegen in separaten Sheets.",
+            "solution": "Verbinden Sie n8n mit Bau-Tools, damit neue RFIs, Rechnungen und Freigaben jedes System automatisch aktualisieren."
           },
           "agencies": {
-            "problem": "Kundenanfragen und Freigaben verschwinden in Shared Inboxes.",
-            "solution": "Jede Mail zusammenfassen, Dringlichkeit markieren und Tickets im Taskboard erstellen."
+            "problem": "Briefings, Freigaben und Reporting erfordern manuelle Erinnerungen durch PMs.",
+            "solution": "Sobald ein Briefing freigegeben ist, erstellt der Flow Tasks, aktualisiert Slack und plant Reporting-Cadences."
           },
           "ecommerce": {
-            "problem": "support@ wird von Bestellfragen und Retouren überschwemmt.",
-            "solution": "Nach Themen clustern, Antwortbausteine vorbereiten und schwierige Fälle als Tickets erfassen."
-          }
-        }
-      },
-      "contractAutomation": {
-        "title": "Vertragsautomatisierung",
-        "problem": "Verträge manuell zu erstellen kostet Zeit und birgt teure Fehler.",
-        "solution": "Verträge automatisch generieren, zur E-Signatur senden und sauber im Archiv ablegen.",
-        "industry": {
-          "clinics": {
-            "problem": "Therapievereinbarungen werden manuell erstellt und kommen oft ununterschrieben zurück.",
-            "solution": "Individuelle Vereinbarungen sofort generieren, zur Signatur schicken und im EMR hinterlegen."
+            "problem": "Lager, Fulfillment und Finance sind unsynchron und Ops gleicht alles händisch ab.",
+            "solution": "Automationen überwachen Bestellungen, synchronisieren ERP/3PL, melden Ausnahmen und senden tägliche Slack-Updates."
           },
-          "dentists": {
-            "problem": "Kosmetische Einverständniserklärungen werden für jede Person kopiert und eingefügt.",
-            "solution": "Consent mit Patientendaten ausfüllen, zur Signatur senden und beim Behandlungsplan speichern."
+          "realestate": {
+            "problem": "Angebote, Rechtsdokumente und Finanzierungsschritte leben in getrennten Tools und erzeugen Verzögerungen.",
+            "solution": "Automatisieren Sie Deal-Phasen, sodass jedes unterschriebene Dokument CRM, Compliance und Stakeholder informiert."
           },
-          "construction": {
-            "problem": "Projektverträge werden jedes Mal in Word geändert – reines Versionschaos.",
-            "solution": "Kundendaten mergen, zur Unterschrift schicken und die signierte Version automatisch im Projektordner ablegen."
+          "hospitality": {
+            "problem": "Gruppenbuchungen, Housekeeping und Upsells müssen manuell zwischen Teams koordiniert werden.",
+            "solution": "Koppeln Sie PMS, POS und Messaging, damit Buchungen automatisch Zimmerprep, Upsell-Kampagnen und Finance-Updates triggern."
           },
-          "agencies": {
-            "problem": "Retainer-Verträge brauchen jedes Mal juristischen Check und verzögern den Start.",
-            "solution": "Vertrag aus Formulardaten bauen, zur Signatur routen und direkt im Kunden-Workspace speichern."
-          },
-          "ecommerce": {
-            "problem": "Großhandelsverträge und NDAs gehen manuell hin und her und verschwinden in E-Mails.",
-            "solution": "Dokument automatisch erstellen, unterschreiben lassen und sofort mit dem Kundenprofil verlinken."
-          }
-        }
-      },
-      "reputationBooster": {
-        "title": "Reputations-Booster",
-        "problem": "Sie fragen nur selten nach Bewertungen und zufriedene Kund:innen bleiben still.",
-        "solution": "Bewertungen automatisch einholen, 5-Sterne feiern und schlechte Feedbacks intern abfangen.",
-        "industry": {
-          "clinics": {
-            "problem": "Tolles Patientenerlebnis wird nicht bewertet, die Praxis wirkt online ruhig.",
-            "solution": "Nach jedem Termin um eine Bewertung bitten, 5 Sterne veröffentlichen und bei schlechteren Rückmeldungen das Team informieren."
-          },
-          "dentists": {
-            "problem": "Smile-Makeover-Patient:innen lieben das Ergebnis, hinterlassen aber selten Feedback.",
-            "solution": "Personalisierte Bewertungsbitten mit Fotohinweisen verschicken und negatives Feedback intern eskalieren."
-          },
-          "construction": {
-            "problem": "Abgeschlossene Projekte führen nicht zu Testimonials, neue Kund:innen zweifeln.",
-            "solution": "Nach Projektende SMS senden, 5-Sterne veröffentlichen und bei weniger als vier Sternen ein internes Ticket öffnen."
-          },
-          "agencies": {
-            "problem": "Kund:innen loben intern, aber das Google-Profil wirkt leer.",
-            "solution": "Bewertungen nach erfolgreichen Kampagnen anstoßen und niedrige Scores direkt an den Account Lead leiten."
-          },
-          "ecommerce": {
-            "problem": "Zufriedene Käufer:innen schreiben keine Reviews, Produkte wirken unbelegt.",
-            "solution": "Nach Lieferung erinnern, 5-Sterne belohnen und Support informieren, falls jemand unzufrieden ist."
-          }
-        }
-      },
-      "crmHygiene": {
-        "title": "CRM-Datenhygiene-Bot",
-        "problem": "Das CRM verkommt schnell – Dubletten, falsche Nummern, fehlende Felder.",
-        "solution": "Nächtliche Aufräumläufe, die Dubletten zusammenführen, Daten korrigieren und Lücken markieren.",
-        "industry": {
-          "clinics": {
-            "problem": "Patientendaten liegen mehrfach vor und verwirren bei der Terminplanung.",
-            "solution": "Dubletten zusammenführen, Kontaktdaten bereinigen und fehlende Versicherungsinfos markieren."
-          },
-          "dentists": {
-            "problem": "Interessentenlisten enthalten Dubletten und veraltete Telefonnummern.",
-            "solution": "CRM täglich säubern, damit die Rezeption mit korrekten Daten anruft."
-          },
-          "construction": {
-            "problem": "Mehrere Kontakte für dasselbe Objekt blockieren die Pipeline.",
-            "solution": "Immobilien zusammenführen, Telefon/Adressen normalisieren und fehlende Genehmigungen erkennen."
-          },
-          "agencies": {
-            "problem": "Leads tauchen mehrfach mit unterschiedlichen UTM-Tags auf – Reporting wird ungenau.",
-            "solution": "Dubletten mergen, Tracking-Felder vereinheitlichen und fehlende Firmendaten hervorheben."
-          },
-          "ecommerce": {
-            "problem": "Kundenprofile existieren doppelt in Shopify, Klaviyo und dem CRM.",
-            "solution": "Kundendaten nachts abgleichen und deduplizieren, damit Segmentierung und Messaging präzise bleiben."
-          }
-        }
-      },
-      "kpiReports": {
-        "title": "Automatisierte KPI-Berichte",
-        "problem": "Reportings dauern Stunden in Excel – die Zahlen kommen zu spät.",
-        "solution": "Daten automatisch ziehen, klare Reports erstellen und Insight-Mails termingerecht versenden.",
-        "industry": {
-          "clinics": {
-            "problem": "Wöchentliche Neupatienten oder Auslastung sehen Sie erst am Monatsende.",
-            "solution": "Wöchentliche Reports mit Buchungen, Absagen und Auslastung automatisch ans Team senden."
-          },
-          "dentists": {
-            "problem": "Produktions-, Inkasso- und Behandlungszeiten verstecken sich in der Praxissoftware.",
-            "solution": "Jeden Morgen ein Dashboard mit Produktion, Fallannahme und offenen Salden mailen."
-          },
-          "construction": {
-            "problem": "Projektleiter sammeln Budgets vs. Ist-Werte manuell für jede Besprechung.",
-            "solution": "Margen, Change Orders und Cashflow in einem täglichen Digest bündeln und an die Leitung slacken."
-          },
-          "agencies": {
-            "problem": "Kampagnen-KPIs liegen in unterschiedlichen Ad-Plattformen – niemand hat den Überblick.",
-            "solution": "Ad Spend, Leads und ROI aggregieren und eine leicht verständliche Zusammenfassung an jedes Account-Team senden."
-          },
-          "ecommerce": {
-            "problem": "Sales, Retouren und CAC liegen in separaten Tools.",
-            "solution": "Shopify-, Stripe- und Ad-Daten in einem täglichen Snapshot mit konkreten Handlungsempfehlungen zusammenführen."
-          }
-        }
-      },
-      "whatsappFunnel": {
-        "title": "WhatsApp-Lead-Funnel",
-        "problem": "Leute klicken auf Ihren WhatsApp-Link, aber das Gespräch bricht sofort ab.",
-        "solution": "Führen Sie Interessenten durch einen geführten Ablauf, sammeln Sie Infos, liefern Sie Mehrwert und buchen Sie den nächsten Schritt.",
-        "industry": {
-          "clinics": {
-            "problem": "QR-Codes auf Events erzeugen Interesse, aber Leads füllen keine Intake-Formulare aus.",
-            "solution": "Durch Vorqualifikationsfragen führen, Ressourcen senden und den Lead an den Empfang übergeben."
-          },
-          "dentists": {
-            "problem": "Smile-Kampagnen verpuffen, weil niemand den Chat leitet.",
-            "solution": "Präferenzen abfragen, Vorher/Nachher zeigen und automatisch Beratungstermine buchen."
-          },
-          "construction": {
-            "problem": "Showroom-Besucher scannen QR-Codes, aber kein Teammitglied erfasst Projektdetails.",
-            "solution": "Budget, Zeitrahmen und Standort einsammeln und direkt einen Vor-Ort-Termin terminieren."
-          },
-          "agencies": {
-            "problem": "Meta Ads führen Interessenten in WhatsApp, doch das Gespräch stirbt ab.",
-            "solution": "Mit Schlüsselfragen qualifizieren, Referenzen teilen und sofort einen Kalendereintrag erstellen."
-          },
-          "ecommerce": {
-            "problem": "WhatsApp-Giveaways steigern Abos, aber selten Verkäufe.",
-            "solution": "Lead-Magnet liefern, E-Mail & Präferenzen erfassen und automatisch einen Promo-Code senden."
-          }
-        }
-      },
-      "supportAssistant": {
-        "title": "Support-Ticket-Assistent",
-        "problem": "Agents wühlen in alten Threads, bevor sie überhaupt eine Antwort schreiben können.",
-        "solution": "Gesamte Historie sofort anzeigen und den nächsten Antwortentwurf vorschlagen, damit das Team in Minuten reagiert.",
-        "industry": {
-          "clinics": {
-            "problem": "Care-Koordinator:innen suchen in Notizen, bevor sie Patientenfragen beantworten.",
-            "solution": "Patientenhistorie abrufen, zusammenfassen und den besten nächsten Schritt vorschlagen."
-          },
-          "dentists": {
-            "problem": "Front-Desk-Teams stöbern in Akten, bevor sie zu Behandlungsplänen oder Laborfällen antworten.",
-            "solution": "Vergangene Termine und Notizen anzeigen und sofort eine professionelle Antwort vorschlagen."
-          },
-          "construction": {
-            "problem": "Projekt-Support durchsucht Mails, um Baustellenfragen zu klären.",
-            "solution": "Projektkontext sammeln, aktuelle Pläne anzeigen und eine Antwort für den Projektleiter vorbereiten."
-          },
-          "agencies": {
-            "problem": "Account Manager lesen lange Mailketten, bevor sie Kunden updaten können.",
-            "solution": "Thread zusammenfassen, offene Tasks hervorheben und automatisch ein fertiges Update entwerfen."
-          },
-          "ecommerce": {
-            "problem": "Support sucht nach Bestellhistorie, bevor Tickets beantwortet werden können.",
-            "solution": "Bestellverlauf, vergangene Tickets und einen Antwortvorschlag in Sekunden anzeigen."
-          }
-        }
-      },
-      "hrOnboarding": {
-        "title": "HR-Onboarding-Automatisierung",
-        "problem": "Neue Mitarbeitende warten auf Zugänge, Unterlagen und Equipment, weil Onboarding manuell läuft.",
-        "solution": "Alle Onboarding-Aufgaben automatisch starten, damit neue Teammitglieder am ersten Tag einsatzbereit sind.",
-        "industry": {
-          "clinics": {
-            "problem": "Therapeut:innen starten ohne EMR-Logins oder vorbereitete Einverständniserklärungen.",
-            "solution": "Accounts anlegen, Policy-Pakete senden und Onboarding-Aufgaben direkt nach Vertragsannahme zuweisen."
-          },
-          "dentists": {
-            "problem": "Neue Dentalhygieniker:innen kommen ohne Systemzugang oder Grundausstattung.",
-            "solution": "Zugänge generieren, Trainings planen und SOPs sofort nach Vertragsunterschrift versenden."
-          },
-          "construction": {
-            "problem": "Bauteams erscheinen ohne Sicherheitsnachweise oder Projektzugang.",
-            "solution": "Ausweise, Sicherheitschecklisten und Aufgaben automatisiert vor dem ersten Arbeitstag bereitstellen."
-          },
-          "agencies": {
-            "problem": "Neue Account Manager warten auf Tool-Zugänge und Kundenkontext.",
-            "solution": "Tools bereitstellen, Kundendokumente teilen und Einführungs-Calls automatisch planen."
-          },
-          "ecommerce": {
-            "problem": "Lager-Mitarbeitende starten ohne Systemzugänge oder Schichtinfos.",
-            "solution": "Systemzugänge erstellen, Trainingsvideos senden und Aufgaben für Woche eins verteilen."
-          }
-        }
-      },
-      "linkedinContent": {
-        "title": "LinkedIn-Content-Automatisierung",
-        "problem": "Täglich auf LinkedIn präsent zu sein bedeutet endlose Recherche, Texte und Planung – dafür fehlt die Zeit.",
-        "solution": "Themen einmal einpflegen und der Agent recherchiert, schreibt und plant jeden Tag um 9 Uhr einen fertigen Beitrag – ohne Aufwand.",
-        "industry": {
-          "clinics": {
-            "problem": "Therapeut:innen möchten Expertise teilen, aber Recherche und Schreiben stehlen Zeit von der Patientenarbeit.",
-            "solution": "Therapie-Themen einmal hinterlegen und täglich recherchierte, veröffentlichungsfertige Beiträge erhalten."
-          },
-          "dentists": {
-            "problem": "Ästhetische Zahnärzt:innen schaffen es kaum, Fallstudien regelmäßig zu präsentieren.",
-            "solution": "Smile-Themen einmal notieren und das System erstellt und plant jeden Morgen polierte Beiträge."
-          },
-          "construction": {
-            "problem": "Bauleiter teilen selten Projekterfolge, weil Updates Stunden kosten.",
-            "solution": "Projekte, die gezeigt werden sollen, einmal eintragen und jeden Morgen gehen recherchierte Posts live."
-          },
-          "agencies": {
-            "problem": "Gründer jonglieren Kund:innenarbeit und finden keine Zeit für tägliche Thought-Leadership.",
-            "solution": "Topic-Backlog anlegen und den Agenten recherchieren, schreiben und planen lassen – ganz ohne eigenen Aufwand."
-          },
-          "ecommerce": {
-            "problem": "Brand Owner schreiben LinkedIn-Storys manuell, daher bleiben Updates unregelmäßig.",
-            "solution": "Produktstories einmal festhalten und der Agent recherchiert, schreibt und plant jeden Morgen attraktive Posts."
-          }
-        }
-      },
-      "invoiceLedger": {
-        "title": "Rechnungs-Intake & Ledger",
-        "problem": "Rechnungen landen im Drive-Ordner, bleiben unsortiert und das Finance-Tracking hinkt hinterher.",
-        "solution": "Den Drive-Ordner überwachen, Rechnungen automatisch ablegen, Kerndaten auslesen und sofort ins Google Sheet eintragen.",
-        "industry": {
-          "clinics": {
-            "problem": "Lieferantenrechnungen liegen im Drive, Fristen werden verpasst und Ausgaben geraten aus dem Blick.",
-            "solution": "Rechnung einmal ablegen, automatisch nach Lieferant sortieren, Beträge erfassen und das Ausgabenblatt synchronisieren."
-          },
-          "dentists": {
-            "problem": "Dentalrechnungen stapeln sich in Ordnern und die Buchhaltung hinkt hinterher.",
-            "solution": "Sobald Finance eine Rechnung hochlädt, wird sie dem richtigen Monat zugeordnet, Beträge extrahiert und das Tracking aktualisiert."
-          },
-          "construction": {
-            "problem": "Bauleiter laden Rechnungen hoch, aber niemand taggt Projekte oder aktualisiert die Kostenliste rechtzeitig.",
-            "solution": "Neue Rechnungen erkennen, in Projektordner verschieben, Positionen auslesen und sofort ins Kosten-Tracking übernehmen."
-          },
-          "agencies": {
-            "problem": "Lieferantenrechnungen landen im Drive und das Ops-Team verbringt den Freitag mit manueller Abstimmung.",
-            "solution": "Jede Rechnung automatisch prüfen, Beträge und Fälligkeit erfassen und direkt im Kreditorentracker ergänzen."
-          },
-          "ecommerce": {
-            "problem": "Warenrechnungen stapeln sich, Cashflow-Tabellen hängen der Realität hinterher.",
-            "solution": "Alle Lieferantenrechnungen korrekt archivieren, Kerndaten extrahieren und das Ausgaben-Tracking sofort aktualisieren."
+          "services": {
+            "problem": "Dienstleister geben Daten mehrfach zwischen Angebotstools, CRM und Billing ein.",
+            "solution": "Automatisieren Sie Angebotsannahme → Projekterstellung → Rechnungsstellung, damit nichts verloren geht."
           }
         }
       }

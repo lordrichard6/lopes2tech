@@ -73,22 +73,12 @@
             <p class="service-solution">{{ getServiceSolution(service) }}</p>
           </div>
 
-          <div class="service-footer">
-            <div class="price-badge">
-              <span class="price-label">{{ 'aiSolutions.labels.price' | translate }}</span>
-              <span class="price-value">{{ service.price }}</span>
-            </div>
-            <div class="time-badge">
-              <span class="time-label">{{ 'aiSolutions.labels.time' | translate }}</span>
-              <span class="time-value">{{ service.time }}</span>
-            </div>
-          </div>
         </div>
       </div>
 
-      <p class="services-note">
+      <!-- <p class="services-note">
         {{ 'aiSolutions.services.note' | translate }}
-      </p>
+      </p> -->
 
       <div class="packages-section">
         <div class="section-header">
@@ -108,11 +98,6 @@
         >
           <h3 class="package-name">
             {{ ('aiSolutions.packages.cards.' + pkg.translationKey + '.title') | translate }}
-            @if (pkg.hasDialog) {
-              <span class="care-plan-more">
-                {{ 'aiSolutions.packages.cards.carePlan.more' | translate }}
-              </span>
-            }
           </h3>
           <div class="package-price">
             {{ ('aiSolutions.packages.cards.' + pkg.translationKey + '.price') | translate }}
