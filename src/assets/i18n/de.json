@@ -998,7 +998,8 @@
     "sections": {
       "company": {
         "title": "Firmeninformationen",
-        "sole_proprietorship": "Einzelunternehmen"
+        "sole_proprietorship": "Einzelunternehmen",
+        "represented_by": "Vertreten durch:"
       },
       "contact": {
         "title": "Kontakt"

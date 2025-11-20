@@ -883,7 +883,8 @@
     "sections": {
       "company": {
         "title": "Company Information",
-        "sole_proprietorship": "Sole Proprietorship"
+        "sole_proprietorship": "Sole Proprietorship",
+        "represented_by": "Represented by:"
       },
       "contact": {
         "title": "Contact"
