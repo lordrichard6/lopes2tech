@@ -7,7 +7,7 @@ export const APP_CONSTANTS = {
   BUSINESS: {
     COMPANY_NAME: 'lopes2tech',
     OWNER_NAME: 'Paulo R. Lopes',
-    EMAIL: 'lopes2tech.ch@gmail.com',
+    EMAIL: 'paulo@lopes2tech.ch',
     PHONE: '+41 78 798 95 33',
     ADDRESS: 'Zürich',
     CITY: 'Zürich',

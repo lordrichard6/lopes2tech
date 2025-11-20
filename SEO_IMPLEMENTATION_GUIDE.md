@@ -4,7 +4,7 @@
 
 ### 1. **Fixed Critical Issues**
 - ✅ Removed duplicate Twitter Card meta tags
-- ✅ Fixed JSON-LD email (now uses correct `lopes2tech.ch@gmail.com`)
+- ✅ Fixed JSON-LD email (now uses correct `paulo@lopes2tech.ch`)
 - ✅ Updated sitemap with missing pages (`/pricing`, `/support-theraflow`)
 
 ### 2. **Created SEO Service**

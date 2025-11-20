@@ -62,7 +62,7 @@ src/app/interceptors/
 ```typescript
 // constants.ts
 export const APP_CONSTANTS = {
-  EMAIL: 'lopes2tech.ch@gmail.com',
+  EMAIL: 'paulo@lopes2tech.ch',
   STRIPE_DONATION_LINK: 'https://donate.stripe.com/...',
   SUPPORTED_LANGUAGES: ['en', 'pt', 'de'] as const,
   // ...
@@ -286,7 +286,7 @@ src/app/testing/
 ```typescript
 export const APP_CONSTANTS = {
   BUSINESS: {
-    EMAIL: 'lopes2tech.ch@gmail.com',
+    EMAIL: 'paulo@lopes2tech.ch',
     PHONE: '+41 78 798 95 33',
     // ...
   },

@@ -15,7 +15,7 @@
 ### ❌ Issues Found
 1. **Duplicate Twitter Card tags** (lines 39-43 and 45-49 in index.html)
 2. **Static meta tags** - not dynamic per route
-3. **Wrong email** in JSON-LD (info@lopes2tech.ch vs lopes2tech.ch@gmail.com)
+3. **Wrong email** in JSON-LD (info@lopes2tech.ch vs paulo@lopes2tech.ch)
 4. **Missing pages** in sitemap (pricing, support-theraflow)
 5. **No dynamic title service** for route-specific titles
 6. **No meta tag service** for dynamic updates
