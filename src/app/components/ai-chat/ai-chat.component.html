@@ -9,8 +9,11 @@
       <button class="close-btn" (click)="toggleChat()">✕</button>
     </div>
     
-    <div class="chat-messages">
-      <div *ngFor="let message of messages" 
+    <div class="chat-messages" #messagesContainer>
+      <div *ngIf="messages.length > visibleMessages.length" class="load-more-indicator">
+        <span>{{ messages.length - visibleMessages.length }} older messages</span>
+      </div>
+      <div *ngFor="let message of visibleMessages" 
            class="message" 
            [class.user]="message.sender === 'user'"
            [class.bot]="message.sender === 'bot'">
