@@ -32,5 +32,15 @@ export const routes: Routes = [
     loadComponent: () => import('./components/impressum/impressum').then(m => m.ImpressumComponent),
     canActivate: [seoGuard]
   },
+  { 
+    path: 'privacy', 
+    loadComponent: () => import('./components/privacy/privacy').then(m => m.PrivacyComponent),
+    canActivate: [seoGuard]
+  },
+  { 
+    path: 'terms', 
+    loadComponent: () => import('./components/terms/terms').then(m => m.TermsComponent),
+    canActivate: [seoGuard]
+  },
   { path: '**', redirectTo: '' }
 ];

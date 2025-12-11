@@ -1,0 +1,153 @@
+<div class="terms-page">
+  <div class="hero-background">
+    <div class="floating-elements">
+      <div class="floating-circle circle-1"></div>
+      <div class="floating-circle circle-2"></div>
+      <div class="floating-circle circle-3"></div>
+    </div>
+  </div>
+
+  <div class="terms-container">
+    <header class="terms-header">
+      <h1>{{ 'terms.title' | translate }}</h1>
+      <p class="last-updated">{{ 'terms.last_updated' | translate }} {{ getLastUpdated() }}</p>
+    </header>
+
+    <main class="terms-card">
+      <section class="legal-text-block">
+        <p class="effective-date"><strong>{{ 'terms.effective_date' | translate }}:</strong> {{ 'terms.effective_date_value' | translate }}</p>
+      </section>
+
+      <!-- Section 1: Scope of Application -->
+      <section class="legal-text-block">
+        <h3>{{ 'terms.scope.title' | translate }}</h3>
+        <p>{{ 'terms.scope.content' | translate }}</p>
+      </section>
+
+      <!-- Section 2: Subject of the Contract -->
+      <section class="legal-text-block">
+        <h3>{{ 'terms.subject.title' | translate }}</h3>
+        <p>{{ 'terms.subject.intro' | translate }}</p>
+        <ul class="privacy-list">
+          <li><strong>{{ 'terms.subject.web_software' | translate }}:</strong> {{ 'terms.subject.web_software_desc' | translate }}</li>
+          <li><strong>{{ 'terms.subject.ai_automation' | translate }}:</strong> {{ 'terms.subject.ai_automation_desc' | translate }}</li>
+          <li><strong>{{ 'terms.subject.maintenance' | translate }}:</strong> {{ 'terms.subject.maintenance_desc' | translate }}</li>
+        </ul>
+      </section>
+
+      <!-- Section 3: Conclusion of Contract -->
+      <section class="legal-text-block">
+        <h3>{{ 'terms.conclusion.title' | translate }}</h3>
+        <p>{{ 'terms.conclusion.intro' | translate }}</p>
+        <ul class="privacy-list">
+          <li>{{ 'terms.conclusion.item1' | translate }}</li>
+          <li>{{ 'terms.conclusion.item2' | translate }}</li>
+          <li>{{ 'terms.conclusion.item3' | translate }}</li>
+        </ul>
+      </section>
+
+      <!-- Section 4: Client Obligations -->
+      <section class="legal-text-block">
+        <h3>{{ 'terms.client_obligations.title' | translate }}</h3>
+        <p>{{ 'terms.client_obligations.intro' | translate }}</p>
+        <ul class="privacy-list">
+          <li>{{ 'terms.client_obligations.item1' | translate }}</li>
+          <li>{{ 'terms.client_obligations.item2' | translate }}</li>
+          <li>{{ 'terms.client_obligations.item3' | translate }}</li>
+        </ul>
+      </section>
+
+      <!-- Section 5: Pricing and Payment Terms -->
+      <section class="legal-text-block">
+        <h3>{{ 'terms.pricing.title' | translate }}</h3>
+        
+        <h4>{{ 'terms.pricing.project.title' | translate }}</h4>
+        <p>{{ 'terms.pricing.project.intro' | translate }}</p>
+        
+        <p><strong>{{ 'terms.pricing.project.small.title' | translate }}</strong></p>
+        <ul class="privacy-list">
+          <li>{{ 'terms.pricing.project.small.item1' | translate }}</li>
+          <li>{{ 'terms.pricing.project.small.item2' | translate }}</li>
+        </ul>
+
+        <p><strong>{{ 'terms.pricing.project.standard.title' | translate }}</strong></p>
+        <ul class="privacy-list">
+          <li><strong>{{ 'terms.pricing.project.standard.deposit' | translate }}:</strong> {{ 'terms.pricing.project.standard.deposit_desc' | translate }}</li>
+          <li><strong>{{ 'terms.pricing.project.standard.final' | translate }}:</strong> {{ 'terms.pricing.project.standard.final_desc' | translate }}</li>
+        </ul>
+        
+        <p>{{ 'terms.pricing.project.invoice' | translate }}</p>
+
+        <h4>{{ 'terms.pricing.recurring.title' | translate }}</h4>
+        <p>{{ 'terms.pricing.recurring.content' | translate }}</p>
+        <p>{{ 'terms.pricing.recurring.cancellation' | translate }}</p>
+      </section>
+
+      <!-- Section 6: Intellectual Property & Usage Rights -->
+      <section class="legal-text-block">
+        <h3>{{ 'terms.intellectual_property.title' | translate }}</h3>
+        <p>{{ 'terms.intellectual_property.item1' | translate }}</p>
+        <p>{{ 'terms.intellectual_property.item2' | translate }}</p>
+        <p>{{ 'terms.intellectual_property.item3' | translate }}</p>
+      </section>
+
+      <!-- Section 7: Specific Provisions for AI Services -->
+      <section class="legal-text-block">
+        <h3>{{ 'terms.ai_services.title' | translate }}</h3>
+        <p>{{ 'terms.ai_services.intro' | translate }}</p>
+        
+        <h4>{{ 'terms.ai_services.accuracy.title' | translate }}</h4>
+        <p>{{ 'terms.ai_services.accuracy.content' | translate }}</p>
+
+        <h4>{{ 'terms.ai_services.availability.title' | translate }}</h4>
+        <p>{{ 'terms.ai_services.availability.content' | translate }}</p>
+
+        <h4>{{ 'terms.ai_services.costs.title' | translate }}</h4>
+        <p>{{ 'terms.ai_services.costs.content' | translate }}</p>
+      </section>
+
+      <!-- Section 8: Warranty and Liability -->
+      <section class="legal-text-block">
+        <h3>{{ 'terms.warranty.title' | translate }}</h3>
+        
+        <h4>{{ 'terms.warranty.warranty.title' | translate }}</h4>
+        <p>{{ 'terms.warranty.warranty.content1' | translate }}</p>
+        <p>{{ 'terms.warranty.warranty.content2' | translate }}</p>
+
+        <h4>{{ 'terms.warranty.liability.title' | translate }}</h4>
+        <p>{{ 'terms.warranty.liability.content1' | translate }}</p>
+        <p>{{ 'terms.warranty.liability.content2' | translate }}</p>
+        <p>{{ 'terms.warranty.liability.content3' | translate }}</p>
+      </section>
+
+      <!-- Section 9: Data Protection and Confidentiality -->
+      <section class="legal-text-block">
+        <h3>{{ 'terms.data_protection.title' | translate }}</h3>
+        <p>{{ 'terms.data_protection.content' | translate }}</p>
+      </section>
+
+      <!-- Section 10: Final Provisions -->
+      <section class="legal-text-block">
+        <h3>{{ 'terms.final.title' | translate }}</h3>
+        
+        <h4>{{ 'terms.final.severability.title' | translate }}</h4>
+        <p>{{ 'terms.final.severability.content' | translate }}</p>
+
+        <h4>{{ 'terms.final.jurisdiction.title' | translate }}</h4>
+        <p>{{ 'terms.final.jurisdiction.content' | translate }}</p>
+
+        <h4>{{ 'terms.final.law.title' | translate }}</h4>
+        <p>{{ 'terms.final.law.content' | translate }}</p>
+      </section>
+
+      <div class="card-footer">
+        <a routerLink="/" class="btn-back">
+          <i class="fas fa-arrow-left"></i>
+          {{ 'terms.back_home' | translate }}
+        </a>
+        <p class="copyright-text">© {{ getCurrentYear() }} {{ businessInfo.companyName }}. {{ 'terms.all_rights' | translate }}</p>
+      </div>
+    </main>
+  </div>
+</div>
+

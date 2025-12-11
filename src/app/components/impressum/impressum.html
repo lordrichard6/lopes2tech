@@ -43,10 +43,6 @@
                 <i class="fas fa-envelope"></i>
                 <span>{{ businessInfo.email }}</span>
               </a>
-              <a href="tel:{{ businessInfo.phone }}" class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>{{ businessInfo.phone }}</span>
-              </a>
             </div>
           </div>
         </section>
@@ -57,29 +53,18 @@
       <!-- Legal Text Blocks -->
       <section class="legal-text-block">
         <h3>{{ 'impressum.sections.disclaimer.title' | translate }}</h3>
-        <p>{{ 'impressum.sections.disclaimer.content1' | translate }}</p>
-        <p>{{ 'impressum.sections.disclaimer.content2' | translate }}</p>
+        <h4>{{ 'impressum.sections.disclaimer.liability_content.title' | translate }}</h4>
+        <p>{{ 'impressum.sections.disclaimer.liability_content.content' | translate }}</p>
       </section>
 
       <section class="legal-text-block">
-        <h3>{{ 'impressum.sections.links.title' | translate }}</h3>
-        <p>{{ 'impressum.sections.links.content' | translate }}</p>
+        <h4>{{ 'impressum.sections.disclaimer.liability_links.title' | translate }}</h4>
+        <p>{{ 'impressum.sections.disclaimer.liability_links.content' | translate }}</p>
       </section>
 
       <section class="legal-text-block">
         <h3>{{ 'impressum.sections.copyright.title' | translate }}</h3>
-        <p>{{ ('impressum.sections.copyright.content' | translate).replace('{company}', businessInfo.companyName) }}</p>
-      </section>
-
-      <section class="legal-text-block">
-        <h3>{{ 'impressum.sections.data_protection.title' | translate }}</h3>
-        <p>{{ 'impressum.sections.data_protection.content1' | translate }}</p>
-        <p>{{ 'impressum.sections.data_protection.content2' | translate }}</p>
-      </section>
-
-      <section class="legal-text-block">
-        <h3>{{ 'impressum.sections.jurisdiction.title' | translate }}</h3>
-        <p>{{ 'impressum.sections.jurisdiction.content' | translate }}</p>
+        <p>{{ 'impressum.sections.copyright.content' | translate }}</p>
       </section>
 
       <div class="card-footer">

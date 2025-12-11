@@ -159,4 +159,10 @@ export class Hero implements AfterViewInit, OnDestroy {
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(window.innerWidth, window.innerHeight);
   }
+
+  openCalBooking() {
+    if (this.isBrowser) {
+      window.open('https://cal.com/lopes2tech/initial-consult', '_blank', 'noopener,noreferrer');
+    }
+  }
 }

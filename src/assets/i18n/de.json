@@ -23,15 +23,15 @@
       "line1": "Vereinfachen Sie",
       "line2": "Ihr Leben"
     },
-    "subtitle": "Lassen Sie die Technologie für Sie arbeiten. Wir automatisieren Ihre täglichen Aufgaben, damit Sie sich auf das konzentrieren können, was wirklich wichtig ist.",
+    "subtitle": "Spezialisierte Web- und Automatisierungslösungen für Schweizer Therapeuten, Kliniken und Praxen. Wir automatisieren Terminplanung und Anfragen, damit Sie sich auf die Betreuung konzentrieren können.",
     "cta": {
-      "primary": "Jetzt ein kostenloses Gespräch vereinbaren!",
+      "primary": "Kostenlose Analyse buchen",
       "secondary": "Funktionsweise ansehen"
     },
     "stats": {
-      "experience": "Jahre Erfahrung",
+      "experience": "Jahre in Tech",
       "projects": "Abgeschlossene Projekte",
-      "support": "Support verfügbar"
+      "support": "Compliance"
     }
   },
   "aiSolutionsArchive": {
@@ -178,30 +178,30 @@
   },
   "about": {
     "badge": "Über Lopes2tech",
-    "title": "Leidenschaft, Entschlossenheit, Ergebnisse...",
-    "subtitle": "Ich bin ein hoch motiviertes Ein-Personen-Automationstudio, das reale Geschäftsprobleme schnell, präzise und ohne Schnickschnack löst.",
-    "description1": "Ich bin ein natürlicher Problemlöser, der gerne chaotische Abläufe analysiert, wiederkehrende Klicks eliminiert und sie durch intelligente Automatisierung ersetzt.",
-    "description2": "Ich tauche tief in Ihre Geschäftsprozesse ein, wähle die passenden Tools und baue Systeme, die Ihr Team von Fleißarbeit befreien – damit Sie sich auf Gewinn statt Papierkram konzentrieren können.",
+    "title": "Technische Exzellenz ohne Agenturgebühren.",
+    "subtitle": "Lopes2Tech ist eine in Zürich ansässige Automatisierungsberatung, die sich der Modernisierung schweizerischer Dienstleistungsunternehmen widmet. Wir überbrücken die Lücke zwischen komplexer Technologie und Ihrem täglichen Praxisablauf.",
+    "description1": "Im Gegensatz zu großen Agenturen, die Sie an Junior-Account-Manager weiterreichen, biete ich direkten, gründergeführten Support. Ich analysiere Ihre spezifischen Engpässe – ob Terminplanung oder Patientenanfragen – und baue sichere, konforme Systeme, um sie zu beheben.",
+    "description2": "Mein Ziel ist einfach: unabhängigen Praktikern die gleichen Effizienztools wie großen Kliniken zu geben, ohne den Overhead.",
     "features": {
-      "title": "Warum mich wählen",
-      "swiss": "Extrem wettbewerbsfähige Preise",
-      "technology": "Expertise in modernster Technologie",
-      "service": "Personalisierter Service-Ansatz",
-      "delivery": "End-to-End Lösungslieferung"
+      "title": "Der Lopes2Tech Vorteil.",
+      "swiss": "Transparente, feste Preise.",
+      "technology": "Automatisierte Effizienz.",
+      "service": "Direkter Gründerzugang.",
+      "delivery": "Schweizer Compliance-Fokus"
     },
     "founder": {
-      "title": "Wer bin ich?",
+      "title": "Über den Gründer.",
       "alt": "Porträt von Paulo R. Lopes, Entwickler und Gründer von lopes2tech"
     }
   },
   "contact": {
     "hero": {
       "badge": "Kontakt aufnehmen",
-      "title": "Planen wir Ihren nächsten Automatisierungs-Erfolg",
-      "subtitle": "Teilen Sie den Prozess, der Sie ausbremst. Ich analysiere ihn persönlich und melde mich innerhalb eines Tages mit Ideen, Zeitplan und klaren nächsten Schritten."
+      "title": "Kostenlose Beratung anfordern",
+      "subtitle": "Beschreiben Sie kurz Ihre Bedürfnisse unten. Ich antworte normalerweise innerhalb von 24 Stunden."
     },
     "meeting": {
-      "title": "Lassen Sie uns schnell ein Meeting buchen",
+      "title": "",
       "description": "Beschreiben Sie kurz Ihr Projekt. Ich melde mich noch am selben Tag mit einem Kalender-Link und einem passenden Vorschlag.",
       "successTitle": "Vielen Dank für Ihre Nachricht!",
       "successDescription": "Ich habe Ihre Anfrage erhalten und sende Ihnen in Kürze einen Kalender-Link sowie die nächsten Schritte."
@@ -216,7 +216,7 @@
         "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
       },
       "company": {
-        "label": "Unternehmen (optional)",
+        "label": "Praxis / Organisation (optional)",
         "placeholder": "Geben Sie Ihren Firmennamen ein"
       },
       "message": {
@@ -235,7 +235,7 @@
   "meetingForm": {
     "labels": {
       "name": "Name",
-      "company": "Unternehmen",
+      "company": "Praxis / Organisation",
       "email": "E-Mail",
       "phone": "Telefon",
       "message": "Nachricht"
@@ -989,7 +989,8 @@
       "services": "Dienstleistungen",
       "about": "Über uns",
       "contact": "Kontakt",
-      "privacy": "Datenschutzrichtlinie"
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Allgemeine Geschäftsbedingungen"
     },
     "copyright": "© 2025 lopes2tech. Alle Rechte vorbehalten."
   },
@@ -1005,26 +1006,19 @@
         "title": "Kontakt"
       },
       "disclaimer": {
-        "title": "Haftungsausschluss",
-        "content1": "Die auf dieser Website bereitgestellten Informationen dienen nur allgemeinen Informationszwecken. Obwohl wir uns bemühen, die Inhalte korrekt und aktuell zu halten, übernehmen wir keine Gewähr für deren Vollständigkeit, Zuverlässigkeit oder Eignung für einen bestimmten Zweck. Jede Nutzung dieser Informationen erfolgt daher ausschliesslich auf eigenes Risiko.",
-        "content2": "Alle Angebote und Dienstleistungen sind unverbindlich. Wir behalten uns das Recht vor, Inhalte ohne Ankündigung zu ändern, zu ergänzen oder zu löschen."
-      },
-      "links": {
-        "title": "Verweise und Links",
-        "content": "Unsere Website kann Links zu Websites Dritter enthalten. Wir sind nicht verantwortlich für den Inhalt oder die Datenschutzpraktiken dieser externen Websites. Die Nutzung solcher Links erfolgt auf eigenes Risiko."
+        "title": "Disclaimer (Haftungsausschluss)",
+        "liability_content": {
+          "title": "Haftung für Inhalte",
+          "content": "Der Autor übernimmt keine Haftung für die Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen. Haftungsansprüche gegen den Autor für materielle oder immaterielle Schäden, die aus dem Zugriff auf, der Nutzung oder Nichtnutzung der veröffentlichten Informationen, aus Missbrauch der Verbindung oder aus technischen Störungen resultieren, sind ausgeschlossen. Alle Angebote sind unverbindlich. Der Autor behält sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu ändern, zu ergänzen oder zu löschen oder die Veröffentlichung vorübergehend oder endgültig einzustellen."
+        },
+        "liability_links": {
+          "title": "Haftung für Links",
+          "content": "Verweise und Links auf Websites Dritter liegen ausserhalb unseres Verantwortungsbereichs. Wir lehnen jegliche Verantwortung für solche Websites ab. Der Zugriff und die Nutzung solcher Websites erfolgen auf eigenes Risiko des Nutzers."
+        }
       },
       "copyright": {
-        "title": "Urheberrechte",
-        "content": "Das Urheberrecht und alle anderen Rechte an Inhalten, Bildern und Dateien auf dieser Website gehören ausschliesslich {company} oder den jeweiligen Rechtsinhabern. Jede Vervielfältigung bedarf der vorherigen schriftlichen Zustimmung."
-      },
-      "data_protection": {
-        "title": "Datenschutz",
-        "content1": "In Übereinstimmung mit Artikel 13 der Schweizerischen Bundesverfassung und dem Datenschutzgesetz (DSG) werden Ihre persönlichen Daten vertraulich behandelt. Wir verkaufen oder geben Ihre Informationen nicht ohne Ihre Zustimmung an Dritte weiter, es sei denn, dies ist gesetzlich vorgeschrieben.",
-        "content2": "Wir implementieren in Zusammenarbeit mit unseren Hosting-Anbietern angemessene technische und organisatorische Massnahmen, um Ihre Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen."
-      },
-      "jurisdiction": {
-        "title": "Anwendbares Recht & Gerichtsstand",
-        "content": "Diese Website unterliegt schweizerischem Recht. Alle Streitigkeiten, die sich aus der Nutzung dieser Website ergeben, unterliegen der ausschliesslichen Gerichtsbarkeit der Gerichte in Zürich, Schweiz."
+        "title": "Copyright (Urheberrechte)",
+        "content": "Das Urheberrecht und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich Paulo Lopes / Lopes2Tech oder den ausdrücklich genannten Rechtsinhabern. Für die Vervielfältigung von Elementen muss die schriftliche Zustimmung der Urheberrechtsinhaber im Voraus eingeholt werden."
       },
       "last_updated": "Letzte Aktualisierung:",
       "back_home": "← Zurück zur Startseite",
@@ -1035,7 +1029,7 @@
     "title": "Unser Team",
     "subtitle": "Die leidenschaftlichen Fachkräfte hinter lopes2tech",
     "position": "Developer & Founder",
-    "description": "Ich bin ein Frontend-Entwickler, UX/UI-Designer und Digital-Marketing-Enthusiast, der in seinem Beruf gründlich ist. Geboren und aufgewachsen in Portugal, brachten mich Ehrgeiz und die Liebe zum Käse in die Schweiz. Ich habe eine Leidenschaft für modernste, pixelgenaue, schöne Interfaces und intuitiv implementierte UX. Am liebsten entwickle ich Software und Websites an der Schnittstelle zwischen Design und Engineering."
+    "description": "Ich bin ein Senior Software Engineer, der sich auf Automatisierung für Dienstleistungsunternehmen spezialisiert. Ursprünglich aus Portugal, zog ich in die Schweiz (angetrieben von Ehrgeiz und einer ernsthaften Liebe zum Schweizer Käse). Im Gegensatz zu typischen Agenturen 'mache' ich nicht nur Websites. Ich baue sichere, effiziente Systeme, die Ihre Terminplanung und Patientenanfragen automatisch bearbeiten. Ich kombiniere über 10 Jahre Ingenieursstrenge mit einem tiefen Verständnis für Schweizer Datenschutzstandards und stelle sicher, dass Ihre digitalen Tools so zuverlässig sind wie Ihre Praxis."
   },
   "cookies": {
     "title": "Cookie-Einstellungen",
@@ -1064,5 +1058,208 @@
         "description": "Diese Cookies werden verwendet, um relevante Werbung zu liefern und die Wirksamkeit unserer Marketing-Kampagnen zu verfolgen."
       }
     }
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "last_updated": "Letzte Aktualisierung:",
+    "general": {
+      "title": "1. Allgemeine Informationen",
+      "content1": "Bei Lopes2Tech nehmen wir den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre persönlichen Daten vertraulich und in Übereinstimmung mit den gesetzlichen Datenschutzbestimmungen—insbesondere dem schweizerischen Bundesgesetz über den Datenschutz (nDSG) und, soweit anwendbar, der EU-Datenschutz-Grundverordnung (DSGVO).",
+      "content2": "Diese Datenschutzrichtlinie erläutert, wie wir Ihre Daten sammeln, verwenden und schützen, wenn Sie unsere Website besuchen oder unsere Dienste nutzen."
+    },
+    "responsible": {
+      "title": "2. Verantwortliche Person (Verantwortlicher)",
+      "content": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
+      "address": "[Straßenadresse einfügen] [Postleitzahl einfügen]",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "website": "Website"
+    },
+    "data_collection": {
+      "title": "3. Datenerfassung und -verarbeitung",
+      "server_logs": {
+        "title": "3.1 Server-Logdateien",
+        "intro": "Beim Aufruf unserer Website erfasst und speichert der Anbieter der Seiten (Hosting-Anbieter) automatisch Informationen in sogenannten \"Server-Logdateien\", die Ihr Browser automatisch an uns übermittelt. Dazu gehören:",
+        "item1": "Browsertyp und Browserversion",
+        "item2": "Verwendetes Betriebssystem",
+        "item3": "Referrer-URL",
+        "item4": "Hostname des zugreifenden Rechners",
+        "item5": "Uhrzeit der Serveranfrage",
+        "item6": "IP-Adresse",
+        "note": "Diese Daten werden nicht mit anderen Datenquellen zusammengeführt. Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an der technisch fehlerfreien Darstellung und Optimierung unserer Website."
+      },
+      "contact_form": {
+        "title": "3.2 Kontaktformular und E-Mail",
+        "content": "Wenn Sie uns Anfragen über das Kontaktformular oder per E-Mail zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten (Name, E-Mail, Telefon, Firma/Praxis) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+      },
+      "calcom": {
+        "title": "3.3 Terminbuchung (Cal.com)",
+        "intro": "Wir nutzen den Dienst Cal.com zur Online-Terminbuchung. Wenn Sie einen Termin buchen, werden die von Ihnen eingegebenen Daten (Name, E-Mail, Telefon, Grund des Termins) von Cal.com verarbeitet.",
+        "provider": "Anbieter",
+        "provider_value": "Cal.com, Inc. (USA/Global)",
+        "purpose": "Zweck",
+        "purpose_value": "Terminplanung und Kalenderverwaltung",
+        "note": "Bitte lesen Sie die Datenschutzrichtlinie von Cal.com für Details zur Datenverarbeitung."
+      },
+      "chatbot": {
+        "title": "3.4 KI-Chatbot-Assistent",
+        "intro": "Unsere Website nutzt einen KI-gestützten Chatbot zur Unterstützung bei Anfragen. Wenn Sie mit dem Chat interagieren:",
+        "item1": "Der von Ihnen eingegebene Text wird verarbeitet, um eine Antwort zu generieren.",
+        "item2": "Wichtig: Geben Sie keine sensiblen Gesundheitsdaten (Patientennamen, medizinische Zustände) in den öffentlichen Website-Chatbot ein.",
+        "item3": "Daten können von Drittanbietern für KI-Dienste (z. B. OpenAI, Anthropic) ausschließlich zum Zweck der Antwortgenerierung verarbeitet werden. Diese Anbieter verwenden Ihre Daten in unserer Konfiguration nicht zum Trainieren ihrer Modelle."
+      }
+    },
+    "cookies": {
+      "title": "4. Cookies",
+      "intro": "Unsere Website verwendet \"Cookies\". Dies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden.",
+      "essential": "Notwendige Cookies",
+      "essential_desc": "Erforderlich für den technischen Betrieb der Website.",
+      "analytical": "Analyse-Cookies",
+      "analytical_desc": "Helfen uns zu verstehen, wie Besucher die Website nutzen (siehe Abschnitt 5).",
+      "note": "Sie können Ihren Browser so konfigurieren, dass Cookies abgelehnt werden, dies kann jedoch die Funktionalität der Website einschränken."
+    },
+    "analytics": {
+      "title": "5. Analyse und Tools von Drittanbietern",
+      "content": "Zur Verbesserung unseres Services können wir Analysetools (z. B. Google Analytics oder Vercel Analytics) verwenden. Diese Tools verwenden Cookies zur Analyse des Nutzerverhaltens. Die IP-Adressen werden in der Regel vor der Verarbeitung anonymisiert. Sie können diesem Tracking über unser Cookie-Banner oder Ihre Browsereinstellungen widersprechen."
+    },
+    "security": {
+      "title": "6. Datensicherheit (SSL/TLS)",
+      "content": "Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie z. B. Bestellungen oder Anfragen, die Sie an uns senden, verwendet diese Seite eine SSL- oder TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von \"http://\" auf \"https://\" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile."
+    },
+    "data_transfer": {
+      "title": "7. Datenübertragung an Dritte und ins Ausland",
+      "content": "Wir geben Ihre Daten nur dann an Dritte weiter, wenn dies zur Erfüllung des Vertrags erforderlich ist (z. B. Hosting, Terminplanungstools) oder wenn Sie eingewilligt haben. Einige dieser Dienstleister können sich außerhalb der Schweiz befinden (z. B. USA). In diesen Fällen stellen wir sicher, dass angemessene Datenschutzmaßnahmen (wie Standardvertragsklauseln) vorhanden sind, um den schweizerischen nDSG- und DSGVO-Standards zu entsprechen."
+    },
+    "rights": {
+      "title": "8. Ihre Rechte",
+      "intro": "Sie haben das Recht:",
+      "item1": "Jederzeit Auskunft über Ihre gespeicherten personenbezogenen Daten zu verlangen.",
+      "item2": "Die Berichtigung falscher Daten zu verlangen.",
+      "item3": "Die Löschung Ihrer Daten zu verlangen (Recht auf Vergessenwerden), sofern keine gesetzlichen Aufbewahrungspflichten bestehen.",
+      "item4": "Ihre Einwilligung zur Datenverarbeitung jederzeit zu widerrufen.",
+      "contact": "Um diese Rechte auszuüben, kontaktieren Sie uns bitte direkt unter:"
+    },
+    "changes": {
+      "title": "9. Änderungen dieser Datenschutzrichtlinie",
+      "content": "Wir behalten uns vor, diese Datenschutzrichtlinie anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen an unseren Diensten in der Datenschutzrichtlinie umzusetzen (z. B. bei der Einführung neuer Dienste). Die neue Datenschutzrichtlinie gilt dann bei Ihrem nächsten Besuch."
+    },
+    "back_home": "← Zurück zur Startseite",
+    "all_rights": "Alle Rechte vorbehalten."
+  },
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen (AGB)",
+    "last_updated": "Letzte Aktualisierung:",
+    "effective_date": "Gültig ab",
+    "effective_date_value": "11. Dezember 2025",
+    "scope": {
+      "title": "1. Geltungsbereich",
+      "content": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend \"AGB\") gelten für alle Geschäftsbeziehungen zwischen Lopes2Tech / Paulo Lopes (nachfolgend \"Auftragnehmer\") und seinen Kunden (nachfolgend \"Auftraggeber\"). Sie gelten für alle erbrachten Dienstleistungen, einschliesslich, aber nicht beschränkt auf Webentwicklung, Softwareentwicklung, KI-Automatisierungen und Beratung."
+    },
+    "subject": {
+      "title": "2. Vertragsgegenstand",
+      "intro": "Der Auftragnehmer erbringt Dienstleistungen im Bereich IT und Automatisierung. Der konkrete Leistungsumfang wird im jeweiligen individuellen Angebot oder Dienstleistungsvertrag definiert.",
+      "web_software": "Web & Software",
+      "web_software_desc": "Entwicklung von Websites, Anwendungen und Dashboards.",
+      "ai_automation": "KI & Automatisierung",
+      "ai_automation_desc": "Implementierung von Chatbots, Sprachassistenten und Workflow-Automatisierungen (z. B. n8n, Retell, OpenAI).",
+      "maintenance": "Wartung",
+      "maintenance_desc": "Laufender Support und Hosting-Dienstleistungen."
+    },
+    "conclusion": {
+      "title": "3. Vertragsabschluss",
+      "intro": "Angebote des Auftragnehmers sind 30 Tage gültig, sofern nicht anders angegeben. Der Vertrag kommt zustande durch:",
+      "item1": "Die schriftliche Annahme des Angebots durch den Auftraggeber (E-Mail genügt).",
+      "item2": "Die Zahlung einer Anzahlung.",
+      "item3": "Den Beginn der tatsächlichen Leistungserbringung durch den Auftragnehmer mit Kenntnis des Auftraggebers."
+    },
+    "client_obligations": {
+      "title": "4. Pflichten des Auftraggebers",
+      "intro": "Der Auftraggeber verpflichtet sich:",
+      "item1": "Alle erforderlichen Inhalte (Texte, Bilder, Logos) rechtzeitig bereitzustellen.",
+      "item2": "Die erforderlichen Zugriffsrechte (Hosting, API-Schlüssel, Domain-Registrar) zu gewähren, die für das Projekt erforderlich sind.",
+      "item3": "Liefergegenstände zu prüfen und innerhalb von 5 Werktagen Feedback zu geben. Wird innerhalb dieser Frist kein Feedback erhalten, gilt der Liefergegenstand als angenommen."
+    },
+    "pricing": {
+      "title": "5. Preise und Zahlungsbedingungen",
+      "project": {
+        "title": "5.1 Projektdienstleistungen",
+        "intro": "Sofern nicht anders im individuellen Angebot vereinbart, gelten die folgenden Zahlungsbedingungen basierend auf dem gesamten Projektvolumen:",
+        "small": {
+          "title": "Kleine Projekte (bis CHF 2'500)",
+          "item1": "100% der Projektgebühr sind sofort bei Vertragsabschluss fällig.",
+          "item2": "Die Arbeit beginnt erst nach Erhalt der vollen Zahlung."
+        },
+        "standard": {
+          "title": "Standard- und Grossprojekte (über CHF 2'500)",
+          "deposit": "50% Anzahlung",
+          "deposit_desc": "Fällig sofort bei Vertragsabschluss zur Reservierung von Ressourcen und Arbeitsbeginn.",
+          "final": "50% Schlusszahlung",
+          "final_desc": "Fällig bei Projektabschluss/Lieferung."
+        },
+        "invoice": "Rechnungen sind innerhalb von 20 Tagen netto zahlbar."
+      },
+      "recurring": {
+        "title": "5.2 Wiederkehrende Dienstleistungen (Wartung/Abonnements)",
+        "content": "Gebühren für laufende Wartung oder SaaS-Komponenten (z. B. Chatbot-Hosting) werden monatlich oder jährlich im Voraus abgerechnet.",
+        "cancellation": "Die Kündigungsfrist für wiederkehrende Dienstleistungen beträgt 30 Tage zum Monatsende, sofern keine Mindestvertragslaufzeit vereinbart wurde."
+      }
+    },
+    "intellectual_property": {
+      "title": "6. Geistiges Eigentum & Nutzungsrechte",
+      "item1": "Nach vollständiger Zahlung der vereinbarten Gebühr erhält der Auftraggeber die Nutzungsrechte für die erstellte Software/Website.",
+      "item2": "Der Auftragnehmer behält sich das Recht vor, generische Codemodule, Bibliotheken und Designmuster, die während des Projekts entwickelt wurden, für andere Kunden wiederzuverwenden (Standard-Softwareentwicklungspraxis).",
+      "item3": "Der Auftraggeber garantiert, dass alle dem Auftragnehmer zur Verfügung gestellten Materialien (Bilder, Texte) keine Rechte Dritter verletzen."
+    },
+    "ai_services": {
+      "title": "7. Besondere Bestimmungen für KI-Dienstleistungen",
+      "intro": "Der Auftraggeber erkennt an, dass Dienstleistungen, die Künstliche Intelligenz (KI) betreffen (z. B. Chatbots, RAG-Systeme, Sprachassistenten), von Drittanbietern abhängen (z. B. OpenAI, Anthropic, Retell AI).",
+      "accuracy": {
+        "title": "Genauigkeit",
+        "content": "Der Auftragnehmer kann nicht garantieren, dass KI-Ausgaben zu 100% genau sind. Der Auftraggeber ist verantwortlich für die Überprüfung kritischer Informationen, die von KI generiert werden."
+      },
+      "availability": {
+        "title": "Verfügbarkeit",
+        "content": "Der Auftragnehmer haftet nicht für Dienstunterbrechungen, die durch Ausfälle von Drittanbieter-APIs verursacht werden (z. B. wenn ChatGPT nicht verfügbar ist)."
+      },
+      "costs": {
+        "title": "Kosten",
+        "content": "Sofern nicht ausdrücklich in einer Pauschale enthalten, können variable API-Nutzungskosten (Token-Nutzung) dem Auftraggeber in Rechnung gestellt oder direkt vom Auftraggeber an den Anbieter gezahlt werden."
+      }
+    },
+    "warranty": {
+      "title": "8. Gewährleistung und Haftung",
+      "warranty": {
+        "title": "8.1 Gewährleistung",
+        "content1": "Der Auftragnehmer gewährleistet, dass die Software/Website zum Zeitpunkt der Abnahme funktionsfähig und frei von kritischen Mängeln ist. Die Gewährleistungsfrist beträgt 3 Monate ab Lieferung.",
+        "content2": "Die Gewährleistung deckt keine Mängel ab, die durch Updates Dritter verursacht werden (z. B. wenn ein WordPress-Plugin-Update die Website beschädigt) oder durch unbefugte Änderungen des Auftraggebers."
+      },
+      "liability": {
+        "title": "8.2 Haftung",
+        "content1": "Soweit durch schweizerisches Recht zulässig, ist die Haftung des Auftragnehmers auf Vorsatz und grobe Fahrlässigkeit beschränkt.",
+        "content2": "Die Haftung für leichte Fahrlässigkeit, indirekte Schäden oder Folgeschäden (z. B. Gewinnausfall, Datenverlust) ist ausgeschlossen.",
+        "content3": "Der Auftragnehmer haftet nicht für Datenschutzverletzungen, die durch Missbrauch der bereitgestellten Tools durch den Auftraggeber verursacht werden (z. B. Eingabe von Patientendaten in ein nicht sicheres Feld)."
+      }
+    },
+    "data_protection": {
+      "title": "9. Datenschutz und Vertraulichkeit",
+      "content": "Beide Parteien verpflichten sich, alle Geschäftsgeheimnisse und vertraulichen Informationen, die während der Geschäftsbeziehung erhalten wurden, streng vertraulich zu behandeln. Der Auftragnehmer verarbeitet personenbezogene Daten in Übereinstimmung mit dem schweizerischen Bundesgesetz über den Datenschutz (nDSG)."
+    },
+    "final": {
+      "title": "10. Schlussbestimmungen",
+      "severability": {
+        "title": "Salvatorische Klausel",
+        "content": "Sollten einzelne Bestimmungen dieser AGB unwirksam sein, bleibt die Gültigkeit der übrigen Bestimmungen unberührt."
+      },
+      "jurisdiction": {
+        "title": "Gerichtsstand",
+        "content": "Der ausschliessliche Gerichtsstand für alle Streitigkeiten aus diesem Vertrag ist Zürich, Schweiz."
+      },
+      "law": {
+        "title": "Anwendbares Recht",
+        "content": "Es gilt ausschliesslich schweizerisches Recht."
+      }
+    },
+    "back_home": "← Zurück zur Startseite",
+    "all_rights": "Alle Rechte vorbehalten."
   }
 }

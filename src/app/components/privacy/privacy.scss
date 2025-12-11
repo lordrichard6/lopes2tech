@@ -1,6 +1,6 @@
-.impressum-page {
+.privacy-page {
   min-height: 100vh;
-  background: var(--bg-white); // Fallback
+  background: var(--bg-white);
   background: linear-gradient(135deg, var(--bg-white) 0%, rgba(240, 249, 255, 0.5) 100%);
   position: relative;
   overflow-x: hidden;
@@ -60,7 +60,7 @@
   50% { transform: translate(20px, -20px); }
 }
 
-.impressum-container {
+.privacy-container {
   position: relative;
   z-index: 1;
   max-width: 900px;
@@ -68,7 +68,7 @@
   margin-top: 2rem;
 }
 
-.impressum-header {
+.privacy-header {
   text-align: center;
   margin-bottom: 3rem;
 
@@ -90,7 +90,7 @@
   }
 }
 
-.impressum-card {
+.privacy-card {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -99,119 +99,6 @@
   box-shadow: 
     0 20px 40px rgba(0, 0, 0, 0.05),
     0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.legal-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 3rem;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-
-.legal-section {
-  display: flex;
-  gap: 1.25rem;
-
-  .section-icon {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: rgba(var(--ocean-cyan), 0.1);
-    color: var(--primary-600);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25rem;
-  }
-
-  h2 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--text-dark);
-  }
-}
-
-.info-block {
-  .company-name {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 0.25rem;
-  }
-
-  .company-type {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-  }
-
-  .divider-mini {
-    width: 40px;
-    height: 2px;
-    background: var(--primary-100);
-    margin: 0.75rem 0;
-  }
-
-  .owner-name, .address {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 0.25rem;
-  }
-  
-  strong {
-    color: var(--text-dark);
-  }
-}
-
-.contact-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-
-  .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem;
-    background: white;
-    border: 1px solid rgba(0,0,0,0.05);
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--text-dark);
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: all 0.2s ease;
-
-    i {
-      color: var(--primary-500);
-    }
-
-    &:hover {
-      transform: translateX(4px);
-      border-color: var(--primary-200);
-      background: var(--bg-white);
-      box-shadow: 0 4px 12px rgba(var(--ocean-cyan), 0.1);
-      color: var(--primary-600);
-    }
-  }
-}
-
-.section-divider {
-  border: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.08), transparent);
-  margin: 2.5rem 0;
 }
 
 .legal-text-block {
@@ -256,6 +143,49 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  .contact-info {
+    background: rgba(0, 0, 0, 0.02);
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+    border-left: 3px solid var(--accent-color);
+
+    p {
+      margin-bottom: 0.75rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 0.8;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .privacy-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -307,7 +237,7 @@
 }
 
 :host-context(.dark-theme) {
-  .impressum-page {
+  .privacy-page {
     background: var(--bg-dark);
   }
 
@@ -315,41 +245,10 @@
     opacity: 0.15;
   }
 
-  .impressum-card {
+  .privacy-card {
     background: rgba(17, 24, 39, 0.6);
     border-color: rgba(255, 255, 255, 0.08);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  }
-
-  .legal-section .section-icon {
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--accent-color);
-  }
-
-  .contact-actions .contact-item {
-    background: rgba(255, 255, 255, 0.03);
-    border-color: rgba(255, 255, 255, 0.05);
-    color: var(--text-light);
-
-    i {
-      color: var(--accent-color);
-    }
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: var(--accent-color);
-      color: var(--white);
-    }
-  }
-
-  .info-block {
-    .company-type {
-      color: rgba(255, 255, 255, 0.5);
-    }
-    
-    .divider-mini {
-      background: rgba(255, 255, 255, 0.1);
-    }
   }
   
   .section-divider {

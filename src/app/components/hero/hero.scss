@@ -256,6 +256,7 @@
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   
   &::before {
     content: '';

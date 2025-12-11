@@ -17,15 +17,15 @@
       "line1": "Simplifica",
       "line2": "a tua vida"
     },
-    "subtitle": "Deixa a tecnologia trabalhar para ti. Automatizamos as tuas tarefas diárias para que possas focar-te no que realmente importa.",
+    "subtitle": "Soluções Especializadas de Web e Automação para Terapeutas, Clínicas e Consultórios Suíços. Automatizamos agendamentos e consultas para que possa focar no cuidado.",
     "cta": {
-      "primary": "Marca uma chamada gratuita AGORA!",
+      "primary": "Agendar Auditoria Gratuita",
       "secondary": "Ver Como Funciona"
     },
     "stats": {
-      "experience": "Anos de Experiência",
+      "experience": "Anos em Tech",
       "projects": "Projetos Concluídos",
-      "support": "Suporte Disponível"
+      "support": "Compliance"
     }
   },
   "services": {
@@ -421,30 +421,30 @@
   },
   "about": {
     "badge": "Sobre a Lopes2tech",
-    "title": "Paixão, determinação, resultados...",
-    "subtitle": "Sou um estúdio de automação de uma só pessoa obcecado em resolver problemas reais de negócio com rapidez, precisão e zero floreado.",
-    "description1": "Sou um solucionador nato que adora dissecar workflows caóticos, caçar cliques repetitivos e substituí-los por automação inteligente.",
-    "description2": "Mergulho a fundo em como o seu negócio realmente funciona, escolho as ferramentas certas e construo sistemas que libertam a sua equipa do trabalho braçal para que se foque no lucro — não na papelada.",
+    "title": "Excelência Técnica sem Taxas de Agência.",
+    "subtitle": "Lopes2Tech é uma consultoria de automação sediada em Zurique dedicada à modernização de empresas de serviços suíças. Fazemos a ponte entre tecnologia complexa e o seu fluxo de trabalho diário.",
+    "description1": "Ao contrário de grandes agências que o passam entre gestores de conta júnior, ofereço suporte direto liderado pelo fundador. Analiso os seus gargalos específicos—seja agendamento de consultas ou consultas de pacientes—e construo sistemas seguros e conformes para os resolver.",
+    "description2": "O meu objetivo é simples: dar aos profissionais independentes as mesmas ferramentas de eficiência que as grandes clínicas, sem os custos gerais.",
     "features": {
-      "title": "Porque escolher-me",
-      "swiss": "Preços extremamente competitivos",
-      "technology": "Experiência em tecnologia de ponta",
-      "service": "Abordagem de serviço personalizada",
-      "delivery": "Entrega ponta a ponta"
+      "title": "A Vantagem Lopes2Tech.",
+      "swiss": "Preços Fixos e Transparentes.",
+      "technology": "Eficiência Automatizada.",
+      "service": "Acesso Direto ao Fundador.",
+      "delivery": "Foco em Conformidade Suíça"
     },
     "founder": {
-      "title": "Quem sou eu?",
+      "title": "Sobre o Fundador.",
       "alt": "Retrato de Paulo R. Lopes, desenvolvedor e fundador da lopes2tech"
     }
   },
   "contact": {
     "hero": {
       "badge": "Entre em contacto",
-      "title": "Vamos planear a sua próxima vitória em automação",
-      "subtitle": "Partilhe o fluxo que está a travá-lo. Vou analisá-lo pessoalmente e responder em até um dia com ideias, cronograma e próximos passos claros."
+      "title": "Solicitar Consulta Gratuita",
+      "subtitle": "Descreva brevemente as suas necessidades abaixo. Normalmente respondo dentro de 24 horas."
     },
     "meeting": {
-      "title": "Vamos agendar uma reunião o quanto antes",
+      "title": "",
       "description": "Conte-me o projeto que tem em mente. No mesmo dia envio um link de calendário e uma proposta ajustada.",
       "successTitle": "Obrigado pela sua mensagem!",
       "successDescription": "Recebi a sua nota e vou responder em breve com um link de calendário para falarmos o quanto antes."
@@ -459,7 +459,7 @@
         "placeholder": "Insira o seu endereço de email"
       },
       "company": {
-        "label": "Empresa (opcional)",
+        "label": "Prática / Organização (opcional)",
         "placeholder": "Nome da sua empresa (opcional)"
       },
       "message": {
@@ -478,7 +478,7 @@
   "meetingForm": {
     "labels": {
       "name": "Nome",
-      "company": "Empresa",
+      "company": "Prática / Organização",
       "email": "Email",
       "phone": "Telefone",
       "message": "Mensagem"
@@ -845,7 +845,8 @@
       "services": "Serviços",
       "about": "Sobre",
       "contact": "Contacto",
-      "privacy": "Política de Privacidade"
+      "privacy": "Política de Privacidade",
+      "terms": "Termos e Condições"
     },
     "copyright": "© 2025 lopes2tech. Todos os direitos reservados."
   },
@@ -861,26 +862,19 @@
         "title": "Contacto"
       },
       "disclaimer": {
-        "title": "Disclaimer",
-        "content1": "A informação fornecida neste website é apenas para fins informativos gerais. Embora nos esforcemos para manter o conteúdo preciso e atualizado, não fazemos garantias sobre a sua completude, confiabilidade ou adequação para qualquer propósito. Qualquer confiança que coloque nestas informações é, portanto, estritamente por sua conta e risco.",
-        "content2": "Todas as ofertas e serviços não são vinculativos. Reservamo-nos o direito de alterar, complementar ou eliminar conteúdo sem aviso prévio."
-      },
-      "links": {
-        "title": "Referências e Links",
-        "content": "O nosso website pode conter links para websites de terceiros. Não somos responsáveis pelo conteúdo ou práticas de privacidade desses sites externos. O uso de tais links é por sua conta e risco."
+        "title": "Disclaimer (Haftungsausschluss)",
+        "liability_content": {
+          "title": "Responsabilidade pelo Conteúdo",
+          "content": "O autor não assume responsabilidade pela correção, precisão, pontualidade, confiabilidade e completude das informações. Reclamações de responsabilidade contra o autor por danos materiais ou imateriais resultantes do acesso, uso ou não uso das informações publicadas, do uso indevido da ligação ou de falhas técnicas são excluídas. Todas as ofertas são não vinculativas. O autor reserva-se expressamente o direito de alterar, complementar ou eliminar partes das páginas ou toda a oferta sem aviso separado ou de cessar a publicação temporária ou permanentemente."
+        },
+        "liability_links": {
+          "title": "Responsabilidade por Links",
+          "content": "Referências e links para websites de terceiros estão fora da nossa área de responsabilidade. Rejeitamos qualquer responsabilidade por tais websites. O acesso e uso de tais websites são por conta e risco do utilizador."
+        }
       },
       "copyright": {
-        "title": "Direitos de Autor",
-        "content": "Os direitos de autor e todos os outros direitos sobre o conteúdo, imagens e ficheiros neste website pertencem exclusivamente à {company} ou aos respetivos detentores de direitos. Qualquer reprodução requer consentimento prévio por escrito."
-      },
-      "data_protection": {
-        "title": "Proteção de Dados",
-        "content1": "Em conformidade com o Artigo 13 da Constituição Federal Suíça e a Lei de Proteção de Dados (DSG), os seus dados pessoais são tratados confidencialmente. Não vendemos nem divulgamos as suas informações a terceiros sem o seu consentimento, a menos que seja exigido por lei.",
-        "content2": "Implementamos medidas técnicas e organizacionais apropriadas, em cooperação com os nossos fornecedores de hosting, para proteger os seus dados contra acesso não autorizado, perda ou uso indevido."
-      },
-      "jurisdiction": {
-        "title": "Lei Aplicável & Jurisdição",
-        "content": "Este website é regido pela lei suíça. Quaisquer disputas decorrentes do uso deste website estarão sujeitas à jurisdição exclusiva dos tribunais em Zurique, Suíça."
+        "title": "Copyright (Urheberrechte)",
+        "content": "Os direitos de autor e todos os outros direitos sobre conteúdo, imagens, fotografias ou outros ficheiros no website pertencem exclusivamente a Paulo Lopes / Lopes2Tech ou aos detentores de direitos especificamente nomeados. Para a reprodução de quaisquer elementos, o consentimento escrito dos detentores dos direitos de autor deve ser obtido antecipadamente."
       },
       "last_updated": "Última atualização:",
       "back_home": "← Voltar ao Início",
@@ -891,7 +885,7 @@
     "title": "Conheça a Nossa Equipa",
     "subtitle": "Os profissionais apaixonados por trás da lopes2tech",
     "position": "Engenheiro de Software",
-    "description": "Sou um programador frontend, designer UX/UI e entusiasta de marketing digital que é rigoroso na sua profissão. Nascido e criado em Portugal, a ambição e o amor pelo queijo trouxeram-me à Suíça. Tenho paixão por interfaces modernas, pixel-perfect, bonitas e UX implementada intuitivamente. Gosto mais de construir software e websites no ponto doce onde o design e a engenharia se encontram."
+    "description": "Sou um Engenheiro de Software Sénior especializado em automação para empresas de serviços. Originalmente de Portugal, mudei-me para a Suíça (impulsionado pela ambição e um amor sério pelo queijo suíço). Ao contrário de agências típicas, não 'faço' apenas websites. Construo sistemas seguros e eficientes que gerem automaticamente o seu agendamento e consultas de pacientes. Combino mais de 10 anos de rigor de engenharia com uma compreensão profunda dos padrões de privacidade suíços, garantindo que as suas ferramentas digitais são tão confiáveis quanto a sua prática."
   },
   "cookies": {
     "title": "Preferências de Cookies",
@@ -920,5 +914,208 @@
         "description": "Estes cookies são usados para entregar publicidade relevante e acompanhar a eficácia das nossas campanhas de marketing."
       }
     }
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "last_updated": "Última atualização:",
+    "general": {
+      "title": "1. Informações Gerais",
+      "content1": "Na Lopes2Tech, levamos muito a sério a proteção dos seus dados pessoais. Tratamos os seus dados pessoais de forma confidencial e de acordo com os regulamentos legais de proteção de dados—especificamente a Lei Federal Suíça sobre Proteção de Dados (nFADP/nDSG) e, quando aplicável, o Regulamento Geral de Proteção de Dados da UE (GDPR).",
+      "content2": "Esta política de privacidade explica como recolhemos, utilizamos e protegemos os seus dados quando visita o nosso website ou utiliza os nossos serviços."
+    },
+    "responsible": {
+      "title": "2. Pessoa Responsável (Responsável pelo Tratamento)",
+      "content": "A entidade responsável pelo tratamento de dados neste website é:",
+      "address": "[Inserir Morada] [Inserir Código Postal]",
+      "phone": "Telefone",
+      "email": "E-mail",
+      "website": "Website"
+    },
+    "data_collection": {
+      "title": "3. Recolha e Tratamento de Dados",
+      "server_logs": {
+        "title": "3.1 Ficheiros de Registo do Servidor",
+        "intro": "Quando acede ao nosso website, o fornecedor das páginas (fornecedor de alojamento) recolhe e armazena automaticamente informações nos chamados \"ficheiros de registo do servidor\", que o seu navegador transmite automaticamente. Estes incluem:",
+        "item1": "Tipo e versão do navegador",
+        "item2": "Sistema operativo utilizado",
+        "item3": "URL de referência",
+        "item4": "Nome do computador que acede",
+        "item5": "Hora do pedido ao servidor",
+        "item6": "Endereço IP",
+        "note": "Estes dados não são combinados com outras fontes de dados. O tratamento baseia-se no nosso interesse legítimo na apresentação tecnicamente sem erros e otimização do nosso website."
+      },
+      "contact_form": {
+        "title": "3.2 Formulário de Contacto e E-mail",
+        "content": "Se nos enviar consultas através do formulário de contacto ou e-mail, os seus dados do formulário de consulta, incluindo os dados de contacto que forneceu (Nome, E-mail, Telefone, Empresa/Praxis), serão armazenados por nós para o propósito de processar a consulta e em caso de questões de acompanhamento. Não transmitimos estes dados sem o seu consentimento."
+      },
+      "calcom": {
+        "title": "3.3 Marcação de Consultas (Cal.com)",
+        "intro": "Utilizamos o serviço Cal.com para oferecer marcação de consultas online. Quando marca uma consulta, os dados que introduz (Nome, E-mail, Telefone, Motivo da Consulta) são processados pelo Cal.com.",
+        "provider": "Fornecedor",
+        "provider_value": "Cal.com, Inc. (EUA/Global)",
+        "purpose": "Propósito",
+        "purpose_value": "Agendamento e gestão de calendário",
+        "note": "Por favor, consulte a política de privacidade do Cal.com para detalhes sobre como eles tratam os dados."
+      },
+      "chatbot": {
+        "title": "3.4 Assistente de Chatbot com IA",
+        "intro": "O nosso website utiliza um chatbot alimentado por IA para ajudar com consultas. Quando interage com o chat:",
+        "item1": "O texto que introduz é processado para gerar uma resposta.",
+        "item2": "Importante: Não introduza dados sensíveis de saúde (nomes de pacientes, condições médicas) no chatbot público do website.",
+        "item3": "Os dados podem ser processados por fornecedores de IA de terceiros (por exemplo, OpenAI, Anthropic) exclusivamente para o propósito de gerar a resposta. Estes fornecedores não utilizam os seus dados para treinar os seus modelos na nossa configuração."
+      }
+    },
+    "cookies": {
+      "title": "4. Cookies",
+      "intro": "O nosso website utiliza \"cookies\". Estes são pequenos ficheiros de texto que são armazenados no seu dispositivo.",
+      "essential": "Cookies Essenciais",
+      "essential_desc": "Necessários para o funcionamento técnico do website.",
+      "analytical": "Cookies Analíticos",
+      "analytical_desc": "Ajudam-nos a entender como os visitantes utilizam o site (ver Secção 5).",
+      "note": "Pode configurar o seu navegador para rejeitar cookies, mas isto pode limitar a funcionalidade do website."
+    },
+    "analytics": {
+      "title": "5. Análise e Ferramentas de Terceiros",
+      "content": "Para melhorar o nosso serviço, podemos utilizar ferramentas de análise (por exemplo, Google Analytics ou Vercel Analytics). Estas ferramentas utilizam cookies para analisar o comportamento do utilizador. Os endereços IP são tipicamente anonimizados antes do processamento. Pode optar por não participar neste rastreamento através do nosso Banner de Cookies ou das configurações do seu navegador."
+    },
+    "security": {
+      "title": "6. Segurança de Dados (SSL/TLS)",
+      "content": "Por razões de segurança e para proteger a transmissão de conteúdo confidencial, como pedidos ou consultas que nos envia, este site utiliza encriptação SSL ou TLS. Pode reconhecer uma ligação encriptada pelo facto de a linha de endereço do navegador mudar de \"http://\" para \"https://\" e pelo símbolo de cadeado na linha do navegador."
+    },
+    "data_transfer": {
+      "title": "7. Transferência de Dados para Terceiros e para o Estrangeiro",
+      "content": "Apenas transmitimos os seus dados a terceiros se isto for necessário para o cumprimento do contrato (por exemplo, alojamento, ferramentas de agendamento) ou se tiver consentido. Alguns destes prestadores de serviços podem estar localizados fora da Suíça (por exemplo, EUA). Nestes casos, garantimos que estão em vigor salvaguardas apropriadas de proteção de dados (como Cláusulas Contratuais Padrão) para cumprir com os padrões nDSG suíços e GDPR."
+    },
+    "rights": {
+      "title": "8. Os Seus Direitos",
+      "intro": "Tem o direito de:",
+      "item1": "Solicitar informações sobre os seus dados pessoais armazenados a qualquer momento.",
+      "item2": "Solicitar a correção de dados incorretos.",
+      "item3": "Solicitar a eliminação dos seus dados (Direito ao esquecimento), desde que não existam obrigações legais de retenção.",
+      "item4": "Revogar o seu consentimento para o tratamento de dados a qualquer momento.",
+      "contact": "Para exercer estes direitos, contacte-nos diretamente em:"
+    },
+    "changes": {
+      "title": "9. Alterações a esta Política de Privacidade",
+      "content": "Reservamo-nos o direito de adaptar esta política de privacidade para que sempre cumpra com os requisitos legais atuais ou para implementar alterações aos nossos serviços na política de privacidade (por exemplo, ao introduzir novos serviços). A nova política de privacidade aplica-se então à sua próxima visita."
+    },
+    "back_home": "← Voltar ao Início",
+    "all_rights": "Todos os direitos reservados."
+  },
+  "terms": {
+    "title": "Termos e Condições Gerais (TCG)",
+    "last_updated": "Última atualização:",
+    "effective_date": "Data de Entrada em Vigor",
+    "effective_date_value": "11 de Dezembro de 2025",
+    "scope": {
+      "title": "1. Âmbito de Aplicação",
+      "content": "Estes Termos e Condições Gerais (doravante \"TCG\") aplicam-se a todas as relações comerciais entre Lopes2Tech / Paulo Lopes (doravante \"Prestador\") e os seus clientes (doravante \"Cliente\"). Aplicam-se a todos os serviços prestados, incluindo, mas não limitado a, desenvolvimento de websites, engenharia de software, automações de IA e consultoria."
+    },
+    "subject": {
+      "title": "2. Objeto do Contrato",
+      "intro": "O Prestador fornece serviços no campo de TI e automação. O âmbito específico dos serviços é definido na respectiva oferta individual ou contrato de serviço.",
+      "web_software": "Web & Software",
+      "web_software_desc": "Desenvolvimento de websites, aplicações e dashboards.",
+      "ai_automation": "IA & Automação",
+      "ai_automation_desc": "Implementação de chatbots, assistentes de voz e automações de fluxo de trabalho (por exemplo, n8n, Retell, OpenAI).",
+      "maintenance": "Manutenção",
+      "maintenance_desc": "Suporte contínuo e serviços de hospedagem."
+    },
+    "conclusion": {
+      "title": "3. Conclusão do Contrato",
+      "intro": "As ofertas feitas pelo Prestador são válidas por 30 dias, salvo indicação em contrário. O contrato é concluído mediante:",
+      "item1": "A aceitação escrita da oferta pelo Cliente (e-mail é suficiente).",
+      "item2": "O pagamento de um depósito inicial.",
+      "item3": "O início da prestação real de serviços pelo Prestador com conhecimento do Cliente."
+    },
+    "client_obligations": {
+      "title": "4. Obrigações do Cliente",
+      "intro": "O Cliente concorda em:",
+      "item1": "Fornecer todo o conteúdo necessário (texto, imagens, logótipos) de forma oportuna.",
+      "item2": "Conceder os direitos de acesso necessários (hospedagem, chaves de API, registrador de domínio) necessários para o projeto.",
+      "item3": "Rever entregas e fornecer feedback dentro de 5 dias úteis. Se nenhum feedback for recebido dentro deste período, a entrega é considerada aceite."
+    },
+    "pricing": {
+      "title": "5. Preços e Termos de Pagamento",
+      "project": {
+        "title": "5.1 Serviços de Projeto",
+        "intro": "Salvo acordo em contrário na oferta individual, aplicam-se os seguintes termos de pagamento com base no volume total do projeto:",
+        "small": {
+          "title": "Pequenos Projetos (até CHF 2'500)",
+          "item1": "100% da taxa do projeto é devida imediatamente na conclusão do contrato.",
+          "item2": "O trabalho começa apenas após o recebimento do pagamento integral."
+        },
+        "standard": {
+          "title": "Projetos Padrão e Grandes (acima de CHF 2'500)",
+          "deposit": "Depósito de 50%",
+          "deposit_desc": "Devido imediatamente na conclusão do contrato para reservar recursos e iniciar o trabalho.",
+          "final": "Pagamento Final de 50%",
+          "final_desc": "Devido na conclusão/entrega do projeto."
+        },
+        "invoice": "As faturas são pagáveis dentro de 20 dias líquidos."
+      },
+      "recurring": {
+        "title": "5.2 Serviços Recorrentes (Manutenção/Subscrições)",
+        "content": "As taxas para manutenção contínua ou componentes SaaS (por exemplo, hospedagem de Chatbot) são faturadas mensalmente ou anualmente antecipadamente.",
+        "cancellation": "O período de cancelamento para serviços recorrentes é de 30 dias até ao final do mês, salvo se tiver sido acordado um prazo mínimo de contrato."
+      }
+    },
+    "intellectual_property": {
+      "title": "6. Propriedade Intelectual e Direitos de Utilização",
+      "item1": "Após o pagamento integral da taxa acordada, o Cliente recebe os direitos de utilização para o software/website criado.",
+      "item2": "O Prestador retém o direito de reutilizar módulos de código genéricos, bibliotecas e padrões de design desenvolvidos durante o projeto para outros clientes (prática padrão de engenharia de software).",
+      "item3": "O Cliente garante que todos os materiais fornecidos ao Prestador (imagens, textos) não violam direitos de terceiros."
+    },
+    "ai_services": {
+      "title": "7. Disposições Específicas para Serviços de IA",
+      "intro": "O Cliente reconhece que serviços envolvendo Inteligência Artificial (IA) (por exemplo, Chatbots, sistemas RAG, Assistentes de Voz) dependem de fornecedores terceiros (por exemplo, OpenAI, Anthropic, Retell AI).",
+      "accuracy": {
+        "title": "Precisão",
+        "content": "O Prestador não pode garantir que as saídas de IA sejam 100% precisas. O Cliente é responsável por verificar informações críticas geradas por IA."
+      },
+      "availability": {
+        "title": "Disponibilidade",
+        "content": "O Prestador não é responsável por interrupções de serviço causadas por falhas de API de terceiros (por exemplo, se o ChatGPT estiver inativo)."
+      },
+      "costs": {
+        "title": "Custos",
+        "content": "Salvo se estritamente incluído numa taxa fixa, os custos variáveis de utilização de API (utilização de tokens) podem ser faturados ao Cliente ou pagos diretamente pelo Cliente ao fornecedor."
+      }
+    },
+    "warranty": {
+      "title": "8. Garantia e Responsabilidade",
+      "warranty": {
+        "title": "8.1 Garantia",
+        "content1": "O Prestador garante que o software/website é funcional e livre de defeitos críticos no momento da aceitação. O período de garantia é de 3 meses a partir da entrega.",
+        "content2": "A garantia não cobre defeitos causados por atualizações de terceiros (por exemplo, uma atualização de plugin WordPress que quebra o site) ou alterações não autorizadas pelo Cliente."
+      },
+      "liability": {
+        "title": "8.2 Responsabilidade",
+        "content1": "Na medida permitida pela lei suíça, a responsabilidade do Prestador está limitada a intenção e negligência grave.",
+        "content2": "A responsabilidade por negligência ligeira, danos indiretos ou danos consequenciais (por exemplo, perda de lucro, perda de dados) está excluída.",
+        "content3": "O Prestador não é responsável por violações de privacidade de dados causadas pelo uso indevido pelo Cliente das ferramentas fornecidas (por exemplo, inserir dados de pacientes num campo não seguro)."
+      }
+    },
+    "data_protection": {
+      "title": "9. Proteção de Dados e Confidencialidade",
+      "content": "Ambas as partes concordam em tratar todos os segredos comerciais e informações confidenciais obtidas durante a relação comercial como estritamente confidenciais. O Prestador processa dados pessoais de acordo com a Lei Federal Suíça sobre Proteção de Dados (nDSG)."
+    },
+    "final": {
+      "title": "10. Disposições Finais",
+      "severability": {
+        "title": "Cláusula de Salvaguarda",
+        "content": "Se disposições individuais destes TCG forem inválidas, a validade das disposições restantes permanece inalterada."
+      },
+      "jurisdiction": {
+        "title": "Foro",
+        "content": "O foro exclusivo para todas as disputas decorrentes deste contrato é Zurique, Suíça."
+      },
+      "law": {
+        "title": "Lei Aplicável",
+        "content": "Aplica-se exclusivamente a lei suíça."
+      }
+    },
+    "back_home": "← Voltar ao Início",
+    "all_rights": "Todos os direitos reservados."
   }
 }

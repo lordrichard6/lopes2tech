@@ -36,8 +36,7 @@ export class ServicesV2Component implements AfterViewInit, OnDestroy {
     {
       translationKey: 'ai',
       dialogKey: 'ai',
-      image: '/serv_ai.png',
-      navigateTo: ['/ai-solutions']
+      image: '/serv_ai.png'
     },
     {
       translationKey: 'websites',
@@ -111,6 +110,12 @@ export class ServicesV2Component implements AfterViewInit, OnDestroy {
   closeServiceDialog(): void {
     this.isDialogOpen = false;
     this.selectedServiceKey = '';
+  }
+
+  openCalBooking(): void {
+    if (this.isBrowser) {
+      window.open('https://cal.com/lopes2tech/initial-consult', '_blank', 'noopener,noreferrer');
+    }
   }
 
   ngOnDestroy(): void {

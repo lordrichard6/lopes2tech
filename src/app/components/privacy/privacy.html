@@ -1,0 +1,137 @@
+<div class="privacy-page">
+  <div class="hero-background">
+    <div class="floating-elements">
+      <div class="floating-circle circle-1"></div>
+      <div class="floating-circle circle-2"></div>
+      <div class="floating-circle circle-3"></div>
+    </div>
+  </div>
+
+  <div class="privacy-container">
+    <header class="privacy-header">
+      <h1>{{ 'privacy.title' | translate }}</h1>
+      <p class="last-updated">{{ 'privacy.last_updated' | translate }} {{ getLastUpdated() }}</p>
+    </header>
+
+    <main class="privacy-card">
+      <!-- Section 1: General Information -->
+      <section class="legal-text-block">
+        <h3>{{ 'privacy.general.title' | translate }}</h3>
+        <p>{{ 'privacy.general.content1' | translate }}</p>
+        <p>{{ 'privacy.general.content2' | translate }}</p>
+      </section>
+
+      <!-- Section 2: Responsible Person -->
+      <section class="legal-text-block">
+        <h3>{{ 'privacy.responsible.title' | translate }}</h3>
+        <p>{{ 'privacy.responsible.content' | translate }}</p>
+        <div class="contact-info">
+          <p><strong>{{ businessInfo.companyName }}</strong><br>
+          <!-- {{ 'privacy.responsible.address' | translate }}<br> -->
+          {{ businessInfo.city }}, {{ businessInfo.country }}</p>
+          <p>
+            <strong>{{ 'privacy.responsible.phone' | translate }}:</strong> 
+            <a href="tel:{{ businessInfo.phone }}">{{ businessInfo.phone }}</a><br>
+            <strong>{{ 'privacy.responsible.email' | translate }}:</strong> 
+            <a href="mailto:{{ businessInfo.email }}">{{ businessInfo.email }}</a><br>
+            <strong>{{ 'privacy.responsible.website' | translate }}:</strong> 
+            <a href="{{ businessInfo.website }}" target="_blank" rel="noopener noreferrer">{{ businessInfo.website }}</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 3: Data Collection and Processing -->
+      <section class="legal-text-block">
+        <h3>{{ 'privacy.data_collection.title' | translate }}</h3>
+        
+        <h4>{{ 'privacy.data_collection.server_logs.title' | translate }}</h4>
+        <p>{{ 'privacy.data_collection.server_logs.intro' | translate }}</p>
+        <ul class="privacy-list">
+          <li>{{ 'privacy.data_collection.server_logs.item1' | translate }}</li>
+          <li>{{ 'privacy.data_collection.server_logs.item2' | translate }}</li>
+          <li>{{ 'privacy.data_collection.server_logs.item3' | translate }}</li>
+          <li>{{ 'privacy.data_collection.server_logs.item4' | translate }}</li>
+          <li>{{ 'privacy.data_collection.server_logs.item5' | translate }}</li>
+          <li>{{ 'privacy.data_collection.server_logs.item6' | translate }}</li>
+        </ul>
+        <p>{{ 'privacy.data_collection.server_logs.note' | translate }}</p>
+
+        <h4>{{ 'privacy.data_collection.contact_form.title' | translate }}</h4>
+        <p>{{ 'privacy.data_collection.contact_form.content' | translate }}</p>
+
+        <h4>{{ 'privacy.data_collection.calcom.title' | translate }}</h4>
+        <p>{{ 'privacy.data_collection.calcom.intro' | translate }}</p>
+        <ul class="privacy-list">
+          <li><strong>{{ 'privacy.data_collection.calcom.provider' | translate }}:</strong> {{ 'privacy.data_collection.calcom.provider_value' | translate }}</li>
+          <li><strong>{{ 'privacy.data_collection.calcom.purpose' | translate }}:</strong> {{ 'privacy.data_collection.calcom.purpose_value' | translate }}</li>
+        </ul>
+        <p>{{ 'privacy.data_collection.calcom.note' | translate }}</p>
+
+        <h4>{{ 'privacy.data_collection.chatbot.title' | translate }}</h4>
+        <p>{{ 'privacy.data_collection.chatbot.intro' | translate }}</p>
+        <ul class="privacy-list">
+          <li>{{ 'privacy.data_collection.chatbot.item1' | translate }}</li>
+          <li>{{ 'privacy.data_collection.chatbot.item2' | translate }}</li>
+          <li>{{ 'privacy.data_collection.chatbot.item3' | translate }}</li>
+        </ul>
+      </section>
+
+      <!-- Section 4: Cookies -->
+      <section class="legal-text-block">
+        <h3>{{ 'privacy.cookies.title' | translate }}</h3>
+        <p>{{ 'privacy.cookies.intro' | translate }}</p>
+        <ul class="privacy-list">
+          <li><strong>{{ 'privacy.cookies.essential' | translate }}:</strong> {{ 'privacy.cookies.essential_desc' | translate }}</li>
+          <li><strong>{{ 'privacy.cookies.analytical' | translate }}:</strong> {{ 'privacy.cookies.analytical_desc' | translate }}</li>
+        </ul>
+        <p>{{ 'privacy.cookies.note' | translate }}</p>
+      </section>
+
+      <!-- Section 5: Analytics and Third-Party Tools -->
+      <section class="legal-text-block">
+        <h3>{{ 'privacy.analytics.title' | translate }}</h3>
+        <p>{{ 'privacy.analytics.content' | translate }}</p>
+      </section>
+
+      <!-- Section 6: Data Security -->
+      <section class="legal-text-block">
+        <h3>{{ 'privacy.security.title' | translate }}</h3>
+        <p>{{ 'privacy.security.content' | translate }}</p>
+      </section>
+
+      <!-- Section 7: Data Transfer -->
+      <section class="legal-text-block">
+        <h3>{{ 'privacy.data_transfer.title' | translate }}</h3>
+        <p>{{ 'privacy.data_transfer.content' | translate }}</p>
+      </section>
+
+      <!-- Section 8: Your Rights -->
+      <section class="legal-text-block">
+        <h3>{{ 'privacy.rights.title' | translate }}</h3>
+        <p>{{ 'privacy.rights.intro' | translate }}</p>
+        <ul class="privacy-list">
+          <li>{{ 'privacy.rights.item1' | translate }}</li>
+          <li>{{ 'privacy.rights.item2' | translate }}</li>
+          <li>{{ 'privacy.rights.item3' | translate }}</li>
+          <li>{{ 'privacy.rights.item4' | translate }}</li>
+        </ul>
+        <p>{{ 'privacy.rights.contact' | translate }} <a href="mailto:{{ businessInfo.email }}">{{ businessInfo.email }}</a>.</p>
+      </section>
+
+      <!-- Section 9: Changes to Privacy Policy -->
+      <section class="legal-text-block">
+        <h3>{{ 'privacy.changes.title' | translate }}</h3>
+        <p>{{ 'privacy.changes.content' | translate }}</p>
+      </section>
+
+      <div class="card-footer">
+        <a routerLink="/" class="btn-back">
+          <i class="fas fa-arrow-left"></i>
+          {{ 'privacy.back_home' | translate }}
+        </a>
+        <p class="copyright-text">© {{ getCurrentYear() }} {{ businessInfo.companyName }}. {{ 'privacy.all_rights' | translate }}</p>
+      </div>
+    </main>
+  </div>
+</div>
+
