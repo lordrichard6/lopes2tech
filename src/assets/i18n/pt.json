@@ -753,48 +753,20 @@
   },
   "portfolio": {
     "badge": "O Meu Portfólio",
-    "title": "Projeto em Destaque",
-    "subtitle": "Explore a nossa mais recente solução de tecnologia para saúde",
+    "title": "Projetos em Destaque",
+    "subtitle": "Explore alguns dos meus trabalhos e soluções recentes",
+    "visit": "Visitar Projeto",
     "theraflow": {
-      "title": "TheraFlow",
-      "beta": "Beta",
-      "tagline": "O CRM Simples Criado para Terapeutas e Coaches",
-      "description": "Gira o teu consultório com confiança. Agenda sessões, acompanha o progresso dos clientes, processa pagamentos e mantém notas seguras - tudo numa plataforma focada na privacidade e construída com precisão suíça.",
-      "donation": "Este produto SaaS está atualmente em beta. Apoia o seu desenvolvimento através de crowdfunding, investimento ou doações para ajudar a levar esta solução a mais profissionais!",
-      "features": {
-        "title": "Tudo o Que Precisas para Gerir o Teu Consultório",
-        "scheduling": {
-          "title": "Agendamento e Calendário",
-          "description": "Sincronização Google/Outlook, gestão inteligente de disponibilidade, portal de auto-agendamento e suporte automático de fuso horário"
-        },
-        "clients": {
-          "title": "Gestão de Clientes",
-          "description": "Perfis detalhados com notas seguras, histórico, formulários de admissão e categorização inteligente"
-        },
-        "sessions": {
-          "title": "Gestão de Sessões",
-          "description": "Registo abrangente, acompanhamento de progresso, formato SOAP/DAR(N) e modelos personalizáveis"
-        },
-        "billing": {
-          "title": "Faturação e Pagamentos",
-          "description": "Faturação profissional, integração Stripe/PayPal, acompanhamento de pagamentos pendentes e relatórios financeiros"
-        },
-        "reminders": {
-          "title": "Lembretes e Notificações",
-          "description": "Lembretes por email/SMS, follow-ups automáticos, fluxos de check-in, reduz faltas em 80%"
-        },
-        "security": {
-          "title": "Segurança e Conformidade",
-          "description": "Encriptação end-to-end, conformidade total com GDPR, HIPAA opcional, controlo de acesso baseado em funções"
-        }
-      },
-      "stats": {
-        "practitioners": "Profissionais",
-        "sessions": "Sessões Geridas",
-        "uptime": "Disponibilidade"
-      },
-      "cta": "Visitar TheraFlow",
-      "supportButton": "Apoiar Projeto"
+      "title": "TheraFlow CRM",
+      "description": "Uma solução CRM abrangente desenvolvida especificamente para terapeutas e coaches. Gerir sessões, acompanhar o progresso dos clientes, processar faturas e manter notas seguras - tudo numa plataforma focada na privacidade."
+    },
+    "finito": {
+      "title": "Finito Pro",
+      "description": "Software de gestão de projetos suíço para empresas artesanais e PME. Digitalize o seu fluxo de trabalho desde orçamentos até faturação, com suporte de aplicação móvel para equipas no local e conformidade com proteção de dados suíça."
+    },
+    "noff": {
+      "title": "Noff",
+      "description": "O seu cartão de visita digital para comunicação clara. Defina as suas preferências de disponibilidade e comunique quando e como deseja ser contactado, reduzindo interrupções e melhorando o foco."
     }
   },
   "support": {

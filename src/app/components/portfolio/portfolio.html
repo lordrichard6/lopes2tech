@@ -16,74 +16,46 @@
       <p class="section-subtitle">{{ 'portfolio.subtitle' | translate }}</p>
     </div>
 
-    <div class="portfolio-card reveal-on-scroll" #revealItem>
-      <div class="card-content">
-        <div class="project-header">
-          <div class="logo-wrapper">
-            <img src="/theraflow-logo.svg" alt="TheraFlow CRM" class="project-logo">
-          </div>
-          <div class="header-text">
-            <div class="title-row">
-              <h3 class="project-title">{{ 'portfolio.theraflow.title' | translate }}</h3>
-              <span class="status-badge beta">{{ 'portfolio.theraflow.beta' | translate }}</span>
-            </div>
-            <p class="project-tagline">{{ 'portfolio.theraflow.tagline' | translate }}</p>
-          </div>
+    <div class="portfolio-grid reveal-on-scroll" #revealItem>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/proj/theraflow.png" alt="TheraFlow CRM" loading="lazy">
         </div>
-        
-        <div class="project-body">
+        <div class="project-content">
+          <h3 class="project-title">{{ 'portfolio.theraflow.title' | translate }}</h3>
           <p class="project-description">{{ 'portfolio.theraflow.description' | translate }}</p>
-          
-          <div class="features-grid">
-            <div class="feature-item">
-              <i class="fas fa-calendar-check"></i>
-              <div class="feature-text">
-                <h4>{{ 'portfolio.theraflow.features.scheduling.title' | translate }}</h4>
-                <p>{{ 'portfolio.theraflow.features.scheduling.description' | translate }}</p>
-              </div>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-users"></i>
-              <div class="feature-text">
-                <h4>{{ 'portfolio.theraflow.features.clients.title' | translate }}</h4>
-                <p>{{ 'portfolio.theraflow.features.clients.description' | translate }}</p>
-              </div>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-shield-alt"></i>
-              <div class="feature-text">
-                <h4>{{ 'portfolio.theraflow.features.security.title' | translate }}</h4>
-                <p>{{ 'portfolio.theraflow.features.security.description' | translate }}</p>
-              </div>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-file-invoice-dollar"></i>
-              <div class="feature-text">
-                <h4>{{ 'portfolio.theraflow.features.billing.title' | translate }}</h4>
-                <p>{{ 'portfolio.theraflow.features.billing.description' | translate }}</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="donation-box">
-            <div class="donation-icon">
-              <i class="fas fa-hand-holding-heart"></i>
-            </div>
-            <p class="donation-text">{{ 'portfolio.theraflow.donation' | translate }}</p>
-          </div>
+          <a href="https://www.theraflow-crm.ch/" target="_blank" rel="noopener noreferrer" class="btn-visit">
+            {{ 'portfolio.visit' | translate }}
+            <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
+      </div>
 
-        <div class="project-footer">
-          <div class="cta-buttons">
-            <a href="https://www.theraflow-crm.ch/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              <span>{{ 'portfolio.theraflow.cta' | translate }}</span>
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-            <a href="/support-theraflow" class="btn btn-secondary">
-              <i class="fas fa-heart"></i>
-              <span>{{ 'portfolio.theraflow.supportButton' | translate }}</span>
-            </a>
-          </div>
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/proj/finito.png" alt="Finito Pro" loading="lazy">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">{{ 'portfolio.finito.title' | translate }}</h3>
+          <p class="project-description">{{ 'portfolio.finito.description' | translate }}</p>
+          <a href="https://www.finitopro.ch/" target="_blank" rel="noopener noreferrer" class="btn-visit">
+            {{ 'portfolio.visit' | translate }}
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/proj/noff.png" alt="Noff" loading="lazy">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">{{ 'portfolio.noff.title' | translate }}</h3>
+          <p class="project-description">{{ 'portfolio.noff.description' | translate }}</p>
+          <a href="https://noff.ch/" target="_blank" rel="noopener noreferrer" class="btn-visit">
+            {{ 'portfolio.visit' | translate }}
+            <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
       </div>
     </div>

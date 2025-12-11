@@ -897,48 +897,20 @@
   },
   "portfolio": {
     "badge": "Mein Portfolio",
-    "title": "Ausgewähltes Projekt",
-    "subtitle": "Entdecken Sie unsere neueste Gesundheitstechnologie-Lösung",
+    "title": "Ausgewählte Projekte",
+    "subtitle": "Entdecken Sie einige meiner neuesten Arbeiten und Lösungen",
+    "visit": "Projekt besuchen",
     "theraflow": {
-      "title": "TheraFlow",
-      "beta": "Beta",
-      "tagline": "Das Einfache CRM für Therapeuten & Coaches",
-      "description": "Verwalten Sie Ihre Praxis mit Vertrauen. Planen Sie Sitzungen, verfolgen Sie Fortschritte von Klienten, verarbeiten Sie Zahlungen und führen Sie sichere Notizen - alles auf einer datenschutzorientierten Plattform mit Schweizer Präzision.",
-      "donation": "Dieses SaaS-Produkt befindet sich derzeit in der Beta-Phase. Unterstützen Sie die Entwicklung durch Crowdfunding, Investitionen oder Spenden, um diese Lösung mehr Praktikern zugänglich zu machen!",
-      "features": {
-        "title": "Alles, Was Sie für Ihre Praxis Benötigen",
-        "scheduling": {
-          "title": "Terminplanung & Kalender",
-          "description": "Google/Outlook-Synchronisation, intelligente Verfügbarkeitsverwaltung, Selbstbuchungsportal und automatische Zeitzonenunterstützung"
-        },
-        "clients": {
-          "title": "Klientenverwaltung",
-          "description": "Detaillierte Profile mit sicheren Notizen, Verlaufsprotokoll, Aufnahmeformulare und intelligente Kategorisierung"
-        },
-        "sessions": {
-          "title": "Sitzungsverwaltung",
-          "description": "Umfassende Protokollierung, Fortschrittsverfolgung, SOAP/DAR(N)-Format und anpassbare Vorlagen"
-        },
-        "billing": {
-          "title": "Abrechnung & Zahlungen",
-          "description": "Professionelle Rechnungsstellung, Stripe/PayPal-Integration, Verfolgung unbezahlter Rechnungen und Finanzberichte"
-        },
-        "reminders": {
-          "title": "Erinnerungen & Benachrichtigungen",
-          "description": "E-Mail/SMS-Erinnerungen, automatische Nachverfolgungen, Check-in-Workflows, reduziert Ausfälle um 80%"
-        },
-        "security": {
-          "title": "Sicherheit & Compliance",
-          "description": "End-to-End-Verschlüsselung, vollständige DSGVO-Konformität, optionale HIPAA, rollenbasierte Zugriffskontrolle"
-        }
-      },
-      "stats": {
-        "practitioners": "Praktiker",
-        "sessions": "Verwaltete Sitzungen",
-        "uptime": "Verfügbarkeit"
-      },
-      "cta": "TheraFlow besuchen",
-      "supportButton": "Projekt unterstützen"
+      "title": "TheraFlow CRM",
+      "description": "Eine umfassende CRM-Lösung, die speziell für Therapeuten und Coaches entwickelt wurde. Verwalten Sie Sitzungen, verfolgen Sie Klientenfortschritte, bearbeiten Sie Abrechnungen und führen Sie sichere Notizen - alles auf einer datenschutzorientierten Plattform."
+    },
+    "finito": {
+      "title": "Finito Pro",
+      "description": "Schweizer Projektmanagement-Software für Handwerksbetriebe und KMU. Digitalisieren Sie Ihren Workflow von Offerten bis zur Rechnungsstellung, mit mobiler App-Unterstützung für Baustellenteams und Schweizer Datenschutzkonformität."
+    },
+    "noff": {
+      "title": "Noff",
+      "description": "Ihre digitale Visitenkarte für klare Kommunikation. Legen Sie Ihre Verfügbarkeitspräferenzen fest und kommunizieren Sie, wann und wie Sie erreicht werden möchten, um Unterbrechungen zu reduzieren und den Fokus zu verbessern."
     }
   },
   "support": {
