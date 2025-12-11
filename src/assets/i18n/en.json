@@ -787,15 +787,15 @@
     "visit": "Visit Project",
     "theraflow": {
       "title": "TheraFlow CRM",
-      "description": "A comprehensive CRM solution built specifically for therapists and coaches. Manage sessions, track client progress, handle billing, and maintain secure notes - all in one privacy-focused platform."
+      "description": "A comprehensive CRM solution for therapists and coaches. Owned by Lopes2Tech."
     },
     "finito": {
       "title": "Finito Pro",
-      "description": "Swiss project management software for craft businesses and SMEs. Digitalize your workflow from quotes to invoicing, with mobile app support for on-site teams and Swiss data protection compliance."
+      "description": "Swiss project management software for craft businesses and SMEs. Developed for client SM Tech."
     },
     "noff": {
       "title": "Noff",
-      "description": "Your digital business card for clear communication. Set your availability preferences and communicate when and how you want to be reached, reducing interruptions and improving focus."
+      "description": "Digital business card for clear communication and availability management. Developed for client SM Tech."
     }
   },
   "support": {

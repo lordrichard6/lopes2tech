@@ -758,15 +758,15 @@
     "visit": "Visitar Projeto",
     "theraflow": {
       "title": "TheraFlow CRM",
-      "description": "Uma solução CRM abrangente desenvolvida especificamente para terapeutas e coaches. Gerir sessões, acompanhar o progresso dos clientes, processar faturas e manter notas seguras - tudo numa plataforma focada na privacidade."
+      "description": "Uma solução CRM abrangente para terapeutas e coaches. Propriedade da Lopes2Tech."
     },
     "finito": {
       "title": "Finito Pro",
-      "description": "Software de gestão de projetos suíço para empresas artesanais e PME. Digitalize o seu fluxo de trabalho desde orçamentos até faturação, com suporte de aplicação móvel para equipas no local e conformidade com proteção de dados suíça."
+      "description": "Software de gestão de projetos suíço para empresas artesanais e PME. Desenvolvido para cliente SM Tech."
     },
     "noff": {
       "title": "Noff",
-      "description": "O seu cartão de visita digital para comunicação clara. Defina as suas preferências de disponibilidade e comunique quando e como deseja ser contactado, reduzindo interrupções e melhorando o foco."
+      "description": "Cartão de visita digital para comunicação clara e gestão de disponibilidade. Desenvolvido para cliente SM Tech."
     }
   },
   "support": {
