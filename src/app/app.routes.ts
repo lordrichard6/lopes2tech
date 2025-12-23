@@ -42,5 +42,10 @@ export const routes: Routes = [
     loadComponent: () => import('./components/terms/terms').then(m => m.TermsComponent),
     canActivate: [seoGuard]
   },
+  { 
+    path: 'client-portal/login', 
+    loadComponent: () => import('./components/client-login/client-login').then(m => m.ClientLoginComponent),
+    canActivate: [seoGuard]
+  },
   { path: '**', redirectTo: '' }
 ];

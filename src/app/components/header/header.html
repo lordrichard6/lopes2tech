@@ -35,6 +35,12 @@
         <li><a href="#services" (click)="closeMenu()">{{ 'nav.services' | translate }}</a></li>
         <li><a href="#about" (click)="closeMenu()">{{ 'nav.about' | translate }}</a></li>
         <li><a href="#contact" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a></li>
+        <li class="nav-portal">
+          <a routerLink="/client-portal/login" (click)="closeMenu()" class="portal-link">
+            <i class="fas fa-user-lock"></i>
+            {{ 'nav.clientPortal' | translate }}
+          </a>
+        </li>
       </ul>
     </div>
   </nav>

@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, AfterViewInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { AfterViewInit, Component, ViewChild, ElementRef, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { OpenaiService } from '../../services/openai.service';
@@ -6,6 +6,8 @@ import { TranslationService } from '../../services/translation.service';
 import { LoggerService } from '../../services/logger.service';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { ChatMessage } from '../../types/chat.types';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-ai-chat',
@@ -29,17 +31,20 @@ export class AiChatComponent implements AfterViewInit, OnDestroy {
   private scrollListener?: () => void;
   private shouldAutoScroll = true;
   private isLoadingOlderMessages = false; // Prevent rapid loading
+  private readonly destroy$ = new Subject<void>();
 
   constructor(
     private openaiService: OpenaiService,
     private translationService: TranslationService,
-    private logger: LoggerService,
-    private cdr: ChangeDetectorRef
+    private logger: LoggerService
   ) {
     // Subscribe to language changes and update welcome message
-    this.translationService.getCurrentLanguage().subscribe(lang => {
-      this.updateWelcomeMessage(lang);
-    });
+    this.translationService
+      .getCurrentLanguage()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(lang => {
+        this.updateWelcomeMessage(lang);
+      });
   }
 
   ngAfterViewInit(): void {
@@ -48,6 +53,9 @@ export class AiChatComponent implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+
     if (this.scrollListener && this.messagesContainer) {
       const container = this.messagesContainer.nativeElement;
       container.removeEventListener('scroll', this.scrollListener);
@@ -119,7 +127,6 @@ export class AiChatComponent implements AfterViewInit, OnDestroy {
     const endIndex = totalMessages - this.scrollOffset;
     
     this.visibleMessages = this.messages.slice(startIndex, endIndex);
-    this.cdr.detectChanges();
     
     // Auto-scroll to bottom if we should
     if (this.shouldAutoScroll) {
@@ -145,7 +152,6 @@ export class AiChatComponent implements AfterViewInit, OnDestroy {
     const endIndex = totalMessages - this.scrollOffset;
     
     this.visibleMessages = this.messages.slice(startIndex, endIndex);
-    this.cdr.detectChanges();
     
     // Maintain scroll position after loading older messages
     setTimeout(() => {

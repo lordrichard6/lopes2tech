@@ -1,15 +1,15 @@
 # lopes2tech - Swiss IT Solutions & Automation
 
-A modern, responsive website built with Angular 20+ showcasing lopes2tech's IT services, process automation, and digital solutions.
+A modern, multilingual, SEO‑optimized website built with Angular 20 (standalone components + SSR) showcasing lopes2tech’s automation, AI, and web solutions for Swiss service businesses.
 
 ## About lopes2tech
 
-lopes2tech is a Swiss Sole Proprietorship company based in Zurich, founded by Paulo R. Lopes. We specialize in:
+lopes2tech is a Swiss sole proprietorship based in Zurich, founded by Paulo R. Lopes. We specialize in:
 
-- Process Automation
-- Web Development
-- App Development (macOS, iPad, iOS)
-- Custom Tools & Solutions
+- Automation & AI agents for service businesses
+- Modern websites and client portals
+- Custom CRM and workflow tools
+- Privacy‑focused solutions for Swiss & EU regulations (nDSG / GDPR)
 
 ## Company Information
 
@@ -20,7 +20,7 @@ Phone: +41 78 798 95 33
 
 ## Development
 
-This project was built using Angular CLI version 20.1.5 with the latest Angular features including:
+This project is built with Angular 20 (Angular CLI 20.3.x) and uses the latest Angular features, including:
 - Standalone components
 - Server-Side Rendering (SSR)
 - Static Site Generation (SSG)
@@ -58,66 +58,49 @@ Build artifacts will be stored in the `dist/` directory.
 src/
 ├── app/
 │   ├── components/
-│   │   ├── header/           # Fixed navigation component
-│   │   │   ├── header.html
-│   │   │   ├── header.scss
-│   │   │   └── header.ts
-│   │   ├── hero/             # Hero/banner section
-│   │   │   ├── hero.html
-│   │   │   ├── hero.scss
-│   │   │   └── hero.ts
-│   │   ├── services/         # Services showcase
-│   │   │   ├── services.html
-│   │   │   ├── services.scss
-│   │   │   └── services.ts
-│   │   ├── about/            # About/company info
-│   │   │   ├── about.html
-│   │   │   ├── about.scss
-│   │   │   └── about.ts
-│   │   ├── contact/          # Contact form with validation
-│   │   │   ├── contact.html
-│   │   │   ├── contact.scss
-│   │   │   └── contact.ts
-│   │   └── footer/           # Site footer
-│   │       ├── footer.html
-│   │       ├── footer.scss
-│   │       └── footer.ts
-│   ├── services/             # Angular services
-│   │   └── business-info.ts  # Business data service
-│   ├── app.html              # Main app template
-│   ├── app.scss              # Global app styles
-│   └── app.ts                # Root component
-├── styles.scss               # Global styles & CSS variables
-└── index.html                # Main HTML file
+│   │   ├── header/            # Navigation, language selector, theme toggle
+│   │   ├── hero/              # Hero/banner with main value proposition & CTA
+│   │   ├── services/          # Service cards (Services V2) + AI solutions dialog
+│   │   ├── ai-solutions/      # Detailed AI services landing page
+│   │   ├── about/             # About the founder & positioning
+│   │   ├── portfolio/         # Project gallery / case studies
+│   │   ├── contact/           # Contact form with validation
+│   │   ├── ai-chat/           # Lopes2Tech Digital Assistant (chat widget)
+│   │   ├── client-login/      # Client portal login page
+│   │   ├── privacy/           # Privacy policy
+│   │   ├── terms/             # Terms & Conditions (AGB)
+│   │   ├── impressum/         # Legal notice / imprint
+│   │   └── footer/            # Footer with links & social icons
+│   ├── services/              # Angular services (SEO, translations, email, etc.)
+│   ├── utils/                 # SEO route config, fallback responses, helpers
+│   ├── app.html               # Main app template
+│   ├── app.scss               # Global app layout styles
+│   └── app.ts                 # Root component (layout shell + routing)
+├── styles.scss                # Global styles & CSS variables (themes)
+└── index.html                 # Root HTML file + meta tags & structured data
 ```
 
 ## Features
 
-- **🎨 Modern Design**: Clean, professional layout inspired by lopes.solutions
-- **📱 Responsive**: Mobile-first design that works on all devices
-- **⚡ Performance**: Angular 20+ with SSR/SSG enabled for optimal loading
-- **🔧 Modular Architecture**: Well-organized component structure for maintainability
-- **📝 Contact Form**: Reactive forms with validation and error handling
-- **🌐 SEO Ready**: Server-side rendering for better search engine visibility
-- **💼 Business Focused**: Tailored for service-based companies
-- **🎯 Accessible**: WCAG compliant design with proper semantic HTML
+## Features
+
+- **🎨 Modern design**: Clean, conversion‑oriented layout for Swiss service businesses
+- **📱 Responsive**: Mobile‑first design that works across devices
+- **🤖 AI Digital Assistant**: OpenAI‑backed chatbot with language‑aware responses (EN/DE/PT)
+- **🔧 Modular architecture**: Standalone components and focused Angular services
+- **📝 Contact & lead forms**: Reactive forms with validation and error handling
+- **🌐 SEO‑ready**: SSR, structured data, canonical URLs, Open Graph & Twitter cards, sitemap/robots
+- **🌍 Multilingual**: i18n with English, German, and Portuguese JSON translation files
+- **🔐 Client portal ready**: Dedicated login page for secure client access & document workflows
+- **🎯 Accessible**: Semantic HTML and keyboard‑friendly UI patterns
 
 ## Technologies
 
-- **Angular 20+**: Latest Angular with standalone components
-- **TypeScript**: Full type safety and modern JavaScript features
-- **SCSS**: Component-scoped styling with CSS variables
-- **Reactive Forms**: Form validation and state management
-- **Angular SSR**: Server-side rendering for better performance
-- **CSS Grid & Flexbox**: Modern layout techniques
-
-## Technologies Used
-
-- Angular 20+
-- TypeScript
-- SCSS
-- Express.js (for SSR)
-- RxJS
+- **Angular 20 (standalone + SSR)**
+- **TypeScript**
+- **SCSS & CSS Variables**
+- **RxJS**
+- **Express.js** (SSR host)
 
 ## License
 

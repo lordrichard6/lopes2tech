@@ -4,7 +4,8 @@
     "services": "Serviços",
     "pricing": "Preços",
     "about": "Sobre",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "clientPortal": "Portal do Cliente"
   },
   "ai": {
     "assistant": "Assistente de IA",
@@ -17,7 +18,7 @@
       "line1": "Simplifica",
       "line2": "a tua vida"
     },
-    "subtitle": "Soluções Especializadas de Web e Automação para Terapeutas, Clínicas e Consultórios Suíços. Automatizamos agendamentos e consultas para que possa focar no cuidado.",
+    "subtitle": "Websites, portais seguros para clientes e automações para empresas de serviços suíças. Dê aos clientes um login para carregar documentos, acompanhar pedidos e gerir a sua conta—enquanto reduz o vai-e-vem e a administração manual.",
     "cta": {
       "primary": "Agendar Auditoria Gratuita",
       "secondary": "Ver Como Funciona"
@@ -422,9 +423,9 @@
   "about": {
     "badge": "Sobre a Lopes2tech",
     "title": "Excelência Técnica sem Taxas de Agência.",
-    "subtitle": "Lopes2Tech é uma consultoria de automação sediada em Zurique dedicada à modernização de empresas de serviços suíças. Fazemos a ponte entre tecnologia complexa e o seu fluxo de trabalho diário.",
-    "description1": "Ao contrário de grandes agências que o passam entre gestores de conta júnior, ofereço suporte direto liderado pelo fundador. Analiso os seus gargalos específicos—seja agendamento de consultas ou consultas de pacientes—e construo sistemas seguros e conformes para os resolver.",
-    "description2": "O meu objetivo é simples: dar aos profissionais independentes as mesmas ferramentas de eficiência que as grandes clínicas, sem os custos gerais.",
+    "subtitle": "Lopes2Tech é uma consultoria de automação sediada em Zurique dedicada à modernização de empresas de serviços suíças. Fazemos a ponte entre tecnologia complexa e as suas operações do dia a dia.",
+    "description1": "Ao contrário de grandes agências que o passam entre gestores de conta júnior, ofereço suporte direto liderado pelo fundador. Analiso os seus gargalos específicos—onboarding de clientes, recolha de documentos, tarefas administrativas recorrentes, faturação e follow-ups—e construo portais seguros para clientes e automações para os resolver.",
+    "description2": "O meu objetivo é simples: dar a pequenas e médias empresas de serviços a mesma alavancagem operacional que grandes grupos, sem os custos gerais.",
     "features": {
       "title": "A Vantagem Lopes2Tech.",
       "swiss": "Preços Fixos e Transparentes.",
@@ -821,6 +822,18 @@
       "terms": "Termos e Condições"
     },
     "copyright": "© 2025 lopes2tech. Todos os direitos reservados."
+  },
+  "clientLogin": {
+    "title": "Portal do Cliente",
+    "subtitle": "Aceda ao seu painel de projeto e recursos",
+    "email": "Email",
+    "emailPlaceholder": "Introduza o seu endereço de email",
+    "password": "Palavra-passe",
+    "passwordPlaceholder": "Introduza a sua palavra-passe",
+    "loginButton": "Iniciar Sessão",
+    "loggingIn": "A iniciar sessão...",
+    "helpText": "Precisa de ajuda para aceder à sua conta?",
+    "contactSupport": "Contactar Suporte"
   },
   "impressum": {
     "title": "Impressum / Aviso Legal",

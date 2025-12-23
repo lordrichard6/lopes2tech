@@ -4,7 +4,8 @@
     "services": "Dienstleistungen",
     "pricing": "Preise",
     "about": "Über uns",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "clientPortal": "Kundenportal"
   },
   "ai": {
     "assistant": "KI-Assistent",
@@ -23,7 +24,7 @@
       "line1": "Vereinfachen Sie",
       "line2": "Ihr Leben"
     },
-    "subtitle": "Spezialisierte Web- und Automatisierungslösungen für Schweizer Therapeuten, Kliniken und Praxen. Wir automatisieren Terminplanung und Anfragen, damit Sie sich auf die Betreuung konzentrieren können.",
+    "subtitle": "Websites, sichere Kundenportale und Automatisierungen für Schweizer Dienstleistungsunternehmen. Geben Sie Kunden einen Login zum Hochladen von Dokumenten, Verfolgen von Anfragen und Verwalten ihrer Konten—während Sie Hin und Her und manuelle Verwaltung reduzieren.",
     "cta": {
       "primary": "Kostenlose Analyse buchen",
       "secondary": "Funktionsweise ansehen"
@@ -179,9 +180,9 @@
   "about": {
     "badge": "Über Lopes2tech",
     "title": "Technische Exzellenz ohne Agenturgebühren.",
-    "subtitle": "Lopes2Tech ist eine in Zürich ansässige Automatisierungsberatung, die sich der Modernisierung schweizerischer Dienstleistungsunternehmen widmet. Wir überbrücken die Lücke zwischen komplexer Technologie und Ihrem täglichen Praxisablauf.",
-    "description1": "Im Gegensatz zu großen Agenturen, die Sie an Junior-Account-Manager weiterreichen, biete ich direkten, gründergeführten Support. Ich analysiere Ihre spezifischen Engpässe – ob Terminplanung oder Patientenanfragen – und baue sichere, konforme Systeme, um sie zu beheben.",
-    "description2": "Mein Ziel ist einfach: unabhängigen Praktikern die gleichen Effizienztools wie großen Kliniken zu geben, ohne den Overhead.",
+    "subtitle": "Lopes2Tech ist eine in Zürich ansässige Automatisierungsberatung, die sich der Modernisierung schweizerischer Dienstleistungsunternehmen widmet. Wir schlagen die Brücke zwischen komplexer Technologie und Ihren täglichen Abläufen.",
+    "description1": "Im Gegensatz zu großen Agenturen, die Sie an Junior-Account-Manager weiterreichen, biete ich direkten, gründergeführten Support. Ich analysiere Ihre spezifischen Engpässe – vom Client-Onboarding über Dokumentenerfassung, wiederkehrende Administration und Abrechnung bis hin zu Follow-ups – und baue sichere Kundenportale und Automatisierungen, um diese zu lösen.",
+    "description2": "Mein Ziel ist einfach: kleinen und mittelgroßen Dienstleistungsunternehmen den gleichen operativen Hebel wie größeren Firmen zu geben – ohne den Overhead.",
     "features": {
       "title": "Der Lopes2Tech Vorteil.",
       "swiss": "Transparente, feste Preise.",
@@ -965,6 +966,18 @@
       "terms": "Allgemeine Geschäftsbedingungen"
     },
     "copyright": "© 2025 lopes2tech. Alle Rechte vorbehalten."
+  },
+  "clientLogin": {
+    "title": "Kundenportal",
+    "subtitle": "Zugriff auf Ihr Projekt-Dashboard und Ressourcen",
+    "email": "E-Mail",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "password": "Passwort",
+    "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
+    "loginButton": "Anmelden",
+    "loggingIn": "Wird angemeldet...",
+    "helpText": "Benötigen Sie Hilfe beim Zugriff auf Ihr Konto?",
+    "contactSupport": "Support kontaktieren"
   },
   "impressum": {
     "title": "Impressum / Rechtliche Hinweise",

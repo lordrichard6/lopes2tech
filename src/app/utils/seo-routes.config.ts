@@ -39,6 +39,27 @@ export const SEO_ROUTES_CONFIG: Record<string, SEOData> = {
     keywords: 'impressum, legal notice, lopes2tech legal',
     url: 'https://lopes2tech.ch/impressum',
     type: 'website'
+  },
+  'privacy': {
+    title: 'Privacy Policy | Data Protection | lopes2tech',
+    description: 'Learn how lopes2tech processes and protects personal data according to the Swiss nDSG (FADP) and, where applicable, the GDPR. Transparent privacy practices for Swiss service businesses.',
+    keywords: 'privacy policy, data protection, nDSG, FADP, GDPR, lopes2tech, Switzerland',
+    url: 'https://lopes2tech.ch/privacy',
+    type: 'website'
+  },
+  'terms': {
+    title: 'Terms & Conditions | lopes2tech',
+    description: 'General terms and conditions (AGB) for lopes2tech. Scope, services, pricing, liability, AI-specific provisions, and data protection for Swiss service businesses.',
+    keywords: 'terms and conditions, AGB, lopes2tech terms, Swiss contract terms, AI services terms',
+    url: 'https://lopes2tech.ch/terms',
+    type: 'website'
+  },
+  'client-portal/login': {
+    title: 'Client Portal Login | lopes2tech',
+    description: 'Secure login for lopes2tech clients to access project dashboards, upload documents, and manage their account.',
+    keywords: 'client portal login, customer login, document upload portal, lopes2tech client area',
+    url: 'https://lopes2tech.ch/client-portal/login',
+    type: 'website'
   }
 };
 

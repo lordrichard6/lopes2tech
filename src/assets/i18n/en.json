@@ -4,7 +4,8 @@
     "services": "Services",
     "pricing": "Pricing",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "clientPortal": "Client Portal"
   },
   "ai": {
     "assistant": "AI Assistant",
@@ -23,7 +24,7 @@
       "line1": "Simplify",
       "line2": "your life"
     },
-    "subtitle": "Specialized Web & Automation Solutions for Swiss Therapists, Clinics, and Praxes. We automate scheduling and inquiries so you can focus on care.",
+    "subtitle": "Websites, secure client portals, and automations for Swiss service businesses. Give clients a login to upload documents, track requests, and manage their account—while you reduce back-and-forth and manual admin.",
     "cta": {
       "primary": "Book a Free Audit",
       "secondary": "See How It Works"
@@ -55,9 +56,9 @@
   "about": {
     "badge": "About Lopes2tech",
     "title": "Technical Excellence without the Agency Fees.",
-    "subtitle": "Lopes2Tech is a Zurich-based automation consultancy dedicated to modernizing Swiss service businesses. We bridge the gap between complex technology and your daily practice workflow.",
-    "description1": "Unlike large agencies that pass you around to junior account managers, I provide direct, founder-led support. I analyze your specific bottlenecks—whether it's appointment scheduling or patient inquiries—and build secure, compliant systems to fix them.",
-    "description2": "My goal is simple: to give independent practitioners the same efficiency tools as large clinics, without the overhead.",
+    "subtitle": "Lopes2Tech is a Zurich-based automation consultancy dedicated to modernizing Swiss service businesses. We bridge the gap between complex technology and your day-to-day operations.",
+    "description1": "Unlike large agencies that pass you around to junior account managers, I provide direct, founder-led support. I analyze your specific bottlenecks—client onboarding, document collection, recurring admin, billing, and follow-ups—and build secure client portals and automations to fix them.",
+    "description2": "My goal is simple: to give small and mid-sized service companies the same operational leverage as larger firms, without the overhead.",
     "features": {
       "title": "The Lopes2Tech Advantage.",
       "swiss": "Transparent, Fixed Pricing.",
@@ -850,6 +851,18 @@
       "terms": "Terms & Conditions"
     },
     "copyright": "© 2025 lopes2tech. All rights reserved."
+  },
+  "clientLogin": {
+    "title": "Client Portal",
+    "subtitle": "Access your project dashboard and resources",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email address",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Sign In",
+    "loggingIn": "Signing in...",
+    "helpText": "Need help accessing your account?",
+    "contactSupport": "Contact Support"
   },
   "impressum": {
     "title": "Impressum / Legal Notice",
