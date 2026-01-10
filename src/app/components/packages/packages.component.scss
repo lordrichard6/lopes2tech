@@ -1,0 +1,245 @@
+.packages-section {
+    padding: 8rem 0 6rem;
+    /* Increased top padding to account for wave */
+    background-color: #0f172a;
+    color: #fff;
+    position: relative;
+    /* overflow: hidden; - Removed to let wave potentially overlap if needed, but usually kept for standard dividers. layout might break if removed. keeping it but ensuring divider is INSIDE. */
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+            radial-gradient(at 0% 0%, rgba(14, 116, 144, 0.15) 0px, transparent 50%),
+            radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.15) 0px, transparent 50%);
+        pointer-events: none;
+        z-index: 0;
+    }
+}
+
+.custom-shape-divider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+    /* Ensure it's above the background */
+}
+
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+    /* Increased height for visibility */
+}
+
+.custom-shape-divider-top .shape-fill {
+    fill: var(--services-bg, #f8fafc);
+    /* Use variable with fallback */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.packages-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+}
+
+/* Grid/Card Layout */
+.packages-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.package-card {
+    display: flex;
+    align-items: stretch;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 0;
+    transition: all 0.3s ease;
+    gap: 0;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+
+    &:hover {
+        background: rgba(30, 41, 59, 0.8);
+        border-color: rgba(56, 189, 248, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    &.popular {
+        background: linear-gradient(to right, rgba(56, 189, 248, 0.1), rgba(30, 41, 59, 0.6));
+        border-color: rgba(56, 189, 248, 0.3);
+
+        &:hover {
+            border-color: rgba(56, 189, 248, 0.5);
+        }
+    }
+}
+
+.card-image-wrapper {
+    flex-shrink: 0;
+    width: 220px;
+    height: auto;
+    position: relative;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+}
+
+.package-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    transition: transform 0.5s ease;
+    transform: scale(1.1); // Slight zoom by default to fill nicely
+
+    .package-card:hover & {
+        transform: scale(1.2);
+    }
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem 2rem 1.5rem 0.5rem;
+    justify-content: center;
+}
+
+.package-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.package-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.popular-badge {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0f172a;
+    background: #38bdf8;
+    padding: 0.25rem 0.6rem;
+    border-radius: 99px;
+    letter-spacing: 0.05em;
+}
+
+.package-price {
+    font-family: 'Monaco', 'Consolas', monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #38bdf8;
+    white-space: nowrap;
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+}
+
+.price-from {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-family: inherit;
+}
+
+.package-description {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin: 0;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.package-target {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+    .package-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-image-wrapper {
+        width: 100%;
+        height: 150px;
+        mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    }
+
+    .card-content {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .package-header {
+        width: 100%;
+    }
+
+    .package-title {
+        font-size: 1.1rem;
+    }
+
+    .package-price {
+        font-size: 1rem;
+    }
+}

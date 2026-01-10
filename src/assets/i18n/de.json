@@ -80,57 +80,155 @@
       "title": "Praxisbeispiele"
     },
     "services": {
-      "ai": {
-        "title": "KI-Lösungen & Automatisierung",
-        "description": "Transformieren Sie Ihr Unternehmen mit intelligenter Automatisierung auf Basis modernster KI-Technologie. Unsere Lösungen reduzieren manuelle Arbeit, verbessern die Genauigkeit und skalieren Ihre Abläufe effizient.",
+      "branding": {
+        "title": "Branding & Identität",
+        "description": "Ihre Marke ist mehr als nur ein Logo – es ist, wie die Welt Sie wahrnimmt. Wir entwickeln vollständige visuelle Identitäten, die Ihre Geschichte erzählen, Vertrauen aufbauen und Sie von der Konkurrenz abheben. Von Start-ups in der Frühphase bis hin zu etablierten Unternehmen schaffen wir kohärente Designsysteme, die auf allen Plattformen funktionieren.",
         "examples": {
+          "title": "Was ist enthalten",
           "example1": {
-            "title": "KI-gestützter Kundensupport-Chatbot",
-            "description": "Implementieren Sie intelligente Chatbots, die Kundenanfragen rund um die Uhr bearbeiten, Supportkosten um 60% reduzieren und sofortige Antworten in mehreren Sprachen bieten. Perfekt für E-Commerce, SaaS-Plattformen und Dienstleistungsunternehmen."
+            "title": "Logo-Design",
+            "description": "Einprägsame, skalierbare und einzigartige Zeichen, die als Eckpfeiler Ihrer Markenidentität dienen."
           },
           "example2": {
-            "title": "Automatisierte Datenverarbeitung & Analytics",
-            "description": "Setzen Sie Machine-Learning-Systeme ein, die automatisch Rechnungen verarbeiten, Daten aus Dokumenten extrahieren und Geschäftseinblicke generieren. Eliminieren Sie manuelle Dateneingabe und reduzieren Sie die Verarbeitungszeit um 80%."
+            "title": "Markenrichtlinien",
+            "description": "Umfassende PDF-Leitfäden, die Ihre Typografie, Farbpalette und Nutzungsregeln definieren, um Konsistenz zu gewährleisten."
           },
           "example3": {
-            "title": "Intelligentes Lead-Qualifizierungssystem",
-            "description": "Erstellen Sie KI-Systeme, die automatisch Verkaufs-Leads qualifizieren, Interessenten basierend auf Verhalten bewerten und hochwertige Gelegenheiten an Ihr Verkaufsteam weiterleiten. Steigern Sie Konversionsraten und optimieren Sie die Verkaufseffizienz."
+            "title": "Social Media Kit",
+            "description": "Gebrauchsfertige Profilbilder, Banner und Beitragsvorlagen, die auf Instagram, LinkedIn und Facebook zugeschnitten sind."
           }
         }
       },
-      "web": {
-        "title": "Moderne Webentwicklung",
-        "description": "Entwickeln Sie leistungsstarke, SEO-optimierte Websites, die das Unternehmenswachstum vorantreiben. Unsere responsiven Designs funktionieren einwandfrei auf allen Geräten und sind für Suchmaschinen und Benutzererfahrung optimiert.",
+      "websites": {
+        "title": "Hochleistungs-Websites",
+        "description": "Wir bauen nicht nur Websites; wir bauen digitale Assets, die das Wachstum vorantreiben. Egal, ob Sie eine einfache Landingpage oder eine komplexe mehrseitige Plattform benötigen, unsere Seiten sind schnell, SEO-optimiert und mobil-perfekt. Wir konzentrieren uns auf Conversion-Design, um Besucher in zahlende Kunden zu verwandeln.",
         "examples": {
+          "title": "Unsere Web-Lösungen",
           "example1": {
-            "title": "E-Commerce-Plattform mit Zahlungsintegration",
-            "description": "Entwickeln Sie vollständige Online-Shops mit sicherer Zahlungsabwicklung, Lagerverwaltung, Kundenkonten und mobil-optimiertem Checkout. Steigern Sie Online-Verkäufe mit professionellen E-Commerce-Lösungen."
+            "title": "Landing Pages",
+            "description": "Einseitige Websites, die mit einem einzigen Ziel entwickelt wurden: Konversion. Perfekt für Anzeigen, Kampagnen oder neue Produkteinführungen."
           },
           "example2": {
-            "title": "Unternehmenswebsite mit CMS-Integration",
-            "description": "Erstellen Sie professionelle Unternehmenswebsites mit Content-Management-Systemen, SEO-Optimierung, Kontaktformularen und Analytics-Integration. Verbessern Sie Ihre Online-Präsenz und generieren Sie mehr Leads."
+            "title": "Unternehmenswebsites",
+            "description": "Mehrseitige Informationszentren, die Autorität aufbauen, Ihr Team präsentieren und Ihre Dienstleistungen detailliert beschreiben."
           },
           "example3": {
-            "title": "Progressive Web Applications (PWA)",
-            "description": "Entwickeln Sie Webanwendungen, die wie native mobile Apps funktionieren, Offline-Funktionalität, Push-Benachrichtigungen und schnelle Ladezeiten bieten. Bieten Sie App-ähnliche Erfahrungen ohne App-Store-Abhängigkeiten."
+            "title": "E-Commerce",
+            "description": "Sichere, benutzerfreundliche Online-Shops, die den Kauf einfach machen, integriert mit Stripe oder lokalen Zahlungsanbietern."
           }
         }
       },
-      "software": {
-        "title": "Massgeschneiderte Softwareentwicklung",
-        "description": "Entwerfen und entwickeln Sie massgeschneiderte Softwarelösungen, die Ihre einzigartigen Geschäftsherausforderungen lösen. Von Desktop-Anwendungen bis hin zu mobilen Apps - wir erstellen skalierbare, sichere und benutzerfreundliche Software.",
+      "hosting": {
+        "title": "Managed Hosting & Domains",
+        "description": "Sorgen Sie sich nicht mehr um Server-Updates, Ausfallzeiten oder Sicherheit. Wir kümmern uns um die gesamte technische Infrastruktur, damit Sie sich auf Ihr Geschäft konzentrieren können. Unser Hosting ist auf Geschwindigkeit optimiert und speziell auf die Technologien abgestimmt, mit denen wir bauen.",
         "examples": {
+          "title": "Hosting-Funktionen",
           "example1": {
-            "title": "Plattformübergreifende Mobile Application",
-            "description": "Entwickeln Sie native iOS- und Android-Apps mit synchronisierten Daten, Push-Benachrichtigungen und Offline-Funktionen. Erreichen Sie Ihre Kunden auf ihren bevorzugten Geräten mit konsistenten Benutzererfahrungen."
+            "title": "Sicheres Cloud-Hosting",
+            "description": "Blitzschnelle Server in Premium-Rechenzentren mit 99,9 % Verfügbarkeitsgarantie."
           },
           "example2": {
-            "title": "Massgeschneidertes Business-Management-System",
-            "description": "Entwickeln Sie umfassende CRM-, ERP- oder Projektmanagement-Systeme, die auf Ihre Arbeitsabläufe zugeschnitten sind. Integrieren Sie bestehende Tools, automatisieren Sie Prozesse und zentralisieren Sie Geschäftsabläufe in einer Plattform."
+            "title": "Tägliche Backups",
+            "description": "Automatische tägliche Backups Ihrer Dateien und Datenbanken, damit Ihre Daten nie verloren gehen."
           },
           "example3": {
-            "title": "API-Entwicklung & Systemintegration",
-            "description": "Erstellen Sie massgeschneiderte APIs und integrieren Sie verschiedene Systeme für nahtlosen Datenfluss. Verbinden Sie Ihre bestehenden Software-Tools, automatisieren Sie Datensynchronisation und eliminieren Sie manuellen Datentransfer."
+            "title": "SSL & Sicherheit",
+            "description": "Kostenlose SSL-Zertifikate (HTTPS) und Firewalls auf Unternehmensniveau, um Ihre Website und Besucher zu schützen."
+          }
+        }
+      },
+      "support": {
+        "title": "Laufende Support-Pläne",
+        "description": "Technologie erfordert Wartung. Unsere Support-Pläne stellen sicher, dass Ihre Website oder Anwendung schnell, sicher und mit den neuesten Browser-Updates kompatibel bleibt. Betrachten Sie es als Versicherung für Ihre digitale Präsenz – wir sind nur eine Nachricht entfernt.",
+        "examples": {
+          "title": "Support-Stufen",
+          "example1": {
+            "title": "Essential Care",
+            "description": "Standard-Updates, Sicherheitspatches und monatliche Gesundheitschecks, damit alles reibungslos läuft."
+          },
+          "example2": {
+            "title": "Growth Support",
+            "description": "Beinhaltet Inhaltsaktualisierungen, bevorzugten E-Mail-Support und Leistungsoptimierungen."
+          },
+          "example3": {
+            "title": "Automation Care",
+            "description": "Dedizierter Support für Ihre kritischen Automatisierungsworkflows, um sicherzustellen, dass Leads und Daten immer korrekt fließen."
+          }
+        }
+      },
+      "automation": {
+        "title": "Geschäftsautomatisierung",
+        "description": "Eliminieren Sie die Fleißarbeit. Wir verbinden Ihre Lieblings-Apps (Gmail, Slack, Trello, CRM), um nahtlose Workflows zu erstellen. Daten sollten sich automatisch zwischen Ihren Systemen bewegen, ohne dass Sie einen Finger rühren müssen, was Ihnen jede Woche Stunden manueller Verwaltungsarbeit erspart.",
+        "examples": {
+          "title": "Automatisierungsbeispiele",
+          "example1": {
+            "title": "Lead-Erfassung & CRM",
+            "description": "Senden Sie Website-Leads automatisch an Ihr CRM (HubSpot, Pipedrive) und benachrichtigen Sie Ihr Vertriebsteam auf Slack."
+          },
+          "example2": {
+            "title": "Terminbuchung",
+            "description": "Synchronisieren Sie Kalender, senden Sie automatische Bestätigungen/Erinnerungen und generieren Sie Zoom-Links ohne E-Mail-Verkehr."
+          },
+          "example3": {
+            "title": "Rechnungsstellung & Zahlungen",
+            "description": "Lösen Sie die Rechnungserstellung aus und senden Sie Zahlungsbelege automatisch, wenn eine Projektphase abgeschlossen ist."
+          }
+        }
+      },
+      "ai_addons": {
+        "title": "KI-Integrationen",
+        "description": "Nutzen Sie die Kraft der Künstlichen Intelligenz, um Ihr Kundenerlebnis zu verbessern. Wir integrieren modernste KI-Modelle direkt in Ihre Geschäftsprozesse, um Fragen zu beantworten, Daten zu verarbeiten oder Inhalte zu generieren.",
+        "examples": {
+          "title": "KI-Fähigkeiten",
+          "example1": {
+            "title": "FAQ-Chatbots",
+            "description": "Rund um die Uhr intelligente Assistenten, die häufige Kundenfragen sofort auf Ihrer Website beantworten."
+          },
+          "example2": {
+            "title": "RAG-Wissensdatenbank",
+            "description": "KI, die Ihre internen Dokumente (PDFs, Notion) 'liest', um Fragen von Mitarbeitern oder Kunden präzise zu beantworten."
+          },
+          "example3": {
+            "title": "Intelligentes Routing",
+            "description": "KI, die eingehende E-Mails oder Tickets kategorisiert und sie automatisch der richtigen Abteilung zuweist."
+          }
+        }
+      },
+      "custom_apps": {
+        "title": "Individuelle Web-Apps",
+        "description": "Wenn Standardsoftware nicht ausreicht, entwickeln wir maßgeschneiderte Lösungen, die genau auf Ihre Arbeitsabläufe zugeschnitten sind. Von Kundenportalen bis hin zu internen Dashboards erstellen wir sichere, skalierbare Web-Apps, die Ihre betriebliche Effizienz maximieren.",
+        "examples": {
+          "title": "Was wir bauen",
+          "example1": {
+            "title": "Kundenportale",
+            "description": "Sichere Bereiche für Ihre Kunden, um sich einzuloggen, den Projektstatus einzusehen, Dateien herunterzuladen und mit Ihnen zu kommunizieren."
+          },
+          "example2": {
+            "title": "Admin-Dashboards",
+            "description": "Visuelle Kommandozentralen, die Ihnen einen Echtzeit-Überblick über Ihre KPIs, Verkäufe und Geschäftskennzahlen geben."
+          },
+          "example3": {
+            "title": "SaaS-MVPs",
+            "description": "Minimum Viable Products für Start-ups, die ihre Softwareidee schnell auf den Markt bringen möchten."
+          }
+        }
+      },
+      "marketing": {
+        "title": "Marketing & Lead-Gen",
+        "description": "Eine großartige Website ist nutzlos, wenn niemand sie sieht. Wir helfen Ihnen, den richtigen Traffic durch bezahlte Werbung, Content-Strategie und optimierte Funnels anzuziehen. Wir konzentrieren uns auf den ROI – Budget wird nur dort ausgegeben, wo es echte Kunden bringt.",
+        "examples": {
+          "title": "Wachstumsdienste",
+          "example1": {
+            "title": "Google Ads",
+            "description": "Gezielte Suchkampagnen, um Personen zu erfassen, die jetzt aktiv nach Ihren Dienstleistungen suchen."
+          },
+          "example2": {
+            "title": "Social Content",
+            "description": "Strategie und Assets für LinkedIn und Instagram, um Autorität aufzubauen und langfristige Leads zu pflegen."
+          },
+          "example3": {
+            "title": "Lead-Funnels",
+            "description": "Optimierte Landingpage-Flows mit Lead-Magneten (PDFs, Webinare), um Kontaktinformationen zu erfassen."
           }
         }
       }
@@ -138,23 +236,40 @@
   },
   "servicesv2": {
     "title": "Unsere Kerndienstleistungen",
-    "subtitle": "Einfache Lösungen für Ihre Geschäftsanforderungen",
+    "subtitle": "Webdesign, Branding und Automatisierung für Schweizer Unternehmer und KMU",
     "badge": "Mehr Infos",
     "items": {
-      "ai": {
-        "title": "KI-Lösungen",
-        "description": "Wir entwickeln intelligente Systeme, die für Sie arbeiten. Von Chatbots, die Kundenfragen beantworten, bis hin zur Automatisierung repetitiver Aufgaben - unsere KI-Lösungen sparen Ihnen Zeit und verbessern die Effizienz Ihres Unternehmens.",
-        "description_small": "Intelligente Automatisierungssysteme"
+      "branding": {
+        "title": "Branding & Identität",
+        "description": "Logo-Design, Markenfarben, Typografie, Brand Guidelines, Social Media Kit"
       },
       "websites": {
         "title": "Websites",
-        "description": "Schöne, schnelle Websites, die auf allen Geräten funktionieren. Ob Sie eine einfache Unternehmenswebsite, einen Online-Shop oder eine massgeschneiderte Web-Anwendung benötigen - wir erstellen moderne Websites, die Ihnen helfen, mehr Kunden zu erreichen.",
-        "description_small": "Moderne Web-Lösungen"
+        "description": "One-Pager, Multi-Pager, Landing Pages + SEO + Analytics"
       },
-      "software": {
-        "title": "Software",
-        "description": "Massgeschneiderte Software, die speziell für Ihre Geschäftsanforderungen entwickelt wurde. Von Desktop-Anwendungen über mobile Apps bis hin zu spezialisierten Tools - wir erstellen Software, die Ihre einzigartigen Herausforderungen löst und mit Ihrem Unternehmen wächst.",
-        "description_small": "Massgeschneiderte Anwendungen"
+      "hosting": {
+        "title": "Hosting & Domains",
+        "description": "Sicheres Hosting, Domain-Verwaltung, SSL, Backups"
+      },
+      "support": {
+        "title": "Support-Pläne",
+        "description": "Stufen Essential, Growth und Automation Care"
+      },
+      "automation": {
+        "title": "Geschäftsautomatisierung",
+        "description": "Lead-Erfassung, Follow-ups, Terminbuchung, CRM-Integrationen (n8n)"
+      },
+      "ai_addons": {
+        "title": "KI-Add-ons",
+        "description": "FAQ-Chatbots, RAG Wissensdatenbanken, KI-Support-Flows"
+      },
+      "custom_apps": {
+        "title": "Individuelle Web-Apps",
+        "description": "Kundenportale, Dashboards, Verwaltungsbereiche"
+      },
+      "marketing": {
+        "title": "Marketing & Lead-Gen",
+        "description": "Google Ads, Social Media Content, Lead-Capturing-Systeme"
       }
     },
     "process": {
@@ -175,6 +290,53 @@
         }
       },
       "cta": "Jetzt kostenloses Gespräch buchen"
+    }
+  },
+  "packages": {
+    "title": "Easy Packages",
+    "subtitle": "Just started your business? Need to establish your online presence? Having a professional website increases trust by 75% and makes you available 24/7.",
+    "stats": {
+      "credibility": "Trust Boost",
+      "availability": "Availability"
+    },
+    "popular": "Popular",
+    "headers": {
+      "package": "Package",
+      "price": "Price Range",
+      "target": "Target"
+    },
+    "from": "ab",
+    "items": {
+      "starter": {
+        "name": "Starter",
+        "description": "Das perfekte Fundament, egal ob Sie eine einzelne Landingpage oder eine vollständige 5-seitige Website benötigen.",
+        "target": "New business with existing brand"
+      },
+      "starterPlus": {
+        "name": "Starter Plus",
+        "description": "Das komplette Startpaket: eine professionelle Website sowie ein Corporate Design (Logo, Farbpalette, Typografie).",
+        "target": "New business needing branding"
+      },
+      "businessPro": {
+        "name": "Business Pro",
+        "description": "Für wachsende Unternehmen, die erweiterte Funktionen benötigen: CMS, Blog, Buchungssysteme oder mehrsprachige Unterstützung.",
+        "target": "Established SMEs"
+      },
+      "landingPage": {
+        "name": "Landing Page",
+        "description": "Konversionsstarke Landingpage für Marketingkampagnen, Produkteinführungen oder Eventanmeldungen.",
+        "target": "Campaigns/launches"
+      },
+      "logoOnly": {
+        "name": "Logo Only",
+        "description": "Individuelles Logodesign, um Ihrem Unternehmen ein professionelles Gesicht zu geben. Beinhaltet alle notwendigen Dateiformate.",
+        "target": "Standalone branding"
+      },
+      "fullBrandKit": {
+        "name": "Full Brand Kit",
+        "description": "Umfassendes Branding: Logo, Visitenkarten, Briefpapier und Social-Media-Vorlagen für einen einheitlichen Auftritt.",
+        "target": "Complete identity package"
+      }
     }
   },
   "about": {

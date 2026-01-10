@@ -5,11 +5,10 @@ import { ServiceDialogComponent } from './service-dialog/service-dialog.componen
 import { isPlatformBrowser } from '@angular/common';
 import { Subscription } from 'rxjs';
 
-type DialogServiceKey = 'ai' | 'web' | 'software';
+type DialogServiceKey = 'branding' | 'websites' | 'hosting' | 'support' | 'automation' | 'ai_addons' | 'custom_apps' | 'marketing';
 
 interface ServiceCardConfig {
-  translationKey: 'ai' | 'websites' | 'software';
-  dialogKey?: DialogServiceKey;
+  translationKey: DialogServiceKey;
   image: string;
   navigateTo?: string[];
 }
@@ -24,7 +23,8 @@ interface ServiceCardConfig {
 })
 export class ServicesV2Component implements AfterViewInit, OnDestroy {
   isDialogOpen = false;
-  selectedServiceKey: DialogServiceKey | '' = '';
+  selectedServiceKey: string = '';
+  selectedServiceImage: string = '';
   private readonly isBrowser: boolean;
   private intersectionObserver?: IntersectionObserver;
   private cardChangesSub?: Subscription;
@@ -34,19 +34,36 @@ export class ServicesV2Component implements AfterViewInit, OnDestroy {
 
   readonly serviceCards: ServiceCardConfig[] = [
     {
-      translationKey: 'ai',
-      dialogKey: 'ai',
-      image: '/serv_ai.png'
+      translationKey: 'branding',
+      image: '/assets/services/branding_identity.png'
     },
     {
       translationKey: 'websites',
-      dialogKey: 'web',
-      image: '/serv_web.png'
+      image: '/assets/services/websites.png'
     },
     {
-      translationKey: 'software',
-      dialogKey: 'software',
-      image: '/serv_soft.png'
+      translationKey: 'hosting',
+      image: '/assets/services/hosting_domain.png'
+    },
+    {
+      translationKey: 'support',
+      image: '/assets/services/support_plans.png'
+    },
+    {
+      translationKey: 'automation',
+      image: '/assets/services/business_automation.png'
+    },
+    {
+      translationKey: 'ai_addons',
+      image: '/assets/services/ai_addons.png'
+    },
+    {
+      translationKey: 'custom_apps',
+      image: '/assets/services/custom_web_apps.png'
+    },
+    {
+      translationKey: 'marketing',
+      image: '/assets/services/marketing_lead_gen.png'
     }
   ];
 
@@ -65,17 +82,18 @@ export class ServicesV2Component implements AfterViewInit, OnDestroy {
       return;
     }
 
-    if (card.dialogKey) {
-      this.selectedServiceKey = card.dialogKey;
-      this.isDialogOpen = true;
-    }
+    this.selectedServiceKey = card.translationKey;
+    this.selectedServiceImage = card.image;
+    this.isDialogOpen = true;
   }
 
   ngAfterViewInit(): void {
-    if (!this.isBrowser) {
-      return;
+    if (this.isBrowser) {
+      this.setupIntersectionObserver();
     }
+  }
 
+  private setupIntersectionObserver(): void {
     this.renderer.addClass(this.hostRef.nativeElement, 'js-enabled');
 
     this.intersectionObserver = new IntersectionObserver(

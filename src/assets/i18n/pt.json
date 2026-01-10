@@ -56,57 +56,155 @@
       "title": "Exemplos Práticos"
     },
     "services": {
-      "ai": {
-        "title": "Soluções de IA & Automação",
-        "description": "Transforme o seu negócio com automação inteligente alimentada por tecnologia de IA de vanguarda. As nossas soluções reduzem o trabalho manual, melhoram a precisão e escalam as suas operações de forma eficiente.",
+      "branding": {
+        "title": "Branding & Identidade",
+        "description": "A sua marca é mais do que apenas um logótipo—é como o mundo o perceciona. Construímos identidades visuais completas que contam a sua história, geram confiança e o distinguem da concorrência. Desde startups em fase inicial até empresas estabelecidas, criamos sistemas de design coesos que funcionam em todas as plataformas.",
         "examples": {
+          "title": "O que está incluído",
           "example1": {
-            "title": "Chatbot de Suporte ao Cliente com IA",
-            "description": "Implemente chatbots inteligentes que lidam com consultas de clientes 24/7, reduzem custos de suporte em 60%, e fornecem respostas instantâneas em múltiplas línguas. Perfeito para e-commerce, plataformas SaaS e empresas de serviços."
+            "title": "Design de Logótipo",
+            "description": "Marcas memoráveis, escaláveis e únicas que servem como a pedra angular da sua identidade de marca."
           },
           "example2": {
-            "title": "Processamento Automatizado de Dados & Analytics",
-            "description": "Implemente sistemas de machine learning que processam automaticamente faturas, extraem dados de documentos e geram insights de negócio. Elimine entrada manual de dados e reduza o tempo de processamento em 80%."
+            "title": "Diretrizes de Marca",
+            "description": "Guias PDF abrangentes que definem a sua tipografia, paleta de cores e regras de uso para garantir consistência."
           },
           "example3": {
-            "title": "Sistema Inteligente de Qualificação de Leads",
-            "description": "Crie sistemas de IA que qualificam automaticamente leads de vendas, pontuam prospects baseado no comportamento e direcionam oportunidades de alto valor para a sua equipa de vendas. Aumente taxas de conversão e otimize a eficiência de vendas."
+            "title": "Kit de Redes Sociais",
+            "description": "Fotos de perfil, banners e modelos de publicações prontos a usar, adaptados para Instagram, LinkedIn e Facebook."
           }
         }
       },
-      "web": {
-        "title": "Desenvolvimento Web Moderno",
-        "description": "Construa websites de alto desempenho, otimizados para SEO que impulsionam o crescimento do negócio. Os nossos designs responsivos funcionam perfeitamente em todos os dispositivos e são otimizados para motores de busca e experiência do utilizador.",
+      "websites": {
+        "title": "Websites de Alta Performance",
+        "description": "Não construímos apenas websites; construímos ativos digitais que impulsionam o crescimento. Quer precise de uma landing page simples ou de uma plataforma multi-página complexa, os nossos sites são rápidos, otimizados para SEO e perfeitos em móvel. Focamo-nos em design de conversão para transformar visitantes em clientes pagantes.",
         "examples": {
+          "title": "As Nossas Soluções Web",
           "example1": {
-            "title": "Plataforma E-Commerce com Integração de Pagamentos",
-            "description": "Desenvolva lojas online completas com processamento seguro de pagamentos, gestão de inventário, contas de clientes e checkout otimizado para móvel. Aumente vendas online com soluções profissionais de e-commerce."
+            "title": "Landing Pages",
+            "description": "Sites de uma página desenhados com um único objetivo: conversão. Perfeito para anúncios, campanhas ou lançamentos de produtos."
           },
           "example2": {
-            "title": "Website Corporativo com Integração CMS",
-            "description": "Crie websites empresariais profissionais com sistemas de gestão de conteúdo, otimização SEO, formulários de contacto e integração de analytics. Melhore a sua presença online e gere mais leads."
+            "title": "Websites Corporativos",
+            "description": "Hubs de informação multi-página que estabelecem autoridade, mostram a sua equipa e detalham os seus serviços."
           },
           "example3": {
-            "title": "Aplicações Web Progressivas (PWA)",
-            "description": "Construa aplicações web que funcionam como apps móveis nativas, oferecem funcionalidade offline, notificações push e tempos de carregamento rápidos. Forneça experiências tipo app sem dependências de app store."
+            "title": "E-Commerce",
+            "description": "Lojas online seguras e fáceis de usar que facilitam a compra, integradas com Stripe ou fornecedores de pagamento locais."
           }
         }
       },
-      "software": {
-        "title": "Desenvolvimento de Software Personalizado",
-        "description": "Desenhe e desenvolva soluções de software sob medida que resolvem os seus desafios únicos de negócio. Desde aplicações desktop a apps móveis, criamos software escalável, seguro e user-friendly.",
+      "hosting": {
+        "title": "Alojamento & Domínios Geridos",
+        "description": "Pare de se preocupar com atualizações de servidor, tempo de inatividade ou segurança. Tratamos de toda a infraestrutura técnica para que se possa focar no seu negócio. O nosso alojamento é otimizado para velocidade e especificamente ajustado para as tecnologias com que construímos.",
         "examples": {
+          "title": "Funcionalidades de Alojamento",
           "example1": {
-            "title": "Aplicação Móvel Multi-Plataforma",
-            "description": "Desenvolva apps nativas iOS e Android com dados sincronizados, notificações push e capacidades offline. Alcance os seus clientes nos seus dispositivos preferidos com experiências de utilizador consistentes."
+            "title": "Alojamento Cloud Seguro",
+            "description": "Servidores super rápidos localizados em data centers premium com garantias de 99.9% de uptime."
           },
           "example2": {
-            "title": "Sistema de Gestão Empresarial Personalizado",
-            "description": "Construa sistemas abrangentes de CRM, ERP ou gestão de projetos adaptados aos seus fluxos de trabalho. Integre com ferramentas existentes, automatize processos e centralize operações empresariais numa plataforma."
+            "title": "Backups Diários",
+            "description": "Backups automáticos diários dos seus ficheiros e bases de dados, garantindo que os seus dados nunca se perdem."
           },
           "example3": {
-            "title": "Desenvolvimento de API & Integração de Sistemas",
-            "description": "Crie APIs personalizadas e integre sistemas díspares para permitir fluxo de dados sem falhas. Conecte as suas ferramentas de software existentes, automatize sincronização de dados e elimine transferência manual de dados."
+            "title": "SSL & Segurança",
+            "description": "Certificados SSL gratuitos (HTTPS) e firewalls de nível empresarial para manter o seu site e visitantes seguros."
+          }
+        }
+      },
+      "support": {
+        "title": "Planos de Suporte Contínuo",
+        "description": "A tecnologia requer manutenção. Os nossos planos de suporte garantem que o seu website ou aplicação permanece rápido, seguro e compatível com as últimas atualizações de browser. Pense nisso como um seguro para a sua presença digital—estamos apenas a uma mensagem de distância.",
+        "examples": {
+          "title": "Níveis de Suporte",
+          "example1": {
+            "title": "Essential Care",
+            "description": "Atualizações padrão, patches de segurança e verificações de saúde mensais para manter tudo a funcionar sem problemas."
+          },
+          "example2": {
+            "title": "Growth Support",
+            "description": "Inclui atualizações de conteúdo, suporte por email prioritário e otimizações de performance."
+          },
+          "example3": {
+            "title": "Automation Care",
+            "description": "Suporte dedicado para os seus fluxos de trabalho de automação críticos, garantindo que leads e dados fluem sempre corretamente."
+          }
+        }
+      },
+      "automation": {
+        "title": "Automação de Negócios",
+        "description": "Elimine o trabalho repetitivo. Conectamos as suas apps favoritas (Gmail, Slack, Trello, CRM) para criar fluxos de trabalho perfeitos. Os dados devem mover-se automaticamente entre os seus sistemas sem levantar um dedo, poupando-lhe horas de administração manual todas as semanas.",
+        "examples": {
+          "title": "Exemplos de Automação",
+          "example1": {
+            "title": "Captura de Leads & CRM",
+            "description": "Envie automaticamente leads do website para o seu CRM (HubSpot, Pipedrive) e notifique a sua equipa de vendas no Slack."
+          },
+          "example2": {
+            "title": "Agendamento de Reuniões",
+            "description": "Sincronize calendários, envie confirmações/lembretes automáticos e gere links Zoom sem trocas de email."
+          },
+          "example3": {
+            "title": "Faturação & Pagamentos",
+            "description": "Desencadeie a criação de faturas e envie recibos de pagamento automaticamente quando uma fase do projeto é concluída."
+          }
+        }
+      },
+      "ai_addons": {
+        "title": "Integrações de IA",
+        "description": "Aproveite o poder da Inteligência Artificial para potenciar a sua experiência de cliente. Integramos modelos de IA de ponta diretamente nos seus processos de negócio para responder a perguntas, processar dados ou gerar conteúdo.",
+        "examples": {
+          "title": "Capacidades de IA",
+          "example1": {
+            "title": "Chatbots FAQ",
+            "description": "Assistentes inteligentes 24/7 que respondem a perguntas comuns de clientes instantaneamente no seu website."
+          },
+          "example2": {
+            "title": "Base de Conhecimento RAG",
+            "description": "IA que 'lê' os seus documentos internos (PDFs, Notion) para responder a dúvidas de funcionários ou clientes com precisão."
+          },
+          "example3": {
+            "title": "Encaminhamento Inteligente",
+            "description": "IA que categoriza emails ou tickets recebidos e atribui-os ao departamento correto automaticamente."
+          }
+        }
+      },
+      "custom_apps": {
+        "title": "Aplicações Web Personalizadas",
+        "description": "Quando o software de prateleira não é suficiente, construímos soluções personalizadas adaptadas aos seus fluxos de trabalho exatos. Desde portais de clientes a dashboards internos, criamos web apps seguras e escaláveis que maximizam a sua eficiência operacional.",
+        "examples": {
+          "title": "O Que Construímos",
+          "example1": {
+            "title": "Portais de Clientes",
+            "description": "Áreas seguras para os seus clientes fazerem login, verem o estado doo projeto, descarregarem ficheiros e comunicarem consigo."
+          },
+          "example2": {
+            "title": "Dashboards de Administração",
+            "description": "Centros de comando visuais que lhe dão uma visão em tempo real dos seus KPIs, vendas e métricas de negócio."
+          },
+          "example3": {
+            "title": "MVPs de SaaS",
+            "description": "Produtos Mínimos Viáveis para startups que procuram lançar a sua ideia de software no mercado rapidamente."
+          }
+        }
+      },
+      "marketing": {
+        "title": "Marketing & Geração de Leads",
+        "description": "Um ótimo website é inútil se ninguém o vir. Ajudamo-lo a atrair o tráfego certo através de publicidade paga, estratégia de conteúdo e funis otimizados. Focamo-nos no ROI—gastando orçamento apenas onde traz clientes reais.",
+        "examples": {
+          "title": "Serviços de Crescimento",
+          "example1": {
+            "title": "Google Ads",
+            "description": "Campanhas de pesquisa direcionadas para capturar pessoas que procuram ativamente os seus serviços agora."
+          },
+          "example2": {
+            "title": "Conteúdo Social",
+            "description": "Estratégia e ativos para LinkedIn e Instagram para construir autoridade e nutrir leads a longo prazo."
+          },
+          "example3": {
+            "title": "Funis de Leads",
+            "description": "Fluxos de landing page otimizados com iscos digitais (PDFs, webinars) para capturar informações de contacto."
           }
         }
       }
@@ -114,23 +212,40 @@
   },
   "servicesv2": {
     "title": "Os meus Serviços Principais",
-    "subtitle": "Soluções simples para as necessidades do teu negócio",
+    "subtitle": "Web design, branding e automação para empreendedores e PMEs suíças",
     "badge": "Mais info",
     "items": {
-      "ai": {
-        "title": "Soluções de IA",
-        "description": "Criamos sistemas inteligentes que trabalham para ti. Desde chatbots que respondem a perguntas de clientes até automação que gere tarefas repetitivas, as nossas soluções de IA poupam-lhe tempo e melhoram a eficiência do seu negócio.",
-        "description_small": "Sistemas de automação inteligente"
+      "branding": {
+        "title": "Branding & Identidade",
+        "description": "Design de logótipo, paleta de cores, tipografia, diretrizes de marca, kit redes sociais"
       },
       "websites": {
         "title": "Websites",
-        "description": "Websites de uma beldade rara e rápidos que funcionam em todos os dispositivos. Seja um website empresarial simples, uma loja online, ou uma aplicação web personalizada, construímos sites modernos que o ajudam a alcançar mais clientes.",
-        "description_small": "Soluções web modernas"
+        "description": "One-page, multi-page, landing pages + SEO + analytics"
       },
-      "software": {
-        "title": "Software",
-        "description": "Software personalizado construído especificamente para as necessidades do teu negócio. Desde aplicações desktop a aplicações móveis e ferramentas especializadas, criamos software que resolve os seus desafios únicos e cresce com o seu negócio.",
-        "description_small": "Aplicações personalizadas"
+      "hosting": {
+        "title": "Alojamento & Domínio",
+        "description": "Alojamento seguro, gestão de domínio, SSL, backups"
+      },
+      "support": {
+        "title": "Planos de Suporte",
+        "description": "Níveis Essential, Growth e Automation Care"
+      },
+      "automation": {
+        "title": "Automação de Negócios",
+        "description": "Captura de leads, follow-ups, agendamento de reuniões, integrações CRM (n8n)"
+      },
+      "ai_addons": {
+        "title": "Adicionais de IA",
+        "description": "Chatbots FAQ, bases de conhecimento RAG, fluxos de suporte com IA"
+      },
+      "custom_apps": {
+        "title": "Apps Web Personalizadas",
+        "description": "Portais de clientes, dashboards, áreas de administração"
+      },
+      "marketing": {
+        "title": "Marketing & Geração de Leads",
+        "description": "Google Ads, conteúdo para redes sociais, sistemas de captura de leads"
       }
     },
     "process": {
@@ -151,6 +266,53 @@
         }
       },
       "cta": "Agende a sua chamada gratuita agora"
+    }
+  },
+  "packages": {
+    "title": "Easy Packages",
+    "subtitle": "Just started your business? Need to establish your online presence? Having a professional website increases trust by 75% and makes you available 24/7.",
+    "stats": {
+      "credibility": "Trust Boost",
+      "availability": "Availability"
+    },
+    "popular": "Popular",
+    "headers": {
+      "package": "Package",
+      "price": "Price Range",
+      "target": "Target"
+    },
+    "from": "a partir de",
+    "items": {
+      "starter": {
+        "name": "Starter",
+        "description": "A base perfeita, quer precise de uma única landing page ou de um site completo de 5 páginas para estabelecer o seu negócio.",
+        "target": "New business with existing brand"
+      },
+      "starterPlus": {
+        "name": "Starter Plus",
+        "description": "O pacote de lançamento completo: um website profissional mais design de identidade de marca (logótipo, paleta de cores, tipografia).",
+        "target": "New business needing branding"
+      },
+      "businessPro": {
+        "name": "Business Pro",
+        "description": "Para empresas em crescimento que precisam de recursos avançados: CMS, blog, sistemas de reservas ou suporte a vários idiomas.",
+        "target": "Established SMEs"
+      },
+      "landingPage": {
+        "name": "Landing Page",
+        "description": "Página única de alta conversão projetada para campanhas de marketing, lançamentos de produtos ou registos em eventos.",
+        "target": "Campaigns/launches"
+      },
+      "logoOnly": {
+        "name": "Logo Only",
+        "description": "Design de logótipo personalizado para dar uma cara profissional ao seu negócio. Inclui todos os formatos de arquivo necessários.",
+        "target": "Standalone branding"
+      },
+      "fullBrandKit": {
+        "name": "Full Brand Kit",
+        "description": "Branding abrangente: logótipo, cartões de visita, papel timbrado e modelos de mídia social para um visual coeso.",
+        "target": "Complete identity package"
+      }
     }
   },
   "aiSolutions": {

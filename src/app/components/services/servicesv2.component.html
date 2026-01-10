@@ -2,71 +2,27 @@
   <div class="container">
     <h2 class="section-title">{{ 'servicesv2.title' | translate }}</h2>
     <p class="section-subtitle">{{ 'servicesv2.subtitle' | translate }}</p>
-    
+
     <div class="services-row">
       @for (service of serviceCards; track service.translationKey) {
-        <button
-          #serviceCard
-          type="button"
-          class="service-card"
-          (click)="handleServiceSelection(service)"
-          [attr.aria-label]="('servicesv2.items.' + service.translationKey + '.title') | translate">
-          <span class="service-badge">{{ 'servicesv2.badge' | translate }}</span>
-          <div class="service-icon">
-            <img
-              [src]="service.image"
-              class="service-image"
-              [alt]="('servicesv2.items.' + service.translationKey + '.title') | translate">
-          </div>
-          <h3>{{ ('servicesv2.items.' + service.translationKey + '.title') | translate }}</h3>
-          <p>{{ ('servicesv2.items.' + service.translationKey + '.description') | translate }}</p>
-        </button>
+      <button #serviceCard type="button" class="service-card" (click)="handleServiceSelection(service)"
+        [attr.aria-label]="('servicesv2.items.' + service.translationKey + '.title') | translate">
+        <span class="service-badge">{{ 'servicesv2.badge' | translate }}</span>
+        <div class="service-icon">
+          <img [src]="service.image" class="service-image"
+            [alt]="(('servicesv2.items.' + service.translationKey + '.title') | translate) + ' - Paulo Lopes Reizinho'">
+        </div>
+        <h3>{{ ('servicesv2.items.' + service.translationKey + '.title') | translate }}</h3>
+        <p>{{ ('servicesv2.items.' + service.translationKey + '.description') | translate }}</p>
+      </button>
       }
     </div>
 
-    <div class="services-roadmap">
-      <h3 class="roadmap-title">{{ 'servicesv2.process.title' | translate }}</h3>
-      <p class="roadmap-summary">{{ 'servicesv2.process.subtitle' | translate }}</p>
 
-      <div class="roadmap-steps">
-        <div class="roadmap-step">
-          <div class="step-marker">1</div>
-          <div class="step-content">
-            <h4>{{ 'servicesv2.process.steps.discovery.title' | translate }}</h4>
-            <p>{{ 'servicesv2.process.steps.discovery.description' | translate }}</p>
-          </div>
-        </div>
-
-        <div class="roadmap-step">
-          <div class="step-marker">2</div>
-          <div class="step-content">
-            <h4>{{ 'servicesv2.process.steps.proposal.title' | translate }}</h4>
-            <p>{{ 'servicesv2.process.steps.proposal.description' | translate }}</p>
-          </div>
-        </div>
-
-        <div class="roadmap-step">
-          <div class="step-marker">3</div>
-          <div class="step-content">
-            <h4>{{ 'servicesv2.process.steps.delivery.title' | translate }}</h4>
-            <p>{{ 'servicesv2.process.steps.delivery.description' | translate }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="roadmap-cta">
-      <button type="button" (click)="openCalBooking()" class="btn btn-primary">
-        {{ 'servicesv2.process.cta' | translate }}
-        <i class="fas fa-arrow-right"></i>
-      </button>
-    </div>
   </div>
 
   <!-- Service Dialog -->
-  <app-service-dialog 
-    [isOpen]="isDialogOpen"
-    [serviceKey]="selectedServiceKey"
+  <app-service-dialog [isOpen]="isDialogOpen" [serviceKey]="selectedServiceKey" [serviceImage]="selectedServiceImage"
     (close)="closeServiceDialog()">
   </app-service-dialog>
 </section>

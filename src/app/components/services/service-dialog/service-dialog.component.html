@@ -1,51 +1,76 @@
 @if (isOpen) {
-  <div class="dialog-backdrop" 
-       (click)="onBackdropClick($event)" 
-       (keydown)="onKeydown($event)"
-       tabindex="0">
-    <div class="dialog-container" role="dialog" aria-modal="true">
-      <!-- Background Image -->
-      <div class="dialog-background-image" [ngClass]="'bg-' + serviceKey"></div>
-      
-      <div class="dialog-header">
-        <h3 class="dialog-title">{{ ('serviceDialog.services.' + serviceKey + '.title') | translate }}</h3>
-        <button class="close-button" 
-                (click)="closeDialog()" 
-                aria-label="Close dialog"
-                type="button">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      
-      <div class="dialog-content">
-        <p class="service-description">
-          {{ ('serviceDialog.services.' + serviceKey + '.description') | translate }}
-        </p>
-        
-        <div class="examples-section">
-          <h4 class="examples-title">{{ 'serviceDialog.examples.title' | translate }}</h4>
-          
-          <div class="example-grid">
-            <div class="example-card">
-              <div class="example-number">1</div>
-              <h5 class="example-title">{{ ('serviceDialog.services.' + serviceKey + '.examples.example1.title') | translate }}</h5>
-              <p class="example-description">{{ ('serviceDialog.services.' + serviceKey + '.examples.example1.description') | translate }}</p>
+<div class="dialog-backdrop" (click)="onBackdropClick($event)" (keydown)="onKeydown($event)" tabindex="0">
+  <div class="dialog-container" role="dialog" aria-modal="true">
+
+    <button class="close-button" (click)="closeDialog()" aria-label="Close dialog" type="button">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <div class="dialog-layout">
+      <!-- Left Sidebar: Visuals & CTA -->
+      <aside class="dialog-sidebar">
+        <div class="service-visual">
+          <img [src]="serviceImage"
+            [alt]="(('serviceDialog.services.' + serviceKey + '.title') | translate) + ' - Paulo Lopes Reizinho'"
+            class="dialog-image">
+        </div>
+
+        <div class="sidebar-content">
+          <h3 class="dialog-title">{{ ('serviceDialog.services.' + serviceKey + '.title') | translate }}</h3>
+
+          <button class="btn-book" (click)="closeDialog()">
+            <span>Book Discussion</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Right Content: Description & Features -->
+      <main class="dialog-main">
+        <div class="description-section">
+          <p class="service-description">
+            {{ ('serviceDialog.services.' + serviceKey + '.description') | translate }}
+          </p>
+        </div>
+
+        <div class="features-section">
+          <h4 class="features-title">{{ ('serviceDialog.services.' + serviceKey + '.examples.title') | translate }}</h4>
+
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="feature-text">
+                <h5>{{ ('serviceDialog.services.' + serviceKey + '.examples.example1.title') | translate }}</h5>
+                <p>{{ ('serviceDialog.services.' + serviceKey + '.examples.example1.description') | translate }}</p>
+              </div>
             </div>
-            
-            <div class="example-card">
-              <div class="example-number">2</div>
-              <h5 class="example-title">{{ ('serviceDialog.services.' + serviceKey + '.examples.example2.title') | translate }}</h5>
-              <p class="example-description">{{ ('serviceDialog.services.' + serviceKey + '.examples.example2.description') | translate }}</p>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="feature-text">
+                <h5>{{ ('serviceDialog.services.' + serviceKey + '.examples.example2.title') | translate }}</h5>
+                <p>{{ ('serviceDialog.services.' + serviceKey + '.examples.example2.description') | translate }}</p>
+              </div>
             </div>
-            
-            <div class="example-card">
-              <div class="example-number">3</div>
-              <h5 class="example-title">{{ ('serviceDialog.services.' + serviceKey + '.examples.example3.title') | translate }}</h5>
-              <p class="example-description">{{ ('serviceDialog.services.' + serviceKey + '.examples.example3.description') | translate }}</p>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="feature-text">
+                <h5>{{ ('serviceDialog.services.' + serviceKey + '.examples.example3.title') | translate }}</h5>
+                <p>{{ ('serviceDialog.services.' + serviceKey + '.examples.example3.description') | translate }}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
+
   </div>
+</div>
 }

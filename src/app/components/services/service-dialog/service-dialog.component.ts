@@ -12,6 +12,7 @@ import { TranslatePipe } from '../../../pipes/translate.pipe';
 export class ServiceDialogComponent {
   @Input() isOpen: boolean = false;
   @Input() serviceKey: string = '';
+  @Input() serviceImage: string = '';
   @Output() close = new EventEmitter<void>();
 
   onBackdropClick(event: Event): void {

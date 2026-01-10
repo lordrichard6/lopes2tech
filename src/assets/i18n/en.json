@@ -98,57 +98,155 @@
       "title": "Real-World Examples"
     },
     "services": {
-      "ai": {
-        "title": "AI Solutions & Automation",
-        "description": "Transform your business with intelligent automation powered by cutting-edge AI technology. Our solutions reduce manual work, improve accuracy, and scale your operations efficiently.",
+      "branding": {
+        "title": "Branding & Identity",
+        "description": "Your brand is more than just a logo—it's how the world perceives you. We build complete visual identities that tell your story, build trust, and distinguish you from competitors. From early-stage startups to established companies, we craft cohesive design systems that work across all platforms.",
         "examples": {
+          "title": "What's Included",
           "example1": {
-            "title": "AI-Powered Customer Support Chatbot",
-            "description": "Deploy intelligent chatbots that handle customer inquiries 24/7, reduce support costs by 60%, and provide instant responses in multiple languages. Perfect for e-commerce, SaaS platforms, and service businesses."
+            "title": "Logo Design",
+            "description": "Memorable, scalable, and unique marks that serve as the cornerstone of your brand identity."
           },
           "example2": {
-            "title": "Automated Data Processing & Analytics",
-            "description": "Implement machine learning systems that automatically process invoices, extract data from documents, and generate business insights. Eliminate manual data entry and reduce processing time by 80%."
+            "title": "Brand Guidelines",
+            "description": "Comprehensive PDF guides defining your typography, color palette, and usage rules to ensure consistency."
           },
           "example3": {
-            "title": "Intelligent Lead Qualification System",
-            "description": "Create AI systems that automatically qualify sales leads, score prospects based on behavior, and route high-value opportunities to your sales team. Increase conversion rates and optimize sales efficiency."
+            "title": "Social Media Kit",
+            "description": "Ready-to-use profile pictures, banners, and post templates tailored for Instagram, LinkedIn, and Facebook."
           }
         }
       },
-      "web": {
-        "title": "Modern Web Development",
-        "description": "Build high-performance, SEO-optimized websites that drive business growth. Our responsive designs work flawlessly across all devices and are optimized for search engines and user experience.",
+      "websites": {
+        "title": "High-Performance Websites",
+        "description": "We don’t just build websites; we build digital assets that drive growth. Whether you need a simple landing page or a complex multi-page platform, our sites are fast, SEO-optimized, and mobile-perfect. We focus on conversion design to turn visitors into paying clients.",
         "examples": {
+          "title": "Our Web Solutions",
           "example1": {
-            "title": "E-Commerce Platform with Payment Integration",
-            "description": "Develop complete online stores with secure payment processing, inventory management, customer accounts, and mobile-optimized checkout. Increase online sales with professional e-commerce solutions."
+            "title": "Landing Pages",
+            "description": "One-page sites designed with a single goal: conversion. Perfect for ads, campaigns, or new product launches."
           },
           "example2": {
-            "title": "Corporate Website with CMS Integration",
-            "description": "Create professional business websites with content management systems, SEO optimization, contact forms, and analytics integration. Enhance your online presence and generate more leads."
+            "title": "Corporate Websites",
+            "description": "Multi-page information hubs that establish authority, showcase your team, and detail your services."
           },
           "example3": {
-            "title": "Progressive Web Applications (PWA)",
-            "description": "Build web applications that work like native mobile apps, offer offline functionality, push notifications, and fast loading times. Provide app-like experiences without app store dependencies."
+            "title": "E-Commerce",
+            "description": "Secure, user-friendly online stores that make buying easy, integrated with Stripe or local payment providers."
           }
         }
       },
-      "software": {
-        "title": "Custom Software Development",
-        "description": "Design and develop tailored software solutions that solve your unique business challenges. From desktop applications to mobile apps, we create scalable, secure, and user-friendly software.",
+      "hosting": {
+        "title": "Managed Hosting & Domains",
+        "description": "Stop worrying about server updates, downtime, or security. We handle all the technical infrastructure so you can focus on your business. Our hosting is optimized for speed and specifically tuned for the technologies we build with.",
         "examples": {
+          "title": "Hosting Features",
           "example1": {
-            "title": "Cross-Platform Mobile Application",
-            "description": "Develop native iOS and Android apps with synchronized data, push notifications, and offline capabilities. Reach your customers on their preferred devices with consistent user experiences."
+            "title": "Secure Cloud Hosting",
+            "description": "Blazing fast servers located in premium data centers with 99.9% uptime guarantees."
           },
           "example2": {
-            "title": "Custom Business Management System",
-            "description": "Build comprehensive CRM, ERP, or project management systems tailored to your workflows. Integrate with existing tools, automate processes, and centralize business operations in one platform."
+            "title": "Daily Backups",
+            "description": "Automatic daily backups of your files and databases, ensuring your data is never lost."
           },
           "example3": {
-            "title": "API Development & System Integration",
-            "description": "Create custom APIs and integrate disparate systems to enable seamless data flow. Connect your existing software tools, automate data synchronization, and eliminate manual data transfer."
+            "title": "SSL & Security",
+            "description": "Free SSL certificates (HTTPS) and enterprise-grade firewalls to keep your site and visitors safe."
+          }
+        }
+      },
+      "support": {
+        "title": "Ongoing Support Plans",
+        "description": "Technology requires maintenance. Our support plans ensure your website or application stays sharp, secure, and compatible with the latest browser updates. Think of it as insurance for your digital presence—we're just one message away.",
+        "examples": {
+          "title": "Support Tiers",
+          "example1": {
+            "title": "Essential Care",
+            "description": "Standard updates, security patches, and monthly health checks to keep things running smoothly."
+          },
+          "example2": {
+            "title": "Growth Support",
+            "description": "Includes content updates, priority email support, and performance optimizations."
+          },
+          "example3": {
+            "title": "Automation Care",
+            "description": "Dedicated support for your critical automation workflows, ensuring leads and data always flow correctly."
+          }
+        }
+      },
+      "automation": {
+        "title": "Business Automation",
+        "description": "Eliminate the busywork. We connect your favorite apps (Gmail, Slack, Trello, CRM) to create seamless workflows. Data should move automatically between your systems without you lifting a finger, saving you hours of manual admin work every week.",
+        "examples": {
+          "title": "Automation Examples",
+          "example1": {
+            "title": "Lead Capture & CRM",
+            "description": "Automatically send website leads to your CRM (HubSpot, Pipedrive) and notify your sales team on Slack."
+          },
+          "example2": {
+            "title": "Appointment Booking",
+            "description": "Sync calendars, send automatic confirmations/reminders, and generate Zoom links without email tag."
+          },
+          "example3": {
+            "title": "Invoicing & Payments",
+            "description": "Trigger invoice creation and send payment receipts automatically when a project stage is completed."
+          }
+        }
+      },
+      "ai_addons": {
+        "title": "AI Integrations",
+        "description": "Leverage the power of Artificial Intelligence to supercharge your customer experience. We integrate cutting-edge AI models directly into your business processes to answer questions, process data, or generate content.",
+        "examples": {
+          "title": "AI Capabilities",
+          "example1": {
+            "title": "FAQ Chatbots",
+            "description": "24/7 intelligent assistants that answer common customer questions instantly on your website."
+          },
+          "example2": {
+            "title": "RAG Knowledge Base",
+            "description": "AI that 'reads' your internal documents (PDFs, Notion) to answer employee or client queries accurately."
+          },
+          "example3": {
+            "title": "Smart Routing",
+            "description": "AI that categorizes incoming emails or tickets and assigns them to the correct department automatically."
+          }
+        }
+      },
+      "custom_apps": {
+        "title": "Custom Web Applications",
+        "description": "When off-the-shelf software isn't enough, we build custom solutions tailored to your exact workflows. From client portals to internal dashboards, we create secure, scalable web apps that maximize your operational efficiency.",
+        "examples": {
+          "title": "What We Build",
+          "example1": {
+            "title": "Client Portals",
+            "description": "Secure areas for your clients to log in, view project status, download files, and communicate with you."
+          },
+          "example2": {
+            "title": "Admin Dashboards",
+            "description": "Visual command centers giving you a real-time overview of your KPIs, sales, and business metrics."
+          },
+          "example3": {
+            "title": "SaaS MVPs",
+            "description": "Minimum Viable Products for startups looking to launch their software idea to market quickly."
+          }
+        }
+      },
+      "marketing": {
+        "title": "Marketing & Lead Gen",
+        "description": "A great website is useless if no one sees it. We help you attract the right traffic through paid advertising, content strategy, and optimized funnels. We focus on ROI—spending budget only where it brings real customers.",
+        "examples": {
+          "title": "Growth Services",
+          "example1": {
+            "title": "Google Ads",
+            "description": "Targeted search campaigns to capture people actively looking for your services right now."
+          },
+          "example2": {
+            "title": "Social Content",
+            "description": "Strategy and assets for LinkedIn and Instagram to build authority and nurture long-term leads."
+          },
+          "example3": {
+            "title": "Lead Funnels",
+            "description": "Optimized landing page flows with lead magnets (PDFs, webinars) to capture contact info."
           }
         }
       }
@@ -156,23 +254,40 @@
   },
   "servicesv2": {
     "title": "Our Core Services",
-    "subtitle": "Simple solutions for your business needs",
+    "subtitle": "Web design, branding & automation solutions tailored for Swiss entrepreneurs and SMEs",
     "badge": "More info",
     "items": {
-      "ai": {
-        "title": "AI Solutions",
-        "description": "We create smart systems that work for you. From chatbots that answer customer questions to automation that handles repetitive tasks, our AI solutions save you time and improve your business efficiency.",
-        "description_small": "Smart automation systems"
+      "branding": {
+        "title": "Branding & Identity",
+        "description": "Logo design, brand colors outlines, guidelines, social media kit"
       },
       "websites": {
         "title": "Websites",
-        "description": "Beautiful, fast websites that work on all devices. Whether you need a simple business website, an online store, or a custom web application, we build modern sites that help you reach more customers.",
-        "description_small": "Modern web solutions"
+        "description": "One-page, multi-page, landing pages + SEO + analytics"
       },
-      "software": {
-        "title": "Software",
-        "description": "Custom software built specifically for your business needs. From desktop applications to mobile apps and specialized tools, we create software that solves your unique challenges and grows with your business.",
-        "description_small": "Custom applications"
+      "hosting": {
+        "title": "Hosting & Domain",
+        "description": "Secure hosting, domain management, SSL, backups"
+      },
+      "support": {
+        "title": "Support Plans",
+        "description": "Essential, Growth, and Automation Care tiers"
+      },
+      "automation": {
+        "title": "Business Automation",
+        "description": "Lead capture, follow-ups, appointment booking, CRM integrations (n8n)"
+      },
+      "ai_addons": {
+        "title": "AI Add-Ons",
+        "description": "FAQ chatbots, RAG knowledge bases, AI support flows"
+      },
+      "custom_apps": {
+        "title": "Custom Web Apps",
+        "description": "Client portals, dashboards, admin areas"
+      },
+      "marketing": {
+        "title": "Marketing & Lead Gen",
+        "description": "Google Ads, social media content, lead capture systems"
       }
     },
     "process": {
@@ -193,6 +308,53 @@
         }
       },
       "cta": "Schedule your free call now"
+    }
+  },
+  "packages": {
+    "title": "Easy Packages",
+    "subtitle": "Just started your business? Need to establish your online presence? Having a professional website increases trust by 75% and makes you available 24/7.",
+    "stats": {
+      "credibility": "Trust Boost",
+      "availability": "Availability"
+    },
+    "from": "from",
+    "popular": "Popular",
+    "headers": {
+      "package": "Package",
+      "price": "Price Range",
+      "target": "Target"
+    },
+    "items": {
+      "starter": {
+        "name": "Starter",
+        "description": "Perfect foundation, whether you need a single landing page or a full 5-page website to establish your business.",
+        "target": "New business with existing brand"
+      },
+      "starterPlus": {
+        "name": "Starter Plus",
+        "description": "The complete launch package: a professional website plus a brand identity design (logo, color palette, typography).",
+        "target": "New business needing branding"
+      },
+      "businessPro": {
+        "name": "Business Pro",
+        "description": "For growing businesses needing advance features: CMS, blog, booking systems, or multi-language support.",
+        "target": "Established SMEs"
+      },
+      "landingPage": {
+        "name": "Landing Page",
+        "description": "High-conversion single page designed for marketing campaigns, product launches, or event registrations.",
+        "target": "Campaigns/launches"
+      },
+      "logoOnly": {
+        "name": "Logo Only",
+        "description": "Custom logo design to give your business a professional face. Includes all necessary file formats.",
+        "target": "Standalone branding"
+      },
+      "fullBrandKit": {
+        "name": "Full Brand Kit",
+        "description": "Comprehensive branding: logo, business cards, letterhead, and social media templates for a cohesive look.",
+        "target": "Complete identity package"
+      }
     }
   },
   "contact": {
