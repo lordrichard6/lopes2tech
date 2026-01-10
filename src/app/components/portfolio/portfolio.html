@@ -14,49 +14,238 @@
       </div>
       <h2 class="section-title">{{ 'portfolio.title' | translate }}</h2>
       <p class="section-subtitle">{{ 'portfolio.subtitle' | translate }}</p>
+      <p class="section-seo-text">{{ 'portfolio.seo_text' | translate }}</p>
     </div>
 
-    <div class="portfolio-grid reveal-on-scroll" #revealItem>
-      <div class="project-card">
-        <div class="project-image">
-          <img src="/proj/theraflow.png" alt="TheraFlow CRM" loading="lazy">
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">{{ 'portfolio.theraflow.title' | translate }}</h3>
-          <p class="project-description">{{ 'portfolio.theraflow.description' | translate }}</p>
-          <a href="https://www.theraflow-crm.ch/" target="_blank" rel="noopener noreferrer" class="btn-visit">
-            {{ 'portfolio.visit' | translate }}
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      </div>
+    <div class="carousel-container">
+      <div class="carousel-track">
 
-      <div class="project-card">
-        <div class="project-image">
-          <img src="/proj/finito.png" alt="Finito Pro" loading="lazy">
+        <!-- ORIGINAL SET -->
+        <!-- Project: TheraFlow -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/TheraFlow.png" alt="TheraFlow CRM" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">SaaS Platform</span>
+            <h3 class="project-title">{{ 'portfolio.theraflow.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.theraflow.description' | translate }}</p>
+            <a href="https://www.theraflow-crm.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' |
+              translate }} <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="project-content">
-          <h3 class="project-title">{{ 'portfolio.finito.title' | translate }}</h3>
-          <p class="project-description">{{ 'portfolio.finito.description' | translate }}</p>
-          <a href="https://www.finitopro.ch/" target="_blank" rel="noopener noreferrer" class="btn-visit">
-            {{ 'portfolio.visit' | translate }}
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      </div>
 
-      <div class="project-card">
-        <div class="project-image">
-          <img src="/proj/noff.png" alt="Noff" loading="lazy">
+        <!-- Project: Finito -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/Finito.png" alt="Finito Pro" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">Project Management</span>
+            <h3 class="project-title">{{ 'portfolio.finito.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.finito.description' | translate }}</p>
+            <a href="https://www.finitopro.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' | translate
+              }} <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="project-content">
-          <h3 class="project-title">{{ 'portfolio.noff.title' | translate }}</h3>
-          <p class="project-description">{{ 'portfolio.noff.description' | translate }}</p>
-          <a href="https://noff.ch/" target="_blank" rel="noopener noreferrer" class="btn-visit">
-            {{ 'portfolio.visit' | translate }}
-            <i class="fas fa-external-link-alt"></i>
-          </a>
+
+        <!-- Project: Noff -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/noff.png" alt="Noff" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">Digital Business Card</span>
+            <h3 class="project-title">{{ 'portfolio.noff.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.noff.description' | translate }}</p>
+            <a href="https://noff.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
+
+        <!-- Project 1 -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/Ribeiro-Consulting-Services-Zürich-Schweiz.png" alt="Ribeiro Consulting" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">Corporate Identity</span>
+            <h3 class="project-title">{{ 'portfolio.ribeiro.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.ribeiro.description' | translate }}</p>
+            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/AlenteSeguros-Mediação-de-Seguros-em-Gavião.png" alt="Alentseguros" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">FinTech Portal</span>
+            <h3 class="project-title">{{ 'portfolio.alentseguros.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.alentseguros.description' | translate }}</p>
+            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/Silvio-Valente-Fotografia.png" alt="Silvio Studio" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">Creative Portfolio</span>
+            <h3 class="project-title">{{ 'portfolio.silvio.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.silvio.description' | translate }}</p>
+            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/proj_pali_ai_1768056187286.png" alt="Pali AI" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">AI Application</span>
+            <h3 class="project-title">{{ 'portfolio.pali.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.pali.description' | translate }}</p>
+            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/proj_flexi_crm_1768056215705.png" alt="Flexi CRM" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">SaaS Dashboard</span>
+            <h3 class="project-title">{{ 'portfolio.flexi.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.flexi.description' | translate }}</p>
+            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- DUPLICATE SET FOR LOOP -->
+        <!-- Project: TheraFlow -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/TheraFlow.png" alt="TheraFlow CRM" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">SaaS Platform</span>
+            <h3 class="project-title">{{ 'portfolio.theraflow.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.theraflow.description' | translate }}</p>
+            <a href="https://www.theraflow-crm.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' |
+              translate }} <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project: Finito -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/Finito.png" alt="Finito Pro" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">Project Management</span>
+            <h3 class="project-title">{{ 'portfolio.finito.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.finito.description' | translate }}</p>
+            <a href="https://www.finitopro.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' | translate
+              }} <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project: Noff -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/noff.png" alt="Noff" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">Digital Business Card</span>
+            <h3 class="project-title">{{ 'portfolio.noff.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.noff.description' | translate }}</p>
+            <a href="https://noff.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/Ribeiro-Consulting-Services-Zürich-Schweiz.png" alt="Ribeiro Consulting" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">Corporate Identity</span>
+            <h3 class="project-title">{{ 'portfolio.ribeiro.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.ribeiro.description' | translate }}</p>
+            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/AlenteSeguros-Mediação-de-Seguros-em-Gavião.png" alt="Alentseguros" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">FinTech Portal</span>
+            <h3 class="project-title">{{ 'portfolio.alentseguros.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.alentseguros.description' | translate }}</p>
+            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/Silvio-Valente-Fotografia.png" alt="Silvio Studio" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">Creative Portfolio</span>
+            <h3 class="project-title">{{ 'portfolio.silvio.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.silvio.description' | translate }}</p>
+            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/proj_pali_ai_1768056187286.png" alt="Pali AI" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">AI Application</span>
+            <h3 class="project-title">{{ 'portfolio.pali.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.pali.description' | translate }}</p>
+            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/proj_flexi_crm_1768056215705.png" alt="Flexi CRM" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">SaaS Dashboard</span>
+            <h3 class="project-title">{{ 'portfolio.flexi.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.flexi.description' | translate }}</p>
+            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

@@ -30,7 +30,6 @@
     overflow: hidden;
     line-height: 0;
     z-index: 2;
-    /* Ensure it's above the background */
 }
 
 .custom-shape-divider-top svg {
@@ -38,12 +37,33 @@
     display: block;
     width: calc(100% + 1.3px);
     height: 120px;
-    /* Increased height for visibility */
 }
 
 .custom-shape-divider-top .shape-fill {
     fill: var(--services-bg, #f8fafc);
-    /* Use variable with fallback */
+}
+
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #f8fafc;
+    /* Matches About Section Light BG */
 }
 
 .container {

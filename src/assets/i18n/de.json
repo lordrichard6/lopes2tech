@@ -340,21 +340,22 @@
     }
   },
   "about": {
-    "badge": "Über Lopes2tech",
-    "title": "Technische Exzellenz ohne Agenturgebühren.",
-    "subtitle": "Lopes2Tech ist eine in Zürich ansässige Automatisierungsberatung, die sich der Modernisierung schweizerischer Dienstleistungsunternehmen widmet. Wir schlagen die Brücke zwischen komplexer Technologie und Ihren täglichen Abläufen.",
-    "description1": "Im Gegensatz zu großen Agenturen, die Sie an Junior-Account-Manager weiterreichen, biete ich direkten, gründergeführten Support. Ich analysiere Ihre spezifischen Engpässe – vom Client-Onboarding über Dokumentenerfassung, wiederkehrende Administration und Abrechnung bis hin zu Follow-ups – und baue sichere Kundenportale und Automatisierungen, um diese zu lösen.",
-    "description2": "Mein Ziel ist einfach: kleinen und mittelgroßen Dienstleistungsunternehmen den gleichen operativen Hebel wie größeren Firmen zu geben – ohne den Overhead.",
-    "features": {
-      "title": "Der Lopes2Tech Vorteil.",
-      "swiss": "Transparente, feste Preise.",
-      "technology": "Automatisierte Effizienz.",
-      "service": "Direkter Gründerzugang.",
-      "delivery": "Schweizer Compliance-Fokus"
+    "agency": {
+      "rubric": "Unsere Philosophie",
+      "title": "Wo Innovation auf ",
+      "highlight": "Inspiration",
+      "description": "Wir sind eine in der Schweiz ansässige Technologieagentur, die sich auf KI-Agenten, Webentwicklung und automatisierte Lösungen spezialisiert hat. Wir glauben, dass Technologie den Menschen dienen sollte, nicht umgekehrt.",
+      "stats": {
+        "industries": "Branchen Bedient",
+        "hours": "Stunden Gespart",
+        "availability": "KI-Verfügbarkeit"
+      }
     },
     "founder": {
-      "title": "Über den Gründer.",
-      "alt": "Porträt von Paulo R. Lopes, Entwickler und Gründer von lopes2tech"
+      "story": "Mit einem Hintergrund im Maschinenbau und einer Leidenschaft für Automatisierung sah ich eine Lücke darin, wie Unternehmen Technologie nutzen. Meine Mission ist es, die digitale Landschaft für Schweizer Unternehmer zu vereinfachen und Compliance, Leistung und ästhetische Exzellenz zu gewährleisten.",
+      "quote": "Ich baue nicht nur Websites; ich baue digitale Ökosysteme, die für Sie arbeiten, während Sie schlafen.",
+      "alt": "Porträt von Paulo Lopes Reizinho",
+      "follow": "Verbinden Sie sich mit mir"
     }
   },
   "contact": {
@@ -1059,10 +1060,11 @@
     "message": "Wir haben Ihre Projektdetails erhalten und unser Expertenteam überprüft bereits Ihre Anforderungen. Sie erhalten innerhalb von **24 Stunden** ein personalisiertes Angebot, das speziell auf Ihre Bedürfnisse zugeschnitten ist."
   },
   "portfolio": {
-    "badge": "Mein Portfolio",
-    "title": "Ausgewählte Projekte",
-    "subtitle": "Entdecken Sie einige meiner neuesten Arbeiten und Lösungen",
-    "visit": "Projekt besuchen",
+    "badge": "Unsere Arbeit",
+    "title": "Erfolgsgeschichten & Digitale Exzellenz",
+    "subtitle": "Entdecken Sie, wie wir Hochleistungslösungen für Marktführer entwickeln.",
+    "seo_text": "Von Enterprise-CRM-Dashboards bis hin zu immersiven Markenerlebnissen spiegelt unser Portfolio Schweizer Präzision und Innovation wider. Wir entwerfen digitale Ökosysteme, die Wachstum fördern.",
+    "visit": "Fallstudie Ansehen",
     "theraflow": {
       "title": "TheraFlow CRM",
       "description": "Eine umfassende CRM-Lösung für Therapeuten und Coaches. Im Besitz von Lopes2Tech."
@@ -1074,6 +1076,26 @@
     "noff": {
       "title": "Noff",
       "description": "Digitale Visitenkarte für klare Kommunikation und Verfügbarkeitsverwaltung. Entwickelt für einen Kunden."
+    },
+    "ribeiro": {
+      "title": "Ribeiro Consulting",
+      "description": "Strategische Geschäftsintegration & Corporate Identity."
+    },
+    "alentseguros": {
+      "title": "Alentseguros",
+      "description": "Modernes Versicherungsportal mit sicherem Kundenbereich."
+    },
+    "silvio": {
+      "title": "Silvio Studio",
+      "description": "Kreatives Portfolio & Künstlerische Präsentation."
+    },
+    "pali": {
+      "title": "Pali AI",
+      "description": "Persönlicher Assistent der nächsten Generation."
+    },
+    "flexi": {
+      "title": "Flexi CRM",
+      "description": "Enterprise-Grade Customer Relationship Management Dashboard."
     }
   },
   "support": {

@@ -1,5 +1,5 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Input, Output, EventEmitter, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { TranslatePipe } from '../../../pipes/translate.pipe';
 
 @Component({
@@ -15,6 +15,8 @@ export class ServiceDialogComponent {
   @Input() serviceImage: string = '';
   @Output() close = new EventEmitter<void>();
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+
   onBackdropClick(event: Event): void {
     if (event.target === event.currentTarget) {
       this.closeDialog();
@@ -28,6 +30,12 @@ export class ServiceDialogComponent {
   onKeydown(event: KeyboardEvent): void {
     if (event.key === 'Escape') {
       this.closeDialog();
+    }
+  }
+
+  openBooking(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      window.open('https://cal.com/lopes2tech/initial-consult', '_blank', 'noopener,noreferrer');
     }
   }
 }

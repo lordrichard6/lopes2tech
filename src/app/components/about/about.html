@@ -1,81 +1,97 @@
-<section id="about" class="about">
-  <div class="about-background" aria-hidden="true">
-    <div class="floating-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-      <div class="shape shape-4"></div>
+<section id="about" class="about-section">
+
+  <!-- PART 1: THE AGENCY -->
+  <div class="agency-container">
+
+
+
+    <div class="agency-bg">
+      <img src="/assets/about/agency_bg.png" alt="Abstract Tech Background" class="bg-image">
+      <div class="bg-overlay"></div>
     </div>
-    <div class="grid-pattern"></div>
-  </div>
-  
-  <div class="container">
-    <div class="about-content">
-      <div class="section-header reveal-on-scroll" #revealItem>
-        <div class="section-badge">
-          <i class="fas fa-mountain"></i>
-          <span>{{ 'about.badge' | translate }}</span>
-        </div>
-        <h2 class="section-title">{{ 'about.title' | translate }}</h2>
-      </div>
-      
-      <div class="about-text reveal-on-scroll" #revealItem>
-        <p class="text-highlight">{{ 'about.subtitle' | translate }}</p>
-        <p>{{ 'about.description1' | translate }}</p>
-        <p>{{ 'about.description2' | translate }}</p>
-      </div>
-      
-      <div class="features-container reveal-on-scroll" #revealItem>
-        <h3 class="features-title">{{ 'about.features.title' | translate }}</h3>
-        <div class="features-grid">
-          @for (feature of features; track feature.translationKey) {
-            <div class="feature reveal-on-scroll" #revealItem>
-              <div class="feature-icon">
-                <div class="icon-wrapper">
-                  <i [class]="feature.icon"></i>
-                </div>
-              </div>
-              <h4>{{ feature.translationKey | translate }}</h4>
-            </div>
-          }
-        </div>
-      </div>
 
-      <div class="founder-section">
-        <h3 class="founder-title">{{ 'about.founder.title' | translate }}</h3>
-        <div class="founder-card reveal-on-scroll" #revealItem>
-          <div class="founder-photo">
-            <img src="/me_01.jpg" [alt]="'about.founder.alt' | translate" class="photo">
+    <div class="container relative z-10">
+      <div class="agency-content">
+        <div class="agency-header reveal-on-scroll" #revealItem>
+          <span class="rubric">{{ 'about.agency.rubric' | translate }}</span>
+          <h2 class="agency-title">
+            {{ 'about.agency.title' | translate }}
+            <span class="highlight">{{ 'about.agency.highlight' | translate }}</span>
+          </h2>
+          <p class="agency-description">{{ 'about.agency.description' | translate }}</p>
+        </div>
+
+        <div class="agency-stats-grid">
+          <div class="stat-card glass reveal-on-scroll" #revealItem>
+            <div class="stat-number">15+</div>
+            <div class="stat-label">{{ 'about.agency.stats.industries' | translate }}</div>
           </div>
+          <div class="stat-card glass reveal-on-scroll" #revealItem>
+            <div class="stat-number">2000+</div>
+            <div class="stat-label">{{ 'about.agency.stats.hours' | translate }}</div>
+          </div>
+          <div class="stat-card glass reveal-on-scroll" #revealItem>
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">{{ 'about.agency.stats.availability' | translate }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <div class="founder-info mb-4">
+  <!-- PART 2: THE FOUNDER -->
+  <div class="founder-container">
+    <div class="container">
+      <div class="founder-wrapper">
+
+        <!-- Founder Image -->
+        <div class="founder-visual reveal-on-scroll" #revealItem>
+          <div class="image-frame">
+            <img src="/me_01.jpg" alt="Paulo Lopes Reizinho" class="founder-img">
+            <div class="frame-accent"></div>
+          </div>
+        </div>
+
+        <!-- Founder Text -->
+        <div class="founder-text reveal-on-scroll" #revealItem>
+          <div class="founder-header">
             <h3 class="founder-name">Paulo R. Lopes</h3>
             <p class="founder-role">{{ 'team.position' | translate }}</p>
-            <p class="founder-description">{{ 'team.description' | translate }}</p>
-
-            <div class="founder-skills">
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Django</span>
-              <span class="skill-tag">AI Agents</span>
-              <span class="skill-tag">nDSG / FADP</span>
-              <span class="skill-tag">Automations</span>
-            </div>
-
           </div>
-          
-          <div class="founder-social">
-            <a href="https://www.linkedin.com/in/pauloreizinho/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
+
+          <div class="founder-bio">
+            <p>{{ 'about.founder.story' | translate }}</p>
+            <div class="quote-box">
+              <i class="fas fa-quote-left"></i>
+              <p class="quote">{{ 'about.founder.quote' | translate }}</p>
+            </div>
+          </div>
+
+          <div class="tech-stack-minimal">
+            <span class="stack-item">Angular</span>
+            <span class="stack-item">Three.js</span>
+            <span class="stack-item">AI Agents</span>
+            <span class="stack-item">nDSG</span>
+          </div>
+
+          <div class="founder-connect">
+            <a href="https://www.linkedin.com/in/pauloreizinho/" target="_blank" class="social-link"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://www.instagram.com/paulo_reizinho/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://x.com/paulo_reizinho4" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+            <a href="https://x.com/paulo_reizinho4" target="_blank" class="social-link" aria-label="X / Twitter">
               <i class="fab fa-x-twitter"></i>
             </a>
+            <a href="https://www.instagram.com/paulo_reizinho/" target="_blank" class="social-link"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <span class="follow-text">{{ 'about.founder.follow' | translate }}</span>
           </div>
         </div>
+
       </div>
     </div>
   </div>
+
 </section>

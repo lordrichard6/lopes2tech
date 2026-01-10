@@ -583,21 +583,22 @@
     }
   },
   "about": {
-    "badge": "Sobre a Lopes2tech",
-    "title": "Excelência Técnica sem Taxas de Agência.",
-    "subtitle": "Lopes2Tech é uma consultoria de automação sediada em Zurique dedicada à modernização de empresas de serviços suíças. Fazemos a ponte entre tecnologia complexa e as suas operações do dia a dia.",
-    "description1": "Ao contrário de grandes agências que o passam entre gestores de conta júnior, ofereço suporte direto liderado pelo fundador. Analiso os seus gargalos específicos—onboarding de clientes, recolha de documentos, tarefas administrativas recorrentes, faturação e follow-ups—e construo portais seguros para clientes e automações para os resolver.",
-    "description2": "O meu objetivo é simples: dar a pequenas e médias empresas de serviços a mesma alavancagem operacional que grandes grupos, sem os custos gerais.",
-    "features": {
-      "title": "A Vantagem Lopes2Tech.",
-      "swiss": "Preços Fixos e Transparentes.",
-      "technology": "Eficiência Automatizada.",
-      "service": "Acesso Direto ao Fundador.",
-      "delivery": "Foco em Conformidade Suíça"
+    "agency": {
+      "rubric": "A Nossa Filosofia",
+      "title": "Onde a Inovação Encontra ",
+      "highlight": "Inspiração",
+      "description": "Somos uma agência de tecnologia sediada na Suíça, especializada em agentes de IA, desenvolvimento web e soluções automatizadas. Acreditamos que a tecnologia deve servir as pessoas, e não o contrário.",
+      "stats": {
+        "industries": "Indústrias Servidas",
+        "hours": "Horas Poupadas",
+        "availability": "Disponibilidade IA"
+      }
     },
     "founder": {
-      "title": "Sobre o Fundador.",
-      "alt": "Retrato de Paulo R. Lopes, desenvolvedor e fundador da lopes2tech"
+      "story": "Com formação em engenharia mecânica e uma paixão pela automação, vi uma lacuna na forma como as empresas utilizam a tecnologia. A minha missão é simplificar o panorama digital para empreendedores suíços, garantindo conformidade, desempenho e excelência estética.",
+      "quote": "Não construo apenas websites; construo ecossistemas digitais que trabalham por si enquanto dorme.",
+      "alt": "Retrato de Paulo Lopes Reizinho",
+      "follow": "Conecte-se comigo"
     }
   },
   "contact": {
@@ -915,10 +916,11 @@
     "message": "Recebemos os detalhes do seu projeto e a nossa equipa de especialistas já está a analisar os seus requisitos. Receberá uma proposta personalizada dentro de **24 horas** adaptada especificamente às suas necessidades."
   },
   "portfolio": {
-    "badge": "O Meu Portfólio",
-    "title": "Projetos em Destaque",
-    "subtitle": "Explore alguns dos meus trabalhos e soluções recentes",
-    "visit": "Visitar Projeto",
+    "badge": "O Nosso Trabalho",
+    "title": "Histórias de Sucesso & Excelência Digital",
+    "subtitle": "Explore como desenvolvemos soluções de alto desempenho para líderes de mercado.",
+    "seo_text": "Desde dashboards CRM empresariais a experiências de marca imersivas, o nosso portfólio reflete a precisão suíça e inovação. Criamos ecossistemas digitais que impulsionam o crescimento e automatizam fluxos de trabalho.",
+    "visit": "Ver Case Study",
     "theraflow": {
       "title": "TheraFlow CRM",
       "description": "Uma solução CRM abrangente para terapeutas e coaches. Propriedade da Lopes2Tech."
@@ -930,6 +932,26 @@
     "noff": {
       "title": "Noff",
       "description": "Cartão de visita digital para comunicação clara e gestão de disponibilidade. Desenvolvido para um cliente."
+    },
+    "ribeiro": {
+      "title": "Ribeiro Consulting",
+      "description": "Integração Estratégica de Negócios & Identidade Corporativa."
+    },
+    "alentseguros": {
+      "title": "Alentseguros",
+      "description": "Portal de Seguros Moderno com Área de Cliente Segura."
+    },
+    "silvio": {
+      "title": "Silvio Studio",
+      "description": "Portfólio Criativo & Showcase Artístico."
+    },
+    "pali": {
+      "title": "Pali AI",
+      "description": "Assistente Pessoal de Nova Geração com Consciência Contextual."
+    },
+    "flexi": {
+      "title": "Flexi CRM",
+      "description": "Dashboard de Gestão de Relacionamento com o Cliente Empresarial."
     }
   },
   "support": {

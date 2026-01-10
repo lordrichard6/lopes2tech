@@ -54,21 +54,22 @@
     }
   },
   "about": {
-    "badge": "About Lopes2tech",
-    "title": "Technical Excellence without the Agency Fees.",
-    "subtitle": "Lopes2Tech is a Zurich-based automation consultancy dedicated to modernizing Swiss service businesses. We bridge the gap between complex technology and your day-to-day operations.",
-    "description1": "Unlike large agencies that pass you around to junior account managers, I provide direct, founder-led support. I analyze your specific bottlenecks—client onboarding, document collection, recurring admin, billing, and follow-ups—and build secure client portals and automations to fix them.",
-    "description2": "My goal is simple: to give small and mid-sized service companies the same operational leverage as larger firms, without the overhead.",
-    "features": {
-      "title": "The Lopes2Tech Advantage.",
-      "swiss": "Transparent, Fixed Pricing.",
-      "technology": "Automated Efficiency.",
-      "service": "Direct Founder Access.",
-      "delivery": "Swiss Compliance Focused"
+    "agency": {
+      "rubric": "Our Philosophy",
+      "title": "Where Innovation Meets ",
+      "highlight": "Inspiration",
+      "description": "We are a Swiss-based technology agency specializing in AI agents, web development, and automated solutions. We believe technology should serve people, not the other way around.",
+      "stats": {
+        "industries": "Industries Served",
+        "hours": "Hours Saved",
+        "availability": "AI Availability"
+      }
     },
     "founder": {
-      "title": "About the Founder.",
-      "alt": "Portrait of Paulo R. Lopes, developer and founder of lopes2tech"
+      "story": "With a background in mechanical engineering and a passion for automation, I saw a gap in how businesses leverage technology. My mission is to simplify the digital landscape for Swiss entrepreneurs, ensuring compliance, performance, and aesthetic excellence.",
+      "quote": "I don't just build websites; I build digital ecosystems that work for you while you sleep.",
+      "alt": "Paulo Lopes Reizinho Portrait",
+      "follow": "Connect with me"
     }
   },
   "services": {
@@ -944,10 +945,11 @@
     "message": "We have received your project details and our expert team is already reviewing your requirements. You'll receive a personalized proposal within **24 hours** that's tailored specifically to your needs."
   },
   "portfolio": {
-    "badge": "My Portfolio",
-    "title": "Featured Projects",
-    "subtitle": "Explore some of my recent work and solutions",
-    "visit": "Visit Project",
+    "badge": "Our Work",
+    "title": "Success Stories & Digital Excellence",
+    "subtitle": "Explore how we engineer high-performance solutions for market leaders.",
+    "seo_text": "From enterprise-grade CRM dashboards to immersive brand experiences, our portfolio reflects our commitment to Swiss precision and innovation. We architect digital ecosystems that drive growth, automate workflows, and captivate audiences.",
+    "visit": "View Case Study",
     "theraflow": {
       "title": "TheraFlow CRM",
       "description": "A comprehensive CRM solution for therapists and coaches. Owned by Lopes2Tech."
@@ -959,6 +961,26 @@
     "noff": {
       "title": "Noff",
       "description": "Digital business card for clear communication and availability management. Developed for a client."
+    },
+    "ribeiro": {
+      "title": "Ribeiro Consulting",
+      "description": "Strategic Business Integration & Corporate Identity."
+    },
+    "alentseguros": {
+      "title": "Alentseguros",
+      "description": "Modern Insurance Portal with Secure Client Area."
+    },
+    "silvio": {
+      "title": "Silvio Studio",
+      "description": "Creative Portfolio & Artistic Showcase."
+    },
+    "pali": {
+      "title": "Pali AI",
+      "description": "Next-Gen Personal Assistant with Contextual Awareness."
+    },
+    "flexi": {
+      "title": "Flexi CRM",
+      "description": "Enterprise-Grade Customer Relationship Management Dashboard."
     }
   },
   "support": {
