@@ -1,0 +1,262 @@
+$ocean-dark: #0f172a;
+$ocean-blue: #0ea5e9;
+$text-light: #94a3b8;
+$white: #ffffff;
+
+.dialog-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.85); // Dark ocean backdrop
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+.dialog-container {
+    background: $white;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: scale(0.95);
+    animation: scaleUp 0.3s forwards;
+    display: flex;
+    flex-direction: column;
+
+    // Dark Mode Support
+    @media (prefers-color-scheme: dark) {
+        background: #1e293b;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+:host-context(.dark-theme) .dialog-container {
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.close-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 40px; // Larger touch target
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: $ocean-dark;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+
+    &:hover {
+        transform: rotate(90deg);
+        background: $white;
+        color: #ef4444; // Red for close
+    }
+}
+
+.dialog-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    min-height: 500px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        min-height: auto;
+        overflow-y: auto;
+    }
+}
+
+.dialog-visual {
+    flex: 1.2;
+    position: relative;
+    background: #f1f5f9;
+    overflow: hidden;
+
+    .project-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    // Gradient Overlay
+    .visual-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+        pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+        height: 250px;
+        flex: none;
+    }
+
+    // Fade effect on the right side of the image
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%; // Wide fade area
+        height: 100%;
+        background: linear-gradient(to right, transparent, $white);
+        pointer-events: none;
+
+        @media (prefers-color-scheme: dark) {
+            background: linear-gradient(to right, transparent, #1e293b);
+        }
+    }
+}
+
+.dialog-content {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1; // Above the fade if needed
+
+    @media (max-width: 768px) {
+        padding: 2rem;
+    }
+
+    .project-category {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: $ocean-blue;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .project-title {
+        font-size: clamp(2rem, 3vw, 2.5rem);
+        font-weight: 800;
+        color: $ocean-dark;
+        margin-bottom: 1.5rem;
+        line-height: 1.1;
+
+        // Dark Mode Text (Media Query)
+        @media (prefers-color-scheme: dark) {
+            color: $white;
+        }
+
+        // Dark Mode Text
+        :host-context(.dark-theme) & {
+            color: $white;
+        }
+    }
+
+    .description-scroll {
+        max-height: 300px;
+        overflow-y: auto;
+        margin-bottom: 2rem;
+        padding-right: 1rem; // Space for scrollbar
+
+        // Custom Scrollbar
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(148, 163, 184, 0.5);
+            border-radius: 4px;
+        }
+    }
+
+    .project-description {
+        font-size: 1.05rem;
+        color: #475569;
+        line-height: 1.7;
+
+        // Dark Mode Text (Media Query)
+        @media (prefers-color-scheme: dark) {
+            color: #cbd5e1;
+        }
+
+        // Dark Mode Text
+        :host-context(.dark-theme) & {
+            color: #cbd5e1;
+        }
+    }
+
+    .btn-visit {
+        padding: 1rem 2rem;
+        background: $ocean-dark;
+        color: $white;
+        border: none;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        transition: all 0.2s ease;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+        i {
+            transition: transform 0.2s ease;
+        }
+
+        &:hover {
+            background: $ocean-blue;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.3);
+
+            i {
+                transform: translate(2px, -2px); // Up-right diagonal movement
+            }
+        }
+
+        // Dark Mode Button
+        :host-context(.dark-theme) & {
+            background: $white;
+            color: $ocean-dark;
+
+            &:hover {
+                background: $ocean-blue;
+                color: $white;
+            }
+        }
+    }
+}
+
+// Animations
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    to {
+        transform: scale(1);
+    }
+}

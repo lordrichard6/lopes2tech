@@ -27,11 +27,16 @@
             <img src="/proj/TheraFlow.png" alt="TheraFlow CRM" loading="lazy">
           </div>
           <div class="card-content">
-            <span class="project-category">SaaS Platform</span>
+            <span class="project-category">HealthTech SaaS</span>
             <h3 class="project-title">{{ 'portfolio.theraflow.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.theraflow.description' | translate }}</p>
-            <a href="https://www.theraflow-crm.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' |
-              translate }} <i class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.theraflow.title',
+              descKey: 'portfolio.theraflow.description',
+              image: '/proj/TheraFlow.png',
+              category: 'HealthTech SaaS',
+              link: 'https://www.theraflow-crm.ch/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -41,11 +46,16 @@
             <img src="/proj/Finito.png" alt="Finito Pro" loading="lazy">
           </div>
           <div class="card-content">
-            <span class="project-category">Project Management</span>
+            <span class="project-category">SaaS for Craftsmen</span>
             <h3 class="project-title">{{ 'portfolio.finito.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.finito.description' | translate }}</p>
-            <a href="https://www.finitopro.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' | translate
-              }} <i class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.finito.title',
+              descKey: 'portfolio.finito.description',
+              image: '/proj/Finito.png',
+              category: 'SaaS for Craftsmen',
+              link: 'https://www.finitopro.ch/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -58,8 +68,13 @@
             <span class="project-category">Digital Business Card</span>
             <h3 class="project-title">{{ 'portfolio.noff.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.noff.description' | translate }}</p>
-            <a href="https://noff.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.noff.title',
+              descKey: 'portfolio.noff.description',
+              image: '/proj/noff.png',
+              category: 'Digital Business Card',
+              link: 'https://noff.ch/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -69,11 +84,16 @@
             <img src="/proj/Ribeiro-Consulting-Services-Zürich-Schweiz.png" alt="Ribeiro Consulting" loading="lazy">
           </div>
           <div class="card-content">
-            <span class="project-category">Corporate Identity</span>
+            <span class="project-category">Business Consulting</span>
             <h3 class="project-title">{{ 'portfolio.ribeiro.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.ribeiro.description' | translate }}</p>
-            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.ribeiro.title',
+              descKey: 'portfolio.ribeiro.description',
+              image: '/proj/Ribeiro-Consulting-Services-Zürich-Schweiz.png',
+              category: 'Business Consulting',
+              link: 'https://ribeiroconsulting.ch/pt'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -83,11 +103,16 @@
             <img src="/proj/AlenteSeguros-Mediação-de-Seguros-em-Gavião.png" alt="Alentseguros" loading="lazy">
           </div>
           <div class="card-content">
-            <span class="project-category">FinTech Portal</span>
+            <span class="project-category">Insurance & FinTech</span>
             <h3 class="project-title">{{ 'portfolio.alentseguros.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.alentseguros.description' | translate }}</p>
-            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.alentseguros.title',
+              descKey: 'portfolio.alentseguros.description',
+              image: '/proj/AlenteSeguros-Mediação-de-Seguros-em-Gavião.png',
+              category: 'Insurance & FinTech',
+              link: 'https://alenteseguros.vercel.app/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -97,11 +122,16 @@
             <img src="/proj/Silvio-Valente-Fotografia.png" alt="Silvio Studio" loading="lazy">
           </div>
           <div class="card-content">
-            <span class="project-category">Creative Portfolio</span>
+            <span class="project-category">Photography Portfolio</span>
             <h3 class="project-title">{{ 'portfolio.silvio.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.silvio.description' | translate }}</p>
-            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.silvio.title',
+              descKey: 'portfolio.silvio.description',
+              image: '/proj/Silvio-Valente-Fotografia.png',
+              category: 'Photography Portfolio',
+              link: 'https://silvio-photo.vercel.app/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -114,8 +144,12 @@
             <span class="project-category">AI Application</span>
             <h3 class="project-title">{{ 'portfolio.pali.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.pali.description' | translate }}</p>
-            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.pali.title',
+              descKey: 'portfolio.pali.description',
+              image: '/proj/proj_pali_ai_1768056187286.png',
+              category: 'AI Application'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -128,8 +162,12 @@
             <span class="project-category">SaaS Dashboard</span>
             <h3 class="project-title">{{ 'portfolio.flexi.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.flexi.description' | translate }}</p>
-            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.flexi.title',
+              descKey: 'portfolio.flexi.description',
+              image: '/proj/proj_flexi_crm_1768056215705.png',
+              category: 'SaaS Dashboard'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -140,11 +178,16 @@
             <img src="/proj/TheraFlow.png" alt="TheraFlow CRM" loading="lazy">
           </div>
           <div class="card-content">
-            <span class="project-category">SaaS Platform</span>
+            <span class="project-category">HealthTech SaaS</span>
             <h3 class="project-title">{{ 'portfolio.theraflow.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.theraflow.description' | translate }}</p>
-            <a href="https://www.theraflow-crm.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' |
-              translate }} <i class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.theraflow.title',
+              descKey: 'portfolio.theraflow.description',
+              image: '/proj/TheraFlow.png',
+              category: 'HealthTech SaaS',
+              link: 'https://www.theraflow-crm.ch/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -154,11 +197,16 @@
             <img src="/proj/Finito.png" alt="Finito Pro" loading="lazy">
           </div>
           <div class="card-content">
-            <span class="project-category">Project Management</span>
+            <span class="project-category">SaaS for Craftsmen</span>
             <h3 class="project-title">{{ 'portfolio.finito.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.finito.description' | translate }}</p>
-            <a href="https://www.finitopro.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' | translate
-              }} <i class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.finito.title',
+              descKey: 'portfolio.finito.description',
+              image: '/proj/Finito.png',
+              category: 'SaaS for Craftsmen',
+              link: 'https://www.finitopro.ch/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -171,8 +219,13 @@
             <span class="project-category">Digital Business Card</span>
             <h3 class="project-title">{{ 'portfolio.noff.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.noff.description' | translate }}</p>
-            <a href="https://noff.ch/" target="_blank" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.noff.title',
+              descKey: 'portfolio.noff.description',
+              image: '/proj/noff.png',
+              category: 'Digital Business Card',
+              link: 'https://noff.ch/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -182,11 +235,16 @@
             <img src="/proj/Ribeiro-Consulting-Services-Zürich-Schweiz.png" alt="Ribeiro Consulting" loading="lazy">
           </div>
           <div class="card-content">
-            <span class="project-category">Corporate Identity</span>
+            <span class="project-category">Business Consulting</span>
             <h3 class="project-title">{{ 'portfolio.ribeiro.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.ribeiro.description' | translate }}</p>
-            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.ribeiro.title',
+              descKey: 'portfolio.ribeiro.description',
+              image: '/proj/Ribeiro-Consulting-Services-Zürich-Schweiz.png',
+              category: 'Business Consulting',
+              link: 'https://ribeiroconsulting.ch/pt'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -196,11 +254,16 @@
             <img src="/proj/AlenteSeguros-Mediação-de-Seguros-em-Gavião.png" alt="Alentseguros" loading="lazy">
           </div>
           <div class="card-content">
-            <span class="project-category">FinTech Portal</span>
+            <span class="project-category">Insurance & FinTech</span>
             <h3 class="project-title">{{ 'portfolio.alentseguros.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.alentseguros.description' | translate }}</p>
-            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.alentseguros.title',
+              descKey: 'portfolio.alentseguros.description',
+              image: '/proj/AlenteSeguros-Mediação-de-Seguros-em-Gavião.png',
+              category: 'Insurance & FinTech',
+              link: 'https://alenteseguros.vercel.app/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -210,11 +273,16 @@
             <img src="/proj/Silvio-Valente-Fotografia.png" alt="Silvio Studio" loading="lazy">
           </div>
           <div class="card-content">
-            <span class="project-category">Creative Portfolio</span>
+            <span class="project-category">Photography Portfolio</span>
             <h3 class="project-title">{{ 'portfolio.silvio.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.silvio.description' | translate }}</p>
-            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.silvio.title',
+              descKey: 'portfolio.silvio.description',
+              image: '/proj/Silvio-Valente-Fotografia.png',
+              category: 'Photography Portfolio',
+              link: 'https://silvio-photo.vercel.app/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -227,8 +295,12 @@
             <span class="project-category">AI Application</span>
             <h3 class="project-title">{{ 'portfolio.pali.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.pali.description' | translate }}</p>
-            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.pali.title',
+              descKey: 'portfolio.pali.description',
+              image: '/proj/proj_pali_ai_1768056187286.png',
+              category: 'AI Application'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
@@ -241,12 +313,18 @@
             <span class="project-category">SaaS Dashboard</span>
             <h3 class="project-title">{{ 'portfolio.flexi.title' | translate }}</h3>
             <p class="project-desc">{{ 'portfolio.flexi.description' | translate }}</p>
-            <a href="#" class="btn-case-study">{{ 'portfolio.visit' | translate }} <i
-                class="fas fa-arrow-right"></i></a>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.flexi.title',
+              descKey: 'portfolio.flexi.description',
+              image: '/proj/proj_flexi_crm_1768056215705.png',
+              category: 'SaaS Dashboard'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
 
       </div>
     </div>
   </div>
+  <app-project-dialog [isOpen]="isDialogOpen" [project]="currentProject"
+    (close)="closeProjectDialog()"></app-project-dialog>
 </section>

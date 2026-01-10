@@ -1,0 +1,38 @@
+@if (isOpen && project) {
+<div class="dialog-backdrop" (click)="onBackdropClick($event)" (keydown)="onKeydown($event)" tabindex="0">
+    <div class="dialog-container" role="dialog" aria-modal="true">
+
+        <button class="close-button" (click)="closeDialog()" aria-label="Close dialog" type="button">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="dialog-layout">
+            <!-- Visual Side -->
+            <div class="dialog-visual">
+                <img [src]="project.image" [alt]="(project.titleKey | translate) + ' Preview'" class="project-image">
+                <div class="visual-overlay"></div>
+            </div>
+
+            <!-- Content Side -->
+            <div class="dialog-content">
+                <span class="project-category">{{ project.category }}</span>
+                <h3 class="project-title">{{ project.titleKey | translate }}</h3>
+
+                <div class="description-scroll">
+                    <p class="project-description">
+                        {{ project.descKey | translate }}
+                    </p>
+                </div>
+
+                @if (project.link) {
+                <button class="btn-visit" (click)="visitProject()">
+                    <span>{{ 'portfolio.visit' | translate }}</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </button>
+                }
+            </div>
+        </div>
+
+    </div>
+</div>
+}
