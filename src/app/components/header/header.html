@@ -3,33 +3,31 @@
     <div class="nav-container">
       <div class="logo" [class.neon-active]="isScrolled">
         <img src="/logo_w.svg" alt="lopes2tech Swiss IT Solutions Company Logo" class="logo-image light-theme-logo">
-        <img src="/blue_simple.svg" alt="lopes2tech Swiss IT Solutions Company Logo - Dark Theme" class="logo-image dark-theme-logo">
+        <img src="/blue_simple.svg" alt="lopes2tech Swiss IT Solutions Company Logo - Dark Theme"
+          class="logo-image dark-theme-logo">
         <div class="logo-text">
           <span class="logo-part logo-lopes">lopes</span>
           <span class="logo-part logo-number">2</span>
           <span class="logo-part logo-tech">tech</span>
         </div>
       </div>
-      
+
       <div class="header-controls">
         <app-language-selector></app-language-selector>
-        
-        <button class="theme-toggle" 
-                (click)="toggleTheme()"
-                [attr.aria-label]="(isDarkTheme ? 'header.themeToggle.lightLabel' : 'header.themeToggle.darkLabel') | translate">
+
+        <button class="theme-toggle" style="display: none;" (click)="toggleTheme()"
+          [attr.aria-label]="(isDarkTheme ? 'header.themeToggle.lightLabel' : 'header.themeToggle.darkLabel') | translate">
           <i class="fas fa-sun" [class.hidden]="isDarkTheme"></i>
           <i class="fas fa-moon" [class.hidden]="!isDarkTheme"></i>
         </button>
-        
-        <button class="mobile-menu-toggle" 
-                [class.active]="isMenuOpen"
-                (click)="toggleMenu()"
-                aria-label="Toggle mobile menu" i18n-aria-label="@@toggle-menu">
+
+        <button class="mobile-menu-toggle" [class.active]="isMenuOpen" (click)="toggleMenu()"
+          aria-label="Toggle mobile menu" i18n-aria-label="@@toggle-menu">
           <i class="fas fa-bars" [class.hidden]="isMenuOpen"></i>
           <i class="fas fa-times" [class.hidden]="!isMenuOpen"></i>
         </button>
       </div>
-      
+
       <ul class="nav-menu" [class.active]="isMenuOpen">
         <li><a href="#home" (click)="closeMenu()">{{ 'nav.home' | translate }}</a></li>
         <li><a href="#services" (click)="closeMenu()">{{ 'nav.services' | translate }}</a></li>
@@ -44,10 +42,7 @@
       </ul>
     </div>
   </nav>
-  
+
   <!-- Mobile menu overlay -->
-  <div class="menu-overlay" 
-       [class.active]="isMenuOpen" 
-       (click)="closeMenu()"
-       aria-hidden="true"></div>
+  <div class="menu-overlay" [class.active]="isMenuOpen" (click)="closeMenu()" aria-hidden="true"></div>
 </header>

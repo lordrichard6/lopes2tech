@@ -44,14 +44,14 @@
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   backdrop-filter: blur(10px);
   position: relative;
-  
+
   &:hover {
     background: rgba(255, 255, 255, 0.15);
     border-color: var(--accent-color);
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(var(--ocean-cyan), 0.3);
   }
-  
+
   i {
     font-size: 18px;
     color: white;
@@ -61,16 +61,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
-    
+
     &.hidden {
       opacity: 0;
       transform: translate(-50%, -50%) rotate(180deg) scale(0.5);
     }
-    
+
     &.fa-sun {
       color: #fbbf24;
     }
-    
+
     &.fa-moon {
       color: #60a5fa;
     }
@@ -91,14 +91,14 @@
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   backdrop-filter: blur(10px);
   position: relative;
-  
+
   &:hover {
     background: rgba(255, 255, 255, 0.15);
     border-color: var(--accent-color);
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(var(--ocean-cyan), 0.3);
   }
-  
+
   i {
     font-size: 18px;
     color: white;
@@ -108,28 +108,28 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
-    
+
     &.hidden {
       opacity: 0;
       transform: translate(-50%, -50%) rotate(180deg) scale(0.5);
     }
   }
-  
+
   &.active {
     background: rgba(184, 69, 255, 0.2);
     border-color: #b845ff;
     transform: rotate(180deg) scale(1.1);
-    box-shadow: 
+    box-shadow:
       0 0 20px rgba(184, 69, 255, 0.4),
       0 5px 25px rgba(184, 69, 255, 0.2);
-    
+
     i {
       color: #b845ff;
-      
+
       &.fa-times {
         transform: translate(-50%, -50%) rotate(0deg) scale(1);
       }
-      
+
       &.fa-bars {
         transform: translate(-50%, -50%) rotate(-180deg) scale(0.5);
       }
@@ -141,33 +141,30 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  position: relative; 
+  position: relative;
 }
 
 .logo-image {
-  height: 80px;
+  height: 60px;
   width: auto;
   object-fit: contain;
   position: absolute;
-  top: -0.75rem;
-  left: -1rem;
+  top: 0rem;
+  left: 0rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  filter: drop-shadow(0 2px 8px rgba(var(--ocean-cyan), 0.3))
-          drop-shadow(0 0 15px rgba(var(--ocean-cyan), 0.2));
+  filter: drop-shadow(0 2px 8px rgba(var(--ocean-cyan), 0.3)) drop-shadow(0 0 15px rgba(var(--ocean-cyan), 0.2));
   animation: logoGlow 3s ease-in-out infinite alternate;
-  
+
   &:hover {
-    filter: drop-shadow(0 4px 16px rgba(var(--ocean-cyan), 0.6))
-            drop-shadow(0 0 25px rgba(var(--ocean-cyan), 0.4))
-            drop-shadow(0 0 35px rgba(var(--accent-color), 0.3));
+    filter: drop-shadow(0 4px 16px rgba(var(--ocean-cyan), 0.6)) drop-shadow(0 0 25px rgba(var(--ocean-cyan), 0.4)) drop-shadow(0 0 35px rgba(var(--accent-color), 0.3));
     transform: scale(1.05);
   }
-  
+
   // Theme-specific logo visibility
   &.light-theme-logo {
     display: block;
   }
-  
+
   &.dark-theme-logo {
     display: none;
   }
@@ -178,7 +175,7 @@
   .light-theme-logo {
     display: none;
   }
-  
+
   .dark-theme-logo {
     display: block;
   }
@@ -189,7 +186,7 @@
   .light-theme-logo {
     display: block;
   }
-  
+
   .dark-theme-logo {
     display: none;
   }
@@ -218,7 +215,7 @@
   color: white;
   letter-spacing: -0.02em;
   animation: logoWordLeftIntro 2.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -242,7 +239,7 @@
   text-shadow: 0 0 10px rgba(var(--ocean-cyan), 0.3);
   transition: all 0.5s ease;
   animation: logoNumberThunder 1.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s forwards;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -285,7 +282,7 @@
   position: relative;
   transition: all 0.5s ease;
   animation: logoWordRightIntro 2.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -301,10 +298,13 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
+
   50% {
     opacity: 0.6;
     transform: scale(1.2);
@@ -313,21 +313,22 @@
 
 @keyframes logoGlow {
   0% {
-    filter: drop-shadow(0 2px 8px rgba(var(--ocean-cyan), 0.3))
-            drop-shadow(0 0 15px rgba(var(--ocean-cyan), 0.2));
+    filter: drop-shadow(0 2px 8px rgba(var(--ocean-cyan), 0.3)) drop-shadow(0 0 15px rgba(var(--ocean-cyan), 0.2));
   }
+
   100% {
-    filter: drop-shadow(0 3px 12px rgba(var(--ocean-cyan), 0.5))
-            drop-shadow(0 0 20px rgba(var(--ocean-cyan), 0.3))
-            drop-shadow(0 0 30px rgba(var(--accent-color), 0.2));
+    filter: drop-shadow(0 3px 12px rgba(var(--ocean-cyan), 0.5)) drop-shadow(0 0 20px rgba(var(--ocean-cyan), 0.3)) drop-shadow(0 0 30px rgba(var(--accent-color), 0.2));
   }
 }
 
 @keyframes pulse-bg {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
+
   50% {
     opacity: 0.7;
     transform: scale(1.05);
@@ -340,23 +341,28 @@
     transform: translateX(0) scale(0.85);
     letter-spacing: -0.12em;
   }
+
   28% {
     opacity: 1;
     transform: translateX(0) scale(1);
     letter-spacing: -0.04em;
   }
+
   70% {
     opacity: 1;
     transform: translateX(0) scale(1);
     letter-spacing: -0.04em;
   }
+
   82% {
     transform: translateX(-8px) scale(1.04);
     letter-spacing: -0.03em;
   }
+
   92% {
     transform: translateX(4px) scale(0.99);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0) scale(1);
@@ -370,23 +376,28 @@
     transform: translateX(-28px) scale(0.85);
     letter-spacing: 0.18em;
   }
+
   28% {
     opacity: 1;
     transform: translateX(-28px) scale(1);
     letter-spacing: 0.08em;
   }
+
   70% {
     opacity: 1;
     transform: translateX(-28px) scale(1);
     letter-spacing: 0.08em;
   }
+
   82% {
     transform: translateX(8px) scale(1.04);
     letter-spacing: 0.1em;
   }
+
   92% {
     transform: translateX(-4px) scale(0.99);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0) scale(1);
@@ -400,6 +411,7 @@
     transform: scale(0.4) rotate(-18deg);
     text-shadow: none;
   }
+
   38% {
     opacity: 1;
     transform: scale(1.4) rotate(6deg);
@@ -408,15 +420,19 @@
       0 0 24px rgba(0, 245, 255, 0.5),
       0 0 36px rgba(184, 69, 255, 0.35);
   }
+
   52% {
     transform: scale(0.92) rotate(-3deg);
   }
+
   68% {
     transform: scale(1.2) rotate(3deg);
   }
+
   82% {
     transform: scale(0.96) rotate(-1deg);
   }
+
   100% {
     opacity: 1;
     transform: scale(1) rotate(0deg);
@@ -430,6 +446,7 @@
     transform: translate(-50%, -50%) scale(0.6);
     box-shadow: none;
   }
+
   45% {
     opacity: 0.9;
     transform: translate(-50%, -50%) scale(1.25);
@@ -437,6 +454,7 @@
       0 0 24px rgba(0, 245, 255, 0.7),
       inset 0 0 18px rgba(0, 245, 255, 0.35);
   }
+
   100% {
     opacity: 0.35;
     transform: translate(-50%, -50%) scale(1);
@@ -452,16 +470,19 @@
     height: 0;
     transform: translateX(-50%) rotate(18deg) scaleY(0.6);
   }
+
   35% {
     opacity: 1;
     height: 54px;
     transform: translate(-45%, 6px) rotate(6deg) scaleY(1.1);
   }
+
   65% {
     opacity: 0.8;
     height: 26px;
     transform: translate(-50%, -4px) rotate(14deg) scaleY(0.8);
   }
+
   100% {
     opacity: 0;
     height: 42px;
@@ -474,6 +495,7 @@
     opacity: 0;
     transform: translateY(50px) rotateX(90deg);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) rotateX(0deg);
@@ -490,51 +512,48 @@
 // Scroll-activated neon effects
 .logo.neon-active {
   .logo-image {
-    filter: drop-shadow(0 4px 16px rgba(var(--ocean-cyan), 0.7))
-            drop-shadow(0 0 25px rgba(var(--ocean-cyan), 0.5))
-            drop-shadow(0 0 40px rgba(var(--accent-color), 0.4))
-            drop-shadow(0 0 60px rgba(var(--ocean-cyan), 0.2));
+    filter: drop-shadow(0 4px 16px rgba(var(--ocean-cyan), 0.7)) drop-shadow(0 0 25px rgba(var(--ocean-cyan), 0.5)) drop-shadow(0 0 40px rgba(var(--accent-color), 0.4)) drop-shadow(0 0 60px rgba(var(--ocean-cyan), 0.2));
     animation: logoGlow 2s ease-in-out infinite alternate;
     transform: scale(1.02);
   }
-  
+
   .logo-lopes::after {
     transform: scaleX(1);
   }
-  
+
   .logo-number {
     color: #00f5ff;
-    text-shadow: 
+    text-shadow:
       0 0 5px rgba(0, 245, 255, 0.8),
       0 0 10px rgba(0, 245, 255, 0.6),
       0 0 15px rgba(0, 245, 255, 0.4),
       0 0 20px rgba(0, 245, 255, 0.3),
       0 0 35px rgba(0, 245, 255, 0.2);
     transform: scale(1.05);
-    
+
     &::before {
       opacity: 1;
       background: rgba(0, 245, 255, 0.2);
       transform: translate(-50%, -50%) scale(1.2);
-      box-shadow: 
+      box-shadow:
         0 0 20px rgba(0, 245, 255, 0.4),
         inset 0 0 20px rgba(0, 245, 255, 0.2);
     }
   }
-  
+
   .logo-tech {
     color: var(--tech-neon-color);
-    text-shadow: 
+    text-shadow:
       0 0 5px rgba(var(--tech-neon-rgb), 0.8),
       0 0 10px rgba(var(--tech-neon-rgb), 0.6),
       0 0 15px rgba(var(--tech-neon-rgb), 0.4),
       0 0 20px rgba(var(--tech-neon-rgb), 0.3),
       0 0 35px rgba(var(--tech-neon-rgb), 0.2);
     transform: scale(1.02);
-    
+
     &::before {
       background: var(--tech-neon-color);
-      box-shadow: 
+      box-shadow:
         0 0 10px rgba(var(--tech-neon-rgb), 0.6),
         0 0 20px rgba(var(--tech-neon-rgb), 0.3);
       transform: scale(1.3);
@@ -544,9 +563,9 @@
 
 // Enhanced header on scroll
 .header.scrolled {
-  background: linear-gradient(135deg, 
-    rgba(var(--primary-color-rgb), 0.98) 0%, 
-    rgba(var(--secondary-color-rgb), 0.98) 100%);
+  background: linear-gradient(135deg,
+      rgba(var(--primary-color-rgb), 0.98) 0%,
+      rgba(var(--secondary-color-rgb), 0.98) 100%);
   box-shadow: 0 4px 30px rgba(14, 116, 144, 0.25);
   backdrop-filter: blur(25px);
 }
@@ -564,7 +583,7 @@
   font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -575,10 +594,10 @@
     background: var(--accent-color);
     transition: width 0.3s ease;
   }
-  
+
   &:hover {
     color: var(--accent-color);
-    
+
     &::after {
       width: 100%;
     }
@@ -589,7 +608,7 @@
   margin-left: 1rem;
   padding-left: 1rem;
   border-left: 1px solid rgba(255, 255, 255, 0.2);
-  
+
   .portal-link {
     display: inline-flex;
     align-items: center;
@@ -599,15 +618,15 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     transition: all 0.3s ease;
-    
+
     i {
       font-size: 0.9rem;
     }
-    
+
     &::after {
       display: none;
     }
-    
+
     &:hover {
       background: rgba(255, 255, 255, 0.2);
       border-color: var(--accent-color);
@@ -623,16 +642,16 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: radial-gradient(circle at center, 
-    rgba(0, 0, 0, 0.8) 0%, 
-    rgba(15, 23, 42, 0.9) 50%, 
-    rgba(0, 0, 0, 0.95) 100%);
+  background: radial-gradient(circle at center,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(15, 23, 42, 0.9) 50%,
+      rgba(0, 0, 0, 0.95) 100%);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   backdrop-filter: blur(5px);
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -640,18 +659,18 @@
     left: 50%;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, 
-      rgba(var(--ocean-cyan), 0.1) 0%, 
-      transparent 70%);
+    background: radial-gradient(circle,
+        rgba(var(--ocean-cyan), 0.1) 0%,
+        transparent 70%);
     transform: translate(-50%, -50%) scale(0);
     transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     border-radius: 50%;
   }
-  
+
   &.active {
     opacity: 1;
     visibility: visible;
-    
+
     &::before {
       transform: translate(-50%, -50%) scale(3);
     }
@@ -664,21 +683,21 @@
     padding: 0 1rem;
     position: relative;
   }
-  
+
   .mobile-menu-toggle {
     display: flex;
   }
-  
+
   .nav-menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, 
-      rgba(var(--primary-color-rgb), 0.98) 0%, 
-      rgba(var(--secondary-color-rgb), 0.95) 50%,
-      rgba(var(--ocean-cyan), 0.1) 100%);
+    background: linear-gradient(135deg,
+        rgba(var(--primary-color-rgb), 0.98) 0%,
+        rgba(var(--secondary-color-rgb), 0.95) 50%,
+        rgba(var(--ocean-cyan), 0.1) 100%);
     backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
@@ -690,7 +709,7 @@
     transition: all 0.4s ease-in-out;
     z-index: 9999;
     overflow: hidden;
-    
+
     &::before {
       content: '';
       position: absolute;
@@ -698,41 +717,52 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: radial-gradient(circle at 50% 50%, 
-        rgba(var(--ocean-cyan), 0.1) 0%, 
-        rgba(184, 69, 255, 0.05) 50%, 
-        transparent 70%);
+      background: radial-gradient(circle at 50% 50%,
+          rgba(var(--ocean-cyan), 0.1) 0%,
+          rgba(184, 69, 255, 0.05) 50%,
+          transparent 70%);
       animation: pulse-bg 4s ease-in-out infinite;
       z-index: -1;
     }
-    
+
     &.active {
       transform: translateX(0);
-      
+
       li {
         opacity: 1; // Ensure items are visible
         transform: translateY(0); // Reset transform
         animation: slideInUp 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-        
-        &:nth-child(1) { animation-delay: 0.1s; }
-        &:nth-child(2) { animation-delay: 0.2s; }
-        &:nth-child(3) { animation-delay: 0.3s; }
-        &:nth-child(4) { animation-delay: 0.4s; }
+
+        &:nth-child(1) {
+          animation-delay: 0.1s;
+        }
+
+        &:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+
+        &:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+
+        &:nth-child(4) {
+          animation-delay: 0.4s;
+        }
       }
     }
-    
+
     li {
       opacity: 0;
       transform: translateY(50px);
       margin: 0;
       list-style: none;
-      
+
       // Fallback for production builds where animations might not work
       .nav-menu.active & {
         opacity: 1 !important;
         transform: translateY(0) !important;
       }
-      
+
       a {
         display: block;
         padding: 15px 30px;
@@ -747,25 +777,25 @@
         margin: 5px 0;
         min-width: 200px;
         z-index: 1;
-        
+
         &:hover {
           color: var(--accent-color) !important;
           background: rgba(255, 255, 255, 0.1);
           transform: scale(1.05);
         }
-        
+
         &:active {
           transform: scale(0.98);
         }
       }
     }
   }
-  
+
   // Additional fallback for production builds
   .nav-menu.active li {
     opacity: 1 !important;
     transform: translateY(0) !important;
-    
+
     a {
       color: white !important;
       opacity: 1 !important;
@@ -780,41 +810,41 @@
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    
+
     .portal-link {
       background: rgba(255, 255, 255, 0.15);
       border: 2px solid rgba(255, 255, 255, 0.3);
       padding: 1rem 2rem;
       font-size: 1.5rem;
-      
+
       &:hover {
         background: rgba(255, 255, 255, 0.25);
         border-color: var(--accent-color);
       }
     }
   }
-  
+
   .logo-image {
     height: 48px;
   }
-  
+
   .logo-text {
     gap: 0.12rem;
   }
-  
+
   .logo-lopes {
     font-size: 1.8rem;
   }
-  
+
   .logo-number {
     font-size: 2.1rem;
-    
+
     &::before {
       width: 30px;
       height: 30px;
     }
   }
-  
+
   .logo-tech {
     font-size: 1.8rem;
   }
@@ -830,49 +860,49 @@
   .nav-container {
     padding: 0 0.5rem;
   }
-  
+
   .header-controls {
     gap: 0.5rem;
   }
-  
+
   .theme-toggle,
   .mobile-menu-toggle {
     width: 40px;
     height: 40px;
-    
+
     i {
       font-size: 16px;
     }
   }
-  
+
   .nav-menu {
     li a {
       font-size: 2rem;
       padding: 15px 30px;
     }
   }
-  
+
   .logo-image {
     height: 70px;
   }
-  
+
   .logo-text {
     gap: 0.08rem;
   }
-  
+
   .logo-lopes {
     font-size: 1.6rem;
   }
-  
+
   .logo-number {
     font-size: 1.9rem;
-    
+
     &::before {
       width: 26px;
       height: 26px;
     }
   }
-  
+
   .logo-tech {
     font-size: 1.6rem;
   }
@@ -882,20 +912,20 @@
   .logo-text {
     gap: 0.05rem;
   }
-  
+
   .logo-lopes {
     font-size: 1.4rem;
   }
-  
+
   .logo-number {
     font-size: 1.7rem;
-    
+
     &::before {
       width: 22px;
       height: 22px;
     }
   }
-  
+
   .logo-tech {
     font-size: 1.4rem;
   }
