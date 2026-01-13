@@ -21,10 +21,33 @@
       <div class="carousel-track">
 
         <!-- ORIGINAL SET -->
+        <!-- Project: DraftMode CRM -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/draftmode_mockup.png" alt="DraftMode CRM" loading="lazy">
+            <div class="dev-badge">
+              <i class="fas fa-code"></i>
+              In Development
+            </div>
+          </div>
+          <div class="card-content">
+            <span class="project-category">CRM for Consultants</span>
+            <h3 class="project-title">DraftMode CRM</h3>
+            <p class="project-desc">Modern CRM platform designed for consultants and small to medium companies. Real
+              answers, streamlined workflows.</p>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'DraftMode CRM',
+              descKey: 'Modern CRM platform designed for consultants and small to medium companies. Real answers, streamlined workflows.',
+              image: '/proj/draftmode_mockup.png',
+              category: 'CRM for Consultants'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
         <!-- Project: TheraFlow -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/theraflow.png" alt="TheraFlow CRM" loading="lazy">
+            <img src="/proj/theraflow_mockup.png" alt="TheraFlow CRM" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">HealthTech SaaS</span>
@@ -33,7 +56,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.theraflow.title',
               descKey: 'portfolio.theraflow.description',
-              image: '/proj/theraflow.png',
+              image: '/proj/theraflow_mockup.png',
               category: 'HealthTech SaaS',
               link: 'https://www.theraflow-crm.ch/'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -43,7 +66,7 @@
         <!-- Project: Finito -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/finito.png" alt="Finito Pro" loading="lazy">
+            <img src="/proj/finito_mockup.png" alt="Finito Pro" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">SaaS for Craftsmen</span>
@@ -52,7 +75,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.finito.title',
               descKey: 'portfolio.finito.description',
-              image: '/proj/finito.png',
+              image: '/proj/finito_mockup.png',
               category: 'SaaS for Craftsmen',
               link: 'https://www.finitopro.ch/'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -62,7 +85,7 @@
         <!-- Project: Noff -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/noff.png" alt="Noff" loading="lazy">
+            <img src="/proj/noff_mockup.png" alt="Noff" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">Digital Business Card</span>
@@ -71,7 +94,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.noff.title',
               descKey: 'portfolio.noff.description',
-              image: '/proj/noff.png',
+              image: '/proj/noff_mockup.png',
               category: 'Digital Business Card',
               link: 'https://noff.ch/'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -81,7 +104,7 @@
         <!-- Project 1 -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/ribeiro.png" alt="Ribeiro Consulting" loading="lazy">
+            <img src="/proj/ribeiro_mockup.png" alt="Ribeiro Consulting" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">Business Consulting</span>
@@ -90,7 +113,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.ribeiro.title',
               descKey: 'portfolio.ribeiro.description',
-              image: '/proj/ribeiro.png',
+              image: '/proj/ribeiro_mockup.png',
               category: 'Business Consulting',
               link: 'https://ribeiroconsulting.ch/pt'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -100,7 +123,7 @@
         <!-- Project 2 -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/alentseguros.png" alt="Alentseguros" loading="lazy">
+            <img src="/proj/alentseguros_mockup.png" alt="Alentseguros" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">Insurance & FinTech</span>
@@ -109,7 +132,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.alentseguros.title',
               descKey: 'portfolio.alentseguros.description',
-              image: '/proj/alentseguros.png',
+              image: '/proj/alentseguros_mockup.png',
               category: 'Insurance & FinTech',
               link: 'https://alenteseguros.vercel.app/'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -119,7 +142,7 @@
         <!-- Project 3 -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/silvio.png" alt="Silvio Studio" loading="lazy">
+            <img src="/proj/silvio_mockup.png" alt="Silvio Studio" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">Photography Portfolio</span>
@@ -128,7 +151,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.silvio.title',
               descKey: 'portfolio.silvio.description',
-              image: '/proj/silvio.png',
+              image: '/proj/silvio_mockup.png',
               category: 'Photography Portfolio',
               link: 'https://silvio-photo.vercel.app/'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -138,7 +161,11 @@
         <!-- Project 4 -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/proj_pali_ai_1768056187286.png" alt="Pali AI" loading="lazy">
+            <img src="/proj/pali_mockup.png" alt="Pali AI" loading="lazy">
+            <div class="dev-badge">
+              <i class="fas fa-code"></i>
+              In Development
+            </div>
           </div>
           <div class="card-content">
             <span class="project-category">AI Application</span>
@@ -147,7 +174,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.pali.title',
               descKey: 'portfolio.pali.description',
-              image: '/proj/proj_pali_ai_1768056187286.png',
+              image: '/proj/pali_mockup.png',
               category: 'AI Application'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>
@@ -156,10 +183,33 @@
 
 
         <!-- DUPLICATE SET FOR LOOP -->
+        <!-- Project: DraftMode CRM -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/draftmode_mockup.png" alt="DraftMode CRM" loading="lazy">
+            <div class="dev-badge">
+              <i class="fas fa-code"></i>
+              In Development
+            </div>
+          </div>
+          <div class="card-content">
+            <span class="project-category">CRM for Consultants</span>
+            <h3 class="project-title">DraftMode CRM</h3>
+            <p class="project-desc">Modern CRM platform designed for consultants and small to medium companies. Real
+              answers, streamlined workflows.</p>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'DraftMode CRM',
+              descKey: 'Modern CRM platform designed for consultants and small to medium companies. Real answers, streamlined workflows.',
+              image: '/proj/draftmode_mockup.png',
+              category: 'CRM for Consultants'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
         <!-- Project: TheraFlow -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/theraflow.png" alt="TheraFlow CRM" loading="lazy">
+            <img src="/proj/theraflow_mockup.png" alt="TheraFlow CRM" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">HealthTech SaaS</span>
@@ -168,7 +218,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.theraflow.title',
               descKey: 'portfolio.theraflow.description',
-              image: '/proj/theraflow.png',
+              image: '/proj/theraflow_mockup.png',
               category: 'HealthTech SaaS',
               link: 'https://www.theraflow-crm.ch/'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -178,7 +228,7 @@
         <!-- Project: Finito -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/finito.png" alt="Finito Pro" loading="lazy">
+            <img src="/proj/finito_mockup.png" alt="Finito Pro" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">SaaS for Craftsmen</span>
@@ -187,7 +237,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.finito.title',
               descKey: 'portfolio.finito.description',
-              image: '/proj/finito.png',
+              image: '/proj/finito_mockup.png',
               category: 'SaaS for Craftsmen',
               link: 'https://www.finitopro.ch/'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -197,7 +247,7 @@
         <!-- Project: Noff -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/noff.png" alt="Noff" loading="lazy">
+            <img src="/proj/noff_mockup.png" alt="Noff" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">Digital Business Card</span>
@@ -206,7 +256,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.noff.title',
               descKey: 'portfolio.noff.description',
-              image: '/proj/noff.png',
+              image: '/proj/noff_mockup.png',
               category: 'Digital Business Card',
               link: 'https://noff.ch/'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -216,7 +266,7 @@
         <!-- Project 1 -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/ribeiro.png" alt="Ribeiro Consulting" loading="lazy">
+            <img src="/proj/ribeiro_mockup.png" alt="Ribeiro Consulting" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">Business Consulting</span>
@@ -225,7 +275,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.ribeiro.title',
               descKey: 'portfolio.ribeiro.description',
-              image: '/proj/ribeiro.png',
+              image: '/proj/ribeiro_mockup.png',
               category: 'Business Consulting',
               link: 'https://ribeiroconsulting.ch/pt'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -235,7 +285,7 @@
         <!-- Project 2 -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/alentseguros.png" alt="Alentseguros" loading="lazy">
+            <img src="/proj/alentseguros_mockup.png" alt="Alentseguros" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">Insurance & FinTech</span>
@@ -244,7 +294,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.alentseguros.title',
               descKey: 'portfolio.alentseguros.description',
-              image: '/proj/alentseguros.png',
+              image: '/proj/alentseguros_mockup.png',
               category: 'Insurance & FinTech',
               link: 'https://alenteseguros.vercel.app/'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -254,7 +304,7 @@
         <!-- Project 3 -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/silvio.png" alt="Silvio Studio" loading="lazy">
+            <img src="/proj/silvio_mockup.png" alt="Silvio Studio" loading="lazy">
           </div>
           <div class="card-content">
             <span class="project-category">Photography Portfolio</span>
@@ -263,7 +313,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.silvio.title',
               descKey: 'portfolio.silvio.description',
-              image: '/proj/silvio.png',
+              image: '/proj/silvio_mockup.png',
               category: 'Photography Portfolio',
               link: 'https://silvio-photo.vercel.app/'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
@@ -273,7 +323,11 @@
         <!-- Project 4 -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
-            <img src="/proj/proj_pali_ai_1768056187286.png" alt="Pali AI" loading="lazy">
+            <img src="/proj/pali_mockup.png" alt="Pali AI" loading="lazy">
+            <div class="dev-badge">
+              <i class="fas fa-code"></i>
+              In Development
+            </div>
           </div>
           <div class="card-content">
             <span class="project-category">AI Application</span>
@@ -282,7 +336,7 @@
             <button class="btn-case-study" (click)="openProjectDialog({
               titleKey: 'portfolio.pali.title',
               descKey: 'portfolio.pali.description',
-              image: '/proj/proj_pali_ai_1768056187286.png',
+              image: '/proj/pali_mockup.png',
               category: 'AI Application'
             })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
           </div>

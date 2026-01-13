@@ -166,18 +166,19 @@
   flex-shrink: 0; // Prevent squashing
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.85);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95));
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(var(--ocean-cyan), 0.15);
+    box-shadow: 0 20px 50px rgba(var(--ocean-cyan), 0.25);
+    border-color: rgba(var(--ocean-cyan), 0.4);
   }
 
   .card-visual {
@@ -192,10 +193,47 @@
       object-fit: cover; // Cover creates a nice thumbnail
       transition: transform 0.5s ease;
     }
+
+    .dev-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: white;
+      padding: 0.4rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      animation: pulse 2s ease-in-out infinite;
+
+      i {
+        font-size: 0.65rem;
+      }
+    }
+  }
+
+  @keyframes pulse {
+
+    0%,
+    100% {
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+    }
+
+    50% {
+      box-shadow: 0 4px 20px rgba(245, 158, 11, 0.6);
+    }
   }
 
   &:hover .card-visual img {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   .card-content {
@@ -216,14 +254,14 @@
     .project-title {
       font-size: 1.6rem;
       font-weight: 800;
-      color: var(--text-dark);
+      color: white;
       margin-bottom: 0.8rem;
       line-height: 1.2;
     }
 
     .project-desc {
       font-size: 0.95rem;
-      color: var(--text-secondary);
+      color: rgba(226, 232, 240, 0.85);
       line-height: 1.6;
       margin-bottom: 2rem;
       flex: 1; // Push button down
@@ -231,7 +269,7 @@
 
     .btn-case-study {
       padding: 0.8rem 1.5rem;
-      background: var(--text-dark);
+      background: rgba(255, 255, 255, 0.1);
       color: white;
       text-decoration: none;
       border-radius: 8px;
@@ -242,9 +280,11 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
 
       &:hover {
         background: var(--primary-color);
+        border-color: var(--primary-color);
         transform: translateY(-2px);
       }
     }
