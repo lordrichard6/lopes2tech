@@ -269,49 +269,49 @@
     }
   },
   "packages": {
-    "title": "Easy Packages",
-    "subtitle": "Just started your business? Need to establish your online presence? Having a professional website increases trust by 75% and makes you available 24/7.",
+    "title": "Pacotes Simples",
+    "subtitle": "Acabou de iniciar o seu negócio? Precisa de estabelecer a sua presença online? Ter um site profissional aumenta a confiança em 75% e torna-o disponível 24/7.",
     "stats": {
-      "credibility": "Trust Boost",
-      "availability": "Availability"
+      "credibility": "Aumento de Confiança",
+      "availability": "Disponibilidade"
     },
     "popular": "Popular",
     "headers": {
-      "package": "Package",
-      "price": "Price Range",
-      "target": "Target"
+      "package": "Pacote",
+      "price": "Intervalo de Preço",
+      "target": "Alvo"
     },
     "from": "a partir de",
     "items": {
       "starter": {
         "name": "Starter",
         "description": "A base perfeita, quer precise de uma única landing page ou de um site completo de 5 páginas para estabelecer o seu negócio.",
-        "target": "New business with existing brand"
+        "target": "Novo negócio com marca existente"
       },
       "starterPlus": {
         "name": "Starter Plus",
         "description": "O pacote de lançamento completo: um website profissional mais design de identidade de marca (logótipo, paleta de cores, tipografia).",
-        "target": "New business needing branding"
+        "target": "Novo negócio que precisa de branding"
       },
       "businessPro": {
         "name": "Business Pro",
         "description": "Para empresas em crescimento que precisam de recursos avançados: CMS, blog, sistemas de reservas ou suporte a vários idiomas.",
-        "target": "Established SMEs"
+        "target": "PMEs estabelecidas"
       },
       "landingPage": {
         "name": "Landing Page",
         "description": "Página única de alta conversão projetada para campanhas de marketing, lançamentos de produtos ou registos em eventos.",
-        "target": "Campaigns/launches"
+        "target": "Campanhas/lançamentos"
       },
       "logoOnly": {
         "name": "Logo Only",
         "description": "Design de logótipo personalizado para dar uma cara profissional ao seu negócio. Inclui todos os formatos de arquivo necessários.",
-        "target": "Standalone branding"
+        "target": "Branding independente"
       },
       "fullBrandKit": {
         "name": "Full Brand Kit",
         "description": "Branding abrangente: logótipo, cartões de visita, papel timbrado e modelos de mídia social para um visual coeso.",
-        "target": "Complete identity package"
+        "target": "Pacote de identidade completo"
       }
     }
   },

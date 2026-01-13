@@ -293,49 +293,49 @@
     }
   },
   "packages": {
-    "title": "Easy Packages",
-    "subtitle": "Just started your business? Need to establish your online presence? Having a professional website increases trust by 75% and makes you available 24/7.",
+    "title": "Einfache Pakete",
+    "subtitle": "Haben Sie gerade Ihr Unternehmen gegründet? Müssen Sie Ihre Online-Präsenz aufbauen? Eine professionelle Website erhöht das Vertrauen um 75% und macht Sie rund um die Uhr verfügbar.",
     "stats": {
-      "credibility": "Trust Boost",
-      "availability": "Availability"
+      "credibility": "Vertrauensschub",
+      "availability": "Verfügbarkeit"
     },
-    "popular": "Popular",
+    "popular": "Beliebt",
     "headers": {
-      "package": "Package",
-      "price": "Price Range",
-      "target": "Target"
+      "package": "Paket",
+      "price": "Preisspanne",
+      "target": "Zielgruppe"
     },
     "from": "ab",
     "items": {
       "starter": {
         "name": "Starter",
         "description": "Das perfekte Fundament, egal ob Sie eine einzelne Landingpage oder eine vollständige 5-seitige Website benötigen.",
-        "target": "New business with existing brand"
+        "target": "Neues Geschäft mit bestehender Marke"
       },
       "starterPlus": {
         "name": "Starter Plus",
         "description": "Das komplette Startpaket: eine professionelle Website sowie ein Corporate Design (Logo, Farbpalette, Typografie).",
-        "target": "New business needing branding"
+        "target": "Neues Geschäft, das Branding benötigt"
       },
       "businessPro": {
         "name": "Business Pro",
         "description": "Für wachsende Unternehmen, die erweiterte Funktionen benötigen: CMS, Blog, Buchungssysteme oder mehrsprachige Unterstützung.",
-        "target": "Established SMEs"
+        "target": "Etablierte KMU"
       },
       "landingPage": {
         "name": "Landing Page",
         "description": "Konversionsstarke Landingpage für Marketingkampagnen, Produkteinführungen oder Eventanmeldungen.",
-        "target": "Campaigns/launches"
+        "target": "Kampagnen/Starts"
       },
       "logoOnly": {
         "name": "Logo Only",
         "description": "Individuelles Logodesign, um Ihrem Unternehmen ein professionelles Gesicht zu geben. Beinhaltet alle notwendigen Dateiformate.",
-        "target": "Standalone branding"
+        "target": "Eigenständiges Branding"
       },
       "fullBrandKit": {
         "name": "Full Brand Kit",
         "description": "Umfassendes Branding: Logo, Visitenkarten, Briefpapier und Social-Media-Vorlagen für einen einheitlichen Auftritt.",
-        "target": "Complete identity package"
+        "target": "Komplettes Identitätspaket"
       }
     }
   },
