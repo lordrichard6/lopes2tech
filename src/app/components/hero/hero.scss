@@ -132,12 +132,12 @@
   }
 
   .shape-fill {
-    fill: var(--bg-white);
+    fill: #e0f2fe; // Light blue to match Services background
     animation: wave 3s ease-in-out infinite;
   }
 
   .shape-fill-3 {
-    fill: var(--services-bg);
+    fill: #e0f2fe;
   }
 }
 
