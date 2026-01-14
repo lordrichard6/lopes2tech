@@ -1,0 +1,53 @@
+@if (isOpen && package) {
+<div class="dialog-backdrop" (click)="onBackdropClick($event)" (keydown)="onKeydown($event)" tabindex="0">
+    <div class="dialog-container" role="dialog" aria-modal="true">
+
+        <button class="close-button" (click)="closeDialog()" aria-label="Close dialog" type="button">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="dialog-layout">
+            <!-- Visual Side -->
+            <div class="dialog-visual">
+                <img [src]="package.image" [alt]="('packages.items.' + package.key + '.name' | translate) + ' Preview'"
+                    class="package-image">
+                <div class="visual-overlay"></div>
+
+            </div>
+
+            <!-- Content Side -->
+            <div class="dialog-content">
+                <span class="package-target">{{ 'packages.items.' + package.key + '.target' | translate }}</span>
+                <h3 class="package-title">{{ 'packages.items.' + package.key + '.name' | translate }}</h3>
+
+                <div class="description-scroll">
+                    <p class="package-description">
+                        {{ 'packages.items.' + package.key + '.description' | translate }}
+                    </p>
+
+                    <div class="features-list">
+                        <h4>{{ 'packages.included' | translate }}</h4>
+                        <ul>
+                            @for (feature of features; track feature)
+                            {
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>{{ feature }}</span>
+                            </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dialog-actions">
+                    <button class="btn-contact" (click)="contactUs()">
+                        <span>{{ 'packages.cta' | translate }}</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+}

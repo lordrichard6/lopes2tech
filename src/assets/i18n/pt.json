@@ -282,36 +282,81 @@
       "target": "Alvo"
     },
     "from": "a partir de",
+    "included": "Incluído:",
+    "cta": "Solicitar Consulta",
+    "more_info": "Mais Info",
     "items": {
       "starter": {
         "name": "Starter",
         "description": "A base perfeita, quer precise de uma única landing page ou de um site completo de 5 páginas para estabelecer o seu negócio.",
-        "target": "Novo negócio com marca existente"
+        "target": "Novo negócio com marca existente",
+        "features": [
+          "Página de destino personalizada única",
+          "Responsivo para móvel",
+          "Configuração básica de SEO",
+          "Formulário de contacto",
+          "1 ronda de revisões"
+        ]
       },
       "starterPlus": {
         "name": "Starter Plus",
         "description": "O pacote de lançamento completo: um website profissional mais design de identidade de marca (logótipo, paleta de cores, tipografia).",
-        "target": "Novo negócio que precisa de branding"
+        "target": "Novo negócio que precisa de branding",
+        "features": [
+          "Website profissional de 5 páginas",
+          "Identidade de marca completa (Logótipo, Cores, Fontes)",
+          "Responsivo & rápido",
+          "Configuração básica de SEO",
+          "Modelos de redes sociais"
+        ]
       },
       "businessPro": {
         "name": "Business Pro",
         "description": "Para empresas em crescimento que precisam de recursos avançados: CMS, blog, sistemas de reservas ou suporte a vários idiomas.",
-        "target": "PMEs estabelecidas"
+        "target": "PMEs estabelecidas",
+        "features": [
+          "CMS Avançado (Gestão de Conteúdos)",
+          "Secção de Blog ou Portfólio",
+          "Pronto para multi-idioma",
+          "Integração Google Analytics",
+          "Suporte prioritário"
+        ]
       },
       "landingPage": {
         "name": "Landing Page",
         "description": "Página única de alta conversão projetada para campanhas de marketing, lançamentos de produtos ou registos em eventos.",
-        "target": "Campanhas/lançamentos"
+        "target": "Campanhas/lançamentos",
+        "features": [
+          "Estrutura de alta conversão",
+          "Pronto para testes A/B",
+          "Carregamento rápido",
+          "Integração de captura de leads",
+          "Configuração de Analytics"
+        ]
       },
       "logoOnly": {
         "name": "Logo Only",
         "description": "Design de logótipo personalizado para dar uma cara profissional ao seu negócio. Inclui todos os formatos de arquivo necessários.",
-        "target": "Branding independente"
+        "target": "Branding independente",
+        "features": [
+          "Conceitos de logótipo únicos",
+          "Ficheiros vetoriais (AI, EPS, SVG, PDF)",
+          "Direitos de propriedade totais",
+          "Definição de paleta de cores",
+          "Diretrizes de uso"
+        ]
       },
       "fullBrandKit": {
         "name": "Full Brand Kit",
         "description": "Branding abrangente: logótipo, cartões de visita, papel timbrado e modelos de mídia social para um visual coeso.",
-        "target": "Pacote de identidade completo"
+        "target": "Pacote de identidade completo",
+        "features": [
+          "Design de logótipo & variações",
+          "Design de cartões de visita",
+          "Papel timbrado & assinatura de email",
+          "Kit de perfil de redes sociais",
+          "Guia de estilo da marca"
+        ]
       }
     }
   },

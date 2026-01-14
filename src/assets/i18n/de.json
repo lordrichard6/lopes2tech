@@ -813,36 +813,87 @@
     },
     "packages": {
       "title": "Ihr Standard-Paketmenü",
-      "cards": {
-        "carePlan": {
-          "title": "Care Plan",
-          "price": "ab CHF 149/Monat",
-          "description": "Uptime-Checks, kleine Anpassungen, Logs, Verwaltung von Modellen und Schlüsseln.",
-          "more": "Mehr Infos"
-        },
-        "trio": {
-          "title": "Trio-Rabatt",
-          "price": "20 % Rabatt",
-          "description": "Bündeln Sie drei Automationen und sparen Sie."
-        }
+      "included": "Inbegriffen:",
+      "popular": "Popular",
+      "cta": "Beratung anfordern",
+      "more_info": "Mehr Info",
+      "headers": {
+        "package": "Paket",
+        "price": "Preisbereich",
+        "target": "Zielgruppe"
       },
-      "carePlan": {
-        "tiers": {
-          "lite": {
-            "title": "Lite",
-            "price": "CHF 149/Monat",
-            "description": "Monitoring, Logs, Alerts, 1 Stunde Tweaks, Reaktion ≤1 Arbeitstag. Mehrarbeit CHF 120/Stunde."
-          },
-          "pro": {
-            "title": "Pro",
-            "price": "CHF 299/Monat",
-            "description": "Alles aus Lite, 3 Stunden inklusive, Reaktion ≤8 Arbeitsstunden, Monatsreport, kleine Copy/Flow-Anpassungen. Mehrarbeit CHF 110/Stunde."
-          },
-          "scale": {
-            "title": "Scale",
-            "price": "CHF 699/Monat",
-            "description": "8 Stunden inklusive, Reaktion ≤4 Arbeitsstunden, Advanced Tweaks, A/B-Tests, Quartals-Roadmap. Mehrarbeit CHF 100/Stunde."
-          }
+      "items": {
+        "starter": {
+          "name": "Starter",
+          "description": "Die perfekte Basis, ob Sie eine einzelne Landing Page oder eine vollständige 5-seitige Website benötigen.",
+          "target": "Neue Unternehmen mit bestehender Marke",
+          "features": [
+            "Einzelne benutzerdefinierte Landing Page",
+            "Mobil-optimiert",
+            "Basis SEO-Setup",
+            "Kontaktformular",
+            "1 Revisionsrunde"
+          ]
+        },
+        "starterPlus": {
+          "name": "Starter Plus",
+          "description": "Das komplette Startpaket: eine professionelle Website plus Brand-Design (Logo, Farbpalette, Typografie).",
+          "target": "Neue Unternehmen die Branding benötigen",
+          "features": [
+            "Professionelle 5-seitige Website",
+            "Komplette Markenidentität (Logo, Farben, Schriftarten)",
+            "Mobil-optimiert & schnell",
+            "Basis SEO-Setup",
+            "Social Media Vorlagen"
+          ]
+        },
+        "businessPro": {
+          "name": "Business Pro",
+          "description": "Für wachsende Unternehmen mit erweitertem Bedarf: CMS, Blog, Buchungssysteme oder Mehrsprachigkeit.",
+          "target": "Etablierte KMUs",
+          "features": [
+            "Erweitertes CMS (Content Management System)",
+            "Blog oder Portfolio-Bereich",
+            "Bereit für Mehrsprachigkeit",
+            "Google Analytics Integration",
+            "Priority Support"
+          ]
+        },
+        "landingPage": {
+          "name": "Landing Page",
+          "description": "Hochkonvertierende Einzelseite für Marketingkampagnen, Produkteinführungen oder Event-Registrierungen.",
+          "target": "Kampagnen/Launches",
+          "features": [
+            "Struktur für hohe Konversion",
+            "Bereit für A/B-Tests",
+            "Schnelle Ladezeit",
+            "Lead-Capture-Formular",
+            "Analytics-Setup"
+          ]
+        },
+        "logoOnly": {
+          "name": "Nur Logo",
+          "description": "Individuelles Logo-Design, um Ihrem Unternehmen ein professionelles Gesicht zu geben. Alle Dateiformate.",
+          "target": "Nur Branding",
+          "features": [
+            "Einzigartige Logo-Konzepte",
+            "Vektordateien (AI, EPS, SVG, PDF)",
+            "Volle Eigentumsrechte",
+            "Farbpaletten-Definition",
+            "Nutzungsrichtlinien"
+          ]
+        },
+        "fullBrandKit": {
+          "name": "Volles Brand Kit",
+          "description": "Umfassendes Branding: Logo, Visitenkarten, Briefpapier und Social Media Vorlagen für einen einheitlichen Look.",
+          "target": "Komplettes Identitätspaket",
+          "features": [
+            "Logo-Design & Variationen",
+            "Visitenkarten-Design",
+            "Briefkopf & E-Mail-Signatur",
+            "Social Media Profil-Kit",
+            "Brand Style Guide"
+          ]
         }
       }
     },

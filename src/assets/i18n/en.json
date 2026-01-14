@@ -320,6 +320,8 @@
     },
     "from": "from",
     "popular": "Popular",
+    "cta": "Request Consultation",
+    "more_info": "More Info",
     "headers": {
       "package": "Package",
       "price": "Price Range",
@@ -329,32 +331,74 @@
       "starter": {
         "name": "Starter",
         "description": "Perfect foundation, whether you need a single landing page or a full 5-page website to establish your business.",
-        "target": "New business with existing brand"
+        "target": "New business with existing brand",
+        "features": [
+          "Single custom landing page",
+          "Mobile-responsive",
+          "Basic SEO setup",
+          "Contact form",
+          "1 round of revisions"
+        ]
       },
       "starterPlus": {
         "name": "Starter Plus",
         "description": "The complete launch package: a professional website plus a brand identity design (logo, color palette, typography).",
-        "target": "New business needing branding"
+        "target": "New business needing branding",
+        "features": [
+          "Professional 5-page website",
+          "Full brand identity (Logo, Colors, Fonts)",
+          "Mobile-responsive & fast",
+          "Basic SEO setup",
+          "Social media templates"
+        ]
       },
       "businessPro": {
         "name": "Business Pro",
         "description": "For growing businesses needing advance features: CMS, blog, booking systems, or multi-language support.",
-        "target": "Established SMEs"
+        "target": "Established SMEs",
+        "features": [
+          "Advanced CMS (Content Management System)",
+          "Blog or Portfolio section",
+          "Multi-language support ready",
+          "Google Analytics integration",
+          "Priority support"
+        ]
       },
       "landingPage": {
         "name": "Landing Page",
         "description": "High-conversion single page designed for marketing campaigns, product launches, or event registrations.",
-        "target": "Campaigns/launches"
+        "target": "Campaigns/launches",
+        "features": [
+          "High-conversion structure",
+          "A/B testing ready",
+          "Fast loading speed",
+          "Lead capture form integration",
+          "Analytics setup"
+        ]
       },
       "logoOnly": {
         "name": "Logo Only",
         "description": "Custom logo design to give your business a professional face. Includes all necessary file formats.",
-        "target": "Standalone branding"
+        "target": "Standalone branding",
+        "features": [
+          "Unique logo concepts",
+          "Vector files (AI, EPS, SVG, PDF)",
+          "Full ownership rights",
+          "Color palette definition",
+          "Usage guidelines"
+        ]
       },
       "fullBrandKit": {
         "name": "Full Brand Kit",
         "description": "Comprehensive branding: logo, business cards, letterhead, and social media templates for a cohesive look.",
-        "target": "Complete identity package"
+        "target": "Complete identity package",
+        "features": [
+          "Logo design & variations",
+          "Business card design",
+          "Letterhead & email signature",
+          "Social media profile kit",
+          "Brand style guide"
+        ]
       }
     }
   },

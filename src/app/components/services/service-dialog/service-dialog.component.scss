@@ -293,20 +293,20 @@
   .dialog-sidebar {
     width: 100%;
     position: relative;
-    padding: 2rem;
+    padding: 0;
     border-right: none;
     border-bottom: 1px solid #e2e8f0;
   }
 
   .service-visual {
-    width: 80px;
-    height: 80px;
-    padding: 0.5rem;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 220px;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 0;
 
     img {
-      object-fit: contain;
+      object-fit: cover;
     }
 
     .visual-badge {
@@ -314,14 +314,22 @@
     }
   }
 
+  .sidebar-content {
+    padding: 1.5rem;
+  }
+
   .dialog-title {
-    font-size: 1.5rem;
-    margin-bottom: 0;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
   }
 
   .dialog-sidebar .btn-book {
     display: none;
     /* Hide button here on mobile, show at bottom maybe? */
+  }
+
+  .service-description {
+    display: none;
   }
 
   .dialog-main {

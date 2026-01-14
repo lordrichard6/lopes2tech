@@ -1,0 +1,231 @@
+.dialog-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    padding: 1rem;
+}
+
+.dialog-container {
+    background: #1e293b;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: scale(0.95);
+    opacity: 0;
+    animation: scaleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: rotate(90deg);
+    }
+}
+
+.dialog-layout {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+}
+
+.dialog-visual {
+    flex: 2;
+    background: #0f172a;
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+
+    .package-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+    }
+
+    .visual-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right, rgba(15, 23, 42, 0.2), rgba(30, 41, 59, 1));
+    }
+
+
+}
+
+.dialog-content {
+    flex: 3;
+    padding: 3rem 3rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at top right, rgba(30, 41, 59, 1), rgba(15, 23, 42, 1));
+    color: white;
+    max-height: 90vh;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+
+    @media (max-width: 768px) {
+        padding: 2rem;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .package-target {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #38bdf8;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .package-title {
+        font-size: 2.2rem;
+        font-weight: 800;
+        margin: 0 0 1.5rem 0;
+        line-height: 1.1;
+        background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .description-scroll {
+        flex: 1;
+        overflow-y: auto;
+        padding-right: 1rem;
+        margin-right: -1rem;
+        /* Visual trick to keep scrollbar at edge */
+
+        /* Custom scrollbar */
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 3px;
+        }
+    }
+
+    .package-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #cbd5e1;
+        margin-bottom: 2rem;
+    }
+
+    .features-list {
+        margin-top: 1rem;
+
+        h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.8rem;
+
+            li {
+                display: flex;
+                align-items: flex-start;
+                gap: 0.8rem;
+                color: #e2e8f0;
+                font-size: 0.95rem;
+                line-height: 1.4;
+
+                i {
+                    color: #38bdf8;
+                    font-size: 0.9rem;
+                    margin-top: 0.2rem;
+                }
+            }
+        }
+    }
+
+    .dialog-actions {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+        .btn-contact {
+            width: 100%;
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 1rem;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background: #0ea5e9;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

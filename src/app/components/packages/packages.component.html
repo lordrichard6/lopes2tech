@@ -14,10 +14,14 @@
 
         <div class="packages-grid">
             @for (pkg of packages; track pkg.key) {
-            <div class="package-card" [class.popular]="pkg.isPopular">
+            <div class="package-card" [class.popular]="pkg.isPopular" (click)="openPackageDialog(pkg)">
                 <div class="card-image-wrapper">
                     <img [src]="pkg.image" [alt]="('packages.items.' + pkg.key + '.name' | translate)"
                         class="package-image">
+                </div>
+                <div class="hover-badge">
+                    <span>{{ 'packages.more_info' | translate }}</span>
+                    <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="card-content">
                     <div class="package-header">
@@ -27,9 +31,6 @@
                             <span class="popular-badge">{{ 'packages.popular' | translate }}</span>
                             }
                         </h3>
-                        <!-- <div class="package-price">
-                            <span class="price-from">{{ 'packages.from' | translate }}</span> CHF {{ pkg.price }}
-                        </div> -->
                     </div>
                     <p class="package-description">{{ 'packages.items.' + pkg.key + '.description' | translate }}</p>
                     <p class="package-target">{{ 'packages.items.' + pkg.key + '.target' | translate }}</p>
@@ -38,6 +39,10 @@
             }
         </div>
     </div>
+
+    <app-package-dialog [isOpen]="isDialogOpen" [package]="selectedPackage" (close)="closePackageDialog()">
+    </app-package-dialog>
+
     <div class="custom-shape-divider-bottom">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path

@@ -25,7 +25,7 @@ export class TranslationService {
     de: deTranslations as Translation
   };
   private readonly isBrowser: boolean;
-  
+
   constructor(
     private readonly http: HttpClient,
     @Inject(PLATFORM_ID) private readonly platformId: Object
@@ -75,6 +75,18 @@ export class TranslationService {
     return this.interpolate(this.getTranslation(key, this.currentLang.value), params);
   }
 
+  getObject(key: string): any {
+    const lang = this.currentLang.value;
+    const segments = key.split('.');
+    let value = this.lookupTranslation(this.translations[lang], segments);
+
+    if (value === undefined && lang !== 'en') {
+      value = this.lookupTranslation(this.translations['en'], segments);
+    }
+
+    return value;
+  }
+
   private applyLanguage(lang: SupportedLanguage, persist: boolean): void {
     this.currentLang.next(lang);
     this.setDocumentLanguage(lang);
@@ -94,21 +106,21 @@ export class TranslationService {
       catchError(() => of(this.translations[lang] ?? {}))
     );
   }
-  
+
   private detectBrowserLanguage(): string | null {
     if (!this.isBrowser) {
       return null;
     }
-    
+
     const browserLang = navigator.language || (navigator as any).userLanguage;
-    
+
     if (!browserLang) {
       return null;
     }
-    
+
     return browserLang.toLowerCase().split('-')[0] ?? null;
   }
-  
+
   private resolveLanguage(lang: string): SupportedLanguage {
     const normalized = lang?.toLowerCase();
 
@@ -118,7 +130,7 @@ export class TranslationService {
 
     return 'en';
   }
-  
+
   private getSavedLanguage(): string | null {
     if (this.isBrowser) {
       return localStorage.getItem('language');
@@ -126,19 +138,19 @@ export class TranslationService {
 
     return null;
   }
-  
+
   private saveLanguage(lang: SupportedLanguage): void {
     if (this.isBrowser) {
       localStorage.setItem('language', lang);
     }
   }
-  
+
   private setDocumentLanguage(lang: SupportedLanguage): void {
     if (this.isBrowser) {
       document.documentElement.lang = lang;
     }
   }
-  
+
   private getTranslation(key: string, lang: SupportedLanguage): string {
     const segments = key.split('.');
 
@@ -154,9 +166,9 @@ export class TranslationService {
       }
     }
 
-      return key;
-    }
-    
+    return key;
+  }
+
   private lookupTranslation(source: Translation | undefined, segments: string[]): unknown {
     return segments.reduce<unknown>((value, segment) => {
       if (value && typeof value === 'object' && segment in (value as Translation)) {
@@ -165,12 +177,12 @@ export class TranslationService {
       return undefined;
     }, source);
   }
-  
+
   private interpolate(text: string, params?: Record<string, any>): string {
     if (!params) {
       return text;
     }
-    
+
     return text.replace(/\{\{(\w+)\}\}/g, (match, param) => {
       return params[param] !== undefined ? params[param] : match;
     });

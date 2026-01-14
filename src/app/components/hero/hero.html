@@ -2,6 +2,9 @@
   <canvas #threeCanvas class="three-canvas"></canvas>
 
   <div class="hero-background">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="/vids/hero.mp4" type="video/mp4">
+    </video>
     <div class="floating-elements">
       <div class="floating-circle circle-1"></div>
       <div class="floating-circle circle-2"></div>
@@ -11,13 +14,19 @@
     </div>
     <div class="wave-animation">
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,120V73.71c47.79-22.2,103.59-32.17,158-28,70.36,5.37,136.33,33.31,206.8,37.5,73.84,4.36,147.54-16.88,218.2-35.26,69.27-18,138.3-24.88,209.4-13.08,36.15,6,69.85,17.84,104.45,29.34,92.64,30.79,216.14,70.08,303.85,2.52V120Z" opacity=".25" class="shape-fill"></path>
-        <path d="M0,120V104.19C13,83.08,27.64,63.14,47.69,47.95,99.41,8.73,165,9,224.58,28.42c31.15,10.15,60.09,26.07,89.67,39.8,40.92,19,84.73,46,130.83,49.67,36.26,2.85,70.9-9.42,98.6-31.56,31.77-25.39,62.32-62,103.63-73,40.44-10.79,81.35,6.69,119.13,24.28s75.16,39,116.92,43.05c59.73,5.85,113.28-22.88,168.9-38.84,30.2-8.66,59-6.17,87.09,7.5,22.43,10.89,48,26.93,60.65,49.24V120Z" opacity=".5" class="shape-fill"></path>
-        <path d="M0,120V114.37C149.93,61,314.09,48.68,475.83,77.43c43,7.64,84.23,20.12,127.61,26.46,59,8.63,112.48-12.24,165.56-35.4C827.93,42.78,886,24.76,951.2,30c86.53,7,172.46,45.71,248.8,84.81V120Z" class="shape-fill shape-fill-3"></path>
+        <path
+          d="M0,120V73.71c47.79-22.2,103.59-32.17,158-28,70.36,5.37,136.33,33.31,206.8,37.5,73.84,4.36,147.54-16.88,218.2-35.26,69.27-18,138.3-24.88,209.4-13.08,36.15,6,69.85,17.84,104.45,29.34,92.64,30.79,216.14,70.08,303.85,2.52V120Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,120V104.19C13,83.08,27.64,63.14,47.69,47.95,99.41,8.73,165,9,224.58,28.42c31.15,10.15,60.09,26.07,89.67,39.8,40.92,19,84.73,46,130.83,49.67,36.26,2.85,70.9-9.42,98.6-31.56,31.77-25.39,62.32-62,103.63-73,40.44-10.79,81.35,6.69,119.13,24.28s75.16,39,116.92,43.05c59.73,5.85,113.28-22.88,168.9-38.84,30.2-8.66,59-6.17,87.09,7.5,22.43,10.89,48,26.93,60.65,49.24V120Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,120V114.37C149.93,61,314.09,48.68,475.83,77.43c43,7.64,84.23,20.12,127.61,26.46,59,8.63,112.48-12.24,165.56-35.4C827.93,42.78,886,24.76,951.2,30c86.53,7,172.46,45.71,248.8,84.81V120Z"
+          class="shape-fill shape-fill-3"></path>
       </svg>
     </div>
   </div>
-  
+
   <div class="hero-container">
     <div class="hero-content">
       <h1 class="hero-title">
@@ -26,18 +35,18 @@
         <span class="title-line title-line--primary">{{ 'hero.title.line1' | translate }}</span>
         <span class="title-line gradient-text">{{ 'hero.title.line2' | translate }}</span>
       </h1>
-      
+
       <p class="hero-subtitle">
         {{ 'hero.subtitle' | translate }}
       </p>
-      
+
       <div class="hero-buttons">
         <button type="button" (click)="openCalBooking()" class="btn btn-primary">
           <span>{{ 'hero.cta.primary' | translate }}</span>
           <i class="fas fa-arrow-right"></i>
         </button>
       </div>
-      
+
       <div class="hero-stats">
         <div class="stat-item">
           <div class="stat-number">10+</div>
@@ -52,7 +61,7 @@
           <div class="stat-label">{{ 'hero.stats.support' | translate }}</div>
         </div>
       </div>
-      
+
       <div class="scroll-indicator">
         <a href="#services" class="scroll-down">
           <i class="fas fa-chevron-down"></i>
