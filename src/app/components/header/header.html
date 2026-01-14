@@ -12,6 +12,13 @@
         </div>
       </div>
 
+      <ul class="nav-menu" [class.active]="isMenuOpen">
+        <li><a href="#home" (click)="closeMenu()">{{ 'nav.home' | translate }}</a></li>
+        <li><a href="#services" (click)="closeMenu()">{{ 'nav.services' | translate }}</a></li>
+        <li><a href="#about" (click)="closeMenu()">{{ 'nav.about' | translate }}</a></li>
+        <li><a href="#contact" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a></li>
+      </ul>
+
       <div class="header-controls">
         <app-language-selector></app-language-selector>
 
@@ -27,19 +34,6 @@
           <i class="fas fa-times" [class.hidden]="!isMenuOpen"></i>
         </button>
       </div>
-
-      <ul class="nav-menu" [class.active]="isMenuOpen">
-        <li><a href="#home" (click)="closeMenu()">{{ 'nav.home' | translate }}</a></li>
-        <li><a href="#services" (click)="closeMenu()">{{ 'nav.services' | translate }}</a></li>
-        <li><a href="#about" (click)="closeMenu()">{{ 'nav.about' | translate }}</a></li>
-        <li><a href="#contact" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a></li>
-        <li class="nav-portal">
-          <a routerLink="/client-portal/login" (click)="closeMenu()" class="portal-link">
-            <i class="fas fa-user-lock"></i>
-            {{ 'nav.clientPortal' | translate }}
-          </a>
-        </li>
-      </ul>
     </div>
   </nav>
 

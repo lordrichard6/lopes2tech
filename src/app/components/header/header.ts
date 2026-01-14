@@ -25,10 +25,12 @@ export class Header implements OnInit {
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
-  @HostListener('window:scroll', [])
   onWindowScroll() {
     if (this.isBrowser) {
       this.isScrolled = window.pageYOffset > 100;
+      if (this.isMenuOpen) {
+        this.closeMenu();
+      }
     }
   }
 

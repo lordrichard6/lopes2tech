@@ -7,7 +7,7 @@ import { Portfolio } from '../portfolio/portfolio';
 import { Contact } from '../contact/contact';
 // import { MultistepComponent } from '../multistep/multistep';
 // import { TeamComponent } from '../team/team';
-import { AiChatComponent } from '../ai-chat/ai-chat.component';
+import { WhatsappButtonComponent } from '../whatsapp-button/whatsapp-button.component';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +20,7 @@ import { AiChatComponent } from '../ai-chat/ai-chat.component';
     Portfolio,
     // MultistepComponent,
     // TeamComponent,
-    AiChatComponent,
+    WhatsappButtonComponent,
     Contact
   ],
   template: `
@@ -33,8 +33,8 @@ import { AiChatComponent } from '../ai-chat/ai-chat.component';
     <app-contact></app-contact>
     <!-- <app-team></app-team> -->
     
-    <!-- AI Chat Assistant -->
-    <app-ai-chat></app-ai-chat>
+    <!-- WhatsApp Floating Button -->
+    <app-whatsapp-button></app-whatsapp-button>
   `,
   styles: []
 })

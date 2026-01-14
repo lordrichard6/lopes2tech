@@ -29,43 +29,22 @@
 
   <div class="hero-container">
     <div class="hero-content">
-      <h1 class="hero-title">
-        <img src="/logo_ani_trans.gif" alt="Lopes2Tech Logo animated" class="hero-title-logo hero-title-logo--light">
-        <img src="/logo_ani.gif" alt="Lopes2Tech Logo animated" class="hero-title-logo hero-title-logo--dark">
-        <span class="title-line title-line--primary">{{ 'hero.title.line1' | translate }}</span>
-        <span class="title-line gradient-text">{{ 'hero.title.line2' | translate }}</span>
-      </h1>
+      <div class="hero-text-content">
+        <h1 class="hero-title">
+          <span class="neon-text-purple">{{ 'hero.title.line1' | translate }}</span>
+          <span class="neon-text-blue">{{ 'hero.title.line2' | translate }}</span>
+        </h1>
 
-      <p class="hero-subtitle">
-        {{ 'hero.subtitle' | translate }}
-      </p>
+        <p class="hero-subtitle">
+          {{ 'hero.subtitle' | translate }}
+        </p>
+      </div>
 
       <div class="hero-buttons">
         <button type="button" (click)="openCalBooking()" class="btn btn-primary">
           <span>{{ 'hero.cta.primary' | translate }}</span>
           <i class="fas fa-arrow-right"></i>
         </button>
-      </div>
-
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-number">10+</div>
-          <div class="stat-label">{{ 'hero.stats.experience' | translate }}</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">40+</div>
-          <div class="stat-label">{{ 'hero.stats.projects' | translate }}</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">nDSG/GDPR</div>
-          <div class="stat-label">{{ 'hero.stats.support' | translate }}</div>
-        </div>
-      </div>
-
-      <div class="scroll-indicator">
-        <a href="#services" class="scroll-down">
-          <i class="fas fa-chevron-down"></i>
-        </a>
       </div>
     </div>
   </div>
