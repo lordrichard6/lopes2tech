@@ -21,6 +21,24 @@
       <div class="carousel-track">
 
         <!-- ORIGINAL SET -->
+        <!-- Project: Costeleta Dourada -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/costeleta_mockup.png" alt="Costeleta Dourada" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">Gastronomy & Reservations</span>
+            <h3 class="project-title">{{ 'portfolio.costeleta.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.costeleta.description' | translate }}</p>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.costeleta.title',
+              descKey: 'portfolio.costeleta.description',
+              image: '/proj/costeleta_mockup.png',
+              category: 'Gastronomy & Reservations',
+              link: 'https://costeleta-dourada.vercel.app/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
         <!-- Project: DraftMode CRM -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
@@ -183,6 +201,24 @@
 
 
         <!-- DUPLICATE SET FOR LOOP -->
+        <!-- Project: Costeleta Dourada -->
+        <div class="carousel-card glass-card">
+          <div class="card-visual">
+            <img src="/proj/costeleta_mockup.png" alt="Costeleta Dourada" loading="lazy">
+          </div>
+          <div class="card-content">
+            <span class="project-category">Gastronomy & Reservations</span>
+            <h3 class="project-title">{{ 'portfolio.costeleta.title' | translate }}</h3>
+            <p class="project-desc">{{ 'portfolio.costeleta.description' | translate }}</p>
+            <button class="btn-case-study" (click)="openProjectDialog({
+              titleKey: 'portfolio.costeleta.title',
+              descKey: 'portfolio.costeleta.description',
+              image: '/proj/costeleta_mockup.png',
+              category: 'Gastronomy & Reservations',
+              link: 'https://costeleta-dourada.vercel.app/'
+            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
         <!-- Project: DraftMode CRM -->
         <div class="carousel-card glass-card">
           <div class="card-visual">
