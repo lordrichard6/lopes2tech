@@ -17,369 +17,42 @@
       <p class="section-seo-text">{{ 'portfolio.seo_text' | translate }}</p>
     </div>
 
-    <div class="carousel-container">
-      <div class="carousel-track">
+    <!-- Filter Controls -->
+    <div class="filter-container reveal-on-scroll" #revealItem>
+      <div class="filter-pill">
+        <button class="filter-btn" [class.active]="activeFilter === 'web-app'" (click)="setFilter('web-app')">
+          <i class="fas fa-layer-group"></i>
+          <span>Web Apps</span>
+        </button>
+        <button class="filter-btn" [class.active]="activeFilter === 'website'" (click)="setFilter('website')">
+          <i class="fas fa-desktop"></i>
+          <span>Websites</span>
+        </button>
+        <div class="pill-bg" [class.right]="activeFilter === 'website'"></div>
+      </div>
+    </div>
 
-        <!-- ORIGINAL SET -->
-        <!-- Project: Costeleta Dourada -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/costeleta_mockup.png" alt="Costeleta Dourada" loading="lazy">
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <div class="project-card reveal-on-scroll" *ngFor="let project of filteredProjects; let i = index" #revealItem
+        (click)="openProjectDialog(project)">
+        <div class="card-image">
+          <img [src]="project.image" [alt]="project.titleKey | translate" loading="lazy">
+          <div class="overlay">
+            <span class="view-btn">View Project <i class="fas fa-arrow-right"></i></span>
           </div>
-          <div class="card-content">
-            <span class="project-category">Gastronomy & Reservations</span>
-            <h3 class="project-title">{{ 'portfolio.costeleta.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.costeleta.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.costeleta.title',
-              descKey: 'portfolio.costeleta.description',
-              image: '/proj/costeleta_mockup.png',
-              category: 'Gastronomy & Reservations',
-              link: 'https://costeleta-dourada.vercel.app/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
+          <div class="dev-badge" *ngIf="project.isInDevelopment">
+            <i class="fas fa-code"></i>
+            In Development
           </div>
         </div>
-        <!-- Project: DraftMode CRM -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/draftmode_mockup.png" alt="DraftMode CRM" loading="lazy">
-            <div class="dev-badge">
-              <i class="fas fa-code"></i>
-              In Development
-            </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="project-category">{{ project.category }}</span>
           </div>
-          <div class="card-content">
-            <span class="project-category">CRM for Consultants</span>
-            <h3 class="project-title">DraftMode CRM</h3>
-            <p class="project-desc">Modern CRM platform designed for consultants and small to medium companies. Real
-              answers, streamlined workflows.</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'DraftMode CRM',
-              descKey: 'Modern CRM platform designed for consultants and small to medium companies. Real answers, streamlined workflows.',
-              image: '/proj/draftmode_mockup.png',
-              category: 'CRM for Consultants'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
+          <h3 class="project-title">{{ project.titleKey | translate }}</h3>
+          <p class="project-desc">{{ project.descKey | translate }}</p>
         </div>
-
-        <!-- Project: TheraFlow -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/theraflow_mockup.png" alt="TheraFlow CRM" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">HealthTech SaaS</span>
-            <h3 class="project-title">{{ 'portfolio.theraflow.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.theraflow.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.theraflow.title',
-              descKey: 'portfolio.theraflow.description',
-              image: '/proj/theraflow_mockup.png',
-              category: 'HealthTech SaaS',
-              link: 'https://www.theraflow-crm.ch/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project: Finito -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/finito_mockup.png" alt="Finito Pro" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">SaaS for Craftsmen</span>
-            <h3 class="project-title">{{ 'portfolio.finito.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.finito.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.finito.title',
-              descKey: 'portfolio.finito.description',
-              image: '/proj/finito_mockup.png',
-              category: 'SaaS for Craftsmen',
-              link: 'https://www.finitopro.ch/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project: Noff -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/noff_mockup.png" alt="Noff" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">Digital Business Card</span>
-            <h3 class="project-title">{{ 'portfolio.noff.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.noff.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.noff.title',
-              descKey: 'portfolio.noff.description',
-              image: '/proj/noff_mockup.png',
-              category: 'Digital Business Card',
-              link: 'https://noff.ch/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project 1 -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/ribeiro_mockup.png" alt="Ribeiro Consulting" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">Business Consulting</span>
-            <h3 class="project-title">{{ 'portfolio.ribeiro.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.ribeiro.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.ribeiro.title',
-              descKey: 'portfolio.ribeiro.description',
-              image: '/proj/ribeiro_mockup.png',
-              category: 'Business Consulting',
-              link: 'https://ribeiroconsulting.ch/pt'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/alentseguros_mockup.png" alt="Alentseguros" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">Insurance & FinTech</span>
-            <h3 class="project-title">{{ 'portfolio.alentseguros.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.alentseguros.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.alentseguros.title',
-              descKey: 'portfolio.alentseguros.description',
-              image: '/proj/alentseguros_mockup.png',
-              category: 'Insurance & FinTech',
-              link: 'https://alenteseguros.vercel.app/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/silvio_mockup.png" alt="Silvio Studio" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">Photography Portfolio</span>
-            <h3 class="project-title">{{ 'portfolio.silvio.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.silvio.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.silvio.title',
-              descKey: 'portfolio.silvio.description',
-              image: '/proj/silvio_mockup.png',
-              category: 'Photography Portfolio',
-              link: 'https://silvio-photo.vercel.app/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/pali_mockup.png" alt="Pali AI" loading="lazy">
-            <div class="dev-badge">
-              <i class="fas fa-code"></i>
-              In Development
-            </div>
-          </div>
-          <div class="card-content">
-            <span class="project-category">AI Application</span>
-            <h3 class="project-title">{{ 'portfolio.pali.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.pali.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.pali.title',
-              descKey: 'portfolio.pali.description',
-              image: '/proj/pali_mockup.png',
-              category: 'AI Application'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-
-
-        <!-- DUPLICATE SET FOR LOOP -->
-        <!-- Project: Costeleta Dourada -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/costeleta_mockup.png" alt="Costeleta Dourada" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">Gastronomy & Reservations</span>
-            <h3 class="project-title">{{ 'portfolio.costeleta.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.costeleta.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.costeleta.title',
-              descKey: 'portfolio.costeleta.description',
-              image: '/proj/costeleta_mockup.png',
-              category: 'Gastronomy & Reservations',
-              link: 'https://costeleta-dourada.vercel.app/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-        <!-- Project: DraftMode CRM -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/draftmode_mockup.png" alt="DraftMode CRM" loading="lazy">
-            <div class="dev-badge">
-              <i class="fas fa-code"></i>
-              In Development
-            </div>
-          </div>
-          <div class="card-content">
-            <span class="project-category">CRM for Consultants</span>
-            <h3 class="project-title">DraftMode CRM</h3>
-            <p class="project-desc">Modern CRM platform designed for consultants and small to medium companies. Real
-              answers, streamlined workflows.</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'DraftMode CRM',
-              descKey: 'Modern CRM platform designed for consultants and small to medium companies. Real answers, streamlined workflows.',
-              image: '/proj/draftmode_mockup.png',
-              category: 'CRM for Consultants'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project: TheraFlow -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/theraflow_mockup.png" alt="TheraFlow CRM" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">HealthTech SaaS</span>
-            <h3 class="project-title">{{ 'portfolio.theraflow.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.theraflow.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.theraflow.title',
-              descKey: 'portfolio.theraflow.description',
-              image: '/proj/theraflow_mockup.png',
-              category: 'HealthTech SaaS',
-              link: 'https://www.theraflow-crm.ch/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project: Finito -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/finito_mockup.png" alt="Finito Pro" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">SaaS for Craftsmen</span>
-            <h3 class="project-title">{{ 'portfolio.finito.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.finito.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.finito.title',
-              descKey: 'portfolio.finito.description',
-              image: '/proj/finito_mockup.png',
-              category: 'SaaS for Craftsmen',
-              link: 'https://www.finitopro.ch/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project: Noff -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/noff_mockup.png" alt="Noff" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">Digital Business Card</span>
-            <h3 class="project-title">{{ 'portfolio.noff.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.noff.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.noff.title',
-              descKey: 'portfolio.noff.description',
-              image: '/proj/noff_mockup.png',
-              category: 'Digital Business Card',
-              link: 'https://noff.ch/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project 1 -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/ribeiro_mockup.png" alt="Ribeiro Consulting" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">Business Consulting</span>
-            <h3 class="project-title">{{ 'portfolio.ribeiro.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.ribeiro.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.ribeiro.title',
-              descKey: 'portfolio.ribeiro.description',
-              image: '/proj/ribeiro_mockup.png',
-              category: 'Business Consulting',
-              link: 'https://ribeiroconsulting.ch/pt'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/alentseguros_mockup.png" alt="Alentseguros" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">Insurance & FinTech</span>
-            <h3 class="project-title">{{ 'portfolio.alentseguros.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.alentseguros.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.alentseguros.title',
-              descKey: 'portfolio.alentseguros.description',
-              image: '/proj/alentseguros_mockup.png',
-              category: 'Insurance & FinTech',
-              link: 'https://alenteseguros.vercel.app/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/silvio_mockup.png" alt="Silvio Studio" loading="lazy">
-          </div>
-          <div class="card-content">
-            <span class="project-category">Photography Portfolio</span>
-            <h3 class="project-title">{{ 'portfolio.silvio.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.silvio.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.silvio.title',
-              descKey: 'portfolio.silvio.description',
-              image: '/proj/silvio_mockup.png',
-              category: 'Photography Portfolio',
-              link: 'https://silvio-photo.vercel.app/'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="carousel-card glass-card">
-          <div class="card-visual">
-            <img src="/proj/pali_mockup.png" alt="Pali AI" loading="lazy">
-            <div class="dev-badge">
-              <i class="fas fa-code"></i>
-              In Development
-            </div>
-          </div>
-          <div class="card-content">
-            <span class="project-category">AI Application</span>
-            <h3 class="project-title">{{ 'portfolio.pali.title' | translate }}</h3>
-            <p class="project-desc">{{ 'portfolio.pali.description' | translate }}</p>
-            <button class="btn-case-study" (click)="openProjectDialog({
-              titleKey: 'portfolio.pali.title',
-              descKey: 'portfolio.pali.description',
-              image: '/proj/pali_mockup.png',
-              category: 'AI Application'
-            })">{{ 'portfolio.visit' | translate }} <i class="fas fa-arrow-right"></i></button>
-          </div>
-        </div>
-
-
-
       </div>
     </div>
   </div>

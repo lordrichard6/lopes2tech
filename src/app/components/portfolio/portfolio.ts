@@ -1,12 +1,18 @@
 import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Inject, OnDestroy, PLATFORM_ID, QueryList, Renderer2, ViewChildren } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { ProjectDialogComponent, ProjectData } from './project-dialog/project-dialog.component';
 import { isPlatformBrowser } from '@angular/common';
 
+export interface Project extends ProjectData {
+  type: 'web-app' | 'website';
+  isInDevelopment?: boolean;
+}
+
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [TranslatePipe, ProjectDialogComponent],
+  imports: [CommonModule, TranslatePipe, ProjectDialogComponent],
   templateUrl: './portfolio.html',
   styleUrl: './portfolio.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -18,6 +24,84 @@ export class Portfolio implements AfterViewInit, OnDestroy {
 
   isDialogOpen = false;
   currentProject: ProjectData | null = null;
+  activeFilter: 'web-app' | 'website' = 'website';
+
+  projects: Project[] = [
+    // Web Apps
+    {
+      titleKey: 'DraftMode CRM',
+      descKey: 'Modern CRM platform designed for consultants and small to medium companies. Real answers, streamlined workflows.',
+      image: '/proj/draftmode_mockup.png',
+      category: 'CRM for Consultants',
+      type: 'web-app',
+      isInDevelopment: true
+    },
+    {
+      titleKey: 'portfolio.pali.title',
+      descKey: 'portfolio.pali.description',
+      image: '/proj/pali_mockup.png',
+      category: 'AI Application',
+      type: 'web-app',
+      isInDevelopment: true
+    },
+    {
+      titleKey: 'portfolio.theraflow.title',
+      descKey: 'portfolio.theraflow.description',
+      image: '/proj/theraflow_mockup.png',
+      category: 'HealthTech SaaS',
+      type: 'web-app',
+      link: 'https://www.theraflow-crm.ch/'
+    },
+    {
+      titleKey: 'portfolio.finito.title',
+      descKey: 'portfolio.finito.description',
+      image: '/proj/finito_mockup.png',
+      category: 'SaaS for Craftsmen',
+      type: 'web-app',
+      link: 'https://www.finitopro.ch/'
+    },
+    {
+      titleKey: 'portfolio.noff.title',
+      descKey: 'portfolio.noff.description',
+      image: '/proj/noff_mockup.png',
+      category: 'Digital Business Card',
+      type: 'web-app',
+      link: 'https://noff.ch/'
+    },
+    // Websites
+    {
+      titleKey: 'portfolio.costeleta.title',
+      descKey: 'portfolio.costeleta.description',
+      image: '/proj/costeleta_mockup.png',
+      category: 'Gastronomy & Reservations',
+      type: 'website',
+      link: 'https://costeleta-dourada.vercel.app/'
+    },
+    {
+      titleKey: 'portfolio.ribeiro.title',
+      descKey: 'portfolio.ribeiro.description',
+      image: '/proj/ribeiro_mockup.png',
+      category: 'Business Consulting',
+      type: 'website',
+      link: 'https://ribeiroconsulting.ch/pt'
+    },
+    {
+      titleKey: 'portfolio.alentseguros.title',
+      descKey: 'portfolio.alentseguros.description',
+      image: '/proj/alentseguros_mockup.png',
+      category: 'Insurance & FinTech',
+      type: 'website',
+      link: 'https://alenteseguros.vercel.app/'
+    },
+    {
+      titleKey: 'portfolio.silvio.title',
+      descKey: 'portfolio.silvio.description',
+      image: '/proj/silvio_mockup.png',
+      category: 'Photography Portfolio',
+      type: 'website',
+      link: 'https://silvio-photo.vercel.app/'
+    }
+  ];
 
   @ViewChildren('revealItem', { read: ElementRef }) private revealItems!: QueryList<ElementRef<HTMLElement>>;
 
@@ -27,6 +111,14 @@ export class Portfolio implements AfterViewInit, OnDestroy {
     private readonly cdr: ChangeDetectorRef
   ) {
     this.isBrowser = isPlatformBrowser(platformId);
+  }
+
+  get filteredProjects(): Project[] {
+    return this.projects.filter(p => p.type === this.activeFilter);
+  }
+
+  setFilter(filter: 'web-app' | 'website'): void {
+    this.activeFilter = filter;
   }
 
   ngAfterViewInit(): void {
