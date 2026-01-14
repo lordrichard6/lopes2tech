@@ -1,5 +1,13 @@
 <section id="contact" class="contact">
-  <div class="container">
+  <!-- Background Video -->
+  <div class="video-bg-wrapper">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="/vids/dark.mp4" type="video/mp4">
+    </video>
+
+  </div>
+
+  <div class="container relative z-10">
     <div class="section-header reveal-on-scroll" #revealItem>
       <span class="section-badge">
         <i class="fas fa-comments"></i>
@@ -8,16 +16,84 @@
       <h2 class="section-title">{{ 'contact.hero.title' | translate }}</h2>
       <p class="section-subtitle">{{ 'contact.hero.subtitle' | translate }}</p>
     </div>
-    
+
     <div class="contact-content reveal-on-scroll" #revealItem>
-      <div class="contact-form-wrapper reveal-on-scroll" #revealItem>
-        <app-meeting-section
-        context="Contact Page"
-        [title]="('contact.meeting.title' | translate)"
-        [description]="('contact.meeting.description' | translate)"
-        [successTitle]="('contact.meeting.successTitle' | translate)"
-        [successDescription]="('contact.meeting.successDescription' | translate)">
-        </app-meeting-section>
+
+      <!-- Premium Glass Form -->
+      <div class="glass-form-card">
+        <div class="form-header">
+          <h3>{{ 'contact.meeting.title' | translate }}</h3>
+          <p>{{ 'contact.meeting.description' | translate }}</p>
+        </div>
+
+        <form *ngIf="!meetingSubmitted || meetingStatus !== 'success'" [formGroup]="meetingForm"
+          (ngSubmit)="submitMeetingForm()" class="custom-form">
+
+          <div class="form-row">
+            <div class="form-group floating-label">
+              <input type="text" id="name" formControlName="name" placeholder=" "
+                [class.invalid]="fieldInvalid('name')">
+              <label for="name">{{ 'meetingForm.labels.name' | translate }}</label>
+              <div class="error-msg" *ngIf="fieldInvalid('name')">{{ fieldError('name') }}</div>
+            </div>
+
+            <div class="form-group floating-label">
+              <input type="email" id="email" formControlName="email" placeholder=" "
+                [class.invalid]="fieldInvalid('email')">
+              <label for="email">{{ 'meetingForm.labels.email' | translate }}</label>
+              <div class="error-msg" *ngIf="fieldInvalid('email')">{{ fieldError('email') }}</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group floating-label">
+              <input type="text" id="company" formControlName="company" placeholder=" ">
+              <label for="company">{{ 'meetingForm.labels.company' | translate }}</label>
+            </div>
+
+            <div class="form-group floating-label">
+              <input type="tel" id="phone" formControlName="phone" placeholder=" ">
+              <label for="phone">{{ 'meetingForm.labels.phone' | translate }}</label>
+            </div>
+          </div>
+
+          <div class="form-group floating-label full-width">
+            <textarea id="message" formControlName="message" rows="4" placeholder=" "
+              [class.invalid]="fieldInvalid('message')"></textarea>
+            <label for="message">{{ 'meetingForm.labels.message' | translate }}</label>
+            <div class="error-msg" *ngIf="fieldInvalid('message')">{{ fieldError('message') }}</div>
+          </div>
+
+          <!-- Hidden Context Field -->
+          <input type="hidden" formControlName="context">
+
+          <button type="submit" class="btn btn-primary submit-btn" [disabled]="meetingSubmitting">
+            <span *ngIf="!meetingSubmitting">
+              {{ 'meetingForm.button.submit' | translate }} <i class="fas fa-paper-plane"></i>
+            </span>
+            <span *ngIf="meetingSubmitting" class="loading-state">
+              <i class="fas fa-circle-notch fa-spin"></i> {{ 'meetingForm.button.sending' | translate }}
+            </span>
+          </button>
+
+          <div class="submission-error" *ngIf="meetingSubmitted && meetingStatus === 'error'">
+            <i class="fas fa-exclamation-circle"></i> {{ meetingErrorMessage }}
+          </div>
+        </form>
+
+        <!-- Success State -->
+        <div class="success-message" *ngIf="meetingSubmitted && meetingStatus === 'success'">
+          <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>{{ 'contact.meeting.successTitle' | translate }}</h3>
+          <p>{{ 'contact.meeting.successDescription' | translate }}</p>
+          <button class="btn btn-secondary"
+            (click)="meetingSubmitted = false; meetingStatus = null; meetingForm.reset()">
+            Send Another Message
+          </button>
+        </div>
+
       </div>
     </div>
   </div>

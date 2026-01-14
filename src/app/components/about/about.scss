@@ -176,6 +176,20 @@ $accent: #06b6d4;
     opacity: 0.5;
     z-index: 0;
   }
+
+  // Diagonal Separator (Blending into Projects)
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 5vw;
+    background-color: #f3f0e7; // Beige to match Projects section
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    z-index: 10;
+    pointer-events: none;
+  }
 }
 
 .founder-wrapper {
