@@ -1,7 +1,7 @@
 .packages-section {
     padding: 8rem 0 6rem;
     /* Increased top padding to account for wave */
-    background-color: #0f172a;
+    background: linear-gradient(to bottom, #0f172a, #082f49);
     color: #fff;
     position: relative;
     /* overflow: hidden; - Removed to let wave potentially overlap if needed, but usually kept for standard dividers. layout might break if removed. keeping it but ensuring divider is INSIDE. */
@@ -19,6 +19,183 @@
             radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.15) 0px, transparent 50%);
         pointer-events: none;
         z-index: 0;
+    }
+
+    .floating-icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .float-icon {
+        position: absolute;
+        color: #06b6d4; // Bright cyan
+        font-size: 2rem;
+        opacity: 0.6;
+        text-shadow: 0 0 10px rgba(6, 182, 212, 0.8), 0 0 20px rgba(6, 182, 212, 0.4);
+        animation: floatIcon 6s ease-in-out infinite alternate;
+
+        &.icon-1 {
+            top: 15%;
+            left: 10%;
+            animation-delay: 0s;
+            font-size: 2.5rem;
+        }
+
+        &.icon-2 {
+            top: 25%;
+            right: 15%;
+            animation-delay: 1s;
+            font-size: 1.8rem;
+        }
+
+        &.icon-3 {
+            top: 60%;
+            left: 5%;
+            animation-delay: 2s;
+            font-size: 2.2rem;
+        }
+
+        &.icon-4 {
+            top: 70%;
+            right: 8%;
+            animation-delay: 3s;
+            font-size: 2rem;
+        }
+
+        &.icon-5 {
+            top: 40%;
+            left: 80%;
+            animation-delay: 1.5s;
+            font-size: 1.5rem;
+        }
+
+        &.icon-6 {
+            top: 85%;
+            left: 20%;
+            animation-delay: 2.5s;
+            font-size: 1.8rem;
+        }
+    }
+
+    @keyframes floatIcon {
+        0% {
+            transform: translateY(0) rotate(0deg);
+        }
+
+        100% {
+            transform: translateY(-20px) rotate(5deg);
+        }
+    }
+
+    .background-shapes {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 0; // Behind icons
+    }
+
+    .shape {
+        position: absolute;
+        opacity: 0.15;
+        filter: blur(1px);
+        animation: floatShape 15s infinite linear alternate;
+    }
+
+    .circle {
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(6, 182, 212, 0.3) 0%, transparent 70%); // Dark Cyan Glow
+
+        &.circle-1 {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            left: -5%;
+            animation-duration: 20s;
+            opacity: 0.1;
+        }
+
+        &.circle-2 {
+            width: 200px;
+            height: 200px;
+            bottom: 20%;
+            right: 5%;
+            animation-duration: 25s;
+            opacity: 0.08;
+        }
+
+        &.circle-3 {
+            width: 150px;
+            height: 150px;
+            top: 50%;
+            left: 40%;
+            animation-duration: 30s;
+            opacity: 0.05;
+        }
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        opacity: 0.2;
+
+        &.triangle-1 {
+            border-width: 0 25px 40px 25px;
+            border-color: transparent transparent rgba(6, 182, 212, 0.4) transparent;
+            top: 20%;
+            right: 25%;
+            animation-duration: 18s;
+        }
+
+        &.triangle-2 {
+            border-width: 0 15px 25px 15px;
+            border-color: transparent transparent rgba(6, 182, 212, 0.3) transparent;
+            bottom: 30%;
+            left: 15%;
+            animation-duration: 22s;
+        }
+    }
+
+    .square {
+        border: 2px solid rgba(6, 182, 212, 0.2);
+        transform: rotate(45deg);
+        background: rgba(6, 182, 212, 0.05);
+
+        &.square-1 {
+            width: 60px;
+            height: 60px;
+            top: 80%;
+            left: 60%;
+            animation-duration: 16s;
+        }
+
+        &.square-2 {
+            width: 40px;
+            height: 40px;
+            top: 15%;
+            right: 40%;
+            animation-duration: 19s;
+        }
+    }
+
+    @keyframes floatShape {
+        0% {
+            transform: translate(0, 0) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(30px, -30px) rotate(10deg);
+        }
     }
 }
 
