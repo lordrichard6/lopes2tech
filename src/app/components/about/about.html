@@ -2,39 +2,58 @@
 
   <!-- PART 1: THE AGENCY -->
   <div class="agency-container">
-
-
-
-    <div class="agency-bg">
-      <img src="/assets/about/agency_bg.png" alt="Abstract Tech Background" class="bg-image">
-      <div class="bg-overlay"></div>
-    </div>
+    <div class="agency-bg"></div>
 
     <div class="container relative z-10">
       <div class="agency-content">
-        <div class="agency-header reveal-on-scroll" #revealItem>
-          <span class="rubric">{{ 'about.agency.rubric' | translate }}</span>
-          <h2 class="agency-title">
-            {{ 'about.agency.title' | translate }}
-            <span class="highlight">{{ 'about.agency.highlight' | translate }}</span>
-          </h2>
-          <p class="agency-description">{{ 'about.agency.description' | translate }}</p>
+
+        <!-- Top Row: Text & Stats -->
+        <div class="agency-main-grid">
+
+          <!-- Left: Text -->
+          <div class="agency-text-col">
+            <span class="rubric-pill">{{ 'about.agency.rubric' | translate }}</span>
+            <h2 class="agency-title">
+              {{ 'about.agency.title' | translate }}
+            </h2>
+            <p class="agency-description">{{ 'about.agency.description' | translate }}</p>
+          </div>
+
+          <!-- Right: Stats List -->
+          <div class="agency-stats-list">
+            <div class="stat-item">
+              <span class="stat-number">{{ 'about.agency.stats.item1.number' | translate }}</span>
+              <span class="stat-label">{{ 'about.agency.stats.item1.label' | translate }}</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">{{ 'about.agency.stats.item2.number' | translate }}</span>
+              <span class="stat-label">{{ 'about.agency.stats.item2.label' | translate }}</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">{{ 'about.agency.stats.item3.number' | translate }}</span>
+              <span class="stat-label">{{ 'about.agency.stats.item3.label' | translate }}</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">{{ 'about.agency.stats.item4.number' | translate }}</span>
+              <span class="stat-label">{{ 'about.agency.stats.item4.label' | translate }}</span>
+            </div>
+          </div>
+
         </div>
 
-        <div class="agency-stats-grid">
-          <div class="stat-card glass reveal-on-scroll" #revealItem>
-            <div class="stat-number">15+</div>
-            <div class="stat-label">{{ 'about.agency.stats.industries' | translate }}</div>
+        <!-- Bottom Row: Gallery -->
+        <div class="agency-gallery">
+          <div class="gallery-item"><img src="/assets/about/swiss_alps.png" alt="Swiss Alps Summer"
+              onerror="this.src='/me_01.jpg'">
           </div>
-          <div class="stat-card glass reveal-on-scroll" #revealItem>
-            <div class="stat-number">2000+</div>
-            <div class="stat-label">{{ 'about.agency.stats.hours' | translate }}</div>
+          <div class="gallery-item"><img src="/assets/about/user_coding.png" alt="Coding at Office"
+              onerror="this.src='/me_01.jpg'">
           </div>
-          <div class="stat-card glass reveal-on-scroll" #revealItem>
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">{{ 'about.agency.stats.availability' | translate }}</div>
+          <div class="gallery-item"><img src="/assets/about/zurich_view.png" alt="Zurich Cityscape"
+              onerror="this.src='/me_01.jpg'">
           </div>
         </div>
+
       </div>
     </div>
   </div>

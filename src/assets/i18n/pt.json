@@ -630,13 +630,25 @@
   "about": {
     "agency": {
       "rubric": "A Nossa Filosofia",
-      "title": "Onde a Inovação Encontra ",
-      "highlight": "Inspiração",
+      "title": "Inovação que Gera Resultados",
       "description": "Somos uma agência de tecnologia sediada na Suíça, especializada em agentes de IA, desenvolvimento web e soluções automatizadas. Acreditamos que a tecnologia deve servir as pessoas, e não o contrário.",
       "stats": {
-        "industries": "Indústrias Servidas",
-        "hours": "Horas Poupadas",
-        "availability": "Disponibilidade IA"
+        "item1": {
+          "number": "14.6%",
+          "label": "Taxa Fecho SEO"
+        },
+        "item2": {
+          "number": "80%",
+          "label": "Resolução Automática"
+        },
+        "item3": {
+          "number": "+67%",
+          "label": "Aumento de Vendas"
+        },
+        "item4": {
+          "number": "150+",
+          "label": "Cafés / Mês"
+        }
       }
     },
     "founder": {

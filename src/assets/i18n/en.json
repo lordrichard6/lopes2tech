@@ -56,13 +56,25 @@
   "about": {
     "agency": {
       "rubric": "Our Philosophy",
-      "title": "Where Innovation Meets ",
-      "highlight": "Inspiration",
+      "title": "Innovation That Drives Results",
       "description": "We are a Swiss-based technology agency specializing in AI agents, web development, and automated solutions. We believe technology should serve people, not the other way around.",
       "stats": {
-        "industries": "Industries Served",
-        "hours": "Hours Saved",
-        "availability": "AI Availability"
+        "item1": {
+          "number": "14.6%",
+          "label": "SEO Lead Close Rate"
+        },
+        "item2": {
+          "number": "80%",
+          "label": "Auto-Resolved Queries"
+        },
+        "item3": {
+          "number": "+67%",
+          "label": "Sales Increase"
+        },
+        "item4": {
+          "number": "150+",
+          "label": "Coffees / Month"
+        }
       }
     },
     "founder": {

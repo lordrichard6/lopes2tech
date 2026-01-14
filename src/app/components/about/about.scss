@@ -7,159 +7,150 @@ $text-muted: #94a3b8;
 $accent: #06b6d4;
 
 // 1. THE AGENCY SECTION
+// 1. THE AGENCY SECTION
 .agency-container {
   position: relative;
   width: 100%;
   padding: 8rem 0;
-  background-color: $text-light; // Light background
+  background-color: #f3f0e7; // Beige / editorial background
+  color: #0f172a; // Dark text
   overflow: hidden;
-  color: $ocean-dark; // Dark text
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 
+  // Remove old bg image styling if present or just hide it
   .agency-bg {
+    display: none;
+  }
+
+  // Diagonal Separator
+  &::after {
+    content: '';
     position: absolute;
-    top: 0;
+    bottom: -1px; // Prevent sub-pixel gaps
     left: 0;
     width: 100%;
-    height: 100%;
-    z-index: 0;
-    opacity: 0.15; // Subtle texture
-
-    // Fade in the texture so the top edge matches the solid divider color
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 150px);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 150px);
-
-    .bg-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: grayscale(100%);
-    }
-
-    .bg-overlay {
-      display: none;
-    }
+    height: 5vw; // Controls the angle/steepness
+    background-color: #0f172a; // Matches the founder section below
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    z-index: 10;
+    pointer-events: none;
   }
-}
-
-.custom-shape-divider-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 1;
-  transform: rotate(180deg); // Invert so flat side is at bottom? No wait.
-  // Standard 'top' divider has flat side at TOP.
-  // We want flat side at TOP (to touch the previous section).
-  // The 'shape' is usually the part that is FILLED.
-  // If we fill it with DARK, we want the DARK part to touch the TOP.
-  // So we want the shape to be 'hanging down'.
-  // If the path is 'mountains' (bottom-heavy), we need to rotate it 180deg to make it 'stalactites' (top-heavy).
-}
-
-.custom-shape-divider-top svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 80px;
-}
-
-.custom-shape-divider-top .shape-fill {
-  fill: $ocean-dark; // Match the Packages background
 }
 
 .agency-content {
   position: relative;
   z-index: 2;
-  text-align: center;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  margin-top: 3rem;
+}
 
-  .rubric {
+.agency-main-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 6rem;
+  margin-bottom: 6rem;
+  text-align: left;
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+  }
+}
+
+.agency-text-col {
+  .rubric-pill {
     display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #06b6d4;
+    border-radius: 50px;
     font-size: 0.85rem;
-    font-weight: 600;
-    color: $ocean-blue;
-    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    font-weight: 500;
   }
 
   .agency-title {
-    font-size: 3.5rem;
-    font-weight: 800;
+    font-size: 4.5rem;
     line-height: 1.1;
-    margin-bottom: 2rem;
-    color: $ocean-dark;
+    font-weight: 400; // Editorial serif look
+    color: #1e3a8a; // Dark blue
+    margin-bottom: 2.5rem;
+    font-family: "Times New Roman", Times, serif;
 
-    .highlight {
-      display: block;
-      color: $accent;
-      font-size: 3.5rem;
-    }
 
     @media (max-width: 768px) {
-      font-size: 2.5rem;
-
-      .highlight {
-        font-size: 2.5rem;
-      }
+      font-size: 3rem;
     }
   }
 
   .agency-description {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     line-height: 1.8;
-    color: #475569;
-    max-width: 700px;
-    margin: 0 auto 4rem auto;
+    color: #475569; // Slate gray
+    max-width: 90%;
+
+    @media (max-width: 992px) {
+      margin: 0 auto;
+    }
   }
 }
 
-.agency-stats-grid {
+.agency-stats-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .stat-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.15); // Thin divider
+
+    &:first-child {
+      border-top: 1px solid rgba(15, 23, 42, 0.15);
+    }
+
+    .stat-number {
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: #0e7490;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      color: #334155;
+      text-transform: lowercase;
+      font-weight: 500;
+    }
+  }
+}
+
+.agency-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
 
-  .stat-card {
-    padding: 2rem;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(14, 116, 144, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+  .gallery-item {
+    border-radius: 30px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
 
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-      border-color: rgba($accent, 0.3);
-    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
 
-    .stat-number {
-      font-size: 3rem;
-      font-weight: 700;
-      color: $ocean-blue;
-      margin-bottom: 0.5rem;
-      background: none;
-      -webkit-text-fill-color: initial;
-    }
-
-    .stat-label {
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #64748b;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }

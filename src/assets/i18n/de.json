@@ -342,13 +342,25 @@
   "about": {
     "agency": {
       "rubric": "Unsere Philosophie",
-      "title": "Wo Innovation auf ",
-      "highlight": "Inspiration",
+      "title": "Innovation, die Ergebnisse liefert",
       "description": "Wir sind eine in der Schweiz ansässige Technologieagentur, die sich auf KI-Agenten, Webentwicklung und automatisierte Lösungen spezialisiert hat. Wir glauben, dass Technologie den Menschen dienen sollte, nicht umgekehrt.",
       "stats": {
-        "industries": "Branchen Bedient",
-        "hours": "Stunden Gespart",
-        "availability": "KI-Verfügbarkeit"
+        "item1": {
+          "number": "14.6%",
+          "label": "SEO Abschlussrate"
+        },
+        "item2": {
+          "number": "80%",
+          "label": "Auto-Lösung"
+        },
+        "item3": {
+          "number": "+67%",
+          "label": "Umsatzsteigerung"
+        },
+        "item4": {
+          "number": "150+",
+          "label": "Kaffees / Monat"
+        }
       }
     },
     "founder": {
