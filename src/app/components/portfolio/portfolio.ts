@@ -78,6 +78,14 @@ export class Portfolio implements AfterViewInit, OnDestroy {
       link: 'https://costeleta-dourada.vercel.app/'
     },
     {
+      titleKey: 'portfolio.forma.title',
+      descKey: 'portfolio.forma.description',
+      image: '/proj/forma_mockup.png',
+      category: 'Architecture & Design',
+      type: 'website',
+      link: 'https://forma-architects-fawn.vercel.app/'
+    },
+    {
       titleKey: 'portfolio.ribeiro.title',
       descKey: 'portfolio.ribeiro.description',
       image: '/proj/ribeiro_mockup.png',
