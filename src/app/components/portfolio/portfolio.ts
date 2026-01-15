@@ -25,6 +25,8 @@ export class Portfolio implements AfterViewInit, OnDestroy {
   isDialogOpen = false;
   currentProject: ProjectData | null = null;
   activeFilter: 'web-app' | 'website' = 'website';
+  currentPage = 1;
+  itemsPerPage = 6;
 
   projects: Project[] = [
     // Web Apps
@@ -141,8 +143,45 @@ export class Portfolio implements AfterViewInit, OnDestroy {
     return this.projects.filter(p => p.type === this.activeFilter);
   }
 
+  get paginatedProjects(): Project[] {
+    const filtered = this.filteredProjects;
+    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
+    return filtered.slice(startIndex, endIndex);
+  }
+
+  get totalPages(): number {
+    return Math.ceil(this.filteredProjects.length / this.itemsPerPage);
+  }
+
+  get pages(): number[] {
+    return Array.from({ length: this.totalPages }, (_, i) => i + 1);
+  }
+
   setFilter(filter: 'web-app' | 'website'): void {
     this.activeFilter = filter;
+    this.currentPage = 1; // Reset to first page on filter change
+    this.cdr.markForCheck();
+  }
+
+  goToPage(page: number): void {
+    if (page >= 1 && page <= this.totalPages) {
+      this.currentPage = page;
+      this.cdr.markForCheck();
+
+      // Scroll to portfolio section
+      if (this.isBrowser) {
+        document.querySelector('#portfolio')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }
+
+  nextPage(): void {
+    this.goToPage(this.currentPage + 1);
+  }
+
+  prevPage(): void {
+    this.goToPage(this.currentPage - 1);
   }
 
   ngAfterViewInit(): void {

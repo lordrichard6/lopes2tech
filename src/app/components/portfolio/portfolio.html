@@ -34,7 +34,7 @@
 
     <!-- Projects Grid -->
     <div class="projects-grid">
-      <div class="project-card reveal-on-scroll" *ngFor="let project of filteredProjects; let i = index" #revealItem
+      <div class="project-card reveal-on-scroll" *ngFor="let project of paginatedProjects; let i = index" #revealItem
         (click)="openProjectDialog(project)">
         <div class="card-image">
           <img [src]="project.image" [alt]="project.titleKey | translate" loading="lazy">
@@ -54,6 +54,34 @@
           <p class="project-desc">{{ project.descKey | translate }}</p>
         </div>
       </div>
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination-container reveal-on-scroll" #revealItem *ngIf="totalPages > 1">
+      <button class="pagination-btn" 
+              [disabled]="currentPage === 1" 
+              (click)="prevPage()"
+              aria-label="Previous page">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="pagination-numbers">
+        <button *ngFor="let page of pages"
+                class="page-btn"
+                [class.active]="page === currentPage"
+                (click)="goToPage(page)"
+                [attr.aria-label]="'Page ' + page"
+                [attr.aria-current]="page === currentPage ? 'page' : null">
+          {{ page }}
+        </button>
+      </div>
+      
+      <button class="pagination-btn" 
+              [disabled]="currentPage === totalPages" 
+              (click)="nextPage()"
+              aria-label="Next page">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
   </div>
   <app-project-dialog [isOpen]="isDialogOpen" [project]="currentProject"
