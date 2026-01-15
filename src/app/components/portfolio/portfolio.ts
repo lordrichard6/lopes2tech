@@ -72,6 +72,14 @@ export class Portfolio implements AfterViewInit, OnDestroy {
     },
     // Websites
     {
+      titleKey: 'portfolio.ribeiro.title',
+      descKey: 'portfolio.ribeiro.description',
+      image: '/proj/ribeiro_mockup.png',
+      category: 'Business Consulting',
+      type: 'website',
+      link: 'https://ribeiroconsulting.ch/pt'
+    },
+    {
       titleKey: 'portfolio.costeleta.title',
       descKey: 'portfolio.costeleta.description',
       image: '/proj/costeleta_mockup.png',
@@ -86,14 +94,6 @@ export class Portfolio implements AfterViewInit, OnDestroy {
       category: 'Architecture & Design',
       type: 'website',
       link: 'https://forma-architects-fawn.vercel.app/'
-    },
-    {
-      titleKey: 'portfolio.ribeiro.title',
-      descKey: 'portfolio.ribeiro.description',
-      image: '/proj/ribeiro_mockup.png',
-      category: 'Business Consulting',
-      type: 'website',
-      link: 'https://ribeiroconsulting.ch/pt'
     },
     {
       titleKey: 'portfolio.alentseguros.title',
