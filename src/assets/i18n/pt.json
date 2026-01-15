@@ -1017,6 +1017,10 @@
     "flexi": {
       "title": "Flexi CRM",
       "description": "Dashboard de Gestão de Relacionamento com o Cliente Empresarial."
+    },
+    "apex": {
+      "title": "Apex Consulting - Estratégia e Crescimento",
+      "description": "Website profissional para agência de consultoria, focado na clareza, confiança e excelência corporativa. Design moderno que comunica autoridade e competência."
     }
   },
   "support": {
