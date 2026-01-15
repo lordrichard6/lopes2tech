@@ -116,6 +116,14 @@ export class Portfolio implements AfterViewInit, OnDestroy {
       category: 'Business Consulting',
       type: 'website',
       link: 'https://apex-consulting-iota.vercel.app/'
+    },
+    {
+      titleKey: 'portfolio.nexus.title',
+      descKey: 'portfolio.nexus.description',
+      image: '/proj/nexus_accounting_mockup.png',
+      category: 'Accounting & Finance',
+      type: 'website',
+      link: 'https://nexus-accounting-ten.vercel.app/'
     }
   ];
 

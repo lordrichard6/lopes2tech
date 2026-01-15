@@ -1140,6 +1140,10 @@
       "title": "TheraFlow CRM - Praxismanagement für Therapeuten",
       "description": "Die sichere All-in-One-Plattform für Terminplanung, Klientenakten und Abrechnung. Entwickelt für Therapeuten, Coaches und Kliniken zur Vereinfachung der Verwaltung und Gewährleistung der DSGVO-Konformität."
     },
+    "nexus": {
+      "title": "Nexus Accounting",
+      "description": "Professionelle Website für Buchhaltung und Finanzdienstleistungen, erstellt mit Next.js."
+    },
     "finito": {
       "title": "Finito Pro - Schweizer Handwerkssoftware",
       "description": "Die All-in-One-Lösung für Schweizer Handwerksbetriebe. Mit Projektmanagement, QR-Rechnung, Zeiterfassung und Ressourcenplanung. 100% Swiss Made & Sicher."

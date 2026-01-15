@@ -1049,6 +1049,10 @@
     "apex": {
       "title": "Apex Consulting - Strategy & Growth",
       "description": "Professional consulting agency website focusing on clarity, trust, and corporate excellence. Featuring a clean, modern design that communicates authority and expertise."
+    },
+    "nexus": {
+      "title": "Nexus Accounting",
+      "description": "Professional accounting and financial services website built with Next.js."
     }
   },
   "support": {

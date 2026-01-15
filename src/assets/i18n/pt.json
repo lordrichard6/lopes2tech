@@ -990,6 +990,10 @@
       "title": "TheraFlow CRM - Gestão de Consultórios para Terapeutas",
       "description": "A plataforma segura tudo-em-um para agendamento, registos de clientes e faturação. Concebida para terapeutas, coaches e clínicas para simplificar a administração e garantir a conformidade com o RGPD."
     },
+    "nexus": {
+      "title": "Nexus Accounting",
+      "description": "Website profissional de contabilidade e serviços financeiros desenvolvido com Next.js."
+    },
     "finito": {
       "title": "Finito Pro - Gestão para Artesãos Suíços",
       "description": "A solução tudo-em-um para empresas de artesanato suíças. Inclui gestão de projetos, faturação QR, controlo de tempos e planeamento de recursos. 100% Swiss Made & Seguro."
