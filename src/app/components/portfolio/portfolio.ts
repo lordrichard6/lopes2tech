@@ -112,7 +112,7 @@ export class Portfolio implements AfterViewInit, OnDestroy {
     {
       titleKey: 'portfolio.apex.title',
       descKey: 'portfolio.apex.description',
-      image: '/proj/proj_apex_consulting_1768493000000.png',
+      image: '/proj/apex_consulting_mockup.png',
       category: 'Business Consulting',
       type: 'website',
       link: 'https://apex-consulting-iota.vercel.app/'
