@@ -45,36 +45,50 @@
 }
 
 .service-card {
-  background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%, rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%, rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%, rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(90deg, rgb(195, 195, 195), rgb(228, 228, 228));
-  background-blend-mode: overlay, overlay, overlay, normal;
+  background: #ffffff;
   padding: 2rem;
-  border-radius: 16px;
+  border-radius: 20px;
   text-align: left;
-  border: 1px solid rgba(14, 116, 144, 0.1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
   overflow: visible;
-  /* Changed from hidden to allow hover effects to pop */
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   height: 100%;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  border: 2px solid transparent;
+  background-image: linear-gradient(#ffffff, #ffffff),
+    linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
 
   &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: rgba(14, 116, 144, 0.3);
+    transform: translateY(-10px);
+    box-shadow:
+      0 20px 40px rgba(14, 116, 144, 0.15),
+      0 8px 16px rgba(0, 0, 0, 0.08);
+    background-image: linear-gradient(#ffffff, #ffffff),
+      linear-gradient(135deg, #0e7490 0%, #06b6d4 50%, #22d3ee 100%);
 
     .service-image {
-      transform: scale(1.05);
+      transform: scale(1.08);
+      box-shadow: 0 8px 24px rgba(14, 116, 144, 0.3);
     }
 
     .service-badge {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    h3 {
+      color: #0e7490;
+    }
+
+    p {
+      color: #475569;
     }
   }
 }
@@ -86,21 +100,21 @@
 
 .service-badge {
   position: absolute;
-  top: -12px;
-  right: 20px;
-  background: linear-gradient(135deg, #0e7490, #0891b2);
+  top: -14px;
+  right: 24px;
+  background: linear-gradient(135deg, #0e7490 0%, #0891b2 50%, #06b6d4 100%);
   color: white;
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.25rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
   border-radius: 20px;
   opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(14, 116, 144, 0.2);
-  z-index: 2;
-  left: auto;
-  /* Reset left from previous css */
+  transform: translateY(8px);
+  transition: all 0.35s ease;
+  box-shadow: 0 4px 14px rgba(14, 116, 144, 0.4);
+  z-index: 10;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .servicesv2.js-enabled .service-card {
@@ -120,8 +134,8 @@
     height: 100%;
     object-fit: cover;
     border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.35s ease;
   }
 }
 
@@ -131,6 +145,7 @@
   color: #1e293b;
   margin: 0;
   line-height: 1.3;
+  transition: color 0.3s ease;
 }
 
 .service-card p {
@@ -138,6 +153,7 @@
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .services-roadmap {

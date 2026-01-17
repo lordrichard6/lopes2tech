@@ -1509,5 +1509,10 @@
     },
     "back_home": "← Zurück zur Startseite",
     "all_rights": "Alle Rechte vorbehalten."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "message": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "backHome": "Zurück zur Startseite"
   }
 }

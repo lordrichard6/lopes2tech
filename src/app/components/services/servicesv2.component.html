@@ -7,6 +7,7 @@
       @for (service of serviceCards; track service.translationKey) {
       <button #serviceCard type="button" class="service-card" (click)="handleServiceSelection(service)"
         [attr.aria-label]="('servicesv2.items.' + service.translationKey + '.title') | translate">
+        <span class="shimmer"></span>
         <span class="service-badge">{{ 'servicesv2.badge' | translate }}</span>
         <div class="service-icon">
           <img [src]="service.image" class="service-image"

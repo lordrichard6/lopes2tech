@@ -5,7 +5,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://lopes2tech.ch/</loc>
-    <lastmod>2025-09-18</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lopes2tech.ch/" />
@@ -16,7 +16,7 @@
   <!-- Pricing -->
   <!-- <url>
     <loc>https://lopes2tech.ch/pricing</loc>
-    <lastmod>2025-01-18</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lopes2tech.ch/pricing" />
@@ -27,7 +27,7 @@
   <!-- Support TheraFlow -->
   <url>
     <loc>https://lopes2tech.ch/support-theraflow</loc>
-    <lastmod>2025-01-18</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lopes2tech.ch/support-theraflow" />
@@ -38,7 +38,7 @@
   <!-- Impressum -->
   <url>
     <loc>https://lopes2tech.ch/impressum</loc>
-    <lastmod>2025-01-18</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lopes2tech.ch/impressum" />
@@ -47,3 +47,4 @@
   </url>
   
 </urlset>
+

@@ -1359,5 +1359,10 @@
     },
     "back_home": "← Voltar ao Início",
     "all_rights": "Todos os direitos reservados."
+  },
+  "notFound": {
+    "title": "Página Não Encontrada",
+    "message": "A página que procura não existe ou foi movida.",
+    "backHome": "Voltar ao Início"
   }
 }

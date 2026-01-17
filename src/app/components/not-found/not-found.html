@@ -1,0 +1,13 @@
+<section class="not-found">
+    <div class="container">
+        <div class="error-content">
+            <span class="error-code">404</span>
+            <h1>{{ t('notFound.title') || 'Page Not Found' }}</h1>
+            <p>{{ t('notFound.message') || 'The page you are looking for does not exist or has been moved.' }}</p>
+            <a routerLink="/" class="cta-button">
+                <i class="fas fa-home"></i>
+                {{ t('notFound.backHome') || 'Back to Home' }}
+            </a>
+        </div>
+    </div>
+</section>

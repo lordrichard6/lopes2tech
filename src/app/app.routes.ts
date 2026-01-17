@@ -2,13 +2,13 @@ import { Routes } from '@angular/router';
 import { seoGuard } from './guards/seo.guard';
 
 export const routes: Routes = [
-  { 
-    path: '', 
+  {
+    path: '',
     loadComponent: () => import('./components/home/home').then(m => m.HomeComponent),
     canActivate: [seoGuard]
   },
-  { 
-    path: 'pricing', 
+  {
+    path: 'pricing',
     loadComponent: () => import('./components/pricing/pricing').then(m => m.PricingComponent),
     canActivate: [seoGuard]
   },
@@ -27,25 +27,28 @@ export const routes: Routes = [
     loadComponent: () => import('./components/unsubscribed/unsubscribed').then(m => m.UnsubscribedComponent),
     canActivate: [seoGuard]
   },
-  { 
-    path: 'impressum', 
+  {
+    path: 'impressum',
     loadComponent: () => import('./components/impressum/impressum').then(m => m.ImpressumComponent),
     canActivate: [seoGuard]
   },
-  { 
-    path: 'privacy', 
+  {
+    path: 'privacy',
     loadComponent: () => import('./components/privacy/privacy').then(m => m.PrivacyComponent),
     canActivate: [seoGuard]
   },
-  { 
-    path: 'terms', 
+  {
+    path: 'terms',
     loadComponent: () => import('./components/terms/terms').then(m => m.TermsComponent),
     canActivate: [seoGuard]
   },
-  { 
-    path: 'client-portal/login', 
+  {
+    path: 'client-portal/login',
     loadComponent: () => import('./components/client-login/client-login').then(m => m.ClientLoginComponent),
     canActivate: [seoGuard]
   },
-  { path: '**', redirectTo: '' }
+  {
+    path: '**',
+    loadComponent: () => import('./components/not-found/not-found').then(m => m.NotFoundComponent)
+  }
 ];
