@@ -47,6 +47,15 @@ export class Portfolio implements AfterViewInit, OnDestroy {
       isInDevelopment: true
     },
     {
+      titleKey: 'portfolio.orbitcrm.title',
+      descKey: 'portfolio.orbitcrm.description',
+      image: '/proj/orbitcrm_mockup.png',
+      category: 'CRM Platform',
+      type: 'web-app',
+      link: 'https://orbitcrm-gilt.vercel.app/',
+      isInDevelopment: true
+    },
+    {
       titleKey: 'portfolio.theraflow.title',
       descKey: 'portfolio.theraflow.description',
       image: '/proj/theraflow_mockup.png',

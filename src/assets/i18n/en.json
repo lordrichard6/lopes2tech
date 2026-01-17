@@ -1053,6 +1053,10 @@
     "nexus": {
       "title": "Nexus Accounting",
       "description": "Professional accounting and financial services website built with Next.js."
+    },
+    "orbitcrm": {
+      "title": "OrbitCRM - AI-Powered Customer Management",
+      "description": "Modern CRM platform with AI-powered search, context awareness, and seamless automation for small to medium businesses."
     }
   },
   "support": {

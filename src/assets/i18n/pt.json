@@ -1025,6 +1025,10 @@
     "apex": {
       "title": "Apex Consulting - Estratégia e Crescimento",
       "description": "Website profissional para agência de consultoria, focado na clareza, confiança e excelência corporativa. Design moderno que comunica autoridade e competência."
+    },
+    "orbitcrm": {
+      "title": "OrbitCRM - Gestão de Clientes Potenciada por IA",
+      "description": "Plataforma CRM moderna com pesquisa inteligente por IA, consciência contextual e automação integrada para pequenas e médias empresas."
     }
   },
   "support": {
