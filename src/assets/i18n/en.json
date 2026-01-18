@@ -1054,6 +1054,10 @@
       "title": "Nexus Accounting",
       "description": "Professional accounting and financial services website built with Next.js."
     },
+    "elite": {
+      "title": "Elite Estates - Luxury Real Estate",
+      "description": "Exclusive real estate website showcasing ultra-premium properties worldwide. Features elegant black and gold design, sophisticated property search, and white-glove concierge services for discerning clientele."
+    },
     "orbitcrm": {
       "title": "OrbitCRM - AI-Powered Customer Management",
       "description": "Modern CRM platform with AI-powered search, context awareness, and seamless automation for small to medium businesses."
