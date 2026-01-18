@@ -1050,356 +1050,355 @@
       "title": "Apex Consulting - Strategy & Growth",
       "description": "Professional consulting agency website focusing on clarity, trust, and corporate excellence. Featuring a clean, modern design that communicates authority and expertise."
     },
-  },
-  "nexus": {
-    "title": "Nexus Accounting",
-    "description": "Professional accounting and financial services website built with Next.js."
-  },
-  "elite": {
-    "title": "Elite Estates - Luxury Real Estate",
-    "description": "Exclusive real estate website showcasing ultra-premium properties worldwide. Features elegant black and gold design, sophisticated property search, and white-glove concierge services for discerning clientele."
-  },
-  "orbitcrm": {
-    "title": "OrbitCRM - AI-Powered Customer Management",
-    "description": "Modern CRM platform with AI-powered search, context awareness, and seamless automation for small to medium businesses."
-  }
-},
-"support": {
-  "title": "Support TheraFlow Development",
-  "subtitle": "Help me bring this SaaS solution to healthcare professionals worldwide. Your support accelerates development and keeps TheraFlow accessible to everyone.",
-  "amounts": {
-    "title": "Support TheraFlow Development",
-    "subtitle": "Your contribution helps me build better tools for therapists. Choose any amount you'd like to contribute.",
-    "customNote": "Click the button below to donate - you'll be able to choose your amount on the secure payment page.",
-    "cta": "Support TheraFlow"
-  },
-  "investment": {
-    "title": "Interested in Investing?",
-    "description": "I'm seeking strategic investors to accelerate development and scale TheraFlow globally. Join me in revolutionizing practice management for healthcare professionals.",
-    "button": "Contact for Investment"
-  },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "q1": {
-      "question": "Is this a one-time donation?",
-      "answer": "Yes! All contributions are one-time donations. Choose any amount that feels right for you."
+    "nexus": {
+      "title": "Nexus Accounting",
+      "description": "Professional accounting and financial services website built with Next.js."
     },
-    "q2": {
-      "question": "When will TheraFlow launch?",
-      "answer": "I'm currently in beta with select practitioners. Full launch is planned for Q1 2026. Early supporters get immediate access."
+    "elite": {
+      "title": "Elite Estates - Luxury Real Estate",
+      "description": "Exclusive real estate website showcasing ultra-premium properties worldwide. Features elegant black and gold design, sophisticated property search, and white-glove concierge services for discerning clientele."
     },
-    "q3": {
-      "question": "How will my donation be used?",
-      "answer": "Your contribution directly funds development, infrastructure costs, security audits, and compliance certifications (GDPR, HIPAA)."
+    "orbitcrm": {
+      "title": "OrbitCRM - AI-Powered Customer Management",
+      "description": "Modern CRM platform with AI-powered search, context awareness, and seamless automation for small to medium businesses."
     }
   },
-  "thankYou": {
-    "title": "Thank You for Your Support! 💜",
-    "message": "Every contribution helps me keep TheraFlow affordable and accessible for therapists worldwide. Your support allows me to focus on building the best possible tool without compromising on quality or pricing. Together, we're making practice management simpler for healthcare professionals everywhere!"
-  }
-},
-"unsubscribed": {
-  "privacyBadge": "Your privacy is important",
-  "headline": "You're unsubscribed",
-  "message": "You have unsubscribed from Lopes2Tech emails. You won't receive any more emails from me.",
-  "secondary": "Before you leave, check my website",
-  "cta": "Explore Lopes2Tech"
-},
-"footer": {
-  "company": "lopes2tech",
-  "description": "Simplifying life through intelligent automation solutions.",
-  "links": {
-    "services": "Services",
-    "about": "About",
-    "contact": "Contact",
-    "privacy": "Privacy Policy",
-    "terms": "Terms & Conditions"
-  },
-  "copyright": "© 2025 lopes2tech. All rights reserved."
-},
-"clientLogin": {
-  "title": "Client Portal",
-  "subtitle": "Access your project dashboard and resources",
-  "email": "Email",
-  "emailPlaceholder": "Enter your email address",
-  "password": "Password",
-  "passwordPlaceholder": "Enter your password",
-  "loginButton": "Sign In",
-  "loggingIn": "Signing in...",
-  "helpText": "Need help accessing your account?",
-  "contactSupport": "Contact Support"
-},
-"impressum": {
-  "title": "Impressum / Legal Notice",
-  "sections": {
-    "company": {
-      "title": "Company Information",
-      "sole_proprietorship": "Sole Proprietorship",
-      "represented_by": "Represented by:"
+  "support": {
+    "title": "Support TheraFlow Development",
+    "subtitle": "Help me bring this SaaS solution to healthcare professionals worldwide. Your support accelerates development and keeps TheraFlow accessible to everyone.",
+    "amounts": {
+      "title": "Support TheraFlow Development",
+      "subtitle": "Your contribution helps me build better tools for therapists. Choose any amount you'd like to contribute.",
+      "customNote": "Click the button below to donate - you'll be able to choose your amount on the secure payment page.",
+      "cta": "Support TheraFlow"
     },
-    "contact": {
-      "title": "Contact"
+    "investment": {
+      "title": "Interested in Investing?",
+      "description": "I'm seeking strategic investors to accelerate development and scale TheraFlow globally. Join me in revolutionizing practice management for healthcare professionals.",
+      "button": "Contact for Investment"
     },
-    "disclaimer": {
-      "title": "Disclaimer (Haftungsausschluss)",
-      "liability_content": {
-        "title": "Liability for Content",
-        "content": "The author assumes no liability for the correctness, accuracy, timeliness, reliability, and completeness of the information. Liability claims against the author for material or immaterial damage resulting from access to, use or non-use of the published information, from misuse of the connection, or from technical malfunctions are excluded. All offers are non-binding. The author expressly reserves the right to change, supplement or delete parts of the pages or the entire offer without separate announcement or to cease publication temporarily or permanently."
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "Is this a one-time donation?",
+        "answer": "Yes! All contributions are one-time donations. Choose any amount that feels right for you."
       },
-      "liability_links": {
-        "title": "Liability for Links",
-        "content": "References and links to third-party websites are outside our area of responsibility. We reject any responsibility for such websites. Access and use of such websites are at the user's own risk."
+      "q2": {
+        "question": "When will TheraFlow launch?",
+        "answer": "I'm currently in beta with select practitioners. Full launch is planned for Q1 2026. Early supporters get immediate access."
+      },
+      "q3": {
+        "question": "How will my donation be used?",
+        "answer": "Your contribution directly funds development, infrastructure costs, security audits, and compliance certifications (GDPR, HIPAA)."
       }
     },
-    "copyright": {
-      "title": "Copyright (Urheberrechte)",
-      "content": "The copyright and all other rights to content, images, photos, or other files on the website belong exclusively to Paulo Lopes / Lopes2Tech or the specifically named rights holders. For the reproduction of any elements, the written consent of the copyright holders must be obtained in advance."
-    },
-    "last_updated": "Last updated:",
-    "back_home": "← Back to Home",
-    "all_rights": "All rights reserved."
-  }
-},
-"team": {
-  "title": "Meet Our Team",
-  "subtitle": "The passionate professionals behind lopes2tech",
-  "position": "Developer & Founder",
-  "description": "I am a Senior Software Engineer specializing in automation for service businesses. Originally from Portugal, I moved to Switzerland (driven by ambition and a serious love for Swiss cheese). Unlike typical agencies, I don't just 'make websites.' I build secure, efficient systems that handle your scheduling and patient inquiries automatically. I combine 10+ years of engineering rigor with a deep understanding of Swiss privacy standards, ensuring your digital tools are as reliable as your practice."
-},
-"cookies": {
-  "title": "Cookie Preferences",
-  "description": "We use cookies to enhance your browsing experience, provide personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.",
-  "acceptAll": "Accept All",
-  "acceptNecessary": "Accept Necessary Only",
-  "customize": "Customize Settings",
-  "savePreferences": "Save Preferences",
-  "manageSettings": "Manage Cookie Settings",
-  "privacyPolicy": "Privacy Policy",
-  "categories": {
-    "necessary": {
-      "title": "Necessary Cookies",
-      "description": "These cookies are essential for the website to function properly. They enable basic functionality such as page navigation and access to secure areas."
-    },
-    "analytics": {
-      "title": "Analytics Cookies",
-      "description": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously."
-    },
-    "functional": {
-      "title": "Functional Cookies",
-      "description": "These cookies enable enhanced functionality and personalization, such as remembering your preferences and settings."
-    },
-    "marketing": {
-      "title": "Marketing Cookies",
-      "description": "These cookies are used to deliver relevant advertisements and track the effectiveness of our marketing campaigns."
+    "thankYou": {
+      "title": "Thank You for Your Support! 💜",
+      "message": "Every contribution helps me keep TheraFlow affordable and accessible for therapists worldwide. Your support allows me to focus on building the best possible tool without compromising on quality or pricing. Together, we're making practice management simpler for healthcare professionals everywhere!"
     }
-  }
-},
-"privacy": {
-  "title": "Privacy Policy",
-  "last_updated": "Last updated:",
-  "general": {
-    "title": "1. General Information",
-    "content1": "At Lopes2Tech, we take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations—specifically the Swiss Federal Act on Data Protection (nFADP/nDSG) and, where applicable, the EU General Data Protection Regulation (GDPR).",
-    "content2": "This privacy policy explains how we collect, use, and protect your data when you visit our website or use our services."
   },
-  "responsible": {
-    "title": "2. Responsible Person (Controller)",
-    "content": "The responsible party for data processing on this website is:",
-    "address": "[Insert Street Address] [Insert Zip Code]",
-    "phone": "Phone",
+  "unsubscribed": {
+    "privacyBadge": "Your privacy is important",
+    "headline": "You're unsubscribed",
+    "message": "You have unsubscribed from Lopes2Tech emails. You won't receive any more emails from me.",
+    "secondary": "Before you leave, check my website",
+    "cta": "Explore Lopes2Tech"
+  },
+  "footer": {
+    "company": "lopes2tech",
+    "description": "Simplifying life through intelligent automation solutions.",
+    "links": {
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    },
+    "copyright": "© 2025 lopes2tech. All rights reserved."
+  },
+  "clientLogin": {
+    "title": "Client Portal",
+    "subtitle": "Access your project dashboard and resources",
     "email": "Email",
-    "website": "Website"
+    "emailPlaceholder": "Enter your email address",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Sign In",
+    "loggingIn": "Signing in...",
+    "helpText": "Need help accessing your account?",
+    "contactSupport": "Contact Support"
   },
-  "data_collection": {
-    "title": "3. Data Collection and Processing",
-    "server_logs": {
-      "title": "3.1 Server Log Files",
-      "intro": "When you access our website, the provider of the pages (hosting provider) automatically collects and stores information in so-called \"server log files,\" which your browser automatically transmits to us. These include:",
-      "item1": "Browser type and browser version",
-      "item2": "Operating system used",
-      "item3": "Referrer URL",
-      "item4": "Hostname of the accessing computer",
-      "item5": "Time of the server request",
-      "item6": "IP address",
-      "note": "This data is not merged with other data sources. The processing is based on our legitimate interest in the technically error-free presentation and optimization of our website."
-    },
-    "contact_form": {
-      "title": "3.2 Contact Form and Email",
-      "content": "If you send us inquiries via the contact form or email, your details from the inquiry form, including the contact details you provided there (Name, Email, Phone, Company/Practice), will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent."
-    },
-    "calcom": {
-      "title": "3.3 Appointment Booking (Cal.com)",
-      "intro": "We use the service Cal.com to offer online appointment booking. When you book an appointment, the data you enter (Name, Email, Phone, Reason for Appointment) is processed by Cal.com.",
-      "provider": "Provider",
-      "provider_value": "Cal.com, Inc. (USA/Global)",
-      "purpose": "Purpose",
-      "purpose_value": "Scheduling and calendar management",
-      "note": "Please check Cal.com's privacy policy for details on how they handle data."
-    },
-    "chatbot": {
-      "title": "3.4 AI Chatbot Assistant",
-      "intro": "Our website utilizes an AI-powered chatbot to assist with inquiries. When you interact with the chat:",
-      "item1": "The text you input is processed to generate a response.",
-      "item2": "Important: Do not enter sensitive health data (patient names, medical conditions) into the public website chatbot.",
-      "item3": "Data may be processed by third-party AI providers (e.g., OpenAI, Anthropic) solely for the purpose of generating the answer. These providers do not use your data to train their models in our configuration."
+  "impressum": {
+    "title": "Impressum / Legal Notice",
+    "sections": {
+      "company": {
+        "title": "Company Information",
+        "sole_proprietorship": "Sole Proprietorship",
+        "represented_by": "Represented by:"
+      },
+      "contact": {
+        "title": "Contact"
+      },
+      "disclaimer": {
+        "title": "Disclaimer (Haftungsausschluss)",
+        "liability_content": {
+          "title": "Liability for Content",
+          "content": "The author assumes no liability for the correctness, accuracy, timeliness, reliability, and completeness of the information. Liability claims against the author for material or immaterial damage resulting from access to, use or non-use of the published information, from misuse of the connection, or from technical malfunctions are excluded. All offers are non-binding. The author expressly reserves the right to change, supplement or delete parts of the pages or the entire offer without separate announcement or to cease publication temporarily or permanently."
+        },
+        "liability_links": {
+          "title": "Liability for Links",
+          "content": "References and links to third-party websites are outside our area of responsibility. We reject any responsibility for such websites. Access and use of such websites are at the user's own risk."
+        }
+      },
+      "copyright": {
+        "title": "Copyright (Urheberrechte)",
+        "content": "The copyright and all other rights to content, images, photos, or other files on the website belong exclusively to Paulo Lopes / Lopes2Tech or the specifically named rights holders. For the reproduction of any elements, the written consent of the copyright holders must be obtained in advance."
+      },
+      "last_updated": "Last updated:",
+      "back_home": "← Back to Home",
+      "all_rights": "All rights reserved."
     }
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "subtitle": "The passionate professionals behind lopes2tech",
+    "position": "Developer & Founder",
+    "description": "I am a Senior Software Engineer specializing in automation for service businesses. Originally from Portugal, I moved to Switzerland (driven by ambition and a serious love for Swiss cheese). Unlike typical agencies, I don't just 'make websites.' I build secure, efficient systems that handle your scheduling and patient inquiries automatically. I combine 10+ years of engineering rigor with a deep understanding of Swiss privacy standards, ensuring your digital tools are as reliable as your practice."
   },
   "cookies": {
-    "title": "4. Cookies",
-    "intro": "Our website uses \"cookies.\" These are small text files that are stored on your device.",
-    "essential": "Essential Cookies",
-    "essential_desc": "Necessary for the technical operation of the website.",
-    "analytical": "Analytical Cookies",
-    "analytical_desc": "Help us understand how visitors use the site (see Section 5).",
-    "note": "You can configure your browser to reject cookies, but this may limit the functionality of the website."
-  },
-  "analytics": {
-    "title": "5. Analytics and Third-Party Tools",
-    "content": "To improve our service, we may use analytics tools (e.g., Google Analytics or Vercel Analytics). These tools use cookies to analyze user behavior. The IP addresses are typically anonymized before processing. You can opt-out of this tracking via our Cookie Banner or your browser settings."
-  },
-  "security": {
-    "title": "6. Data Security (SSL/TLS)",
-    "content": "For security reasons and to protect the transmission of confidential content, such as orders or inquiries you send to us, this site uses SSL or TLS encryption. You can recognize an encrypted connection by the fact that the address line of the browser changes from \"http://\" to \"https://\" and by the lock symbol in your browser line."
-  },
-  "data_transfer": {
-    "title": "7. Data Transfer to Third Parties and Abroad",
-    "content": "We only pass on your data to third parties if this is necessary for the fulfillment of the contract (e.g., hosting, scheduling tools) or if you have consented. Some of these service providers may be located outside of Switzerland (e.g., USA). In these cases, we ensure that appropriate data protection safeguards (such as Standard Contractual Clauses) are in place to comply with Swiss nDSG and GDPR standards."
-  },
-  "rights": {
-    "title": "8. Your Rights",
-    "intro": "You have the right to:",
-    "item1": "Request information about your stored personal data at any time.",
-    "item2": "Request the correction of incorrect data.",
-    "item3": "Request the deletion of your data (Right to be forgotten), provided there are no legal retention obligations.",
-    "item4": "Revoke your consent to data processing at any time.",
-    "contact": "To exercise these rights, please contact us directly at:"
-  },
-  "changes": {
-    "title": "9. Changes to this Privacy Policy",
-    "content": "We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy (e.g., when introducing new services). The new privacy policy will then apply to your next visit."
-  },
-  "back_home": "← Back to Home",
-  "all_rights": "All rights reserved."
-},
-"terms": {
-  "title": "General Terms and Conditions (AGB)",
-  "last_updated": "Last updated:",
-  "effective_date": "Effective Date",
-  "effective_date_value": "December 11, 2025",
-  "scope": {
-    "title": "1. Scope of Application",
-    "content": "These General Terms and Conditions (hereinafter \"GTC\") apply to all business relationships between Lopes2Tech / Paulo Lopes (hereinafter \"Contractor\") and its customers (hereinafter \"Client\"). They apply to all services provided, including but not limited to website development, software engineering, AI automations, and consulting."
-  },
-  "subject": {
-    "title": "2. Subject of the Contract",
-    "intro": "The Contractor provides services in the field of IT and automation. The specific scope of services is defined in the respective individual offer or service contract.",
-    "web_software": "Web & Software",
-    "web_software_desc": "Development of websites, applications, and dashboards.",
-    "ai_automation": "AI & Automation",
-    "ai_automation_desc": "Implementation of chatbots, voice agents, and workflow automations (e.g., n8n, Retell, OpenAI).",
-    "maintenance": "Maintenance",
-    "maintenance_desc": "Ongoing support and hosting services."
-  },
-  "conclusion": {
-    "title": "3. Conclusion of Contract",
-    "intro": "Offers made by the Contractor are valid for 30 days unless otherwise stated. The contract is concluded upon:",
-    "item1": "The written acceptance of the offer by the Client (email is sufficient).",
-    "item2": "The payment of an initial deposit.",
-    "item3": "The commencement of actual service provision by the Contractor with the Client's knowledge."
-  },
-  "client_obligations": {
-    "title": "4. Client Obligations",
-    "intro": "The Client agrees to:",
-    "item1": "Provide all necessary content (text, images, logos) in a timely manner.",
-    "item2": "Grant the necessary access rights (hosting, API keys, domain registrar) required for the project.",
-    "item3": "Review deliverables and provide feedback within 5 working days. If no feedback is received within this period, the deliverable is deemed accepted."
-  },
-  "pricing": {
-    "title": "5. Pricing and Payment Terms",
-    "project": {
-      "title": "5.1 Project Services",
-      "intro": "Unless otherwise agreed in the individual offer, the following payment terms apply based on the total project volume:",
-      "small": {
-        "title": "Small Projects (up to CHF 2,500)",
-        "item1": "100% of the project fee is due immediately upon conclusion of the contract.",
-        "item2": "Work commences only after receipt of the full payment."
+    "title": "Cookie Preferences",
+    "description": "We use cookies to enhance your browsing experience, provide personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.",
+    "acceptAll": "Accept All",
+    "acceptNecessary": "Accept Necessary Only",
+    "customize": "Customize Settings",
+    "savePreferences": "Save Preferences",
+    "manageSettings": "Manage Cookie Settings",
+    "privacyPolicy": "Privacy Policy",
+    "categories": {
+      "necessary": {
+        "title": "Necessary Cookies",
+        "description": "These cookies are essential for the website to function properly. They enable basic functionality such as page navigation and access to secure areas."
       },
-      "standard": {
-        "title": "Standard & Large Projects (above CHF 2,500)",
-        "deposit": "50% Deposit",
-        "deposit_desc": "Due immediately upon conclusion of the contract to reserve resources and commence work.",
-        "final": "50% Final Payment",
-        "final_desc": "Due upon project completion/delivery."
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously."
       },
-      "invoice": "Invoices are payable within 20 days net."
-    },
-    "recurring": {
-      "title": "5.2 Recurring Services (Maintenance/Subscriptions)",
-      "content": "Fees for ongoing maintenance or SaaS components (e.g., Chatbot hosting) are billed monthly or annually in advance.",
-      "cancellation": "The cancellation period for recurring services is 30 days to the end of the month, unless a minimum contract term was agreed upon."
+      "functional": {
+        "title": "Functional Cookies",
+        "description": "These cookies enable enhanced functionality and personalization, such as remembering your preferences and settings."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "These cookies are used to deliver relevant advertisements and track the effectiveness of our marketing campaigns."
+      }
     }
   },
-  "intellectual_property": {
-    "title": "6. Intellectual Property & Usage Rights",
-    "item1": "Upon full payment of the agreed fee, the Client receives the usage rights for the created software/website.",
-    "item2": "The Contractor retains the right to reuse generic code modules, libraries, and design patterns developed during the project for other clients (standard software engineering practice).",
-    "item3": "The Client guarantees that all materials provided to the Contractor (images, texts) do not violate third-party rights."
-  },
-  "ai_services": {
-    "title": "7. Specific Provisions for AI Services",
-    "intro": "The Client acknowledges that services involving Artificial Intelligence (AI) (e.g., Chatbots, RAG systems, Voice Agents) depend on third-party providers (e.g., OpenAI, Anthropic, Retell AI).",
-    "accuracy": {
-      "title": "Accuracy",
-      "content": "The Contractor cannot guarantee that AI outputs are 100% accurate. The Client is responsible for verifying critical information generated by AI."
+  "privacy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last updated:",
+    "general": {
+      "title": "1. General Information",
+      "content1": "At Lopes2Tech, we take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations—specifically the Swiss Federal Act on Data Protection (nFADP/nDSG) and, where applicable, the EU General Data Protection Regulation (GDPR).",
+      "content2": "This privacy policy explains how we collect, use, and protect your data when you visit our website or use our services."
     },
-    "availability": {
-      "title": "Availability",
-      "content": "The Contractor is not liable for service interruptions caused by third-party API failures (e.g., if ChatGPT is down)."
+    "responsible": {
+      "title": "2. Responsible Person (Controller)",
+      "content": "The responsible party for data processing on this website is:",
+      "address": "[Insert Street Address] [Insert Zip Code]",
+      "phone": "Phone",
+      "email": "Email",
+      "website": "Website"
     },
-    "costs": {
-      "title": "Costs",
-      "content": "Unless strictly included in a flat fee, variable API usage costs (token usage) may be billed to the Client or paid directly by the Client to the provider."
-    }
+    "data_collection": {
+      "title": "3. Data Collection and Processing",
+      "server_logs": {
+        "title": "3.1 Server Log Files",
+        "intro": "When you access our website, the provider of the pages (hosting provider) automatically collects and stores information in so-called \"server log files,\" which your browser automatically transmits to us. These include:",
+        "item1": "Browser type and browser version",
+        "item2": "Operating system used",
+        "item3": "Referrer URL",
+        "item4": "Hostname of the accessing computer",
+        "item5": "Time of the server request",
+        "item6": "IP address",
+        "note": "This data is not merged with other data sources. The processing is based on our legitimate interest in the technically error-free presentation and optimization of our website."
+      },
+      "contact_form": {
+        "title": "3.2 Contact Form and Email",
+        "content": "If you send us inquiries via the contact form or email, your details from the inquiry form, including the contact details you provided there (Name, Email, Phone, Company/Practice), will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent."
+      },
+      "calcom": {
+        "title": "3.3 Appointment Booking (Cal.com)",
+        "intro": "We use the service Cal.com to offer online appointment booking. When you book an appointment, the data you enter (Name, Email, Phone, Reason for Appointment) is processed by Cal.com.",
+        "provider": "Provider",
+        "provider_value": "Cal.com, Inc. (USA/Global)",
+        "purpose": "Purpose",
+        "purpose_value": "Scheduling and calendar management",
+        "note": "Please check Cal.com's privacy policy for details on how they handle data."
+      },
+      "chatbot": {
+        "title": "3.4 AI Chatbot Assistant",
+        "intro": "Our website utilizes an AI-powered chatbot to assist with inquiries. When you interact with the chat:",
+        "item1": "The text you input is processed to generate a response.",
+        "item2": "Important: Do not enter sensitive health data (patient names, medical conditions) into the public website chatbot.",
+        "item3": "Data may be processed by third-party AI providers (e.g., OpenAI, Anthropic) solely for the purpose of generating the answer. These providers do not use your data to train their models in our configuration."
+      }
+    },
+    "cookies": {
+      "title": "4. Cookies",
+      "intro": "Our website uses \"cookies.\" These are small text files that are stored on your device.",
+      "essential": "Essential Cookies",
+      "essential_desc": "Necessary for the technical operation of the website.",
+      "analytical": "Analytical Cookies",
+      "analytical_desc": "Help us understand how visitors use the site (see Section 5).",
+      "note": "You can configure your browser to reject cookies, but this may limit the functionality of the website."
+    },
+    "analytics": {
+      "title": "5. Analytics and Third-Party Tools",
+      "content": "To improve our service, we may use analytics tools (e.g., Google Analytics or Vercel Analytics). These tools use cookies to analyze user behavior. The IP addresses are typically anonymized before processing. You can opt-out of this tracking via our Cookie Banner or your browser settings."
+    },
+    "security": {
+      "title": "6. Data Security (SSL/TLS)",
+      "content": "For security reasons and to protect the transmission of confidential content, such as orders or inquiries you send to us, this site uses SSL or TLS encryption. You can recognize an encrypted connection by the fact that the address line of the browser changes from \"http://\" to \"https://\" and by the lock symbol in your browser line."
+    },
+    "data_transfer": {
+      "title": "7. Data Transfer to Third Parties and Abroad",
+      "content": "We only pass on your data to third parties if this is necessary for the fulfillment of the contract (e.g., hosting, scheduling tools) or if you have consented. Some of these service providers may be located outside of Switzerland (e.g., USA). In these cases, we ensure that appropriate data protection safeguards (such as Standard Contractual Clauses) are in place to comply with Swiss nDSG and GDPR standards."
+    },
+    "rights": {
+      "title": "8. Your Rights",
+      "intro": "You have the right to:",
+      "item1": "Request information about your stored personal data at any time.",
+      "item2": "Request the correction of incorrect data.",
+      "item3": "Request the deletion of your data (Right to be forgotten), provided there are no legal retention obligations.",
+      "item4": "Revoke your consent to data processing at any time.",
+      "contact": "To exercise these rights, please contact us directly at:"
+    },
+    "changes": {
+      "title": "9. Changes to this Privacy Policy",
+      "content": "We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services in the privacy policy (e.g., when introducing new services). The new privacy policy will then apply to your next visit."
+    },
+    "back_home": "← Back to Home",
+    "all_rights": "All rights reserved."
   },
-  "warranty": {
-    "title": "8. Warranty and Liability",
+  "terms": {
+    "title": "General Terms and Conditions (AGB)",
+    "last_updated": "Last updated:",
+    "effective_date": "Effective Date",
+    "effective_date_value": "December 11, 2025",
+    "scope": {
+      "title": "1. Scope of Application",
+      "content": "These General Terms and Conditions (hereinafter \"GTC\") apply to all business relationships between Lopes2Tech / Paulo Lopes (hereinafter \"Contractor\") and its customers (hereinafter \"Client\"). They apply to all services provided, including but not limited to website development, software engineering, AI automations, and consulting."
+    },
+    "subject": {
+      "title": "2. Subject of the Contract",
+      "intro": "The Contractor provides services in the field of IT and automation. The specific scope of services is defined in the respective individual offer or service contract.",
+      "web_software": "Web & Software",
+      "web_software_desc": "Development of websites, applications, and dashboards.",
+      "ai_automation": "AI & Automation",
+      "ai_automation_desc": "Implementation of chatbots, voice agents, and workflow automations (e.g., n8n, Retell, OpenAI).",
+      "maintenance": "Maintenance",
+      "maintenance_desc": "Ongoing support and hosting services."
+    },
+    "conclusion": {
+      "title": "3. Conclusion of Contract",
+      "intro": "Offers made by the Contractor are valid for 30 days unless otherwise stated. The contract is concluded upon:",
+      "item1": "The written acceptance of the offer by the Client (email is sufficient).",
+      "item2": "The payment of an initial deposit.",
+      "item3": "The commencement of actual service provision by the Contractor with the Client's knowledge."
+    },
+    "client_obligations": {
+      "title": "4. Client Obligations",
+      "intro": "The Client agrees to:",
+      "item1": "Provide all necessary content (text, images, logos) in a timely manner.",
+      "item2": "Grant the necessary access rights (hosting, API keys, domain registrar) required for the project.",
+      "item3": "Review deliverables and provide feedback within 5 working days. If no feedback is received within this period, the deliverable is deemed accepted."
+    },
+    "pricing": {
+      "title": "5. Pricing and Payment Terms",
+      "project": {
+        "title": "5.1 Project Services",
+        "intro": "Unless otherwise agreed in the individual offer, the following payment terms apply based on the total project volume:",
+        "small": {
+          "title": "Small Projects (up to CHF 2,500)",
+          "item1": "100% of the project fee is due immediately upon conclusion of the contract.",
+          "item2": "Work commences only after receipt of the full payment."
+        },
+        "standard": {
+          "title": "Standard & Large Projects (above CHF 2,500)",
+          "deposit": "50% Deposit",
+          "deposit_desc": "Due immediately upon conclusion of the contract to reserve resources and commence work.",
+          "final": "50% Final Payment",
+          "final_desc": "Due upon project completion/delivery."
+        },
+        "invoice": "Invoices are payable within 20 days net."
+      },
+      "recurring": {
+        "title": "5.2 Recurring Services (Maintenance/Subscriptions)",
+        "content": "Fees for ongoing maintenance or SaaS components (e.g., Chatbot hosting) are billed monthly or annually in advance.",
+        "cancellation": "The cancellation period for recurring services is 30 days to the end of the month, unless a minimum contract term was agreed upon."
+      }
+    },
+    "intellectual_property": {
+      "title": "6. Intellectual Property & Usage Rights",
+      "item1": "Upon full payment of the agreed fee, the Client receives the usage rights for the created software/website.",
+      "item2": "The Contractor retains the right to reuse generic code modules, libraries, and design patterns developed during the project for other clients (standard software engineering practice).",
+      "item3": "The Client guarantees that all materials provided to the Contractor (images, texts) do not violate third-party rights."
+    },
+    "ai_services": {
+      "title": "7. Specific Provisions for AI Services",
+      "intro": "The Client acknowledges that services involving Artificial Intelligence (AI) (e.g., Chatbots, RAG systems, Voice Agents) depend on third-party providers (e.g., OpenAI, Anthropic, Retell AI).",
+      "accuracy": {
+        "title": "Accuracy",
+        "content": "The Contractor cannot guarantee that AI outputs are 100% accurate. The Client is responsible for verifying critical information generated by AI."
+      },
+      "availability": {
+        "title": "Availability",
+        "content": "The Contractor is not liable for service interruptions caused by third-party API failures (e.g., if ChatGPT is down)."
+      },
+      "costs": {
+        "title": "Costs",
+        "content": "Unless strictly included in a flat fee, variable API usage costs (token usage) may be billed to the Client or paid directly by the Client to the provider."
+      }
+    },
     "warranty": {
-      "title": "8.1 Warranty",
-      "content1": "The Contractor warrants that the software/website is functional and free of critical defects at the time of acceptance. The warranty period is 3 months from delivery.",
-      "content2": "The warranty does not cover defects caused by third-party updates (e.g., a WordPress plugin update breaking the site) or unauthorized changes by the Client."
+      "title": "8. Warranty and Liability",
+      "warranty": {
+        "title": "8.1 Warranty",
+        "content1": "The Contractor warrants that the software/website is functional and free of critical defects at the time of acceptance. The warranty period is 3 months from delivery.",
+        "content2": "The warranty does not cover defects caused by third-party updates (e.g., a WordPress plugin update breaking the site) or unauthorized changes by the Client."
+      },
+      "liability": {
+        "title": "8.2 Liability",
+        "content1": "To the extent permitted by Swiss law, the Contractor's liability is limited to intent and gross negligence.",
+        "content2": "Liability for slight negligence, indirect damages, or consequential damages (e.g., loss of profit, data loss) is excluded.",
+        "content3": "The Contractor is not liable for data privacy violations caused by the Client's misuse of the provided tools (e.g., entering patient data into a non-secure field)."
+      }
     },
-    "liability": {
-      "title": "8.2 Liability",
-      "content1": "To the extent permitted by Swiss law, the Contractor's liability is limited to intent and gross negligence.",
-      "content2": "Liability for slight negligence, indirect damages, or consequential damages (e.g., loss of profit, data loss) is excluded.",
-      "content3": "The Contractor is not liable for data privacy violations caused by the Client's misuse of the provided tools (e.g., entering patient data into a non-secure field)."
-    }
-  },
-  "data_protection": {
-    "title": "9. Data Protection and Confidentiality",
-    "content": "Both parties agree to treat all business secrets and confidential information obtained during the business relationship as strictly confidential. The Contractor processes personal data in accordance with the Swiss Federal Act on Data Protection (nDSG)."
-  },
-  "final": {
-    "title": "10. Final Provisions",
-    "severability": {
-      "title": "Severability",
-      "content": "Should individual provisions of these GTC be invalid, the validity of the remaining provisions shall remain unaffected."
+    "data_protection": {
+      "title": "9. Data Protection and Confidentiality",
+      "content": "Both parties agree to treat all business secrets and confidential information obtained during the business relationship as strictly confidential. The Contractor processes personal data in accordance with the Swiss Federal Act on Data Protection (nDSG)."
     },
-    "jurisdiction": {
-      "title": "Place of Jurisdiction",
-      "content": "The exclusive place of jurisdiction for all disputes arising from this contract is Zurich, Switzerland."
+    "final": {
+      "title": "10. Final Provisions",
+      "severability": {
+        "title": "Severability",
+        "content": "Should individual provisions of these GTC be invalid, the validity of the remaining provisions shall remain unaffected."
+      },
+      "jurisdiction": {
+        "title": "Place of Jurisdiction",
+        "content": "The exclusive place of jurisdiction for all disputes arising from this contract is Zurich, Switzerland."
+      },
+      "law": {
+        "title": "Applicable Law",
+        "content": "Swiss law applies exclusively."
+      }
     },
-    "law": {
-      "title": "Applicable Law",
-      "content": "Swiss law applies exclusively."
-    }
+    "back_home": "← Back to Home",
+    "all_rights": "All rights reserved."
   },
-  "back_home": "← Back to Home",
-  "all_rights": "All rights reserved."
-},
-"notFound": {
-  "title": "Page Not Found",
-  "message": "The page you are looking for does not exist or has been moved.",
-  "backHome": "Back to Home"
-}
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home"
+  }
 }
