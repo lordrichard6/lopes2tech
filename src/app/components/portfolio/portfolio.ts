@@ -134,14 +134,7 @@ export class Portfolio implements AfterViewInit, OnDestroy {
       image: '/proj/nexus_accounting_mockup.png',
       category: 'Accounting & Finance',
       type: 'website',
-    },
-    {
-      titleKey: 'portfolio.elite.title',
-      descKey: 'portfolio.elite.description',
-      image: '/proj/elite_estates_mockup.png',
-      category: 'Luxury Real Estate',
-      type: 'website',
-      link: 'https://elite-estates-psi.vercel.app/'
+      link: 'https://nexus-accounting-ten.vercel.app/'
     }
   ];
 
