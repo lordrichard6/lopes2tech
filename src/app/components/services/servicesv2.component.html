@@ -3,19 +3,46 @@
     <h2 class="section-title">{{ 'servicesv2.title' | translate }}</h2>
     <p class="section-subtitle">{{ 'servicesv2.subtitle' | translate }}</p>
 
-    <div class="services-row">
-      @for (service of serviceCards; track service.translationKey) {
-      <button #serviceCard type="button" class="service-card" (click)="handleServiceSelection(service)"
-        [attr.aria-label]="('servicesv2.items.' + service.translationKey + '.title') | translate">
-        <span class="shimmer"></span>
-        <span class="service-badge">{{ 'servicesv2.badge' | translate }}</span>
-        <div class="service-icon">
-          <img [src]="service.image" class="service-image"
-            [alt]="(('servicesv2.items.' + service.translationKey + '.title') | translate) + ' - Paulo Lopes Reizinho'">
+    <div class="services-wrapper">
+      @if (isSummary) {
+      <div class="services-row">
+        @for (category of serviceCategories; track category.key) {
+        <a [routerLink]="['/services']" [fragment]="category.key" class="service-card category-card">
+          <span class="shimmer"></span>
+          <div class="service-icon">
+            <i [class]="category.icon" class="service-icon-i"></i>
+          </div>
+          <h3>{{ ('servicesv2.categories.' + category.key + '.title') | translate }}</h3>
+        </a>
+        }
+      </div>
+      <div class="services-cta" style="text-align: center; margin-top: 3rem;">
+        <a routerLink="/services" class="btn-primary">See all services</a>
+      </div>
+      } @else {
+      @for (category of serviceCategories; track category.key) {
+      <div class="category-section" [id]="category.key">
+        <h3 class="category-title">
+          <i [class]="category.icon"></i>
+          {{ ('servicesv2.categories.' + category.key + '.title') | translate }}
+        </h3>
+
+        <div class="services-row">
+          @for (service of category.items; track service.key) {
+          <button #serviceCard type="button" class="service-card" (click)="handleServiceSelection(service)"
+            [attr.aria-label]="('servicesv2.items.' + service.key + '.title') | translate">
+            <span class="shimmer"></span>
+            <span class="service-badge">{{ 'servicesv2.badge' | translate }}</span>
+            <div class="service-icon">
+              <i [class]="service.icon" class="service-icon-i"></i>
+            </div>
+            <h3>{{ ('servicesv2.items.' + service.key + '.title') | translate }}</h3>
+            <p>{{ ('servicesv2.items.' + service.key + '.description') | translate }}</p>
+          </button>
+          }
         </div>
-        <h3>{{ ('servicesv2.items.' + service.translationKey + '.title') | translate }}</h3>
-        <p>{{ ('servicesv2.items.' + service.translationKey + '.description') | translate }}</p>
-      </button>
+      </div>
+      }
       }
     </div>
 

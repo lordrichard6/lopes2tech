@@ -248,18 +248,398 @@
         "title": "Marketing & Lead Gen",
         "description": "A great website is useless if no one sees it. We help you attract the right traffic through paid advertising, content strategy, and optimized funnels. We focus on ROI—spending budget only where it brings real customers.",
         "examples": {
-          "title": "Growth Services",
+          "title": "Marketing Services",
           "example1": {
-            "title": "Google Ads",
-            "description": "Targeted search campaigns to capture people actively looking for your services right now."
+            "title": "Google Ads (PPC)",
+            "description": "Targeted search campaigns that put your business in front of customers exactly when they are looking for you."
           },
           "example2": {
-            "title": "Social Content",
-            "description": "Strategy and assets for LinkedIn and Instagram to build authority and nurture long-term leads."
+            "title": "SEO Strategy",
+            "description": "Long-term rankings on Google to drive organic, free traffic to your site."
           },
           "example3": {
-            "title": "Lead Funnels",
-            "description": "Optimized landing page flows with lead magnets (PDFs, webinars) to capture contact info."
+            "title": "Social Media Ads",
+            "description": "High-engagement campaigns on Instagram and Facebook to build brand awareness and retarget visitors."
+          }
+        }
+      },
+      "android": {
+        "title": "Android App Development",
+        "description": "Reach the vast global audience of Android users with a custom-built, native application. We design and develop Android apps that are fast, intuitive, and optimized for a wide range of devices, from flagship smartphones to budget tablets.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Native Performance",
+            "description": "Built with Kotlin/Java for maximum speed and smooth animations on all Android devices."
+          },
+          "example2": {
+            "title": "Google Play Launch",
+            "description": "Full support with the publishing process, ensuring your app meets all guidelines for the Play Store."
+          },
+          "example3": {
+            "title": "Material Design",
+            "description": "Adhering to Google's design standards for a familiar and user-friendly interface."
+          }
+        }
+      },
+      "iphone": {
+        "title": "iOS App Development",
+        "description": "Deliver a premium experience to iPhone users with a native iOS app. We specialize in building secure, high-performance applications using Swift that leverage the latest Apple technologies.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Native Swift Code",
+            "description": "Developed using Apple's latest language for best-in-class performance and stability."
+          },
+          "example2": {
+            "title": "App Store Approval",
+            "description": "We handle the rigorous App Store submission process to get your app approved and live."
+          },
+          "example3": {
+            "title": "Apple Ecosystem",
+            "description": "Integration with FaceID, Apple Pay, and other core iOS features."
+          }
+        }
+      },
+      "ipad": {
+        "title": "iPad App Development",
+        "description": "Take advantage of the larger screen real estate with custom iPad applications. Perfect for enterprise tools, educational apps, or creative dashboards that require more space and touch precision.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Tablet Optimized",
+            "description": "Interfaces specifically designed for larger layouts, split screens, and multitasking."
+          },
+          "example2": {
+            "title": "Enterprise Usage",
+            "description": "Ideal for POS systems, kiosks, or internal business tools used by field staff."
+          },
+          "example3": {
+            "title": "Apple Pencil",
+            "description": "Support for precision inputs and creative workflows using the Apple Pencil."
+          }
+        }
+      },
+      "react_native": {
+        "title": "React Native Development",
+        "description": "Build once, deploy everywhere. React Native allows us to create high-quality mobile apps for both iOS and Android using a single codebase. It's the cost-effective choice for startups and businesses needing a fast time-to-market.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Cross-Platform",
+            "description": "One code source runs on both iPhone and Android, reducing development time by up to 40%."
+          },
+          "example2": {
+            "title": "Native Feel",
+            "description": "Uses native components so users get the smooth experience they expect on their device."
+          },
+          "example3": {
+            "title": "Easy Updates",
+            "description": "Push over-the-air updates to your app instantly without waiting for app store reviews."
+          }
+        }
+      },
+      "flutter": {
+        "title": "Flutter Development",
+        "description": "Create beautiful, natively compiled applications from a single codebase with Google's Flutter framework. Known for its expressive UI and fast performance, Flutter is perfect for apps with custom designs and complex animations.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Stunning UI",
+            "description": "Pixel-perfect rendering on all devices, allowing for highly custom brand designs."
+          },
+          "example2": {
+            "title": "Fast Performance",
+            "description": "Compiles to native ARM code, ensuring your app runs at 60fps or 120fps."
+          },
+          "example3": {
+            "title": "Multi-Platform",
+            "description": "Potential to run on Mobile, Web, and Desktop from the same project source."
+          }
+        }
+      },
+      "iot_app": {
+        "title": "IoT App Development",
+        "description": "Connect your hardware to the digital world. We build mobile apps that communicate with smart devices via Bluetooth, Wi-Fi, or Clouds APIs, giving users control over their connected environment.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Device Control",
+            "description": "Interfaces to control lights, sensors, locks, or industrial machinery remotely."
+          },
+          "example2": {
+            "title": "Real-Time Data",
+            "description": "Visualize sensor readings and status updates instantly on the mobile screen."
+          },
+          "example3": {
+            "title": "Connectivity",
+            "description": "Expertise in BLE (Bluetooth Low Energy), MQTT, and other IoT protocols."
+          }
+        }
+      },
+      "nextjs": {
+        "title": "Next.js Development",
+        "description": "The framework of choice for modern, high-performance web applications. Next.js offers server-side rendering and static generation, resulting in blazingly fast websites that Google loves ranking.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "SEO Optimized",
+            "description": "Server-side rendering ensures search engines can read your content perfectly."
+          },
+          "example2": {
+            "title": "Fast Loading",
+            "description": "Automatic image optimization and code splitting for near-instant page loads."
+          },
+          "example3": {
+            "title": "Scalable",
+            "description": "The same tech stack used by Netflix, TikTok, and Twitch to handle massive traffic."
+          }
+        }
+      },
+      "react": {
+        "title": "React Development",
+        "description": "Build dynamic, interactive user interfaces with the world's most popular JavaScript library. React allows us to create complex single-page applications (SPAs) that feel responsive and alive.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Interactive UI",
+            "description": "Seamless updates without page reloads, providing an app-like experience in the browser."
+          },
+          "example2": {
+            "title": "Component Based",
+            "description": "Modular code architecture that makes maintenance and future updates easier."
+          },
+          "example3": {
+            "title": "Huge Ecosystem",
+            "description": "Access to thousands of libraries and tools to solve any development challenge."
+          }
+        }
+      },
+      "angular": {
+        "title": "Angular Development",
+        "description": "Enterprise-grade web application development. Angular provides a robust, opinionated structure perfect for large-scale, complex business applications that need to be reliable and maintainable for years.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Structure & Stability",
+            "description": "Built with TypeScript and strict patterns ideal for large teams and projects."
+          },
+          "example2": {
+            "title": "Performance",
+            "description": "Powerful tools for handling complex data and state management efficiently."
+          },
+          "example3": {
+            "title": "Google Backed",
+            "description": "Supported by Google, ensuring long-term support and regular updates."
+          }
+        }
+      },
+      "vue": {
+        "title": "Vue.js Development",
+        "description": "The progressive JavaScript framework that balances power with simplicity. Vue is excellent for building lightweight, fast interfaces and integrating into existing projects smoothly.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Lightweight",
+            "description": "Tiny bundle size ensuring your application loads effectively instantly."
+          },
+          "example2": {
+            "title": "Versatile",
+            "description": "Great for both simple interactive widgets and full-blown single page apps."
+          },
+          "example3": {
+            "title": "Community Love",
+            "description": "One of the most starred projects on GitHub with a passionate developer community."
+          }
+        }
+      },
+      "ai_apps": {
+        "title": "AI-Powered Applications",
+        "description": "Transform your business with custom applications powered by Artificial Intelligence. We integrate models like GPT-4, Claude, or custom ML models directly into your software to automate complex cognitive tasks.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Content Generation",
+            "description": "Apps that can write reports, emails, or marketing copy automatically."
+          },
+          "example2": {
+            "title": "Data Analysis",
+            "description": "AI that scans thousands of documents or data points to find insights instantly."
+          },
+          "example3": {
+            "title": "Personalization",
+            "description": "Systems that adapt their content and recommendations based on user behavior."
+          }
+        }
+      },
+      "voice_agents": {
+        "title": "AI Voice Agents",
+        "description": "Automate your phone lines with intelligent AI Voice Agents. These systems can answer calls, book appointments, qualify leads, and handle customer service inquiries 24/7 without a human agent.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "24/7 Availability",
+            "description": "Never miss a customer call, even on weekends or holidays."
+          },
+          "example2": {
+            "title": "Natural Conversation",
+            "description": "Uses advanced voice synthesis to sound human and understand natural speech."
+          },
+          "example3": {
+            "title": "CRM Sync",
+            "description": "Automatically logs call details and appointments directly into your CRM."
+          }
+        }
+      },
+      "chatbots": {
+        "title": "Intelligent Chatbots",
+        "description": "Go beyond simple button-based bots. We build AI chatbots that understand context, intent, and nuance. Deploy them on your website or WhatsApp to handle support, sales, and bookings automatically.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Instant Support",
+            "description": "Resolve up to 80% of customer queries instantly without human intervention."
+          },
+          "example2": {
+            "title": "Lead Qualification",
+            "description": "Engage website visitors, ask qualifying questions, and capture lead info."
+          },
+          "example3": {
+            "title": "Multi-Channel",
+            "description": "Deploy the same bot across Web, WhatsApp, Telegram, and Messenger."
+          }
+        }
+      },
+      "workflow_automation": {
+        "title": "Workflow Automation",
+        "description": "Connect your disparate software tools into a unified, automated machine. We use tools like n8n and Make to trigger actions in one app based on events in another, removing manual data entry forever.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Zero Data Entry",
+            "description": "Sync leads from Facebook Ads directly to your CRM and Email marketing tool."
+          },
+          "example2": {
+            "title": "Document Gen",
+            "description": "Automatically generate contracts or invoices when a deal is won."
+          },
+          "example3": {
+            "title": "Notifications",
+            "description": "Get valid alerts on Slack or Teams only when specific important events occur."
+          }
+        }
+      },
+      "shopify": {
+        "title": "Shopify Development",
+        "description": "Launch your store on the world's leading e-commerce platform. We build custom Shopify themes and apps that differentiate your brand and drive sales, while leveraging Shopify's rock-solid infrastructure.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Custom Themes",
+            "description": "Unique designs that stand out from the generic templates used by competitors."
+          },
+          "example2": {
+            "title": "App Integration",
+            "description": "Seamless setup of reviews, loyalty programs, and inventory management apps."
+          },
+          "example3": {
+            "title": "Speed Optimization",
+            "description": "Ensuring your store loads fast to maximize conversion rates and SEO."
+          }
+        }
+      },
+      "magento": {
+        "title": "Magento (Adobe Commerce)",
+        "description": "For large-scale retailers needing absolute control. Magento allows for complex catalogs, multi-store setups, and deep custom functionality that simpler platforms cannot handle.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Scalability",
+            "description": "Built to handle thousands of products and high transaction volumes."
+          },
+          "example2": {
+            "title": "B2B Features",
+            "description": "Advanced pricing rules, customer groups, and bulk ordering capabilities."
+          },
+          "example3": {
+            "title": "Flexibility",
+            "description": "Complete control over every aspect of the functionality and checkout flow."
+          }
+        }
+      },
+      "digital_marketing": {
+        "title": "Digital Marketing",
+        "description": "Data-driven marketing strategies to grow your business. We don't just guess; we use analytics and testing to find the most effective channels to acquire customers for your specific niche.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Performance Marketing",
+            "description": "Campaigns focused on measurable results like leads and sales, not just 'likes'."
+          },
+          "example2": {
+            "title": "Content Strategy",
+            "description": "Creating valuable content that builds trust and authority in your industry."
+          },
+          "example3": {
+            "title": "Conversion Rate Opt",
+            "description": "Tweaking your website to ensure more visitors turn into paying customers."
+          }
+        }
+      },
+      "software_dev": {
+        "title": "Custom Software Dev",
+        "description": "Solve unique business problems with bespoke software. Whether it's a legacy system modernization or a brand new internal tool, we engineer robust software solutions tailored to your operational needs.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Tailored Fit",
+            "description": "Software that matches your workflow exactly, rather than forcing you to adapt."
+          },
+          "example2": {
+            "title": "Ownership",
+            "description": "You own the IP and code, giving you full control over your business asset."
+          },
+          "example3": {
+            "title": "Integration",
+            "description": "Built to talk to your existing databases and systems securely."
+          }
+        }
+      },
+      "designing": {
+        "title": "UI/UX Design Services",
+        "description": "Design that works. We combine aesthetics with usability principles to create interfaces that are not only beautiful but also intuitive and easy to use. Good design reduces friction and keeps users engaged.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "User Research",
+            "description": "Understanding your users' needs and pain points before drawing a single pixel."
+          },
+          "example2": {
+            "title": "Prototyping",
+            "description": "Interactive mockups that let you test the flow before development begins."
+          },
+          "example3": {
+            "title": "Design Systems",
+            "description": "Creating a library of reusable components to ensure consistency across products."
+          }
+        }
+      },
+      "other_services": {
+        "title": "Maintenance & Support",
+        "description": "Reliable technical partnership. We act as your external IT department, handling updates, security, and troubleshooting so you can focus on running your business without technical headaches.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Proactive Monitoring",
+            "description": "We fix issues before you even notice them using 24/7 monitoring tools."
+          },
+          "example2": {
+            "title": "Security Updates",
+            "description": "Regular patching of servers and CMS to protect against vulnerabilities."
+          },
+          "example3": {
+            "title": "Priority Helpdesk",
+            "description": "Direct access to our team for quick resolution of any technical questions."
           }
         }
       }
@@ -268,39 +648,113 @@
   "servicesv2": {
     "title": "Our Core Services",
     "subtitle": "Web design, branding & automation solutions tailored for Swiss entrepreneurs and SMEs",
-    "badge": "More info",
-    "items": {
-      "branding": {
-        "title": "Branding & Identity",
-        "description": "Logo design, brand colors outlines, guidelines, social media kit"
+    "badge": "View details",
+    "categories": {
+      "mobile": {
+        "title": "Mobile App Development"
       },
-      "websites": {
-        "title": "Websites",
-        "description": "One-page, multi-page, landing pages + SEO + analytics"
+      "web": {
+        "title": "Web Development"
       },
-      "hosting": {
-        "title": "Hosting & Domain",
-        "description": "Secure hosting, domain management, SSL, backups"
+      "ai": {
+        "title": "AI Solutions"
       },
-      "support": {
-        "title": "Support Plans",
-        "description": "Essential, Growth, and Automation Care tiers"
-      },
-      "automation": {
-        "title": "Business Automation",
-        "description": "Lead capture, follow-ups, appointment booking, CRM integrations (n8n)"
-      },
-      "ai_addons": {
-        "title": "AI Add-Ons",
-        "description": "FAQ chatbots, RAG knowledge bases, AI support flows"
-      },
-      "custom_apps": {
-        "title": "Custom Web Apps",
-        "description": "Client portals, dashboards, admin areas"
+      "ecommerce": {
+        "title": "E-Commerce Development"
       },
       "marketing": {
-        "title": "Marketing & Lead Gen",
-        "description": "Google Ads, social media content, lead capture systems"
+        "title": "Digital Marketing Agency"
+      },
+      "software": {
+        "title": "Software Development"
+      },
+      "design": {
+        "title": "Designing Services"
+      },
+      "other": {
+        "title": "Other Services"
+      }
+    },
+    "items": {
+      "android": {
+        "title": "Android App Development",
+        "description": "Scalable Android App Development Solutions"
+      },
+      "iphone": {
+        "title": "iPhone App Development",
+        "description": "iOS App Development Services"
+      },
+      "ipad": {
+        "title": "iPad App Development",
+        "description": "Custom iPad App Development"
+      },
+      "react_native": {
+        "title": "React Native Development",
+        "description": "Cross-platform React Native App Development"
+      },
+      "flutter": {
+        "title": "Flutter App Development",
+        "description": "Best Flutter App Development"
+      },
+      "iot_app": {
+        "title": "IOT App Development",
+        "description": "Smart IoT App Development"
+      },
+      "nextjs": {
+        "title": "Next.js Development",
+        "description": "High-performance React Framework"
+      },
+      "react": {
+        "title": "React Development",
+        "description": "Dynamic Front-end Interfaces"
+      },
+      "angular": {
+        "title": "Angular Development",
+        "description": "Enterprise-grade Web Applications"
+      },
+      "vue": {
+        "title": "Vue.js Development",
+        "description": "Progressive JavaScript Framework"
+      },
+      "ai_apps": {
+        "title": "Ai-Powered Apps",
+        "description": "Advanced AI-powered App Development"
+      },
+      "voice_agents": {
+        "title": "Voice Agents",
+        "description": "AI Voice Agent Development Solutions"
+      },
+      "chatbots": {
+        "title": "Chatbots",
+        "description": "Intelligent AI Chatbot Development"
+      },
+      "workflow_automation": {
+        "title": "Workflow automation",
+        "description": "Workflow Automation Solutions"
+      },
+      "shopify": {
+        "title": "Shopify Development",
+        "description": "Launch custom online stores"
+      },
+      "magento": {
+        "title": "Magento Development",
+        "description": "Flexible, robust online stores"
+      },
+      "digital_marketing": {
+        "title": "Digital Marketing",
+        "description": "Strategize and Grow your business online"
+      },
+      "software_dev": {
+        "title": "Software Development",
+        "description": "Custom Software Solutions for your needs"
+      },
+      "designing": {
+        "title": "Designing Services",
+        "description": "Creative UI/UX Design for web and mobile"
+      },
+      "other_services": {
+        "title": "Maintenance & Support",
+        "description": "Keeping your digital assets running smoothly"
       }
     },
     "process": {
@@ -1057,6 +1511,10 @@
     "elite": {
       "title": "Elite Estates - Luxury Real Estate",
       "description": "Exclusive real estate website showcasing ultra-premium properties worldwide. Features elegant black and gold design, sophisticated property search, and white-glove concierge services for discerning clientele."
+    },
+    "serene": {
+      "title": "Serene Spa - Holistic Wellness",
+      "description": "A tranquil wellness website featuring a calming sage green aesthetic, detailed treatment menus, and an elegant booking experience. Designed to embody peace and rejuvenation."
     },
     "orbitcrm": {
       "title": "OrbitCRM - AI-Powered Customer Management",

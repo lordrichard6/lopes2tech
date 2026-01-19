@@ -13,6 +13,11 @@ export const routes: Routes = [
     canActivate: [seoGuard]
   },
   {
+    path: 'services',
+    loadComponent: () => import('./components/services-page/services-page').then(m => m.ServicesPageComponent),
+    canActivate: [seoGuard]
+  },
+  {
     path: 'support-theraflow',
     loadComponent: () => import('./components/support-theraflow/support-theraflow').then(m => m.SupportTheraflowComponent),
     canActivate: [seoGuard]

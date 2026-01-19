@@ -143,6 +143,14 @@ export class Portfolio implements AfterViewInit, OnDestroy {
       category: 'Luxury Real Estate',
       type: 'website',
       link: 'https://elite-estates-psi.vercel.app/'
+    },
+    {
+      titleKey: 'portfolio.serene.title',
+      descKey: 'portfolio.serene.description',
+      image: '/proj/serene_spa_mockup.png',
+      category: 'Wellness & Luxury',
+      type: 'website',
+      link: 'https://serene-spa-tawny.vercel.app/'
     }
   ];
 

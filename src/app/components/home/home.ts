@@ -25,7 +25,7 @@ import { WhatsappButtonComponent } from '../whatsapp-button/whatsapp-button.comp
   ],
   template: `
     <app-hero></app-hero>
-    <app-servicesv2></app-servicesv2>
+    <app-servicesv2 [isSummary]="true"></app-servicesv2>
     <app-packages></app-packages>
     <app-about></app-about>
     <app-portfolio></app-portfolio>
