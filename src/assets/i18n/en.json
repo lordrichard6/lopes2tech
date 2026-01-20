@@ -282,9 +282,9 @@
           }
         }
       },
-      "iphone": {
+      "ios": {
         "title": "iOS App Development",
-        "description": "Deliver a premium experience to iPhone users with a native iOS app. We specialize in building secure, high-performance applications using Swift that leverage the latest Apple technologies.",
+        "description": "Deliver a premium experience to iPhone and iPad users with native iOS apps. We specialize in building secure, high-performance applications using Swift that leverage the latest Apple technologies.",
         "examples": {
           "title": "Key Features",
           "example1": {
@@ -292,31 +292,12 @@
             "description": "Developed using Apple's latest language for best-in-class performance and stability."
           },
           "example2": {
-            "title": "App Store Approval",
-            "description": "We handle the rigorous App Store submission process to get your app approved and live."
+            "title": "Universal Apps",
+            "description": "One application optimized for both iPhone and iPad screens."
           },
           "example3": {
             "title": "Apple Ecosystem",
             "description": "Integration with FaceID, Apple Pay, and other core iOS features."
-          }
-        }
-      },
-      "ipad": {
-        "title": "iPad App Development",
-        "description": "Take advantage of the larger screen real estate with custom iPad applications. Perfect for enterprise tools, educational apps, or creative dashboards that require more space and touch precision.",
-        "examples": {
-          "title": "Key Features",
-          "example1": {
-            "title": "Tablet Optimized",
-            "description": "Interfaces specifically designed for larger layouts, split screens, and multitasking."
-          },
-          "example2": {
-            "title": "Enterprise Usage",
-            "description": "Ideal for POS systems, kiosks, or internal business tools used by field staff."
-          },
-          "example3": {
-            "title": "Apple Pencil",
-            "description": "Support for precision inputs and creative workflows using the Apple Pencil."
           }
         }
       },
@@ -336,25 +317,6 @@
           "example3": {
             "title": "Easy Updates",
             "description": "Push over-the-air updates to your app instantly without waiting for app store reviews."
-          }
-        }
-      },
-      "flutter": {
-        "title": "Flutter Development",
-        "description": "Create beautiful, natively compiled applications from a single codebase with Google's Flutter framework. Known for its expressive UI and fast performance, Flutter is perfect for apps with custom designs and complex animations.",
-        "examples": {
-          "title": "Key Features",
-          "example1": {
-            "title": "Stunning UI",
-            "description": "Pixel-perfect rendering on all devices, allowing for highly custom brand designs."
-          },
-          "example2": {
-            "title": "Fast Performance",
-            "description": "Compiles to native ARM code, ensuring your app runs at 60fps or 120fps."
-          },
-          "example3": {
-            "title": "Multi-Platform",
-            "description": "Potential to run on Mobile, Web, and Desktop from the same project source."
           }
         }
       },
@@ -434,22 +396,60 @@
           }
         }
       },
-      "vue": {
-        "title": "Vue.js Development",
-        "description": "The progressive JavaScript framework that balances power with simplicity. Vue is excellent for building lightweight, fast interfaces and integrating into existing projects smoothly.",
+      "ai_consulting": {
+        "title": "AI Strategy & Consulting",
+        "description": "Don't just jump on the AI bandwagon—build a roadmap. We analyze your business model to identify high-impact opportunities where AI can save costs or generate new revenue.",
         "examples": {
           "title": "Key Features",
           "example1": {
-            "title": "Lightweight",
-            "description": "Tiny bundle size ensuring your application loads effectively instantly."
+            "title": "Audit & Strategy",
+            "description": "Comprehensive review of your current tech stack to find AI integration points."
           },
           "example2": {
-            "title": "Versatile",
-            "description": "Great for both simple interactive widgets and full-blown single page apps."
+            "title": "Feasibility study",
+            "description": "Technical and financial analysis to ensure your AI project is viable and profitable."
           },
           "example3": {
-            "title": "Community Love",
-            "description": "One of the most starred projects on GitHub with a passionate developer community."
+            "title": "Vendor Selection",
+            "description": "Guidance on choosing the right models (OpenAI, Anthropic, Open Source) for your needs."
+          }
+        }
+      },
+      "knowledge_base": {
+        "title": "Knowledge Bases (RAG)",
+        "description": "Empower your AI to speak your language. We build Retrieval-Augmented Generation (RAG) systems that let AI read and cite your internal documents, PDFs, and databases securely.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Chat with Data",
+            "description": "Instant answers from your company handbook, legal contracts, or technical manuals."
+          },
+          "example2": {
+            "title": "Data Privacy",
+            "description": "Secure architecture where your proprietary data never trains public models."
+          },
+          "example3": {
+            "title": "Always Accurate",
+            "description": "AI responses include citations to the exact source document to prevent hallucinations."
+          }
+        }
+      },
+      "intelligent_assistants": {
+        "title": "Intelligent Assistants",
+        "description": "Go beyond basic chatbots. We build autonomous agents that can plan tasks, use tools, and execute workflows to solve complex customer or employee problems independently.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "24/7 Support",
+            "description": "Handle customer inquiries instantly at any time of day, in any language."
+          },
+          "example2": {
+            "title": "Task Execution",
+            "description": "Agents that can book meetings, update CRMs, or process refunds automatically."
+          },
+          "example3": {
+            "title": "Multi-Channel",
+            "description": "Deploy on your website, WhatsApp, Slack, or Microsoft Teams simultaneously."
           }
         }
       },
@@ -529,41 +529,41 @@
           }
         }
       },
-      "shopify": {
-        "title": "Shopify Development",
-        "description": "Launch your store on the world's leading e-commerce platform. We build custom Shopify themes and apps that differentiate your brand and drive sales, while leveraging Shopify's rock-solid infrastructure.",
+      "custom_ecommerce": {
+        "title": "Custom E-commerce",
+        "description": "Stop wrestling with rigid templates. We build high-performance custom stores using Next.js and Stripe. Get a checkout flow that exactly matches your business logic and design requirements.",
         "examples": {
           "title": "Key Features",
           "example1": {
-            "title": "Custom Themes",
-            "description": "Unique designs that stand out from the generic templates used by competitors."
+            "title": "Unmatched Speed",
+            "description": "Pre-rendered pages that load instantly, leading to higher conversion rates."
           },
           "example2": {
-            "title": "App Integration",
-            "description": "Seamless setup of reviews, loyalty programs, and inventory management apps."
+            "title": "No Restrictions",
+            "description": "Implement any feature, subscription model, or bundle logic without plugin limitations."
           },
           "example3": {
-            "title": "Speed Optimization",
-            "description": "Ensuring your store loads fast to maximize conversion rates and SEO."
+            "title": "Lower Fees",
+            "description": "Avoid high monthly platform fees and transaction taxes charged by SaaS providers."
           }
         }
       },
-      "magento": {
-        "title": "Magento (Adobe Commerce)",
-        "description": "For large-scale retailers needing absolute control. Magento allows for complex catalogs, multi-store setups, and deep custom functionality that simpler platforms cannot handle.",
+      "headless_commerce": {
+        "title": "Headless Commerce",
+        "description": "Future-proof your retail business. We decouple the frontend (what customers see) from the backend (your data). This allows you to sell on your website, mobile app, and smart screens from a single source of truth.",
         "examples": {
           "title": "Key Features",
           "example1": {
-            "title": "Scalability",
-            "description": "Built to handle thousands of products and high transaction volumes."
+            "title": "Omnichannel",
+            "description": "Manage products in one place and push them to every device and platform instantly."
           },
           "example2": {
-            "title": "B2B Features",
-            "description": "Advanced pricing rules, customer groups, and bulk ordering capabilities."
+            "title": "Scalable",
+            "description": "Architecture designed to handle massive traffic spikes without crashing."
           },
           "example3": {
-            "title": "Flexibility",
-            "description": "Complete control over every aspect of the functionality and checkout flow."
+            "title": "Best of Breed",
+            "description": "Combine the best CMS (like Sanity) with the best Payment processor (Stripe) seamlessly."
           }
         }
       },
@@ -586,46 +586,198 @@
           }
         }
       },
-      "software_dev": {
-        "title": "Custom Software Dev",
-        "description": "Solve unique business problems with bespoke software. Whether it's a legacy system modernization or a brand new internal tool, we engineer robust software solutions tailored to your operational needs.",
+      "programmatic_seo": {
+        "title": "Programmatic SEO",
+        "description": "Dominate search results by generating thousands of unique, high-value landing pages at scale. Perfect for businesses targeting multiple locations, industries, or use-cases without writing content manually.",
         "examples": {
           "title": "Key Features",
           "example1": {
-            "title": "Tailored Fit",
-            "description": "Software that matches your workflow exactly, rather than forcing you to adapt."
+            "title": "Massive Scale",
+            "description": "Launch 100s or 1000s of pages targeting long-tail keywords (e.g., 'Best Dentist in [City]')."
           },
           "example2": {
-            "title": "Ownership",
-            "description": "You own the IP and code, giving you full control over your business asset."
+            "title": "Automated Content",
+            "description": "Use data and AI to populate unique page titles, headers, and local information dynamically."
           },
           "example3": {
-            "title": "Integration",
-            "description": "Built to talk to your existing databases and systems securely."
+            "title": "Traffic Growth",
+            "description": "Capture high-intent traffic from users searching for very specific solutions."
           }
         }
       },
-      "designing": {
-        "title": "UI/UX Design Services",
-        "description": "Design that works. We combine aesthetics with usability principles to create interfaces that are not only beautiful but also intuitive and easy to use. Good design reduces friction and keeps users engaged.",
+      "enterprise_apps": {
+        "title": "Enterprise Web Apps",
+        "description": "Scalable, secure, and robust web applications designed for mission-critical business operations. We build software that grows with your company.",
         "examples": {
           "title": "Key Features",
           "example1": {
-            "title": "User Research",
+            "title": "High Availability",
+            "description": "Systems engineered to stay online and performant under heavy load."
+          },
+          "example2": {
+            "title": "Security First",
+            "description": "Implementation of best practices to protect sensitive corporate and user data."
+          },
+          "example3": {
+            "title": "Integration",
+            "description": "Seamlessly connect with your existing legacy systems or third-party APIs."
+          }
+        }
+      },
+      "saas_platform": {
+        "title": "SaaS Platform Development",
+        "description": "Turn your disruptive idea into a market-ready subscription product. We build end-to-end SaaS solutions including authentication, subscription billing, and tenant management.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Multi-Tenancy",
+            "description": "Securely serve multiple customers from a single application instance."
+          },
+          "example2": {
+            "title": "Subscription Billing",
+            "description": "Built-in integration with Stripe to handle recurring payments and plans."
+          },
+          "example3": {
+            "title": "Admin Portals",
+            "description": "Powerful dashboards for you to manage users and monitor platform usage."
+          }
+        }
+      },
+      "internal_tools": {
+        "title": "Internal Business Tools",
+        "description": "Streamline your operations by replacing spreadsheets and manual processes with custom internal tools. We build dashboards, CRMs, and inventory systems tailored to your workflow.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Efficiency",
+            "description": "Automate repetitive data entry and reporting tasks."
+          },
+          "example2": {
+            "title": "Role-Based Access",
+            "description": "Control who sees what data with granular permission settings."
+          },
+          "example3": {
+            "title": "Custom Workflows",
+            "description": "Map the software exactly to how your team actually works."
+          }
+        }
+      },
+      "product_design": {
+        "title": "Product Design (UI/UX)",
+        "description": "More than just pretty screens. We design complete user journeys that are intuitive, accessible, and optimized for conversion. From wireframes to high-fidelity prototypes.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "UX Research",
             "description": "Understanding your users' needs and pain points before drawing a single pixel."
           },
           "example2": {
             "title": "Prototyping",
-            "description": "Interactive mockups that let you test the flow before development begins."
+            "description": "Interactive mockups that let you test the flow and feel before development begins."
           },
           "example3": {
-            "title": "Design Systems",
-            "description": "Creating a library of reusable components to ensure consistency across products."
+            "title": "Mobile First",
+            "description": "Designs that look and work perfectly on every device size and orientation."
           }
         }
       },
-      "other_services": {
-        "title": "Maintenance & Support",
+      "brand_identity": {
+        "title": "Brand Identity",
+        "description": "Stand out in a crowded market. We create a cohesive visual language for your business, including logo, color palette, typography, and voice that resonates with your target audience.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Logo Design",
+            "description": "Memorable, versatile logos that work on a favicon or a billboard."
+          },
+          "example2": {
+            "title": "Style Guide",
+            "description": "A rulebook for your brand to ensure consistency across all marketing channels."
+          },
+          "example3": {
+            "title": "Assets Kit",
+            "description": "Ready-to-use files for social media, business cards, and slide decks."
+          }
+        }
+      },
+      "design_systems": {
+        "title": "Design Systems Strategy",
+        "description": "Scale your product faster. We build a library of reusable UI components and tokens (colors, spacing) that allows your developers to build consistent interfaces at 10x speed.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Component Library",
+            "description": "A set of coded buttons, inputs, and cards ready for your dev team."
+          },
+          "example2": {
+            "title": "Documentation",
+            "description": "Clear guidelines on how and when to use each component."
+          },
+          "example3": {
+            "title": "Consistency",
+            "description": "Eliminate 'design debt' and inconsistent UI across your platform."
+          }
+        }
+      },
+      "cloud_devops": {
+        "title": "Cloud & DevOps",
+        "description": "Stop worrying about servers. We handle the deployment, hosting, and scaling of your applications on modern cloud platforms like AWS, Vercel, or DigitalOcean.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "CI/CD Pipelines",
+            "description": "Automated testing and deployment so you can release new features daily without breaking things."
+          },
+          "example2": {
+            "title": "Infrastructure as Code",
+            "description": "Reproducible, secure server setups that can be restored instantly in case of disaster."
+          },
+          "example3": {
+            "title": "Cost Optimization",
+            "description": "Analyzing your cloud bills to reduce waste and ensure you only pay for what you use."
+          }
+        }
+      },
+      "api_integration": {
+        "title": "API Development & Integration",
+        "description": "Connect your disconnected tools. We build custom APIs to bridge the gap between your CRM, ERP, and un-integrated software, enabling real-time data flow across your business.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Custom Data Connectors",
+            "description": "Sync data between HubSpot, Salesforce, and your custom web app automatically."
+          },
+          "example2": {
+            "title": "Secure Endpoints",
+            "description": "Bank-grade security standards (OAuth2, JWT) to protect your data during transit."
+          },
+          "example3": {
+            "title": "Real-time Webhooks",
+            "description": "Trigger instant actions in one system when an event happens in another."
+          }
+        }
+      },
+      "tech_audits": {
+        "title": "Technical Audits",
+        "description": "Get a clear picture of your code health. We review your existing codebase or architecture to identify security risks, performance bottlenecks, and scalability issues.",
+        "examples": {
+          "title": "Key Features",
+          "example1": {
+            "title": "Code Review",
+            "description": "Line-by-line analysis to find bugs and bad practices before they cause downtime."
+          },
+          "example2": {
+            "title": "Performance Report",
+            "description": "Actionable steps to make your website load faster and rank higher on Google."
+          },
+          "example3": {
+            "title": "Security Scan",
+            "description": "Identifying vulnerabilities that hackers could exploit to steal data."
+          }
+        }
+      },
+      "managed_support": {
+        "title": "Managed Support Plans",
         "description": "Reliable technical partnership. We act as your external IT department, handling updates, security, and troubleshooting so you can focus on running your business without technical headaches.",
         "examples": {
           "title": "Key Features",
@@ -672,7 +824,7 @@
         "title": "Designing Services"
       },
       "other": {
-        "title": "Other Services"
+        "title": "Technical Infrastructure"
       }
     },
     "items": {
@@ -680,21 +832,13 @@
         "title": "Android App Development",
         "description": "Scalable Android App Development Solutions"
       },
-      "iphone": {
-        "title": "iPhone App Development",
-        "description": "iOS App Development Services"
-      },
-      "ipad": {
-        "title": "iPad App Development",
-        "description": "Custom iPad App Development"
+      "ios": {
+        "title": "iOS App Development",
+        "description": "Premium Native Apps for iPhone & iPad"
       },
       "react_native": {
         "title": "React Native Development",
         "description": "Cross-platform React Native App Development"
-      },
-      "flutter": {
-        "title": "Flutter App Development",
-        "description": "Best Flutter App Development"
       },
       "iot_app": {
         "title": "IOT App Development",
@@ -712,9 +856,17 @@
         "title": "Angular Development",
         "description": "Enterprise-grade Web Applications"
       },
-      "vue": {
-        "title": "Vue.js Development",
-        "description": "Progressive JavaScript Framework"
+      "ai_consulting": {
+        "title": "AI Strategy & Consulting",
+        "description": "Strategic Roadmap for AI Adoption"
+      },
+      "knowledge_base": {
+        "title": "Knowledge Bases (RAG)",
+        "description": "Chat with your Company Data"
+      },
+      "intelligent_assistants": {
+        "title": "Intelligent Assistants",
+        "description": "Autonomous Agents for Complex Tasks"
       },
       "ai_apps": {
         "title": "Ai-Powered Apps",
@@ -724,37 +876,65 @@
         "title": "Voice Agents",
         "description": "AI Voice Agent Development Solutions"
       },
-      "chatbots": {
-        "title": "Chatbots",
-        "description": "Intelligent AI Chatbot Development"
-      },
       "workflow_automation": {
         "title": "Workflow automation",
         "description": "Workflow Automation Solutions"
       },
-      "shopify": {
-        "title": "Shopify Development",
-        "description": "Launch custom online stores"
+      "custom_ecommerce": {
+        "title": "Custom E-commerce",
+        "description": "High-performance stores with Next.js & Stripe"
       },
-      "magento": {
-        "title": "Magento Development",
-        "description": "Flexible, robust online stores"
+      "headless_commerce": {
+        "title": "Headless Commerce",
+        "description": "Scalable, decoupled retail architecture"
       },
       "digital_marketing": {
         "title": "Digital Marketing",
         "description": "Strategize and Grow your business online"
       },
-      "software_dev": {
-        "title": "Software Development",
-        "description": "Custom Software Solutions for your needs"
+      "programmatic_seo": {
+        "title": "Programmatic SEO",
+        "description": "Scale Organic Traffic via Code"
       },
-      "designing": {
-        "title": "Designing Services",
-        "description": "Creative UI/UX Design for web and mobile"
+      "enterprise_apps": {
+        "title": "Enterprise Web Apps",
+        "description": "Mission-critical Business Software"
       },
-      "other_services": {
-        "title": "Maintenance & Support",
-        "description": "Keeping your digital assets running smoothly"
+      "saas_platform": {
+        "title": "SaaS Platform Development",
+        "description": "Launch your Subscription Product"
+      },
+      "internal_tools": {
+        "title": "Internal Business Tools",
+        "description": "Custom Dashboards & CRMs"
+      },
+      "product_design": {
+        "title": "Product Design (UI/UX)",
+        "description": "User-Centric Interface Design"
+      },
+      "brand_identity": {
+        "title": "Brand Identity",
+        "description": "Logos & Visual Language"
+      },
+      "design_systems": {
+        "title": "Design Systems",
+        "description": "Scalable UI Component Libraries"
+      },
+      "cloud_devops": {
+        "title": "Cloud & DevOps",
+        "description": "Deployment & Scaling"
+      },
+      "api_integration": {
+        "title": "API Integration",
+        "description": "Connect Software & Data"
+      },
+      "tech_audits": {
+        "title": "Technical Audits",
+        "description": "Codebase & Security Reviews"
+      },
+      "managed_support": {
+        "title": "Managed Support",
+        "description": "Maintenance & Upgrades"
       }
     },
     "process": {

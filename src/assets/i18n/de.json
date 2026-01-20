@@ -80,196 +80,659 @@
       "title": "Praxisbeispiele"
     },
     "services": {
-      "branding": {
-        "title": "Branding & Identität",
-        "description": "Ihre Marke ist mehr als nur ein Logo – es ist, wie die Welt Sie wahrnimmt. Wir entwickeln vollständige visuelle Identitäten, die Ihre Geschichte erzählen, Vertrauen aufbauen und Sie von der Konkurrenz abheben. Von Start-ups in der Frühphase bis hin zu etablierten Unternehmen schaffen wir kohärente Designsysteme, die auf allen Plattformen funktionieren.",
+      "android": {
+        "title": "Android Entwicklung",
+        "description": "Robuste native Apps für das Android-Ökosystem. Wir bauen performante Apps, die auf einer Vielzahl von Geräten funktionieren.",
         "examples": {
-          "title": "Was ist enthalten",
+          "title": "Hauptfunktionen",
           "example1": {
-            "title": "Logo-Design",
-            "description": "Einprägsame, skalierbare und einzigartige Zeichen, die als Eckpfeiler Ihrer Markenidentität dienen."
+            "title": "Material Design",
+            "description": "Interfaces, die den Google-Richtlinien folgen, für eine vertraute Nutzererfahrung."
           },
           "example2": {
-            "title": "Markenrichtlinien",
-            "description": "Umfassende PDF-Leitfäden, die Ihre Typografie, Farbpalette und Nutzungsregeln definieren, um Konsistenz zu gewährleisten."
+            "title": "Hardware-Integration",
+            "description": "Nutzung von Kamera, GPS und Sensoren für reichhaltige Funktionen."
           },
           "example3": {
-            "title": "Social Media Kit",
-            "description": "Gebrauchsfertige Profilbilder, Banner und Beitragsvorlagen, die auf Instagram, LinkedIn und Facebook zugeschnitten sind."
+            "title": "Play Store Veröffentlichung",
+            "description": "Vollständiges Management des Launch-Prozesses und der Compliance."
           }
         }
       },
-      "websites": {
-        "title": "Hochleistungs-Websites",
-        "description": "Wir bauen nicht nur Websites; wir bauen digitale Assets, die das Wachstum vorantreiben. Egal, ob Sie eine einfache Landingpage oder eine komplexe mehrseitige Plattform benötigen, unsere Seiten sind schnell, SEO-optimiert und mobil-perfekt. Wir konzentrieren uns auf Conversion-Design, um Besucher in zahlende Kunden zu verwandeln.",
+      "ios": {
+        "title": "iOS Entwicklung",
+        "description": "Premium-Apps für iPhone und iPad. Wir fokussieren uns auf flüssige Erlebnisse und pixel-genaues Design mit Swift und SwiftUI.",
         "examples": {
-          "title": "Unsere Web-Lösungen",
+          "title": "Hauptfunktionen",
           "example1": {
-            "title": "Landing Pages",
-            "description": "Einseitige Websites, die mit einem einzigen Ziel entwickelt wurden: Konversion. Perfekt für Anzeigen, Kampagnen oder neue Produkteinführungen."
+            "title": "Nativ & Schnell",
+            "description": "Unschlagbare Performance durch native Apple-Technologien."
           },
           "example2": {
-            "title": "Unternehmenswebsites",
-            "description": "Mehrseitige Informationszentren, die Autorität aufbauen, Ihr Team präsentieren und Ihre Dienstleistungen detailliert beschreiben."
+            "title": "Sicherheit",
+            "description": "Integration mit FaceID und Apple-Verschlüsselungsstandards."
           },
           "example3": {
-            "title": "E-Commerce",
-            "description": "Sichere, benutzerfreundliche Online-Shops, die den Kauf einfach machen, integriert mit Stripe oder lokalen Zahlungsanbietern."
+            "title": "Ökosystem",
+            "description": "Nahtlose Synchronisation mit Apple Watch und Widgets."
           }
         }
       },
-      "hosting": {
-        "title": "Managed Hosting & Domains",
-        "description": "Sorgen Sie sich nicht mehr um Server-Updates, Ausfallzeiten oder Sicherheit. Wir kümmern uns um die gesamte technische Infrastruktur, damit Sie sich auf Ihr Geschäft konzentrieren können. Unser Hosting ist auf Geschwindigkeit optimiert und speziell auf die Technologien abgestimmt, mit denen wir bauen.",
+      "react_native": {
+        "title": "React Native Entwicklung",
+        "description": "Eine Codebasis, zwei Plattformen. Erstellen Sie Apps für iOS und Android gleichzeitig ohne Qualitätseinbußen.",
         "examples": {
-          "title": "Hosting-Funktionen",
+          "title": "Hauptfunktionen",
           "example1": {
-            "title": "Sicheres Cloud-Hosting",
-            "description": "Blitzschnelle Server in Premium-Rechenzentren mit 99,9 % Verfügbarkeitsgarantie."
+            "title": "Kosteneffizienz",
+            "description": "Entwickeln Sie 40% schneller durch Teilen der Logik zwischen Plattformen."
           },
           "example2": {
-            "title": "Tägliche Backups",
-            "description": "Automatische tägliche Backups Ihrer Dateien und Datenbanken, damit Ihre Daten nie verloren gehen."
+            "title": "OTA Updates",
+            "description": "Aktualisieren Sie Ihre App sofort, ohne auf Store-Freigaben zu warten."
           },
           "example3": {
-            "title": "SSL & Sicherheit",
-            "description": "Kostenlose SSL-Zertifikate (HTTPS) und Firewalls auf Unternehmensniveau, um Ihre Website und Besucher zu schützen."
+            "title": "Native Performance",
+            "description": "Komponenten, die sich wie nativ verhalten, für ein flüssiges Erlebnis."
           }
         }
       },
-      "support": {
-        "title": "Laufende Support-Pläne",
-        "description": "Technologie erfordert Wartung. Unsere Support-Pläne stellen sicher, dass Ihre Website oder Anwendung schnell, sicher und mit den neuesten Browser-Updates kompatibel bleibt. Betrachten Sie es als Versicherung für Ihre digitale Präsenz – wir sind nur eine Nachricht entfernt.",
+      "iot_app": {
+        "title": "IoT Apps",
+        "description": "Steuern Sie die physische Welt. Wir entwickeln Apps, die mit intelligenter Hardware kommunizieren, von Smart Home bis zu Industriesensoren.",
         "examples": {
-          "title": "Support-Stufen",
+          "title": "Hauptfunktionen",
           "example1": {
-            "title": "Essential Care",
-            "description": "Standard-Updates, Sicherheitspatches und monatliche Gesundheitschecks, damit alles reibungslos läuft."
+            "title": "Bluetooth/BLE",
+            "description": "Verbindung mit geringer Latenz zu Geräten in der Nähe."
           },
           "example2": {
-            "title": "Growth Support",
-            "description": "Beinhaltet Inhaltsaktualisierungen, bevorzugten E-Mail-Support und Leistungsoptimierungen."
+            "title": "Echtzeit-Monitoring",
+            "description": "Visualisierung von Sensordaten in Echtzeit."
           },
           "example3": {
-            "title": "Automation Care",
-            "description": "Dedizierter Support für Ihre kritischen Automatisierungsworkflows, um sicherzustellen, dass Leads und Daten immer korrekt fließen."
+            "title": "Fernsteuerung",
+            "description": "Gerätemanagement von überall aus."
           }
         }
       },
-      "automation": {
-        "title": "Geschäftsautomatisierung",
-        "description": "Eliminieren Sie die Fleißarbeit. Wir verbinden Ihre Lieblings-Apps (Gmail, Slack, Trello, CRM), um nahtlose Workflows zu erstellen. Daten sollten sich automatisch zwischen Ihren Systemen bewegen, ohne dass Sie einen Finger rühren müssen, was Ihnen jede Woche Stunden manueller Verwaltungsarbeit erspart.",
+      "nextjs": {
+        "title": "Next.js Entwicklung",
+        "description": "Der Standard für das moderne Web. Superschnelle statische Seiten und dynamische Apps mit Server-Side-Rendering für besseres SEO.",
         "examples": {
-          "title": "Automatisierungsbeispiele",
+          "title": "Hauptfunktionen",
           "example1": {
-            "title": "Lead-Erfassung & CRM",
-            "description": "Senden Sie Website-Leads automatisch an Ihr CRM (HubSpot, Pipedrive) und benachrichtigen Sie Ihr Vertriebsteam auf Slack."
+            "title": "Überlegenes SEO",
+            "description": "Seiten, die Google liebt und sofort indexiert."
           },
           "example2": {
-            "title": "Terminbuchung",
-            "description": "Synchronisieren Sie Kalender, senden Sie automatische Bestätigungen/Erinnerungen und generieren Sie Zoom-Links ohne E-Mail-Verkehr."
+            "title": "Extreme Performance",
+            "description": "Sofortiges Laden mit automatischer Bildoptimierung."
           },
           "example3": {
-            "title": "Rechnungsstellung & Zahlungen",
-            "description": "Lösen Sie die Rechnungserstellung aus und senden Sie Zahlungsbelege automatisch, wenn eine Projektphase abgeschlossen ist."
+            "title": "Skalierbarkeit",
+            "description": "Architektur bereit für Millionen von Nutzern."
           }
         }
       },
-      "ai_addons": {
-        "title": "KI-Integrationen",
-        "description": "Nutzen Sie die Kraft der Künstlichen Intelligenz, um Ihr Kundenerlebnis zu verbessern. Wir integrieren modernste KI-Modelle direkt in Ihre Geschäftsprozesse, um Fragen zu beantworten, Daten zu verarbeiten oder Inhalte zu generieren.",
+      "react": {
+        "title": "React Entwicklung",
+        "description": "Interaktive und dynamische Schnittstellen. Wir bauen Single Page Applications (SPAs), die sich im Browser wie native Apps anfühlen.",
         "examples": {
-          "title": "KI-Fähigkeiten",
+          "title": "Hauptfunktionen",
           "example1": {
-            "title": "FAQ-Chatbots",
-            "description": "Rund um die Uhr intelligente Assistenten, die häufige Kundenfragen sofort auf Ihrer Website beantworten."
+            "title": "Interaktivität",
+            "description": "Reichhaltige Erlebnisse ohne Neuladen der Seite."
           },
           "example2": {
-            "title": "RAG-Wissensdatenbank",
-            "description": "KI, die Ihre internen Dokumente (PDFs, Notion) 'liest', um Fragen von Mitarbeitern oder Kunden präzise zu beantworten."
+            "title": "Modulare Komponenten",
+            "description": "Wiederverwendbarer Code, der die zukünftige Wartung erleichtert."
           },
           "example3": {
-            "title": "Intelligentes Routing",
-            "description": "KI, die eingehende E-Mails oder Tickets kategorisiert und sie automatisch der richtigen Abteilung zuweist."
+            "title": "Riesiges Ökosystem",
+            "description": "Einfache Integration mit jeder existierenden Bibliothek oder API."
           }
         }
       },
-      "custom_apps": {
-        "title": "Individuelle Web-Apps",
-        "description": "Wenn Standardsoftware nicht ausreicht, entwickeln wir maßgeschneiderte Lösungen, die genau auf Ihre Arbeitsabläufe zugeschnitten sind. Von Kundenportalen bis hin zu internen Dashboards erstellen wir sichere, skalierbare Web-Apps, die Ihre betriebliche Effizienz maximieren.",
+      "angular": {
+        "title": "Angular Entwicklung",
+        "description": "Robuster Rahmen für Unternehmen. Ideal für groß angelegte Anwendungen, Bankportale und komplexe Managementsysteme.",
         "examples": {
-          "title": "Was wir bauen",
+          "title": "Hauptfunktionen",
           "example1": {
-            "title": "Kundenportale",
-            "description": "Sichere Bereiche für Ihre Kunden, um sich einzuloggen, den Projektstatus einzusehen, Dateien herunterzuladen und mit Ihnen zu kommunizieren."
+            "title": "Solide Struktur",
+            "description": "Meinungsstarke Architektur, die Code in großen Teams organisiert hält."
           },
           "example2": {
-            "title": "Admin-Dashboards",
-            "description": "Visuelle Kommandozentralen, die Ihnen einen Echtzeit-Überblick über Ihre KPIs, Verkäufe und Geschäftskennzahlen geben."
+            "title": "TypeScript",
+            "description": "Typsicherheit, um Fehler zu verhindern, bevor sie in Produktion gehen."
           },
           "example3": {
-            "title": "SaaS-MVPs",
-            "description": "Minimum Viable Products für Start-ups, die ihre Softwareidee schnell auf den Markt bringen möchten."
+            "title": "Enterprise Ready",
+            "description": "Integrierte Tools für Tests und Sicherheit."
           }
         }
       },
-      "marketing": {
-        "title": "Marketing & Lead-Gen",
-        "description": "Eine großartige Website ist nutzlos, wenn niemand sie sieht. Wir helfen Ihnen, den richtigen Traffic durch bezahlte Werbung, Content-Strategie und optimierte Funnels anzuziehen. Wir konzentrieren uns auf den ROI – Budget wird nur dort ausgegeben, wo es echte Kunden bringt.",
+      "ai_consulting": {
+        "title": "KI-Strategie & Beratung",
+        "description": "Strategischer Fahrplan für KI-Adoption. Wir helfen Ihrem Unternehmen, den Hype zu navigieren und echte Anwendungsfälle mit ROI zu identifizieren.",
         "examples": {
-          "title": "Wachstumsdienste",
+          "title": "Hauptfunktionen",
           "example1": {
-            "title": "Google Ads",
-            "description": "Gezielte Suchkampagnen, um Personen zu erfassen, die jetzt aktiv nach Ihren Dienstleistungen suchen."
+            "title": "Chancenbewertung",
+            "description": "Identifizierung von Prozessen, wo KI Kosten drastisch senken kann."
           },
           "example2": {
-            "title": "Social Content",
-            "description": "Strategie und Assets für LinkedIn und Instagram, um Autorität aufzubauen und langfristige Leads zu pflegen."
+            "title": "Technologie-Auswahl",
+            "description": "Wahl der richtigen Modelle und Tools (OpenAI, Anthropic, Open Source)."
           },
           "example3": {
-            "title": "Lead-Funnels",
-            "description": "Optimierte Landingpage-Flows mit Lead-Magneten (PDFs, Webinare), um Kontaktinformationen zu erfassen."
+            "title": "Risikominderung",
+            "description": "Planung von Datenschutz und Datenethik vom ersten Tag an."
+          }
+        }
+      },
+      "knowledge_base": {
+        "title": "Wissensdatenbanken (RAG)",
+        "description": "Chatten Sie mit Ihren Unternehmensdaten. Wir verwandeln Ihre PDFs, Notion und Google Docs in ein durchsuchbares Gehirn, das Fragen sofort beantwortet.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Semantische Suche",
+            "description": "Finden Sie Antworten durch Bedeutung, nicht nur durch Keywords."
+          },
+          "example2": {
+            "title": "Datensicherheit",
+            "description": "Ihre Daten werden nie verwendet, um öffentliche Modelle zu trainieren."
+          },
+          "example3": {
+            "title": "Immer Präzise",
+            "description": "Antworten mit direkten Zitaten aus den Originaldokumenten zur Vermeidung von Halluzinationen."
+          }
+        }
+      },
+      "intelligent_assistants": {
+        "title": "Intelligente Assistenten",
+        "description": "Gehen Sie über einfache Chatbots hinaus. Wir bauen autonome Agenten, die Aufgaben planen, Tools nutzen und komplette Workflows ausführen können.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "24/7 Support",
+            "description": "Lösen Sie Kundenanfragen jederzeit und in jeder Sprache."
+          },
+          "example2": {
+            "title": "Aufgabenausführung",
+            "description": "Agenten, die automatisch Termine buchen oder Rückerstattungen verarbeiten."
+          },
+          "example3": {
+            "title": "Multi-Channel",
+            "description": "Der gleiche Assistent im Web, WhatsApp und Slack."
+          }
+        }
+      },
+      "ai_apps": {
+        "title": "KI-gestützte Apps",
+        "description": "Ihre Software, intelligenter. Wir integrieren Modelle wie GPT-4 direkt in Ihr Produkt, um kognitive Aufgaben zu automatisieren.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Content-Generierung",
+            "description": "Apps, die automatisch Berichte oder E-Mails schreiben."
+          },
+          "example2": {
+            "title": "Datenanalyse",
+            "description": "Extraktion von Erkenntnissen aus tausenden von Dokumenten in Sekunden."
+          },
+          "example3": {
+            "title": "Personalisierung",
+            "description": "Erlebnisse, die sich an das Nutzerverhalten anpassen."
+          }
+        }
+      },
+      "voice_agents": {
+        "title": "KI-Sprachagenten",
+        "description": "Automatisieren Sie Ihre Telefonleitungen. Systeme, die Anrufe entgegennehmen, Termine vereinbaren und Leads mit natürlicher Stimme qualifizieren.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Volle Verfügbarkeit",
+            "description": "Verpassen Sie nie einen Kundenanruf, auch am Wochenende."
+          },
+          "example2": {
+            "title": "Natürliche Konversation",
+            "description": "Stimmen, die von Menschen nicht zu unterscheiden sind und Kontext verstehen."
+          },
+          "example3": {
+            "title": "CRM-Synchronisation",
+            "description": "Automatische Protokollierung von Anrufdetails in Ihrem System."
+          }
+        }
+      },
+      "workflow_automation": {
+        "title": "Workflow-Automatisierung",
+        "description": "Verbinden Sie Ihre isolierten Tools. Wir nutzen n8n und Make, um manuelle Dateneingabe zwischen Apps zu eliminieren.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Null Dateneingabe",
+            "description": "Synchronisieren Sie Facebook-Leads direkt ins CRM."
+          },
+          "example2": {
+            "title": "Dokumentenerstellung",
+            "description": "Erstellen Sie automatisch Rechnungen oder Verträge bei Abschluss."
+          },
+          "example3": {
+            "title": "Benachrichtigungen",
+            "description": "Slack-Warnungen nur, wenn kritische Ereignisse auftreten."
+          }
+        }
+      },
+      "custom_ecommerce": {
+        "title": "Maßgeschneiderter E-Commerce",
+        "description": "Hochleistungs-Shops mit Next.js und Stripe. Befreien Sie sich von starren Templates mit einem maßgeschneiderten Checkout.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Unvergleichliche Geschwindigkeit",
+            "description": "Vorgerenderte Seiten für höhere Konversionen."
+          },
+          "example2": {
+            "title": "Keine Einschränkungen",
+            "description": "Verkaufen Sie Abos oder komplexe Bundles ohne teure Plugins."
+          },
+          "example3": {
+            "title": "Geringere Gebühren",
+            "description": "Vermeiden Sie die zusätzlichen Transaktionsgebühren von SaaS-Plattformen."
+          }
+        }
+      },
+      "headless_commerce": {
+        "title": "Headless Commerce",
+        "description": "Trennen Sie Frontend und Backend, um überall zu verkaufen. Eine einzige Wahrheitsquelle für Web, Mobile und Kioske.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Omnichannel",
+            "description": "Produkte an einem Ort verwalten und überall veröffentlichen."
+          },
+          "example2": {
+            "title": "Skalierbar",
+            "description": "Architektur bereit für Traffic-Spitzen am Black Friday."
+          },
+          "example3": {
+            "title": "Best of Class",
+            "description": "Kombinieren Sie das beste CMS mit dem besten Zahlungsabwickler."
+          }
+        }
+      },
+      "digital_marketing": {
+        "title": "Digitales Marketing",
+        "description": "Datengesteuerte Strategien. Wir raten nicht; wir testen und messen, um die Kanäle zu finden, die echte Kunden bringen.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Performance Marketing",
+            "description": "Fokus auf Leads und Verkäufe, nicht nur 'Likes'."
+          },
+          "example2": {
+            "title": "Content Strategie",
+            "description": "Inhalte, die Autorität und Vertrauen aufbauen."
+          },
+          "example3": {
+            "title": "Conversion Optimierung",
+            "description": "Webseiten-Anpassungen, um mehr Besucher in Kunden zu verwandeln."
+          }
+        }
+      },
+      "programmatic_seo": {
+        "title": "Programmatisches SEO",
+        "description": "Dominieren Sie die Suche durch Generierung tausender hochwertiger Landing Pages. Ideal, um Long-Tail-Traffic in großem Maßstab zu erfassen.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Massive Skalierung",
+            "description": "Launchen Sie 100e Seiten für 'Bester [Service] in [Stadt]'."
+          },
+          "example2": {
+            "title": "Automatisierter Content",
+            "description": "Nutzen Sie Daten, um Titel und lokale Infos dynamisch zu befüllen."
+          },
+          "example3": {
+            "title": "Traffic Wachstum",
+            "description": "Erfassen Sie Nutzer mit spezifischer Kaufabsicht."
+          }
+        }
+      },
+      "enterprise_apps": {
+        "title": "Unternehmens-Web-Apps",
+        "description": "Missionskritische Software. Robuste und sichere Anwendungen, entwickelt um den Kern Ihres Geschäfts zu betreiben.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Hohe Verfügbarkeit",
+            "description": "Systeme entworfen, um unter Last niemals auszufallen."
+          },
+          "example2": {
+            "title": "Sicherheit Zuerst",
+            "description": "Schutz sensibler Daten und Corporate Compliance."
+          },
+          "example3": {
+            "title": "Leagcy Integration",
+            "description": "Verbindung von alten Systemen auf moderne Weise."
+          }
+        }
+      },
+      "saas_platform": {
+        "title": "SaaS-Plattformen",
+        "description": "Starten Sie Ihr Abonnement-Produkt. Wir bauen End-to-End-Lösungen mit Kontenverwaltung und wiederkehrender Abrechnung.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Multi-Tenancy",
+            "description": "Bedienen Sie mehrere Kunden sicher in einer einzigen Instanz."
+          },
+          "example2": {
+            "title": "Stripe Billing",
+            "description": "Automatische Verwaltung von Plänen, Upgrades und Churn."
+          },
+          "example3": {
+            "title": "Admin Portale",
+            "description": "Dashboards zur Verwaltung Ihrer Nutzer und Metriken."
+          }
+        }
+      },
+      "internal_tools": {
+        "title": "Interne Tools",
+        "description": "Weg mit den Tabellenkalkulationen. Maßgeschneiderte Dashboards und CRMs, genau abgestimmt auf den Workflow Ihres Teams.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Effizienz",
+            "description": "Manuelle Prozesse in einfache Klicks verwandelt."
+          },
+          "example2": {
+            "title": "Zugriffskontrolle",
+            "description": "Granulare Berechtigungen, wer was sehen darf."
+          },
+          "example3": {
+            "title": "Maßgeschneiderte Workflows",
+            "description": "Software, die sich dem Team anpasst, nicht umgekehrt."
+          }
+        }
+      },
+      "product_design": {
+        "title": "Produktdesign (UI/UX)",
+        "description": "Intuitive Nutzerreisen. Vom Wireframe bis zum finalen Prototyp entwerfen wir Interfaces, die konvertieren.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "UX Forschung",
+            "description": "Verstehen der Nutzerprobleme vor dem Design."
+          },
+          "example2": {
+            "title": "Prototyping",
+            "description": "Testen Sie den App-Flow, bevor eine Zeile Code geschrieben wird."
+          },
+          "example3": {
+            "title": "Mobile First",
+            "description": "Perfekte Erlebnisse auf jeder Bildschirmgröße."
+          }
+        }
+      },
+      "brand_identity": {
+        "title": "Visuelle Identität",
+        "description": "Heben Sie sich vom Markt ab. Wir erstellen Logos und visuelle Systeme, die die Geschichte Ihrer Marke erzählen.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Logo Design",
+            "description": "Einprägsame und vielseitige Marken."
+          },
+          "example2": {
+            "title": "Style Guide",
+            "description": "Regeln für Konsistenz überall."
+          },
+          "example3": {
+            "title": "Asset Kit",
+            "description": "Dateien bereit für Social Media und Präsentationen."
+          }
+        }
+      },
+      "design_systems": {
+        "title": "Design-Systeme",
+        "description": "Visuelle Skalierbarkeit. Wiederverwendbare Komponentenbibliotheken, damit Ihr Team 10x schneller entwickelt.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Komponenten-Bibliothek",
+            "description": "Buttons, Inputs und Cards, codiert und einsatzbereit."
+          },
+          "example2": {
+            "title": "Dokumentation",
+            "description": "Klare Gebrauchsanweisungen für Entwickler."
+          },
+          "example3": {
+            "title": "Konsistenz",
+            "description": "Eliminieren Sie Design-Schulden auf Ihrer Plattform."
+          }
+        }
+      },
+      "cloud_devops": {
+        "title": "Cloud & DevOps",
+        "description": "Moderne Infrastruktur. Wir kümmern uns um Deployment, Skalierung und Sicherheit, damit Sie sich auf das Produkt konzentrieren können.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "CI/CD Pipelines",
+            "description": "Automatische und sichere Deployments bei jedem Commit."
+          },
+          "example2": {
+            "title": "Infrastructure as Code",
+            "description": "Server konfiguriert via Code für Reproduzierbarkeit."
+          },
+          "example3": {
+            "title": "Kostenoptimierung",
+            "description": "Zahlen Sie nur für das, was Sie in der Public Cloud nutzen."
+          }
+        }
+      },
+      "api_integration": {
+        "title": "API-Integration",
+        "description": "Das digitale Bindegewebe. Verbinden Sie disparate Systeme für Echtzeit-Datenfluss.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Custom Connectors",
+            "description": "Tiefe Integration zwischen ERPs und CRMs."
+          },
+          "example2": {
+            "title": "Sicherheit",
+            "description": "OAuth2 und JWT Authentifizierung für sichere Daten."
+          },
+          "example3": {
+            "title": "Webhooks",
+            "description": "Sofortige Reaktionen auf Ereignisse zwischen Systemen."
+          }
+        }
+      },
+      "tech_audits": {
+        "title": "Technische Audits",
+        "description": "Röntgenbild Ihres Codes. Wir bewerten Sicherheit, Performance und Skalierbarkeit Ihres aktuellen Tech-Stacks.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "Code Review",
+            "description": "Identifizierung von Bugs und technischer Schuld."
+          },
+          "example2": {
+            "title": "Performance Report",
+            "description": "Wie Sie Ihre Website schneller machen."
+          },
+          "example3": {
+            "title": "Sicherheits-Scan",
+            "description": "Erkennung kritischer Schwachstellen."
+          }
+        }
+      },
+      "managed_support": {
+        "title": "Managed Support",
+        "description": "Ihr technischer Partner. Proaktive Wartung, um sicherzustellen, dass Ihr Geschäft niemals stillsteht.",
+        "examples": {
+          "title": "Hauptfunktionen",
+          "example1": {
+            "title": "24/7 Monitoring",
+            "description": "Wir erkennen Probleme vor Ihren Kunden."
+          },
+          "example2": {
+            "title": "Sicherheits-Updates",
+            "description": "Regelmäßiges Patching für kontinuierlichen Schutz."
+          },
+          "example3": {
+            "title": "Helpdesk",
+            "description": "Team bereit, Ihre technischen Fragen zu lösen."
           }
         }
       }
     }
   },
   "servicesv2": {
-    "title": "Unsere Kerndienstleistungen",
-    "subtitle": "Webdesign, Branding und Automatisierung für Schweizer Unternehmer und KMU",
-    "badge": "Mehr Infos",
-    "items": {
-      "branding": {
-        "title": "Branding & Identität",
-        "description": "Logo-Design, Markenfarben, Typografie, Brand Guidelines, Social Media Kit"
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Webdesign, Branding und maßgeschneiderte Automatisierungslösungen für KMUs und Unternehmer",
+    "badge": "Details ansehen",
+    "categories": {
+      "mobile": {
+        "title": "Mobile Entwicklung"
       },
-      "websites": {
-        "title": "Websites",
-        "description": "One-Pager, Multi-Pager, Landing Pages + SEO + Analytics"
+      "web": {
+        "title": "Webentwicklung"
       },
-      "hosting": {
-        "title": "Hosting & Domains",
-        "description": "Sicheres Hosting, Domain-Verwaltung, SSL, Backups"
+      "ai": {
+        "title": "KI-Lösungen"
       },
-      "support": {
-        "title": "Support-Pläne",
-        "description": "Stufen Essential, Growth und Automation Care"
-      },
-      "automation": {
-        "title": "Geschäftsautomatisierung",
-        "description": "Lead-Erfassung, Follow-ups, Terminbuchung, CRM-Integrationen (n8n)"
-      },
-      "ai_addons": {
-        "title": "KI-Add-ons",
-        "description": "FAQ-Chatbots, RAG Wissensdatenbanken, KI-Support-Flows"
-      },
-      "custom_apps": {
-        "title": "Individuelle Web-Apps",
-        "description": "Kundenportale, Dashboards, Verwaltungsbereiche"
+      "ecommerce": {
+        "title": "E-Commerce"
       },
       "marketing": {
-        "title": "Marketing & Lead-Gen",
-        "description": "Google Ads, Social Media Content, Lead-Capturing-Systeme"
+        "title": "Digitales Marketing"
+      },
+      "software": {
+        "title": "Unternehmenssoftware"
+      },
+      "design": {
+        "title": "Design"
+      },
+      "other": {
+        "title": "Technische Infrastruktur"
+      }
+    },
+    "items": {
+      "android": {
+        "title": "Android Entwicklung",
+        "description": "Skalierbare Android-Lösungen"
+      },
+      "ios": {
+        "title": "iOS Entwicklung",
+        "description": "Premium Native Apps"
+      },
+      "react_native": {
+        "title": "React Native",
+        "description": "Plattformübergreifende Apps"
+      },
+      "iot_app": {
+        "title": "IoT Apps",
+        "description": "Intelligente App-Entwicklung"
+      },
+      "nextjs": {
+        "title": "Next.js Entwicklung",
+        "description": "High-Performance React Framework"
+      },
+      "react": {
+        "title": "React Entwicklung",
+        "description": "Dynamische Frontend-Interfaces"
+      },
+      "angular": {
+        "title": "Angular Entwicklung",
+        "description": "Web-Anwendungen für Unternehmen"
+      },
+      "ai_consulting": {
+        "title": "KI-Strategie & Beratung",
+        "description": "Strategischer Fahrplan für KI-Adoption"
+      },
+      "knowledge_base": {
+        "title": "Wissensdatenbanken (RAG)",
+        "description": "Chat mit Unternehmensdaten"
+      },
+      "intelligent_assistants": {
+        "title": "Intelligente Assistenten",
+        "description": "Autonome Agenten für komplexe Aufgaben"
+      },
+      "ai_apps": {
+        "title": "KI-Apps",
+        "description": "Fortschrittliche KI-App-Entwicklung"
+      },
+      "voice_agents": {
+        "title": "Sprachagenten",
+        "description": "KI-Sprachlösungen"
+      },
+      "workflow_automation": {
+        "title": "Workflow-Automatisierung",
+        "description": "Prozessautomatisierungslösungen"
+      },
+      "custom_ecommerce": {
+        "title": "Maßgeschneiderter E-Commerce",
+        "description": "Schnelle Shops mit Next.js & Stripe"
+      },
+      "headless_commerce": {
+        "title": "Headless Commerce",
+        "description": "Skalierbare Retail-Architektur"
+      },
+      "digital_marketing": {
+        "title": "Digitales Marketing",
+        "description": "Strategie und Online-Wachstum"
+      },
+      "programmatic_seo": {
+        "title": "Programmatisches SEO",
+        "description": "Organisches Traffic-Wachstum via Code"
+      },
+      "enterprise_apps": {
+        "title": "Unternehmens-Apps",
+        "description": "Kritische Business-Software"
+      },
+      "saas_platform": {
+        "title": "SaaS-Plattformen",
+        "description": "Starten Sie Ihr Abonnement-Produkt"
+      },
+      "internal_tools": {
+        "title": "Interne Tools",
+        "description": "Benutzerdefinierte Dashboards & CRMs"
+      },
+      "product_design": {
+        "title": "Produktdesign (UI/UX)",
+        "description": "Nutzerzentriertes Design"
+      },
+      "brand_identity": {
+        "title": "Visuelle Identität",
+        "description": "Logos und visuelle Sprache"
+      },
+      "design_systems": {
+        "title": "Design-Systeme",
+        "description": "Skalierbare Komponentenbibliotheken"
+      },
+      "cloud_devops": {
+        "title": "Cloud & DevOps",
+        "description": "Deployment & Skalierung"
+      },
+      "api_integration": {
+        "title": "API-Integration",
+        "description": "Software & Daten verbinden"
+      },
+      "tech_audits": {
+        "title": "Technische Audits",
+        "description": "Code- & Sicherheitsreviews"
+      },
+      "managed_support": {
+        "title": "Managed Support",
+        "description": "Wartung & Updates"
       }
     },
     "process": {

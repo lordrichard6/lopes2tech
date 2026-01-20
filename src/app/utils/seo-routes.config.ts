@@ -12,6 +12,13 @@ export const SEO_ROUTES_CONFIG: Record<string, SEOData> = {
     url: 'https://lopes2tech.ch/',
     type: 'website'
   },
+  'services': {
+    title: 'Our Services | Mobile, Web & AI Solutions',
+    description: 'Explore our comprehensive IT services including Mobile App Development (iOS/Android), AI Consulting, and Custom Software Engineering.',
+    keywords: 'mobile app development, detailed services, AI consulting, web development, lopes2tech services',
+    url: 'https://lopes2tech.ch/services',
+    type: 'website'
+  },
   'pricing': {
     title: 'Pricing & Plans | lopes2tech',
     description: 'Transparent pricing for IT solutions and automation services in Switzerland. Custom quotes available. Get started with a free consultation.',

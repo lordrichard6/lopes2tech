@@ -35,8 +35,9 @@
             <p class="section-subtitle">{{ 'packages.subtitle' | translate }}</p>
         </div>
 
+        @if (!isPreview) {
         <div class="packages-grid">
-            @for (pkg of packages; track pkg.key) {
+            @for (pkg of visiblePackages; track pkg.key) {
             <div class="package-card" [class.popular]="pkg.isPopular" (click)="openPackageDialog(pkg)">
                 <div class="card-image-wrapper">
                     <img [src]="pkg.image" [alt]="('packages.items.' + pkg.key + '.name' | translate)"
@@ -61,11 +62,36 @@
             </div>
             }
         </div>
+        } @else {
+        <div class="packages-preview-row">
+            @for (pkg of visiblePackages; track pkg.key) {
+            <a routerLink="/services" fragment="packages" class="preview-card">
+                <div class="preview-image-wrapper">
+                    <img [src]="pkg.image" [alt]="('packages.items.' + pkg.key + '.name' | translate)"
+                        class="preview-image">
+                </div>
+                <div class="preview-overlay">
+                    <h3 class="preview-title">{{ 'packages.items.' + pkg.key + '.name' | translate }}</h3>
+                    <span class="know-more-badge">{{ 'packages.more_info' | translate }}</span>
+                </div>
+            </a>
+            }
+        </div>
+        }
+
+        @if (isPreview) {
+        <div class="view-all-container">
+            <a routerLink="/services" fragment="packages" class="view-all-btn">
+                {{ 'servicesv2.badge' | translate }} <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        }
     </div>
 
     <app-package-dialog [isOpen]="isDialogOpen" [package]="selectedPackage" (close)="closePackageDialog()">
     </app-package-dialog>
 
+    @if (showBottomWave) {
     <div class="custom-shape-divider-bottom">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path
@@ -73,4 +99,5 @@
                 class="shape-fill"></path>
         </svg>
     </div>
+    }
 </section>

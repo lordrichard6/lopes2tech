@@ -39,10 +39,9 @@ export class ServicesV2Component implements AfterViewInit, OnDestroy {
       icon: 'fas fa-mobile-alt',
       items: [
         { key: 'android', icon: 'fab fa-android', dialogKey: 'custom_apps' },
-        { key: 'iphone', icon: 'fab fa-apple', dialogKey: 'custom_apps' },
-        { key: 'ipad', icon: 'fas fa-tablet-alt', dialogKey: 'custom_apps' },
+        { key: 'ios', icon: 'fab fa-apple', dialogKey: 'custom_apps' },
         { key: 'react_native', icon: 'fab fa-react', dialogKey: 'custom_apps' },
-        { key: 'flutter', icon: 'fab fa-flutter', dialogKey: 'custom_apps' },
+
         { key: 'iot_app', icon: 'fas fa-wifi', dialogKey: 'custom_apps' }
       ]
     },
@@ -53,16 +52,18 @@ export class ServicesV2Component implements AfterViewInit, OnDestroy {
         { key: 'nextjs', icon: 'fas fa-layer-group', dialogKey: 'websites' },
         { key: 'react', icon: 'fab fa-react', dialogKey: 'websites' },
         { key: 'angular', icon: 'fab fa-angular', dialogKey: 'websites' },
-        { key: 'vue', icon: 'fab fa-vuejs', dialogKey: 'websites' }
+
       ]
     },
     {
       key: 'ai',
       icon: 'fas fa-brain',
       items: [
+        { key: 'ai_consulting', icon: 'fas fa-lightbulb', dialogKey: 'ai_addons' },
+        { key: 'knowledge_base', icon: 'fas fa-book-reader', dialogKey: 'ai_addons' },
+        { key: 'intelligent_assistants', icon: 'fas fa-magic', dialogKey: 'ai_addons' },
         { key: 'ai_apps', icon: 'fas fa-robot', dialogKey: 'ai_addons' },
         { key: 'voice_agents', icon: 'fas fa-microphone-alt', dialogKey: 'ai_addons' },
-        { key: 'chatbots', icon: 'fas fa-comments', dialogKey: 'ai_addons' },
         { key: 'workflow_automation', icon: 'fas fa-project-diagram', dialogKey: 'automation' }
       ]
     },
@@ -70,36 +71,44 @@ export class ServicesV2Component implements AfterViewInit, OnDestroy {
       key: 'ecommerce',
       icon: 'fas fa-shopping-cart',
       items: [
-        { key: 'shopify', icon: 'fab fa-shopify', dialogKey: 'websites' },
-        { key: 'magento', icon: 'fab fa-magento', dialogKey: 'websites' }
+        { key: 'custom_ecommerce', icon: 'fas fa-code-branch', dialogKey: 'websites' },
+        { key: 'headless_commerce', icon: 'fas fa-server', dialogKey: 'websites' }
       ]
     },
     {
       key: 'marketing',
       icon: 'fas fa-bullhorn',
       items: [
-        { key: 'digital_marketing', icon: 'fas fa-ad', dialogKey: 'marketing' }
+        { key: 'digital_marketing', icon: 'fas fa-ad', dialogKey: 'marketing' },
+        { key: 'programmatic_seo', icon: 'fas fa-search-plus', dialogKey: 'marketing' }
       ]
     },
     {
       key: 'software',
       icon: 'fas fa-code',
       items: [
-        { key: 'software_dev', icon: 'fas fa-terminal', dialogKey: 'custom_apps' }
+        { key: 'enterprise_apps', icon: 'fas fa-building', dialogKey: 'custom_apps' },
+        { key: 'saas_platform', icon: 'fas fa-cloud', dialogKey: 'custom_apps' },
+        { key: 'internal_tools', icon: 'fas fa-tools', dialogKey: 'custom_apps' }
       ]
     },
     {
       key: 'design',
       icon: 'fas fa-paint-brush',
       items: [
-        { key: 'designing', icon: 'fas fa-pencil-ruler', dialogKey: 'branding' }
+        { key: 'product_design', icon: 'fas fa-pencil-ruler', dialogKey: 'branding' },
+        { key: 'brand_identity', icon: 'fas fa-fingerprint', dialogKey: 'branding' },
+        { key: 'design_systems', icon: 'fas fa-cubes', dialogKey: 'branding' }
       ]
     },
     {
       key: 'other',
       icon: 'fas fa-plus-circle',
       items: [
-        { key: 'other_services', icon: 'fas fa-hands-helping', dialogKey: 'support' }
+        { key: 'cloud_devops', icon: 'fas fa-server', dialogKey: 'support' },
+        { key: 'api_integration', icon: 'fas fa-network-wired', dialogKey: 'support' },
+        { key: 'tech_audits', icon: 'fas fa-clipboard-check', dialogKey: 'support' },
+        { key: 'managed_support', icon: 'fas fa-hands-helping', dialogKey: 'support' }
       ]
     }
   ];
