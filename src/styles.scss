@@ -4,87 +4,87 @@
 
 // Global CSS Variables - Ocean Theme (Default Dark)
 :root {
-  --primary-color: #0f172a;             // Deep ocean navy (header/footer)
-  --primary-color-rgb: 15, 23, 42;     // RGB values for primary color
-  --secondary-color: #1e293b;          // Darker ocean blue
-  --secondary-color-rgb: 30, 41, 59;   // RGB values for secondary color
-  --accent-color: #06b6d4;             // Bright cyan (ocean surface)
-  --accent-light: #22d3ee;             // Light cyan 
-  --hero-bg: #ecfeff;                  // Very light cyan (seafoam)
-  --services-bg: #f8fafc;              // Services section background
-  --contact-bg: #ffffff;               // Contact section background (pure white in light theme)
-  --ocean-blue: #0369a1;              // Medium ocean blue
-  --ocean-cyan: 6, 182, 212;          // RGB values for cyan
-  --sea-green: #059669;                // Sea green
-  --wave-blue: #0284c7;               // Wave blue
-  --text-dark: #0f172a;               // Deep ocean text
-  --text-light: #64748b;              // Slate gray
-  --text-ocean: #0e7490;              // Ocean text accent
-  --bg-light: #f8fafc;                // Very light background
-  --bg-white: #ffffff;                // Pure white
-  --border-color: #e2e8f0;            // Light border
+  --primary-color: #0f172a; // Deep ocean navy (header/footer)
+  --primary-color-rgb: 15, 23, 42; // RGB values for primary color
+  --secondary-color: #1e293b; // Darker ocean blue
+  --secondary-color-rgb: 30, 41, 59; // RGB values for secondary color
+  --accent-color: #06b6d4; // Bright cyan (ocean surface)
+  --accent-light: #22d3ee; // Light cyan 
+  --hero-bg: #ecfeff; // Very light cyan (seafoam)
+  --services-bg: #f8fafc; // Services section background
+  --contact-bg: #ffffff; // Contact section background (pure white in light theme)
+  --ocean-blue: #0369a1; // Medium ocean blue
+  --ocean-cyan: 6, 182, 212; // RGB values for cyan
+  --sea-green: #059669; // Sea green
+  --wave-blue: #0284c7; // Wave blue
+  --text-dark: #0f172a; // Deep ocean text
+  --text-light: #64748b; // Slate gray
+  --text-ocean: #0e7490; // Ocean text accent
+  --bg-light: #f8fafc; // Very light background
+  --bg-white: #ffffff; // Pure white
+  --border-color: #e2e8f0; // Light border
   --shadow: 0 10px 25px -5px rgba(14, 116, 144, 0.1), 0 10px 10px -5px rgba(14, 116, 144, 0.04);
   --gradient: linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #0e7490 100%);
   --ocean-gradient: linear-gradient(135deg, #ecfeff 0%, #cffafe 50%, #a5f3fc 100%);
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --tech-neon-color: #b845ff;          // Default purple for tech word
-  --tech-neon-rgb: 184, 69, 255;      // RGB values for purple
+  --tech-neon-color: #b845ff; // Default purple for tech word
+  --tech-neon-rgb: 184, 69, 255; // RGB values for purple
 }
 
 // Dark Theme Variables
 .dark-theme {
-  --primary-color: #0a0f1c;             // Very dark navy
-  --primary-color-rgb: 10, 15, 28;     // RGB values for primary color
-  --secondary-color: #111827;          // Dark background
-  --secondary-color-rgb: 17, 24, 39;   // RGB values for secondary color
-  --accent-color: #00f5ff;             // Electric cyan
-  --accent-light: #06b6d4;             // Bright cyan 
-  --hero-bg: #64748b;                  // Much lighter slate gray for hero
-  --services-bg: #1e293b;              // Dark navy for services (contrasts with hero)
-  --contact-bg: #1e293b;               // Same as services background
-  --ocean-blue: #a482f5;              // Purple waves
-  --ocean-cyan: 0, 245, 255;          // RGB values for electric cyan
-  --sea-green: #10b981;                // Bright sea green
-  --wave-blue: #a855f7;               // Purple wave color
-  --text-dark: #f8fafc;               // Light text for dark theme
-  --text-light: #94a3b8;              // Light slate gray
-  --text-ocean: #00f5ff;              // Electric cyan accent
-  --bg-light: #374151;                // Medium dark gray for light zones
-  --bg-white: #475569;                // Darker slate for white zones
-  --border-color: #374151;            // Dark border
+  --primary-color: #0a0f1c; // Very dark navy
+  --primary-color-rgb: 10, 15, 28; // RGB values for primary color
+  --secondary-color: #111827; // Dark background
+  --secondary-color-rgb: 17, 24, 39; // RGB values for secondary color
+  --accent-color: #00f5ff; // Electric cyan
+  --accent-light: #06b6d4; // Bright cyan 
+  --hero-bg: #64748b; // Much lighter slate gray for hero
+  --services-bg: #1e293b; // Dark navy for services (contrasts with hero)
+  --contact-bg: #1e293b; // Same as services background
+  --ocean-blue: #a482f5; // Purple waves
+  --ocean-cyan: 0, 245, 255; // RGB values for electric cyan
+  --sea-green: #10b981; // Bright sea green
+  --wave-blue: #a855f7; // Purple wave color
+  --text-dark: #f8fafc; // Light text for dark theme
+  --text-light: #94a3b8; // Light slate gray
+  --text-ocean: #00f5ff; // Electric cyan accent
+  --bg-light: #374151; // Medium dark gray for light zones
+  --bg-white: #475569; // Darker slate for white zones
+  --border-color: #374151; // Dark border
   --shadow: 0 10px 25px -5px rgba(0, 245, 255, 0.2), 0 10px 10px -5px rgba(0, 245, 255, 0.1);
   --gradient: linear-gradient(135deg, #00f5ff 0%, #06b6d4 50%, #0284c7 100%);
   --ocean-gradient: linear-gradient(135deg, #1e293b 0%, #374151 50%, #475569 100%);
-  --tech-neon-color: #b845ff;          // Purple for tech word in dark theme
-  --tech-neon-rgb: 184, 69, 255;      // RGB values for purple
+  --tech-neon-color: #b845ff; // Purple for tech word in dark theme
+  --tech-neon-rgb: 184, 69, 255; // RGB values for purple
 }
 
 // Light Theme Variables (Original Ocean Theme)
 .light-theme {
-  --primary-color: #0891b2;             // Medium cyan for header/footer (darker)
-  --primary-color-rgb: 8, 145, 178;    // RGB values for primary color
-  --secondary-color: #0e7490;          // Ocean teal (darker)
+  --primary-color: #0891b2; // Medium cyan for header/footer (darker)
+  --primary-color-rgb: 8, 145, 178; // RGB values for primary color
+  --secondary-color: #0e7490; // Ocean teal (darker)
   --secondary-color-rgb: 14, 116, 144; // RGB values for secondary color
-  --accent-color: #06b6d4;             // Bright cyan (original)
-  --accent-light: #22d3ee;             // Light cyan (original)
-  --hero-bg: #ecfeff;                  // Very light cyan (original)
-  --services-bg: #f8fafc;              // Light services section background
-  --contact-bg: #ffffff;               // Pure white contact background
-  --ocean-blue: #0369a1;              // Medium ocean blue (original)
-  --ocean-cyan: 6, 182, 212;          // RGB values for cyan (original)
-  --sea-green: #059669;                // Sea green (original)
-  --wave-blue: #0284c7;               // Wave blue (original)
-  --text-dark: #0f172a;               // Deep ocean text (original)
-  --text-light: #64748b;              // Slate gray (original)
-  --text-ocean: #0e7490;              // Ocean text accent (original)
-  --bg-light: #f8fafc;                // Very light background (original)
-  --bg-white: #ffffff;                // Pure white (original)
-  --border-color: #e2e8f0;            // Light border (original)
+  --accent-color: #06b6d4; // Bright cyan (original)
+  --accent-light: #22d3ee; // Light cyan (original)
+  --hero-bg: #ecfeff; // Very light cyan (original)
+  --services-bg: #f8fafc; // Light services section background
+  --contact-bg: #ffffff; // Pure white contact background
+  --ocean-blue: #0369a1; // Medium ocean blue (original)
+  --ocean-cyan: 6, 182, 212; // RGB values for cyan (original)
+  --sea-green: #059669; // Sea green (original)
+  --wave-blue: #0284c7; // Wave blue (original)
+  --text-dark: #0f172a; // Deep ocean text (original)
+  --text-light: #64748b; // Slate gray (original)
+  --text-ocean: #0e7490; // Ocean text accent (original)
+  --bg-light: #f8fafc; // Very light background (original)
+  --bg-white: #ffffff; // Pure white (original)
+  --border-color: #e2e8f0; // Light border (original)
   --shadow: 0 10px 25px -5px rgba(14, 116, 144, 0.1), 0 10px 10px -5px rgba(14, 116, 144, 0.04);
   --gradient: linear-gradient(135deg, #0891b2 0%, #06b6d4 50%, #0e7490 100%);
   --ocean-gradient: linear-gradient(135deg, #ecfeff 0%, #cffafe 50%, #a5f3fc 100%);
-  --tech-neon-color: #eab308;          // Neon yellow for tech word
-  --tech-neon-rgb: 234, 179, 8;       // RGB values for neon yellow
+  --tech-neon-color: #eab308; // Neon yellow for tech word
+  --tech-neon-rgb: 234, 179, 8; // RGB values for neon yellow
 }
 
 * {
@@ -93,7 +93,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: var(--font-family);
   line-height: 1.6;
@@ -109,4 +110,82 @@ html {
 // Smooth transitions for theme switching
 * {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+// Global Button Styles
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
+
+  &.btn-primary {
+    background: rgba(0, 245, 255, 0.1);
+    color: #fff;
+    border: 1px solid #00f5ff;
+    box-shadow: 0 0 15px rgba(0, 245, 255, 0.3), inset 0 0 15px rgba(0, 245, 255, 0.1);
+    text-shadow: 0 0 5px rgba(0, 245, 255, 0.5);
+
+    &:hover {
+      background: rgba(0, 245, 255, 0.2);
+      box-shadow: 0 0 25px rgba(0, 245, 255, 0.6), inset 0 0 20px rgba(0, 245, 255, 0.2);
+      transform: translateY(-2px);
+      text-shadow: 0 0 8px rgba(0, 245, 255, 0.8);
+      animation: neonPulse 1.5s infinite alternate;
+    }
+  }
+
+  &.btn-secondary {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--ocean-blue);
+    border-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+
+    &:hover {
+      background: var(--bg-white);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  i {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover i {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 15px rgba(0, 245, 255, 0.4), inset 0 0 15px rgba(0, 245, 255, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 30px rgba(0, 245, 255, 0.8), inset 0 0 25px rgba(0, 245, 255, 0.4);
+  }
 }

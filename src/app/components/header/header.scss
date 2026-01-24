@@ -38,6 +38,19 @@
   height: 32px; // Height to control the separator height
 }
 
+.header-cta {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+
+  // Override some btn-primary defaults for header context if needed
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
 .theme-toggle {
   display: flex;
   justify-content: center;
