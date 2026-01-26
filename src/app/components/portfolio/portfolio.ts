@@ -31,6 +31,14 @@ export class Portfolio implements AfterViewInit, OnDestroy {
   projects: Project[] = [
     // Web Apps
     {
+      titleKey: 'portfolio.mimesa.title',
+      descKey: 'portfolio.mimesa.description',
+      image: '/proj/mimesa_mockup.png',
+      category: 'Gastronomy & Reservations',
+      type: 'web-app',
+      link: 'https://website-mimesa.vercel.app/'
+    },
+    {
       titleKey: 'DraftMode CRM',
       descKey: 'Modern CRM platform designed for consultants and small to medium companies. Real answers, streamlined workflows.',
       image: '/proj/draftmode_mockup.png',

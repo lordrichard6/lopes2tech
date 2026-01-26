@@ -1640,6 +1640,10 @@
     "subtitle": "Explore how we engineer high-performance solutions for market leaders.",
     "seo_text": "From enterprise-grade CRM dashboards to immersive brand experiences, our portfolio reflects our commitment to Swiss precision and innovation. We architect digital ecosystems that drive growth, automate workflows, and captivate audiences.",
     "visit": "View Case Study",
+    "mimesa": {
+      "title": "miMesa - Restaurant OS",
+      "description": "The operating system for modern restaurants. Handle reservations, tables, and guests with elegance. Designed to save time and increase revenue."
+    },
     "forma": {
       "title": "FORMA - Architecture Studio",
       "description": "Modern architecture firm website showcasing innovative designs, sustainable building solutions, and award-winning projects that shape the future of urban spaces."
