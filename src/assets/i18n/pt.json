@@ -2,6 +2,7 @@
   "nav": {
     "home": "Início",
     "services": "Serviços",
+    "portfolio": "Portfólio",
     "pricing": "Preços",
     "about": "Sobre",
     "contact": "Contacto",
@@ -12,12 +13,42 @@
     "placeholder": "Pergunte sobre os nossos serviços de IA...",
     "send": "Enviar"
   },
+  "contactPage": {
+    "badge": "Entre em Contacto",
+    "title": "Vamos Construir Algo",
+    "titleHighlight": "Extraordinário",
+    "subtitle": "Sediados em Zurique, entregamos excelência digital para o mundo.",
+    "location": "Zurique, Suíça",
+    "formTitle": "Inicie uma Conversa",
+    "formSubtitle": "Conte-me sobre o seu projeto. Costumo responder em 24 horas.",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "company": "Empresa (Opcional)",
+      "phone": "Telefone (Opcional)",
+      "message": "Como posso ajudar?",
+      "send": "Enviar Mensagem",
+      "sending": "A enviar...",
+      "successTitle": "Mensagem Enviada!",
+      "successMessage": "Obrigado pelo contacto. Responderei brevemente.",
+      "reset": "Enviar Outra"
+    }
+  },
+  "ctaSection": {
+    "title": "Pronto para Escalar o Seu Negócio?",
+    "subtitle": "Vamos construir algo extraordinário juntos. Agende a sua consulta gratuita hoje.",
+    "button": "Iniciar Projeto"
+  },
   "hero": {
-    "badge": "✨ Automação Simplificada",
+    "badge": "Trabalhos Selecionados",
     "title": {
-      "line1": "Simplifica",
-      "line2": "a tua vida"
+      "line1": "Soluções de TI",
+      "line2": "& Automação"
     },
+    "title_simplified": "Trabalhos Selecionados",
+    "subtitle_simplified": "Construímos produtos digitais que funcionam.",
+    "view_all": "Ver Portfólio Completo",
+    "seo_text": "Explore o nosso portfólio diversificado...",
     "subtitle": "Websites, portais seguros para clientes e automações para empresas de serviços.",
     "cta": {
       "primary": "Falar comigo",
@@ -1438,6 +1469,9 @@
   "portfolio": {
     "badge": "O Nosso Trabalho",
     "title": "Histórias de Sucesso & Excelência Digital",
+    "title_simplified": "Sucesso do Cliente & Inovação Interna",
+    "subtitle_simplified": "O nosso portfólio representa uma fusão de soluções robustas para clientes ambiciosos e empreendimentos proprietários desenvolvidos internamente. Desde escalar empresas com CRMs personalizados até ao lançamento de plataformas SaaS, provamos a nossa liderança técnica construindo produtos que triunfam no mundo real.",
+    "view_all": "Ver Portfólio Completo",
     "subtitle": "Explore como desenvolvemos soluções de alto desempenho para líderes de mercado.",
     "seo_text": "Desde dashboards CRM empresariais a experiências de marca imersivas, o nosso portfólio reflete a precisão suíça e inovação. Criamos ecossistemas digitais que impulsionam o crescimento e automatizam fluxos de trabalho.",
     "visit": "Ver Case Study",

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "portfolio": "Portfolio",
     "pricing": "Pricing",
     "about": "About",
     "contact": "Contact",
@@ -18,12 +19,42 @@
       "darkLabel": "Switch to dark theme"
     }
   },
+  "contactPage": {
+    "badge": "Get in Touch",
+    "title": "Let's Build Something",
+    "titleHighlight": "Extraordinary",
+    "subtitle": "Based in Zurich, delivering digital excellence worldwide.",
+    "location": "Zurich, Switzerland",
+    "formTitle": "Start a Conversation",
+    "formSubtitle": "Tell me about your project. I usually respond within 24 hours.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company (Optional)",
+      "phone": "Phone (Optional)",
+      "message": "How can I help you?",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message Sent!",
+      "successMessage": "Thanks for reaching out. I'll get back to you shortly.",
+      "reset": "Send Another"
+    }
+  },
+  "ctaSection": {
+    "title": "Ready to Scale Your Business?",
+    "subtitle": "Let's build something extraordinary together. Book your free consultation today.",
+    "button": "Start Project"
+  },
   "hero": {
-    "badge": "✨ Automation Simplified",
+    "badge": "Selected Work",
     "title": {
-      "line1": "Simplify",
-      "line2": "your life"
+      "line1": "Swiss IT Solutions",
+      "line2": "& Automation"
     },
+    "title_simplified": "Selected Work",
+    "subtitle_simplified": "We build digital products that perform.",
+    "view_all": "View Full Portfolio",
+    "seo_text": "Explore our diverse portfolio of successful projects...",
     "subtitle": "Websites, secure client portals, and automations for service businesses.",
     "cta": {
       "primary": "Talk with me",
@@ -1637,7 +1668,10 @@
   "portfolio": {
     "badge": "Our Work",
     "title": "Success Stories & Digital Excellence",
+    "title_simplified": "Client Success & In-House Innovation",
     "subtitle": "Explore how we engineer high-performance solutions for market leaders.",
+    "subtitle_simplified": "Our portfolio represents a fusion of robust solutions built for ambitious clients and proprietary ventures developed in-house. From scaling service businesses with custom CRMs to launching next-gen SaaS platforms, we prove our technical leadership by building products that actually succeed in the real world.",
+    "view_all": "View Full Portfolio",
     "seo_text": "From enterprise-grade CRM dashboards to immersive brand experiences, our portfolio reflects our commitment to Swiss precision and innovation. We architect digital ecosystems that drive growth, automate workflows, and captivate audiences.",
     "visit": "View Case Study",
     "mimesa": {

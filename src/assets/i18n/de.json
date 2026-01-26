@@ -2,6 +2,7 @@
   "nav": {
     "home": "Startseite",
     "services": "Dienstleistungen",
+    "portfolio": "Portfolio",
     "pricing": "Preise",
     "about": "Über uns",
     "contact": "Kontakt",
@@ -18,12 +19,42 @@
       "darkLabel": "Zum dunklen Thema wechseln"
     }
   },
+  "contactPage": {
+    "badge": "Kontakt aufnehmen",
+    "title": "Lassen Sie uns etwas",
+    "titleHighlight": "Außergewöhnliches bauen",
+    "subtitle": "Mit Sitz in Zürich liefern wir digitale Exzellenz weltweit.",
+    "location": "Zürich, Schweiz",
+    "formTitle": "Gespräch beginnen",
+    "formSubtitle": "Erzählen Sie mir von Ihrem Projekt. Ich antworte normalerweise innerhalb von 24 Stunden.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "company": "Firma (Optional)",
+      "phone": "Telefon (Optional)",
+      "message": "Wie kann ich Ihnen helfen?",
+      "send": "Nachricht senden",
+      "sending": "Senden...",
+      "successTitle": "Nachricht gesendet!",
+      "successMessage": "Danke für Ihre Nachricht. Ich melde mich in Kürze bei Ihnen.",
+      "reset": "Weitere senden"
+    }
+  },
+  "ctaSection": {
+    "title": "Bereit, Ihr Geschäft zu skalieren?",
+    "subtitle": "Lassen Sie uns gemeinsam etwas Außergewöhnliches bauen. Buchen Sie noch heute Ihre kostenlose Beratung.",
+    "button": "Projekt starten"
+  },
   "hero": {
-    "badge": "✨ Automatisierung Vereinfacht",
+    "badge": "Ausgewählte Arbeiten",
     "title": {
-      "line1": "Vereinfachen Sie",
-      "line2": "Ihr Leben"
+      "line1": "Schweizer IT-Lösungen",
+      "line2": "& Automatisierung"
     },
+    "title_simplified": "Kundenerfolg & Interne Innovation",
+    "subtitle_simplified": "Unser Portfolio ist eine Fusion aus robusten Lösungen für Kunden und intern entwickelten Projekten. Von der Skalierung von Unternehmen mit benutzerdefinierten CRMs bis hin zum Start von SaaS-Plattformen – wir beweisen unsere technische Führungskompetenz, indem wir Produkte bauen, die in der realen Welt bestehen.",
+    "view_all": "Gesamtes Portfolio ansehen",
+    "seo_text": "Entdecken Sie unser vielfältiges Portfolio...",
     "subtitle": "Websites, sichere Kundenportale und Automatisierungen für Dienstleistungsunternehmen.",
     "cta": {
       "primary": "Mit mir sprechen",
@@ -1588,7 +1619,10 @@
   "portfolio": {
     "badge": "Unsere Arbeit",
     "title": "Erfolgsgeschichten & Digitale Exzellenz",
+    "title_simplified": "Ausgewählte Arbeiten",
     "subtitle": "Entdecken Sie, wie wir Hochleistungslösungen für Marktführer entwickeln.",
+    "subtitle_simplified": "Wir bauen digitale Produkte, die leisten.",
+    "view_all": "Gesamtes Portfolio ansehen",
     "seo_text": "Von Enterprise-CRM-Dashboards bis hin zu immersiven Markenerlebnissen spiegelt unser Portfolio Schweizer Präzision und Innovation wider. Wir entwerfen digitale Ökosysteme, die Wachstum fördern.",
     "visit": "Fallstudie Ansehen",
     "mimesa": {

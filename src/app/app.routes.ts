@@ -28,6 +28,16 @@ export const routes: Routes = [
     canActivate: [seoGuard]
   },
   {
+    path: 'contact',
+    loadComponent: () => import('./components/contact-page/contact-page.component').then(m => m.ContactPageComponent),
+    canActivate: [seoGuard]
+  },
+  {
+    path: 'portfolio',
+    loadComponent: () => import('./components/portfolio-page/portfolio-page.component').then(m => m.PortfolioPageComponent),
+    canActivate: [seoGuard]
+  },
+  {
     path: 'privacy',
     loadComponent: () => import('./components/privacy/privacy').then(m => m.PrivacyComponent),
     canActivate: [seoGuard]

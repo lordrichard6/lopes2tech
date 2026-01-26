@@ -1,0 +1,117 @@
+<section class="contact-page">
+
+    <!-- Cinematic Video Background -->
+    <div class="video-background">
+        <video #bgVideo autoplay muted loop playsinline class="bg-video">
+            <source src="/vids/dark.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Content Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <header class="page-header">
+            <div class="badge-pill">
+                <i class="fas fa-paper-plane"></i>
+                <span>{{ 'contactPage.badge' | translate }}</span>
+            </div>
+            <h1>{{ 'contactPage.title' | translate }} <span class="text-gradient">{{ 'contactPage.titleHighlight' |
+                    translate }}</span></h1>
+            <p class="subtitle">{{ 'contactPage.subtitle' | translate }}</p>
+        </header>
+
+        <!-- Premium Glass Card -->
+        <div class="premium-card">
+
+            <!-- Left: Visual Story -->
+            <div class="visual-side">
+                <img src="/assets/contact/paulo-hiking.webp" alt="Paulo Lopes hiking in the Alps" class="hero-img">
+                <div class="visual-content">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>{{ 'contactPage.location' | translate }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Interactive Form -->
+            <div class="interaction-side">
+                <div class="form-intro">
+                    <h2>{{ 'contactPage.formTitle' | translate }}</h2>
+                    <p>{{ 'contactPage.formSubtitle' | translate }}</p>
+                </div>
+
+                <form *ngIf="!meetingSubmitted || meetingStatus !== 'success'" [formGroup]="meetingForm"
+                    (ngSubmit)="submitMeetingForm()" class="modern-form">
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" id="name" formControlName="name" placeholder=" "
+                                [class.has-error]="fieldInvalid('name')">
+                            <label for="name">{{ 'contactPage.form.name' | translate }}</label>
+                            <span class="highlight"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" id="email" formControlName="email" placeholder=" "
+                                [class.has-error]="fieldInvalid('email')">
+                            <label for="email">{{ 'contactPage.form.email' | translate }}</label>
+                            <span class="highlight"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" id="company" formControlName="company" placeholder=" ">
+                            <label for="company">{{ 'contactPage.form.company' | translate }}</label>
+                            <span class="highlight"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="tel" id="phone" formControlName="phone" placeholder=" ">
+                            <label for="phone">{{ 'contactPage.form.phone' | translate }}</label>
+                            <span class="highlight"></span>
+                        </div>
+                    </div>
+
+                    <div class="input-group full">
+                        <textarea id="message" formControlName="message" rows="4" placeholder=" "
+                            [class.has-error]="fieldInvalid('message')"></textarea>
+                        <label for="message">{{ 'contactPage.form.message' | translate }}</label>
+                        <span class="highlight"></span>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit" class="cta-button" [disabled]="meetingSubmitting">
+                            <span class="btn-text" *ngIf="!meetingSubmitting">{{ 'contactPage.form.send' | translate
+                                }}</span>
+                            <span class="btn-text" *ngIf="meetingSubmitting">{{ 'contactPage.form.sending' | translate
+                                }}</span>
+                            <div class="btn-shine"></div>
+                        </button>
+                    </div>
+
+                    <div class="error-banner" *ngIf="meetingSubmitted && meetingStatus === 'error'">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>{{ meetingErrorMessage }}</span>
+                    </div>
+                </form>
+
+                <!-- Success State -->
+                <div class="success-state" *ngIf="meetingSubmitted && meetingStatus === 'success'">
+                    <div class="check-animation">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3>{{ 'contactPage.form.successTitle' | translate }}</h3>
+                    <p>{{ 'contactPage.form.successMessage' | translate }}</p>
+                    <button class="reset-btn"
+                        (click)="meetingSubmitted = false; meetingStatus = null; meetingForm.reset()">
+                        {{ 'contactPage.form.reset' | translate }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

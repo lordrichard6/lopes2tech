@@ -4,9 +4,7 @@ import { ServicesV2Component } from '../services/servicesv2.component';
 import { PackagesComponent } from '../packages/packages.component';
 import { About } from '../about/about';
 import { Portfolio } from '../portfolio/portfolio';
-import { Contact } from '../contact/contact';
-// import { MultistepComponent } from '../multistep/multistep';
-// import { TeamComponent } from '../team/team';
+import { CtaSectionComponent } from '../cta-section/cta-section';
 import { WhatsappButtonComponent } from '../whatsapp-button/whatsapp-button.component';
 
 @Component({
@@ -18,10 +16,8 @@ import { WhatsappButtonComponent } from '../whatsapp-button/whatsapp-button.comp
     PackagesComponent,
     About,
     Portfolio,
-    // MultistepComponent,
-    // TeamComponent,
-    WhatsappButtonComponent,
-    Contact
+    CtaSectionComponent,
+    WhatsappButtonComponent
   ],
   template: `
     <app-hero></app-hero>
@@ -29,9 +25,7 @@ import { WhatsappButtonComponent } from '../whatsapp-button/whatsapp-button.comp
     <app-packages [isPreview]="true"></app-packages>
     <app-about></app-about>
     <app-portfolio></app-portfolio>
-    <!-- <app-multistep></app-multistep> -->
-    <app-contact></app-contact>
-    <!-- <app-team></app-team> -->
+    <app-cta-section></app-cta-section>
     
     <!-- WhatsApp Floating Button -->
     <app-whatsapp-button></app-whatsapp-button>

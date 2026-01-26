@@ -1,0 +1,379 @@
+@use "sass:color";
+// Premium Dark Variables (Hardcoded for guaranteed consistency)
+$dark-bg: #0f172a;
+$glass-bg: rgba(15, 23, 42, 0.65);
+$glass-border: rgba(255, 255, 255, 0.08);
+$accent-cyan: #22d3ee;
+$accent-glow: rgba(34, 211, 238, 0.5);
+$text-white: #ffffff;
+$text-mute: #94a3b8;
+$error: #ef4444;
+
+.contact-page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 1.5rem 4rem; // More top padding for nav
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    color: $text-white;
+}
+
+// 1. Cinematic Background
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+
+    .bg-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // Gradient overlay for depth - slightly reduced opacity
+        background: radial-gradient(circle at center, rgba($dark-bg, 0.2) 0%, rgba($dark-bg, 0.85) 100%);
+        backdrop-filter: blur(0px); // Remove blur to see video clearly
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+// 2. Page Header
+.page-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: fadeInDown 0.8s ease-out;
+
+    .badge-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem 1.4rem;
+        background: rgba($accent-cyan, 0.1);
+        border: 1px solid rgba($accent-cyan, 0.3);
+        border-radius: 100px;
+        color: $accent-cyan;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, $accent-cyan 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    .subtitle {
+        color: $text-mute;
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+// 3. Premium Glass Card
+.premium-card {
+    display: flex;
+    flex-direction: column;
+    background: $glass-bg;
+    border: 1px solid $glass-border;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+        min-height: 550px;
+    }
+
+    // Left Side: Visual
+    .visual-side {
+        position: relative;
+        min-height: 300px;
+        overflow: hidden;
+
+        @media (min-width: 992px) {
+            flex: 0 0 45%;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 6s ease; // Slow zoom effect
+        }
+
+        &:hover .hero-img {
+            transform: scale(1.1);
+        }
+
+        .visual-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+
+            .info-item {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                color: rgba(255, 255, 255, 0.9);
+                font-size: 0.95rem;
+
+                i {
+                    color: $accent-cyan;
+                }
+            }
+        }
+    }
+
+    // Right Side: Interaction
+    .interaction-side {
+        flex: 1;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            padding: 2rem;
+        }
+
+        .form-intro {
+            margin-bottom: 2.5rem;
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                color: $text-mute;
+            }
+        }
+    }
+}
+
+// 4. Modern Interactive Form
+.modern-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .form-row {
+        display: flex;
+        gap: 1.5rem;
+
+        @media (max-width: 640px) {
+            flex-direction: column;
+        }
+    }
+
+    .input-group {
+        position: relative;
+        flex: 1;
+
+        input,
+        textarea {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.2rem 1rem 0.5rem; // Top padding for label space
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            outline: none;
+
+            &::placeholder {
+                opacity: 0;
+            }
+
+            &:focus,
+            &:not(:placeholder-shown) {
+                background: rgba(0, 0, 0, 0.3);
+                border-color: $accent-cyan;
+                box-shadow: 0 0 0 4px rgba($accent-cyan, 0.1);
+
+                &+label {
+                    top: 0.4rem;
+                    font-size: 0.75rem;
+                    color: $accent-cyan;
+                }
+            }
+
+            &.has-error {
+                border-color: $error;
+            }
+        }
+
+        textarea {
+            resize: none;
+            min-height: 120px;
+        }
+
+        label {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            color: $text-mute;
+            font-size: 1rem;
+            pointer-events: none;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    .cta-button {
+        position: relative;
+        width: 100%;
+        padding: 1.2rem;
+        border: none;
+        border-radius: 12px;
+        background: linear-gradient(135deg, $accent-cyan, color.adjust($accent-cyan, $lightness: -20%));
+        color: #0f172a;
+        font-weight: 700;
+        font-size: 1.1rem;
+        cursor: pointer;
+        overflow: hidden;
+        transition: transform 0.2s;
+        margin-top: 1rem;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px $accent-glow;
+        }
+
+        &:disabled {
+            opacity: 0.7;
+            cursor: wait;
+        }
+
+        .btn-shine {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: skewX(-20deg);
+            transition: 0.5s;
+        }
+
+        &:hover .btn-shine {
+            left: 200%;
+            transition: 0.5s;
+        }
+    }
+}
+
+// 5. Success State
+.success-state {
+    text-align: center;
+    padding: 2rem;
+    animation: fadeIn 0.5s;
+
+    .check-animation {
+        width: 80px;
+        height: 80px;
+        background: rgba($accent-cyan, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+
+        i {
+            font-size: 2.5rem;
+            color: $accent-cyan;
+        }
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: $text-mute;
+        margin-bottom: 2rem;
+    }
+
+    .reset-btn {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #fff;
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            border-color: $accent-cyan;
+            background: rgba($accent-cyan, 0.1);
+        }
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

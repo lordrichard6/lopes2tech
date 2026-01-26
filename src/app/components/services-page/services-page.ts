@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ServicesV2Component } from '../services/servicesv2.component';
-import { Contact } from '../contact/contact';
 import { PackagesComponent } from '../packages/packages.component';
 
 @Component({
@@ -8,13 +7,12 @@ import { PackagesComponent } from '../packages/packages.component';
   standalone: true,
   imports: [
     ServicesV2Component,
-    PackagesComponent,
-    Contact
+    PackagesComponent
   ],
   template: `
     <app-servicesv2></app-servicesv2>
     <app-packages [showBottomWave]="false"></app-packages>
-    <app-contact></app-contact>
+
   `,
   styles: []
 })

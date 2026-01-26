@@ -1,89 +1,59 @@
 <section id="portfolio" class="portfolio">
-  <div class="hero-background">
-    <div class="floating-elements">
-      <div class="floating-circle circle-1"></div>
-      <div class="floating-circle circle-2"></div>
-    </div>
-  </div>
-
   <div class="container">
-    <div class="section-header reveal-on-scroll" #revealItem>
-      <div class="section-badge">
-        <i class="fas fa-bolt"></i>
-        <span>{{ 'portfolio.badge' | translate }}</span>
-      </div>
-      <h2 class="section-title">{{ 'portfolio.title' | translate }}</h2>
-      <p class="section-subtitle">{{ 'portfolio.subtitle' | translate }}</p>
-      <p class="section-seo-text">{{ 'portfolio.seo_text' | translate }}</p>
+    <!-- Simplified Header -->
+    <div class="section-header">
+      <span class="section-badge">{{ 'portfolio.badge' | translate }}</span>
+      <h2>{{ 'portfolio.title_simplified' | translate }}</h2>
+      <p>{{ 'portfolio.subtitle_simplified' | translate }}</p>
     </div>
 
-    <!-- Filter Controls -->
-    <div class="filter-container reveal-on-scroll" #revealItem>
-      <div class="filter-pill">
-        <button class="filter-btn" [class.active]="activeFilter === 'web-app'" (click)="setFilter('web-app')">
-          <i class="fas fa-layer-group"></i>
-          <span>Web Apps</span>
-        </button>
-        <button class="filter-btn" [class.active]="activeFilter === 'website'" (click)="setFilter('website')">
-          <i class="fas fa-desktop"></i>
-          <span>Websites</span>
-        </button>
-        <div class="pill-bg" [class.right]="activeFilter === 'website'"></div>
-      </div>
-    </div>
-
-    <!-- Projects Grid -->
-    <div class="projects-grid">
-      <div class="project-card reveal-on-scroll" *ngFor="let project of paginatedProjects; let i = index" #revealItem
-        (click)="openProjectDialog(project)">
-        <div class="card-image">
-          <img [src]="project.image" [alt]="project.titleKey | translate" loading="lazy">
-          <div class="overlay">
-            <span class="view-btn">View Project <i class="fas fa-arrow-right"></i></span>
-          </div>
-          <div class="dev-badge" *ngIf="project.isInDevelopment">
-            <i class="fas fa-code"></i>
-            In Development
+    <!-- Row 1: Web Apps (Forward) -->
+    <div class="carousel-track-container">
+      <div class="carousel-track">
+        <!-- Loop 1 -->
+        <div class="project-card" *ngFor="let project of webAppProjects" (click)="openProjectDialog(project)">
+          <div class="card-image">
+            <img [src]="project.image" [alt]="project.titleKey | translate" loading="lazy">
           </div>
         </div>
-        <div class="card-content">
-          <div class="card-header">
-            <span class="project-category">{{ project.category }}</span>
+        <!-- Loop 2 (Duplicate) -->
+        <div class="project-card" *ngFor="let project of webAppProjects" (click)="openProjectDialog(project)"
+          aria-hidden="true">
+          <div class="card-image">
+            <img [src]="project.image" [alt]="project.titleKey | translate" loading="lazy">
           </div>
-          <h3 class="project-title">{{ project.titleKey | translate }}</h3>
-          <p class="project-desc">{{ project.descKey | translate }}</p>
         </div>
       </div>
     </div>
 
-    <!-- Pagination Controls -->
-    <div class="pagination-container reveal-on-scroll" #revealItem *ngIf="totalPages > 1">
-      <button class="pagination-btn" 
-              [disabled]="currentPage === 1" 
-              (click)="prevPage()"
-              aria-label="Previous page">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      
-      <div class="pagination-numbers">
-        <button *ngFor="let page of pages"
-                class="page-btn"
-                [class.active]="page === currentPage"
-                (click)="goToPage(page)"
-                [attr.aria-label]="'Page ' + page"
-                [attr.aria-current]="page === currentPage ? 'page' : null">
-          {{ page }}
-        </button>
+    <!-- Row 2: Websites (Reverse) -->
+    <div class="carousel-track-container" style="margin-top: 2rem;">
+      <div class="carousel-track reverse">
+        <!-- Loop 1 -->
+        <div class="project-card" *ngFor="let project of websiteProjects" (click)="openProjectDialog(project)">
+          <div class="card-image">
+            <img [src]="project.image" [alt]="project.titleKey | translate" loading="lazy">
+          </div>
+        </div>
+        <!-- Loop 2 (Duplicate) -->
+        <div class="project-card" *ngFor="let project of websiteProjects" (click)="openProjectDialog(project)"
+          aria-hidden="true">
+          <div class="card-image">
+            <img [src]="project.image" [alt]="project.titleKey | translate" loading="lazy">
+          </div>
+        </div>
       </div>
-      
-      <button class="pagination-btn" 
-              [disabled]="currentPage === totalPages" 
-              (click)="nextPage()"
-              aria-label="Next page">
-        <i class="fas fa-chevron-right"></i>
-      </button>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="portfolio-cta">
+      <a routerLink="/portfolio" class="btn-view-all">
+        {{ 'portfolio.view_all' | translate }}
+        <i class="fas fa-arrow-right"></i>
+      </a>
     </div>
   </div>
+
   <app-project-dialog [isOpen]="isDialogOpen" [project]="currentProject"
     (close)="closeProjectDialog()"></app-project-dialog>
 </section>
