@@ -36,7 +36,8 @@ export class Portfolio implements AfterViewInit, OnDestroy {
       image: '/proj/mimesa_mockup.png',
       category: 'Gastronomy & Reservations',
       type: 'web-app',
-      link: 'https://website-mimesa.vercel.app/'
+      link: 'https://website-mimesa.vercel.app/',
+      isInDevelopment: true
     },
     {
       titleKey: 'DraftMode CRM',
