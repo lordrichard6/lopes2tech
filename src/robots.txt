@@ -4,7 +4,5 @@ Allow: /
 # Block unnecessary pages
 Disallow: /assets/
 Disallow: /*.json$
-Disallow: /pricing
-
 # Sitemap location
 Sitemap: https://lopes2tech.ch/sitemap.xml

@@ -16,12 +16,12 @@ export class PackagesComponent {
     @Input() isPreview: boolean = false;
 
     packages: PackageData[] = [
-        { key: 'starter', price: '850', targetKey: 'target.starter', image: '/assets/services/packages/starter.png' },
-        { key: 'starterPlus', price: '1,400', targetKey: 'target.starterPlus', image: '/assets/services/packages/starter_plus.png', isPopular: true },
-        { key: 'businessPro', price: '2,000', targetKey: 'target.businessPro', image: '/assets/services/packages/business_pro.png' },
-        { key: 'landingPage', price: '600', targetKey: 'target.landingPage', image: '/assets/services/packages/landing_page.png' },
-        { key: 'logoOnly', price: '350', targetKey: 'target.logoOnly', image: '/assets/services/packages/logo_only.png' },
-        { key: 'fullBrandKit', price: '650', targetKey: 'target.fullBrandKit', image: '/assets/services/packages/full_brand_kit.png' }
+        { key: 'starter', price: '850', targetKey: 'target.starter', image: '/assets/services/packages/starter.webp' },
+        { key: 'starterPlus', price: '1,400', targetKey: 'target.starterPlus', image: '/assets/services/packages/starter_plus.webp', isPopular: true },
+        { key: 'businessPro', price: '2,000', targetKey: 'target.businessPro', image: '/assets/services/packages/business_pro.webp' },
+        { key: 'landingPage', price: '600', targetKey: 'target.landingPage', image: '/assets/services/packages/landing_page.webp' },
+        { key: 'logoOnly', price: '350', targetKey: 'target.logoOnly', image: '/assets/services/packages/logo_only.webp' },
+        { key: 'fullBrandKit', price: '650', targetKey: 'target.fullBrandKit', image: '/assets/services/packages/full_brand_kit.webp' }
     ];
 
     get visiblePackages(): PackageData[] {

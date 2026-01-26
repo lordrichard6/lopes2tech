@@ -136,14 +136,14 @@ export class ServicesV2Component implements AfterViewInit, OnDestroy {
 
   private getLegacyImage(key: string): string {
     const images: Record<string, string> = {
-      branding: '/assets/services/branding_identity.png',
-      websites: '/assets/services/websites.png',
-      hosting: '/assets/services/hosting_domain.png',
-      support: '/assets/services/support_plans.png',
-      automation: '/assets/services/business_automation.png',
-      ai_addons: '/assets/services/ai_addons.png',
-      custom_apps: '/assets/services/custom_web_apps.png',
-      marketing: '/assets/services/marketing_lead_gen.png'
+      branding: '/assets/services/branding_identity.webp',
+      websites: '/assets/services/websites.webp',
+      hosting: '/assets/services/hosting_domain.webp',
+      support: '/assets/services/support_plans.webp',
+      automation: '/assets/services/business_automation.webp',
+      ai_addons: '/assets/services/ai_addons.webp',
+      custom_apps: '/assets/services/custom_web_apps.webp',
+      marketing: '/assets/services/marketing_lead_gen.webp'
     };
     return images[key] || '';
   }

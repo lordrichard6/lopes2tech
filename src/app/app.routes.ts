@@ -8,11 +8,6 @@ export const routes: Routes = [
     canActivate: [seoGuard]
   },
   {
-    path: 'pricing',
-    loadComponent: () => import('./components/pricing/pricing').then(m => m.PricingComponent),
-    canActivate: [seoGuard]
-  },
-  {
     path: 'services',
     loadComponent: () => import('./components/services-page/services-page').then(m => m.ServicesPageComponent),
     canActivate: [seoGuard]
@@ -20,11 +15,6 @@ export const routes: Routes = [
   {
     path: 'support-theraflow',
     loadComponent: () => import('./components/support-theraflow/support-theraflow').then(m => m.SupportTheraflowComponent),
-    canActivate: [seoGuard]
-  },
-  {
-    path: 'ai-solutions',
-    loadComponent: () => import('./components/ai-solutions/ai-solutions').then(m => m.AISolutionsComponent),
     canActivate: [seoGuard]
   },
   {
