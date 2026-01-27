@@ -1,0 +1,43 @@
+<div class="article-container" *ngIf="post$ | async as post; else loading">
+    <div class="article-hero" [style.background-image]="'url(' + post.image + ')'">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="tags">
+                <span *ngFor="let tag of post.tags" class="tag">{{ tag }}</span>
+            </div>
+            <h1>{{ post.title }}</h1>
+            <div class="meta">
+                <span class="date">{{ post.date | date:'longDate' }}</span>
+                <span class="separator">|</span>
+                <span class="read-time">{{ post.readTime }} read</span>
+                <ng-container *ngIf="post.author">
+                    <span class="separator">|</span>
+                    <span class="author">By {{ post.author }} <span *ngIf="post.authorRole" class="author-role">({{
+                            post.authorRole }})</span></span>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+
+    <div class="article-body-wrapper">
+        <article class="article-content" [innerHTML]="post.content"></article>
+
+        <div class="cta-box">
+            <h3>Ready to automate your business?</h3>
+            <p>Let's discuss how we can implement these solutions for you.</p>
+            <a routerLink="/contact" class="btn btn-primary">Book Consultation</a>
+        </div>
+
+        <div class="back-link">
+            <a routerLink="/insights">
+                <i class="fas fa-arrow-left"></i> Back to Insights
+            </a>
+        </div>
+    </div>
+</div>
+
+<ng-template #loading>
+    <div class="loading-container">
+        <div class="loader">Loading article...</div>
+    </div>
+</ng-template>

@@ -16,6 +16,10 @@ $accent: #06b6d4;
   color: #0f172a; // Dark text
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem; // Add side padding for mobile
+  }
+
   // Remove old bg image styling if present or just hide it
   .agency-bg {
     display: none;
@@ -80,7 +84,7 @@ $accent: #06b6d4;
 
 
     @media (max-width: 768px) {
-      font-size: 3rem;
+      font-size: 2.25rem; // Reduced from 3rem
     }
   }
 
@@ -92,6 +96,10 @@ $accent: #06b6d4;
 
     @media (max-width: 992px) {
       margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1rem; // Reduce body text slightly
     }
   }
 }
@@ -112,11 +120,22 @@ $accent: #06b6d4;
       border-top: 1px solid rgba(15, 23, 42, 0.15);
     }
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
     .stat-number {
       font-size: 3.5rem;
       font-weight: 300;
       color: #0e7490;
       line-height: 1;
+
+      @media (max-width: 768px) {
+        font-size: 3rem; // Slightly larger again as requested by "weird on small devices" context, but column layout helps
+        width: 100%;
+      }
     }
 
     .stat-label {
@@ -124,6 +143,11 @@ $accent: #06b6d4;
       color: #334155;
       text-transform: lowercase;
       font-weight: 500;
+
+      @media (max-width: 768px) {
+        align-self: flex-end; // Right align label if numbers are on top, or keep left? Let's keep aligned.
+        align-self: flex-start;
+      }
     }
   }
 }
@@ -135,7 +159,9 @@ $accent: #06b6d4;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
+
 
   .gallery-item {
     border-radius: 30px;
@@ -162,6 +188,46 @@ $accent: #06b6d4;
   color: $text-light;
   overflow: hidden;
   position: relative;
+
+  // Dot Pattern
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  // Diagonal Separator (Blending into Projects)
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 5vw;
+    background-color: #f3f0e7; // Beige to match Projects section
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    z-index: 10;
+    pointer-events: none;
+  }
+}
+
+.founder-container {
+  padding: 8rem 0;
+  background-color: #0f172a; // Dark Navy
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem; // Ensure padding on mobile
+  }
 
   // Dot Pattern
   &::before {
@@ -246,6 +312,10 @@ $accent: #06b6d4;
       z-index: 1;
       opacity: 0.3;
       transition: transform 0.5s ease;
+
+      @media (max-width: 768px) {
+        display: none; // Hide accent on mobile if it causes overflow
+      }
     }
 
     &:hover .frame-accent {
@@ -264,6 +334,8 @@ $accent: #06b6d4;
     text-align: center;
     max-width: 100%;
     padding-right: 0;
+    padding-left: 0.5rem; // Add slight padding
+    padding-right: 0.5rem;
     margin: 0 auto;
   }
 
@@ -272,10 +344,19 @@ $accent: #06b6d4;
 
     .founder-name {
       font-size: 3rem;
+
+      @media (max-width: 768px) {
+        font-size: 2.25rem; // Reduce font size on mobile
+      }
+
       font-weight: 800;
       color: $text-light; // White text
       margin-bottom: 0.5rem;
       letter-spacing: -1px;
+
+      @media (max-width: 768px) {
+        font-size: 2.25rem;
+      }
     }
 
     .founder-role {
@@ -284,6 +365,10 @@ $accent: #06b6d4;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -321,7 +406,7 @@ $accent: #06b6d4;
 
   .tech-stack-minimal {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem; // Tighter gap
     margin-bottom: 3rem;
     flex-wrap: wrap;
 
@@ -330,18 +415,26 @@ $accent: #06b6d4;
     }
 
     .stack-item {
-      padding: 0.5rem 1.2rem;
-      background: rgba(255, 255, 255, 0.1); // Glassy bg
-      color: $text-light;
+      padding: 0.35rem 1rem; // Smaller padding
+      background: rgba(255, 255, 255, 0.05); // More discreet background
+      color: rgba(255, 255, 255, 0.8); // Slightly muted text
       border-radius: 50px;
-      font-size: 0.9rem;
+      font-size: 0.75rem; // Smaller font
       font-weight: 500;
       transition: all 0.2s ease;
       border: 1px solid rgba(255, 255, 255, 0.1);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem; // Space between icon and text
+
+      i {
+        font-size: 0.85rem;
+        color: $accent; // Icon keeps accent color
+      }
 
       &:hover {
-        background: $accent;
-        color: white;
+        background: rgba(45, 212, 191, 0.1); // Subtle accent bg on hover
+        color: #fff;
         border-color: $accent;
       }
     }
@@ -351,9 +444,14 @@ $accent: #06b6d4;
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    flex-wrap: wrap; // Allow wrapping on very small screens
 
     @media (max-width: 992px) {
       justify-content: center;
+    }
+
+    @media (max-width: 480px) {
+      gap: 1rem; // Reduce gap on small mobile
     }
 
     .social-link {
@@ -368,6 +466,7 @@ $accent: #06b6d4;
       font-size: 1.2rem;
       transition: all 0.3s ease;
       border: 1px solid rgba(255, 255, 255, 0.1);
+      flex-shrink: 0; // Prevent compression
 
       &:hover {
         background: $accent;
@@ -382,6 +481,13 @@ $accent: #06b6d4;
       text-transform: uppercase;
       font-size: 0.9rem;
       letter-spacing: 0.5px;
+      white-space: nowrap; // Keep text together
+
+      @media (max-width: 480px) {
+        width: 100%; // Stack text below icons on very small screens
+        text-align: center;
+        margin-top: 0.5rem;
+      }
     }
   }
 }

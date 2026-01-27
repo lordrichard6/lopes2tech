@@ -1,17 +1,17 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Inject, OnDestroy, PLATFORM_ID, QueryList, Renderer2, ViewChildren } from '@angular/core';
+import { Component, Inject, PLATFORM_ID, ViewChildren, ElementRef, AfterViewInit } from '@angular/core';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { isPlatformBrowser } from '@angular/common';
-import { Subscription } from 'rxjs';
+import { CountUpDirective } from 'ngx-countup';
+import { CountUpOptions } from 'countup.js';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, CountUpDirective],
   templateUrl: './about.html',
-  styleUrl: './about.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrl: './about.scss'
 })
-export class About implements AfterViewInit, OnDestroy {
+export class About implements AfterViewInit {
   readonly features = [
     { icon: 'fas fa-mountain', translationKey: 'about.features.swiss' },
     { icon: 'fas fa-rocket', translationKey: 'about.features.technology' },
@@ -19,70 +19,48 @@ export class About implements AfterViewInit, OnDestroy {
     { icon: 'fas fa-check-circle', translationKey: 'about.features.delivery' }
   ];
 
+  readonly skills = [
+    { name: 'Angular', icon: 'fab fa-angular' },
+    { name: 'Next.js', icon: 'fas fa-layer-group' },
+    { name: 'TypeScript', icon: 'fab fa-js' }, // using js icon as ts generic or search specific
+    { name: 'Node.js', icon: 'fab fa-node-js' },
+    { name: 'Supabase', icon: 'fas fa-database' },
+    { name: 'AI Agents', icon: 'fas fa-robot' },
+    { name: 'Three.js', icon: 'fas fa-cube' },
+    { name: 'Tailwind', icon: 'fas fa-wind' },
+    { name: 'UI/UX', icon: 'fas fa-pen-nib' }
+  ];
+
+  countUpOptions: CountUpOptions = {
+    enableScrollSpy: true,
+    scrollSpyOnce: true,
+    duration: 2.5,
+    useEasing: true,
+  };
+
   private readonly isBrowser: boolean;
-  private intersectionObserver?: IntersectionObserver;
-  private readonly triggeredElements = new WeakSet<Element>();
-  private queryChangesSub?: Subscription;
 
-  @ViewChildren('revealItem', { read: ElementRef }) private revealItems!: QueryList<ElementRef<HTMLElement>>;
+  @ViewChildren('revealItem', { read: ElementRef }) private revealItems!: ElementRef[];
 
-  constructor(@Inject(PLATFORM_ID) platformId: Object, private readonly renderer: Renderer2) {
+  constructor(@Inject(PLATFORM_ID) platformId: Object) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
   ngAfterViewInit(): void {
-    if (!this.isBrowser) {
-      return;
-    }
+    if (!this.isBrowser) return;
 
-    if (!('IntersectionObserver' in window)) {
-      this.revealItems.forEach((item) => {
-        const element = item.nativeElement;
-        this.renderer.addClass(element, 'is-visible');
-        this.triggeredElements.add(element);
-      });
-      return;
-    }
-
-    this.intersectionObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const element = entry.target as HTMLElement;
-          if (entry.isIntersecting) {
-            this.renderer.addClass(element, 'is-visible');
-            this.triggeredElements.add(element);
-            this.intersectionObserver?.unobserve(element);
-          }
-        });
-      },
-      { threshold: 0.2, rootMargin: '0px 0px -10% 0px' }
-    );
-
-    this.revealItems.forEach((item) => {
-      const element = item.nativeElement;
-      if (!this.triggeredElements.has(element)) {
-        this.renderer.removeClass(element, 'is-visible');
-        this.intersectionObserver?.observe(element);
-      }
-    });
-
-    this.queryChangesSub = this.revealItems.changes.subscribe((items: QueryList<ElementRef<HTMLElement>>) => {
-      items.forEach((item) => {
-        const element = item.nativeElement;
-        if (!this.triggeredElements.has(element)) {
-          this.renderer.removeClass(element, 'is-visible');
-          this.intersectionObserver?.observe(element);
+    // Intersection Observer for the reveal-on-scroll elements (fade up)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
         }
       });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    this.revealItems?.forEach((item: any) => {
+      observer.observe(item.nativeElement);
     });
-  }
-
-  ngOnDestroy(): void {
-    if (!this.isBrowser) {
-      return;
-    }
-
-    this.intersectionObserver?.disconnect();
-    this.queryChangesSub?.unsubscribe();
   }
 }

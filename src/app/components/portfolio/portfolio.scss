@@ -101,12 +101,20 @@
     font-weight: 800;
     margin-bottom: 1rem;
     color: var(--text-dark);
+
+    @media (max-width: 768px) {
+      font-size: 1.75rem;
+    }
   }
 
   p {
     font-size: 1.1rem;
     color: var(--text-light);
     line-height: 1.6;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 }
 

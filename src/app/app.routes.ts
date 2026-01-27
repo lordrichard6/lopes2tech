@@ -12,11 +12,7 @@ export const routes: Routes = [
     loadComponent: () => import('./components/services-page/services-page').then(m => m.ServicesPageComponent),
     canActivate: [seoGuard]
   },
-  {
-    path: 'support-theraflow',
-    loadComponent: () => import('./components/support-theraflow/support-theraflow').then(m => m.SupportTheraflowComponent),
-    canActivate: [seoGuard]
-  },
+
   {
     path: 'unsubscribed',
     loadComponent: () => import('./components/unsubscribed/unsubscribed').then(m => m.UnsubscribedComponent),
@@ -45,6 +41,16 @@ export const routes: Routes = [
   {
     path: 'terms',
     loadComponent: () => import('./components/terms/terms').then(m => m.TermsComponent),
+    canActivate: [seoGuard]
+  },
+  {
+    path: 'insights',
+    loadComponent: () => import('./components/insights-list/insights-list.component').then(m => m.InsightsListComponent),
+    canActivate: [seoGuard]
+  },
+  {
+    path: 'insights/:slug',
+    loadComponent: () => import('./components/blog-post/blog-post.component').then(m => m.BlogPostComponent),
     canActivate: [seoGuard]
   },
   {

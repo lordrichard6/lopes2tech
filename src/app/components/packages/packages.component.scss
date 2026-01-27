@@ -264,6 +264,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
 }
 
 .section-subtitle {
@@ -272,6 +276,10 @@
     max-width: 600px;
     margin: 0 auto 2.5rem;
     line-height: 1.6;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
 }
 
 /* Grid/Card Layout */
@@ -296,6 +304,7 @@
     backdrop-filter: blur(8px);
     overflow: hidden;
     cursor: pointer;
+    z-index: 10; // Ensure card is above background elements
 
     &:hover {
         background: rgba(30, 41, 59, 0.8);
@@ -453,6 +462,10 @@
 }
 
 @media (max-width: 640px) {
+    .packages-section .floating-icons {
+        display: none; // Hide floating icons on mobile to prevent overlap
+    }
+
     .package-card {
         flex-direction: column;
         align-items: flex-start;
@@ -479,6 +492,10 @@
 
     .package-price {
         font-size: 1rem;
+    }
+
+    .section-header .section-title {
+        font-size: 2rem; // Ensure section title is also reduced
     }
 }
 
@@ -540,6 +557,11 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: block; // For anchor tag
 
+    @media (max-width: 768px) {
+        aspect-ratio: 3/2; // Shorter on mobile
+        margin-bottom: 1rem;
+    }
+
     &:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 30px rgba(0, 191, 255, 0.2);
@@ -582,6 +604,13 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     text-align: center;
+
+    @media (max-width: 768px) {
+        opacity: 1; // Always visible on mobile
+        background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 40%, transparent 100%);
+        padding: 1.5rem;
+        justify-content: flex-end;
+    }
 }
 
 .preview-title {
@@ -590,6 +619,11 @@
     color: #fff;
     margin-bottom: 1rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 768px) {
+        font-size: 1.25rem; // Reduced from 1.5rem
+        margin-bottom: 0.5rem;
+    }
 }
 
 .know-more-badge {
@@ -602,4 +636,9 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
+
+    @media (max-width: 768px) {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
 }

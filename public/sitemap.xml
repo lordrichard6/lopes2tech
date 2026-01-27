@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://lopes2tech.ch/</loc>
+    <lastmod>2026-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lopes2tech.ch/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lopes2tech.ch/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lopes2tech.ch/" />
+  </url>
+  
+  <!-- Services -->
+  <url>
+    <loc>https://lopes2tech.ch/services</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Contact -->
+  <url>
+    <loc>https://lopes2tech.ch/contact</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Portfolio -->
+  <url>
+    <loc>https://lopes2tech.ch/portfolio</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+  
+  <!-- Legal -->
+  <url>
+    <loc>https://lopes2tech.ch/impressum</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/privacy</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/terms</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Insights / Blog -->
+  <url>
+    <loc>https://lopes2tech.ch/insights</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://lopes2tech.ch/insights/case-study-scalable-saas-3-weeks</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/insights/digital-transformation-swiss-smes</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/insights/future-web-development-ai-coding</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/insights/integrating-ai-agents-corporate-website</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/insights/high-performance-websites-convert-better</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/insights/replacing-manual-tasks-ai-workflows</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/insights/programmatic-seo-scaling</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/insights/cost-custom-web-development-zurich</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/insights/technical-seo-development-vs-keywords</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lopes2tech.ch/insights/ai-workflows-reduce-dev-time</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
+

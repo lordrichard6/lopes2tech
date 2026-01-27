@@ -270,7 +270,7 @@
   }
 
   .hero-title {
-    font-size: 3.5rem; // Increased for bigger impact on mobile
+    font-size: 2.5rem; // Reduced from 3.5rem
     text-align: center;
     line-height: 1.1;
 
@@ -287,7 +287,7 @@
   }
 
   .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem; // Reduced from 1.1rem
     margin-bottom: 2rem;
     text-align: center;
   }
@@ -338,11 +338,11 @@
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 3rem; // Still large on very small screens
+    font-size: 2rem; // Reduced from 3rem
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .hero-stats {

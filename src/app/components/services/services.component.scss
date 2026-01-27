@@ -19,6 +19,10 @@
   text-align: center;
   margin-bottom: 1rem;
   color: #0f172a;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 }
 
 .section-subtitle {
@@ -26,6 +30,11 @@
   text-align: center;
   color: #64748b;
   margin-bottom: 4rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .services-wrapper {
@@ -525,6 +534,12 @@
 
       &:hover {
         transform: translateY(-10px) !important;
+      }
+
+      h3 {
+        font-size: 0.95rem; // Significantly reduced to prevent wrapping
+        hyphens: none;
+        word-break: normal;
       }
     }
 
