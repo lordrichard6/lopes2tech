@@ -5,18 +5,16 @@
 
     <div class="services-wrapper">
       @if (isSummary) {
-      <div class="services-row">
+      <div class="services-row deck-view">
         @for (category of serviceCategories; track category.key) {
-        <a [routerLink]="['/services']" [fragment]="category.key" class="service-card category-card">
+        <a [routerLink]="['/services']" [fragment]="category.key" class="service-card category-card"
+          [ngClass]="category.key">
           <span class="shimmer"></span>
-          <div class="service-icon">
-            <i [class]="category.icon" class="service-icon-i"></i>
-          </div>
           <h3>{{ ('servicesv2.categories.' + category.key + '.title') | translate }}</h3>
         </a>
         }
       </div>
-      <div class="services-cta" style="text-align: center; margin-top: 3rem;">
+      <div class="services-cta" style="text-align: center; margin-top: 1rem;">
         <a routerLink="/services" class="btn-primary">See all services</a>
       </div>
       } @else {

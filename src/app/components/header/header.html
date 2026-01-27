@@ -2,9 +2,9 @@
   <nav class="nav">
     <div class="nav-container">
       <div class="logo" [class.neon-active]="isScrolled">
-        <img src="/logo_w.svg" alt="lopes2tech Swiss IT Solutions Company Logo" class="logo-image light-theme-logo">
-        <img src="/blue_simple.svg" alt="lopes2tech Swiss IT Solutions Company Logo - Dark Theme"
-          class="logo-image dark-theme-logo">
+        <img ngSrc="/logo_w.svg" width="180" height="40" alt="lopes2tech Swiss IT Solutions Company Logo"
+          class="logo-image" priority>
+
         <div class="logo-text">
           <span class="logo-part logo-lopes">lopes</span>
           <span class="logo-part logo-number">2</span>
@@ -21,19 +21,24 @@
         <li><a href="#about" (click)="closeMenu()">{{ 'nav.about' | translate }}</a></li>
         <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a>
         </li>
+        <li class="mobile-only-cta">
+          <a href="https://app.lopes2tech.ch" class="btn btn-primary nav-cta">
+            Client Portal
+          </a>
+        <li class="mobile-only-lang">
+          <app-language-selector></app-language-selector>
+        </li>
       </ul>
 
       <div class="header-controls">
-        <a href="https://app.lopes2tech.ch" class="btn btn-primary header-cta">
+        <a href="https://app.lopes2tech.ch" class="btn btn-primary header-cta desktop-only">
           Client Portal
         </a>
-        <app-language-selector></app-language-selector>
+        <div class="desktop-only">
+          <app-language-selector></app-language-selector>
+        </div>
 
-        <button class="theme-toggle" style="display: none;" (click)="toggleTheme()"
-          [attr.aria-label]="(isDarkTheme ? 'header.themeToggle.lightLabel' : 'header.themeToggle.darkLabel') | translate">
-          <i class="fas fa-sun" [class.hidden]="isDarkTheme"></i>
-          <i class="fas fa-moon" [class.hidden]="!isDarkTheme"></i>
-        </button>
+
 
         <button class="mobile-menu-toggle" [class.active]="isMenuOpen" (click)="toggleMenu()"
           aria-label="Toggle mobile menu" i18n-aria-label="@@toggle-menu">

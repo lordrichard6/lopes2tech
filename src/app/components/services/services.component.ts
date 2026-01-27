@@ -14,14 +14,14 @@ interface ServiceCardConfig {
 }
 
 @Component({
-  selector: 'app-servicesv2',
+  selector: 'app-services',
   standalone: true,
   imports: [TranslatePipe, ServiceDialogComponent, RouterModule, CommonModule],
-  templateUrl: './servicesv2.component.html',
-  styleUrl: './servicesv2.component.scss',
+  templateUrl: './services.component.html',
+  styleUrl: './services.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ServicesV2Component implements AfterViewInit, OnDestroy {
+export class ServicesComponent implements AfterViewInit, OnDestroy {
   @Input() isSummary = false;
   isDialogOpen = false;
   selectedServiceKey: string = '';

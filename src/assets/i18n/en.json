@@ -116,8 +116,8 @@
     }
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "Comprehensive IT solutions tailored to your needs",
+    "title": "Our Expertise & Services",
+    "subtitle": "From web development to intelligent automation, we provide end-to-end digital solutions designed to scale your business. Our team specializes in building high-performance websites, custom software, and AI-driven workflows that streamline operations and drive growth for SMEs and startups",
     "items": {
       "automation": {
         "title": "Process Automation",
@@ -829,8 +829,8 @@
     }
   },
   "servicesv2": {
-    "title": "Our Core Services",
-    "subtitle": "Web design, branding & automation solutions tailored for Swiss entrepreneurs and SMEs",
+    "title": "Our Expertise & Services",
+    "subtitle": "By leveraging AI-powered development, we deliver client solutions 10x faster than traditional agencies. From web development to intelligent automation, we build high-performance websites, custom software, and workflows that streamline operations and drive growth for SMEs and startups.",
     "badge": "View details",
     "categories": {
       "mobile": {

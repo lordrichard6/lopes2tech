@@ -61,8 +61,8 @@
     }
   },
   "services": {
-    "title": "Nossos Serviços",
-    "subtitle": "Soluções completas de TI adaptadas às suas necessidades",
+    "title": "A Nossa Expertise & Serviços",
+    "subtitle": "Do desenvolvimento web à automação inteligente, oferecemos soluções digitais completas desenhadas para escalar o seu negócio. A nossa equipa especializa-se na criação de websites de alta performance, software personalizado e fluxos de trabalho impulsionados por IA que otimizam operações e impulsionam o crescimento para PMEs e startups",
     "items": {
       "automation": {
         "title": "Automação de Processos",
@@ -603,8 +603,8 @@
     }
   },
   "servicesv2": {
-    "title": "Os Nossos Serviços",
-    "subtitle": "Web design, branding e soluções de automação à medida para PMEs e empreendedores",
+    "title": "A Nossa Expertise & Serviços",
+    "subtitle": "Ao alavancar o desenvolvimento impulsionado por IA, entregamos soluções 10x mais rápido que agências tradicionais. Do desenvolvimento web à automação inteligente, criamos websites de alta performance, software personalizado e fluxos de trabalho que otimizam operações e impulsionam o crescimento para PMEs e startups.",
     "badge": "Ver detalhes",
     "categories": {
       "mobile": {

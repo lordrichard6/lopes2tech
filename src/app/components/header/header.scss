@@ -51,50 +51,7 @@
   }
 }
 
-.theme-toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  cursor: pointer;
-  z-index: 10000;
-  transition: all 0.3s ease;
-  position: relative;
 
-  &:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
-  }
-
-  i {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
-    transition: all 0.3s ease;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-
-    &.hidden {
-      opacity: 0;
-      transform: translate(-50%, -50%) rotate(180deg) scale(0.5);
-    }
-
-    &.fa-sun {
-      color: #fbbf24;
-    }
-
-    &.fa-moon {
-      color: #60a5fa;
-    }
-  }
-}
 
 .mobile-menu-toggle {
   display: none;
@@ -157,7 +114,7 @@
 }
 
 .logo-image {
-  height: 60px;
+  height: 45px;
   width: auto;
   object-fit: contain;
   position: absolute;
@@ -170,27 +127,6 @@
   &:hover {
     transform: scale(1.05);
   }
-
-  // Theme-specific logo visibility
-  &.light-theme-logo {
-    display: block; // Usually white logo for dark background
-  }
-
-  &.dark-theme-logo {
-    display: none;
-  }
-}
-
-// Since header has dark bg now, force white logo even in light mode
-:host-context(.dark-theme) .logo,
-:host-context(.light-theme) .logo {
-  .light-theme-logo {
-    display: block;
-  }
-
-  .dark-theme-logo {
-    display: none;
-  }
 }
 
 .logo-text {
@@ -198,7 +134,7 @@
   align-items: baseline;
   gap: 0.15rem;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  margin-left: 3rem;
+  margin-left: 2.5rem;
   position: relative;
 }
 
@@ -212,18 +148,23 @@
 .logo-lopes {
   opacity: 0;
   transform: translateX(0) scale(0.9);
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   line-height: 44px;
-  color: white;
+  color: #fff; // White core
   letter-spacing: -0.02em;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #00f3ff, // Neon Blue Glow
+    0 0 20px #00f3ff,
+    0 0 40px #00f3ff;
   animation: logoWordLeftIntro 2.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
 .logo-number {
   opacity: 0;
-  font-size: 4rem;
+  font-size: 3.2rem;
   line-height: 0;
-  top: 12px;
+  top: 10px;
   color: #fff;
   font-weight: 800;
   position: relative;
@@ -262,9 +203,14 @@
 .logo-tech {
   opacity: 0;
   transform: translateX(0) scale(0.9);
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   line-height: 0;
-  color: rgba(255, 255, 255, 0.95);
+  color: #fff; // White core
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #ff9900, // Neon Orange Glow
+    0 0 20px #ff9900,
+    0 0 40px #ff9900;
   text-transform: lowercase;
   font-weight: 800;
   position: relative;
@@ -508,6 +454,12 @@
   }
 }
 
+// Hidden by default on desktop
+.mobile-only-cta,
+.mobile-only-lang {
+  display: none;
+}
+
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -551,6 +503,64 @@
 
 // Responsive Design
 @media (max-width: 768px) {
+
+  // Mobile CTA Visibility
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only-cta {
+    display: block !important;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    margin-top: 1.5rem;
+
+    .nav-cta {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      min-width: 200px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #fff !important;
+      background: rgba(var(--ocean-cyan), 0.1);
+      border: 1px solid rgba(var(--ocean-cyan), 0.5);
+      border-radius: 50px; // Pill shape
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(var(--ocean-cyan), 0.2);
+      transition: all 0.3s ease;
+      position: relative;
+
+      // Remove default underline from link styles if any
+      &::after {
+        display: none !important;
+      }
+
+      &:hover {
+        background: rgba(var(--ocean-cyan), 0.2);
+        box-shadow: 0 0 25px rgba(var(--ocean-cyan), 0.4);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .mobile-only-lang {
+    display: flex !important;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+
+    ::ng-deep .language-selector {
+      // Ensure dropdown opens correctly in mobile menu if needed
+      // or style specifically for mobile
+    }
+  }
+
   .nav-container {
     padding: 0 1rem;
     position: relative;
@@ -566,23 +576,50 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(10, 10, 10, 0.98); // Almost opaque for better readability
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    background: linear-gradient(135deg, rgba(8, 8, 12, 0.98), rgba(20, 20, 30, 0.99));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: none;
-    border-radius: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 2rem;
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: 9998; // Just below toggle button (10000)
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 9998;
     box-shadow: none;
+
+    // Background accent 1
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -10%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(var(--ocean-cyan), 0.15), transparent 70%);
+      filter: blur(60px);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    // Background accent 2
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(var(--accent-color), 0.1), transparent 70%);
+      filter: blur(60px);
+      border-radius: 50%;
+      pointer-events: none;
+    }
 
     &.active {
       transform: translateY(0);
@@ -592,30 +629,83 @@
       li {
         opacity: 1;
         transform: translateY(0);
-        animation: none; // Reset animation to simple fade/slide via transition
-        transition: all 0.3s ease;
       }
     }
 
     li {
       opacity: 0;
-      transform: translateY(10px);
+      transform: translateY(20px);
       width: 100%;
+      display: flex;
+      justify-content: center;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+      // Stagger delays
+      &:nth-child(1) {
+        transition-delay: 0.1s;
+      }
+
+      &:nth-child(2) {
+        transition-delay: 0.15s;
+      }
+
+      &:nth-child(3) {
+        transition-delay: 0.2s;
+      }
+
+      &:nth-child(4) {
+        transition-delay: 0.25s;
+      }
+
+      &:nth-child(5) {
+        transition-delay: 0.3s;
+      }
+
+      &:nth-child(6) {
+        transition-delay: 0.35s;
+      }
+
+      &:nth-child(7) {
+        transition-delay: 0.4s;
+      }
 
       a {
-        display: block;
-        padding: 15px 30px;
-        font-size: 2rem;
-        font-weight: 600;
+        display: inline-block;
+        padding: 8px 0;
+        font-size: 1.25rem; // Significantly smaller
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.15em; // Wider spacing for elegance
         text-align: center;
-        color: rgba(255, 255, 255, 0.9);
-        border-radius: 12px;
+        color: rgba(255, 255, 255, 0.7);
         background: transparent;
-        transition: all 0.2s ease;
+        transition: all 0.3s ease;
+        position: relative;
 
-        &:hover {
-          background: rgba(255, 255, 255, 0.1);
-          color: #fff;
+        &:not(.btn) {
+
+          // Underline effect for text links only
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+            transition: all 0.4s ease;
+            transform: translateX(-50%);
+          }
+
+          &:hover,
+          &.active {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+
+            &::after {
+              width: 80px;
+            }
+          }
         }
       }
     }

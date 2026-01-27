@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { ServicesV2Component } from '../services/servicesv2.component';
+import { ServicesComponent } from '../services/services.component';
 import { PackagesComponent } from '../packages/packages.component';
 
 @Component({
   selector: 'app-services-page',
   standalone: true,
   imports: [
-    ServicesV2Component,
+    ServicesComponent,
     PackagesComponent
   ],
   template: `
-    <app-servicesv2></app-servicesv2>
+    <app-services></app-services>
     <app-packages [showBottomWave]="false"></app-packages>
 
   `,

@@ -85,8 +85,8 @@
     }
   },
   "services": {
-    "title": "Unsere Dienstleistungen",
-    "subtitle": "Umfassende IT-Lösungen, massgeschneidert für Ihre Bedürfnisse",
+    "title": "Unsere Expertise & Dienstleistungen",
+    "subtitle": "Von Webentwicklung bis zur intelligenten Automatisierung bieten wir ganzheitliche digitale Lösungen, die Ihr Unternehmen skalieren. Unser Team ist spezialisiert auf den Aufbau von leistungsstarken Websites, individueller Software und KI-gesteuerten Workflows, die Abläufe optimieren und das Wachstum für KMUs und Startups vorantreiben",
     "items": {
       "automation": {
         "title": "Prozessautomatisierung",
@@ -627,8 +627,8 @@
     }
   },
   "servicesv2": {
-    "title": "Unsere Dienstleistungen",
-    "subtitle": "Webdesign, Branding und maßgeschneiderte Automatisierungslösungen für KMUs und Unternehmer",
+    "title": "Unsere Expertise & Dienstleistungen",
+    "subtitle": "Durch KI-gestützte Entwicklung liefern wir Kundenlösungen 10x schneller als traditionelle Agenturen. Von Webentwicklung bis zur intelligenten Automatisierung erstellen wir leistungsstarke Websites, individuelle Software und Workflows, die Abläufe optimieren und das Wachstum für KMUs und Startups vorantreiben",
     "badge": "Details ansehen",
     "categories": {
       "mobile": {

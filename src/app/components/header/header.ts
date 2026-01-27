@@ -1,12 +1,13 @@
-import { ChangeDetectionStrategy, Component, HostListener, Inject, OnInit, PLATFORM_ID, Renderer2 } from '@angular/core';
-import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { ChangeDetectionStrategy, Component, HostListener, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { CommonModule, NgOptimizedImage, isPlatformBrowser } from '@angular/common';
+import { RouterModule, RouterLink, RouterLinkActive } from '@angular/router'; // Modified: Added RouterLink, RouterLinkActive
 import { LanguageSelectorComponent } from '../language-selector/language-selector';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, RouterModule, LanguageSelectorComponent, TranslatePipe],
+  standalone: true, // Added: standalone: true
+  imports: [CommonModule, RouterLink, RouterLinkActive, TranslatePipe, LanguageSelectorComponent, NgOptimizedImage], // Modified: Replaced RouterModule with RouterLink, RouterLinkActive, added NgOptimizedImage
   templateUrl: './header.html',
   styleUrl: './header.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -14,14 +15,10 @@ import { TranslatePipe } from '../../pipes/translate.pipe';
 export class Header implements OnInit {
   isMenuOpen = false;
   isScrolled = false;
-  isDarkTheme = false;
+
   private readonly isBrowser: boolean;
 
-  constructor(
-    @Inject(PLATFORM_ID) private readonly platformId: Object,
-    private readonly renderer: Renderer2,
-    @Inject(DOCUMENT) private readonly document: Document
-  ) {
+  constructor(@Inject(PLATFORM_ID) platformId: Object) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
@@ -37,13 +34,6 @@ export class Header implements OnInit {
   ngOnInit() {
     if (this.isBrowser) {
       this.isScrolled = window.pageYOffset > 100;
-
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) {
-        this.isDarkTheme = savedTheme === 'dark';
-      }
-
-      this.applyTheme();
     }
   }
 
@@ -53,30 +43,5 @@ export class Header implements OnInit {
 
   closeMenu() {
     this.isMenuOpen = false;
-  }
-
-  toggleTheme() {
-    this.isDarkTheme = !this.isDarkTheme;
-
-    if (this.isBrowser) {
-      localStorage.setItem('theme', this.isDarkTheme ? 'dark' : 'light');
-      this.applyTheme();
-    }
-  }
-
-  private applyTheme() {
-    if (!this.isBrowser) {
-      return;
-    }
-
-    const body = this.document.body;
-
-    if (this.isDarkTheme) {
-      this.renderer.removeClass(body, 'light-theme');
-      this.renderer.addClass(body, 'dark-theme');
-    } else {
-      this.renderer.removeClass(body, 'dark-theme');
-      this.renderer.addClass(body, 'light-theme');
-    }
   }
 }
