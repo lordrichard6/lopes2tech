@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "/:path*(%EF%BF%BC|%ef%bf%bc|%EF%BF%BD|%ef%bf%bd)",
+            "destination": "/:path*",
+            "permanent": true
+        }
+    ]
+}

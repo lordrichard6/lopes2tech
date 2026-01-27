@@ -23,6 +23,18 @@ export class App implements OnDestroy {
 
   constructor(@Inject(PLATFORM_ID) platformId: Object) {
     this.isBrowser = isPlatformBrowser(platformId);
+
+    // Critical Fix: Facebook Link Garbage Removal
+    // If the URL contains the Object Replacement Character (encoded or raw), strip it and reload.
+    if (this.isBrowser) {
+      const href = window.location.href;
+      if (href.includes('%EF%BF%BC') || href.includes('\uFFFC')) {
+        const newUrl = href.replace(/%EF%BF%BC|\uFFFC/g, '');
+        window.location.replace(newUrl);
+        return; // Stop further processing
+      }
+    }
+
     this.setLayout(this.router.url);
 
     this.router.events
