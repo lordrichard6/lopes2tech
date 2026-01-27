@@ -29,6 +29,20 @@ const angularApp = new AngularNodeAppEngine();
  */
 
 /**
+ * Middleware to handle malformed calls from Facebook containing the Object Replacement Character
+ * (U+FFFC) which often gets appended to links.
+ */
+app.use((req, res, next) => {
+  // Check for encoded %EF%BF%BC or decoded \uFFFC
+  if (req.url.includes('%EF%BF%BC') || req.url.includes('\uFFFC')) {
+    const newUrl = req.url.replace(/%EF%BF%BC|\uFFFC/g, '');
+    res.redirect(301, newUrl);
+    return;
+  }
+  next();
+});
+
+/**
  * Serve static files from /browser
  */
 app.use(
