@@ -1,13 +1,11 @@
 import { Component, Inject, PLATFORM_ID, ViewChildren, ElementRef, AfterViewInit } from '@angular/core';
 import { TranslatePipe } from '../../pipes/translate.pipe';
 import { isPlatformBrowser } from '@angular/common';
-import { CountUpDirective } from 'ngx-countup';
-import { CountUpOptions } from 'countup.js';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [TranslatePipe, CountUpDirective],
+  imports: [TranslatePipe],
   templateUrl: './about.html',
   styleUrl: './about.scss'
 })
@@ -30,13 +28,6 @@ export class About implements AfterViewInit {
     { name: 'Tailwind', icon: 'fas fa-wind' },
     { name: 'UI/UX', icon: 'fas fa-pen-nib' }
   ];
-
-  countUpOptions: CountUpOptions = {
-    enableScrollSpy: true,
-    scrollSpyOnce: true,
-    duration: 2.5,
-    useEasing: true,
-  };
 
   private readonly isBrowser: boolean;
 
