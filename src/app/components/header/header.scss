@@ -770,8 +770,11 @@
     }
 
     .mobile-only-lang {
-      margin-top: 1.5rem;
-      margin-bottom: 2rem; // Ensure space at bottom
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      margin: 0; // Remove margins
+      width: auto; // Auto width
     }
 
     li a {
