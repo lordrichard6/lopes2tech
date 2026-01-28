@@ -137,38 +137,38 @@ export class EmailService {
   }
 
   private buildFullMessage(
-    formData: MultiStepFormData, 
+    formData: MultiStepFormData,
     serviceDisplayNames: { [key: string]: string },
     detailServiceLabels: { [key: string]: string }
   ): string {
     let message = '=== NEW PROJECT INQUIRY ===\n\n';
-    
+
     message += '--- CONTACT INFORMATION ---\n';
     message += `Name: ${formData.firstName} ${formData.lastName}\n`;
     message += `Email: ${formData.email}\n`;
     message += `Company: ${formData.company || 'Not provided'}\n`;
     message += `Location: ${formData.location}\n`;
     message += `Phone: ${formData.phone || 'Not provided'}\n\n`;
-    
+
     message += '--- PROJECT DETAILS ---\n';
     message += `Service Category: ${serviceDisplayNames[formData.selectedService] || formData.selectedService}\n`;
-    
+
     if (formData.selectedDetailServices.length > 0) {
       const detailServicesText = formData.selectedDetailServices
         .map(service => detailServiceLabels[service] || service)
         .join(', ');
       message += `Specific Services: ${detailServicesText}\n`;
     }
-    
+
     if (formData.projectDescription) {
       message += `Project Description: ${formData.projectDescription}\n`;
     }
-    
+
     if (formData.additionalMessage) {
       message += '\n--- ADDITIONAL MESSAGE ---\n';
       message += formData.additionalMessage + '\n';
     }
-    
+
     return message;
   }
 
@@ -181,7 +181,7 @@ export class EmailService {
 
     const templateId =
       environment.emailjs.contactTemplateId &&
-      environment.emailjs.contactTemplateId !== 'YOUR_EMAILJS_CONTACT_TEMPLATE_ID'
+        environment.emailjs.contactTemplateId !== 'YOUR_EMAILJS_CONTACT_TEMPLATE_ID'
         ? environment.emailjs.contactTemplateId
         : environment.emailjs.templateId;
 
@@ -210,11 +210,41 @@ export class EmailService {
         templateParams
       );
 
-      this.logger.info('Contact email sent successfully', response, 'EmailService');
+      try {
+        await this.sendToPlatform(formData);
+      } catch (err) {
+        this.logger.warn('Failed to sink ticket to platform', err, 'EmailService');
+      }
+
       return true;
     } catch (error) {
       this.logger.error('Failed to send contact email', error, 'EmailService');
       return false;
+    }
+  }
+
+  private async sendToPlatform(formData: ContactFormData): Promise<void> {
+    if (!environment.platform?.apiUrl) return;
+
+    try {
+      await fetch(environment.platform.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': environment.platform.apiKey
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          phone: formData.phone,
+          message: formData.message,
+          context: formData.context
+        })
+      });
+    } catch (error) {
+      console.error('Platform sync failed', error);
+      throw error;
     }
   }
 
@@ -250,7 +280,7 @@ export class EmailService {
         'maintenance': 'System Maintenance'
       }
     );
-    
+
     return `mailto:${APP_CONSTANTS.BUSINESS.EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 
@@ -267,7 +297,7 @@ Context: ${formData.context || 'Unknown context'}
 Message:
 ${formData.message}
     `;
-    
+
     return `mailto:${APP_CONSTANTS.BUSINESS.EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 }

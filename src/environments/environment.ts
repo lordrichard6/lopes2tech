@@ -9,5 +9,9 @@ export const environment = {
   openai: {
     // API calls now go through /api/chat endpoint (no key needed in frontend)
     apiKey: ''
+  },
+  platform: {
+    apiUrl: 'http://localhost:3000/api/external/tickets', // Update this for production!
+    apiKey: '41a96e24220343d60fcc2bd9ff722b2f649dc6149a69671546f37f1c4db76e57'
   }
 };

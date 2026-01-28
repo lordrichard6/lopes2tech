@@ -9,5 +9,9 @@ export const environment = {
   openai: {
     // Set via environment variables in production
     apiKey: ''
+  },
+  platform: {
+    apiUrl: 'https://app.lopes2tech.ch/api/external/tickets', // PRODUCTION URL
+    apiKey: 'YOUR_PRODUCTION_API_KEY' // Set this!
   }
 };
