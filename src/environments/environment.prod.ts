@@ -12,6 +12,6 @@ export const environment = {
   },
   platform: {
     apiUrl: 'https://app.lopes2tech.ch/api/external/tickets', // PRODUCTION URL
-    apiKey: 'YOUR_PRODUCTION_API_KEY' // Set this!
+    apiKey: '41a96e24220343d60fcc2bd9ff722b2f649dc6149a69671546f37f1c4db76e57' // Set this!
   }
 };
