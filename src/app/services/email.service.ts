@@ -239,7 +239,8 @@ export class EmailService {
           company: formData.company,
           phone: formData.phone,
           message: formData.message,
-          context: formData.context
+          context: formData.context,
+          source: 'contact form'
         })
       });
     } catch (error) {
